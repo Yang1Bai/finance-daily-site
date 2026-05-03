@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="金融日报 — 由 Claude AI + Web Search 自动生成的每日金融市场摘要">
+  <title>金融日报 | Financial Daily</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* =========================================================
+       RESET & BASE
+    ========================================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #070b14;
+      --card:        #0d1526;
+      --card-hover:  #111e35;
+      --border:      #1a2a4a;
+      --border-light:#243c66;
+      --accent:      #00d4aa;
+      --accent-dim:  #00a884;
+      --up:          #00e676;
+      --down:        #ff5252;
+      --neutral:     #4fc3f7;
+      --warn:        #ffb300;
+      --text:        #e2e8f0;
+      --muted:       #8899aa;
+      --dimmed:      #4a5568;
+      --mono:        'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+      --sans:        'Inter', system-ui, -apple-system, sans-serif;
+      --radius:      8px;
+      --radius-lg:   12px;
+      --shadow:      0 4px 24px rgba(0,0,0,0.4);
+    }
+
+    html { font-size: 14px; scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: #33e0be; text-decoration: underline; }
+
+    /* =========================================================
+       LAYOUT
+    ========================================================= */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+    .site-header {
+      background: linear-gradient(180deg, #06091200 0%, var(--bg) 100%),
+                  linear-gradient(135deg, #0a0f1e 0%, #0d1526 50%, #060b16 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0 16px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo-block {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .site-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--accent) 0%, #4fc3f7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .site-subtitle {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: var(--mono);
+      letter-spacing: 0.05em;
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 0.8rem;
+    }
+
+    .header-date {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 0.75rem;
+    }
+
+    .header-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 212, 170, 0.08);
+      border: 1px solid rgba(0, 212, 170, 0.2);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.7rem;
+      color: var(--accent);
+      letter-spacing: 0.03em;
+    }
+
+    .pulse-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    .header-nav a {
+      color: var(--muted);
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: all 0.2s;
+    }
+
+    .header-nav a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      text-decoration: none;
+      background: rgba(0,212,170,0.05);
+    }
+
+    /* =========================================================
+       SECTION LABELS
+    ========================================================= */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.65rem;
+      font-family: var(--mono);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 3px;
+      height: 14px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* =========================================================
+       TICKER / INDICES STRIP
+    ========================================================= */
+    .indices-section {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      overflow: hidden;
+    }
+
+    .indices-scroll-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .indices-scroll-wrapper::-webkit-scrollbar { display: none; }
+
+    .indices-track {
+      display: flex;
+      gap: 8px;
+      padding: 0 20px;
+      min-width: max-content;
+    }
+
+    .ticker-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      min-width: 130px;
+      cursor: default;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ticker-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+
+    .ticker-card.up::before  { background: var(--up); }
+    .ticker-card.down::before { background: var(--down); }
+    .ticker-card.neutral::before { background: var(--neutral); }
+
+    .ticker-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-light);
+      box-shadow: var(--shadow);
+    }
+
+    .ticker-name {
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .ticker-value {
+      font-family: var(--mono);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 4px;
+    }
+
+    .ticker-change {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    .ticker-change.up   { color: var(--up);   background: rgba(0,230,118,0.1); }
+    .ticker-change.down { color: var(--down);  background: rgba(255,82,82,0.1); }
+    .ticker-change.neutral { color: var(--neutral); background: rgba(79,195,247,0.1); }
+
+    /* =========================================================
+       MAIN LAYOUT
+    ========================================================= */
+    .main-content {
+      padding: 24px 0;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 60fr 40fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 960px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    /* =========================================================
+       CARDS
+    ========================================================= */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover { border-color: var(--border-light); }
+
+    /* =========================================================
+       LEADER CARDS
+    ========================================================= */
+    .leaders-section { margin-bottom: 20px; }
+
+    .leader-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 12px;
+      transition: all 0.2s;
+      position: relative;
+    }
+
+    .leader-card:hover {
+      border-color: var(--border-light);
+      transform: translateX(2px);
+      box-shadow: -3px 0 0 var(--accent);
+    }
+
+    .leader-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .leader-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      border: 2px solid var(--border-light);
+    }
+
+    .leader-avatar.wb { background: rgba(255,179,0,0.12); color: var(--warn); border-color: rgba(255,179,0,0.3); }
+    .leader-avatar.rd { background: rgba(0,212,170,0.12); color: var(--accent); border-color: rgba(0,212,170,0.3); }
+    .leader-avatar.jd { background: rgba(79,195,247,0.12); color: var(--neutral); border-color: rgba(79,195,247,0.3); }
+    .leader-avatar.jp { background: rgba(255,82,82,0.12); color: var(--down); border-color: rgba(255,82,82,0.3); }
+    .leader-avatar.default { background: rgba(136,153,170,0.12); color: var(--muted); border-color: rgba(136,153,170,0.3); }
+
+    .leader-meta { flex: 1; }
+
+    .leader-name {
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--text);
+    }
+
+    .leader-role {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+
+    .leader-date {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--dimmed);
+      flex-shrink: 0;
+    }
+
+    .leader-quote {
+      font-style: italic;
+      font-size: 0.82rem;
+      color: var(--accent);
+      border-left: 2px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .leader-body {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 8px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .tag {
+      font-size: 0.62rem;
+      font-family: var(--mono);
+      color: var(--neutral);
+      background: rgba(79,195,247,0.08);
+      border: 1px solid rgba(79,195,247,0.2);
+      border-radius: 3px;
+      padding: 2px 7px;
+      letter-spacing: 0.03em;
+    }
+
+    /* =========================================================
+       CENTRAL BANKS
+    ========================================================= */
+    .cb-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .cb-grid { grid-template-columns: 1fr; }
+    }
+
+    .cb-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      transition: all 0.2s;
+    }
+
+    .cb-card:hover { border-color: var(--border-light); box-shadow: var(--shadow); }
+
+    .cb-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .cb-name {
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .cb-name-en {
+      font-size: 0.65rem;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+
+    .bias-badge {
+      font-size: 0.6rem;
+      font-family: var(--mono);
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 3px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .bias-badge.hawkish { background: rgba(255,82,82,0.12); color: var(--down); border: 1px solid rgba(255,82,82,0.25); }
+    .bias-badge.dovish  { background: rgba(0,230,118,0.12); color: var(--up);   border: 1px solid rgba(0,230,118,0.25); }
+    .bias-badge.neutral { background: rgba(136,153,170,0.12); color: var(--muted); border: 1px solid rgba(136,153,170,0.25); }
+
+    .cb-rate {
+      font-family: var(--mono);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .cb-action {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .cb-next {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--dimmed);
+    }
+
+    .cb-note {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 6px;
+      line-height: 1.5;
+      border-top: 1px solid var(--border);
+      padding-top: 6px;
+    }
+
+    /* =========================================================
+       NEWS
+    ========================================================= */
+    .news-section { margin-bottom: 20px; }
+
+    .news-item {
+      border-left: 3px solid var(--border);
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      background: var(--bg);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      transition: all 0.2s;
+    }
+
+    .news-item:hover { border-left-width: 4px; transform: translateX(2px); }
+
+    .news-item.breaking { border-left-color: var(--down); }
+    .news-item.major    { border-left-color: var(--warn); }
+    .news-item.normal   { border-left-color: var(--neutral); }
+
+    .news-title {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--text);
+      margin-bottom: 5px;
+      line-height: 1.4;
+    }
+
+    .news-title a { color: var(--text); }
+    .news-title a:hover { color: var(--accent); text-decoration: none; }
+
+    .news-body {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 7px;
+    }
+
+    .news-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .importance-badge {
+      font-size: 0.58rem;
+      font-family: var(--mono);
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 3px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .importance-badge.breaking { background: rgba(255,82,82,0.15);  color: var(--down); border: 1px solid rgba(255,82,82,0.3); }
+    .importance-badge.major    { background: rgba(255,179,0,0.12);  color: var(--warn); border: 1px solid rgba(255,179,0,0.25); }
+    .importance-badge.normal   { background: rgba(79,195,247,0.08); color: var(--neutral); border: 1px solid rgba(79,195,247,0.2); }
+
+    /* =========================================================
+       MACRO
+    ========================================================= */
+    .macro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    @media (max-width: 480px) {
+      .macro-grid { grid-template-columns: 1fr; }
+    }
+
+    .macro-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      transition: all 0.2s;
+    }
+
+    .macro-card:hover { border-color: var(--border-light); }
+
+    .macro-indicator {
+      font-size: 0.65rem;
+      font-family: var(--mono);
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .macro-value {
+      font-family: var(--mono);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .macro-prev {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+
+    .macro-prev .arrow { font-size: 0.8rem; }
+    .macro-prev .arrow.up   { color: var(--up); }
+    .macro-prev .arrow.down { color: var(--down); }
+
+    .macro-desc {
+      font-size: 0.72rem;
+      color: var(--dimmed);
+      line-height: 1.4;
+    }
+
+    /* =========================================================
+       EARNINGS
+    ========================================================= */
+    .earnings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    @media (max-width: 800px) { .earnings-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .earnings-grid { grid-template-columns: 1fr; } }
+
+    .earnings-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.2s;
+    }
+
+    .earnings-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+
+    .earnings-card.beat::before    { background: linear-gradient(90deg, var(--up), transparent); }
+    .earnings-card.miss::before    { background: linear-gradient(90deg, var(--down), transparent); }
+    .earnings-card.pending::before { background: linear-gradient(90deg, var(--muted), transparent); }
+
+    .earnings-card:hover { border-color: var(--border-light); transform: translateY(-2px); box-shadow: var(--shadow); }
+
+    .earnings-ticker {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1px;
+    }
+
+    .earnings-company {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .earnings-eps {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+
+    .eps-item {
+      flex: 1;
+      min-width: 60px;
+    }
+
+    .eps-label {
+      font-size: 0.6rem;
+      color: var(--dimmed);
+      font-family: var(--mono);
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
+    }
+
+    .eps-value {
+      font-family: var(--mono);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .eps-value.actual.beat { color: var(--up); }
+    .eps-value.actual.miss { color: var(--down); }
+    .eps-value.est         { color: var(--muted); }
+
+    .earnings-beat-badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-family: var(--mono);
+      font-weight: 700;
+      padding: 1px 8px;
+      border-radius: 3px;
+      margin-bottom: 6px;
+      letter-spacing: 0.06em;
+    }
+
+    .earnings-beat-badge.beat    { background: rgba(0,230,118,0.12); color: var(--up);   border: 1px solid rgba(0,230,118,0.3); }
+    .earnings-beat-badge.miss    { background: rgba(255,82,82,0.12);  color: var(--down); border: 1px solid rgba(255,82,82,0.3); }
+    .earnings-beat-badge.pending { background: rgba(136,153,170,0.1); color: var(--muted); border: 1px solid rgba(136,153,170,0.2); }
+
+    .earnings-revenue {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+
+    .earnings-revenue span { font-family: var(--mono); color: var(--text); font-size: 0.8rem; }
+
+    .earnings-highlight {
+      font-size: 0.72rem;
+      color: var(--dimmed);
+      line-height: 1.4;
+      border-top: 1px solid var(--border);
+      padding-top: 6px;
+      margin-top: 4px;
+    }
+
+    /* =========================================================
+       SECTORS
+    ========================================================= */
+    .sectors-list { display: flex; flex-direction: column; gap: 8px; }
+
+    .sector-row {
+      display: grid;
+      grid-template-columns: 120px 50px 1fr 80px;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: all 0.2s;
+    }
+
+    .sector-row:hover { border-color: var(--border-light); }
+
+    @media (max-width: 560px) {
+      .sector-row { grid-template-columns: 1fr 60px; }
+      .sector-etf, .sector-bar-wrap { display: none; }
+    }
+
+    .sector-name { font-size: 0.82rem; font-weight: 500; }
+    .sector-name-en { font-size: 0.65rem; color: var(--muted); }
+
+    .sector-etf {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--muted);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 2px 6px;
+      text-align: center;
+    }
+
+    .sector-bar-wrap {
+      background: rgba(255,255,255,0.04);
+      border-radius: 3px;
+      height: 8px;
+      overflow: hidden;
+    }
+
+    .sector-bar {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.8s ease;
+    }
+    .sector-bar.up   { background: linear-gradient(90deg, var(--up), rgba(0,230,118,0.4)); }
+    .sector-bar.down { background: linear-gradient(90deg, var(--down), rgba(255,82,82,0.4)); }
+
+    .sector-pct {
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-align: right;
+    }
+    .sector-pct.up   { color: var(--up); }
+    .sector-pct.down { color: var(--down); }
+
+    .sector-note {
+      font-size: 0.68rem;
+      color: var(--dimmed);
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.72rem;
+      color: var(--dimmed);
+    }
+
+    .footer-inner a { color: var(--dimmed); }
+    .footer-inner a:hover { color: var(--accent); }
+
+    /* =========================================================
+       SECTION SPACING
+    ========================================================= */
+    .section-block { margin-bottom: 24px; }
+
+    /* =========================================================
+       SCROLLBAR
+    ========================================================= */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--accent-dim); }
+
+    /* =========================================================
+       LOADING SKELETON
+    ========================================================= */
+    @keyframes shimmer {
+      0%   { background-position: -1000px 0; }
+      100% { background-position: 1000px 0; }
+    }
+
+    .skeleton {
+      background: linear-gradient(90deg, var(--border) 25%, var(--border-light) 50%, var(--border) 75%);
+      background-size: 1000px 100%;
+      animation: shimmer 2s infinite;
+      border-radius: 4px;
+    }
+
+    /* =========================================================
+       UTILITIES
+    ========================================================= */
+    .mt-0 { margin-top: 0; }
+    .mb-16 { margin-bottom: 16px; }
+    .text-up   { color: var(--up); }
+    .text-down { color: var(--down); }
+    .text-muted { color: var(--muted); }
+    .font-mono { font-family: var(--mono); }
+    .text-sm { font-size: 0.75rem; }
+  </style>
+</head>
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="site-title">金融日报 | Financial Daily</span>
+      </div>
+      <div class="header-meta">
+        <span class="header-date" id="current-date">Loading...</span>
+        <div class="header-badge">
+          <span class="pulse-dot"></span>
+          由 Claude API + Web Search 自动生成
+        </div>
+        <nav class="header-nav">
+          <a href="archive/index.html">📁 Archive</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================
+     INDICES SECTION
+========================================================= -->
+<section class="indices-section">
+  <div class="indices-scroll-wrapper">
+    <div class="indices-track">
+<!-- INDICES:START -->
+<div class="ticker-card up">
+  <div class="ticker-name">S&amp;P 500</div>
+  <div class="ticker-value">5,234.18</div>
+  <div class="ticker-change up">▲ +0.24%</div>
+</div>
+<div class="ticker-card up">
+  <div class="ticker-name">NASDAQ</div>
+  <div class="ticker-value">16,421.43</div>
+  <div class="ticker-change up">▲ +0.53%</div>
+</div>
+<div class="ticker-card down">
+  <div class="ticker-name">DOW JONES</div>
+  <div class="ticker-value">38,996.39</div>
+  <div class="ticker-change down">▼ -0.12%</div>
+</div>
+<div class="ticker-card up">
+  <div class="ticker-name">上证指数</div>
+  <div class="ticker-value">3,088.36</div>
+  <div class="ticker-change up">▲ +0.41%</div>
+</div>
+<div class="ticker-card down">
+  <div class="ticker-name">恒生指数</div>
+  <div class="ticker-value">17,284.54</div>
+  <div class="ticker-change down">▼ -0.78%</div>
+</div>
+<div class="ticker-card up">
+  <div class="ticker-name">日经225</div>
+  <div class="ticker-value">38,460.08</div>
+  <div class="ticker-change up">▲ +1.02%</div>
+</div>
+<div class="ticker-card down">
+  <div class="ticker-name">德国DAX</div>
+  <div class="ticker-value">18,137.65</div>
+  <div class="ticker-change down">▼ -0.33%</div>
+</div>
+<div class="ticker-card up">
+  <div class="ticker-name">黄金 XAU</div>
+  <div class="ticker-value">2,341.20</div>
+  <div class="ticker-change up">▲ +0.67%</div>
+</div>
+<div class="ticker-card down">
+  <div class="ticker-name">原油 WTI</div>
+  <div class="ticker-value">78.42</div>
+  <div class="ticker-change down">▼ -1.15%</div>
+</div>
+<div class="ticker-card up">
+  <div class="ticker-name">BTC/USD</div>
+  <div class="ticker-value">67,420.00</div>
+  <div class="ticker-change up">▲ +2.34%</div>
+</div>
+<!-- INDICES:END -->
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+<main class="main-content">
+  <div class="container">
+
+    <!-- TWO-COLUMN LAYOUT -->
+    <div class="two-col">
+
+      <!-- LEFT COLUMN (60%) -->
+      <div class="left-col">
+
+        <!-- LEADERS SECTION -->
+        <div class="section-block leaders-section">
+          <div class="card">
+            <div class="section-label">市场领袖观点 · Market Leaders</div>
+<!-- LEADERS:START -->
+<div class="leader-card">
+  <div class="leader-header">
+    <div class="leader-avatar wb">WB</div>
+    <div class="leader-meta">
+      <div class="leader-name">巴菲特 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Warren Buffett</span></div>
+      <div class="leader-role">伯克希尔哈撒韦 CEO</div>
+    </div>
+    <div class="leader-date">5月1日</div>
+  </div>
+  <div class="leader-quote">"在别人恐惧时贪婪，在别人贪婪时恐惧。当前市场的不确定性正是长期投资者的机遇。"</div>
+  <div class="leader-body">巴菲特在年度股东大会上表示，伯克希尔哈撒韦持有创纪录的现金储备约3000亿美元，但强调这不代表对市场悲观，而是等待真正有吸引力的投资机会。他指出当前科技估值偏高，仍看好美国消费和金融行业的长期价值。</div>
+  <div class="tags"><span class="tag">#价值投资</span><span class="tag">#美股</span><span class="tag">#长期持有</span></div>
+</div>
+<div class="leader-card">
+  <div class="leader-header">
+    <div class="leader-avatar rd">RD</div>
+    <div class="leader-meta">
+      <div class="leader-name">达利欧 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Ray Dalio</span></div>
+      <div class="leader-role">桥水基金创始人</div>
+    </div>
+    <div class="leader-date">4月29日</div>
+  </div>
+  <div class="leader-quote">"我们正处于一个债务周期的关键节点，美元储备货币地位面临前所未有的挑战。"</div>
+  <div class="leader-body">达利欧在LinkedIn发文警告，美国债务占GDP比例持续攀升，叠加地缘政治格局重塑，投资者应考虑增配黄金、大宗商品和非美元资产以对冲风险。他预计未来十年资产配置的多元化将成为核心主题。</div>
+  <div class="tags"><span class="tag">#宏观</span><span class="tag">#美元</span><span class="tag">#黄金</span></div>
+</div>
+<div class="leader-card">
+  <div class="leader-header">
+    <div class="leader-avatar jp">JP</div>
+    <div class="leader-meta">
+      <div class="leader-name">鲍威尔 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Jerome Powell</span></div>
+      <div class="leader-role">美联储主席</div>
+    </div>
+    <div class="leader-date">5月1日</div>
+  </div>
+  <div class="leader-quote">"在通胀明确回落至2%目标之前，降息的时机尚未成熟。我们将保持数据依赖。"</div>
+  <div class="leader-body">美联储5月FOMC会议维持利率不变，鲍威尔在新闻发布会上发出偏鹰派信号，表示今年降息次数可能少于此前预期。市场对今年首次降息的时间预期已推迟至9月，联邦基金期货显示降息概率约56%。</div>
+  <div class="tags"><span class="tag">#美联储</span><span class="tag">#利率</span><span class="tag">#货币政策</span></div>
+</div>
+<!-- LEADERS:END -->
+          </div>
+        </div>
+
+        <!-- CENTRAL BANKS SECTION -->
+        <div class="section-block">
+          <div class="card">
+            <div class="section-label">央行动态 · Central Banks</div>
+<!-- CENTRAL_BANKS:START -->
+<div class="cb-grid">
+  <div class="cb-card">
+    <div class="cb-header">
+      <div>
+        <div class="cb-name">美联储</div>
+        <div class="cb-name-en">Federal Reserve</div>
+      </div>
+      <span class="bias-badge hawkish">Hawkish</span>
+    </div>
+    <div class="cb-rate">5.25–5.50%</div>
+    <div class="cb-action">维持利率5.25-5.50%不变，连续第六次暂停</div>
+    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2025-06-18</span></div>
+    <div class="cb-note">鲍威尔强调需要看到"更多进展"才会考虑降息，核心PCE仍高于目标。</div>
+  </div>
+  <div class="cb-card">
+    <div class="cb-header">
+      <div>
+        <div class="cb-name">欧央行</div>
+        <div class="cb-name-en">ECB</div>
+      </div>
+      <span class="bias-badge dovish">Dovish</span>
+    </div>
+    <div class="cb-rate">4.50%</div>
+    <div class="cb-action">6月预期首次降息25bp，欧元区通胀回落</div>
+    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2025-06-06</span></div>
+    <div class="cb-note">拉加德暗示若通胀继续降温，将在6月开始降息周期。市场定价2024年降息75bp。</div>
+  </div>
+  <div class="cb-card">
+    <div class="cb-header">
+      <div>
+        <div class="cb-name">中国人民银行</div>
+        <div class="cb-name-en">PBOC</div>
+      </div>
+      <span class="bias-badge dovish">Dovish</span>
+    </div>
+    <div class="cb-rate">3.45%</div>
+    <div class="cb-action">LPR维持不变，但MLF超额续作释放流动性</div>
+    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2025-05-20</span></div>
+    <div class="cb-note">央行通过MLF等工具维护流动性合理充裕，支持经济复苏目标5%。</div>
+  </div>
+  <div class="cb-card">
+    <div class="cb-header">
+      <div>
+        <div class="cb-name">日本银行</div>
+        <div class="cb-name-en">Bank of Japan</div>
+      </div>
+      <span class="bias-badge neutral">Neutral</span>
+    </div>
+    <div class="cb-rate">0.10%</div>
+    <div class="cb-action">3月结束负利率政策，升息至0.1%</div>
+    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2025-06-14</span></div>
+    <div class="cb-note">植田和男表示将谨慎评估下一步升息时机，关注工资-通胀螺旋是否形成。</div>
+  </div>
+</div>
+<!-- CENTRAL_BANKS:END -->
+          </div>
+        </div>
+
+      </div><!-- /left-col -->
+
+      <!-- RIGHT COLUMN (40%) -->
+      <div class="right-col">
+
+        <!-- NEWS SECTION -->
+        <div class="section-block news-section">
+          <div class="card">
+            <div class="section-label">市场要闻 · Market News</div>
+<!-- NEWS:START -->
+<div class="news-item breaking">
+  <div class="news-title"><a href="https://www.reuters.com" target="_blank" rel="noopener">美联储维持利率不变，鲍威尔发表鹰派讲话令降息预期降温</a></div>
+  <div class="news-body">美联储5月FOMC会议决定维持联邦基金利率目标区间5.25%-5.50%不变。鲍威尔在会后发布会上表示，鉴于通胀进展停滞，今年降息可能只有一次，市场情绪随之转向悲观，美股三大指数收跌。</div>
+  <div class="news-footer">
+    <span class="importance-badge breaking">BREAKING</span>
+    <div class="tags"><span class="tag">#美联储</span><span class="tag">#利率</span><span class="tag">#美股</span></div>
+  </div>
+</div>
+<div class="news-item major">
+  <div class="news-title"><a href="https://www.bloomberg.com" target="_blank" rel="noopener">苹果Q2财报超预期，宣布1100亿美元史上最大回购计划</a></div>
+  <div class="news-body">苹果公司公布2024财年第二季度财报，营收908亿美元略超预期，EPS为1.53美元超出预期的1.50美元。公司宣布1100亿美元股票回购计划，超越市场预期，盘后股价大涨超6%。</div>
+  <div class="news-footer">
+    <span class="importance-badge major">MAJOR</span>
+    <div class="tags"><span class="tag">#AAPL</span><span class="tag">#财报</span><span class="tag">#回购</span></div>
+  </div>
+</div>
+<div class="news-item major">
+  <div class="news-title">美国4月非农就业17.5万，低于预期逾10万，失业率升至3.9%</div>
+  <div class="news-body">美国劳工部公布4月非农就业人数增加17.5万，远低于预期的24万，前值修正下调。失业率升至3.9%，薪资增速放缓至3.9%。数据出炉后美债收益率下行，市场对年内降息预期升温。</div>
+  <div class="news-footer">
+    <span class="importance-badge major">MAJOR</span>
+    <div class="tags"><span class="tag">#NFP</span><span class="tag">#就业</span><span class="tag">#美债</span></div>
+  </div>
+</div>
+<div class="news-item normal">
+  <div class="news-title"><a href="https://www.ft.com" target="_blank" rel="noopener">巴菲特年会：增持日本股票，对AI保持审慎</a></div>
+  <div class="news-body">巴菲特在伯克希尔哈撒韦股东大会上表示继续看好日本五大商社，并将持仓比例提升至约9%。他对AI投资持谨慎态度，表示难以预测AI对商业模式的深远影响，更倾向于具有护城河的传统行业。</div>
+  <div class="news-footer">
+    <span class="importance-badge normal">NORMAL</span>
+    <div class="tags"><span class="tag">#巴菲特</span><span class="tag">#日本</span><span class="tag">#AI</span></div>
+  </div>
+</div>
+<div class="news-item normal">
+  <div class="news-title">中国4月制造业PMI降至50以下，显示经济复苏动力减弱</div>
+  <div class="news-body">国家统计局公布4月制造业PMI为49.5，较上月的50.8大幅下降，时隔两个月重返收缩区间，显示内需不足压力仍存。服务业PMI为51.2，保持扩张但增速放缓，政策加力信号增强。</div>
+  <div class="news-footer">
+    <span class="importance-badge normal">NORMAL</span>
+    <div class="tags"><span class="tag">#中国</span><span class="tag">#PMI</span><span class="tag">#宏观</span></div>
+  </div>
+</div>
+<!-- NEWS:END -->
+          </div>
+        </div>
+
+        <!-- MACRO SECTION -->
+        <div class="section-block">
+          <div class="card">
+            <div class="section-label">宏观指标 · Macro Data</div>
+<!-- MACRO:START -->
+<div class="macro-grid">
+  <div class="macro-card">
+    <div class="macro-indicator">CPI YoY</div>
+    <div class="macro-value">3.5%</div>
+    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 3.2%</div>
+    <div class="macro-desc">通胀意外反弹，降息预期推迟</div>
+  </div>
+  <div class="macro-card">
+    <div class="macro-indicator">NFP (K)</div>
+    <div class="macro-value">175K</div>
+    <div class="macro-prev"><span class="arrow down">↓</span> 前值: 303K</div>
+    <div class="macro-desc">就业增速大幅放缓，劳市降温</div>
+  </div>
+  <div class="macro-card">
+    <div class="macro-indicator">PCE Core YoY</div>
+    <div class="macro-value">2.8%</div>
+    <div class="macro-prev"><span class="arrow down">↓</span> 前值: 2.9%</div>
+    <div class="macro-desc">美联储最青睐指标小幅降温</div>
+  </div>
+  <div class="macro-card">
+    <div class="macro-indicator">GDP QoQ Ann.</div>
+    <div class="macro-value">1.6%</div>
+    <div class="macro-prev"><span class="arrow down">↓</span> 前值: 3.4%</div>
+    <div class="macro-desc">Q1经济增速不及预期，滞涨担忧上升</div>
+  </div>
+  <div class="macro-card">
+    <div class="macro-indicator">Unemployment</div>
+    <div class="macro-value">3.9%</div>
+    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 3.8%</div>
+    <div class="macro-desc">失业率小幅攀升，就业市场转凉</div>
+  </div>
+  <div class="macro-card">
+    <div class="macro-indicator">ISM Mfg PMI</div>
+    <div class="macro-value">50.3</div>
+    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 50.3</div>
+    <div class="macro-desc">制造业勉强维持扩张，需求疲软</div>
+  </div>
+</div>
+<!-- MACRO:END -->
+          </div>
+        </div>
+
+      </div><!-- /right-col -->
+    </div><!-- /two-col -->
+
+    <!-- =========================================================
+         EARNINGS SECTION (FULL WIDTH)
+    ========================================================= -->
+    <div class="section-block">
+      <div class="card">
+        <div class="section-label">财报追踪 · Earnings Tracker</div>
+<!-- EARNINGS:START -->
+<div class="earnings-grid">
+  <div class="earnings-card beat">
+    <div class="earnings-ticker">AAPL</div>
+    <div class="earnings-company">Apple Inc.</div>
+    <span class="earnings-beat-badge beat">BEAT ✓</span>
+    <div class="earnings-eps">
+      <div class="eps-item">
+        <div class="eps-label">EPS ACTUAL</div>
+        <div class="eps-value actual beat">$1.53</div>
+      </div>
+      <div class="eps-item">
+        <div class="eps-label">EPS EST.</div>
+        <div class="eps-value est">$1.50</div>
+      </div>
+    </div>
+    <div class="earnings-revenue">收入: <span>$90.8B</span></div>
+    <div class="earnings-highlight">服务收入创历史新高$239亿，宣布1100亿回购</div>
+  </div>
+  <div class="earnings-card beat">
+    <div class="earnings-ticker">AMZN</div>
+    <div class="earnings-company">Amazon.com Inc.</div>
+    <span class="earnings-beat-badge beat">BEAT ✓</span>
+    <div class="earnings-eps">
+      <div class="eps-item">
+        <div class="eps-label">EPS ACTUAL</div>
+        <div class="eps-value actual beat">$0.98</div>
+      </div>
+      <div class="eps-item">
+        <div class="eps-label">EPS EST.</div>
+        <div class="eps-value est">$0.83</div>
+      </div>
+    </div>
+    <div class="earnings-revenue">收入: <span>$143.3B</span></div>
+    <div class="earnings-highlight">AWS增长17%超预期，AI基础设施投资加速</div>
+  </div>
+  <div class="earnings-card beat">
+    <div class="earnings-ticker">META</div>
+    <div class="earnings-company">Meta Platforms</div>
+    <span class="earnings-beat-badge beat">BEAT ✓</span>
+    <div class="earnings-eps">
+      <div class="eps-item">
+        <div class="eps-label">EPS ACTUAL</div>
+        <div class="eps-value actual beat">$4.71</div>
+      </div>
+      <div class="eps-item">
+        <div class="eps-label">EPS EST.</div>
+        <div class="eps-value est">$4.32</div>
+      </div>
+    </div>
+    <div class="earnings-revenue">收入: <span>$36.5B</span></div>
+    <div class="earnings-highlight">广告收入强劲，日活用户达32亿创新高</div>
+  </div>
+  <div class="earnings-card miss">
+    <div class="earnings-ticker">GOOGL</div>
+    <div class="earnings-company">Alphabet Inc.</div>
+    <span class="earnings-beat-badge miss">MISS ✗</span>
+    <div class="earnings-eps">
+      <div class="eps-item">
+        <div class="eps-label">EPS ACTUAL</div>
+        <div class="eps-value actual miss">$1.89</div>
+      </div>
+      <div class="eps-item">
+        <div class="eps-label">EPS EST.</div>
+        <div class="eps-value est">$1.95</div>
+      </div>
+    </div>
+    <div class="earnings-revenue">收入: <span>$80.5B</span></div>
+    <div class="earnings-highlight">搜索广告承压，AI竞争加剧，云业务增长放缓</div>
+  </div>
+  <div class="earnings-card beat">
+    <div class="earnings-ticker">MSFT</div>
+    <div class="earnings-company">Microsoft Corp.</div>
+    <span class="earnings-beat-badge beat">BEAT ✓</span>
+    <div class="earnings-eps">
+      <div class="eps-item">
+        <div class="eps-label">EPS ACTUAL</div>
+        <div class="eps-value actual beat">$2.94</div>
+      </div>
+      <div class="eps-item">
+        <div class="eps-label">EPS EST.</div>
+        <div class="eps-value est">$2.82</div>
+      </div>
+    </div>
+    <div class="earnings-revenue">收入: <span>$61.9B</span></div>
+    <div class="earnings-highlight">Azure增长31%超预期，Copilot企业订阅增速加快</div>
+  </div>
+  <div class="earnings-card pending">
+    <div class="earnings-ticker">NVDA</div>
+    <div class="earnings-company">NVIDIA Corp.</div>
+    <span class="earnings-beat-badge pending">UPCOMING</span>
+    <div class="earnings-eps">
+      <div class="eps-item">
+        <div class="eps-label">EPS EST.</div>
+        <div class="eps-value est">$5.59</div>
+      </div>
+      <div class="eps-item">
+        <div class="eps-label">REPORT DATE</div>
+        <div class="eps-value est" style="font-size:0.75rem;">2025-05-28</div>
+      </div>
+    </div>
+    <div class="earnings-revenue">收入预期: <span>$24.6B</span></div>
+    <div class="earnings-highlight">市场高度关注数据中心收入及Blackwell芯片需求</div>
+  </div>
+</div>
+<!-- EARNINGS:END -->
+      </div>
+    </div>
+
+    <!-- =========================================================
+         SECTORS SECTION (FULL WIDTH)
+    ========================================================= -->
+    <div class="section-block">
+      <div class="card">
+        <div class="section-label">板块表现 · Sector Performance</div>
+<!-- SECTORS:START -->
+<div class="sectors-list">
+  <div class="sector-row">
+    <div><div class="sector-name">科技</div><div class="sector-name-en">Technology</div></div>
+    <div class="sector-etf">XLK</div>
+    <div class="sector-bar-wrap"><div class="sector-bar up" style="width:72%"></div></div>
+    <div class="sector-pct up">+1.82%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">通信服务</div><div class="sector-name-en">Communication</div></div>
+    <div class="sector-etf">XLC</div>
+    <div class="sector-bar-wrap"><div class="sector-bar up" style="width:55%"></div></div>
+    <div class="sector-pct up">+1.12%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">非必需消费</div><div class="sector-name-en">Cons. Discret.</div></div>
+    <div class="sector-etf">XLY</div>
+    <div class="sector-bar-wrap"><div class="sector-bar up" style="width:43%"></div></div>
+    <div class="sector-pct up">+0.74%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">金融</div><div class="sector-name-en">Financials</div></div>
+    <div class="sector-etf">XLF</div>
+    <div class="sector-bar-wrap"><div class="sector-bar up" style="width:38%"></div></div>
+    <div class="sector-pct up">+0.52%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">医疗健康</div><div class="sector-name-en">Health Care</div></div>
+    <div class="sector-etf">XLV</div>
+    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:25%"></div></div>
+    <div class="sector-pct down">-0.31%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">工业</div><div class="sector-name-en">Industrials</div></div>
+    <div class="sector-etf">XLI</div>
+    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:30%"></div></div>
+    <div class="sector-pct down">-0.44%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">能源</div><div class="sector-name-en">Energy</div></div>
+    <div class="sector-etf">XLE</div>
+    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:55%"></div></div>
+    <div class="sector-pct down">-1.23%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">必需消费</div><div class="sector-name-en">Cons. Staples</div></div>
+    <div class="sector-etf">XLP</div>
+    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:18%"></div></div>
+    <div class="sector-pct down">-0.18%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">公用事业</div><div class="sector-name-en">Utilities</div></div>
+    <div class="sector-etf">XLU</div>
+    <div class="sector-bar-wrap"><div class="sector-bar up" style="width:28%"></div></div>
+    <div class="sector-pct up">+0.22%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">房地产</div><div class="sector-name-en">Real Estate</div></div>
+    <div class="sector-etf">XLRE</div>
+    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:45%"></div></div>
+    <div class="sector-pct down">-0.88%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">材料</div><div class="sector-name-en">Materials</div></div>
+    <div class="sector-etf">XLB</div>
+    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:20%"></div></div>
+    <div class="sector-pct down">-0.21%</div>
+  </div>
+</div>
+<!-- SECTORS:END -->
+      </div>
+    </div>
+
+  </div><!-- /container -->
+</main>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span>© 2025 金融日报 · Financial Daily &nbsp;|&nbsp; Powered by <a href="https://www.anthropic.com" target="_blank">Claude AI</a></span>
+      <span>内容由AI自动生成，仅供参考，不构成投资建议</span>
+      <a href="feed.xml">RSS Feed</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Set current date
+  (function() {
+    const el = document.getElementById('current-date');
+    const now = new Date();
+    const opts = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'short' };
+    el.textContent = now.toLocaleDateString('zh-CN', opts);
+  })();
+
+  // Highlight data age
+  (function() {
+    const metaEl = document.querySelector('meta[name="last-updated"]');
+    if (metaEl) {
+      const updated = new Date(metaEl.content);
+      const age = Math.round((Date.now() - updated) / 3600000);
+      if (age > 12) {
+        const badge = document.querySelector('.header-badge');
+        if (badge) badge.style.borderColor = 'rgba(255,179,0,0.4)';
+      }
+    }
+  })();
+</script>
+
+</body>
+</html>
