@@ -975,6 +975,9 @@
 
     body.simple-mode .two-col { grid-template-columns: 1fr !important; }
     body.simple-mode .news-item:not(.featured) { display: none !important; }
+    body.simple-mode .macro-section { display: none !important; }
+    body.simple-mode .section-jumps { display: none !important; }
+    body.simple-mode .personal-section { margin-top: 8px; }
 
     /* tldr: only visible in simple mode */
     .news-tldr { display: none; }
@@ -1119,6 +1122,54 @@
     .rss-btn:hover { background:rgba(255,130,0,0.22); text-decoration:none; color:#ff8200; }
     .copy-btn { background:rgba(79,195,247,0.1); color:var(--neutral); border:1px solid rgba(79,195,247,0.25); }
     .copy-btn:hover { background:rgba(79,195,247,0.2); text-decoration:none; color:var(--neutral); }
+
+    /* ── Section jump nav ─────────────────────────────────── */
+    .section-jumps {
+      display: flex; gap: 4px; flex-wrap: wrap;
+    }
+    .section-jumps a {
+      font-size: 0.68rem; font-family: var(--mono);
+      color: var(--dimmed); padding: 3px 9px;
+      border: 1px solid var(--border); border-radius: 4px;
+      transition: all 0.2s; text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .section-jumps a:hover {
+      color: var(--accent); border-color: rgba(0,212,170,0.4);
+      background: rgba(0,212,170,0.06); text-decoration: none;
+    }
+
+    /* ── Macro card color by direction ────────────────────── */
+    .macro-card.dir-up   { border-left: 3px solid var(--up); }
+    .macro-card.dir-down { border-left: 3px solid var(--down); }
+    .macro-card.dir-neutral { border-left: 3px solid var(--dimmed); }
+    .macro-value-up   { color: var(--up)   !important; }
+    .macro-value-down { color: var(--down) !important; }
+
+    /* ── VIX/term tooltip ──────────────────────────────────── */
+    .fin-term {
+      border-bottom: 1px dashed var(--dimmed);
+      cursor: help; position: relative;
+    }
+    .fin-term::after {
+      content: attr(data-tip);
+      position: absolute; bottom: 120%; left: 50%;
+      transform: translateX(-50%);
+      background: #1a2a4a; color: var(--text);
+      font-size: 0.65rem; line-height: 1.4;
+      padding: 5px 9px; border-radius: 5px;
+      white-space: nowrap; pointer-events: none;
+      opacity: 0; transition: opacity 0.2s;
+      border: 1px solid var(--border-light);
+      z-index: 999;
+    }
+    .fin-term:hover::after { opacity: 1; }
+
+    /* ── Summary headline larger ───────────────────────────── */
+    .summary-headline { font-size: 1.15rem !important; }
+
+    /* ── Personal section compact when at top ─────────────── */
+    #sec-my.section-block { margin-top: 0; margin-bottom: 16px; }
     /* live data age warning */
     .data-stale { border-color: rgba(255,179,0,0.35) !important; }
 
@@ -1226,13 +1277,54 @@
     <div class="summary-context">鲍威尔5月会议偏鹰派讲话令全年降息预期压缩至1次，但4月非农就业数据不及预期再度点燃宽松预期。两股力量相互博弈，美股在科技财报超预期支撑下维持韧性，债市波动率上升。北美华人投资者需关注人民币汇率走势及A股政策面支撑力度。</div>
     <div class="summary-meta">
       <span class="sentiment-badge neutral">中性 · Neutral</span>
-      <span class="vix-display">VIX 恐慌指数: <span>16.4</span></span>
+      <span class="vix-display"><span class="fin-term" data-tip="VIX = 标普500期权隐含波动率，数值越高代表市场越恐慌">VIX 恐慌指数</span>: <span>16.4</span></span>
     </div>
   </div>
 </div>
 <!-- SUMMARY:END -->
   </div>
 </section>
+
+<!-- =========================================================
+         PERSONAL DASHBOARD — Watchlist + Portfolio
+    ========================================================= -->
+    <div class="section-block personal-section" id="sec-my">
+      <div class="card">
+        <div class="personal-header">
+          <div class="section-label">⭐ 我的工作台 · My Dashboard</div>
+          <span class="personal-privacy">🔒 数据存本地 · 不上传服务器</span>
+        </div>
+        <div class="ptabs">
+          <button class="ptab active" id="ptab-wl" onclick="switchTab(event,'wl')">📋 自选股</button>
+          <button class="ptab" id="ptab-pf" onclick="switchTab(event,'pf')">💼 持仓盈亏</button>
+        </div>
+        <div id="panel-wl">
+          <div class="add-row">
+            <input id="wl-sym" placeholder="代码，如 AAPL / 000001.SS / BTC-USD" />
+            <input id="wl-name" placeholder="备注名（可选）" />
+            <button onclick="wlAdd()">＋ 添加</button>
+          </div>
+          <div id="wl-empty" class="p-empty">还没有自选股，输入代码开始追踪 →</div>
+          <div id="wl-list" class="wl-list"></div>
+        </div>
+        <div id="panel-pf" style="display:none">
+          <div class="add-row">
+            <input id="pf-sym"    placeholder="代码，如 AAPL / TSLA" />
+            <input id="pf-shares" type="number" min="0.0001" step="0.0001" placeholder="数量" />
+            <input id="pf-cost"   type="number" min="0" step="0.01" placeholder="买入均价 ($)" />
+            <button onclick="pfAdd()">＋ 添加持仓</button>
+          </div>
+          <div id="pf-empty" class="p-empty">还没有持仓记录，输入持仓开始计算浮盈浮亏 →</div>
+          <div id="pf-summary" class="pf-summary" style="display:none">
+            <div class="pf-sum-item">总成本<span id="sum-cost">—</span></div>
+            <div class="pf-sum-item">总市值<span id="sum-value">—</span></div>
+            <div class="pf-sum-item">总盈亏<span id="sum-pnl">—</span></div>
+            <div class="pf-sum-item">盈亏率<span id="sum-pct">—</span></div>
+          </div>
+          <div id="pf-list" class="pf-list"></div>
+        </div>
+      </div>
+    </div>
 
 <!-- =========================================================
      MAIN CONTENT
@@ -1389,7 +1481,7 @@
       <div class="right-col">
 
         <!-- NEWS SECTION -->
-        <div class="section-block news-section">
+        <div class="section-block news-section" id="sec-news">
           <div class="card">
             <div class="section-label">市场要闻 · Market News</div>
 <!-- NEWS:START -->
@@ -1515,50 +1607,9 @@
       </div><!-- /right-col -->
     </div><!-- /two-col -->
 
-    <!-- =========================================================
-         PERSONAL DASHBOARD — Watchlist + Portfolio
-    ========================================================= -->
-    <div class="section-block personal-section">
-      <div class="card">
-        <div class="personal-header">
-          <div class="section-label">⭐ 我的工作台 · My Dashboard</div>
-          <span class="personal-privacy">🔒 数据存本地 · 不上传服务器</span>
-        </div>
-        <div class="ptabs">
-          <button class="ptab active" id="ptab-wl" onclick="switchTab(event,'wl')">📋 自选股</button>
-          <button class="ptab" id="ptab-pf" onclick="switchTab(event,'pf')">💼 持仓盈亏</button>
-        </div>
-        <div id="panel-wl">
-          <div class="add-row">
-            <input id="wl-sym" placeholder="代码，如 AAPL / 000001.SS / BTC-USD" />
-            <input id="wl-name" placeholder="备注名（可选）" />
-            <button onclick="wlAdd()">＋ 添加</button>
-          </div>
-          <div id="wl-empty" class="p-empty">还没有自选股，输入代码开始追踪 →</div>
-          <div id="wl-list" class="wl-list"></div>
-        </div>
-        <div id="panel-pf" style="display:none">
-          <div class="add-row">
-            <input id="pf-sym"    placeholder="代码，如 AAPL / TSLA" />
-            <input id="pf-shares" type="number" min="0.0001" step="0.0001" placeholder="数量" />
-            <input id="pf-cost"   type="number" min="0" step="0.01" placeholder="买入均价 ($)" />
-            <button onclick="pfAdd()">＋ 添加持仓</button>
-          </div>
-          <div id="pf-empty" class="p-empty">还没有持仓记录，输入持仓开始计算浮盈浮亏 →</div>
-          <div id="pf-summary" class="pf-summary" style="display:none">
-            <div class="pf-sum-item">总成本<span id="sum-cost">—</span></div>
-            <div class="pf-sum-item">总市值<span id="sum-value">—</span></div>
-            <div class="pf-sum-item">总盈亏<span id="sum-pnl">—</span></div>
-            <div class="pf-sum-item">盈亏率<span id="sum-pct">—</span></div>
-          </div>
-          <div id="pf-list" class="pf-list"></div>
-        </div>
-      </div>
-    </div>
-
     <!-- EARNINGS WRAP -->
     ========================================================= -->
-    <div class="section-block earnings-wrap">
+    <div class="section-block earnings-wrap" id="sec-earnings">
       <div class="card">
         <div class="section-label">财报追踪 · Earnings Tracker</div>
 <!-- EARNINGS:START -->
@@ -1852,7 +1903,7 @@
     <!-- =========================================================
          ECONOMIC CALENDAR (FULL WIDTH)
     ========================================================= -->
-    <div class="section-block calendar-wrap">
+    <div class="section-block calendar-wrap" id="sec-calendar">
       <div class="card">
         <div class="section-label">本周日程 · Economic Calendar</div>
 <!-- TradingView Economic Calendar: real-time, always accurate -->
@@ -2007,6 +2058,42 @@
   })();
 
 
+
+
+  // Auto-tooltip for financial jargon
+  const FIN_TERMS = {
+    'VIX': 'VIX = 标普期权隐含波动率，越高越恐慌',
+    'PCE': 'PCE = 个人消费支出物价指数，美联储首选通胀指标',
+    'NFP': 'NFP = 非农就业人数，衡量美国就业市场健康度',
+    'CPI': 'CPI = 消费者物价指数，最常见通胀衡量指标',
+    'PMI': 'PMI > 50 = 经济扩张；PMI < 50 = 经济收缩',
+    'QE':  'QE = 量化宽松，央行购买债券向市场注入流动性',
+    '鹰派': '鹰派 = 倾向加息/收紧货币政策，对抗通胀',
+    '鸽派': '鸽派 = 倾向降息/宽松货币政策，刺激经济',
+    'EPS': 'EPS = 每股收益，公司盈利能力的核心指标',
+    'DXY': 'DXY = 美元指数，衡量美元对六大货币的强弱',
+  };
+  document.addEventListener('DOMContentLoaded', function() {
+    const walker = document.createTreeWalker(
+      document.querySelector('.macro-section') || document.body,
+      NodeFilter.SHOW_TEXT
+    );
+    // Only apply to macro + news sections to avoid performance issues
+    ['macro-section','news-section','cb-grid'].forEach(cls => {
+      const sec = document.querySelector('.' + cls);
+      if (!sec) return;
+      Object.entries(FIN_TERMS).forEach(([term, tip]) => {
+        sec.querySelectorAll('.macro-indicator, .cb-action, .news-body').forEach(el => {
+          if (el.innerHTML.includes(term) && !el.innerHTML.includes('fin-term')) {
+            el.innerHTML = el.innerHTML.replace(
+              new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'g'),
+              `<span class="fin-term" data-tip="${tip}">$1</span>`
+            );
+          }
+        });
+      });
+    });
+  });
 
   function copyRSS(e) {
     e.preventDefault();

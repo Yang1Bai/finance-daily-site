@@ -284,17 +284,30 @@ def render_news(news: list) -> str:
     return "\n".join(html_parts)
 
 
+# Indicators where "up" is bad (inflation-related)
+_BEARISH_UP = {"CPI","PCE","PPI","CPI YoY","PCE YoY","PPI YoY","失业率","Unemployment","通胀"}
+
 def render_macro(macro: list) -> str:
     html_parts = ["<div class=\"macro-grid\">"]
     for m in macro:
         direction = m.get("direction", "neutral")
-        arrow_sym = "↑" if direction == "up" else ("↓" if direction == "down" else "→")
-        arrow_cls = "up" if direction == "up" else ("down" if direction == "down" else "")
-        html_parts.append(f"""  <div class="macro-card">
-    <div class="macro-indicator">{m.get('indicator','')}</div>
-    <div class="macro-value">{m.get('value','')}</div>
-    <div class="macro-prev"><span class="arrow {arrow_cls}">{arrow_sym}</span> 前值: {m.get('prev','')}</div>
-    <div class="macro-desc">{m.get('description','')}</div>
+        indicator = m.get("indicator","")
+        # For inflation-type indicators, "up" is bad
+        bearish_up = any(k in indicator for k in _BEARISH_UP)
+        if direction == "up":
+            val_cls = "macro-value-down" if bearish_up else "macro-value-up"
+            arrow_sym, arrow_cls, card_cls = "↑", "up", "dir-up"
+        elif direction == "down":
+            val_cls = "macro-value-up" if bearish_up else "macro-value-down"
+            arrow_sym, arrow_cls, card_cls = "↓", "down", "dir-down"
+        else:
+            val_cls, arrow_sym, arrow_cls, card_cls = "", "→", "", "dir-neutral"
+        def esc(s): return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+        html_parts.append(f"""  <div class="macro-card {card_cls}">
+    <div class="macro-indicator">{esc(indicator)}</div>
+    <div class="macro-value {val_cls}">{esc(m.get('value',''))}</div>
+    <div class="macro-prev"><span class="arrow {arrow_cls}">{arrow_sym}</span> 前值: {esc(m.get('prev',''))}</div>
+    <div class="macro-desc">{esc(m.get('description',''))}</div>
   </div>""")
     html_parts.append("</div>")
     return "\n".join(html_parts)
