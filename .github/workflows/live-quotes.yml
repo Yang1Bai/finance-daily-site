@@ -2,10 +2,10 @@ name: Live Quotes Update
 
 on:
   schedule:
-    # During US market hours (9:30-17:00 ET = 13:30-21:00 UTC), run every 30 min on weekdays
-    - cron: '0,30 13-21 * * 1-5'
-    # Off-hours: once per hour for overnight Asian/European markets
-    - cron: '0 0-12,22-23 * * *'
+    # After US market close (21:30 UTC = 17:30 ET), weekdays only
+    - cron: '30 21 * * 1-5'
+    # Weekend: once daily for Asian market reference
+    - cron: '0 2 * * 0,6'
   workflow_dispatch:
 
 permissions:
