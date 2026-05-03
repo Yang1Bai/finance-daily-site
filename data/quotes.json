@@ -1,0 +1,94 @@
+{
+  "updated": "2026-05-03T05:55:11.872909+00:00",
+  "source": "yfinance",
+  "quotes": [
+    {
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "value": "7,230.12",
+      "change": "+21.11",
+      "change_pct": "+0.29%",
+      "direction": "up"
+    },
+    {
+      "name": "NASDAQ",
+      "symbol": "^IXIC",
+      "value": "25,114",
+      "change": "+222.13",
+      "change_pct": "+0.89%",
+      "direction": "up"
+    },
+    {
+      "name": "DOW",
+      "symbol": "^DJI",
+      "value": "49,499",
+      "change": "-152.87",
+      "change_pct": "-0.31%",
+      "direction": "down"
+    },
+    {
+      "name": "上证指数",
+      "symbol": "000001.SS",
+      "value": "4,112.16",
+      "change": "+4.65",
+      "change_pct": "+0.11%",
+      "direction": "up"
+    },
+    {
+      "name": "恒生指数",
+      "symbol": "^HSI",
+      "value": "25,777",
+      "change": "-335.31",
+      "change_pct": "-1.28%",
+      "direction": "down"
+    },
+    {
+      "name": "日经225",
+      "symbol": "^N225",
+      "value": "59,513",
+      "change": "+228.20",
+      "change_pct": "+0.38%",
+      "direction": "up"
+    },
+    {
+      "name": "德国DAX",
+      "symbol": "^GDAXI",
+      "value": "24,292",
+      "change": "+337.82",
+      "change_pct": "+1.41%",
+      "direction": "up"
+    },
+    {
+      "name": "黄金 XAU",
+      "symbol": "GC=F",
+      "value": "4,644.50",
+      "change": "+29.80",
+      "change_pct": "+0.65%",
+      "direction": "up"
+    },
+    {
+      "name": "原油 WTI",
+      "symbol": "CL=F",
+      "value": "101.94",
+      "change": "-3.13",
+      "change_pct": "-2.98%",
+      "direction": "down"
+    },
+    {
+      "name": "BTC/USD",
+      "symbol": "BTC-USD",
+      "value": "78,238",
+      "change": "+58.51",
+      "change_pct": "+0.07%",
+      "direction": "up"
+    },
+    {
+      "name": "美元指数",
+      "symbol": "DX-Y.NYB",
+      "value": "98.2100",
+      "change": "+0.13",
+      "change_pct": "+0.13%",
+      "direction": "up"
+    }
+  ]
+}
