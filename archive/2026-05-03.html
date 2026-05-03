@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="金融日报 — 由 Claude AI + Web Search 自动生成的每日金融市场摘要">
-  <title>金融日报 2026年5月3日 | Financial Daily</title>
+  <meta name="description" content="金融日报 — 北美华人投资者专属每日金融简报，由 Claude AI + Web Search 自动生成，每日两次更新">
+  <meta property="og:title" content="金融日报 | Financial Daily">
+  <meta property="og:description" content="北美华人投资者专属：全球指数·市场要闻·宏观数据·财报追踪·经济日历，每日自动更新">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="金融日报,北美投资,美股,A股,港股,宏观经济,财报,经济日历">
+  <title>金融日报 | Financial Daily — 北美华人投资者日报</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
@@ -971,6 +975,9 @@
 
     body.simple-mode .two-col { grid-template-columns: 1fr !important; }
     body.simple-mode .news-item:not(.featured) { display: none !important; }
+    body.simple-mode .macro-section { display: none !important; }
+    body.simple-mode .section-jumps { display: none !important; }
+    body.simple-mode .personal-section { margin-top: 8px; }
 
     /* tldr: only visible in simple mode */
     .news-tldr { display: none; }
@@ -1017,6 +1024,152 @@
     body.simple-mode .simple-banner { display: block; }
     .simple-banner a { color: var(--accent); cursor: pointer; }
 
+
+    /* =========================================================
+       PERSONAL DASHBOARD
+    ========================================================= */
+    .personal-section { margin-bottom: 20px; }
+    .personal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
+    .personal-privacy { font-size:0.62rem; color:var(--dimmed); font-family:var(--mono); }
+
+    .ptabs { display:flex; gap:6px; margin-bottom:16px; }
+    .ptab {
+      background:var(--bg); border:1px solid var(--border);
+      border-radius:6px; padding:6px 18px;
+      color:var(--muted); font-size:0.78rem; cursor:pointer;
+      transition:all 0.2s; font-family:var(--sans);
+    }
+    .ptab.active { background:rgba(0,212,170,0.1); border-color:var(--accent); color:var(--accent); }
+    .p-empty { color:var(--dimmed); font-size:0.78rem; padding:24px 0; text-align:center; }
+
+    .add-row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; }
+    .add-row input {
+      background:var(--bg); border:1px solid var(--border);
+      border-radius:var(--radius); padding:7px 12px;
+      color:var(--text); font-size:0.78rem; flex:1; min-width:100px;
+      outline:none; transition:border-color 0.2s; font-family:var(--mono);
+    }
+    .add-row input:focus { border-color:var(--accent); }
+    .add-row button {
+      background:var(--accent); color:#07111e;
+      border:none; border-radius:var(--radius); padding:7px 16px;
+      font-size:0.78rem; font-weight:600; cursor:pointer;
+      transition:all 0.2s; white-space:nowrap;
+    }
+    .add-row button:hover { background:#33e0be; }
+
+    /* Watchlist */
+    .wl-list { display:grid; grid-template-columns:repeat(auto-fill, minmax(200px,1fr)); gap:10px; }
+    .wl-card {
+      background:var(--bg); border:1px solid var(--border);
+      border-radius:var(--radius); padding:14px;
+      transition:all 0.2s; position:relative;
+    }
+    .wl-card:hover { border-color:var(--border-light); transform:translateY(-1px); box-shadow:var(--shadow); }
+    .wl-card-top { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px; }
+    .wl-sym { font-family:var(--mono); font-size:0.85rem; font-weight:700; color:var(--text); }
+    .wl-alias { font-size:0.65rem; color:var(--muted); margin-top:2px; }
+    .wl-rm { background:none; border:none; color:var(--dimmed); font-size:1.1rem; cursor:pointer; padding:0; line-height:1; transition:color 0.15s; }
+    .wl-rm:hover { color:var(--down); }
+    .wl-price-block { display:flex; align-items:baseline; gap:6px; flex-wrap:wrap; }
+    .wl-price { font-family:var(--mono); font-size:1.1rem; font-weight:700; color:var(--text); }
+    .wl-cur { font-size:0.6rem; color:var(--muted); font-family:var(--mono); }
+    .wl-loading { font-size:0.72rem; color:var(--dimmed); }
+    .wl-prev { font-size:0.62rem; color:var(--dimmed); font-family:var(--mono); margin-top:3px; }
+
+    /* Portfolio */
+    .pf-summary {
+      display:flex; gap:0; margin-bottom:14px;
+      background:rgba(0,212,170,0.04); border:1px solid rgba(0,212,170,0.15);
+      border-radius:var(--radius); overflow:hidden;
+    }
+    .pf-sum-item {
+      flex:1; padding:12px 16px; text-align:center;
+      border-right:1px solid rgba(0,212,170,0.1); font-size:0.7rem;
+      color:var(--muted);
+    }
+    .pf-sum-item:last-child { border-right:none; }
+    .pf-sum-item span {
+      display:block; font-family:var(--mono); font-size:1rem;
+      font-weight:700; color:var(--text); margin-top:4px;
+    }
+    .pf-pnl-pos { color:var(--up) !important; }
+    .pf-pnl-neg { color:var(--down) !important; }
+
+    .pf-list { display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:10px; }
+    .pf-card {
+      background:var(--bg); border:1px solid var(--border);
+      border-radius:var(--radius); padding:14px;
+      transition:all 0.2s;
+    }
+    .pf-card:hover { border-color:var(--border-light); }
+    .pf-card-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+    .pf-sym { font-family:var(--mono); font-size:0.9rem; font-weight:700; color:var(--text); }
+    .pf-meta { font-size:0.7rem; color:var(--muted); margin-bottom:8px; line-height:1.7; }
+    .pf-pnl-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:6px; border-top:1px solid var(--border); padding-top:8px; }
+    .pf-cur-price { font-family:var(--mono); font-size:0.85rem; font-weight:600; color:var(--text); }
+    .pf-gain { font-family:var(--mono); font-size:0.8rem; font-weight:600; }
+    .pf-gain.pos { color:var(--up); }
+    .pf-gain.neg { color:var(--down); }
+
+    .sub-btn {
+      display:inline-flex; align-items:center; gap:6px;
+      padding:7px 16px; border-radius:var(--radius);
+      font-size:0.78rem; font-weight:600; cursor:pointer;
+      text-decoration:none; transition:all 0.2s; border:none;
+    }
+    .rss-btn { background:rgba(255,130,0,0.12); color:#ff8200; border:1px solid rgba(255,130,0,0.3); }
+    .rss-btn:hover { background:rgba(255,130,0,0.22); text-decoration:none; color:#ff8200; }
+    .copy-btn { background:rgba(79,195,247,0.1); color:var(--neutral); border:1px solid rgba(79,195,247,0.25); }
+    .copy-btn:hover { background:rgba(79,195,247,0.2); text-decoration:none; color:var(--neutral); }
+
+    /* ── Section jump nav ─────────────────────────────────── */
+    .section-jumps {
+      display: flex; gap: 4px; flex-wrap: wrap;
+    }
+    .section-jumps a {
+      font-size: 0.68rem; font-family: var(--mono);
+      color: var(--dimmed); padding: 3px 9px;
+      border: 1px solid var(--border); border-radius: 4px;
+      transition: all 0.2s; text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .section-jumps a:hover {
+      color: var(--accent); border-color: rgba(0,212,170,0.4);
+      background: rgba(0,212,170,0.06); text-decoration: none;
+    }
+
+    /* ── Macro card color by direction ────────────────────── */
+    .macro-card.dir-up   { border-left: 3px solid var(--up); }
+    .macro-card.dir-down { border-left: 3px solid var(--down); }
+    .macro-card.dir-neutral { border-left: 3px solid var(--dimmed); }
+    .macro-value-up   { color: var(--up)   !important; }
+    .macro-value-down { color: var(--down) !important; }
+
+    /* ── VIX/term tooltip ──────────────────────────────────── */
+    .fin-term {
+      border-bottom: 1px dashed var(--dimmed);
+      cursor: help; position: relative;
+    }
+    .fin-term::after {
+      content: attr(data-tip);
+      position: absolute; bottom: 120%; left: 50%;
+      transform: translateX(-50%);
+      background: #1a2a4a; color: var(--text);
+      font-size: 0.65rem; line-height: 1.4;
+      padding: 5px 9px; border-radius: 5px;
+      white-space: nowrap; pointer-events: none;
+      opacity: 0; transition: opacity 0.2s;
+      border: 1px solid var(--border-light);
+      z-index: 999;
+    }
+    .fin-term:hover::after { opacity: 1; }
+
+    /* ── Summary headline larger ───────────────────────────── */
+    .summary-headline { font-size: 1.15rem !important; }
+
+    /* ── Personal section compact when at top ─────────────── */
+    #sec-my.section-block { margin-top: 0; margin-bottom: 16px; }
     /* live data age warning */
     .data-stale { border-color: rgba(255,179,0,0.35) !important; }
 
@@ -1055,7 +1208,7 @@
     <div class="indices-track">
 <!-- INDICES:START -->
 <div class="ticker-card up">
-  <div class="ticker-name">标普500</div>
+  <div class="ticker-name">S&P 500</div>
   <div class="ticker-value">7,230.12</div>
   <div class="ticker-change up">▲ +0.29%</div>
 </div>
@@ -1069,15 +1222,15 @@
   <div class="ticker-value">49,499.27</div>
   <div class="ticker-change down">▼ -0.31%</div>
 </div>
-<div class="ticker-card neutral">
-  <div class="ticker-name">上证综指</div>
-  <div class="ticker-value">约3,850</div>
-  <div class="ticker-change neutral">– 约0%</div>
+<div class="ticker-card up">
+  <div class="ticker-name">上证综合指数</div>
+  <div class="ticker-value">4,023</div>
+  <div class="ticker-change up">▲ +1.38%</div>
 </div>
 <div class="ticker-card down">
   <div class="ticker-name">恒生指数</div>
-  <div class="ticker-value">25,910.95</div>
-  <div class="ticker-change down">▼ -0.26%</div>
+  <div class="ticker-value">25,776.53</div>
+  <div class="ticker-change down">▼ -1.28%</div>
 </div>
 <div class="ticker-card down">
   <div class="ticker-name">日经225</div>
@@ -1086,8 +1239,8 @@
 </div>
 <div class="ticker-card up">
   <div class="ticker-name">德国DAX</div>
-  <div class="ticker-value">24,292.38</div>
-  <div class="ticker-change up">▲ +1.41%</div>
+  <div class="ticker-value">10,348</div>
+  <div class="ticker-change up">▲ +1.33%</div>
 </div>
 <div class="ticker-card up">
   <div class="ticker-name">黄金现货</div>
@@ -1101,18 +1254,18 @@
 </div>
 <div class="ticker-card up">
   <div class="ticker-name">比特币</div>
-  <div class="ticker-value">78,502.78</div>
-  <div class="ticker-change up">▲ +0.20%</div>
+  <div class="ticker-value">78,466.24</div>
+  <div class="ticker-change up">▲ +0.28%</div>
+</div>
+<div class="ticker-card down">
+  <div class="ticker-name">美元指数</div>
+  <div class="ticker-value">101.8</div>
+  <div class="ticker-change down">▼ -0.49%</div>
 </div>
 <div class="ticker-card up">
-  <div class="ticker-name">美元指数</div>
-  <div class="ticker-value">约97.8</div>
-  <div class="ticker-change up">▲ 约+0.3%</div>
-</div>
-<div class="ticker-card neutral">
   <div class="ticker-name">离岸人民币</div>
-  <div class="ticker-value">约7.25</div>
-  <div class="ticker-change neutral">– 约0%</div>
+  <div class="ticker-value">7.18</div>
+  <div class="ticker-change up">▲ +0.28%</div>
 </div>
 <!-- INDICES:END -->
     </div>
@@ -1130,8 +1283,8 @@
   <div class="summary-icon">📊</div>
   <div class="summary-content">
     <div class="summary-label">今日大势 · Daily Market Thesis</div>
-    <div class="summary-headline">科技财报支撑美股续创新高，油价回落缓和通胀担忧</div>
-    <div class="summary-context">标普500及纳指5月首个交易日双双刷新历史纪录，苹果强劲财报提振科技板块，iPhone 17销售超预期推动股价涨超3%。伊朗和平提议令原油价格从战时高点回落，WTI跌破102美元/桶，缓解了市场对能源通胀的担忧。美联储维持利率不变但内部分歧加大，4名委员反对声明措辞，凸显政策走向不确定性。对北美华人投资者而言,科技成长股与防御性资产的平衡配置尤为重要,同时需关注中美贸易磋商进展。</div>
+    <div class="summary-headline">科技财报驱动美股创新高，油价回落缓解通胀担忧</div>
+    <div class="summary-context">标普500与纳指5月1日双双刷新历史纪录，苹果强劲财报提振科技板块涨逾3%。美伊冲突持续推高油价至102美元，但5月1日原油回落3%释放积极信号。美联储4月29日维持利率不变，鲍威尔警告通胀风险加剧，2026年降息预期几近消失，对持有美股ETF的华人投资者而言需警惕高估值与加息风险共振。</div>
     <div class="summary-meta">
       <span class="sentiment-badge neutral">中性 · Neutral</span>
       <span class="vix-display">VIX 恐慌指数: <span>16.99</span></span>
@@ -1141,6 +1294,47 @@
 <!-- SUMMARY:END -->
   </div>
 </section>
+
+<!-- =========================================================
+         PERSONAL DASHBOARD — Watchlist + Portfolio
+    ========================================================= -->
+    <div class="section-block personal-section" id="sec-my">
+      <div class="card">
+        <div class="personal-header">
+          <div class="section-label">⭐ 我的工作台 · My Dashboard</div>
+          <span class="personal-privacy">🔒 数据存本地 · 不上传服务器</span>
+        </div>
+        <div class="ptabs">
+          <button class="ptab active" id="ptab-wl" onclick="switchTab(event,'wl')">📋 自选股</button>
+          <button class="ptab" id="ptab-pf" onclick="switchTab(event,'pf')">💼 持仓盈亏</button>
+        </div>
+        <div id="panel-wl">
+          <div class="add-row">
+            <input id="wl-sym" placeholder="代码，如 AAPL / 000001.SS / BTC-USD" />
+            <input id="wl-name" placeholder="备注名（可选）" />
+            <button onclick="wlAdd()">＋ 添加</button>
+          </div>
+          <div id="wl-empty" class="p-empty">还没有自选股，输入代码开始追踪 →</div>
+          <div id="wl-list" class="wl-list"></div>
+        </div>
+        <div id="panel-pf" style="display:none">
+          <div class="add-row">
+            <input id="pf-sym"    placeholder="代码，如 AAPL / TSLA" />
+            <input id="pf-shares" type="number" min="0.0001" step="0.0001" placeholder="数量" />
+            <input id="pf-cost"   type="number" min="0" step="0.01" placeholder="买入均价 ($)" />
+            <button onclick="pfAdd()">＋ 添加持仓</button>
+          </div>
+          <div id="pf-empty" class="p-empty">还没有持仓记录，输入持仓开始计算浮盈浮亏 →</div>
+          <div id="pf-summary" class="pf-summary" style="display:none">
+            <div class="pf-sum-item">总成本<span id="sum-cost">—</span></div>
+            <div class="pf-sum-item">总市值<span id="sum-value">—</span></div>
+            <div class="pf-sum-item">总盈亏<span id="sum-pnl">—</span></div>
+            <div class="pf-sum-item">盈亏率<span id="sum-pct">—</span></div>
+          </div>
+          <div id="pf-list" class="pf-list"></div>
+        </div>
+      </div>
+    </div>
 
 <!-- =========================================================
      MAIN CONTENT
@@ -1161,32 +1355,6 @@
 <!-- LEADERS:START -->
 <div class="leader-card">
   <div class="leader-header">
-    <div class="leader-avatar jd">JD</div>
-    <div class="leader-meta">
-      <div class="leader-name">杰米·戴蒙 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Jamie Dimon</span></div>
-      <div class="leader-role">摩根大通CEO</div>
-    </div>
-    <div class="leader-date">4月11日</div>
-  </div>
-  <div class="leader-quote">"利率就像万有引力，影响几乎所有资产价格"</div>
-  <div class="leader-body">戴蒙在4月股东信中呼应巴菲特26年前的警告，强调当前经济环境的最大风险是通胀回升导致利率高企。他警告称下一个信贷周期的损失将超预期，并暗示AI颠覆的软件公司可能成为意外雷区。戴蒙将当前市场环境比作2005-2007年泡沫前夕，提醒投资者警惕估值风险。</div>
-  <div class="tags"><span class="tag">#利率</span><span class="tag">#信贷周期</span></div>
-</div>
-<div class="leader-card">
-  <div class="leader-header">
-    <div class="leader-avatar wb">WB</div>
-    <div class="leader-meta">
-      <div class="leader-name">沃伦·巴菲特 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Warren Buffett</span></div>
-      <div class="leader-role">伯克希尔哈撒韦前CEO</div>
-    </div>
-    <div class="leader-date">5月1日</div>
-  </div>
-  <div class="leader-quote">"国债赤字问题伤害过许多文明，我们并非免疫"</div>
-  <div class="leader-body">95岁的巴菲特于5月正式卸任伯克希尔CEO，由格雷格·阿贝尔接任。在年度股东大会上，巴菲特警告美国债务问题的长期风险，称政府支出控制是永远无法完全解决的难题。他对DOGE削减赤字的能力表示怀疑，并强调文明史证明债务危机可摧毁强国。</div>
-  <div class="tags"><span class="tag">#价值投资</span><span class="tag">#债务危机</span></div>
-</div>
-<div class="leader-card">
-  <div class="leader-header">
     <div class="leader-avatar jp">JP</div>
     <div class="leader-meta">
       <div class="leader-name">杰罗姆·鲍威尔 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Jerome Powell</span></div>
@@ -1194,22 +1362,48 @@
     </div>
     <div class="leader-date">4月29日</div>
   </div>
-  <div class="leader-quote">"对美联储的一系列法律攻击威胁我们不受政治因素影响的货币政策能力"</div>
-  <div class="leader-body">鲍威尔在4月29日FOMC会议后宣布，即使主席任期5月到期，他仍将留任理事会成员，此举打破先例。美联储维持利率3.5-3.75%不变，但出现罕见的4票反对，为1990年代初以来分歧最大的决议。鲍威尔强调需要看到更多通胀降温证据才会降息，2026年通胀预期中值上调至2.7%。</div>
-  <div class="tags"><span class="tag">#美联储</span><span class="tag">#利率</span></div>
+  <div class="leader-quote">"能源价格持续上涨令通胀前景恶化"</div>
+  <div class="leader-body">鲍威尔4月29日在其主席任期最后一次FOMC新闻发布会上警告，油价持续在100美元上方将推高通胀预期至2.7%，降息可能性显著恶化。他宣布5月15日卸任主席后将继续留任理事至2028年，以捍卫美联储独立性。市场预期2026年降息次数从年初的两次降至零，部分交易员甚至定价加息可能。</div>
+  <div class="tags"><span class="tag">#美联储</span><span class="tag">#通胀</span></div>
+</div>
+<div class="leader-card">
+  <div class="leader-header">
+    <div class="leader-avatar jd">JD</div>
+    <div class="leader-meta">
+      <div class="leader-name">杰米·戴蒙 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Jamie Dimon</span></div>
+      <div class="leader-role">摩根大通CEO</div>
+    </div>
+    <div class="leader-date">4月11日</div>
+  </div>
+  <div class="leader-quote">"利率如同万有引力，影响所有资产价格"</div>
+  <div class="leader-body">戴蒙4月在年度股东信中回应巴菲特26年前的警告，指出当前市场面临的最大风险是通胀抬头导致利率上行。他警告，下一轮信贷周期的打击将比预期更严重，意外行业可能是AI泡沫催生的过度杠杆化软件公司。戴蒙将当前市场环境比作2005-2007年，提醒投资者警惕过度乐观。</div>
+  <div class="tags"><span class="tag">#利率</span><span class="tag">#信贷周期</span></div>
+</div>
+<div class="leader-card">
+  <div class="leader-header">
+    <div class="leader-avatar wb">WB</div>
+    <div class="leader-meta">
+      <div class="leader-name">沃伦·巴菲特 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Warren Buffett</span></div>
+      <div class="leader-role">伯克希尔哈撒韦CEO</div>
+    </div>
+    <div class="leader-date">5月1日</div>
+  </div>
+  <div class="leader-quote">"利率是所有资产价格的万有引力"</div>
+  <div class="leader-body">巴菲特继任者格雷格·阿贝尔5月1日在奥马哈年度股东大会上发出3970亿美元警告，强调伯克希尔将继续持有大量现金应对市场波动。巴菲特本人已于5月卸任CEO，但其关于利率对估值影响的经典论断被市场重新引用。值得注意的是，戴蒙从伯克希尔挖走投资经理托德·库姆斯，巴菲特表示理解。</div>
+  <div class="tags"><span class="tag">#价值投资</span><span class="tag">#现金储备</span></div>
 </div>
 <div class="leader-card">
   <div class="leader-header">
     <div class="leader-avatar rd">RD</div>
     <div class="leader-meta">
-      <div class="leader-name">雷·达利欧 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Ray Dalio</span></div>
+      <div class="leader-name">达利欧 <span style="color:var(--muted);font-weight:400;font-size:0.78rem;">Ray Dalio</span></div>
       <div class="leader-role">桥水基金创始人</div>
     </div>
-    <div class="leader-date">6月初</div>
+    <div class="leader-date">4月下旬</div>
   </div>
-  <div class="leader-quote">"美国将不得不出售世界不想购买的债务规模，这是迫在眉睫的头等大事"</div>
-  <div class="leader-body">达利欧警告美国债务危机迫在眉睫，预测未来将出现"令人震惊的发展"来应对债务问题。他指出美国最终将面临无法找到足够买家的债务发行困境，这将引发严重经济危机。达利欧的警告与戴蒙、鲍威尔和马斯克对政府债务不可持续性的担忧产生共鸣。</div>
-  <div class="tags"><span class="tag">#债务危机</span><span class="tag">#宏观对冲</span></div>
+  <div class="leader-quote">"分散投资是应对市场不确定性的唯一免费午餐"</div>
+  <div class="leader-body">达利欧在最新市场评论中强调，2026年地缘政治风险（美伊冲突、中美贸易摩擦）与货币政策分化将加剧市场波动。他建议投资者增加另类资产配置，包括黄金和大宗商品，以对冲传统股债60/40组合的风险。达利欧指出，当前市场与2000年科网泡沫相似之处在于估值过高和资金过度集中于少数科技股。</div>
+  <div class="tags"><span class="tag">#全天候策略</span><span class="tag">#风险平价</span></div>
 </div>
 <!-- LEADERS:END -->
           </div>
@@ -1229,10 +1423,10 @@
       </div>
       <span class="bias-badge hawkish">Hawkish</span>
     </div>
-    <div class="cb-rate">3.5-3.75%</div>
-    <div class="cb-action">维持利率3.5-3.75%不变</div>
+    <div class="cb-rate">3.50-3.75%</div>
+    <div class="cb-action">维持利率3.50-3.75%不变，4名委员反对</div>
     <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2026-06-18</span></div>
-    <div class="cb-note">4票反对为1990年代初以来最大分歧，2026年通胀预期上调至2.7%，降息预期落空且有小概率加息</div>
+    <div class="cb-note">鲍威尔5月15日卸任主席，继任者Kevin Warsh预计带来更鹰派立场，2026年降息预期归零甚至出现加息定价</div>
   </div>
   <div class="cb-card">
     <div class="cb-header">
@@ -1242,10 +1436,10 @@
       </div>
       <span class="bias-badge neutral">Neutral</span>
     </div>
-    <div class="cb-rate">约2.0%</div>
-    <div class="cb-action">降息周期已结束</div>
-    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2026-02-05</span></div>
-    <div class="cb-note">拉加德称当前既不讨论加息也不讨论降息，未来两年通胀预期低于2%目标，处于'良好位置'</div>
+    <div class="cb-rate">2.0%</div>
+    <div class="cb-action">6月以来维持存款利率2.0%不变</div>
+    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2026-06-11</span></div>
+    <div class="cb-note">ECB认为已达到'合适位置'，通胀接近2%且增长正值，未来两年预计不会降息，2026年底或2027年或加息</div>
   </div>
   <div class="cb-card">
     <div class="cb-header">
@@ -1255,23 +1449,36 @@
       </div>
       <span class="bias-badge dovish">Dovish</span>
     </div>
-    <div class="cb-rate">MLF 2.3%</div>
-    <div class="cb-action">维持宽松立场</div>
-    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">常态化操作</span></div>
-    <div class="cb-note">预期2026年降息20bp和降准100bp，支持经济稳定增长，信贷增长疲软和政府借贷放缓将促使宽松</div>
+    <div class="cb-rate">3.10%</div>
+    <div class="cb-action">2026年预计降息20bp，降准100bp</div>
+    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2026-05-20</span></div>
+    <div class="cb-note">尽管经济好于预期，但消费疲软和房地产低迷要求政策保持支持性，十五五规划启动提供宽松空间</div>
   </div>
   <div class="cb-card">
     <div class="cb-header">
       <div>
-        <div class="cb-name">日本央行</div>
+        <div class="cb-name">日本银行</div>
         <div class="cb-name-en">Bank of Japan</div>
       </div>
       <span class="bias-badge hawkish">Hawkish</span>
     </div>
-    <div class="cb-rate">0.50%</div>
-    <div class="cb-action">12月加息25bp</div>
-    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2026-01-23</span></div>
-    <div class="cb-note">1月预期再加息25bp，长期国债收益率创历史新高，预计到2027年底再加息两次，逐步退出超宽松政策</div>
+    <div class="cb-rate">0.75%</div>
+    <div class="cb-action">政策利率0.75%，渐进式加息路径</div>
+    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2026-06-18</span></div>
+    <div class="cb-note">通胀回归支持加息，但财政担忧和市场波动限制步伐，预计2026年底升至1.0%</div>
+  </div>
+  <div class="cb-card">
+    <div class="cb-header">
+      <div>
+        <div class="cb-name">英国央行</div>
+        <div class="cb-name-en">Bank of England</div>
+      </div>
+      <span class="bias-badge dovish">Dovish</span>
+    </div>
+    <div class="cb-rate">3.75%</div>
+    <div class="cb-action">维持利率3.75%，预计未来数月降息25bp</div>
+    <div class="cb-next">下次会议: <span class="font-mono" style="color:var(--neutral)">2026-05-07</span></div>
+    <div class="cb-note">通胀下降和经济数据疲软支持降息，但幅度和节奏取决于数据</div>
   </div>
 </div>
 <!-- CENTRAL_BANKS:END -->
@@ -1284,71 +1491,71 @@
       <div class="right-col">
 
         <!-- NEWS SECTION -->
-        <div class="section-block news-section">
+        <div class="section-block news-section" id="sec-news">
           <div class="card">
             <div class="section-label">市场要闻 · Market News</div>
 <!-- NEWS:START -->
 <div class="news-item breaking featured">
-  <div class="news-title">苹果Q2财报超预期，iPhone 17成史上最畅销机型</div>
-  <div class="news-body">苹果财报显示Q2营收1,112亿美元同比增长17%，EPS增长22%，均超华尔街预期。iPhone收入暴涨22%至570亿美元，管理层称iPhone 17是史上最受欢迎系列。大中华区收入激增28%至205亿美元，显示在华竞争力强劲。服务收入310亿美元增长16%，毛利率高达77%。公司Q3指引增长14-17%，远超市场预期的10%。</div>
-  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>持有苹果股票的投资者将受益于强劲增长，服务业务高利润率提升长期价值</div>
+  <div class="news-title">苹果Q1财报超预期，中国市场强劲推动股价单日暴涨3.4%</div>
+  <div class="news-body">苹果5月1日公布Q1财报，每股收益2.01美元超预期1.95美元，营收908亿美元。iPhone新机型在中国市场销售强劲，服务收入创历史新高。公司宣布1100亿美元股票回购计划，为史上最大规模。苹果股价涨3.4%，单日为纳指贡献约80个基点涨幅，市值重返全球第二。</div>
+  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>持有苹果或纳指ETF的投资者受益，但需关注估值是否过高</div>
   <div class="news-footer">
     <span class="importance-badge breaking">BREAKING</span>
-    <div class="tags"><span class="tag">#美股</span><span class="tag">#科技财报</span></div>
+    <div class="tags"><span class="tag">#苹果</span><span class="tag">#科技财报</span><span class="tag">#中国市场</span></div>
   </div>
 </div>
 <div class="news-item breaking featured">
-  <div class="news-title">美联储维持利率不变，4票反对凸显内部严重分歧</div>
-  <div class="news-body">FOMC以罕见的8-4投票维持利率3.5-3.75%不变，4名委员反对声明措辞，为1990年代初以来分歧最大决议。鲍威尔表示需要看到更多通胀降温证据才会降息，2026年通胀预期中值上调至2.7%。市场现在定价今年不降息且有6%概率加息，而此前预期1-2次降息。鲍威尔宣布主席任期5月结束后将留任理事，暗示对特朗普政府施压的抵抗。</div>
-  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>降息预期落空意味着房贷等借贷成本将维持高位，股市估值承压</div>
+  <div class="news-title">美联储维持利率3.5-3.75%，4名委员反对释放鹰派信号</div>
+  <div class="news-body">美联储4月29日FOMC会议维持利率不变，但出现4名委员反对票，为1992年来最多分歧。其中3名委员支持加息，凸显委员会内部对通胀担忧加剧。鲍威尔在最后一次主席新闻发布会上强调能源价格上涨令通胀前景恶化，CME FedWatch显示2026年降息概率降至零，部分交易员甚至定价2027年Q3加息可能。</div>
+  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>降息预期落空，持有成长股和高估值科技股的投资者面临估值压力</div>
   <div class="news-footer">
     <span class="importance-badge breaking">BREAKING</span>
-    <div class="tags"><span class="tag">#美联储</span><span class="tag">#利率政策</span></div>
+    <div class="tags"><span class="tag">#美联储</span><span class="tag">#FOMC</span><span class="tag">#加息</span></div>
   </div>
 </div>
-<div class="news-item breaking featured">
-  <div class="news-title">Meta财报后暴跌8.5%，AI资本开支飙升至1250-1450亿美元</div>
-  <div class="news-body">Meta Q1业绩强劲但将2026年资本开支预期上调200亿美元至1250-1450亿美元，主要用于数据中心和AI基础设施。广告收入同比增长33%创多年最快增速，但巨额AI投资引发盈利担忧。分析师质疑Meta能否证明如此高的支出合理性，尤其是在广告增长放缓风险下。公司裁员8000人的同时增加AI投资，战略矛盾引发市场疑虑。</div>
-  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>持有Meta的投资者短期承压，需关注下季度AI投资是否带来实际收入增长</div>
+<div class="news-item high featured">
+  <div class="news-title">油价回落3%至102美元，美伊和谈出现转机但霍尔木兹海峡仍关闭</div>
+  <div class="news-body">WTI原油5月1日大跌3.13%至101.94美元，因巴基斯坦官员确认伊朗提交新和平提议。尽管如此，特朗普宣布将维持对伊朗港口的海军封锁，霍尔木兹海峡供应中断持续。能源价格高企推升3月CPI至3.3%，为2024年4月以来最高。分析师警告，油价若持续在100美元上方，将通过运输和制造成本传导至其他行业。</div>
+  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>油价回落利好通胀预期，但地缘风险未解，能源股投资者需谨慎</div>
+  <div class="news-footer">
+    <span class="importance-badge high">HIGH</span>
+    <div class="tags"><span class="tag">#原油</span><span class="tag">#通胀</span><span class="tag">#美伊冲突</span></div>
+  </div>
+</div>
+<div class="news-item breaking">
+  <div class="news-title">中美5月14-15日北京峰会在即，贸易战暂缓但关税仍高达30%</div>
+  <div class="news-body">特朗普与习近平将于5月14-15日在北京举行峰会，这是两国在经历2025年4月关税战升级至145%后首次高层会晤。目前美国对华关税已降至30%，中国对美关税降至10%，为期90天暂停期。美贸易代表3月启动301调查，涉及中国产能过剩和强制技术转让，听证会定于4月28日和5月5日举行。市场关注峰会能否达成持久贸易协议。</div>
+  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>贸易紧张暂缓利好出口导向型中概股，但不确定性仍高需观望</div>
   <div class="news-footer">
     <span class="importance-badge breaking">BREAKING</span>
-    <div class="tags"><span class="tag">#美股</span><span class="tag">#科技财报</span></div>
+    <div class="tags"><span class="tag">#中美贸易</span><span class="tag">#关税</span><span class="tag">#习特会</span></div>
   </div>
 </div>
 <div class="news-item high">
-  <div class="news-title">伊朗提交新和平提案，原油价格从战时高点回落3%</div>
-  <div class="news-body">伊朗通过巴基斯坦中介向美国提交新和平协议草案，包括重开霍尔木兹海峡条款。WTI原油从107美元/桶高点跌至102美元，跌幅2.98%，缓解了能源通胀压力。特朗普总统拒绝伊朗提案并准备长期封锁，但市场预期OPEC将增产以稳定油价。加州汽油价格已涨至6美元/加仑，较战争前上涨30%，创2023年10月以来新高。</div>
-  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>油价回落对消费者有利，但地缘政治仍是变数，持有能源股需谨慎</div>
+  <div class="news-title">英特尔Q1财报暴涨，EPS超预期14倍，特斯拉将用其14A芯片</div>
+  <div class="news-body">英特尔4月23日公布Q1财报，调整后EPS 0.29美元远超预期0.01美元，营收135.8亿美元超预期124.2亿美元，股价盘后暴涨20%。数据中心业务营收51亿美元增长22%，受益于AI驱动的CPU需求激增。马斯克确认特斯拉将在德州Terafab工厂使用英特尔2028年推出的14A制程，英特尔先进封装业务获亚马逊、思科、SpaceX订单。</div>
+  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>英特尔翻身战成功，芯片行业竞争格局生变，持有半导体ETF需重新评估</div>
   <div class="news-footer">
     <span class="importance-badge high">HIGH</span>
-    <div class="tags"><span class="tag">#原油</span><span class="tag">#地缘政治</span></div>
+    <div class="tags"><span class="tag">#英特尔</span><span class="tag">#芯片</span><span class="tag">#特斯拉</span></div>
   </div>
 </div>
 <div class="news-item high">
-  <div class="news-title">Alphabet和Amazon云业务爆发，AWS收入增长28%</div>
-  <div class="news-body">Alphabet Q1收入超预期，Google Cloud收入暴涨63%，搜索广告增长19%创多年最快。Amazon AWS收入达370亿美元增长28%，Q4到Q1增量20亿为史上最大。AWS Bedrock token处理量超过历史总和，客户支出环比增长170%。两家公司自研芯片战略降低对英伟达依赖，Trainium芯片业务年化收入已达200亿美元，成为全球前三数据中心芯片商。</div>
-  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>云计算正从AI基础设施投资转向实际收入，持有云服务商股票长期看好</div>
+  <div class="news-title">A股2026年开门红突破4000点，科技与保险板块领涨</div>
+  <div class="news-body">上证综指1月6日首个交易日大涨1.38%至4023点，深证成指涨2.24%，创业板涨2.85%，两市成交2.5万亿元人民币。保险板块平均涨6.72%领涨，半导体涨4.18%。分析师指出，十五五规划启动、人民币升值超预期、外资回流加速是推动A股牛市的三大动力。恒生指数年初也曾暴涨2.8%至26338点，但5月2日回落至25777点。</div>
+  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>A股年初强势但需观察持续性，港股波动加大，跨境配置需分散风险</div>
   <div class="news-footer">
     <span class="importance-badge high">HIGH</span>
-    <div class="tags"><span class="tag">#云计算</span><span class="tag">#AI</span></div>
-  </div>
-</div>
-<div class="news-item high">
-  <div class="news-title">中美贸易谈判本周末重启，市场期待关税缓和</div>
-  <div class="news-body">特朗普政府与中国官员计划本周末举行贸易磋商，这是数月来首次高层接触。美国对华出口3月同比下降26.5%，但对非美市场出口增长6.8%部分抵消影响。中国半导体出口3月激增84.9%，高端设备出口保持强劲。市场预期若达成协议降低关税，可能缓解通胀压力并提振全球供应链。</div>
-  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>贸易谈判进展将直接影响科技股和消费品价格，华人投资者需密切关注</div>
-  <div class="news-footer">
-    <span class="importance-badge high">HIGH</span>
-    <div class="tags"><span class="tag">#中美贸易</span><span class="tag">#关税</span></div>
+    <div class="tags"><span class="tag">#A股</span><span class="tag">#港股</span><span class="tag">#科技股</span></div>
   </div>
 </div>
 <div class="news-item medium">
-  <div class="news-title">日本央行可能1月再加息25bp，日元升值压力加大</div>
-  <div class="news-body">日本央行12月19日加息25bp后，市场预期1月23日将再次加息。长期国债收益率创历史新高，但通胀仍高于央行目标。银行信贷增长表明金融条件未过度收紧。BOJ预计到2027年底再加息两次，逐步退出数十年超宽松政策。日元兑美元汇率面临升值压力，可能影响套息交易。</div>
-  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>日元升值可能触发套息交易平仓，持有日股或日元计价资产需警惕波动</div>
+  <div class="news-title">标普500 Q1财报季强劲，84%公司超预期创2021年来最高</div>
+  <div class="news-body">FactSet数据显示，截至5月1日已有63%的标普500公司公布Q1业绩，其中84%超预期，为2021年Q2以来最高比例。Q1盈利增长率达27.1%，为2021年Q4以来最高。科技、通信服务、金融板块领涨，其中微软、苹果、Alphabet、Meta等科技巨头超预期推动板块增长率达50%。分析师预计Q2-Q4盈利增长率分别为21.3%、23%、20.6%。</div>
+  <div class="news-tldr"><span class="tldr-label">💡 新手解读</span>财报季强劲支撑美股，但高估值需警惕，建议关注盈利质量而非仅看增速</div>
   <div class="news-footer">
     <span class="importance-badge medium">MEDIUM</span>
-    <div class="tags"><span class="tag">#日本央行</span><span class="tag">#利率</span></div>
+    <div class="tags"><span class="tag">#财报季</span><span class="tag">#标普500</span><span class="tag">#盈利增长</span></div>
   </div>
 </div>
 <!-- NEWS:END -->
@@ -1361,41 +1568,53 @@
             <div class="section-label">宏观指标 · Macro Data</div>
 <!-- MACRO:START -->
 <div class="macro-grid">
-  <div class="macro-card">
+  <div class="macro-card dir-up">
     <div class="macro-indicator">CPI YoY (3月)</div>
-    <div class="macro-value">3.3%</div>
-    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 约3.1%</div>
-    <div class="macro-desc">3月CPI同比上涨3.3%，能源价格飙升是主要推手，核心CPI为2.6%与前月持平，通胀粘性令美联储降息预期推迟</div>
+    <div class="macro-value macro-value-down">3.3%</div>
+    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 2.4%</div>
+    <div class="macro-desc">3月CPI同比增长3.3%，为2024年4月以来最高，环比涨0.9%主要受汽油价格飙升21.2%推动。核心CPI维持2.6%</div>
   </div>
-  <div class="macro-card">
-    <div class="macro-indicator">PCE YoY (2月)</div>
-    <div class="macro-value">3.0%</div>
+  <div class="macro-card dir-neutral">
+    <div class="macro-indicator">Core CPI YoY (3月)</div>
+    <div class="macro-value ">2.6%</div>
+    <div class="macro-prev"><span class="arrow ">→</span> 前值: 2.6%</div>
+    <div class="macro-desc">核心CPI同比2.6%与2月持平，环比涨0.2%，显示剔除能源和食品后通胀压力相对可控</div>
+  </div>
+  <div class="macro-card dir-down">
+    <div class="macro-indicator">PCE Price Index (2月)</div>
+    <div class="macro-value macro-value-up">3.0%</div>
     <div class="macro-prev"><span class="arrow down">↓</span> 前值: 3.1%</div>
-    <div class="macro-desc">美联储首选通胀指标2月同比增长3.0%，略低于1月的3.1%，但仍高于2%目标，且数据采集在伊朗战争前</div>
+    <div class="macro-desc">美联储偏好的通胀指标PCE 2月同比3.0%，略低于1月的3.1%，但仍高于2025年水平</div>
   </div>
-  <div class="macro-card">
-    <div class="macro-indicator">失业率 (预期)</div>
-    <div class="macro-value">4.1%</div>
-    <div class="macro-prev"><span class="arrow ">→</span> 前值: 4.1%</div>
-    <div class="macro-desc">失业率维持在两年高位4.1%，非农就业已连续三个月低于15万，显示就业市场降温但未崩溃</div>
+  <div class="macro-card dir-down">
+    <div class="macro-indicator">失业率 (3月)</div>
+    <div class="macro-value macro-value-up">3.8%</div>
+    <div class="macro-prev"><span class="arrow down">↓</span> 前值: 3.9%</div>
+    <div class="macro-desc">失业率略降至3.8%，劳动力市场依然紧张，但招聘和裁员均处于低位，呈现低雇佣-低解雇状态</div>
   </div>
-  <div class="macro-card">
-    <div class="macro-indicator">制造业PMI (4月预期)</div>
-    <div class="macro-value">约48</div>
-    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 约47</div>
-    <div class="macro-desc">制造业PMI已连续13个月处于收缩区间，尽管略有改善但仍低于50荣枯线，显示制造业疲软</div>
+  <div class="macro-card dir-up">
+    <div class="macro-indicator">非农就业 (3月)</div>
+    <div class="macro-value macro-value-up">180K</div>
+    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 150K</div>
+    <div class="macro-desc">3月新增非农就业18万，高于预期，但自去年夏季以来就业增长整体停滞</div>
   </div>
-  <div class="macro-card">
-    <div class="macro-indicator">Q1 GDP (初值)</div>
-    <div class="macro-value">约2.0%</div>
-    <div class="macro-prev"><span class="arrow down">↓</span> 前值: 约2.5%</div>
-    <div class="macro-desc">Q1 GDP增长放缓主要因私人消费疲软，但AI相关投资强劲部分抵消下行压力</div>
+  <div class="macro-card dir-up">
+    <div class="macro-indicator">GDP增长率 (Q1 2026)</div>
+    <div class="macro-value macro-value-up">2.1%</div>
+    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 1.8%</div>
+    <div class="macro-desc">Q1 GDP增长2.1%，AI投资推动增长抵消私人消费放缓，显示经济韧性但结构分化</div>
   </div>
-  <div class="macro-card">
-    <div class="macro-indicator">ISM服务业PMI (4月预期)</div>
-    <div class="macro-value">52.0</div>
-    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 51.4</div>
-    <div class="macro-desc">服务业PMI预期小幅上升至52.0，显示服务业仍在扩张但增速温和，就业分项疲软</div>
+  <div class="macro-card dir-up">
+    <div class="macro-indicator">ISM制造业PMI (3月)</div>
+    <div class="macro-value macro-value-up">48.2</div>
+    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 47.8</div>
+    <div class="macro-desc">ISM制造业PMI 3月为48.2，连续第6个月低于50荣枯线，显示制造业持续收缩</div>
+  </div>
+  <div class="macro-card dir-up">
+    <div class="macro-indicator">ISM服务业PMI (3月)</div>
+    <div class="macro-value macro-value-up">52.4</div>
+    <div class="macro-prev"><span class="arrow up">↑</span> 前值: 51.8</div>
+    <div class="macro-desc">ISM服务业PMI 3月升至52.4，显示服务业扩张加速，为经济提供支撑</div>
   </div>
 </div>
 <!-- MACRO:END -->
@@ -1407,7 +1626,7 @@
 
     <!-- EARNINGS WRAP -->
     ========================================================= -->
-    <div class="section-block">
+    <div class="section-block earnings-wrap" id="sec-earnings">
       <div class="card">
         <div class="section-label">财报追踪 · Earnings Tracker</div>
 <!-- EARNINGS:START -->
@@ -1419,15 +1638,32 @@
     <div class="earnings-eps">
       <div class="eps-item">
         <div class="eps-label">EPS ACTUAL</div>
-        <div class="eps-value actual beat">$按Q2计算约$2.80</div>
+        <div class="eps-value actual beat">$2.01</div>
       </div>
       <div class="eps-item">
         <div class="eps-label">EPS EST.</div>
-        <div class="eps-value est">$约$2.60</div>
+        <div class="eps-value est">$1.95</div>
       </div>
     </div>
-    <div class="earnings-revenue">收入: <span>$111.2B</span></div>
-    <div class="earnings-highlight">iPhone 17销售创纪录，服务收入加速增长至$31B，大中华区暴涨28%，Q3指引14-17%增长远超预期</div>
+    <div class="earnings-revenue">收入: <span>$90.8B</span></div>
+    <div class="earnings-highlight">中国销售强劲，服务收入创新高，宣布1100亿美元回购</div>
+  </div>
+  <div class="earnings-card beat">
+    <div class="earnings-ticker">INTC</div>
+    <div class="earnings-company">Intel</div>
+    <span class="earnings-beat-badge beat">BEAT ✓</span>
+    <div class="earnings-eps">
+      <div class="eps-item">
+        <div class="eps-label">EPS ACTUAL</div>
+        <div class="eps-value actual beat">$0.29</div>
+      </div>
+      <div class="eps-item">
+        <div class="eps-label">EPS EST.</div>
+        <div class="eps-value est">$0.01</div>
+      </div>
+    </div>
+    <div class="earnings-revenue">收入: <span>$13.58B</span></div>
+    <div class="earnings-highlight">数据中心业务增长22%，特斯拉确认采用14A制程，先进封装获SpaceX订单</div>
   </div>
   <div class="earnings-card beat">
     <div class="earnings-ticker">GOOGL</div>
@@ -1436,15 +1672,15 @@
     <div class="earnings-eps">
       <div class="eps-item">
         <div class="eps-label">EPS ACTUAL</div>
-        <div class="eps-value actual beat">$超预期</div>
+        <div class="eps-value actual beat">$5.11</div>
       </div>
       <div class="eps-item">
         <div class="eps-label">EPS EST.</div>
-        <div class="eps-value est">$市场预期</div>
+        <div class="eps-value est">$2.68</div>
       </div>
     </div>
-    <div class="earnings-revenue">收入: <span>Q1超预期</span></div>
-    <div class="earnings-highlight">Google Cloud收入暴涨63%，搜索广告增长19%创多年最快，自研TPU芯片降低成本</div>
+    <div class="earnings-revenue">收入: <span>$82.5B</span></div>
+    <div class="earnings-highlight">Google Search、Cloud、YouTube广告均受AI驱动强劲增长，Gemini巩固AI领导地位</div>
   </div>
   <div class="earnings-card beat">
     <div class="earnings-ticker">AMZN</div>
@@ -1453,32 +1689,15 @@
     <div class="earnings-eps">
       <div class="eps-item">
         <div class="eps-label">EPS ACTUAL</div>
-        <div class="eps-value actual beat">$超预期</div>
+        <div class="eps-value actual beat">$2.78</div>
       </div>
       <div class="eps-item">
         <div class="eps-label">EPS EST.</div>
-        <div class="eps-value est">$市场预期</div>
+        <div class="eps-value est">$1.63</div>
       </div>
     </div>
-    <div class="earnings-revenue">收入: <span>AWS $37B+</span></div>
-    <div class="earnings-highlight">AWS收入增长28%，Q4到Q1增量$2B创纪录，Bedrock客户支出环比增170%，Trainium芯片年化收入$20B</div>
-  </div>
-  <div class="earnings-card beat">
-    <div class="earnings-ticker">MSFT</div>
-    <div class="earnings-company">Microsoft</div>
-    <span class="earnings-beat-badge beat">BEAT ✓</span>
-    <div class="earnings-eps">
-      <div class="eps-item">
-        <div class="eps-label">EPS ACTUAL</div>
-        <div class="eps-value actual beat">$$4.27</div>
-      </div>
-      <div class="eps-item">
-        <div class="eps-label">EPS EST.</div>
-        <div class="eps-value est">$$4.06</div>
-      </div>
-    </div>
-    <div class="earnings-revenue">收入: <span>超预期</span></div>
-    <div class="earnings-highlight">Azure增速有望在下半年加速，供给短缺持续至2026年，Foundry模型市场用户季度翻倍</div>
+    <div class="earnings-revenue">收入: <span>$180.2B</span></div>
+    <div class="earnings-highlight">AWS和广告业务推动营收增长13%，利润增长39%，高利润率引擎发力</div>
   </div>
   <div class="earnings-card beat">
     <div class="earnings-ticker">META</div>
@@ -1487,66 +1706,66 @@
     <div class="earnings-eps">
       <div class="eps-item">
         <div class="eps-label">EPS ACTUAL</div>
-        <div class="eps-value actual beat">$超预期</div>
+        <div class="eps-value actual beat">$10.44</div>
       </div>
       <div class="eps-item">
         <div class="eps-label">EPS EST.</div>
-        <div class="eps-value est">$市场预期</div>
+        <div class="eps-value est">$8.96</div>
       </div>
     </div>
-    <div class="earnings-revenue">收入: <span>广告收入+33%</span></div>
-    <div class="earnings-highlight">广告收入同比增长33%创多年最快，但2026资本开支上调至$125-145B，推出1GW自研芯片计划</div>
+    <div class="earnings-revenue">收入: <span>$42.3B</span></div>
+    <div class="earnings-highlight">AI投资推动每季度营收增长加速，但2026年资本支出预期上升引发市场担忧</div>
   </div>
   <div class="earnings-card beat">
-    <div class="earnings-ticker">CAT</div>
-    <div class="earnings-company">Caterpillar</div>
+    <div class="earnings-ticker">MSFT</div>
+    <div class="earnings-company">Microsoft</div>
     <span class="earnings-beat-badge beat">BEAT ✓</span>
     <div class="earnings-eps">
       <div class="eps-item">
         <div class="eps-label">EPS ACTUAL</div>
-        <div class="eps-value actual beat">$超预期</div>
+        <div class="eps-value actual beat">$4.27</div>
       </div>
       <div class="eps-item">
         <div class="eps-label">EPS EST.</div>
-        <div class="eps-value est">$市场预期</div>
+        <div class="eps-value est">$4.06</div>
       </div>
     </div>
-    <div class="earnings-revenue">收入: <span>上调全年指引</span></div>
-    <div class="earnings-highlight">季度业绩强劲，上调全年收入展望，受益于AI数据中心建设需求，股价单日暴涨近10%</div>
+    <div class="earnings-revenue">收入: <span>$68.5B</span></div>
+    <div class="earnings-highlight">Azure云增长稳健，AI服务需求强劲，但资本支出攀升压制利润率</div>
   </div>
   <div class="earnings-card beat">
-    <div class="earnings-ticker">STX</div>
-    <div class="earnings-company">Seagate Technology</div>
+    <div class="earnings-ticker">GS</div>
+    <div class="earnings-company">Goldman Sachs</div>
     <span class="earnings-beat-badge beat">BEAT ✓</span>
     <div class="earnings-eps">
       <div class="eps-item">
         <div class="eps-label">EPS ACTUAL</div>
-        <div class="eps-value actual beat">$超预期</div>
+        <div class="eps-value actual beat">$17.55</div>
       </div>
       <div class="eps-item">
         <div class="eps-label">EPS EST.</div>
-        <div class="eps-value est">$市场预期</div>
+        <div class="eps-value est">$16.34</div>
       </div>
     </div>
-    <div class="earnings-revenue">收入: <span>Q3强劲</span></div>
-    <div class="earnings-highlight">存储需求旺盛，受益于AI数据中心，股价飙升17%</div>
+    <div class="earnings-revenue">收入: <span>$15.8B</span></div>
+    <div class="earnings-highlight">净利润增长19%至56亿美元，交易业务创纪录，M&A咨询费增长48%</div>
   </div>
   <div class="earnings-card beat">
-    <div class="earnings-ticker">QCOM</div>
-    <div class="earnings-company">Qualcomm</div>
+    <div class="earnings-ticker">F</div>
+    <div class="earnings-company">Ford Motor</div>
     <span class="earnings-beat-badge beat">BEAT ✓</span>
     <div class="earnings-eps">
       <div class="eps-item">
         <div class="eps-label">EPS ACTUAL</div>
-        <div class="eps-value actual beat">$超预期</div>
+        <div class="eps-value actual beat">$1.85</div>
       </div>
       <div class="eps-item">
         <div class="eps-label">EPS EST.</div>
-        <div class="eps-value est">$市场预期</div>
+        <div class="eps-value est">$0.52</div>
       </div>
     </div>
-    <div class="earnings-revenue">收入: <span>Q2超预期</span></div>
-    <div class="earnings-highlight">与超大规模客户达成定制芯片协议，股价暴涨16%，但分析师对数据中心前景存疑</div>
+    <div class="earnings-revenue">收入: <span>$42.1B</span></div>
+    <div class="earnings-highlight">得益于13亿美元IEEPA关税退税一次性收益，EPS大幅超预期</div>
   </div>
 </div>
 <!-- EARNINGS:END -->
@@ -1573,22 +1792,22 @@
     <div class="sector-pct down">-3.50%</div>
   </div>
   <div class="sector-row">
-    <div><div class="sector-name">非必需消费品</div><div class="sector-name-en">Consumer Discretionary</div></div>
-    <div class="sector-etf">XLY</div>
-    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:43%"></div></div>
-    <div class="sector-pct down">-1.30%</div>
-  </div>
-  <div class="sector-row">
     <div><div class="sector-name">金融</div><div class="sector-name-en">Financials</div></div>
     <div class="sector-etf">XLF</div>
     <div class="sector-bar-wrap"><div class="sector-bar down" style="width:27%"></div></div>
     <div class="sector-pct down">-0.67%</div>
   </div>
   <div class="sector-row">
-    <div><div class="sector-name">医疗保健</div><div class="sector-name-en">Healthcare</div></div>
+    <div><div class="sector-name">医疗保健</div><div class="sector-name-en">Health Care</div></div>
     <div class="sector-etf">XLV</div>
     <div class="sector-bar-wrap"><div class="sector-bar down" style="width:64%"></div></div>
     <div class="sector-pct down">-2.11%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">能源</div><div class="sector-name-en">Energy</div></div>
+    <div class="sector-etf">XLE</div>
+    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:47%"></div></div>
+    <div class="sector-pct down">-1.45%</div>
   </div>
   <div class="sector-row">
     <div><div class="sector-name">工业</div><div class="sector-name-en">Industrials</div></div>
@@ -1597,10 +1816,16 @@
     <div class="sector-pct down">-2.49%</div>
   </div>
   <div class="sector-row">
-    <div><div class="sector-name">能源</div><div class="sector-name-en">Energy</div></div>
-    <div class="sector-etf">XLE</div>
-    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:47%"></div></div>
-    <div class="sector-pct down">-1.45%</div>
+    <div><div class="sector-name">必需消费品</div><div class="sector-name-en">Consumer Staples</div></div>
+    <div class="sector-etf">XLP</div>
+    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:55%"></div></div>
+    <div class="sector-pct down">-1.76%</div>
+  </div>
+  <div class="sector-row">
+    <div><div class="sector-name">非必需消费品</div><div class="sector-name-en">Consumer Discretionary</div></div>
+    <div class="sector-etf">XLY</div>
+    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:43%"></div></div>
+    <div class="sector-pct down">-1.30%</div>
   </div>
   <div class="sector-row">
     <div><div class="sector-name">材料</div><div class="sector-name-en">Materials</div></div>
@@ -1620,96 +1845,185 @@
     <div class="sector-bar-wrap"><div class="sector-bar down" style="width:36%"></div></div>
     <div class="sector-pct down">-1.04%</div>
   </div>
-  <div class="sector-row">
-    <div><div class="sector-name">必需消费品</div><div class="sector-name-en">Consumer Staples</div></div>
-    <div class="sector-etf">XLP</div>
-    <div class="sector-bar-wrap"><div class="sector-bar down" style="width:55%"></div></div>
-    <div class="sector-pct down">-1.76%</div>
-  </div>
 </div>
 <!-- SECTORS:END -->
+      </div>
+
+    <!-- =========================================================
+         MARKET CHARTS — TradingView Market Overview
+    ========================================================= -->
+    <div class="section-block">
+      <div class="card" style="padding:16px 20px;">
+        <div class="section-label">📈 行情图表 · Live Charts</div>
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+          {
+            "colorTheme": "dark",
+            "dateRange": "1D",
+            "showChart": true,
+            "locale": "zh_CN",
+            "isTransparent": true,
+            "showSymbolLogo": true,
+            "showFloatingTooltip": false,
+            "width": "100%",
+            "height": "480",
+            "tabs": [
+              {
+                "title": "🇺🇸 美股",
+                "symbols": [
+                  {"s":"FOREXCOM:SPXUSD","d":"S&P 500"},
+                  {"s":"FOREXCOM:NSXUSD","d":"Nasdaq 100"},
+                  {"s":"FOREXCOM:DJI","d":"道琼斯"},
+                  {"s":"CBOE:VIX","d":"VIX 恐慌指数"},
+                  {"s":"TVC:US10Y","d":"美10年债"}
+                ],
+                "originalTitle": "US"
+              },
+              {
+                "title": "🇨🇳 中国",
+                "symbols": [
+                  {"s":"SSE:000001","d":"上证指数"},
+                  {"s":"SZSE:399006","d":"创业板指"},
+                  {"s":"HKEX:HSI","d":"恒生指数"},
+                  {"s":"FX:USDCNH","d":"离岸人民币"},
+                  {"s":"HKEX:2318","d":"中国平安"}
+                ],
+                "originalTitle": "China"
+              },
+              {
+                "title": "🛢️ 大宗",
+                "symbols": [
+                  {"s":"TVC:GOLD","d":"黄金"},
+                  {"s":"NYMEX:CL1!","d":"原油 WTI"},
+                  {"s":"COMEX:SI1!","d":"白银"},
+                  {"s":"TVC:DXY","d":"美元指数"}
+                ],
+                "originalTitle": "Commodities"
+              },
+              {
+                "title": "₿ 加密",
+                "symbols": [
+                  {"s":"BINANCE:BTCUSDT","d":"Bitcoin"},
+                  {"s":"BINANCE:ETHUSDT","d":"Ethereum"},
+                  {"s":"BINANCE:SOLUSDT","d":"Solana"}
+                ],
+                "originalTitle": "Crypto"
+              }
+            ]
+          }
+          </script>
+        </div>
       </div>
     </div>
 
     <!-- =========================================================
          ECONOMIC CALENDAR (FULL WIDTH)
     ========================================================= -->
-    <div class="section-block calendar-wrap">
+    <div class="section-block calendar-wrap" id="sec-calendar">
       <div class="card">
         <div class="section-label">本周日程 · Economic Calendar</div>
+<!-- TradingView Economic Calendar: real-time, always accurate -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+  {
+    "colorTheme": "dark",
+    "isTransparent": true,
+    "width": "100%",
+    "height": "420",
+    "locale": "zh_CN",
+    "importanceFilter": "0,1",
+    "currencyFilter": "USD,EUR,JPY,GBP,CNY,AUD,CAD"
+  }
+  </script>
+</div>
+
+<!-- Claude AI 解读：本周重点事件分析（可折叠） -->
+<details style="margin-top:14px;">
+  <summary style="color:var(--muted);font-size:0.72rem;cursor:pointer;user-select:none;padding:6px 0;">
+    💬 AI 解读：本周重点事件 ▾
+  </summary>
+  <div style="margin-top:10px;">
 <!-- CALENDAR:START -->
 <div class="calendar-grid">
   <div class="cal-item high">
     <div class="cal-date">周一 5/5<br><span style="font-size:0.6rem;color:var(--dimmed)">10:00 AM ET</span></div>
     <div>
-      <div class="cal-event">ISM服务业PMI</div>
-      <div class="cal-values">预期: <span>52.0</span> &nbsp;&middot;&nbsp; 前值: 51.4</div>
+      <div class="cal-event">ISM服务业PMI (4月)</div>
+      <div class="cal-values">预期: <span>52.0</span> &nbsp;&middot;&nbsp; 前值: 52.4</div>
     </div>
   </div>
   <div class="cal-item medium">
-    <div class="cal-date">周二 5/6<br><span style="font-size:0.6rem;color:var(--dimmed)">8:15 AM ET</span></div>
+    <div class="cal-date">周二 5/6<br><span style="font-size:0.6rem;color:var(--dimmed)">10:00 AM ET</span></div>
     <div>
-      <div class="cal-event">ADP就业报告</div>
-      <div class="cal-values">预期: <span>约15万</span> &nbsp;&middot;&nbsp; 前值: 约12万</div>
-    </div>
-  </div>
-  <div class="cal-item high">
-    <div class="cal-date">周三 5/7<br><span style="font-size:0.6rem;color:var(--dimmed)">2:00 PM ET</span></div>
-    <div>
-      <div class="cal-event">美联储公开市场委员会会议纪要</div>
-      <div class="cal-values">预期: <span>关注内部分歧细节</span> &nbsp;&middot;&nbsp; 前值: 维持利率不变</div>
+      <div class="cal-event">JOLTs职位空缺 (3月)</div>
+      <div class="cal-values">预期: <span>8.50M</span> &nbsp;&middot;&nbsp; 前值: 8.76M</div>
     </div>
   </div>
   <div class="cal-item medium">
-    <div class="cal-date">周四 5/8<br><span style="font-size:0.6rem;color:var(--dimmed)">8:30 AM ET</span></div>
+    <div class="cal-date">周三 5/7<br><span style="font-size:0.6rem;color:var(--dimmed)">8:30 AM ET</span></div>
     <div>
-      <div class="cal-event">初请失业金人数</div>
-      <div class="cal-values">预期: <span>约22万</span> &nbsp;&middot;&nbsp; 前值: 约22万</div>
+      <div class="cal-event">ADP就业报告 (4月)</div>
+      <div class="cal-values">预期: <span>175K</span> &nbsp;&middot;&nbsp; 前值: 184K</div>
     </div>
   </div>
   <div class="cal-item high">
     <div class="cal-date">周五 5/9<br><span style="font-size:0.6rem;color:var(--dimmed)">8:30 AM ET</span></div>
     <div>
-      <div class="cal-event">4月非农就业报告(NFP)</div>
-      <div class="cal-values">预期: <span>约17万</span> &nbsp;&middot;&nbsp; 前值: 约14万</div>
+      <div class="cal-event">非农就业报告 (4月)</div>
+      <div class="cal-values">预期: <span>190K</span> &nbsp;&middot;&nbsp; 前值: 180K</div>
     </div>
   </div>
   <div class="cal-item high">
-    <div class="cal-date">周一 5/5<br><span style="font-size:0.6rem;color:var(--dimmed)">盘后</span></div>
+    <div class="cal-date">周一 5/12<br><span style="font-size:0.6rem;color:var(--dimmed)">8:30 AM ET</span></div>
     <div>
-      <div class="cal-event">Palantir (PLTR) 财报</div>
-      <div class="cal-values">预期: <span>AI合同增长强劲</span> &nbsp;&middot;&nbsp; 前值: Q4超预期</div>
-    </div>
-  </div>
-  <div class="cal-item high">
-    <div class="cal-date">周二 5/6<br><span style="font-size:0.6rem;color:var(--dimmed)">盘后</span></div>
-    <div>
-      <div class="cal-event">AMD财报</div>
-      <div class="cal-values">预期: <span>AI芯片需求关键</span> &nbsp;&middot;&nbsp; 前值: Q4强劲</div>
+      <div class="cal-event">CPI通胀数据 (4月)</div>
+      <div class="cal-values">预期: <span>3.6%</span> &nbsp;&middot;&nbsp; 前值: 3.3%</div>
     </div>
   </div>
   <div class="cal-item medium">
-    <div class="cal-date">周三 5/7<br><span style="font-size:0.6rem;color:var(--dimmed)">盘后</span></div>
+    <div class="cal-date">周二 5/13<br><span style="font-size:0.6rem;color:var(--dimmed)">8:30 AM ET</span></div>
     <div>
-      <div class="cal-event">Arm Holdings财报</div>
-      <div class="cal-values">预期: <span>AI授权收入增长</span> &nbsp;&middot;&nbsp; 前值: 移动芯片强劲</div>
+      <div class="cal-event">PPI生产者物价指数 (4月)</div>
+      <div class="cal-values">预期: <span>3.1%</span> &nbsp;&middot;&nbsp; 前值: 2.8%</div>
+    </div>
+  </div>
+  <div class="cal-item high">
+    <div class="cal-date">周三 5/14<br><span style="font-size:0.6rem;color:var(--dimmed)">全天</span></div>
+    <div>
+      <div class="cal-event">特朗普-习近平北京峰会 (第一天)</div>
+      <div class="cal-values">预期: <span>关注贸易协议进展</span> &nbsp;&middot;&nbsp; 前值: N/A</div>
+    </div>
+  </div>
+  <div class="cal-item high">
+    <div class="cal-date">周四 5/15<br><span style="font-size:0.6rem;color:var(--dimmed)">全天</span></div>
+    <div>
+      <div class="cal-event">鲍威尔卸任美联储主席，Kevin Warsh接任</div>
+      <div class="cal-values">预期: <span>货币政策转向更鹰派</span> &nbsp;&middot;&nbsp; 前值: N/A</div>
     </div>
   </div>
 </div>
 <!-- CALENDAR:END -->
+  </div>
+</details>
       </div>
     </div>
 
     <!-- SUBSCRIBE -->
     <div class="subscribe-bar">
       <div class="subscribe-text">
-        <strong>📬 订阅每日推送</strong>
-        <p>每个交易日自动推送，开盘前5分钟读完，把握市场节奏</p>
+        <strong>📬 不错过每日更新</strong>
+        <p>每个交易日自动更新，开盘前 + 收盘后各一次</p>
       </div>
-      <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/financial-daily" method="post" target="_blank">
-        <input type="email" name="email" placeholder="your@email.com" required>
-        <button type="submit">订阅</button>
-      </form>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+        <a href="../feed.xml" target="_blank" class="sub-btn rss-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+          RSS 订阅
+        </a>
+        <a href="https://yang1bai.github.io/finance-daily-site/feed.xml" id="copy-rss" onclick="copyRSS(event)" class="sub-btn copy-btn">📋 复制链接</a>
+        <span style="font-size:0.7rem;color:var(--dimmed);">邮件订阅配置中…</span>
+      </div>
     </div>
 
   </div><!-- /container -->
@@ -1811,6 +2125,272 @@
       })
       .catch(() => {});
   })();
+
+
+
+
+  // Auto-tooltip for financial jargon
+  const FIN_TERMS = {
+    'VIX': 'VIX = 标普期权隐含波动率，越高越恐慌',
+    'PCE': 'PCE = 个人消费支出物价指数，美联储首选通胀指标',
+    'NFP': 'NFP = 非农就业人数，衡量美国就业市场健康度',
+    'CPI': 'CPI = 消费者物价指数，最常见通胀衡量指标',
+    'PMI': 'PMI > 50 = 经济扩张；PMI < 50 = 经济收缩',
+    'QE':  'QE = 量化宽松，央行购买债券向市场注入流动性',
+    '鹰派': '鹰派 = 倾向加息/收紧货币政策，对抗通胀',
+    '鸽派': '鸽派 = 倾向降息/宽松货币政策，刺激经济',
+    'EPS': 'EPS = 每股收益，公司盈利能力的核心指标',
+    'DXY': 'DXY = 美元指数，衡量美元对六大货币的强弱',
+  };
+  document.addEventListener('DOMContentLoaded', function() {
+    const walker = document.createTreeWalker(
+      document.querySelector('.macro-section') || document.body,
+      NodeFilter.SHOW_TEXT
+    );
+    // Only apply to macro + news sections to avoid performance issues
+    ['macro-section','news-section','cb-grid'].forEach(cls => {
+      const sec = document.querySelector('.' + cls);
+      if (!sec) return;
+      Object.entries(FIN_TERMS).forEach(([term, tip]) => {
+        sec.querySelectorAll('.macro-indicator, .cb-action, .news-body').forEach(el => {
+          if (el.innerHTML.includes(term) && !el.innerHTML.includes('fin-term')) {
+            el.innerHTML = el.innerHTML.replace(
+              new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'g'),
+              `<span class="fin-term" data-tip="${tip}">$1</span>`
+            );
+          }
+        });
+      });
+    });
+  });
+
+  function copyRSS(e) {
+    e.preventDefault();
+    const url = 'https://yang1bai.github.io/finance-daily-site/feed.xml';
+    navigator.clipboard.writeText(url).then(() => {
+      const btn = document.getElementById('copy-rss');
+      btn.textContent = '✅ 已复制';
+      setTimeout(() => { btn.textContent = '📋 复制链接'; }, 2000);
+    }).catch(() => {
+      prompt('RSS 链接：', url);
+    });
+  }
+
+  // ═══════════════════════════════════════════════════════════
+  //  PERSONAL DASHBOARD — Watchlist + Portfolio
+  // ═══════════════════════════════════════════════════════════
+
+  const LS_WL = 'fd-watchlist-v1';
+  const LS_PF = 'fd-portfolio-v1';
+  const priceCache = {};
+
+  function wlLoad() { return JSON.parse(localStorage.getItem(LS_WL) || '[]'); }
+  function wlSave(d) { localStorage.setItem(LS_WL, JSON.stringify(d)); }
+  function pfLoad() { return JSON.parse(localStorage.getItem(LS_PF) || '[]'); }
+  function pfSave(d) { localStorage.setItem(LS_PF, JSON.stringify(d)); }
+
+  function switchTab(e, tab) {
+    ['wl','pf'].forEach(t => {
+      document.getElementById('panel-' + t).style.display = t === tab ? 'block' : 'none';
+      document.getElementById('ptab-' + t).classList.toggle('active', t === tab);
+    });
+  }
+
+  // ── Price fetching (Yahoo Finance → CORS proxy fallback) ───
+  function toYahooSym(raw) {
+    if (!raw.includes(':')) return raw;
+    const [exch, ticker] = raw.split(':');
+    const map = { SSE:'', SZSE:'', HKEX:'.HK', TSX:'.TO', LSE:'.L', FWB:'.DE' };
+    if (exch === 'SSE')  return ticker + '.SS';
+    if (exch === 'SZSE') return ticker + '.SZ';
+    return ticker + (map[exch] || '');
+  }
+
+  async function fetchPrice(rawSym) {
+    const key = rawSym;
+    if (priceCache[key] && Date.now() - priceCache[key].ts < 300000) return priceCache[key];
+
+    const ySym = toYahooSym(rawSym);
+    const yUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ySym)}?range=1d&interval=1m&includePrePost=false`;
+    const proxies = [
+      yUrl,
+      `https://corsproxy.io/?${encodeURIComponent(yUrl)}`,
+      `https://api.allorigins.win/get?url=${encodeURIComponent(yUrl)}`
+    ];
+
+    for (const url of proxies) {
+      try {
+        const resp = await fetch(url, { signal: AbortSignal.timeout(7000) });
+        if (!resp.ok) continue;
+        let json = await resp.json();
+        // allorigins wraps in {contents: '...'}
+        if (json.contents) json = JSON.parse(json.contents);
+        const result = json.chart?.result?.[0];
+        if (!result) continue;
+        const meta  = result.meta;
+        const price = meta.regularMarketPrice;
+        const prev  = meta.chartPreviousClose || meta.previousClose || price;
+        const chgPct = prev ? (price - prev) / prev * 100 : 0;
+        const chgAbs = price - prev;
+        const info = { price, prev, chgPct, chgAbs, currency: meta.currency || 'USD', ts: Date.now() };
+        priceCache[key] = info;
+        return info;
+      } catch(e) {}
+    }
+    return null;
+  }
+
+  function fmtNum(n, dec=2) {
+    return n.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  }
+
+  // ── Watchlist ───────────────────────────────────────────────
+  function wlAdd() {
+    const sym  = (document.getElementById('wl-sym').value || '').trim().toUpperCase();
+    const name = (document.getElementById('wl-name').value || '').trim();
+    if (!sym) return;
+    const list = wlLoad();
+    if (list.find(i => i.symbol === sym)) { alert('已在自选列表'); return; }
+    list.push({ symbol: sym, alias: name });
+    wlSave(list);
+    document.getElementById('wl-sym').value = '';
+    document.getElementById('wl-name').value = '';
+    wlRender();
+  }
+
+  function wlRemove(sym) {
+    wlSave(wlLoad().filter(i => i.symbol !== sym));
+    wlRender();
+  }
+
+  function wlRender() {
+    const list = wlLoad();
+    const grid  = document.getElementById('wl-list');
+    const empty = document.getElementById('wl-empty');
+    if (!list.length) { empty.style.display = 'block'; grid.innerHTML = ''; return; }
+    empty.style.display = 'none';
+    grid.innerHTML = list.map(item => {
+      const id = 'wlp-' + item.symbol.replace(/[^a-z0-9]/gi, '_');
+      return `<div class="wl-card">
+        <div class="wl-card-top">
+          <div>
+            <div class="wl-sym">${item.symbol}</div>
+            ${item.alias ? `<div class="wl-alias">${item.alias}</div>` : ''}
+          </div>
+          <button class="wl-rm" onclick="wlRemove('${item.symbol.replace(/'/g,"\'")}')">×</button>
+        </div>
+        <div id="${id}"><span class="wl-loading">加载中…</span></div>
+      </div>`;
+    }).join('');
+
+    list.forEach(item => {
+      const id = 'wlp-' + item.symbol.replace(/[^a-z0-9]/gi, '_');
+      fetchPrice(item.symbol).then(info => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (!info) { el.innerHTML = '<span class="wl-loading">获取失败</span>'; return; }
+        const dir = info.chgPct >= 0 ? 'up' : 'down';
+        const arrow = info.chgPct >= 0 ? '▲' : '▼';
+        el.innerHTML = `
+          <div class="wl-price-block">
+            <span class="wl-cur">${info.currency}</span>
+            <span class="wl-price">${fmtNum(info.price)}</span>
+            <span class="ticker-change ${dir}" style="font-size:0.72rem;">${arrow} ${Math.abs(info.chgPct).toFixed(2)}%</span>
+          </div>
+          <div class="wl-prev">昨收 ${fmtNum(info.prev)}</div>
+        `;
+      });
+    });
+  }
+
+  // ── Portfolio ───────────────────────────────────────────────
+  function pfAdd() {
+    const sym    = (document.getElementById('pf-sym').value || '').trim().toUpperCase();
+    const shares = parseFloat(document.getElementById('pf-shares').value);
+    const cost   = parseFloat(document.getElementById('pf-cost').value);
+    if (!sym || !shares || !cost || isNaN(shares) || isNaN(cost)) {
+      alert('请完整填写代码、数量和买入均价');
+      return;
+    }
+    const list = pfLoad();
+    list.push({ symbol: sym, shares, costBasis: cost, addedAt: Date.now() });
+    pfSave(list);
+    ['pf-sym','pf-shares','pf-cost'].forEach(id => document.getElementById(id).value = '');
+    pfRender();
+  }
+
+  function pfRemove(idx) {
+    const list = pfLoad(); list.splice(idx, 1); pfSave(list); pfRender();
+  }
+
+  function pfRender() {
+    const list  = pfLoad();
+    const grid  = document.getElementById('pf-list');
+    const empty = document.getElementById('pf-empty');
+    const sumEl = document.getElementById('pf-summary');
+    if (!list.length) { empty.style.display='block'; grid.innerHTML=''; sumEl.style.display='none'; return; }
+    empty.style.display = 'none';
+    sumEl.style.display = 'flex';
+
+    const totalCost = list.reduce((s, i) => s + i.shares * i.costBasis, 0);
+    document.getElementById('sum-cost').textContent = '$' + fmtNum(totalCost);
+
+    grid.innerHTML = list.map((item, idx) => {
+      const id = 'pfp-' + idx;
+      const itemCost = item.shares * item.costBasis;
+      return `<div class="pf-card">
+        <div class="pf-card-top">
+          <span class="pf-sym">${item.symbol}</span>
+          <button class="wl-rm" onclick="pfRemove(${idx})">×</button>
+        </div>
+        <div class="pf-meta">
+          ${fmtNum(item.shares, 4)} 股 &nbsp;×&nbsp; $${fmtNum(item.costBasis)} 成本<br>
+          持仓成本 <strong>$${fmtNum(itemCost)}</strong>
+        </div>
+        <div class="pf-pnl-row" id="${id}"><span class="wl-loading">计算盈亏中…</span></div>
+      </div>`;
+    }).join('');
+
+    let fetchedCount = 0, totalValue = 0;
+    list.forEach((item, idx) => {
+      fetchPrice(item.symbol).then(info => {
+        fetchedCount++;
+        const el = document.getElementById('pfp-' + idx);
+        if (!el) return;
+        if (!info) { el.innerHTML = '<span class="wl-loading">价格获取失败</span>'; return; }
+        const curVal = item.shares * info.price;
+        const pnlAbs = curVal - item.shares * item.costBasis;
+        const pnlPct = pnlAbs / (item.shares * item.costBasis) * 100;
+        const dir = pnlAbs >= 0 ? 'pos' : 'neg';
+        const sign = pnlAbs >= 0 ? '+' : '';
+        totalValue += curVal;
+        el.innerHTML = `
+          <span class="pf-cur-price">${info.currency} ${fmtNum(info.price)}</span>
+          <span class="pf-gain ${dir}">${sign}$${fmtNum(pnlAbs)} (${sign}${pnlPct.toFixed(2)}%)</span>
+        `;
+        if (fetchedCount === list.length) {
+          document.getElementById('sum-value').textContent = '$' + fmtNum(totalValue);
+          const totPnl = totalValue - totalCost;
+          const totPct = totPnl / totalCost * 100;
+          const sign2 = totPnl >= 0 ? '+' : '';
+          const cls  = totPnl >= 0 ? 'pf-pnl-pos' : 'pf-pnl-neg';
+          document.getElementById('sum-pnl').innerHTML = `<span class="${cls}">${sign2}$${fmtNum(totPnl)}</span>`;
+          document.getElementById('sum-pct').innerHTML = `<span class="${cls}">${sign2}${totPct.toFixed(2)}%</span>`;
+        }
+      });
+    });
+  }
+
+  // Init personal dashboard on load
+  document.addEventListener('DOMContentLoaded', function() {
+    wlRender();
+    pfRender();
+    // Enter key triggers add
+    document.getElementById('wl-name').addEventListener('keydown', e => { if(e.key==='Enter') wlAdd(); });
+    document.getElementById('pf-cost').addEventListener('keydown', e => { if(e.key==='Enter') pfAdd(); });
+  });
+
+
 </script>
 
 </body>
