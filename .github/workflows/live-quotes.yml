@@ -1,0 +1,38 @@
+name: Live Quotes Update
+
+on:
+  schedule:
+    # During US market hours (9:30-17:00 ET = 13:30-21:00 UTC), run every 30 min on weekdays
+    - cron: '0,30 13-21 * * 1-5'
+    # Off-hours: once per hour for overnight Asian/European markets
+    - cron: '0 0-12,22-23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  quotes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install yfinance
+
+      - name: Fetch live quotes
+        run: python scripts/fetch_quotes.py
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/quotes.json
+          git diff --cached --quiet || git commit -m "chore: live quotes $(date -u +'%H:%M UTC')"
+          git push

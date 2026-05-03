@@ -35,32 +35,42 @@ MAX_TOKENS  = 16000
 MAX_SEARCH  = 15
 
 # ─── Prompts ─────────────────────────────────────────────────────────────────
-SYSTEM_PROMPT = """你是一位专业的金融数据分析师和新闻编辑。
-你的任务是通过网络搜索获取最新的全球金融市场数据，并以严格的JSON格式输出。
+SYSTEM_PROMPT = """你是一位服务于北美华人投资者的专业金融市场编辑。
+你的核心读者是生活在北美、同时关注美股和中国市场的中文投资者。
+你的任务是通过网络搜索获取最新市场数据，输出严格JSON格式的日报内容。
 
 重要规则：
 1. 只输出JSON，不要有任何其他文字、解释或markdown代码块
-2. 所有文本内容使用中文（指标名称、公司名可保留英文/符号）
-3. 确保JSON格式完全正确，所有字符串使用双引号
-4. 搜索真实的最新数据，不要编造数字
-5. 日期格式：date字段用"YYYY年M月D日"，report_date用"YYYY-MM-DD"，next_meeting用"YYYY-MM-DD"
+2. 所有正文使用中文简体；指标名称、公司代码、会议名称可保留英文
+3. JSON格式必须完整正确，所有字符串用双引号
+4. 搜索真实最新数据，不要编造数字；数据来源尽量注明日期
+5. 视角偏重：①美股及美联储 ②A股/港股/人民币汇率 ③中美关系对市场的影响
+6. 日期格式：date字段用"YYYY年M月D日"，report_date/next_meeting用"YYYY-MM-DD"
 """
 
-USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市场数据，然后按照以下JSON模式输出。
+USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市场数据，为北美华人投资者生成日报。
 
-请按顺序搜索以下7类信息：
-1. 全球主要股指、商品、加密货币的最新价格和涨跌幅（S&P500、纳斯达克、道琼斯、上证、恒生、日经225、德国DAX、黄金、原油WTI、比特币）
+请按顺序搜索以下9类信息：
+0. **今日大势summary**：先综合搜索今日整体市场表现，形成一句话判断 + VIX当前值
+1. 全球主要股指、商品、加密货币最新价格和涨跌幅（S&P500、纳斯达克、道琼斯、上证综指、恒生指数、日经225、德国DAX、黄金现货、原油WTI、比特币、美元指数DXY、离岸人民币CNH/USD）
 2. 顶级金融领袖最新观点（巴菲特、达利欧、杰米·戴蒙、鲍威尔等，最近1-2周内的言论）
-3. 过去24-48小时内的重大市场新闻（至少5条，标注importance: breaking/major/normal）
-4. 最新宏观经济数据发布（CPI、NFP、PCE、GDP、PMI、失业率等，最近发布的实际数据）
-5. 本周重要财报结果及即将发布的财报（标注beat/miss/pending状态）
-6. 今日标普500各行业板块表现和涨跌幅（所有11个GICS行业）
-7. 主要央行最新动态（美联储、欧央行、中国人民银行、日本银行、英国央行）
+3. 过去24-48小时内的重大市场新闻，重点关注：①中美贸易/关税动态 ②美联储官员讲话 ③科技巨头财报 ④A股/港股重要事件（至少6条，标注importance）
+4. 最新宏观经济数据发布（CPI、NFP、PCE、GDP、PMI、失业率等）
+5. 本周重要财报结果及即将发布的财报
+6. 今日标普500各行业板块表现（全部11个GICS行业）
+7. 主要央行最新动态（美联储、欧央行、中国人民银行、日本银行）
+8. **未来7天经济日历calendar**：重要经济数据发布时间、央行会议、重要讲话（含预期值）
 
 必须输出以下JSON格式（只输出JSON，无其他内容）：
 
 {{
   "date": "{today}",
+  "summary": {{
+    "headline": "一句话大势判断，15-25字，点出最核心驱动因素",
+    "context": "2-3句背景说明，解释关键驱动力，以及对北美华人投资者的具体影响",
+    "sentiment": "bullish|bearish|neutral",
+    "vix": "VIX当前值如 '16.4'"
+  }},
   "indices": [
     {{
       "name": "S&P 500",
@@ -133,6 +143,16 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
       "bias": "hawkish",
       "note": "鲍威尔强调需要看到更多通胀降温证据才会降息"
     }}
+  ],
+  "calendar": [
+    {{
+      "date": "周二 5/6",
+      "time_et": "10:00 AM ET",
+      "event": "ISM服务业PMI",
+      "impact": "high|medium|low",
+      "previous": "51.4",
+      "forecast": "52.0"
+    }}
   ]
 }}
 
@@ -144,9 +164,58 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
 - earnings数组包含3-8个公司
 - sectors数组包含全部11个标普500行业（使用GICS标准）
 - central_banks数组包含至少4家央行（Fed、ECB、PBOC、BOJ）
+- calendar数组包含未来7天内至少5个重要经济事件，impact用high/medium/low区分
+- summary必须填写，headline要有具体指向，不能是空泛表述
 """
 
 # ─── HTML rendering ───────────────────────────────────────────────────────────
+
+
+def render_summary(summary: dict) -> str:
+    if not summary:
+        return ""
+    sentiment = summary.get("sentiment", "neutral")
+    sentiment_cn = {"bullish": "看多 · Bullish", "bearish": "看空 · Bearish", "neutral": "中性 · Neutral"}
+    sentiment_label = sentiment_cn.get(sentiment, "中性")
+    vix = summary.get("vix", "N/A")
+    def esc(s): return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+    return f"""<div class="summary-card">
+  <div class="summary-icon">📊</div>
+  <div class="summary-content">
+    <div class="summary-label">今日大势 · Daily Market Thesis</div>
+    <div class="summary-headline">{esc(summary.get("headline",""))}</div>
+    <div class="summary-context">{esc(summary.get("context",""))}</div>
+    <div class="summary-meta">
+      <span class="sentiment-badge {sentiment}">{sentiment_label}</span>
+      <span class="vix-display">VIX 恐慌指数: <span>{esc(vix)}</span></span>
+    </div>
+  </div>
+</div>"""
+
+
+def render_calendar(calendar: list) -> str:
+    if not calendar:
+        return "<div style=\'color:var(--muted);font-size:0.8rem;padding:10px\'>暂无本周日程数据</div>"
+    def esc(s): return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+    html_parts = ["<div class=\"calendar-grid\">"]
+    for item in calendar:
+        impact = item.get("impact", "medium")
+        prev = item.get("previous", "")
+        forecast = item.get("forecast", "")
+        values_parts = []
+        if forecast: values_parts.append(f"预期: <span>{esc(forecast)}</span>")
+        if prev:     values_parts.append(f"前值: {esc(prev)}")
+        values_html = f"<div class=\"cal-values\">{' &nbsp;&middot;&nbsp; '.join(values_parts)}</div>" if values_parts else ""
+        html_parts.append(f"""  <div class="cal-item {impact}">
+    <div class="cal-date">{esc(item.get("date",""))}<br><span style="font-size:0.6rem;color:var(--dimmed)">{esc(item.get("time_et",""))}</span></div>
+    <div>
+      <div class="cal-event">{esc(item.get("event",""))}</div>
+      {values_html}
+    </div>
+  </div>""")
+    html_parts.append("</div>")
+    return "\n".join(html_parts)
+
 
 def render_indices(indices: list) -> str:
     html_parts = []
@@ -329,6 +398,7 @@ def render_central_banks(central_banks: list) -> str:
 # ─── Anchor injection ─────────────────────────────────────────────────────────
 
 ANCHOR_RENDERERS = {
+    "SUMMARY":       render_summary,
     "INDICES":       render_indices,
     "LEADERS":       render_leaders,
     "NEWS":          render_news,
@@ -336,11 +406,13 @@ ANCHOR_RENDERERS = {
     "EARNINGS":      render_earnings,
     "SECTORS":       render_sectors,
     "CENTRAL_BANKS": render_central_banks,
+    "CALENDAR":      render_calendar,
 }
 
 
 def inject_into_html(html: str, data: dict) -> str:
     section_map = {
+        "SUMMARY":       "summary",
         "INDICES":       "indices",
         "LEADERS":       "leaders",
         "NEWS":          "news",
@@ -348,6 +420,7 @@ def inject_into_html(html: str, data: dict) -> str:
         "EARNINGS":      "earnings",
         "SECTORS":       "sectors",
         "CENTRAL_BANKS": "central_banks",
+        "CALENDAR":      "calendar",
     }
     for anchor, key in section_map.items():
         items = data.get(key, [])

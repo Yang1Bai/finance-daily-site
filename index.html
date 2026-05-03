@@ -854,6 +854,102 @@
     .text-muted { color: var(--muted); }
     .font-mono { font-family: var(--mono); }
     .text-sm { font-size: 0.75rem; }
+
+    /* =========================================================
+       SUMMARY / DAILY THESIS
+    ========================================================= */
+    .summary-section {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .summary-card {
+      background: linear-gradient(135deg, rgba(0,212,170,0.05) 0%, rgba(79,195,247,0.03) 100%);
+      border: 1px solid rgba(0,212,170,0.18);
+      border-radius: var(--radius-lg);
+      padding: 18px 22px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .summary-icon { font-size: 1.5rem; flex-shrink: 0; padding-top: 3px; }
+    .summary-content { flex: 1; }
+    .summary-label {
+      font-size: 0.6rem; font-family: var(--mono); color: var(--accent);
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 6px;
+    }
+    .summary-headline {
+      font-size: 1.05rem; font-weight: 700; color: var(--text);
+      line-height: 1.45; margin-bottom: 8px;
+    }
+    .summary-context {
+      font-size: 0.8rem; color: var(--muted); line-height: 1.65; margin-bottom: 10px;
+    }
+    .summary-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .sentiment-badge {
+      font-size: 0.62rem; font-family: var(--mono); font-weight: 600;
+      padding: 3px 10px; border-radius: 4px; letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .sentiment-badge.bullish { background:rgba(0,230,118,0.1); color:var(--up); border:1px solid rgba(0,230,118,0.25); }
+    .sentiment-badge.bearish { background:rgba(255,82,82,0.1);  color:var(--down); border:1px solid rgba(255,82,82,0.25); }
+    .sentiment-badge.neutral { background:rgba(79,195,247,0.08); color:var(--neutral); border:1px solid rgba(79,195,247,0.2); }
+    .vix-display { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+    .vix-display span { color: var(--warn); font-weight: 600; }
+
+    /* =========================================================
+       ECONOMIC CALENDAR
+    ========================================================= */
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 10px;
+    }
+    .cal-item {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 12px 14px;
+      display: flex; gap: 12px; align-items: flex-start;
+      transition: all 0.2s; border-left-width: 3px;
+    }
+    .cal-item:hover { border-color: var(--border-light); }
+    .cal-item.high   { border-left-color: var(--down); }
+    .cal-item.medium { border-left-color: var(--warn); }
+    .cal-item.low    { border-left-color: var(--neutral); }
+    .cal-date { font-family: var(--mono); font-size: 0.65rem; color: var(--muted); min-width: 58px; line-height: 1.5; }
+    .cal-event { font-size: 0.8rem; color: var(--text); font-weight: 500; margin-bottom: 4px; }
+    .cal-values { font-family: var(--mono); font-size: 0.67rem; color: var(--muted); }
+    .cal-values span { color: var(--neutral); }
+
+    /* =========================================================
+       EMAIL SUBSCRIBE
+    ========================================================= */
+    .subscribe-bar {
+      background: linear-gradient(90deg, rgba(0,212,170,0.05), rgba(79,195,247,0.03));
+      border: 1px solid rgba(0,212,170,0.15);
+      border-radius: var(--radius-lg);
+      padding: 16px 24px;
+      display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+      margin-top: 8px; margin-bottom: 20px;
+    }
+    .subscribe-text { flex: 1; min-width: 200px; }
+    .subscribe-text strong { color: var(--accent); font-size: 0.9rem; }
+    .subscribe-text p { font-size: 0.73rem; color: var(--muted); margin-top: 3px; }
+    .subscribe-form { display: flex; gap: 8px; flex-wrap: wrap; }
+    .subscribe-form input {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 8px 14px;
+      color: var(--text); font-size: 0.8rem; width: 200px;
+      outline: none; transition: border-color 0.2s;
+    }
+    .subscribe-form input:focus { border-color: var(--accent); }
+    .subscribe-form button {
+      background: var(--accent); color: #07111e;
+      border: none; border-radius: var(--radius); padding: 8px 18px;
+      font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.2s;
+    }
+    .subscribe-form button:hover { background: #33e0be; }
+
+    /* live data age warning */
+    .data-stale { border-color: rgba(255,179,0,0.35) !important; }
+
   </style>
 </head>
 <body>
@@ -940,6 +1036,29 @@
 </div>
 <!-- INDICES:END -->
     </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     DAILY SUMMARY / MARKET THESIS
+========================================================= -->
+<section class="summary-section">
+  <div class="container">
+<!-- SUMMARY:START -->
+<div class="summary-card">
+  <div class="summary-icon">📊</div>
+  <div class="summary-content">
+    <div class="summary-label">今日大势 · Daily Market Thesis</div>
+    <div class="summary-headline">美联储鹰派表态叠加就业降温，市场陷入降息时点博弈，短期波动加剧</div>
+    <div class="summary-context">鲍威尔5月会议偏鹰派讲话令全年降息预期压缩至1次，但4月非农就业数据不及预期再度点燃宽松预期。两股力量相互博弈，美股在科技财报超预期支撑下维持韧性，债市波动率上升。北美华人投资者需关注人民币汇率走势及A股政策面支撑力度。</div>
+    <div class="summary-meta">
+      <span class="sentiment-badge neutral">中性 · Neutral</span>
+      <span class="vix-display">VIX 恐慌指数: <span>16.4</span></span>
+    </div>
+  </div>
+</div>
+<!-- SUMMARY:END -->
   </div>
 </section>
 
@@ -1452,6 +1571,47 @@
       </div>
     </div>
 
+    <!-- =========================================================
+         ECONOMIC CALENDAR (FULL WIDTH)
+    ========================================================= -->
+    <div class="section-block">
+      <div class="card">
+        <div class="section-label">本周日程 · Economic Calendar</div>
+<!-- CALENDAR:START -->
+<div class="calendar-grid">
+  <div class="cal-item high">
+    <div class="cal-date">周五 5/3<br><span style="font-size:0.6rem;color:var(--dimmed)">8:30 AM ET</span></div>
+    <div><div class="cal-event">4月非农就业报告 (NFP)</div><div class="cal-values">预期: <span>24.3万</span> &nbsp;&middot;&nbsp; 前值: 30.3万</div></div>
+  </div>
+  <div class="cal-item high">
+    <div class="cal-date">周二 5/7<br><span style="font-size:0.6rem;color:var(--dimmed)">10:00 AM ET</span></div>
+    <div><div class="cal-event">ISM服务业PMI</div><div class="cal-values">预期: <span>52.0</span> &nbsp;&middot;&nbsp; 前值: 51.4</div></div>
+  </div>
+  <div class="cal-item medium">
+    <div class="cal-date">周四 5/9<br><span style="font-size:0.6rem;color:var(--dimmed)">8:30 AM ET</span></div>
+    <div><div class="cal-event">初请失业金人数</div><div class="cal-values">预期: <span>21.0万</span> &nbsp;&middot;&nbsp; 前值: 20.7万</div></div>
+  </div>
+  <div class="cal-item high">
+    <div class="cal-date">周三 5/8<br><span style="font-size:0.6rem;color:var(--dimmed)">全天</span></div>
+    <div><div class="cal-event">鲍威尔出席活动讲话</div><div class="cal-values">关注降息指引最新表态</div></div>
+  </div>
+</div>
+<!-- CALENDAR:END -->
+      </div>
+    </div>
+
+    <!-- SUBSCRIBE -->
+    <div class="subscribe-bar">
+      <div class="subscribe-text">
+        <strong>📬 订阅每日推送</strong>
+        <p>每个交易日自动推送，开盘前5分钟读完，把握市场节奏</p>
+      </div>
+      <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/financial-daily" method="post" target="_blank">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit">订阅</button>
+      </form>
+    </div>
+
   </div><!-- /container -->
 </main>
 
@@ -1472,22 +1632,57 @@
   // Set current date
   (function() {
     const el = document.getElementById('current-date');
+    if (!el) return;
     const now = new Date();
     const opts = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'short' };
     el.textContent = now.toLocaleDateString('zh-CN', opts);
   })();
 
-  // Highlight data age
+  // Data age indicator
   (function() {
     const metaEl = document.querySelector('meta[name="last-updated"]');
-    if (metaEl) {
-      const updated = new Date(metaEl.content);
-      const age = Math.round((Date.now() - updated) / 3600000);
-      if (age > 12) {
+    if (!metaEl) return;
+    const updated = new Date(metaEl.content);
+    const ageH = (Date.now() - updated) / 3600000;
+    const badge = document.querySelector('.header-badge');
+    if (!badge) return;
+    const ageMin = Math.round(ageH * 60);
+    const ageStr = ageH < 1 ? ageMin + '分钟前更新' : Math.round(ageH) + '小时前更新';
+    badge.title = ageStr;
+    if (ageH > 14) badge.classList.add('data-stale');
+  })();
+
+  // Live quotes from data/quotes.json (populated by live-quotes workflow)
+  (function() {
+    fetch('data/quotes.json?' + Date.now())
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (!data || !data.quotes) return;
+        const track = document.querySelector('.indices-track');
+        if (!track) return;
+        data.quotes.forEach(q => {
+          track.querySelectorAll('.ticker-card').forEach(card => {
+            const nameEl = card.querySelector('.ticker-name');
+            if (nameEl && nameEl.textContent.trim() === q.name) {
+              card.className = 'ticker-card ' + q.direction;
+              card.querySelector('.ticker-value').textContent = q.value;
+              const chgEl = card.querySelector('.ticker-change');
+              const arrow = q.direction === 'up' ? '▲' : '▼';
+              chgEl.textContent = arrow + ' ' + q.change_pct;
+              chgEl.className = 'ticker-change ' + q.direction;
+            }
+          });
+        });
+        // Show live badge
         const badge = document.querySelector('.header-badge');
-        if (badge) badge.style.borderColor = 'rgba(255,179,0,0.4)';
-      }
-    }
+        if (badge) {
+          const updated = new Date(data.updated);
+          const mins = Math.round((Date.now() - updated) / 60000);
+          badge.title = '行情数据: ' + (mins < 60 ? mins + '分钟前' : Math.round(mins/60) + '小时前');
+          badge.classList.remove('data-stale');
+        }
+      })
+      .catch(() => {});
   })();
 </script>
 
