@@ -1,0 +1,10 @@
+{
+  "name": "金融日报 | Financial Daily",
+  "short_name": "金融日报",
+  "description": "北美华人投资者专属每日金融简报",
+  "start_url": "/finance-daily-site/",
+  "display": "standalone",
+  "background_color": "#070b14",
+  "theme_color": "#070b14",
+  "icons": []
+}

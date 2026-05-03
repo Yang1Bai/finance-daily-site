@@ -8,6 +8,11 @@
   <meta property="og:description" content="北美华人投资者专属：全球指数·市场要闻·宏观数据·财报追踪·经济日历，每日自动更新">
   <meta property="og:type" content="website">
   <meta name="keywords" content="金融日报,北美投资,美股,A股,港股,宏观经济,财报,经济日历">
+  <meta name="theme-color" content="#070b14">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="金融日报">
+  <link rel="manifest" href="manifest.json">
   <title>金融日报 | Financial Daily — 北美华人投资者日报</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -1173,9 +1178,106 @@
     /* live data age warning */
     .data-stale { border-color: rgba(255,179,0,0.35) !important; }
 
+    /* ── Reading progress bar ──────────────────────────────────── */
+    #reading-progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, var(--accent) 0%, #4fc3f7 100%);
+      z-index: 9999; transition: width 0.1s linear;
+      box-shadow: 0 0 8px rgba(0,212,170,0.6);
+    }
+
+    /* ── Sticky section jump nav ───────────────────────────── */
+    .jump-nav {
+      position: sticky; top: 0; z-index: 90;
+      background: rgba(7,11,20,0.94); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 7px 20px; display: flex; gap: 6px;
+      flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+    }
+    .jump-nav::-webkit-scrollbar { display: none; }
+    .jump-nav a {
+      font-size: 0.67rem; font-family: var(--mono);
+      color: var(--muted); padding: 4px 10px;
+      border: 1px solid var(--border); border-radius: 20px;
+      white-space: nowrap; text-decoration: none;
+      transition: all 0.18s; flex-shrink: 0;
+    }
+    .jump-nav a:hover, .jump-nav a.active {
+      color: var(--accent); border-color: rgba(0,212,170,0.5);
+      background: rgba(0,212,170,0.08); text-decoration: none;
+    }
+
+    /* ── Floating action cluster ───────────────────────────── */
+    .fab-cluster {
+      position: fixed; bottom: 28px; right: 24px;
+      display: flex; flex-direction: column; gap: 10px;
+      z-index: 500;
+    }
+    .fab {
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 1px solid var(--border-light);
+      background: var(--card); color: var(--muted);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 1.1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+      transition: all 0.2s;
+    }
+    .fab:hover { background: var(--card-hover); color: var(--accent); border-color: rgba(0,212,170,0.5); transform: scale(1.08); }
+    #fab-top { opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+    #fab-top.visible { opacity: 1; pointer-events: auto; }
+
+    /* ── Subscribe strip (inline, after summary) ───────────────── */
+    .subscribe-strip {
+      background: linear-gradient(135deg, rgba(0,212,170,0.06) 0%, rgba(79,195,247,0.04) 100%);
+      border: 1px solid rgba(0,212,170,0.2);
+      border-radius: var(--radius-lg); padding: 14px 18px;
+      display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .subscribe-strip-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .subscribe-strip-body { flex: 1; min-width: 160px; }
+    .subscribe-strip-body strong { display: block; color: var(--accent); font-size: 0.86rem; margin-bottom: 2px; }
+    .subscribe-strip-body span { font-size: 0.73rem; color: var(--muted); }
+    .subscribe-strip-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .btn-sub-email {
+      padding: 6px 12px; border-radius: 6px; border: none;
+      background: var(--accent); color: #000; font-size: 0.76rem;
+      font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    .btn-sub-email:hover { background: #33e0be; }
+    .btn-sub-tg {
+      padding: 6px 12px; border-radius: 6px;
+      background: linear-gradient(135deg,#229ED9,#1a8bbf);
+      color: #fff; font-size: 0.76rem; font-weight: 600;
+      text-decoration: none; white-space: nowrap; display: flex; align-items: center; gap: 5px;
+    }
+    .btn-sub-tg:hover { opacity: 0.9; text-decoration: none; color: #fff; }
+
+    /* ── Section anchor scroll offset (for sticky jump nav) ── */
+    .sec-anchor { scroll-margin-top: 90px; }
+
+    /* ── Share toast ──────────────────────────────────────────── */
+    #share-toast {
+      position: fixed; bottom: 84px; right: 24px;
+      background: var(--card); border: 1px solid var(--border-light);
+      color: var(--text); font-size: 0.78rem; padding: 8px 14px;
+      border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+      opacity: 0; pointer-events: none; transition: opacity 0.3s;
+      z-index: 501;
+    }
+    #share-toast.show { opacity: 1; }
+
+    /* ── Mobile tweaks ────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .two-col { grid-template-columns: 1fr !important; }
+      .fab-cluster { bottom: 20px; right: 16px; }
+      .subscribe-strip { flex-direction: column; align-items: flex-start; }
+      .jump-nav { padding: 6px 12px; }
+    }
   </style>
 </head>
 <body>
+<div id="reading-progress"></div>
 
 <!-- =========================================================
      HEADER
@@ -1184,21 +1286,36 @@
   <div class="container">
     <div class="header-inner">
       <div class="logo-block">
-        <span class="site-title">金融日报 | Financial Daily</span>
+        <span class="site-title">金融日报</span>
+        <span style="font-size:0.72rem;color:var(--muted);font-family:var(--mono);letter-spacing:0.05em;align-self:flex-end;padding-bottom:2px;">Financial Daily</span>
       </div>
       <div class="header-meta">
         <span class="header-date" id="current-date">Loading...</span>
         <div class="header-badge">
           <span class="pulse-dot"></span>
-          由 Claude API + Web Search 自动生成
+          由 Claude AI 自动生成
         </div>
         <nav class="header-nav">
-          <a href="archive/index.html">📁 Archive</a>
+          <a href="archive/index.html">📁 归档</a>
+          <a href="feed.xml" style="color:var(--muted);">RSS</a>
         </nav>
       </div>
     </div>
   </div>
 </header>
+
+<!-- Sticky section jump nav -->
+<nav class="jump-nav" id="jump-nav">
+  <a href="#sec-summary">📊 大势</a>
+  <a href="#sec-news">📰 要闻</a>
+  <a href="#sec-leaders">👔 领袖</a>
+  <a href="#sec-macro">📈 宏观</a>
+  <a href="#sec-earnings">💼 财报</a>
+  <a href="#sec-sectors">🏭 行业</a>
+  <a href="#sec-banks">🏦 央行</a>
+  <a href="#sec-calendar">📅 日历</a>
+  <a href="#sec-my">⭐ 工作台</a>
+</nav>
 
 <!-- =========================================================
      INDICES SECTION
@@ -1276,7 +1393,7 @@
 <!-- =========================================================
      DAILY SUMMARY / MARKET THESIS
 ========================================================= -->
-<section class="summary-section">
+<section class="summary-section sec-anchor" id="sec-summary">
   <div class="container">
 <!-- SUMMARY:START -->
 <div class="summary-card">
@@ -1295,10 +1412,34 @@
   </div>
 </section>
 
+<!-- Inline subscribe strip — above the fold -->
+<div class="container" style="padding-top:12px;padding-bottom:4px;">
+  <div class="subscribe-strip" id="subscribe-strip">
+    <div class="subscribe-strip-icon">📬</div>
+    <div class="subscribe-strip-body">
+      <strong>订阅每日金融早报 — 免费</strong>
+      <span>每个交易日自动更新，开盘前 + 收盘后各一次</span>
+    </div>
+    <div class="subscribe-strip-actions">
+      <form action="https://buttondown.email/api/emails/embed-subscribe/yangbai0110" method="post" target="_blank" style="display:flex;gap:6px;">
+        <input type="email" name="email" placeholder="your@email.com" required
+               style="padding:6px 10px;border-radius:6px;border:1px solid var(--border-light);background:rgba(255,255,255,0.05);color:var(--text);font-size:0.76rem;width:158px;outline:none;" />
+        <button type="submit" class="btn-sub-email">📧 邮件订阅</button>
+      </form>
+      <a href="https://t.me/GGmanm_bot?start=subscribe" target="_blank" class="btn-sub-tg">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.44 13.55l-2.955-.924c-.643-.204-.657-.643.136-.953l11.566-4.461c.537-.194 1.006.131.707.009z"/></svg>
+        Telegram
+      </a>
+      <button onclick="document.getElementById('subscribe-strip').style.display='none';localStorage.setItem('fd_sub_dismissed','1');"
+              style="background:none;border:none;color:var(--dimmed);cursor:pointer;font-size:1.1rem;line-height:1;padding:2px 4px;" title="关闭">×</button>
+    </div>
+  </div>
+</div>
+
 <!-- =========================================================
          PERSONAL DASHBOARD — Watchlist + Portfolio
     ========================================================= -->
-    <div class="section-block personal-section" id="sec-my">
+    <div class="section-block personal-section sec-anchor" id="sec-my">
       <div class="card">
         <div class="personal-header">
           <div class="section-label">⭐ 我的工作台 · My Dashboard</div>
@@ -1349,7 +1490,7 @@
       <div class="left-col">
 
         <!-- LEADERS SECTION -->
-        <div class="section-block leaders-section">
+        <div class="section-block leaders-section sec-anchor" id="sec-leaders">
           <div class="card">
             <div class="section-label">市场领袖观点 · Market Leaders</div>
 <!-- LEADERS:START -->
@@ -1410,7 +1551,7 @@
         </div>
 
         <!-- CENTRAL BANKS SECTION -->
-        <div class="section-block">
+        <div class="section-block sec-anchor" id="sec-banks">
           <div class="card">
             <div class="section-label">央行动态 · Central Banks</div>
 <!-- CENTRAL_BANKS:START -->
@@ -1491,7 +1632,7 @@
       <div class="right-col">
 
         <!-- NEWS SECTION -->
-        <div class="section-block news-section" id="sec-news">
+        <div class="section-block news-section sec-anchor" id="sec-news">
           <div class="card">
             <div class="section-label">市场要闻 · Market News</div>
 <!-- NEWS:START -->
@@ -1563,7 +1704,7 @@
         </div>
 
         <!-- MACRO SECTION -->
-        <div class="section-block">
+        <div class="section-block sec-anchor" id="sec-macro">
           <div class="card">
             <div class="section-label">宏观指标 · Macro Data</div>
 <!-- MACRO:START -->
@@ -1626,7 +1767,7 @@
 
     <!-- EARNINGS WRAP -->
     ========================================================= -->
-    <div class="section-block earnings-wrap" id="sec-earnings">
+    <div class="section-block earnings-wrap sec-anchor" id="sec-earnings">
       <div class="card">
         <div class="section-label">财报追踪 · Earnings Tracker</div>
 <!-- EARNINGS:START -->
@@ -1774,7 +1915,7 @@
 
     <!-- SECTORS WRAP -->
     ========================================================= -->
-    <div class="section-block">
+    <div class="section-block sec-anchor" id="sec-sectors">
       <div class="card">
         <div class="section-label">板块表现 · Sector Performance</div>
 <!-- SECTORS:START -->
@@ -1920,7 +2061,7 @@
     <!-- =========================================================
          ECONOMIC CALENDAR (FULL WIDTH)
     ========================================================= -->
-    <div class="section-block calendar-wrap" id="sec-calendar">
+    <div class="section-block calendar-wrap sec-anchor" id="sec-calendar">
       <div class="card">
         <div class="section-label">本周日程 · Economic Calendar</div>
 <!-- TradingView Economic Calendar: real-time, always accurate -->
@@ -2412,6 +2553,65 @@
 
 
 
+    // ── Reading progress bar ──────────────────────────────────────────────────────────
+  (function() {
+    const bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (total > 0 ? (scrolled / total * 100) : 0) + '%';
+    }, { passive: true });
+  })();
+
+  // ── Back-to-top FAB visibility ───────────────────────────────────────────────────
+  (function() {
+    const btn = document.getElementById('fab-top');
+    if (!btn) return;
+    window.addEventListener('scroll', function() {
+      btn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+  })();
+
+  // ── Share / copy URL ────────────────────────────────────────────────────────────
+  function shareOrCopy() {
+    const url = window.location.href;
+    const toast = document.getElementById('share-toast');
+    if (navigator.share) {
+      navigator.share({ title: '金融日报 | Financial Daily', url });
+    } else {
+      navigator.clipboard.writeText(url).then(function() {
+        toast.classList.add('show');
+        setTimeout(function() { toast.classList.remove('show'); }, 2000);
+      });
+    }
+  }
+
+  // ── Jump nav active highlight on scroll ────────────────────────────────────────
+  (function() {
+    const sections = document.querySelectorAll('.sec-anchor[id]');
+    const links    = document.querySelectorAll('.jump-nav a');
+    if (!sections.length || !links.length) return;
+    const obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          links.forEach(function(l) { l.classList.remove('active'); });
+          const a = document.querySelector('.jump-nav a[href="#' + entry.target.id + '"]');
+          if (a) a.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    sections.forEach(function(s) { obs.observe(s); });
+  })();
+
+  // ── Dismiss subscribe strip if already dismissed ────────────────────────────
+  (function() {
+    if (localStorage.getItem('fd_sub_dismissed')) {
+      var el = document.getElementById('subscribe-strip');
+      if (el) el.style.display = 'none';
+    }
+  })();
+
   // ── Subscriber count (Telegram) ───────────────────────────────────────
   (function loadSubCount() {
     const el = document.getElementById('subscriber-count');
@@ -2462,6 +2662,13 @@
       });
   });
 </script>
+
+<!-- Floating action cluster -->
+<div class="fab-cluster">
+  <button class="fab" id="fab-share" title="分享此页" onclick="shareOrCopy()">🔗</button>
+  <button class="fab" id="fab-top" title="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</div>
+<div id="share-toast">✅ 链接已复制</div>
 
 </body>
 </html>
