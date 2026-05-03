@@ -1108,6 +1108,17 @@
     .pf-gain { font-family:var(--mono); font-size:0.8rem; font-weight:600; }
     .pf-gain.pos { color:var(--up); }
     .pf-gain.neg { color:var(--down); }
+
+    .sub-btn {
+      display:inline-flex; align-items:center; gap:6px;
+      padding:7px 16px; border-radius:var(--radius);
+      font-size:0.78rem; font-weight:600; cursor:pointer;
+      text-decoration:none; transition:all 0.2s; border:none;
+    }
+    .rss-btn { background:rgba(255,130,0,0.12); color:#ff8200; border:1px solid rgba(255,130,0,0.3); }
+    .rss-btn:hover { background:rgba(255,130,0,0.22); text-decoration:none; color:#ff8200; }
+    .copy-btn { background:rgba(79,195,247,0.1); color:var(--neutral); border:1px solid rgba(79,195,247,0.25); }
+    .copy-btn:hover { background:rgba(79,195,247,0.2); text-decoration:none; color:var(--neutral); }
     /* live data age warning */
     .data-stale { border-color: rgba(255,179,0,0.35) !important; }
 
@@ -1882,13 +1893,17 @@
     <!-- SUBSCRIBE -->
     <div class="subscribe-bar">
       <div class="subscribe-text">
-        <strong>📬 订阅每日推送</strong>
-        <p>每个交易日自动推送，开盘前5分钟读完，把握市场节奏</p>
+        <strong>📬 不错过每日更新</strong>
+        <p>每个交易日自动更新，开盘前 + 收盘后各一次</p>
       </div>
-      <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/financial-daily" method="post" target="_blank">
-        <input type="email" name="email" placeholder="your@email.com" required>
-        <button type="submit">订阅</button>
-      </form>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+        <a href="feed.xml" target="_blank" class="sub-btn rss-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+          RSS 订阅
+        </a>
+        <a href="https://yang1bai.github.io/finance-daily-site/feed.xml" id="copy-rss" onclick="copyRSS(event)" class="sub-btn copy-btn">📋 复制链接</a>
+        <span style="font-size:0.7rem;color:var(--dimmed);">邮件订阅配置中…</span>
+      </div>
     </div>
 
   </div><!-- /container -->
@@ -1991,6 +2006,19 @@
       .catch(() => {});
   })();
 
+
+
+  function copyRSS(e) {
+    e.preventDefault();
+    const url = 'https://yang1bai.github.io/finance-daily-site/feed.xml';
+    navigator.clipboard.writeText(url).then(() => {
+      const btn = document.getElementById('copy-rss');
+      btn.textContent = '✅ 已复制';
+      setTimeout(() => { btn.textContent = '📋 复制链接'; }, 2000);
+    }).catch(() => {
+      prompt('RSS 链接：', url);
+    });
+  }
 
   // ═══════════════════════════════════════════════════════════
   //  PERSONAL DASHBOARD — Watchlist + Portfolio
