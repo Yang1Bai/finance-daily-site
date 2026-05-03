@@ -1021,6 +1021,93 @@
     body.simple-mode .simple-banner { display: block; }
     .simple-banner a { color: var(--accent); cursor: pointer; }
 
+
+    /* =========================================================
+       PERSONAL DASHBOARD
+    ========================================================= */
+    .personal-section { margin-bottom: 20px; }
+    .personal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
+    .personal-privacy { font-size:0.62rem; color:var(--dimmed); font-family:var(--mono); }
+
+    .ptabs { display:flex; gap:6px; margin-bottom:16px; }
+    .ptab {
+      background:var(--bg); border:1px solid var(--border);
+      border-radius:6px; padding:6px 18px;
+      color:var(--muted); font-size:0.78rem; cursor:pointer;
+      transition:all 0.2s; font-family:var(--sans);
+    }
+    .ptab.active { background:rgba(0,212,170,0.1); border-color:var(--accent); color:var(--accent); }
+    .p-empty { color:var(--dimmed); font-size:0.78rem; padding:24px 0; text-align:center; }
+
+    .add-row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; }
+    .add-row input {
+      background:var(--bg); border:1px solid var(--border);
+      border-radius:var(--radius); padding:7px 12px;
+      color:var(--text); font-size:0.78rem; flex:1; min-width:100px;
+      outline:none; transition:border-color 0.2s; font-family:var(--mono);
+    }
+    .add-row input:focus { border-color:var(--accent); }
+    .add-row button {
+      background:var(--accent); color:#07111e;
+      border:none; border-radius:var(--radius); padding:7px 16px;
+      font-size:0.78rem; font-weight:600; cursor:pointer;
+      transition:all 0.2s; white-space:nowrap;
+    }
+    .add-row button:hover { background:#33e0be; }
+
+    /* Watchlist */
+    .wl-list { display:grid; grid-template-columns:repeat(auto-fill, minmax(200px,1fr)); gap:10px; }
+    .wl-card {
+      background:var(--bg); border:1px solid var(--border);
+      border-radius:var(--radius); padding:14px;
+      transition:all 0.2s; position:relative;
+    }
+    .wl-card:hover { border-color:var(--border-light); transform:translateY(-1px); box-shadow:var(--shadow); }
+    .wl-card-top { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px; }
+    .wl-sym { font-family:var(--mono); font-size:0.85rem; font-weight:700; color:var(--text); }
+    .wl-alias { font-size:0.65rem; color:var(--muted); margin-top:2px; }
+    .wl-rm { background:none; border:none; color:var(--dimmed); font-size:1.1rem; cursor:pointer; padding:0; line-height:1; transition:color 0.15s; }
+    .wl-rm:hover { color:var(--down); }
+    .wl-price-block { display:flex; align-items:baseline; gap:6px; flex-wrap:wrap; }
+    .wl-price { font-family:var(--mono); font-size:1.1rem; font-weight:700; color:var(--text); }
+    .wl-cur { font-size:0.6rem; color:var(--muted); font-family:var(--mono); }
+    .wl-loading { font-size:0.72rem; color:var(--dimmed); }
+    .wl-prev { font-size:0.62rem; color:var(--dimmed); font-family:var(--mono); margin-top:3px; }
+
+    /* Portfolio */
+    .pf-summary {
+      display:flex; gap:0; margin-bottom:14px;
+      background:rgba(0,212,170,0.04); border:1px solid rgba(0,212,170,0.15);
+      border-radius:var(--radius); overflow:hidden;
+    }
+    .pf-sum-item {
+      flex:1; padding:12px 16px; text-align:center;
+      border-right:1px solid rgba(0,212,170,0.1); font-size:0.7rem;
+      color:var(--muted);
+    }
+    .pf-sum-item:last-child { border-right:none; }
+    .pf-sum-item span {
+      display:block; font-family:var(--mono); font-size:1rem;
+      font-weight:700; color:var(--text); margin-top:4px;
+    }
+    .pf-pnl-pos { color:var(--up) !important; }
+    .pf-pnl-neg { color:var(--down) !important; }
+
+    .pf-list { display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:10px; }
+    .pf-card {
+      background:var(--bg); border:1px solid var(--border);
+      border-radius:var(--radius); padding:14px;
+      transition:all 0.2s;
+    }
+    .pf-card:hover { border-color:var(--border-light); }
+    .pf-card-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+    .pf-sym { font-family:var(--mono); font-size:0.9rem; font-weight:700; color:var(--text); }
+    .pf-meta { font-size:0.7rem; color:var(--muted); margin-bottom:8px; line-height:1.7; }
+    .pf-pnl-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:6px; border-top:1px solid var(--border); padding-top:8px; }
+    .pf-cur-price { font-family:var(--mono); font-size:0.85rem; font-weight:600; color:var(--text); }
+    .pf-gain { font-family:var(--mono); font-size:0.8rem; font-weight:600; }
+    .pf-gain.pos { color:var(--up); }
+    .pf-gain.neg { color:var(--down); }
     /* live data age warning */
     .data-stale { border-color: rgba(255,179,0,0.35) !important; }
 
@@ -1417,9 +1504,50 @@
       </div><!-- /right-col -->
     </div><!-- /two-col -->
 
+    <!-- =========================================================
+         PERSONAL DASHBOARD — Watchlist + Portfolio
+    ========================================================= -->
+    <div class="section-block personal-section">
+      <div class="card">
+        <div class="personal-header">
+          <div class="section-label">⭐ 我的工作台 · My Dashboard</div>
+          <span class="personal-privacy">🔒 数据存本地 · 不上传服务器</span>
+        </div>
+        <div class="ptabs">
+          <button class="ptab active" id="ptab-wl" onclick="switchTab(event,'wl')">📋 自选股</button>
+          <button class="ptab" id="ptab-pf" onclick="switchTab(event,'pf')">💼 持仓盈亏</button>
+        </div>
+        <div id="panel-wl">
+          <div class="add-row">
+            <input id="wl-sym" placeholder="代码，如 AAPL / 000001.SS / BTC-USD" />
+            <input id="wl-name" placeholder="备注名（可选）" />
+            <button onclick="wlAdd()">＋ 添加</button>
+          </div>
+          <div id="wl-empty" class="p-empty">还没有自选股，输入代码开始追踪 →</div>
+          <div id="wl-list" class="wl-list"></div>
+        </div>
+        <div id="panel-pf" style="display:none">
+          <div class="add-row">
+            <input id="pf-sym"    placeholder="代码，如 AAPL / TSLA" />
+            <input id="pf-shares" type="number" min="0.0001" step="0.0001" placeholder="数量" />
+            <input id="pf-cost"   type="number" min="0" step="0.01" placeholder="买入均价 ($)" />
+            <button onclick="pfAdd()">＋ 添加持仓</button>
+          </div>
+          <div id="pf-empty" class="p-empty">还没有持仓记录，输入持仓开始计算浮盈浮亏 →</div>
+          <div id="pf-summary" class="pf-summary" style="display:none">
+            <div class="pf-sum-item">总成本<span id="sum-cost">—</span></div>
+            <div class="pf-sum-item">总市值<span id="sum-value">—</span></div>
+            <div class="pf-sum-item">总盈亏<span id="sum-pnl">—</span></div>
+            <div class="pf-sum-item">盈亏率<span id="sum-pct">—</span></div>
+          </div>
+          <div id="pf-list" class="pf-list"></div>
+        </div>
+      </div>
+    </div>
+
     <!-- EARNINGS WRAP -->
     ========================================================= -->
-    <div class="section-block">
+    <div class="section-block earnings-wrap">
       <div class="card">
         <div class="section-label">财报追踪 · Earnings Tracker</div>
 <!-- EARNINGS:START -->
@@ -1862,6 +1990,223 @@
       })
       .catch(() => {});
   })();
+
+
+  // ═══════════════════════════════════════════════════════════
+  //  PERSONAL DASHBOARD — Watchlist + Portfolio
+  // ═══════════════════════════════════════════════════════════
+
+  const LS_WL = 'fd-watchlist-v1';
+  const LS_PF = 'fd-portfolio-v1';
+  const priceCache = {};
+
+  function wlLoad() { return JSON.parse(localStorage.getItem(LS_WL) || '[]'); }
+  function wlSave(d) { localStorage.setItem(LS_WL, JSON.stringify(d)); }
+  function pfLoad() { return JSON.parse(localStorage.getItem(LS_PF) || '[]'); }
+  function pfSave(d) { localStorage.setItem(LS_PF, JSON.stringify(d)); }
+
+  function switchTab(e, tab) {
+    ['wl','pf'].forEach(t => {
+      document.getElementById('panel-' + t).style.display = t === tab ? 'block' : 'none';
+      document.getElementById('ptab-' + t).classList.toggle('active', t === tab);
+    });
+  }
+
+  // ── Price fetching (Yahoo Finance → CORS proxy fallback) ───
+  function toYahooSym(raw) {
+    if (!raw.includes(':')) return raw;
+    const [exch, ticker] = raw.split(':');
+    const map = { SSE:'', SZSE:'', HKEX:'.HK', TSX:'.TO', LSE:'.L', FWB:'.DE' };
+    if (exch === 'SSE')  return ticker + '.SS';
+    if (exch === 'SZSE') return ticker + '.SZ';
+    return ticker + (map[exch] || '');
+  }
+
+  async function fetchPrice(rawSym) {
+    const key = rawSym;
+    if (priceCache[key] && Date.now() - priceCache[key].ts < 300000) return priceCache[key];
+
+    const ySym = toYahooSym(rawSym);
+    const yUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ySym)}?range=1d&interval=1m&includePrePost=false`;
+    const proxies = [
+      yUrl,
+      `https://corsproxy.io/?${encodeURIComponent(yUrl)}`,
+      `https://api.allorigins.win/get?url=${encodeURIComponent(yUrl)}`
+    ];
+
+    for (const url of proxies) {
+      try {
+        const resp = await fetch(url, { signal: AbortSignal.timeout(7000) });
+        if (!resp.ok) continue;
+        let json = await resp.json();
+        // allorigins wraps in {contents: '...'}
+        if (json.contents) json = JSON.parse(json.contents);
+        const result = json.chart?.result?.[0];
+        if (!result) continue;
+        const meta  = result.meta;
+        const price = meta.regularMarketPrice;
+        const prev  = meta.chartPreviousClose || meta.previousClose || price;
+        const chgPct = prev ? (price - prev) / prev * 100 : 0;
+        const chgAbs = price - prev;
+        const info = { price, prev, chgPct, chgAbs, currency: meta.currency || 'USD', ts: Date.now() };
+        priceCache[key] = info;
+        return info;
+      } catch(e) {}
+    }
+    return null;
+  }
+
+  function fmtNum(n, dec=2) {
+    return n.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  }
+
+  // ── Watchlist ───────────────────────────────────────────────
+  function wlAdd() {
+    const sym  = (document.getElementById('wl-sym').value || '').trim().toUpperCase();
+    const name = (document.getElementById('wl-name').value || '').trim();
+    if (!sym) return;
+    const list = wlLoad();
+    if (list.find(i => i.symbol === sym)) { alert('已在自选列表'); return; }
+    list.push({ symbol: sym, alias: name });
+    wlSave(list);
+    document.getElementById('wl-sym').value = '';
+    document.getElementById('wl-name').value = '';
+    wlRender();
+  }
+
+  function wlRemove(sym) {
+    wlSave(wlLoad().filter(i => i.symbol !== sym));
+    wlRender();
+  }
+
+  function wlRender() {
+    const list = wlLoad();
+    const grid  = document.getElementById('wl-list');
+    const empty = document.getElementById('wl-empty');
+    if (!list.length) { empty.style.display = 'block'; grid.innerHTML = ''; return; }
+    empty.style.display = 'none';
+    grid.innerHTML = list.map(item => {
+      const id = 'wlp-' + item.symbol.replace(/[^a-z0-9]/gi, '_');
+      return `<div class="wl-card">
+        <div class="wl-card-top">
+          <div>
+            <div class="wl-sym">${item.symbol}</div>
+            ${item.alias ? `<div class="wl-alias">${item.alias}</div>` : ''}
+          </div>
+          <button class="wl-rm" onclick="wlRemove('${item.symbol.replace(/'/g,"\'")}')">×</button>
+        </div>
+        <div id="${id}"><span class="wl-loading">加载中…</span></div>
+      </div>`;
+    }).join('');
+
+    list.forEach(item => {
+      const id = 'wlp-' + item.symbol.replace(/[^a-z0-9]/gi, '_');
+      fetchPrice(item.symbol).then(info => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (!info) { el.innerHTML = '<span class="wl-loading">获取失败</span>'; return; }
+        const dir = info.chgPct >= 0 ? 'up' : 'down';
+        const arrow = info.chgPct >= 0 ? '▲' : '▼';
+        el.innerHTML = `
+          <div class="wl-price-block">
+            <span class="wl-cur">${info.currency}</span>
+            <span class="wl-price">${fmtNum(info.price)}</span>
+            <span class="ticker-change ${dir}" style="font-size:0.72rem;">${arrow} ${Math.abs(info.chgPct).toFixed(2)}%</span>
+          </div>
+          <div class="wl-prev">昨收 ${fmtNum(info.prev)}</div>
+        `;
+      });
+    });
+  }
+
+  // ── Portfolio ───────────────────────────────────────────────
+  function pfAdd() {
+    const sym    = (document.getElementById('pf-sym').value || '').trim().toUpperCase();
+    const shares = parseFloat(document.getElementById('pf-shares').value);
+    const cost   = parseFloat(document.getElementById('pf-cost').value);
+    if (!sym || !shares || !cost || isNaN(shares) || isNaN(cost)) {
+      alert('请完整填写代码、数量和买入均价');
+      return;
+    }
+    const list = pfLoad();
+    list.push({ symbol: sym, shares, costBasis: cost, addedAt: Date.now() });
+    pfSave(list);
+    ['pf-sym','pf-shares','pf-cost'].forEach(id => document.getElementById(id).value = '');
+    pfRender();
+  }
+
+  function pfRemove(idx) {
+    const list = pfLoad(); list.splice(idx, 1); pfSave(list); pfRender();
+  }
+
+  function pfRender() {
+    const list  = pfLoad();
+    const grid  = document.getElementById('pf-list');
+    const empty = document.getElementById('pf-empty');
+    const sumEl = document.getElementById('pf-summary');
+    if (!list.length) { empty.style.display='block'; grid.innerHTML=''; sumEl.style.display='none'; return; }
+    empty.style.display = 'none';
+    sumEl.style.display = 'flex';
+
+    const totalCost = list.reduce((s, i) => s + i.shares * i.costBasis, 0);
+    document.getElementById('sum-cost').textContent = '$' + fmtNum(totalCost);
+
+    grid.innerHTML = list.map((item, idx) => {
+      const id = 'pfp-' + idx;
+      const itemCost = item.shares * item.costBasis;
+      return `<div class="pf-card">
+        <div class="pf-card-top">
+          <span class="pf-sym">${item.symbol}</span>
+          <button class="wl-rm" onclick="pfRemove(${idx})">×</button>
+        </div>
+        <div class="pf-meta">
+          ${fmtNum(item.shares, 4)} 股 &nbsp;×&nbsp; $${fmtNum(item.costBasis)} 成本<br>
+          持仓成本 <strong>$${fmtNum(itemCost)}</strong>
+        </div>
+        <div class="pf-pnl-row" id="${id}"><span class="wl-loading">计算盈亏中…</span></div>
+      </div>`;
+    }).join('');
+
+    let fetchedCount = 0, totalValue = 0;
+    list.forEach((item, idx) => {
+      fetchPrice(item.symbol).then(info => {
+        fetchedCount++;
+        const el = document.getElementById('pfp-' + idx);
+        if (!el) return;
+        if (!info) { el.innerHTML = '<span class="wl-loading">价格获取失败</span>'; return; }
+        const curVal = item.shares * info.price;
+        const pnlAbs = curVal - item.shares * item.costBasis;
+        const pnlPct = pnlAbs / (item.shares * item.costBasis) * 100;
+        const dir = pnlAbs >= 0 ? 'pos' : 'neg';
+        const sign = pnlAbs >= 0 ? '+' : '';
+        totalValue += curVal;
+        el.innerHTML = `
+          <span class="pf-cur-price">${info.currency} ${fmtNum(info.price)}</span>
+          <span class="pf-gain ${dir}">${sign}$${fmtNum(pnlAbs)} (${sign}${pnlPct.toFixed(2)}%)</span>
+        `;
+        if (fetchedCount === list.length) {
+          document.getElementById('sum-value').textContent = '$' + fmtNum(totalValue);
+          const totPnl = totalValue - totalCost;
+          const totPct = totPnl / totalCost * 100;
+          const sign2 = totPnl >= 0 ? '+' : '';
+          const cls  = totPnl >= 0 ? 'pf-pnl-pos' : 'pf-pnl-neg';
+          document.getElementById('sum-pnl').innerHTML = `<span class="${cls}">${sign2}$${fmtNum(totPnl)}</span>`;
+          document.getElementById('sum-pct').innerHTML = `<span class="${cls}">${sign2}${totPct.toFixed(2)}%</span>`;
+        }
+      });
+    });
+  }
+
+  // Init personal dashboard on load
+  document.addEventListener('DOMContentLoaded', function() {
+    wlRender();
+    pfRender();
+    // Enter key triggers add
+    document.getElementById('wl-name').addEventListener('keydown', e => { if(e.key==='Enter') wlAdd(); });
+    document.getElementById('pf-cost').addEventListener('keydown', e => { if(e.key==='Enter') pfAdd(); });
+  });
+
+
 </script>
 
 </body>
