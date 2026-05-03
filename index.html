@@ -2013,19 +2013,31 @@
     <!-- SUBSCRIBE -->
     <div class="subscribe-bar">
       <div class="subscribe-text">
-        <strong>📬 不错过每日更新</strong>
+        <strong>📬 订阅每日金融早报</strong>
         <p>每个交易日自动更新，开盘前 + 收盘后各一次</p>
       </div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+        <!-- Email subscription (Buttondown) -->
+        <form action="https://buttondown.email/api/emails/embed-subscribe/yangbai0110" method="post" target="_blank"
+              style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+          <input type="email" name="email" placeholder="your@email.com" required
+                 style="padding:6px 10px;border-radius:6px;border:1px solid var(--border-light);background:var(--card);color:var(--text);font-size:0.78rem;width:180px;outline:none;" />
+          <button type="submit"
+                  style="padding:6px 12px;border-radius:6px;background:var(--accent);color:#000;border:none;font-size:0.78rem;font-weight:600;cursor:pointer;white-space:nowrap;">
+            📧 邮件订阅
+          </button>
+        </form>
+        <!-- Telegram -->
         <a href="https://t.me/GGmanm_bot?start=subscribe" target="_blank" class="sub-btn" style="background:linear-gradient(135deg,#229ED9,#1a8bbf);color:#fff;display:flex;align-items:center;gap:6px;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.44 13.55l-2.955-.924c-.643-.204-.657-.643.136-.953l11.566-4.461c.537-.194 1.006.131.707.009z"/></svg>
-          Telegram 订阅每日早报
+          Telegram 早报
         </a>
+        <!-- RSS -->
         <a href="feed.xml" target="_blank" class="sub-btn rss-btn">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
-          RSS 订阅
+          RSS
         </a>
-        <a href="https://yang1bai.github.io/finance-daily-site/feed.xml" id="copy-rss" onclick="copyRSS(event)" class="sub-btn copy-btn">📋 复制链接</a>
+        <a href="https://yang1bai.github.io/finance-daily-site/feed.xml" id="copy-rss" onclick="copyRSS(event)" class="sub-btn copy-btn">📋 复制</a>
         <span id="subscriber-count" style="font-size:0.7rem;color:var(--dimmed);"></span>
       </div>
     </div>
@@ -2042,6 +2054,10 @@
       <span>© 2025 金融日报 · Financial Daily &nbsp;|&nbsp; Powered by <a href="https://www.anthropic.com" target="_blank">Claude AI</a></span>
       <span>内容由AI自动生成，仅供参考，不构成投资建议</span>
       <a href="feed.xml">RSS Feed</a>
+    </div>
+    <div style="display:flex;gap:24px;justify-content:center;margin-top:12px;font-size:0.75rem;color:var(--muted);">
+      <span>👁 访客 <strong id="footer-visitors" style="color:var(--accent)">…</strong></span>
+      <span>📄 浏览 <strong id="footer-pageviews" style="color:var(--accent)">…</strong></span>
     </div>
   </div>
 </footer>
@@ -2396,7 +2412,7 @@
 
 
 
-  // ── Subscriber count ──────────────────────────────────────────────────────
+  // ── Subscriber count (Telegram) ───────────────────────────────────────
   (function loadSubCount() {
     const el = document.getElementById('subscriber-count');
     if (!el) return;
@@ -2404,17 +2420,48 @@
       .then(r => r.json())
       .then(d => {
         const count = Object.values(d.subscribers || {}).filter(s => s.active).length;
-        if (count > 0) el.textContent = `📱 ${count} 人已订阅`;
+        if (count > 0) el.textContent = `📱 ${count} 人已订阅Telegram早报`;
       })
       .catch(() => {});
   })();
-</script>
 
-<!-- GoatCounter analytics (privacy-friendly) -->
-<!-- To activate: create free account at https://www.goatcounter.com/ -->
-<!-- Then replace YOURCODE below with your GoatCounter site code -->
-<script data-goatcounter="https://YOURCODE.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+  // ── Visitor counter (Cloudflare Worker + KV) ──────────────────────────
+  document.addEventListener('DOMContentLoaded', function () {
+    const WORKER = 'https://finance-daily-counter.yangbai0110.workers.dev';
+    const LS_KEY = 'fd_visited';
+
+    const visEl = document.getElementById('footer-visitors');
+    const pvEl  = document.getElementById('footer-pageviews');
+
+    function fmt(n) { return Number(n).toLocaleString('en-US'); }
+
+    function animate(el, target) {
+      if (!el) return;
+      if (target === 0) { el.textContent = '0'; return; }
+      const dur = 900; let t0 = null;
+      const step = ts => {
+        if (!t0) t0 = ts;
+        const p = Math.min((ts - t0) / dur, 1);
+        el.textContent = fmt(Math.round((1 - Math.pow(1 - p, 3)) * target));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+
+    const isNew = !localStorage.getItem(LS_KEY);
+    fetch(WORKER + (isNew ? '?newVisitor=1' : '?newVisitor=0'))
+      .then(r => r.json())
+      .then(data => {
+        localStorage.setItem(LS_KEY, '1');
+        animate(visEl, data.visitors  || 0);
+        animate(pvEl,  data.pageViews || 0);
+      })
+      .catch(() => {
+        if (visEl) visEl.textContent = '--';
+        if (pvEl)  pvEl.textContent  = '--';
+      });
+  });
+</script>
 
 </body>
 </html>
