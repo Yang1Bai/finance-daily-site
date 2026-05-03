@@ -947,6 +947,76 @@
     }
     .subscribe-form button:hover { background: #33e0be; }
 
+
+    /* =========================================================
+       SIMPLE / ADVANCED MODE TOGGLE
+    ========================================================= */
+    .mode-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(79,195,247,0.08); border: 1px solid rgba(79,195,247,0.25);
+      border-radius: 20px; padding: 5px 14px; cursor: pointer;
+      font-size: 0.72rem; color: var(--neutral); font-family: var(--sans);
+      transition: all 0.2s; white-space: nowrap;
+    }
+    .mode-btn:hover { background: rgba(79,195,247,0.15); border-color: var(--neutral); }
+    .mode-icon { font-size: 0.85rem; }
+
+    /* SIMPLE MODE: hide advanced sections */
+    body.simple-mode .col-left,
+    body.simple-mode .macro-section,
+    body.simple-mode .earnings-wrap,
+    body.simple-mode .sectors-wrap,
+    body.simple-mode .calendar-wrap,
+    body.simple-mode .subscribe-bar { display: none !important; }
+
+    body.simple-mode .two-col { grid-template-columns: 1fr !important; }
+    body.simple-mode .news-item:not(.featured) { display: none !important; }
+
+    /* tldr: only visible in simple mode */
+    .news-tldr { display: none; }
+    body.simple-mode .news-tldr { display: block; }
+
+    .news-tldr {
+      background: rgba(0,212,170,0.06);
+      border-left: 2px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 7px 12px;
+      margin: 6px 0 8px;
+      font-size: 0.75rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .tldr-label {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-family: var(--mono);
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-right: 6px;
+      text-transform: uppercase;
+    }
+
+    /* Simple mode: larger headline, cleaner feel */
+    body.simple-mode .summary-headline { font-size: 1.2rem; }
+    body.simple-mode .news-item.featured { margin-bottom: 14px; }
+    body.simple-mode .col-right { width: 100%; }
+
+    /* Mode banner shown in simple mode */
+    .simple-banner {
+      display: none;
+      background: rgba(0,212,170,0.06);
+      border: 1px solid rgba(0,212,170,0.15);
+      border-radius: var(--radius);
+      padding: 10px 16px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 14px;
+    }
+    body.simple-mode .simple-banner { display: block; }
+    .simple-banner a { color: var(--accent); cursor: pointer; }
+
     /* live data age warning */
     .data-stale { border-color: rgba(255,179,0,0.35) !important; }
 
@@ -1343,8 +1413,7 @@
       </div><!-- /right-col -->
     </div><!-- /two-col -->
 
-    <!-- =========================================================
-         EARNINGS SECTION (FULL WIDTH)
+    <!-- EARNINGS WRAP -->
     ========================================================= -->
     <div class="section-block">
       <div class="card">
@@ -1492,8 +1561,7 @@
       </div>
     </div>
 
-    <!-- =========================================================
-         SECTORS SECTION (FULL WIDTH)
+    <!-- SECTORS WRAP -->
     ========================================================= -->
     <div class="section-block">
       <div class="card">
@@ -1574,7 +1642,7 @@
     <!-- =========================================================
          ECONOMIC CALENDAR (FULL WIDTH)
     ========================================================= -->
-    <div class="section-block">
+    <div class="section-block calendar-wrap">
       <div class="card">
         <div class="section-label">本周日程 · Economic Calendar</div>
 <!-- CALENDAR:START -->
@@ -1650,6 +1718,33 @@
     const ageStr = ageH < 1 ? ageMin + '分钟前更新' : Math.round(ageH) + '小时前更新';
     badge.title = ageStr;
     if (ageH > 14) badge.classList.add('data-stale');
+  })();
+
+  // Simple / Advanced mode toggle
+  (function() {
+    const btn = document.getElementById('mode-btn');
+    if (!btn) return;
+    const stored = localStorage.getItem('fd-mode') || 'advanced';
+    applyMode(stored);
+    btn.addEventListener('click', function() {
+      const isSimple = document.body.classList.contains('simple-mode');
+      const next = isSimple ? 'advanced' : 'simple';
+      localStorage.setItem('fd-mode', next);
+      applyMode(next);
+    });
+    function applyMode(mode) {
+      const label = btn.querySelector('.mode-label');
+      const icon  = btn.querySelector('.mode-icon');
+      if (mode === 'simple') {
+        document.body.classList.add('simple-mode');
+        label.textContent = '专业模式';
+        icon.textContent  = '📊';
+      } else {
+        document.body.classList.remove('simple-mode');
+        label.textContent = '新手模式';
+        icon.textContent  = '📖';
+      }
+    }
   })();
 
   // Live quotes from data/quotes.json (populated by live-quotes workflow)

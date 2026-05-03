@@ -97,6 +97,7 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
     {{
       "title": "新闻标题",
       "body": "新闻摘要，2-3句话说明事件、影响和市场反应",
+      "tldr": "对普通人意味着什么，白话1句，15-25字，如：'持有美股ETF的投资者本周或承压，建议关注回撤机会'",
       "url": "https://原始新闻链接（如无则省略此字段）",
       "importance": "breaking",
       "tags": ["#美股", "#美联储"]
@@ -262,15 +263,19 @@ def render_leaders(leaders: list) -> str:
 
 def render_news(news: list) -> str:
     html_parts = []
-    for item in news:
+    for i, item in enumerate(news):
         importance = item.get("importance", "normal")
         title = item.get("title", "")
         url = item.get("url", "")
         title_html = f'<a href="{url}" target="_blank" rel="noopener">{title}</a>' if url else title
         tags_html = "".join(f'<span class="tag">{t}</span>' for t in item.get("tags", []))
-        html_parts.append(f"""<div class="news-item {importance}">
+        tldr = item.get("tldr", "")
+        tldr_html = f'<div class="news-tldr"><span class="tldr-label">💡 新手解读</span>{tldr}</div>' if tldr else ""
+        featured = " featured" if i < 3 else ""
+        html_parts.append(f"""<div class="news-item {importance}{featured}">
   <div class="news-title">{title_html}</div>
   <div class="news-body">{item.get('body','')}</div>
+  {tldr_html}
   <div class="news-footer">
     <span class="importance-badge {importance}">{importance.upper()}</span>
     <div class="tags">{tags_html}</div>
