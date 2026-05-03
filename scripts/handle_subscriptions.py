@@ -98,6 +98,7 @@ def main():
 
     if not updates:
         print("  ✅ No new updates")
+        save_offset(offset)  # ensure file exists even when idle
         return
 
     data    = load_subscribers()
