@@ -2017,12 +2017,16 @@
         <p>每个交易日自动更新，开盘前 + 收盘后各一次</p>
       </div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+        <a href="https://t.me/GGmanm_bot?start=subscribe" target="_blank" class="sub-btn" style="background:linear-gradient(135deg,#229ED9,#1a8bbf);color:#fff;display:flex;align-items:center;gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.44 13.55l-2.955-.924c-.643-.204-.657-.643.136-.953l11.566-4.461c.537-.194 1.006.131.707.009z"/></svg>
+          Telegram 订阅每日早报
+        </a>
         <a href="feed.xml" target="_blank" class="sub-btn rss-btn">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
           RSS 订阅
         </a>
         <a href="https://yang1bai.github.io/finance-daily-site/feed.xml" id="copy-rss" onclick="copyRSS(event)" class="sub-btn copy-btn">📋 复制链接</a>
-        <span style="font-size:0.7rem;color:var(--dimmed);">邮件订阅配置中…</span>
+        <span id="subscriber-count" style="font-size:0.7rem;color:var(--dimmed);"></span>
       </div>
     </div>
 
@@ -2391,7 +2395,26 @@
   });
 
 
+
+  // ── Subscriber count ──────────────────────────────────────────────────────
+  (function loadSubCount() {
+    const el = document.getElementById('subscriber-count');
+    if (!el) return;
+    fetch('data/investment-subscribers.json')
+      .then(r => r.json())
+      .then(d => {
+        const count = Object.values(d.subscribers || {}).filter(s => s.active).length;
+        if (count > 0) el.textContent = `📱 ${count} 人已订阅`;
+      })
+      .catch(() => {});
+  })();
 </script>
+
+<!-- GoatCounter analytics (privacy-friendly) -->
+<!-- To activate: create free account at https://www.goatcounter.com/ -->
+<!-- Then replace YOURCODE below with your GoatCounter site code -->
+<script data-goatcounter="https://YOURCODE.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 
 </body>
 </html>
