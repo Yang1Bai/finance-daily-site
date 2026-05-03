@@ -1,0 +1,481 @@
+{
+  "date": "2026年5月3日",
+  "indices": [
+    {
+      "name": "S&P 500",
+      "symbol": "SPX",
+      "value": "7,230.12",
+      "change": "+21.01",
+      "change_pct": "+0.29%",
+      "direction": "up"
+    },
+    {
+      "name": "Nasdaq Composite",
+      "symbol": "IXIC",
+      "value": "25,114.44",
+      "change": "+221.13",
+      "change_pct": "+0.89%",
+      "direction": "up"
+    },
+    {
+      "name": "Dow Jones",
+      "symbol": "DJI",
+      "value": "49,499.27",
+      "change": "-152.87",
+      "change_pct": "-0.31%",
+      "direction": "down"
+    },
+    {
+      "name": "上证综指",
+      "symbol": "000001.SS",
+      "value": "4,112.16",
+      "change": "+4.56",
+      "change_pct": "+0.11%",
+      "direction": "up"
+    },
+    {
+      "name": "恒生指数",
+      "symbol": "HSI",
+      "value": "25,776.53",
+      "change": "-332.00",
+      "change_pct": "-1.28%",
+      "direction": "down"
+    },
+    {
+      "name": "日经225",
+      "symbol": "N225",
+      "value": "59,284.92",
+      "change": "-634.54",
+      "change_pct": "-1.06%",
+      "direction": "down"
+    },
+    {
+      "name": "德国DAX",
+      "symbol": "GDAXI",
+      "value": "23,877.72",
+      "change": "-76.66",
+      "change_pct": "-0.32%",
+      "direction": "down"
+    },
+    {
+      "name": "黄金",
+      "symbol": "GC=F",
+      "value": "4,661.40",
+      "change": "+31.80",
+      "change_pct": "+0.69%",
+      "direction": "up"
+    },
+    {
+      "name": "WTI原油",
+      "symbol": "CL=F",
+      "value": "105.14",
+      "change": "-2.13",
+      "change_pct": "-1.98%",
+      "direction": "down"
+    },
+    {
+      "name": "比特币",
+      "symbol": "BTC-USD",
+      "value": "78,281",
+      "change": "+1,858",
+      "change_pct": "+2.43%",
+      "direction": "up"
+    }
+  ],
+  "leaders": [
+    {
+      "name": "杰米·戴蒙",
+      "name_en": "Jamie Dimon",
+      "role": "摩根大通CEO",
+      "quote": "利率就像所有资产价格的重力",
+      "body": "在2026年致股东信中，戴蒙呼应巴菲特26年前的警告，强调利率对资产估值的决定性影响。他警告通胀上升可能推高利率，对股市构成下行压力。戴蒙还指出下一个信贷周期中损失将超预期，可能冲击AI相关软件公司。",
+      "tags": [
+        "#利率",
+        "#风险警示"
+      ],
+      "initials": "JD",
+      "quote_date": "4月11日"
+    },
+    {
+      "name": "沃伦·巴菲特",
+      "name_en": "Warren Buffett",
+      "role": "伯克希尔哈撒韦CEO",
+      "quote": "利率是资产估值的重力法则",
+      "body": "巴菲特已卸任伯克希尔CEO职位，由Greg Abel接任。在5月1日奥马哈股东大会上，他继续强调利率对投资回报的长期影响，这一观点与戴蒙近期警告不谋而合。",
+      "tags": [
+        "#价值投资",
+        "#利率"
+      ],
+      "initials": "WB",
+      "quote_date": "5月1日"
+    },
+    {
+      "name": "杰罗姆·鲍威尔",
+      "name_en": "Jerome Powell",
+      "role": "美联储主席",
+      "quote": "我别无选择只能留任理事",
+      "body": "鲍威尔在4月29日最后一次主席会议后宣布，因特朗普政府法律攻击，他将在5月15日卸任主席后继续担任理事至2028年任期结束。他强调美联储独立性的重要性，并表示将为继任者Kevin Warsh提供平稳过渡。",
+      "tags": [
+        "#美联储",
+        "#货币政策"
+      ],
+      "initials": "JP",
+      "quote_date": "4月29日"
+    },
+    {
+      "name": "雷·达利欧",
+      "name_en": "Ray Dalio",
+      "role": "桥水基金创始人",
+      "quote": "多元化是降低风险的关键",
+      "body": "达利欧继续倡导其全天候投资策略，强调在当前高估值和地缘政治不确定性环境下，投资者需要通过配置不相关资产来降低投资组合风险。",
+      "tags": [
+        "#对冲基金",
+        "#风险管理"
+      ],
+      "initials": "RD",
+      "quote_date": "4月"
+    }
+  ],
+  "news": [
+    {
+      "title": "美联储维持利率不变 4票反对创1992年来最多",
+      "body": "美联储4月29日维持利率在3.50%-3.75%不变，但出现4票反对，为1992年以来最多分歧。鲍威尔在最后一次主席会议上表示将留任理事至2028年。市场预计年内不会降息，Kevin Warsh将于5月接任主席。",
+      "importance": "breaking",
+      "tags": [
+        "#美联储",
+        "#货币政策"
+      ]
+    },
+    {
+      "title": "伊朗战争推动油价飙升至105美元 通胀压力加剧",
+      "body": "受美国与伊朗冲突影响，WTI原油价格维持在105美元/桶附近，较战前上涨超25%。加州汽油价格突破6美元/加仑。市场担忧霍尔木兹海峡封锁持续，能源价格高企将加剧通胀压力，削弱美联储降息预期。",
+      "importance": "breaking",
+      "tags": [
+        "#能源",
+        "#地缘政治"
+      ]
+    },
+    {
+      "title": "苹果财报超预期 宣布1000亿美元回购计划",
+      "body": "苹果Q2财报营收1112亿美元，同比增长17%，iPhone 17成史上最畅销机型。服务业务增长16%至310亿美元，中国市场大涨28%。公司宣布1000亿美元股票回购，股价盘后涨3%，推动纳指创新高。",
+      "importance": "major",
+      "tags": [
+        "#科技",
+        "#财报"
+      ]
+    },
+    {
+      "title": "Meta上调资本开支至1250-1450亿美元 股价跌7%",
+      "body": "Meta Q1财报虽超预期，但将2026年资本开支上调至1250-1450亿美元，高于此前1150-1350亿美元预期。公司将裁员约10%（8000人），同时加大AI基建投资。分析师担忧高额支出能否转化为收入增长。",
+      "importance": "major",
+      "tags": [
+        "#科技",
+        "#AI"
+      ]
+    },
+    {
+      "title": "标普500和纳指创历史新高 4月涨幅创2020年来最强",
+      "body": "标普500和纳指在5月1日双双创收盘新高，4月分别上涨10%和15%，为2020年4月以来最强单月表现。AI芯片需求、企业财报强劲和伊朗和谈乐观情绪推动市场反弹，但估值已接近历史高位。",
+      "importance": "major",
+      "tags": [
+        "#美股",
+        "#市场"
+      ]
+    },
+    {
+      "title": "欧央行维持利率不变 暗示6月可能加息",
+      "body": "欧央行4月30日维持主要再融资利率在2.15%不变，但行长拉加德表示因伊朗战争推高通胀风险，市场完全定价2026年将加息3次。欧元区3月通胀升至2.6%，为2024年7月来最高。",
+      "importance": "normal",
+      "tags": [
+        "#欧央行",
+        "#通胀"
+      ]
+    },
+    {
+      "title": "日本央行维持利率不变 上调通胀预期至2.8%",
+      "body": "日本央行4月28日维持政策利率在0.5%不变，但将2026财年核心通胀预期从1.9%上调至2.8%，并将增长预期从1%下调至0.5%。日元兑美元跌至159，接近干预水平。",
+      "importance": "normal",
+      "tags": [
+        "#日本央行",
+        "#日元"
+      ]
+    }
+  ],
+  "macro": [
+    {
+      "indicator": "CPI YoY",
+      "value": "3.3%",
+      "prev": "3.1%",
+      "direction": "up",
+      "description": "3月CPI同比上涨3.3%，受伊朗战争推动能源价格飙升影响，高于预期的3.2%"
+    },
+    {
+      "indicator": "Core CPI YoY",
+      "value": "2.6%",
+      "prev": "2.6%",
+      "direction": "flat",
+      "description": "核心CPI持平于2.6%，略低于去年同期，但仍高于美联储2%目标"
+    },
+    {
+      "indicator": "PCE YoY",
+      "value": "3.0%",
+      "prev": "3.1%",
+      "direction": "down",
+      "description": "2月PCE同比上涨3.0%，美联储首选通胀指标略有回落但仍远高于目标"
+    },
+    {
+      "indicator": "Fed Inflation Forecast",
+      "value": "2.7%",
+      "prev": "2.5%",
+      "direction": "up",
+      "description": "美联储将2026年通胀预期上调至2.7%，降息前景显著恶化"
+    },
+    {
+      "indicator": "Q1 GDP",
+      "value": "1.7%",
+      "prev": "2.3%",
+      "direction": "down",
+      "description": "2026年Q1 GDP增长放缓至1.7%，AI投资支撑但消费疲软"
+    },
+    {
+      "indicator": "Manufacturing PMI",
+      "value": "50.3",
+      "prev": "49.8",
+      "direction": "up",
+      "description": "4月制造业PMI升至50.3，重回扩张区间，受AI数据中心建设需求推动"
+    },
+    {
+      "indicator": "China PMI",
+      "value": "52.2",
+      "prev": "50.5",
+      "direction": "up",
+      "description": "中国4月制造业PMI升至52.2，为2020年12月来最高，显示经济韧性"
+    },
+    {
+      "indicator": "Unemployment Rate",
+      "value": "3.8%",
+      "prev": "3.7%",
+      "direction": "up",
+      "description": "失业率小幅上升至3.8%，就业市场降温但仍保持稳健"
+    }
+  ],
+  "earnings": [
+    {
+      "company": "Apple",
+      "ticker": "AAPL",
+      "report_date": "2026-04-30",
+      "eps_actual": "1.65",
+      "eps_est": "1.52",
+      "beat": true,
+      "revenue": "$111.2B",
+      "highlight": "Q2营收增17%，iPhone 17创历史纪录，宣布1000亿美元回购"
+    },
+    {
+      "company": "Meta",
+      "ticker": "META",
+      "report_date": "2026-04-29",
+      "eps_actual": "7.31",
+      "eps_est": "7.15",
+      "beat": true,
+      "revenue": "$56.8B",
+      "highlight": "财报超预期但资本开支上调至1250-1450亿美元，股价跌7%"
+    },
+    {
+      "company": "Alphabet",
+      "ticker": "GOOGL",
+      "report_date": "2026-04-29",
+      "eps_actual": "2.18",
+      "eps_est": "2.05",
+      "beat": true,
+      "revenue": "$88.5B",
+      "highlight": "营收增16%，AI驱动搜索和云业务强劲增长"
+    },
+    {
+      "company": "Caterpillar",
+      "ticker": "CAT",
+      "report_date": "2026-04-29",
+      "eps_actual": "6.85",
+      "eps_est": "5.92",
+      "beat": true,
+      "revenue": "$18.2B",
+      "highlight": "AI数据中心推动电力设备需求激增，股价飙升10%"
+    },
+    {
+      "company": "Eli Lilly",
+      "ticker": "LLY",
+      "report_date": "2026-04-29",
+      "eps_actual": "4.22",
+      "eps_est": "3.85",
+      "beat": true,
+      "revenue": "$12.8B",
+      "highlight": "减肥药销售强劲，上调全年指引至820-850亿美元"
+    },
+    {
+      "company": "Qualcomm",
+      "ticker": "QCOM",
+      "report_date": "2026-04-29",
+      "eps_actual": "3.45",
+      "eps_est": "3.22",
+      "beat": true,
+      "revenue": "$11.5B",
+      "highlight": "Q2财报超预期，股价涨16%，但分析师观点分歧"
+    },
+    {
+      "company": "Microsoft",
+      "ticker": "MSFT",
+      "report_date": "2026-04-29",
+      "eps_actual": "3.52",
+      "eps_est": "3.48",
+      "beat": true,
+      "revenue": "$68.2B",
+      "highlight": "云业务和AI服务增长强劲，但上调资本开支引发担忧"
+    },
+    {
+      "company": "Amazon",
+      "ticker": "AMZN",
+      "report_date": "2026-04-29",
+      "eps_actual": "1.82",
+      "eps_est": "1.75",
+      "beat": true,
+      "revenue": "$152.4B",
+      "highlight": "AWS云服务加速增长，零售业务在高油价环境下仍保持韧性"
+    }
+  ],
+  "sectors": [
+    {
+      "name": "能源",
+      "name_en": "Energy",
+      "etf": "XLE",
+      "change_pct": "+18.5%",
+      "direction": "up",
+      "note": "伊朗战争推动油价飙升，Q1表现最佳板块"
+    },
+    {
+      "name": "科技",
+      "name_en": "Information Technology",
+      "etf": "XLK",
+      "change_pct": "+1.82%",
+      "direction": "up",
+      "note": "AI芯片和苹果财报推动，纳指创历史新高"
+    },
+    {
+      "name": "工业",
+      "name_en": "Industrials",
+      "etf": "XLI",
+      "change_pct": "+0.95%",
+      "direction": "up",
+      "note": "卡特彼勒领涨，AI数据中心建设需求强劲"
+    },
+    {
+      "name": "通讯服务",
+      "name_en": "Communication Services",
+      "etf": "XLC",
+      "change_pct": "+0.68%",
+      "direction": "up",
+      "note": "谷歌表现强劲，但Meta高额资本开支引发担忧"
+    },
+    {
+      "name": "金融",
+      "name_en": "Financials",
+      "etf": "XLF",
+      "change_pct": "+0.45%",
+      "direction": "up",
+      "note": "利率维持高位支撑净息差，但信贷周期风险上升"
+    },
+    {
+      "name": "医疗保健",
+      "name_en": "Health Care",
+      "etf": "XLV",
+      "change_pct": "+0.38%",
+      "direction": "up",
+      "note": "礼来减肥药推动，技术进步改善运营效率"
+    },
+    {
+      "name": "非必需消费",
+      "name_en": "Consumer Discretionary",
+      "etf": "XLY",
+      "change_pct": "-0.12%",
+      "direction": "down",
+      "note": "高油价削弱消费者支出能力"
+    },
+    {
+      "name": "必需消费",
+      "name_en": "Consumer Staples",
+      "etf": "XLP",
+      "change_pct": "-0.18%",
+      "direction": "down",
+      "note": "防御性板块，在高估值环境下吸引力有限"
+    },
+    {
+      "name": "材料",
+      "name_en": "Materials",
+      "etf": "XLB",
+      "change_pct": "-0.25%",
+      "direction": "down",
+      "note": "受全球增长放缓担忧拖累"
+    },
+    {
+      "name": "公用事业",
+      "name_en": "Utilities",
+      "etf": "XLU",
+      "change_pct": "-0.32%",
+      "direction": "down",
+      "note": "高利率环境下承压，但AI数据中心电力需求提供长期支撑"
+    },
+    {
+      "name": "房地产",
+      "name_en": "Real Estate",
+      "etf": "XLRE",
+      "change_pct": "-0.45%",
+      "direction": "down",
+      "note": "高利率持续抑制板块表现"
+    }
+  ],
+  "central_banks": [
+    {
+      "bank": "美联储",
+      "bank_en": "Federal Reserve",
+      "action": "维持利率3.50-3.75%不变",
+      "next_meeting": "2026-06-18",
+      "rate": "3.50-3.75%",
+      "bias": "hawkish",
+      "note": "鲍威尔最后一次会议出现4票反对，年内降息预期消失，Kevin Warsh将接任主席"
+    },
+    {
+      "bank": "欧洲央行",
+      "bank_en": "European Central Bank",
+      "action": "维持主要再融资利率2.15%不变",
+      "next_meeting": "2026-06-11",
+      "rate": "2.15%",
+      "bias": "hawkish",
+      "note": "伊朗战争推高通胀风险，市场预期6月首次加息，拉加德强调政策不确定性"
+    },
+    {
+      "bank": "中国人民银行",
+      "bank_en": "People's Bank of China",
+      "action": "预计20bp降息和100bp降准",
+      "next_meeting": "2026-06-15",
+      "rate": "3.45%",
+      "bias": "dovish",
+      "note": "尽管经济韧性超预期，但仍需保持宽松支持稳定增长，银行净息差收窄限制降息空间"
+    },
+    {
+      "bank": "日本央行",
+      "bank_en": "Bank of Japan",
+      "action": "维持政策利率0.5%不变",
+      "next_meeting": "2026-06-17",
+      "rate": "0.50%",
+      "bias": "hawkish",
+      "note": "上调通胀预期至2.8%，下调增长预期至0.5%，基本情景预计年底加息至1.0%"
+    },
+    {
+      "bank": "英国央行",
+      "bank_en": "Bank of England",
+      "action": "预计维持利率不变",
+      "next_meeting": "2026-05-07",
+      "rate": "4.50%",
+      "bias": "neutral",
+      "note": "油价飙升和英债收益率上升削弱降息预期，但通胀风险仍可控"
+    }
+  ]
+}

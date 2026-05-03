@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>归档 | Financial Daily Archive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#070b14; --card:#0d1526; --border:#1a2a4a; --accent:#00d4aa; --text:#e2e8f0; --muted:#8899aa; --mono:'JetBrains Mono',monospace; --sans:'Inter',system-ui,sans-serif; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:var(--sans); background:var(--bg); color:var(--text); padding:40px 20px; }
+    .container { max-width:800px; margin:0 auto; }
+    h1 { font-size:1.6rem; margin-bottom:6px; background:linear-gradient(135deg,var(--accent),#4fc3f7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    p.sub { color:var(--muted); font-size:0.8rem; margin-bottom:28px; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    table { width:100%; border-collapse:collapse; }
+    th { text-align:left; font-size:0.65rem; font-family:var(--mono); color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; padding:8px 12px; border-bottom:1px solid var(--border); }
+    td { padding:10px 12px; font-size:0.82rem; border-bottom:1px solid rgba(26,42,74,0.5); }
+    tr:hover td { background:var(--card); }
+    .back { display:inline-block; margin-bottom:24px; font-size:0.8rem; color:var(--muted); border:1px solid var(--border); padding:5px 14px; border-radius:6px; }
+    .back:hover { color:var(--accent); border-color:var(--accent); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="../index.html">← 返回首页</a>
+    <h1>历史归档</h1>
+    <p class="sub">Financial Daily — 每日金融市场数据存档</p>
+    <table>
+      <thead>
+        <tr>
+          <th>日期</th>
+          <th>指数</th>
+          <th>新闻</th>
+          <th>数据</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr>
+      <td><a href="2026-05-03.html">2026年5月3日</a></td>
+      <td>10</td>
+      <td>7</td>
+      <td><a href="../data/2026-05-03.json" style="color:var(--muted);font-size:0.75rem;">JSON</a></td>
+    </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
