@@ -1539,16 +1539,18 @@
               <div class="sim-label">资产配置</div>
               <div class="sim-add-row">
                 <input id="sim-sym" placeholder="代码，如 AAPL" style="width:100px" />
-                <input id="sim-alias" placeholder="备注名" style="width:90px" />
-                <input type="number" id="sim-pct" placeholder="分配%" min="0" max="100" step="1" style="width:70px" />
+                <input id="sim-alias" placeholder="备注名" style="width:85px" />
+                <input type="number" id="sim-pct" placeholder="分配%" min="0" max="100" step="1" style="width:65px" />
+                <input type="number" id="sim-entry" placeholder="买入价(选填)" min="0" step="0.01" style="width:110px" />
                 <button onclick="simAddAsset()">＋ 添加</button>
+                <span style="font-size:0.68rem;color:var(--dimmed)">不填则自动记录当前价</span>
               </div>
               <div id="sim-pct-total" class="sim-pct-total" style="margin-top:4px">已分配：0%</div>
             </div>
             <div id="sim-alloc-bar" class="sim-alloc-bar" style="display:none"></div>
             <div id="sim-assets-wrap" style="display:none">
               <table class="sim-assets-table">
-                <thead><tr><th>代码</th><th>备注</th><th>分配%</th><th>投入金额</th><th>操作</th></tr></thead>
+                <thead><tr><th>代码</th><th>备注</th><th>分配%</th><th>投入金额</th><th>买入价</th><th>操作</th></tr></thead>
                 <tbody id="sim-assets-tbody"></tbody>
               </table>
             </div>
@@ -1576,6 +1578,7 @@
                   <tr>
                     <th style="text-align:left">资产</th>
                     <th>投入</th>
+                    <th>📈 实际</th>
                     <th>😨 悲观</th>
                     <th>📊 中性</th>
                     <th>🚀 乐观</th>
@@ -2774,13 +2777,14 @@
           <td>${a.alias || '—'}</td>
           <td><input type="number" min="0" max="100" step="1" value="${a.pct}" onchange="simUpdatePct(${idx},this.value)" style="width:55px;background:transparent;border:1px solid var(--border);color:var(--text);border-radius:3px;padding:2px 5px;" /></td>
           <td>${cur}${fmtNum(invest)}</td>
+          <td style="font-size:0.72rem;color:var(--dimmed)">${a.entryPrice ? cur + fmtNum(a.entryPrice) : '—'}</td>
           <td><button class="wl-rm" onclick="simRemoveAsset(${idx})">×</button></td>
         </tr>`;
       }).join('');
     }
   }
 
-  function simCalcReturns(d) {
+  async function simCalcReturns(d) {
     const tbody = document.getElementById('sim-returns-tbody');
     if (!tbody || !d.assets.length) return;
     const capital = parseFloat(d.capital) || 0;
@@ -2790,9 +2794,7 @@
     const base = parseFloat(d.scenarios.base) / 100;
     const bull = parseFloat(d.scenarios.bull) / 100;
     const cur = d.currency === 'CNY' ? '¥' : '$';
-    function calcProfit(invest, rate, yrs) {
-      return invest * Math.pow(1 + rate, yrs) - invest;
-    }
+    function calcProfit(invest, rate, yrs) { return invest * Math.pow(1 + rate, yrs) - invest; }
     function sCell(v, invest) {
       const p = invest ? (v / invest * 100).toFixed(1) : '0.0';
       const sign = v >= 0 ? '+' : '';
@@ -2800,15 +2802,21 @@
       return `<span class="${cls}">${sign}${cur}${fmtNum(Math.abs(v))}<br><small>${sign}${p}%</small></span>`;
     }
     let totBear = 0, totBase = 0, totBull = 0, totInvest = 0;
+    // Render scenario columns immediately
     tbody.innerHTML = d.assets.map(a => {
       const invest = capital * (parseFloat(a.pct)||0) / 100;
       const pb = calcProfit(invest, bear, years);
       const pn = calcProfit(invest, base, years);
       const pu = calcProfit(invest, bull, years);
       totBear += pb; totBase += pn; totBull += pu; totInvest += invest;
+      const rid = 'simreal-' + a.symbol.replace(/[^a-z0-9]/gi,'_');
+      const realCell = a.entryPrice
+        ? `<td id="${rid}"><span style="color:var(--dimmed);font-size:0.72rem">拉取中…</span></td>`
+        : `<td style="color:var(--dimmed);font-size:0.72rem">无买入价</td>`;
       return `<tr>
         <td><strong>${a.symbol}</strong>${a.alias ? `<br><small style="color:var(--muted)">${a.alias}</small>` : ''}</td>
         <td>${cur}${fmtNum(invest)}</td>
+        ${realCell}
         <td>${sCell(pb, invest)}</td>
         <td>${sCell(pn, invest)}</td>
         <td>${sCell(pu, invest)}</td>
@@ -2817,10 +2825,38 @@
     tbody.innerHTML += `<tr class="total-row">
       <td>合计</td>
       <td>${cur}${fmtNum(totInvest)}</td>
+      <td id="simreal-total">—</td>
       <td>${sCell(totBear, totInvest)}</td>
       <td>${sCell(totBase, totInvest)}</td>
       <td>${sCell(totBull, totInvest)}</td>
     </tr>`;
+    // Async: fetch live prices for real P&L column
+    const realResults = new Array(d.assets.length).fill(null);
+    let fetched = 0;
+    d.assets.forEach(async (a, idx) => {
+      if (!a.entryPrice) { fetched++; return; }
+      const rid = 'simreal-' + a.symbol.replace(/[^a-z0-9]/gi,'_');
+      const el = document.getElementById(rid);
+      const info = await fetchPrice(a.symbol).catch(() => null);
+      fetched++;
+      if (!el) return;
+      if (!info) { el.innerHTML = '<span style="color:var(--dimmed);font-size:0.72rem">获取失败</span>'; return; }
+      const invest = capital * (parseFloat(a.pct)||0) / 100;
+      const realPnl = invest * (info.price - a.entryPrice) / a.entryPrice;
+      realResults[idx] = realPnl;
+      el.innerHTML = sCell(realPnl, invest);
+      // Update total row when all fetched
+      if (fetched === d.assets.length) {
+        const totEl = document.getElementById('simreal-total');
+        if (totEl) {
+          const validResults = realResults.filter(r => r !== null);
+          if (validResults.length) {
+            const totReal = validResults.reduce((s,v) => s+v, 0);
+            totEl.innerHTML = sCell(totReal, totInvest);
+          }
+        }
+      }
+    });
   }
 
   function simUpdate() {
@@ -2843,18 +2879,29 @@
     simCalcReturns(d);
   }
 
-  function simAddAsset() {
+  async function simAddAsset() {
     const sym = (document.getElementById('sim-sym').value || '').trim().toUpperCase();
     const alias = (document.getElementById('sim-alias').value || '').trim();
     const pct = parseFloat(document.getElementById('sim-pct').value) || 0;
+    const manualEntry = parseFloat(document.getElementById('sim-entry').value) || null;
     if (!sym) return;
     const d = simLoad();
     if (d.assets.find(a => a.symbol === sym)) { alert('该资产已在列表中'); return; }
-    d.assets.push({ symbol: sym, alias, pct });
+    let entryPrice = manualEntry;
+    if (!entryPrice) {
+      const btn = document.querySelector('#panel-sim .sim-add-row button');
+      if (btn) { btn.textContent = '抓取中…'; btn.disabled = true; }
+      const info = await fetchPrice(sym).catch(() => null);
+      if (btn) { btn.textContent = '＋ 添加'; btn.disabled = false; }
+      entryPrice = info ? info.price : null;
+      if (!entryPrice) { alert(`无法获取 ${sym} 当前价格，请手动填入买入价`); return; }
+    }
+    d.assets.push({ symbol: sym, alias, pct, entryPrice, entryDate: new Date().toISOString().slice(0,10) });
     simSave(d);
     document.getElementById('sim-sym').value = '';
     document.getElementById('sim-alias').value = '';
     document.getElementById('sim-pct').value = '';
+    document.getElementById('sim-entry').value = '';
     simRender();
   }
 
