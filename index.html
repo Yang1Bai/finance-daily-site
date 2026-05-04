@@ -1274,6 +1274,47 @@
       .subscribe-strip { flex-direction: column; align-items: flex-start; }
       .jump-nav { padding: 6px 12px; }
     }
+  /* ── Profile Bar ──────────────────────────────────────────── */
+  .profile-bar { display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap; padding:8px 12px; background:var(--bg); border-radius:var(--radius); border:1px solid var(--border); }
+  .profile-label { font-size:0.72rem; color:var(--muted); white-space:nowrap; }
+  #profile-select { background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:4px; padding:3px 8px; font-size:0.78rem; cursor:pointer; }
+  .profile-bar button { font-size:0.72rem; padding:3px 10px; background:var(--card); color:var(--accent); border:1px solid var(--border); border-radius:4px; cursor:pointer; white-space:nowrap; }
+  .profile-bar button:hover { background:var(--card-hover); }
+
+  /* ── Investment Simulator ────────────────────────────────── */
+  .sim-section { display:flex; flex-direction:column; gap:14px; }
+  .sim-label { font-size:0.7rem; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:5px; }
+  .sim-capital-row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .sim-capital-row input[type=number] { width:140px; }
+  #sim-currency { background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:4px; padding:4px 8px; font-size:0.82rem; }
+  .sim-add-row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  .sim-pct-total { font-size:0.78rem; color:var(--muted); }
+  .sim-pct-total.over { color:var(--down); font-weight:600; }
+  .sim-assets-table { width:100%; border-collapse:collapse; font-size:0.78rem; }
+  .sim-assets-table th { text-align:left; color:var(--muted); font-weight:500; padding:4px 6px; border-bottom:1px solid var(--border); }
+  .sim-assets-table td { padding:5px 6px; border-bottom:1px solid var(--border); color:var(--text); vertical-align:middle; }
+  .sim-alloc-bar { height:16px; border-radius:6px; overflow:hidden; display:flex; background:var(--border); margin:4px 0; }
+  .sim-alloc-seg { height:100%; transition:width 0.3s ease; min-width:2px; }
+  .sim-horizon-row { display:flex; gap:5px; flex-wrap:wrap; align-items:center; margin-top:8px; }
+  .sim-horizon-row > span { font-size:0.72rem; color:var(--muted); }
+  .sim-hbtn { padding:3px 10px; background:var(--card); color:var(--muted); border:1px solid var(--border); border-radius:4px; font-size:0.73rem; cursor:pointer; transition:all 0.15s; }
+  .sim-hbtn.active { background:var(--accent); color:#000; border-color:var(--accent); font-weight:600; }
+  .sim-hbtn:hover:not(.active) { background:var(--card-hover); color:var(--text); }
+  .sim-scenario-row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .sim-scenario-row label { font-size:0.78rem; color:var(--muted); display:flex; align-items:center; gap:5px; }
+  .sim-scenario-row input[type=number] { width:62px; background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:4px; padding:3px 6px; font-size:0.78rem; text-align:right; }
+  .sim-returns-table { width:100%; border-collapse:collapse; font-size:0.78rem; }
+  .sim-returns-table th { text-align:right; color:var(--muted); font-weight:500; padding:4px 6px; border-bottom:1px solid var(--border); }
+  .sim-returns-table th:first-child { text-align:left; }
+  .sim-returns-table td { padding:5px 6px; text-align:right; border-bottom:1px solid var(--border); color:var(--text); vertical-align:top; line-height:1.4; }
+  .sim-returns-table td:first-child { text-align:left; }
+  .sim-returns-table tr.total-row > td { font-weight:600; border-top:2px solid var(--border-light); background:rgba(0,212,170,0.04); }
+  .sim-ret-pos { color:var(--up); }
+  .sim-ret-neg { color:var(--down); }
+  .sim-actions { display:flex; gap:8px; padding-top:4px; }
+  .sim-btn { padding:6px 16px; border-radius:var(--radius); font-size:0.78rem; cursor:pointer; border:1px solid var(--border); }
+  .sim-btn-secondary { background:var(--card); color:var(--muted); }
+  .sim-btn:hover { opacity:0.8; }
   </style>
 </head>
 <body>
@@ -1441,6 +1482,12 @@
     ========================================================= -->
     <div class="section-block personal-section sec-anchor" id="sec-my">
       <div class="card">
+        <div class="profile-bar">
+          <span class="profile-label">👤 用户：</span>
+          <select id="profile-select" onchange="profileSwitch()"></select>
+          <button onclick="profileNew()">＋ 新建</button>
+          <button onclick="profileDelete()">删除</button>
+        </div>
         <div class="personal-header">
           <div class="section-label">⭐ 我的工作台 · My Dashboard</div>
           <span class="personal-privacy">🔒 数据存本地 · 不上传服务器</span>
@@ -1448,6 +1495,7 @@
         <div class="ptabs">
           <button class="ptab active" id="ptab-wl" onclick="switchTab(event,'wl')">📋 自选股</button>
           <button class="ptab" id="ptab-pf" onclick="switchTab(event,'pf')">💼 持仓盈亏</button>
+          <button class="ptab" id="ptab-sim" onclick="switchTab(event,'sim')">📊 模拟器</button>
         </div>
         <div id="panel-wl">
           <div class="add-row">
@@ -1473,6 +1521,73 @@
             <div class="pf-sum-item">盈亏率<span id="sum-pct">—</span></div>
           </div>
           <div id="pf-list" class="pf-list"></div>
+        </div>
+        <div id="panel-sim" style="display:none">
+          <div class="sim-section">
+            <div>
+              <div class="sim-label">总投资金额</div>
+              <div class="sim-capital-row">
+                <input type="number" id="sim-capital" min="0" step="100" value="10000" oninput="simUpdate()" />
+                <select id="sim-currency" onchange="simUpdate()">
+                  <option value="USD">USD $</option>
+                  <option value="CAD">CAD $</option>
+                  <option value="CNY">CNY ¥</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <div class="sim-label">资产配置</div>
+              <div class="sim-add-row">
+                <input id="sim-sym" placeholder="代码，如 AAPL" style="width:100px" />
+                <input id="sim-alias" placeholder="备注名" style="width:90px" />
+                <input type="number" id="sim-pct" placeholder="分配%" min="0" max="100" step="1" style="width:70px" />
+                <button onclick="simAddAsset()">＋ 添加</button>
+              </div>
+              <div id="sim-pct-total" class="sim-pct-total" style="margin-top:4px">已分配：0%</div>
+            </div>
+            <div id="sim-alloc-bar" class="sim-alloc-bar" style="display:none"></div>
+            <div id="sim-assets-wrap" style="display:none">
+              <table class="sim-assets-table">
+                <thead><tr><th>代码</th><th>备注</th><th>分配%</th><th>投入金额</th><th>操作</th></tr></thead>
+                <tbody id="sim-assets-tbody"></tbody>
+              </table>
+            </div>
+            <div id="sim-scenario-section" style="display:none">
+              <div class="sim-label">收益情景（年化%）</div>
+              <div class="sim-scenario-row">
+                <label>😨 悲观 <input type="number" id="sim-bear" value="-20" step="1" oninput="simUpdate()" /></label>
+                <label>📊 中性 <input type="number" id="sim-base" value="8" step="1" oninput="simUpdate()" /></label>
+                <label>🚀 乐观 <input type="number" id="sim-bull" value="25" step="1" oninput="simUpdate()" /></label>
+              </div>
+              <div class="sim-horizon-row">
+                <span>时间跨度：</span>
+                <button class="sim-hbtn" data-h="1m" onclick="simSetHorizon(this,'1m')">1月</button>
+                <button class="sim-hbtn" data-h="3m" onclick="simSetHorizon(this,'3m')">3月</button>
+                <button class="sim-hbtn" data-h="6m" onclick="simSetHorizon(this,'6m')">6月</button>
+                <button class="sim-hbtn active" data-h="1y" onclick="simSetHorizon(this,'1y')">1年</button>
+                <button class="sim-hbtn" data-h="3y" onclick="simSetHorizon(this,'3y')">3年</button>
+                <button class="sim-hbtn" data-h="5y" onclick="simSetHorizon(this,'5y')">5年</button>
+              </div>
+            </div>
+            <div id="sim-returns-wrap" style="display:none">
+              <div class="sim-label">预期收益预测</div>
+              <table class="sim-returns-table">
+                <thead>
+                  <tr>
+                    <th style="text-align:left">资产</th>
+                    <th>投入</th>
+                    <th>😨 悲观</th>
+                    <th>📊 中性</th>
+                    <th>🚀 乐观</th>
+                  </tr>
+                </thead>
+                <tbody id="sim-returns-tbody"></tbody>
+              </table>
+            </div>
+            <div class="sim-actions">
+              <button class="sim-btn sim-btn-secondary" onclick="simReset()">🗑 重置</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -2336,17 +2451,71 @@
   //  PERSONAL DASHBOARD — Watchlist + Portfolio
   // ═══════════════════════════════════════════════════════════
 
-  const LS_WL = 'fd-watchlist-v1';
-  const LS_PF = 'fd-portfolio-v1';
+  // ── Multi-user Profiles ──────────────────────────────────────
+  function profileLoad() {
+    return JSON.parse(localStorage.getItem('fd-profiles-v1') || 'null') || [{ id: 'default', name: '默认用户' }];
+  }
+  function profileSave(list) { localStorage.setItem('fd-profiles-v1', JSON.stringify(list)); }
+  function profileActive() { return localStorage.getItem('fd-active-profile-v1') || 'default'; }
+  function profileSetActive(id) { localStorage.setItem('fd-active-profile-v1', id); }
+
+  function profileRenderSelect() {
+    const list = profileLoad();
+    const active = profileActive();
+    const sel = document.getElementById('profile-select');
+    if (!sel) return;
+    sel.innerHTML = list.map(p => `<option value="${p.id}" ${p.id === active ? 'selected' : ''}>${p.name}</option>`).join('');
+  }
+
+  function profileSwitch() {
+    const sel = document.getElementById('profile-select');
+    if (!sel) return;
+    profileSetActive(sel.value);
+    wlRender(); pfRender(); simRender();
+  }
+
+  function profileNew() {
+    const name = prompt('输入用户名：', '用户' + (profileLoad().length + 1));
+    if (!name || !name.trim()) return;
+    const id = 'user_' + Date.now();
+    const list = profileLoad();
+    list.push({ id, name: name.trim() });
+    profileSave(list);
+    profileSetActive(id);
+    profileRenderSelect();
+    wlRender(); pfRender(); simRender();
+  }
+
+  function profileDelete() {
+    const list = profileLoad();
+    if (list.length <= 1) { alert('至少保留一个用户'); return; }
+    const active = profileActive();
+    const idx = list.findIndex(p => p.id === active);
+    if (idx === -1) return;
+    if (!confirm(`确认删除用户"${list[idx].name}"的所有数据？`)) return;
+    ['watchlist-v1','portfolio-v1','sim-v1'].forEach(k => {
+      localStorage.removeItem(`fd-${active}-${k}`);
+    });
+    list.splice(idx, 1);
+    profileSave(list);
+    profileSetActive(list[0].id);
+    profileRenderSelect();
+    wlRender(); pfRender(); simRender();
+  }
+
+  // ── Dynamic localStorage keys ──────────────────────────
+  function lsWL()  { return `fd-${profileActive()}-watchlist-v1`; }
+  function lsPF()  { return `fd-${profileActive()}-portfolio-v1`; }
+  function lsSIM() { return `fd-${profileActive()}-sim-v1`; }
   const priceCache = {};
 
-  function wlLoad() { return JSON.parse(localStorage.getItem(LS_WL) || '[]'); }
-  function wlSave(d) { localStorage.setItem(LS_WL, JSON.stringify(d)); }
-  function pfLoad() { return JSON.parse(localStorage.getItem(LS_PF) || '[]'); }
-  function pfSave(d) { localStorage.setItem(LS_PF, JSON.stringify(d)); }
+  function wlLoad() { return JSON.parse(localStorage.getItem(lsWL()) || '[]'); }
+  function wlSave(d) { localStorage.setItem(lsWL(), JSON.stringify(d)); }
+  function pfLoad() { return JSON.parse(localStorage.getItem(lsPF()) || '[]'); }
+  function pfSave(d) { localStorage.setItem(lsPF(), JSON.stringify(d)); }
 
   function switchTab(e, tab) {
-    ['wl','pf'].forEach(t => {
+    ['wl','pf','sim'].forEach(t => {
       document.getElementById('panel-' + t).style.display = t === tab ? 'block' : 'none';
       document.getElementById('ptab-' + t).classList.toggle('active', t === tab);
     });
@@ -2537,10 +2706,185 @@
     });
   }
 
+  // ── Investment Simulator ─────────────────────────────────
+
+  function simLoad() {
+    return JSON.parse(localStorage.getItem(lsSIM()) || 'null') || {
+      capital: 10000, currency: 'USD',
+      assets: [],
+      scenarios: { bear: -20, base: 8, bull: 25 },
+      horizon: '1y'
+    };
+  }
+  function simSave(d) { localStorage.setItem(lsSIM(), JSON.stringify(d)); }
+
+  function simRender() {
+    const d = simLoad();
+    const capEl = document.getElementById('sim-capital');
+    const curEl = document.getElementById('sim-currency');
+    const bearEl = document.getElementById('sim-bear');
+    const baseEl = document.getElementById('sim-base');
+    const bullEl = document.getElementById('sim-bull');
+    if (capEl) capEl.value = d.capital;
+    if (curEl) curEl.value = d.currency;
+    if (bearEl) bearEl.value = d.scenarios.bear;
+    if (baseEl) baseEl.value = d.scenarios.base;
+    if (bullEl) bullEl.value = d.scenarios.bull;
+    document.querySelectorAll('.sim-hbtn').forEach(b => {
+      b.classList.toggle('active', b.dataset.h === d.horizon);
+    });
+    simRenderAssets(d);
+    simCalcReturns(d);
+  }
+
+  function simRenderAssets(d) {
+    const capital = parseFloat(d.capital) || 0;
+    const totalPct = d.assets.reduce((s, a) => s + (parseFloat(a.pct)||0), 0);
+    const pctEl = document.getElementById('sim-pct-total');
+    if (pctEl) {
+      pctEl.textContent = `已分配：${totalPct.toFixed(1)}%`;
+      pctEl.className = 'sim-pct-total' + (totalPct > 100 ? ' over' : '');
+    }
+    if (!d.assets.length) {
+      ['sim-assets-wrap','sim-alloc-bar','sim-scenario-section','sim-returns-wrap'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'none';
+      });
+      return;
+    }
+    ['sim-assets-wrap','sim-scenario-section','sim-returns-wrap'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'block';
+    });
+    const bar = document.getElementById('sim-alloc-bar');
+    if (bar) {
+      bar.style.display = 'flex';
+      bar.innerHTML = d.assets.map((a, i) => {
+        const w = Math.min(parseFloat(a.pct)||0, 100);
+        return `<div class="sim-alloc-seg" title="${a.symbol} ${a.pct}%" style="width:${w}%;background:hsl(${i*47},65%,50%);"></div>`;
+      }).join('');
+    }
+    const tbody = document.getElementById('sim-assets-tbody');
+    if (tbody) {
+      const cur = d.currency === 'CNY' ? '¥' : '$';
+      tbody.innerHTML = d.assets.map((a, idx) => {
+        const invest = capital * (parseFloat(a.pct)||0) / 100;
+        return `<tr>
+          <td><strong>${a.symbol}</strong></td>
+          <td>${a.alias || '—'}</td>
+          <td><input type="number" min="0" max="100" step="1" value="${a.pct}" onchange="simUpdatePct(${idx},this.value)" style="width:55px;background:transparent;border:1px solid var(--border);color:var(--text);border-radius:3px;padding:2px 5px;" /></td>
+          <td>${cur}${fmtNum(invest)}</td>
+          <td><button class="wl-rm" onclick="simRemoveAsset(${idx})">×</button></td>
+        </tr>`;
+      }).join('');
+    }
+  }
+
+  function simCalcReturns(d) {
+    const tbody = document.getElementById('sim-returns-tbody');
+    if (!tbody || !d.assets.length) return;
+    const capital = parseFloat(d.capital) || 0;
+    const horizonMap = { '1m': 1/12, '3m': 0.25, '6m': 0.5, '1y': 1, '3y': 3, '5y': 5 };
+    const years = horizonMap[d.horizon] || 1;
+    const bear = parseFloat(d.scenarios.bear) / 100;
+    const base = parseFloat(d.scenarios.base) / 100;
+    const bull = parseFloat(d.scenarios.bull) / 100;
+    const cur = d.currency === 'CNY' ? '¥' : '$';
+    function calcProfit(invest, rate, yrs) {
+      return invest * Math.pow(1 + rate, yrs) - invest;
+    }
+    function sCell(v, invest) {
+      const p = invest ? (v / invest * 100).toFixed(1) : '0.0';
+      const sign = v >= 0 ? '+' : '';
+      const cls = v >= 0 ? 'sim-ret-pos' : 'sim-ret-neg';
+      return `<span class="${cls}">${sign}${cur}${fmtNum(Math.abs(v))}<br><small>${sign}${p}%</small></span>`;
+    }
+    let totBear = 0, totBase = 0, totBull = 0, totInvest = 0;
+    tbody.innerHTML = d.assets.map(a => {
+      const invest = capital * (parseFloat(a.pct)||0) / 100;
+      const pb = calcProfit(invest, bear, years);
+      const pn = calcProfit(invest, base, years);
+      const pu = calcProfit(invest, bull, years);
+      totBear += pb; totBase += pn; totBull += pu; totInvest += invest;
+      return `<tr>
+        <td><strong>${a.symbol}</strong>${a.alias ? `<br><small style="color:var(--muted)">${a.alias}</small>` : ''}</td>
+        <td>${cur}${fmtNum(invest)}</td>
+        <td>${sCell(pb, invest)}</td>
+        <td>${sCell(pn, invest)}</td>
+        <td>${sCell(pu, invest)}</td>
+      </tr>`;
+    }).join('');
+    tbody.innerHTML += `<tr class="total-row">
+      <td>合计</td>
+      <td>${cur}${fmtNum(totInvest)}</td>
+      <td>${sCell(totBear, totInvest)}</td>
+      <td>${sCell(totBase, totInvest)}</td>
+      <td>${sCell(totBull, totInvest)}</td>
+    </tr>`;
+  }
+
+  function simUpdate() {
+    const d = simLoad();
+    d.capital = parseFloat(document.getElementById('sim-capital').value) || 10000;
+    d.currency = document.getElementById('sim-currency').value;
+    d.scenarios.bear = parseFloat(document.getElementById('sim-bear').value) || -20;
+    d.scenarios.base = parseFloat(document.getElementById('sim-base').value) || 8;
+    d.scenarios.bull = parseFloat(document.getElementById('sim-bull').value) || 25;
+    simSave(d);
+    simRenderAssets(d);
+    simCalcReturns(d);
+  }
+
+  function simSetHorizon(btn, h) {
+    const d = simLoad();
+    d.horizon = h;
+    simSave(d);
+    document.querySelectorAll('.sim-hbtn').forEach(b => b.classList.toggle('active', b.dataset.h === h));
+    simCalcReturns(d);
+  }
+
+  function simAddAsset() {
+    const sym = (document.getElementById('sim-sym').value || '').trim().toUpperCase();
+    const alias = (document.getElementById('sim-alias').value || '').trim();
+    const pct = parseFloat(document.getElementById('sim-pct').value) || 0;
+    if (!sym) return;
+    const d = simLoad();
+    if (d.assets.find(a => a.symbol === sym)) { alert('该资产已在列表中'); return; }
+    d.assets.push({ symbol: sym, alias, pct });
+    simSave(d);
+    document.getElementById('sim-sym').value = '';
+    document.getElementById('sim-alias').value = '';
+    document.getElementById('sim-pct').value = '';
+    simRender();
+  }
+
+  function simRemoveAsset(idx) {
+    const d = simLoad();
+    d.assets.splice(idx, 1);
+    simSave(d);
+    simRender();
+  }
+
+  function simUpdatePct(idx, val) {
+    const d = simLoad();
+    d.assets[idx].pct = parseFloat(val) || 0;
+    simSave(d);
+    simRenderAssets(d);
+    simCalcReturns(d);
+  }
+
+  function simReset() {
+    if (!confirm('确认重置模拟器数据？')) return;
+    localStorage.removeItem(lsSIM());
+    simRender();
+  }
+
   // Init personal dashboard on load
   document.addEventListener('DOMContentLoaded', function() {
+    profileRenderSelect();
     wlRender();
     pfRender();
+    simRender();
     // Enter key triggers add
     document.getElementById('wl-name').addEventListener('keydown', e => { if(e.key==='Enter') wlAdd(); });
     document.getElementById('pf-cost').addEventListener('keydown', e => { if(e.key==='Enter') pfAdd(); });
