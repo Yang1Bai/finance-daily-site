@@ -1,29 +1,29 @@
 {
-  "updated": "2026-05-03T05:55:11.872909+00:00",
+  "updated": "2026-05-04T22:34:13.060308+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,230.12",
-      "change": "+21.11",
-      "change_pct": "+0.29%",
-      "direction": "up"
+      "value": "7,200.75",
+      "change": "-29.37",
+      "change_pct": "-0.41%",
+      "direction": "down"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "25,114",
-      "change": "+222.13",
-      "change_pct": "+0.89%",
-      "direction": "up"
+      "value": "25,068",
+      "change": "-46.64",
+      "change_pct": "-0.19%",
+      "direction": "down"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "49,499",
-      "change": "-152.87",
-      "change_pct": "-0.31%",
+      "value": "48,942",
+      "change": "-557.37",
+      "change_pct": "-1.13%",
       "direction": "down"
     },
     {
@@ -61,33 +61,33 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,644.50",
-      "change": "+29.80",
-      "change_pct": "+0.65%",
-      "direction": "up"
+      "value": "4,529.80",
+      "change": "-100.10",
+      "change_pct": "-2.16%",
+      "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "101.94",
-      "change": "-3.13",
-      "change_pct": "-2.98%",
-      "direction": "down"
+      "value": "104.95",
+      "change": "+3.01",
+      "change_pct": "+2.95%",
+      "direction": "up"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "78,238",
-      "change": "+58.51",
-      "change_pct": "+0.07%",
+      "value": "80,184",
+      "change": "+1645.91",
+      "change_pct": "+2.10%",
       "direction": "up"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "98.2100",
-      "change": "+0.13",
-      "change_pct": "+0.13%",
+      "value": "98.4790",
+      "change": "+0.27",
+      "change_pct": "+0.27%",
       "direction": "up"
     }
   ]
