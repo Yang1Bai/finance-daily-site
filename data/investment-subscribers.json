@@ -7,8 +7,8 @@
     }
   },
   "stats": {
-    "total_broadcasts": 5,
-    "last_broadcast": "2026-05-08 10:22",
+    "total_broadcasts": 6,
+    "last_broadcast": "2026-05-09 10:11",
     "broadcast_history": [
       {
         "date": "2026-05-04 10:37",
@@ -32,6 +32,11 @@
       },
       {
         "date": "2026-05-08 10:22",
+        "sent": 1,
+        "total": 1
+      },
+      {
+        "date": "2026-05-09 10:11",
         "sent": 1,
         "total": 1
       }
