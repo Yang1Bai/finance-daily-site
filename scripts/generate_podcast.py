@@ -152,7 +152,7 @@ def synthesize_segment(text: str, voice: str, client_oai, outpath: Path):
     if USE_EDGE_TTS and voice.startswith("zh-"):
         import asyncio
         async def _gen():
-            tts = edge_tts.Communicate(text, voice, rate="+5%")
+            tts = edge_tts.Communicate(text, voice, rate="-5%")
             await tts.save(str(outpath))
         asyncio.run(_gen())
     else:
