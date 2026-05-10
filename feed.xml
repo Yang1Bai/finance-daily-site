@@ -5,53 +5,47 @@
     <description>每日全球金融市场摘要，由 Claude AI + Web Search 自动生成</description>
     <link>https://your-username.github.io/finance-daily-site/</link>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 10 May 2026 00:30:29 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 13:10:10 +0000</lastBuildDate>
     <item>
       <title>金融日报 2026年5月10日</title>
       <description>今日金融市场摘要已更新</description>
-      <pubDate>Sun, 10 May 2026 00:30:29 +0000</pubDate>
+      <pubDate>Sun, 10 May 2026 13:10:10 +0000</pubDate>
     </item>
   <item>
-    <title>鲍威尔5月15日卸任美联储主席，Warsh接棒面临通胀与战争考验</title>
-    <description>Jerome Powell在4月29日主持了最后一次FOMC会议，该次会议出现罕见的4票反对，为1992年以来最多。鲍威尔强调伊朗战争和能源价格推高通胀，暗示降息遥遥无期。其继任者Kevin Warsh将于5月15日宣誓就职，市场担忧政策沟通方式改变可能加剧不确定性。</description>
+    <title>美联储主席鲍威尔5月15日卸任，凯文·沃什将接任</title>
+    <description>鲍威尔在4月29日FOMC会议后宣布将留任理事至2028年以捍卫美联储独立性，但主席职务将于5月15日移交给特朗普提名的凯文·沃什。此次会议出现四张异议票创1992年来最多，三位官员反对声明中的宽松倾向。市场预期2026年降息已基本无望，期货甚至定价小幅加息可能。</description>
     <link></link>
-    <pubDate>Sun, 10 May 2026 00:30:29 +0000</pubDate>
+    <pubDate>Sun, 10 May 2026 13:10:10 +0000</pubDate>
   </item>
   <item>
-    <title>特朗普与习近平5月14-15日北京峰会，中美关系迎来稳定窗口期</title>
-    <description>这是近十年来首次美国总统访华，峰会将聚焦贸易、关税、台湾问题和伊朗局势。美方寻求稀土矿物准入和大宗商品采购（500架波音飞机、农产品），中方希望保护科技企业免受更严投资限制。分析师预计会有"Board of Trade"机制宣布，但深层战略分歧难以弥合。</description>
+    <title>大型科技公司财报分化：Alphabet领涨10%，Meta暴跌8%</title>
+    <description>Q1财报季显示AI投资回报差异巨大。Alphabet因Google Cloud强劲增长股价飙升10%，成为2026年标普500最大贡献者。Meta因资本开支飙升且债务融资受质疑暴跌8%，微软因1900亿美元capex指引下跌4%。Amazon AWS和Azure营收增速分别为26%和38%，显示云计算需求强劲。</description>
     <link></link>
-    <pubDate>Sun, 10 May 2026 00:30:29 +0000</pubDate>
+    <pubDate>Sun, 10 May 2026 13:10:10 +0000</pubDate>
   </item>
   <item>
-    <title>3月CPI飙升至3.3%创2024年5月以来新高，能源通胀达12.5%</title>
-    <description>美国劳工统计局4月10日公布数据显示，3月CPI环比上涨0.9%为2022年6月以来最大增幅，汽油价格单月暴涨21.2%。核心CPI同比2.6%略低于预期，但能源价格冲击已开始向其他部门传导。Cleveland Fed预测4月CPI将进一步上升至3.6%。</description>
+    <title>美中贸易战出现转机：特朗普5月14-15日访华</title>
+    <description>美国总统特朗普将于5月14-15日访问北京与习近平会晤，这是8年来首次访华。双方在5月10日日内瓦举行的第六轮谈判取得"建设性"进展。美国在2月最高法院废除IEEPA关税权后，启动针对中国的Section 301调查作为替代手段。中国对美出口Q1下降16%，但对东南亚和非洲出口分别增长20%和32%。</description>
     <link></link>
-    <pubDate>Sun, 10 May 2026 00:30:29 +0000</pubDate>
+    <pubDate>Sun, 10 May 2026 13:10:10 +0000</pubDate>
   </item>
   <item>
-    <title>AMD、Intel、Micron股价暴涨，"AI硬件换挡"从GPU转向CPU和内存</title>
-    <description>AMD今年涨66%、Intel涨209%、Micron涨750%，远超Nvidia的15%。市场认为代理AI时代CPU需求激增，而全球内存短缺推高DRAM价格。AMD推出rack-scale系统Helios对标Nvidia，Meta和OpenAI已签约。费城半导体指数今年涨50%创新高。</description>
+    <title>美国4月新增就业11.5万超预期，失业率维持4.3%</title>
+    <description>美国劳工部5月8日公布，4月非农就业增加11.5万人，超过预期的6.2万人，失业率持平于4.3%。平均时薪同比增长3.8%，继续跑赢通胀。但短期失业人数激增35.8万至250万，兼职就业因经济原因增加44.5万至490万，显示劳动力市场出现裂痕。</description>
     <link></link>
-    <pubDate>Sun, 10 May 2026 00:30:29 +0000</pubDate>
+    <pubDate>Sun, 10 May 2026 13:10:10 +0000</pubDate>
   </item>
   <item>
-    <title>4月非农新增11.5万超预期，但失业率维持4.3%就业市场韧性犹存</title>
-    <description>5月9日公布的数据显示4月新增就业远超2月的-13.3万（受联邦裁员影响），显示伊朗战争后劳动力市场企稳。但工资增速仍超通胀，ECI同比3.4%，可能延长美联储紧缩立场。JPMorgan预计2026年不降息，2027年Q3可能加息。</description>
+    <title>美伊和平谈判现曙光，油价回落至95美元但通胀担忧未消</title>
+    <description>美国通过巴基斯坦向伊朗递交和平备忘录，伊朗表示正在评估。尽管期间发生霍尔木兹海峡交火，特朗普称停火仍然有效。油价从高点回落至95美元，但3月CPI同比3.3%高于去年同期2.4%，核心通胀维持2.6%。能源价格Q1月均涨3.2%，推高PCE至3.5%。</description>
     <link></link>
-    <pubDate>Sun, 10 May 2026 00:30:29 +0000</pubDate>
+    <pubDate>Sun, 10 May 2026 13:10:10 +0000</pubDate>
   </item>
   <item>
-    <title>Magnificent 7财报季：Alphabet飙升10%，Meta暴跌8%，AI支出分化加剧</title>
-    <description>Q1财报季显示科技巨头分化：Alphabet因Google Cloud强劲涨10%成最大贡献者；Meta因资本支出飙升且靠债务融资跌8%；Microsoft因1900亿美元capex预期跌4%。七巨头Q1整体盈利增长57%，但投资者开始质疑AI支出回报率。</description>
+    <title>中国Q1出口增14%但对美出口暴跌16%，贸易顺差收窄</title>
+    <description>中国海关总署数据显示Q1出口9776亿美元同比增14%，对东盟和非洲出口分别增20%和32%，对欧盟反弹21%。但对美出口下降16%，贸易顺差因半导体进口飙升至1350亿美元而缩窄至四年低点。中国通过"一带一路"转移出口目的地，削弱美国关税影响。</description>
     <link></link>
-    <pubDate>Sun, 10 May 2026 00:30:29 +0000</pubDate>
-  </item>
-  <item>
-    <title>上证综指五连涨至4180点，恒指因中美峰会预期反弹10%</title>
-    <description>中国股市受益于Q1 GDP增长5%超预期、能源转型投资加速和中美关系改善预期。上证连续五周上涨，Sigenergy（能源储存）IPO首日暴涨103%。但房地产疲软和人口老龄化仍是长期隐忧。分析师建议关注清洁能源和AI相关板块。</description>
-    <link></link>
-    <pubDate>Sun, 10 May 2026 00:30:29 +0000</pubDate>
+    <pubDate>Sun, 10 May 2026 13:10:10 +0000</pubDate>
   </item>
   </channel>
 </rss>
