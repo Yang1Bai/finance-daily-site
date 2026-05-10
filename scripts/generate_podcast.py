@@ -184,7 +184,7 @@ def merge_audio(segment_files: list[Path], output: Path):
         list_file = f.name
     subprocess.run(
         ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", list_file,
-         "-c", "copy", str(output)],
+         "-ar", "44100", "-ac", "2", "-ab", "128k", str(output)],
         check=True, capture_output=True
     )
     os.unlink(list_file)
