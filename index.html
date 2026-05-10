@@ -674,6 +674,111 @@
   </div>
 </section>
 
+<!-- PODCAST PLAYER -->
+<div class="podcast-bar" id="podcast-bar">
+  <div class="container">
+    <div class="podcast-inner">
+      <div class="podcast-left">
+        <span class="podcast-icon">🎙️</span>
+        <div class="podcast-info">
+          <div class="podcast-title">金融日报早报 · 今日播客</div>
+          <div class="podcast-sub" id="podcast-date">欣欣 & 建国 · 约3分钟</div>
+        </div>
+      </div>
+      <div class="podcast-controls">
+        <audio id="podcast-audio" preload="none">
+          <source src="audio/latest.mp3" type="audio/mpeg">
+        </audio>
+        <button class="pod-btn" id="pod-play" onclick="togglePodcast()">▶ 播放</button>
+        <div class="pod-progress-wrap" onclick="seekPodcast(event)">
+          <div class="pod-progress-bar" id="pod-progress"></div>
+        </div>
+        <span class="pod-time" id="pod-time">0:00</span>
+        <button class="pod-btn pod-btn-sm" onclick="document.getElementById('podcast-audio').playbackRate=document.getElementById('podcast-audio').playbackRate===1?1.5:1;this.textContent=document.getElementById('podcast-audio').playbackRate+'x'">1x</button>
+        <a class="pod-btn pod-btn-sm" href="audio/latest.mp3" download="金融日报早报.mp3" title="下载">⬇</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .podcast-bar {
+    background: linear-gradient(90deg, rgba(0,212,170,.08), rgba(79,195,247,.05));
+    border-bottom: 1px solid rgba(0,212,170,.2);
+    padding: 10px 0;
+  }
+  .podcast-inner { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+  .podcast-left { display:flex; align-items:center; gap:10px; }
+  .podcast-icon { font-size:1.4rem; animation: pulse-pod 3s ease-in-out infinite; }
+  @keyframes pulse-pod { 0%,100%{transform:scale(1)} 50%{transform:scale(1.1)} }
+  .podcast-title { font-size:.82rem; font-weight:600; color:var(--text); }
+  .podcast-sub { font-size:.65rem; color:var(--muted); font-family:var(--mono); margin-top:1px; }
+  .podcast-controls { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .pod-btn {
+    background: rgba(0,212,170,.15); color:var(--accent);
+    border: 1px solid rgba(0,212,170,.3); border-radius:6px;
+    padding: 5px 14px; font-size:.75rem; cursor:pointer;
+    font-family:var(--sans); transition:background .15s; white-space:nowrap;
+  }
+  .pod-btn:hover { background:rgba(0,212,170,.25); }
+  .pod-btn.playing { background:rgba(255,82,82,.12); color:var(--down); border-color:rgba(255,82,82,.3); }
+  .pod-btn-sm { padding:5px 9px; font-size:.68rem; }
+  .pod-btn-sm[download] { color:var(--muted); background:rgba(255,255,255,.05); border-color:var(--border); text-decoration:none; }
+  .pod-progress-wrap { width:160px; height:4px; background:var(--border); border-radius:2px; cursor:pointer; }
+  @media(max-width:640px){ .pod-progress-wrap { width:80px; } }
+  .pod-progress-bar { height:100%; background:var(--accent); border-radius:2px; width:0%; transition:width .3s linear; }
+  .pod-time { font-family:var(--mono); font-size:.65rem; color:var(--muted); min-width:32px; }
+</style>
+
+<script>
+(function(){
+  var audio = document.getElementById('podcast-audio');
+  var btn   = document.getElementById('pod-play');
+  var bar   = document.getElementById('pod-progress');
+  var time  = document.getElementById('pod-time');
+  if (!audio) return;
+
+  // Check if audio exists
+  fetch('audio/latest-meta.json').then(r=>r.json()).then(m=>{
+    document.getElementById('podcast-date').textContent = '欣欣 & 建国 · ' + m.date + ' · 约3分钟';
+  }).catch(()=>{
+    document.getElementById('podcast-bar').style.opacity = '0.4';
+    btn.textContent = '暂无音频';
+    btn.disabled = true;
+  });
+
+  audio.addEventListener('timeupdate', function(){
+    if (!audio.duration) return;
+    bar.style.width = (audio.currentTime / audio.duration * 100) + '%';
+    var m = Math.floor(audio.currentTime/60);
+    var s = Math.floor(audio.currentTime%60);
+    time.textContent = m + ':' + (s<10?'0':'')+s;
+  });
+  audio.addEventListener('ended', function(){
+    btn.textContent = '▶ 播放';
+    btn.classList.remove('playing');
+    bar.style.width = '0%';
+  });
+
+  window.togglePodcast = function(){
+    if (audio.paused) {
+      audio.play();
+      btn.textContent = '⏸ 暂停';
+      btn.classList.add('playing');
+    } else {
+      audio.pause();
+      btn.textContent = '▶ 播放';
+      btn.classList.remove('playing');
+    }
+  };
+  window.seekPodcast = function(e){
+    if (!audio.duration) return;
+    var rect = e.currentTarget.getBoundingClientRect();
+    audio.currentTime = ((e.clientX - rect.left) / rect.width) * audio.duration;
+  };
+})();
+</script>
+
 <!-- MAIN PAGE BODY -->
 <div class="page-body">
   <div class="container">

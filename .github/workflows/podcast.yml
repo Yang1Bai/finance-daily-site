@@ -1,0 +1,42 @@
+name: Daily Podcast Generation
+
+on:
+  schedule:
+    # 08:45 ET (12:45 UTC) — after daily update finishes
+    - cron: '45 12 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  podcast:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      ANTHROPIC_MODEL:   ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-4-5' }}
+      OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic openai
+
+      - name: Install ffmpeg
+        run: sudo apt-get install -y ffmpeg
+
+      - name: Generate podcast
+        run: python scripts/generate_podcast.py
+
+      - name: Commit audio
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add audio/
+          git diff --cached --quiet || git commit -m "podcast: daily audio $(date -u +'%Y-%m-%d')"
+          git push
