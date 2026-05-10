@@ -9,6 +9,11 @@ from pathlib import Path
 
 import anthropic
 from openai import OpenAI
+try:
+    import edge_tts
+    USE_EDGE_TTS = True
+except ImportError:
+    USE_EDGE_TTS = False
 
 ROOT   = Path(__file__).resolve().parent.parent
 DATA   = ROOT / "data"
@@ -17,8 +22,10 @@ AUDIO.mkdir(exist_ok=True)
 
 CLAUDE_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-5")
 # Host voices: alloy=女主持, echo=男主持
-VOICE_A = "shimmer"   # 女主持（活泼）
-VOICE_B = "echo"      # 男主持（沉稳）
+# edge-tts voices (free, better Chinese quality)
+VOICE_A = "zh-CN-XiaoyiNeural"    # 晓伊 女主持
+VOICE_B = "zh-CN-YunjianNeural"   # 云健 男主持
+INTRO_MP3 = ROOT / "audio" / "intro.mp3"
 
 MAX_SCRIPT_TOKENS = 2000   # 控制音频时长约 3-4 分钟
 
@@ -141,27 +148,38 @@ def parse_script(script: str) -> list[tuple[str, str]]:
 
 
 def synthesize_segment(text: str, voice: str, client_oai, outpath: Path):
-    """Synthesize one TTS segment"""
-    resp = client_oai.audio.speech.create(
-        model="tts-1",
-        voice=voice,
-        input=text,
-        response_format="mp3",
-        speed=1.05,
-    )
-    resp.stream_to_file(outpath)
+    """Synthesize one TTS segment — use edge-tts for Chinese voices, OpenAI as fallback"""
+    if USE_EDGE_TTS and voice.startswith("zh-"):
+        import asyncio
+        async def _gen():
+            tts = edge_tts.Communicate(text, voice, rate="+5%")
+            await tts.save(str(outpath))
+        asyncio.run(_gen())
+    else:
+        resp = client_oai.audio.speech.create(
+            model="tts-1",
+            voice=voice,
+            input=text,
+            response_format="mp3",
+            speed=1.05,
+        )
+        resp.stream_to_file(outpath)
 
 
 def merge_audio(segment_files: list[Path], output: Path):
-    """Concatenate MP3 files using ffmpeg"""
+    """Prepend intro music then concatenate all segments using ffmpeg"""
     if not shutil.which("ffmpeg"):
-        # Fallback: just copy first segment
         shutil.copy(segment_files[0], output)
         print("   ⚠️  ffmpeg not found, using first segment only")
         return
-    # Create concat list
+    # Build file list: intro first (if exists), then dialogue segments
+    all_files = []
+    if INTRO_MP3.exists():
+        all_files.append(INTRO_MP3)
+        print(f"   🎵 Adding intro music: {INTRO_MP3.name}")
+    all_files.extend(segment_files)
     with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as f:
-        for seg in segment_files:
+        for seg in all_files:
             f.write(f"file '{seg.resolve()}'\n")
         list_file = f.name
     subprocess.run(
