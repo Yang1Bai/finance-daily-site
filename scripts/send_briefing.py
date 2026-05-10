@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-每日播客素材包 — 生成详细文字资料推送到 Telegram
+每日播客素材包 - 生成详细文字资料推送到 Telegram
 在 fetch_content.py 之后运行
 """
 
@@ -69,11 +69,11 @@ def fmt(data: dict) -> list[str]:
 
     msg1 = f"🎙️ <b>金融日报播客素材包</b>\n📅 {date}\n{'─'*30}\n\n"
     msg1 += f"<b>【今日大势】</b> {sentiment}  VIX {vix}\n"
-    msg1 += f"<b>"{headline}"</b>\n\n"
+    msg1 += f'<b>\u201c{headline}\u201d</b>\n\n'
     if kp_lines:
-        msg1 += f"今日要点：\n{kp_lines}\n\n"
+        msg1 += f"今日要点:\n{kp_lines}\n\n"
     if context:
-        msg1 += f"背景：{context}"
+        msg1 += f"背景:{context}"
     msgs.append(msg1)
 
     # ── Message 2: Top Indices ───────────────────────────────────────────────
@@ -82,7 +82,7 @@ def fmt(data: dict) -> list[str]:
         lines = [f"<b>【主要指数】</b>"]
         for i in indices[:12]:
             d = i.get("direction", "neutral")
-            arrow = "▲" if d == "up" else ("▼" if d == "down" else "–")
+            arrow = "▲" if d == "up" else ("▼" if d == "down" else "-")
             lines.append(f"  {arrow} {i['name']}  {i.get('value','')}  {i.get('change_pct','')}")
         msgs.append("\n".join(lines))
 
@@ -109,29 +109,29 @@ def fmt(data: dict) -> list[str]:
             icon = sig_icon.get(w.get("signal", "HOLD"), "⚪")
             lines.append(f"\n{icon} <b>{w['name']} ({w['ticker']})</b>  信号:{w.get('signal','')}  评分:{w.get('score','')}/100")
             if w.get("conclusion"):
-                lines.append(f"  结论：{w['conclusion']}")
+                lines.append(f"  结论:{w['conclusion']}")
             if w.get("key_driver"):
-                lines.append(f"  驱动：{w['key_driver']}")
+                lines.append(f"  驱动:{w['key_driver']}")
             up, dn = w.get("target_up",""), w.get("target_down","")
             if up or dn:
-                lines.append(f"  目标：↑{up}  ↓{dn}  风险:{w.get('risk_level','')}")
+                lines.append(f"  目标:↑{up}  ↓{dn}  风险:{w.get('risk_level','')}")
             if w.get("action"):
-                lines.append(f"  操作：{w['action']}")
+                lines.append(f"  操作:{w['action']}")
         msgs.append("\n".join(lines))
 
     # ── Message 5: Bull/Bear Debate ──────────────────────────────────────────
     debate = data.get("market_debate", {})
     if debate:
         lines = [f"<b>【多空辩论】</b> {debate.get('subject','')}"]
-        lines.append("\n🐂 <b>多方看涨：</b>")
+        lines.append("\n🐂 <b>多方看涨:</b>")
         for b in debate.get("bull_case", []):
             lines.append(f"  • {b['point']}")
-        lines.append("\n🐻 <b>空方看跌：</b>")
+        lines.append("\n🐻 <b>空方看跌:</b>")
         for b in debate.get("bear_case", []):
             lines.append(f"  • {b['point']}")
         lean_map = {"bullish": "📈 偏多", "bearish": "📉 偏空", "neutral": "➡️ 中性"}
         lean = lean_map.get(debate.get("verdict_lean", "neutral"), "➡️ 中性")
-        lines.append(f"\n⚖️ <b>裁判：</b>{lean}\n{debate.get('verdict','')}")
+        lines.append(f"\n⚖️ <b>裁判:</b>{lean}\n{debate.get('verdict','')}")
         msgs.append("\n".join(lines))
 
     # ── Message 6: Macro ─────────────────────────────────────────────────────
@@ -141,7 +141,7 @@ def fmt(data: dict) -> list[str]:
         dir_icon = {"up": "↑", "down": "↓", "neutral": "→"}
         for m in macro:
             arrow = dir_icon.get(m.get("direction", "neutral"), "→")
-            lines.append(f"\n{arrow} <b>{m['indicator']}</b>  {m.get('value','')}（前值 {m.get('prev','')}）")
+            lines.append(f"\n{arrow} <b>{m['indicator']}</b>  {m.get('value','')}(前值 {m.get('prev','')})")
             if m.get("description"):
                 lines.append(f"   {m['description']}")
         msgs.append("\n".join(lines))
@@ -157,9 +157,9 @@ def fmt(data: dict) -> list[str]:
             if beat is not None:
                 lines.append(f"  EPS: 实际 ${e.get('eps_actual','')}  预期 ${e.get('eps_est','')}  营收 {e.get('revenue','')}")
             else:
-                lines.append(f"  发布日期：{e.get('report_date','TBD')}  预期EPS ${e.get('eps_est','')}")
+                lines.append(f"  发布日期:{e.get('report_date','TBD')}  预期EPS ${e.get('eps_est','')}")
             if e.get("highlight"):
-                lines.append(f"  亮点：{e['highlight']}")
+                lines.append(f"  亮点:{e['highlight']}")
         msgs.append("\n".join(lines))
 
     # ── Message 8: Sectors ───────────────────────────────────────────────────
@@ -168,7 +168,7 @@ def fmt(data: dict) -> list[str]:
         lines = ["<b>【板块表现】</b>"]
         for sec in sorted(sectors, key=lambda x: float(x.get("change_pct","0%").replace("%","").replace("+","")) if x.get("change_pct","").replace("%","").replace("+","").replace("-","").replace(".","").isdigit() else 0, reverse=True):
             d = sec.get("direction","neutral")
-            arrow = "▲" if d == "up" else ("▼" if d == "down" else "–")
+            arrow = "▲" if d == "up" else ("▼" if d == "down" else "-")
             lines.append(f"  {arrow} {sec['name']} ({sec.get('etf','')})  {sec.get('change_pct','')}")
         msgs.append("\n".join(lines))
 
@@ -179,12 +179,12 @@ def fmt(data: dict) -> list[str]:
         bias_icon = {"hawkish": "🦅 鹰派", "dovish": "🕊️ 鸽派", "neutral": "➡️ 中性"}
         for b in banks:
             bias = bias_icon.get(b.get("bias","neutral"), "➡️ 中性")
-            lines.append(f"\n🏦 <b>{b['bank']}</b>  {bias}  利率：{b.get('rate','')}")
+            lines.append(f"\n🏦 <b>{b['bank']}</b>  {bias}  利率:{b.get('rate','')}")
             lines.append(f"  {b.get('action','')}")
             if b.get("note"):
                 lines.append(f"  {b['note']}")
             if b.get("next_meeting"):
-                lines.append(f"  下次会议：{b['next_meeting']}")
+                lines.append(f"  下次会议:{b['next_meeting']}")
         msgs.append("\n".join(lines))
 
     # ── Message 10: Calendar ─────────────────────────────────────────────────
@@ -207,25 +207,25 @@ def fmt(data: dict) -> list[str]:
         us = replay.get("us", {})
         cn = replay.get("cn", {})
         if us.get("summary"):
-            lines.append(f"\n🇺🇸 <b>美股</b>：{us['summary']}")
+            lines.append(f"\n🇺🇸 <b>美股</b>:{us['summary']}")
             lines.append(f"  涨家数 ↑{us.get('advance','')}  跌家数 ↓{us.get('decline','')}")
             if us.get("hot_stock"):
-                lines.append(f"  领涨：{us['hot_stock']}")
+                lines.append(f"  领涨:{us['hot_stock']}")
         if cn.get("summary"):
-            lines.append(f"\n🇨🇳 <b>A股</b>：{cn['summary']}")
+            lines.append(f"\n🇨🇳 <b>A股</b>:{cn['summary']}")
             lines.append(f"  {cn.get('sh_index','')} {cn.get('sh_change','')}")
             if cn.get("net_inflow"):
-                lines.append(f"  北向资金：{cn['net_inflow']}")
+                lines.append(f"  北向资金:{cn['net_inflow']}")
             if cn.get("hot_stock"):
-                lines.append(f"  领涨：{cn['hot_stock']}")
+                lines.append(f"  领涨:{cn['hot_stock']}")
         msgs.append("\n".join(lines))
 
     # ── Footer ───────────────────────────────────────────────────────────────
     msgs.append(
         f"{'─'*30}\n"
         f"以上为今日《金融日报》完整素材\n"
-        f"🌐 网页版：https://yang1bai.github.io/finance-daily-site/\n"
-        f"🎙️ 播客已自动生成，网页顶部可播放"
+        f"🌐 网页版:https://yang1bai.github.io/finance-daily-site/\n"
+        f"🎙️ 播客已自动生成,网页顶部可播放"
     )
 
     return msgs
@@ -233,7 +233,7 @@ def fmt(data: dict) -> list[str]:
 
 def main():
     print("=" * 50)
-    print("📨 金融日报 — 播客素材推送")
+    print("📨 金融日报 - 播客素材推送")
     print("=" * 50)
 
     data = load_data()
