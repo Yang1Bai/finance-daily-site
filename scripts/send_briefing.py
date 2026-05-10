@@ -231,22 +231,45 @@ def fmt(data: dict) -> list[str]:
     return msgs
 
 
+def tg_send_file(filepath: str, caption: str = ""):
+    """Send a file via Telegram sendDocument"""
+    url = f"https://api.telegram.org/bot{TG_TOKEN}/sendDocument"
+    with open(filepath, "rb") as f:
+        resp = requests.post(url, data={
+            "chat_id": TG_CHAT,
+            "caption": caption,
+            "parse_mode": "HTML",
+        }, files={"document": f}, timeout=30)
+    return resp.ok
+
+
 def main():
     print("=" * 50)
-    print("📨 金融日报 - 播客素材推送")
+    print("📨 金融日报 — 播客素材推送")
     print("=" * 50)
 
     data = load_data()
     messages = fmt(data)
+    date = data.get("date", datetime.datetime.now().strftime("%Y-%m-%d"))
+    date_iso = datetime.datetime.now().strftime("%Y-%m-%d")
 
-    print(f"📊 Date: {data.get('date','')}")
-    print(f"📝 Sending {len(messages)} messages...")
+    # Merge all sections into one plain-text file
+    # Strip HTML tags for readability in text file
+    import re
+    def strip_html(t):
+        return re.sub(r"<[^>]+>", "", t)
 
-    for i, msg in enumerate(messages):
-        ok = tg_send(msg)
-        status = "✅" if ok else "❌"
-        print(f"  {status} Message {i+1}/{len(messages)} ({len(msg)} chars)")
+    full_text = "\n\n".join(strip_html(m) for m in messages)
+    filename = f"/tmp/金融日报_{date_iso}.txt"
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(full_text)
 
+    print(f"📊 Date: {date}")
+    print(f"📄 File: {filename} ({len(full_text)} chars)")
+
+    caption = f"🎙️ <b>今日播客素材包</b> · {date}"
+    ok = tg_send_file(filename, caption)
+    print("✅ Sent" if ok else "❌ Failed")
     print("🎉 Done!")
 
 
