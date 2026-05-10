@@ -60,6 +60,9 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
 6. 今日标普500各行业板块表现（全部11个GICS行业）
 7. 主要央行最新动态（美联储、欧央行、中国人民银行、日本银行）
 8. **未来7天经济日历calendar**：重要经济数据发布时间、央行会议、重要讲话（含预期值）
+9. **自选股AI决策仪表盘（watchlist_analysis）**：搜索以下8个标的的最新价格、近期新闻和技术面关键点（均线、RSI、近期支撑/压力位），为每个标的生成AI分析：NVDA(英伟达)、QQQ(纳斯达克100 ETF)、SPY(标普500 ETF)、BTC-USD(比特币)、510300.SS(沪深300 ETF)、GC=F(黄金)、CL=F(原油)、TSLA(特斯拉)
+10. **多空辩论（market_debate）**：基于当前市场环境，对标普500本周展望进行多空分析
+11. **大盘复盘（market_replay）**：搜索今日美股和A股收盘数据，包括涨跌家数、热门板块、资金流向
 
 必须输出以下JSON格式（只输出JSON，无其他内容）：
 
@@ -154,7 +157,64 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
       "previous": "51.4",
       "forecast": "52.0"
     }}
-  ]
+  ],
+  "watchlist_analysis": [
+    {{
+      "ticker": "NVDA",
+      "name": "英伟达",
+      "price": "当前价格如 875.40",
+      "change_pct": "+2.5%",
+      "direction": "up",
+      "signal": "BUY",
+      "score": 78,
+      "conclusion": "一句话核心结论，不超过20字",
+      "key_driver": "最关键驱动因素，1句",
+      "target_up": "上行目标价如 950",
+      "target_down": "下行风险位如 820",
+      "risk_level": "medium",
+      "action": "具体操作建议，1-2句",
+      "tags": ["#AI", "#半导体"]
+    }}
+  ],
+  "market_debate": {{
+    "subject": "标普500 本周展望",
+    "bull_case": [
+      {{"point": "多方论点1，15-25字", "confidence": "high"}},
+      {{"point": "多方论点2，15-25字", "confidence": "high"}},
+      {{"point": "多方论点3，15-25字", "confidence": "medium"}}
+    ],
+    "bear_case": [
+      {{"point": "空方论点1，15-25字", "confidence": "high"}},
+      {{"point": "空方论点2，15-25字", "confidence": "high"}},
+      {{"point": "空方论点3，15-25字", "confidence": "medium"}}
+    ],
+    "verdict": "综合裁判，50字以内，给出倾向性判断",
+    "verdict_lean": "bullish"
+  }},
+  "market_replay": {{
+    "us": {{
+      "date": "日期",
+      "advance": "3240",
+      "decline": "1820",
+      "new_high": "创52周新高家数",
+      "new_low": "创52周新低家数",
+      "top_sectors": ["科技", "能源"],
+      "hot_stock": "今日最热标的(涨幅)",
+      "volume_note": "成交量简评，1句",
+      "summary": "美股今日一句话复盘，20字"
+    }},
+    "cn": {{
+      "date": "日期",
+      "sh_index": "3300.50",
+      "sh_change": "+0.8%",
+      "advance": "2800",
+      "decline": "1500",
+      "net_inflow": "+52亿",
+      "hot_sector": "今日最热板块",
+      "hot_stock": "A股今日领涨股(涨幅)",
+      "summary": "A股今日一句话复盘，20字"
+    }}
+  }}
 }}
 
 请确保：
@@ -167,6 +227,9 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
 - central_banks数组包含至少4家央行（Fed、ECB、PBOC、BOJ）
 - calendar数组包含未来7天内至少5个重要经济事件，impact用high/medium/low区分
 - summary必须填写，headline要有具体指向，不能是空泛表述
+- watchlist_analysis数组包含全部8个标的（NVDA、QQQ、SPY、BTC-USD、510300.SS、GC=F、CL=F、TSLA），signal只能是BUY/SELL/HOLD，score为0-100整数，risk_level只能是low/medium/high
+- market_debate包含bull_case和bear_case各3条，confidence只能是high/medium，verdict_lean只能是bullish/bearish/neutral
+- market_replay包含us和cn两个对象，数据尽量真实
 """
 
 # ─── HTML rendering ───────────────────────────────────────────────────────────
@@ -413,32 +476,150 @@ def render_central_banks(central_banks: list) -> str:
     return "\n".join(html_parts)
 
 
+
+def render_watchlist_analysis(items) -> str:
+    if not items:
+        return "<div style='color:var(--muted);padding:10px'>暂无数据</div>"
+    if isinstance(items, dict):
+        items = [items]
+    def esc(s): return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+    html_parts = ['<div class="watchlist-grid">']
+    for item in items:
+        direction = item.get("direction", "neutral")
+        signal = item.get("signal", "HOLD")
+        risk = item.get("risk_level", "medium")
+        score = item.get("score", 50)
+        chg = item.get("change_pct", "0%")
+        chg_cls = "up" if direction == "up" else ("down" if direction == "down" else "")
+        tags_html = "".join(f'<span class="tag">{esc(t)}</span>' for t in item.get("tags", []))
+        t_up = item.get("target_up", "")
+        t_dn = item.get("target_down", "")
+        targets_html = ""
+        if t_up or t_dn:
+            targets_html = '<div class="wc-targets">'
+            if t_up: targets_html += f'<span class="wc-target-up">↑ {esc(t_up)}</span>'
+            if t_dn: targets_html += f'<span class="wc-target-down">↓ {esc(t_dn)}</span>'
+            targets_html += '</div>'
+        html_parts.append(f"""<div class="watchlist-card">
+  <div class="wc-header">
+    <div><div class="wc-ticker">{esc(item.get('ticker',''))}</div><div class="wc-name">{esc(item.get('name',''))}</div></div>
+    <div class="wc-price"><div class="wc-price-val">{esc(item.get('price',''))}</div><div class="wc-price-chg {chg_cls}">{esc(chg)}</div></div>
+  </div>
+  <div class="wc-signal-row">
+    <span class="signal-badge {signal}">{signal}</span>
+    <span class="wc-score">评分 <span>{score}</span>/100</span>
+  </div>
+  <div class="wc-conclusion">{esc(item.get('conclusion',''))}</div>
+  <div class="wc-driver">{esc(item.get('key_driver',''))}</div>
+  {targets_html}
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span class="risk-badge {risk}">风险:{esc(risk)}</span></div>
+  <div class="wc-action">{esc(item.get('action',''))}</div>
+  <div class="tags" style="margin-top:8px">{tags_html}</div>
+</div>""")
+    html_parts.append('</div>')
+    return "\n".join(html_parts)
+
+
+def render_market_debate(items) -> str:
+    if not items:
+        return "<div style='color:var(--muted);padding:10px'>暂无数据</div>"
+    debate = items if isinstance(items, dict) else (items[0] if items else {})
+    def esc(s): return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+    bull = debate.get("bull_case", [])
+    bear = debate.get("bear_case", [])
+    verdict_lean = debate.get("verdict_lean", "neutral")
+    def pts(lst):
+        rows = []
+        for p in lst:
+            conf = p.get("confidence", "medium")
+            rows.append(f'<div class="debate-point"><span class="conf-badge {conf}">{conf}</span>{esc(p.get("point",""))}</div>')
+        return "\n".join(rows)
+    return f"""<div class="debate-container">
+  <div class="debate-header">{esc(debate.get('subject', '标普500 本周展望'))}</div>
+  <div class="debate-sides">
+    <div class="debate-side bull">
+      <div class="debate-side-title">🐂 多方看涨</div>
+      {pts(bull)}
+    </div>
+    <div class="debate-side bear">
+      <div class="debate-side-title">🐻 空方看跌</div>
+      {pts(bear)}
+    </div>
+  </div>
+  <div class="debate-verdict">
+    <div class="verdict-label">裁判结论 <span class="verdict-lean {verdict_lean}">{verdict_lean.upper()}</span></div>
+    <div class="verdict-text">{esc(debate.get('verdict', ''))}</div>
+  </div>
+</div>"""
+
+
+def render_market_replay(items) -> str:
+    if not items:
+        return "<div style='color:var(--muted);padding:10px'>暂无数据</div>"
+    replay = items if isinstance(items, dict) else (items[0] if items else {})
+    def esc(s): return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+    us = replay.get("us", {})
+    cn = replay.get("cn", {})
+    def adv_pct(adv, dec):
+        try:
+            a, d = int(str(adv).replace(",","")), int(str(dec).replace(",",""))
+            total = a + d
+            return round(a / total * 100) if total else 50
+        except: return 50
+    def card(market, data, ap):
+        hot = data.get('hot_sector') or (data.get('top_sectors', ['—'])[0] if data.get('top_sectors') else '—')
+        extra_label = '北向资金' if data.get('net_inflow') else '创52周新高'
+        extra_val = data.get('net_inflow') or data.get('new_high', '—')
+        return f"""<div class="replay-card">
+  <div class="replay-card-title">{market}</div>
+  <div class="replay-summary">{esc(data.get('summary', ''))}</div>
+  <div class="ad-bar-wrap">
+    <span class="ad-label-up">↑{esc(data.get('advance', ''))}</span>
+    <div class="ad-bar adv" style="width:{ap}px;max-width:80px"></div>
+    <div class="ad-bar dec" style="width:{100 - ap}px;max-width:80px"></div>
+    <span class="ad-label-dn">↓{esc(data.get('decline', ''))}</span>
+  </div>
+  <div class="replay-stats">
+    <div class="replay-stat"><div class="replay-stat-label">热门板块</div><div class="replay-stat-val">{esc(hot)}</div></div>
+    <div class="replay-stat"><div class="replay-stat-label">领涨标的</div><div class="replay-stat-val">{esc(data.get('hot_stock', '—'))}</div></div>
+    <div class="replay-stat"><div class="replay-stat-label">{extra_label}</div><div class="replay-stat-val">{esc(str(extra_val))}</div></div>
+  </div>
+</div>"""
+    return f'<div class="replay-grid">{card("🇺🇸 美股", us, adv_pct(us.get("advance", 0), us.get("decline", 0)))}{card("🇨🇳 A股", cn, adv_pct(cn.get("advance", 0), cn.get("decline", 0)))}</div>'
+
+
 # ─── Anchor injection ─────────────────────────────────────────────────────────
 
 ANCHOR_RENDERERS = {
-    "SUMMARY":       render_summary,
-    "INDICES":       render_indices,
-    "LEADERS":       render_leaders,
-    "NEWS":          render_news,
-    "MACRO":         render_macro,
-    "EARNINGS":      render_earnings,
-    "SECTORS":       render_sectors,
-    "CENTRAL_BANKS": render_central_banks,
-    "CALENDAR":      render_calendar,
+    "SUMMARY":            render_summary,
+    "INDICES":            render_indices,
+    "LEADERS":            render_leaders,
+    "NEWS":               render_news,
+    "MACRO":              render_macro,
+    "EARNINGS":           render_earnings,
+    "SECTORS":            render_sectors,
+    "CENTRAL_BANKS":      render_central_banks,
+    "CALENDAR":           render_calendar,
+    "WATCHLIST_ANALYSIS": render_watchlist_analysis,
+    "MARKET_DEBATE":      render_market_debate,
+    "MARKET_REPLAY":      render_market_replay,
 }
 
 
 def inject_into_html(html: str, data: dict) -> str:
     section_map = {
-        "SUMMARY":       "summary",
-        "INDICES":       "indices",
-        "LEADERS":       "leaders",
-        "NEWS":          "news",
-        "MACRO":         "macro",
-        "EARNINGS":      "earnings",
-        "SECTORS":       "sectors",
-        "CENTRAL_BANKS": "central_banks",
-        "CALENDAR":      "calendar",
+        "SUMMARY":            "summary",
+        "INDICES":            "indices",
+        "LEADERS":            "leaders",
+        "NEWS":               "news",
+        "MACRO":              "macro",
+        "EARNINGS":           "earnings",
+        "SECTORS":            "sectors",
+        "CENTRAL_BANKS":      "central_banks",
+        "CALENDAR":           "calendar",
+        "WATCHLIST_ANALYSIS": "watchlist_analysis",
+        "MARKET_DEBATE":      "market_debate",
+        "MARKET_REPLAY":      "market_replay",
     }
     for anchor, key in section_map.items():
         items = data.get(key, [])

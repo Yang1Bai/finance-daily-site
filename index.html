@@ -1315,6 +1315,78 @@
   .sim-btn { padding:6px 16px; border-radius:var(--radius); font-size:0.78rem; cursor:pointer; border:1px solid var(--border); }
   .sim-btn-secondary { background:var(--card); color:var(--muted); }
   .sim-btn:hover { opacity:0.8; }
+
+    /* ── AI Watchlist Analysis ─────────────────────────────── */
+    .watchlist-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:14px; }
+    .watchlist-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:16px; transition:border-color .2s,transform .2s; }
+    .watchlist-card:hover { border-color:var(--border-light); transform:translateY(-2px); }
+    .wc-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px; }
+    .wc-ticker { font-family:var(--mono); font-size:1rem; font-weight:600; color:var(--accent); }
+    .wc-name { font-size:0.7rem; color:var(--muted); margin-top:2px; }
+    .wc-price { text-align:right; }
+    .wc-price-val { font-family:var(--mono); font-size:0.95rem; font-weight:600; }
+    .wc-price-chg { font-size:0.72rem; }
+    .wc-price-chg.up { color:var(--up); }
+    .wc-price-chg.down { color:var(--down); }
+    .wc-signal-row { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+    .signal-badge { font-family:var(--mono); font-size:0.7rem; font-weight:700; padding:3px 10px; border-radius:4px; }
+    .signal-badge.BUY  { background:rgba(0,230,118,.15); color:#00e676; border:1px solid rgba(0,230,118,.3); }
+    .signal-badge.SELL { background:rgba(255,82,82,.15);  color:#ff5252; border:1px solid rgba(255,82,82,.3); }
+    .signal-badge.HOLD { background:rgba(255,179,0,.15);  color:#ffb300; border:1px solid rgba(255,179,0,.3); }
+    .wc-score { font-family:var(--mono); font-size:0.75rem; color:var(--muted); }
+    .wc-score span { color:var(--text); font-weight:600; }
+    .wc-conclusion { font-size:0.82rem; color:var(--text); margin-bottom:4px; font-weight:500; }
+    .wc-driver { font-size:0.72rem; color:var(--muted); margin-bottom:10px; }
+    .wc-targets { display:flex; gap:8px; font-size:0.7rem; margin-bottom:8px; flex-wrap:wrap; }
+    .wc-target-up   { color:var(--up);   background:rgba(0,230,118,.1);  padding:2px 8px; border-radius:4px; }
+    .wc-target-down { color:var(--down); background:rgba(255,82,82,.1);   padding:2px 8px; border-radius:4px; }
+    .risk-badge { font-size:0.62rem; font-family:var(--mono); padding:2px 7px; border-radius:3px; text-transform:uppercase; }
+    .risk-badge.low    { background:rgba(0,230,118,.12); color:#00e676; }
+    .risk-badge.medium { background:rgba(255,179,0,.12); color:#ffb300; }
+    .risk-badge.high   { background:rgba(255,82,82,.12);  color:#ff5252; }
+    .wc-action { font-size:0.72rem; color:var(--muted); line-height:1.4; }
+    /* ── Market Debate ──────────────────────────────────────── */
+    .debate-container { display:flex; flex-direction:column; gap:14px; }
+    .debate-header { font-family:var(--mono); font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; }
+    .debate-sides { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    @media(max-width:640px){ .debate-sides { grid-template-columns:1fr; } }
+    .debate-side { background:var(--card); border-radius:var(--radius); padding:14px; }
+    .debate-side.bull { border-top:2px solid var(--up); }
+    .debate-side.bear { border-top:2px solid var(--down); }
+    .debate-side-title { font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:.08em; margin-bottom:10px; }
+    .debate-side.bull .debate-side-title { color:var(--up); }
+    .debate-side.bear .debate-side-title { color:var(--down); }
+    .debate-point { display:flex; align-items:flex-start; gap:8px; margin-bottom:8px; font-size:0.8rem; line-height:1.4; }
+    .conf-badge { font-size:0.6rem; font-family:var(--mono); padding:1px 5px; border-radius:3px; flex-shrink:0; margin-top:2px; }
+    .conf-badge.high   { background:rgba(79,195,247,.15); color:#4fc3f7; }
+    .conf-badge.medium { background:rgba(255,179,0,.12);  color:#ffb300; }
+    .debate-verdict { background:var(--card); border-radius:var(--radius); padding:14px 16px; border-left:3px solid var(--accent); }
+    .verdict-label { font-size:0.65rem; font-family:var(--mono); text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin-bottom:6px; }
+    .verdict-text { font-size:0.85rem; line-height:1.5; }
+    .verdict-lean { display:inline-block; margin-left:8px; font-size:0.65rem; font-family:var(--mono); padding:2px 7px; border-radius:4px; }
+    .verdict-lean.bullish { background:rgba(0,230,118,.15); color:#00e676; }
+    .verdict-lean.bearish { background:rgba(255,82,82,.15);  color:#ff5252; }
+    .verdict-lean.neutral { background:rgba(79,195,247,.12); color:#4fc3f7; }
+    /* ── Market Replay ──────────────────────────────────────── */
+    .replay-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    @media(max-width:640px){ .replay-grid { grid-template-columns:1fr; } }
+    .replay-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:16px; }
+    .replay-card-title { font-size:0.7rem; font-family:var(--mono); text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin-bottom:4px; }
+    .replay-summary { font-size:0.85rem; font-weight:500; margin-bottom:12px; }
+    .ad-bar-wrap { display:flex; align-items:center; gap:6px; margin-bottom:10px; font-size:0.72rem; flex-wrap:wrap; }
+    .ad-bar { height:6px; border-radius:3px; }
+    .ad-bar.adv { background:var(--up); }
+    .ad-bar.dec { background:var(--down); }
+    .ad-label-up { color:var(--up); }
+    .ad-label-dn { color:var(--down); }
+    .replay-stats { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-bottom:6px; }
+    .replay-stat { background:rgba(255,255,255,.03); border-radius:5px; padding:7px 10px; }
+    .replay-stat-label { font-size:0.62rem; color:var(--muted); margin-bottom:2px; }
+    .replay-stat-val { font-size:0.82rem; font-weight:600; font-family:var(--mono); }
+    /* ── Unified card hover ─────────────────────────────────── */
+    .news-item, .leader-card, .macro-card, .cb-card, .earnings-card { transition:border-color .2s,box-shadow .2s; }
+    .news-item:hover, .leader-card:hover, .macro-card:hover, .cb-card:hover, .earnings-card:hover { border-color:var(--border-light); box-shadow:0 0 0 1px var(--border-light); }
+    @media(max-width:640px){ .watchlist-grid { grid-template-columns:1fr 1fr; } }
   </style>
 </head>
 <body>
@@ -1355,6 +1427,9 @@
   <a href="#sec-sectors">🏭 行业</a>
   <a href="#sec-banks">🏦 央行</a>
   <a href="#sec-calendar">📅 日历</a>
+  <a href="#sec-watchlist">🎯 AI分析</a>
+  <a href="#sec-debate">⚔️ 辩论</a>
+  <a href="#sec-replay">📽️ 复盘</a>
   <a href="#sec-my">⭐ 工作台</a>
 </nav>
 
@@ -1600,6 +1675,25 @@
       </div>
     </div>
 
+
+<!-- =========================================================
+     AI WATCHLIST ANALYSIS
+========================================================= -->
+<section class="section-block sec-anchor" id="sec-watchlist">
+  <div class="container">
+    <div class="card">
+      <div class="section-label">🎯 AI 决策仪表盘 · AI Watchlist Analysis</div>
+<!-- WATCHLIST_ANALYSIS:START -->
+<div class="watchlist-grid" style="opacity:0.5">
+  <div class="watchlist-card" style="min-height:160px"></div>
+  <div class="watchlist-card" style="min-height:160px"></div>
+  <div class="watchlist-card" style="min-height:160px"></div>
+  <div class="watchlist-card" style="min-height:160px"></div>
+</div>
+<!-- WATCHLIST_ANALYSIS:END -->
+    </div>
+  </div>
+</section>
 <!-- =========================================================
      MAIN CONTENT
 ========================================================= -->
@@ -1836,6 +1930,18 @@
   </div>
 </div>
 <!-- NEWS:END -->
+          </div>
+        </div>
+
+<!-- =========================================================
+     MARKET DEBATE
+========================================================= -->
+        <div class="section-block sec-anchor" id="sec-debate">
+          <div class="card">
+            <div class="section-label">⚔️ 多空辩论 · Bull vs Bear</div>
+<!-- MARKET_DEBATE:START -->
+<div style="color:var(--muted);font-size:0.8rem;padding:10px">加载中...</div>
+<!-- MARKET_DEBATE:END -->
           </div>
         </div>
 
@@ -2125,6 +2231,18 @@
 </div>
 <!-- SECTORS:END -->
       </div>
+
+<!-- =========================================================
+     MARKET REPLAY
+========================================================= -->
+    <div class="section-block sec-anchor" id="sec-replay">
+      <div class="card">
+        <div class="section-label">📽️ 大盘复盘 · Market Replay</div>
+<!-- MARKET_REPLAY:START -->
+<div style="color:var(--muted);font-size:0.8rem;padding:10px">加载中...</div>
+<!-- MARKET_REPLAY:END -->
+      </div>
+    </div>
 
     <!-- =========================================================
          MARKET CHARTS — TradingView Market Overview
