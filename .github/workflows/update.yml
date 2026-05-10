@@ -28,10 +28,14 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install anthropic json-repair
+        run: pip install anthropic json-repair requests
 
       - name: Fetch & inject content
         run: python scripts/fetch_content.py
+
+      - name: Send Telegram briefing
+        run: python scripts/send_briefing.py
+        continue-on-error: true
 
       - name: Commit and push
         run: |
