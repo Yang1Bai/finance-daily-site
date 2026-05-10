@@ -72,7 +72,8 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
     "headline": "一句话大势判断，15-25字，点出最核心驱动因素",
     "context": "2-3句背景说明，解释关键驱动力，以及对北美华人投资者的具体影响",
     "sentiment": "bullish|bearish|neutral",
-    "vix": "VIX当前值如 '16.4'"
+    "vix": "VIX当前值如 '16.4'",
+    "key_points": ["今日最重要的事1，15字以内", "今日最重要的事2，15字以内", "今日最重要的事3，15字以内"]
   }},
   "indices": [
     {{
@@ -243,17 +244,23 @@ def render_summary(summary: dict) -> str:
     sentiment_label = sentiment_cn.get(sentiment, "中性")
     vix = summary.get("vix", "N/A")
     def esc(s): return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
-    return f"""<div class="summary-card">
-  <div class="summary-icon">📊</div>
-  <div class="summary-content">
-    <div class="summary-label">今日大势 · Daily Market Thesis</div>
-    <div class="summary-headline">{esc(summary.get("headline",""))}</div>
-    <div class="summary-context">{esc(summary.get("context",""))}</div>
-    <div class="summary-meta">
-      <span class="sentiment-badge {sentiment}">{sentiment_label}</span>
-      <span class="vix-display">VIX 恐慌指数: <span>{esc(vix)}</span></span>
-    </div>
+    key_points = summary.get("key_points", [])
+    kp_html = ""
+    if key_points:
+        items_html = "".join(f'<li class="kp-item"><span class="kp-arrow">▸</span>{esc(p)}</li>' for p in key_points[:3])
+        kp_html = f'<ul class="key-points">{items_html}</ul>'
+    sentiment_icon = {"bullish": "🟢", "bearish": "🔴", "neutral": "🟡"}.get(sentiment, "🟡")
+    return f"""<div class="summary-card {sentiment}">
+  <div class="summary-top">
+    <span class="sentiment-pill {sentiment}">{sentiment_icon} {sentiment_label}</span>
+    <span class="vix-badge">VIX <span class="vix-num">{esc(vix)}</span></span>
   </div>
+  <div class="summary-headline">{esc(summary.get("headline",""))}</div>
+  {kp_html}
+  <details class="summary-details">
+    <summary class="summary-details-toggle">深度解读 ▸</summary>
+    <div class="summary-context">{esc(summary.get("context",""))}</div>
+  </details>
 </div>"""
 
 
@@ -335,12 +342,20 @@ def render_news(news: list) -> str:
         tldr = item.get("tldr", "")
         tldr_html = f'<div class="news-tldr"><span class="tldr-label">💡 新手解读</span>{tldr}</div>' if tldr else ""
         featured = " featured" if i < 3 else ""
-        html_parts.append(f"""<div class="news-item {importance}{featured}">
-  <div class="news-title">{title_html}</div>
-  <div class="news-body">{item.get('body','')}</div>
+        body_text = item.get('body','')
+        body_html = f'<div class="news-body-collapse">{body_text}</div>' if body_text else ""
+        imp_icons = {"breaking": "🔥", "major": "⚡", "normal": "📌"}
+        imp_icon = imp_icons.get(importance, "•")
+        html_parts.append(f"""<div class="news-item {importance}{featured}" onclick="toggleNews(this)">
+  <div class="news-header">
+    <span class="imp-dot {importance}"></span>
+    <div class="news-title">{title_html}</div>
+    <span class="news-expand-icon">＋</span>
+  </div>
   {tldr_html}
+  {body_html}
   <div class="news-footer">
-    <span class="importance-badge {importance}">{importance.upper()}</span>
+    <span class="importance-badge {importance}">{imp_icon} {importance.upper()}</span>
     <div class="tags">{tags_html}</div>
   </div>
 </div>""")
