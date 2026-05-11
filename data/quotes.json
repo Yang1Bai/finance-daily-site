@@ -1,29 +1,29 @@
 {
-  "updated": "2026-05-10T05:31:56.520549+00:00",
+  "updated": "2026-05-11T22:34:24.376189+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,398.93",
-      "change": "+61.82",
-      "change_pct": "+0.84%",
+      "value": "7,412.84",
+      "change": "+13.91",
+      "change_pct": "+0.19%",
       "direction": "up"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,247",
-      "change": "+440.88",
-      "change_pct": "+1.71%",
+      "value": "26,274",
+      "change": "+27.04",
+      "change_pct": "+0.10%",
       "direction": "up"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "49,609",
-      "change": "+12.19",
-      "change_pct": "+0.02%",
+      "value": "49,704",
+      "change": "+95.31",
+      "change_pct": "+0.19%",
       "direction": "up"
     },
     {
@@ -61,34 +61,34 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,730.70",
-      "change": "+30.90",
-      "change_pct": "+0.66%",
+      "value": "4,749.70",
+      "change": "+29.30",
+      "change_pct": "+0.62%",
       "direction": "up"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "95.4200",
-      "change": "+0.61",
-      "change_pct": "+0.64%",
+      "value": "98.1600",
+      "change": "+2.74",
+      "change_pct": "+2.87%",
       "direction": "up"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "80,771",
-      "change": "+584.20",
-      "change_pct": "+0.73%",
-      "direction": "up"
+      "value": "81,728",
+      "change": "-410.73",
+      "change_pct": "-0.50%",
+      "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "97.8400",
-      "change": "-0.41",
-      "change_pct": "-0.42%",
-      "direction": "down"
+      "value": "97.9050",
+      "change": "+0.07",
+      "change_pct": "+0.07%",
+      "direction": "up"
     }
   ]
 }
