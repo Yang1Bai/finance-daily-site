@@ -5,47 +5,47 @@
     <description>每日全球金融市场摘要，由 Claude AI + Web Search 自动生成</description>
     <link>https://your-username.github.io/finance-daily-site/</link>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 12 May 2026 23:10:46 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 14:24:53 +0000</lastBuildDate>
     <item>
-      <title>金融日报 2026年5月12日</title>
+      <title>金融日报 2026年5月13日</title>
       <description>今日金融市场摘要已更新</description>
-      <pubDate>Tue, 12 May 2026 23:10:46 +0000</pubDate>
+      <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
     </item>
   <item>
-    <title>美国4月CPI升至3.8%超预期，降息预期推迟至2027年</title>
-    <description>美国劳工部今日公布4月CPI数据显示，整体通胀年率升至3.8%，高于预期的3.7%，创2023年5月以来新高。核心CPI月率0.4%、年率2.8%均超预期。伊朗战争导致能源价格飙升是主要推手，能源指数月涨3.8%贡献了整体涨幅的40%以上。CME FedWatch显示6月维持利率不变概率达98%，12月加息概率升至近30%。</description>
-    <link></link>
-    <pubDate>Tue, 12 May 2026 23:10:46 +0000</pubDate>
+    <title>英伟达CEO黄仁勋临时加入特朗普访华团 芯片出口管制或松动</title>
+    <description>黄仁勋在阿拉斯加加油站临时登上空军一号，特朗普在看到媒体报道黄未受邀后亲自致电邀请。此举被解读为中美芯片关系可能缓和的信号，英伟达最先进的H200芯片此前因美国出口管制无法进入中国，黄仁勋近期表示英伟达在华收入已降至零，此次随行或为打开对华销售铺路，英伟达股价盘前上涨2%</description>
+    <link>https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html</link>
+    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
   </item>
   <item>
-    <title>特朗普今日启程访华，与习近平就伊朗、贸易、台湾等议题会谈</title>
-    <description>美国总统特朗普今日下午搭乘空军一号前往北京，将于周三抵达与中国国家主席习近平举行为期两天的峰会。这是自3月因伊朗战争推迟后的首次会晤。会谈焦点包括：美国希望中国利用影响力重开霍尔木兹海峡、建立美中贸易委员会管理非敏感商品贸易、讨论对台军售、以及稀土等关键矿产协议。特朗普随行包括财长贝森特、国防部长和苹果CEO库克、特斯拉CEO马斯克等商界领袖。</description>
+    <title>4月CPI飙升至3.8%创近三年新高 降息预期彻底破灭</title>
+    <description>美国4月CPI同比上涨3.8%超预期3.7%为2023年5月以来最高，月环比涨0.6%，核心CPI同比升至2.8%高于预期2.7%。能源价格环比暴涨3.8%同比飙升17.9%，汽油同比涨幅达28.4%。期货交易员现押注利率将维持到2027年底，甚至小概率年内加息，市场已完全放弃降息预期</description>
     <link></link>
-    <pubDate>Tue, 12 May 2026 23:10:46 +0000</pubDate>
+    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
   </item>
   <item>
-    <title>伊朗战争持续推高油价，WTI原油突破98美元</title>
-    <description>特朗普周一表示美伊停火协议'处于生命维持状态'，拒绝伊朗的和平提议后，WTI原油周二收于98.18美元，布伦特原油触及107美元。霍尔木兹海峡封锁已持续超两个月，全球约20%的石油贸易受阻。高盛警告若局势持续，油价可能维持在100美元以上直至年底。伊朗战争成本已达290亿美元，能源价格飙升推高全球通胀，限制各国央行降息空间。</description>
+    <title>PPI月环比跳涨1.4%远超预期 批发通胀压力加剧</title>
+    <description>4月生产者价格指数(PPI)月环比飙升1.4%远超市场预期的0.5%，为批发价格出现意外暴涨信号。这意味着企业成本压力正在快速上升，未来可能进一步传导至消费端推高CPI，叠加伊朗战争导致的油价冲击，通胀粘性超出美联储此前预期，10年期美债收益率升破4%</description>
     <link></link>
-    <pubDate>Tue, 12 May 2026 23:10:46 +0000</pubDate>
+    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
   </item>
   <item>
-    <title>芯片股大跌拖累纳指，高通跌12%英特尔跌9%</title>
-    <description>周二科技股遭遇抛售，费城半导体指数重挫，高通暴跌12%创2020年以来最大单日跌幅，英特尔下跌9%，美光、英伟达、AMD均跌超2%。投资者在芯片股近期大涨后获利了结，同时高通胀数据引发对美联储维持高利率的担忧，压制高估值成长股。尽管单日暴跌，SOX指数年初至今仍上涨60%，显示AI基建需求的长期支撑力。</description>
-    <link></link>
-    <pubDate>Tue, 12 May 2026 23:10:46 +0000</pubDate>
+    <title>特朗普与习近平北京峰会今日开幕 台湾军售和伊朗议题成焦点</title>
+    <description>特朗普抵达北京开始为期两天的中美峰会，这是近十年来首位美国总统访华。双方将讨论价值140亿美元的对台军售、伊朗战争、贸易协议等敏感议题。特朗普携17位顶级企业CEO同行包括马斯克、库克、贝森特等，预计将推动中国开放市场和采购美国农产品及飞机。中国外交部表示愿扩大合作管控分歧</description>
+    <link>https://www.cnn.com/2026/05/13/politics/live-news/trump-china-visit-arrival-ceremony-hnk</link>
+    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
   </item>
   <item>
-    <title>中国副总理何立峰赴韩国与美方贸易谈判</title>
-    <description>中国商务部宣布副总理何立峰率团本周二至周三在韩国首尔与美方举行贸易谈判，为特朗普访华峰会铺路。预计双方将讨论建立美中贸易委员会框架、中国增购美国大豆和波音飞机、以及稀土出口管制等议题。市场预期中美将宣布一系列经济合作协议，避免重回关税战。特朗普政府4月曾威胁对华加征50%关税但随后软化立场。</description>
+    <title>阿里巴巴Q4财报大幅不及预期 股价盘前跌近2%</title>
+    <description>阿里巴巴公布财年Q4业绩收入345.7亿美元远低于市场预期2538亿美元(因剥离Sun Art等业务导致基数失真)，但实际同比增长10%。公司在快速商务(Instant Commerce)投入大量补贴导致销售费用率从13.3%升至21.5%，调整后EBITA下降14%，自由现金流转为负188亿美元。云智能业务成亮点增长26%且AI相关产品连续8季度三位数增长</description>
     <link></link>
-    <pubDate>Tue, 12 May 2026 23:10:46 +0000</pubDate>
+    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
   </item>
   <item>
-    <title>Hims &amp; Hers暴跌15%，Q1财报不及预期转向品牌减肥药</title>
-    <description>远程医疗平台Hims &amp; Hers周一盘后公布Q1财报显示意外亏损，公司宣布将从廉价GLP-1仿制药转向品牌减肥药物，战略转型引发投资者担忧。股价周二暴跌超14%。公司表示转型是为了应对监管压力和市场竞争，但分析师质疑其在品牌药市场与诺和诺德、礼来等巨头竞争的能力。该股年初至今已下跌超30%。</description>
+    <title>Kevin Warsh将于本周确认为美联储主席 政策取向偏鸽</title>
+    <description>参议院预计本周投票确认Kevin Warsh为新任美联储主席接替5月15日任期届满的鲍威尔，Warsh被普遍视为支持更低利率立场，这可能影响市场对未来货币政策的预期。他曾表示倾向使用不同于PCE的通胀衡量指标，这一政策框架转变可能重塑债券市场定价逻辑</description>
     <link></link>
-    <pubDate>Tue, 12 May 2026 23:10:46 +0000</pubDate>
+    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
   </item>
   </channel>
 </rss>
