@@ -506,6 +506,7 @@
 <!-- NAV -->
 <nav class="jump-nav" id="jump-nav">
   <a href="#sec-summary">📊 大势</a>
+  <a href="#sec-ai-trading">🤖 AI操盘</a>
   <a href="#sec-news">📰 要闻</a>
   <a href="#sec-watchlist">🎯 AI分析</a>
   <a href="#sec-macro">📈 宏观</a>
@@ -513,8 +514,6 @@
   <a href="#sec-sectors">🏭 行业</a>
   <a href="#sec-debate">⚔️ 辩论</a>
   <a href="#sec-calendar">📅 日历</a>
-  <a href="#sec-banks">🏦 央行</a>
-  <a href="#sec-ai-trading">🤖 AI操盘</a>
   <a href="#sec-my">⭐ 我的</a>
 </nav>
 
@@ -893,6 +892,51 @@
 </div>
 <!-- NEWS:END -->
 <!-- NEWS:END -->
+          </div>
+        </div>
+
+        <!-- AI 操盘实验 -->
+        <div class="section-block sec-anchor" id="sec-ai-trading">
+          <div class="card">
+            <div class="section-label">🤖 AI 操盘实验 · AI Trading Challenge</div>
+            <div id="ai-portfolio-loading" style="color:var(--muted);font-size:0.82rem;padding:8px 0;">加载中…</div>
+            <div id="ai-portfolio-content" style="display:none">
+              <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
+                <div class="macro-item" style="flex:1;min-width:130px;">
+                  <div class="macro-label">AI 组合</div>
+                  <div class="macro-value" id="ai-pf-value">—</div>
+                  <div class="macro-detail">总市值</div>
+                </div>
+                <div class="macro-item" style="flex:1;min-width:130px;">
+                  <div class="macro-label">基线 SPY</div>
+                  <div class="macro-value" id="ai-base-value">—</div>
+                  <div class="macro-detail">买入持有</div>
+                </div>
+                <div class="macro-item" style="flex:1;min-width:130px;">
+                  <div class="macro-label">超额收益</div>
+                  <div class="macro-value" id="ai-alpha">—</div>
+                  <div class="macro-detail" id="ai-alpha-pct">vs S&amp;P 500</div>
+                </div>
+                <div class="macro-item" style="flex:1;min-width:100px;">
+                  <div class="macro-label">运营天数</div>
+                  <div class="macro-value" id="ai-days">—</div>
+                  <div class="macro-detail">自 2026-05-13</div>
+                </div>
+              </div>
+              <div style="margin-bottom:14px;">
+                <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📊 当前持仓</div>
+                <div id="ai-holdings" style="display:flex;flex-direction:column;gap:6px;"></div>
+              </div>
+              <div id="ai-trades-wrap" style="margin-bottom:10px;">
+                <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📋 最新交易记录</div>
+                <div id="ai-trades"></div>
+              </div>
+              <div id="ai-note" style="font-size:0.8rem;color:var(--muted);padding:8px 10px;background:rgba(0,212,170,0.04);border-left:2px solid var(--accent);border-radius:4px;margin-top:4px;"></div>
+              <div id="ai-history-wrap" style="margin-top:14px;">
+                <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📈 历史表现</div>
+                <div id="ai-history-table" style="font-family:var(--mono);font-size:0.76rem;"></div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1588,13 +1632,7 @@
         <div class="section-block mb16">
           <div class="card" style="padding:14px 16px">
             <div class="section-label">📈 行情图表 · Live Charts</div>
-            <!-- =========================================================
-         MARKET CHARTS — TradingView Market Overview
-    ========================================================= -->
-    <div class="section-block">
-      <div class="card" style="padding:16px 20px;">
-        <div class="section-label">📈 行情图表 · Live Charts</div>
-        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container">
           <div class="tradingview-widget-container__widget"></div>
           <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
           {
@@ -1653,59 +1691,12 @@
           }
           </script>
         </div>
-      </div>
-    </div>
           </div>
         </div>
 
       </div><!-- end sidebar-col -->
 
     </div><!-- end content-grid -->
-
-    <!-- AI 操盘实验 -->
-    <div class="section-block sec-anchor" id="sec-ai-trading" style="margin:0 0 24px;">
-      <div class="card">
-        <div class="section-label">🤖 AI 操盘实验 · AI Trading Challenge</div>
-        <div id="ai-portfolio-loading" style="color:var(--muted);font-size:0.82rem;padding:8px 0;">加载中…</div>
-        <div id="ai-portfolio-content" style="display:none">
-          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
-            <div class="macro-item" style="flex:1;min-width:130px;">
-              <div class="macro-label">AI 组合</div>
-              <div class="macro-value" id="ai-pf-value">—</div>
-              <div class="macro-detail">总市值</div>
-            </div>
-            <div class="macro-item" style="flex:1;min-width:130px;">
-              <div class="macro-label">基线 SPY</div>
-              <div class="macro-value" id="ai-base-value">—</div>
-              <div class="macro-detail">买入持有</div>
-            </div>
-            <div class="macro-item" style="flex:1;min-width:130px;">
-              <div class="macro-label">超额收益</div>
-              <div class="macro-value" id="ai-alpha">—</div>
-              <div class="macro-detail" id="ai-alpha-pct">vs S&amp;P 500</div>
-            </div>
-            <div class="macro-item" style="flex:1;min-width:100px;">
-              <div class="macro-label">运营天数</div>
-              <div class="macro-value" id="ai-days">—</div>
-              <div class="macro-detail">自 2026-05-13</div>
-            </div>
-          </div>
-          <div style="margin-bottom:14px;">
-            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📊 当前持仓</div>
-            <div id="ai-holdings" style="display:flex;flex-direction:column;gap:6px;"></div>
-          </div>
-          <div id="ai-trades-wrap" style="margin-bottom:10px;">
-            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📋 最新交易记录</div>
-            <div id="ai-trades"></div>
-          </div>
-          <div id="ai-note" style="font-size:0.8rem;color:var(--muted);padding:8px 10px;background:rgba(0,212,170,0.04);border-left:2px solid var(--accent);border-radius:4px;margin-top:4px;"></div>
-          <div id="ai-history-wrap" style="margin-top:14px;">
-            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📈 历史表现</div>
-            <div id="ai-history-table" style="font-family:var(--mono);font-size:0.76rem;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- MY DASHBOARD (collapsed drawer) -->
     <div class="my-drawer sec-anchor" id="sec-my">

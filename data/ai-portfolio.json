@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "start_date": "2026-05-13",
+    "start_capital": 10000,
+    "baseline_ticker": "SPY",
+    "baseline_start_price": 739.19,
+    "baseline_shares": 13.5296,
+    "description": "AI 每日操盘实验：10,000 美元初始资金，由 Claude AI 每日做出交易决策，与 SPY 买入持有策略对比。"
+  },
+  "holdings": [
+    {"ticker": "NVDA", "shares": 10, "avg_cost": 226.08},
+    {"ticker": "QQQ",  "shares": 3,  "avg_cost": 710.65},
+    {"ticker": "GLD",  "shares": 5,  "avg_cost": 430.43},
+    {"ticker": "CASH", "shares": 1,  "avg_cost": 3455.10}
+  ],
+  "history": [
+    {
+      "date": "2026-05-13",
+      "portfolio_value": 10000.00,
+      "baseline_value": 10000.00,
+      "cash": 3455.10,
+      "positions": {
+        "NVDA": {"shares": 10, "price": 226.08, "value": 2260.80},
+        "QQQ":  {"shares": 3,  "price": 710.65, "value": 2131.95},
+        "GLD":  {"shares": 5,  "price": 430.43, "value": 2152.15}
+      },
+      "trades": [
+        {"action": "BUY", "ticker": "NVDA", "shares": 10, "price": 226.08, "reason": "黄仁勋随特朗普访华，H200芯片解禁预期，中国贡献32%收入存在巨大修复空间，评分82/100"},
+        {"action": "BUY", "ticker": "QQQ",  "shares": 3,  "price": 710.65, "reason": "维持科技大盘敞口，Q1财报季beat率84%支撑估值，评分68/100"},
+        {"action": "BUY", "ticker": "GLD",  "shares": 5,  "price": 430.43, "reason": "CPI升至3.8%通胀高企，央行购金结构性牛市，J.P.Morgan预测Q4均价$5055，评分75/100"}
+      ],
+      "note": "🚀 建仓日。CPI 3.8%高通胀环境下保持34.6%现金防御，中美峰会催化剂短期提振科技股。目标：跑赢SPY买入持有策略。"
+    }
+  ]
+}
