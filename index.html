@@ -901,39 +901,15 @@
             <div class="section-label">🤖 AI 操盘实验 · AI Trading Challenge</div>
             <div id="ai-portfolio-loading" style="color:var(--muted);font-size:0.82rem;padding:8px 0;">加载中…</div>
             <div id="ai-portfolio-content" style="display:none">
-              <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
-                <div class="macro-item" style="flex:1;min-width:130px;">
-                  <div class="macro-label">AI 组合</div>
-                  <div class="macro-value" id="ai-pf-value">—</div>
-                  <div class="macro-detail">总市值</div>
-                </div>
-                <div class="macro-item" style="flex:1;min-width:130px;">
-                  <div class="macro-label">基线 SPY</div>
-                  <div class="macro-value" id="ai-base-value">—</div>
-                  <div class="macro-detail">买入持有</div>
-                </div>
-                <div class="macro-item" style="flex:1;min-width:130px;">
-                  <div class="macro-label">超额收益</div>
-                  <div class="macro-value" id="ai-alpha">—</div>
-                  <div class="macro-detail" id="ai-alpha-pct">vs S&amp;P 500</div>
-                </div>
-                <div class="macro-item" style="flex:1;min-width:100px;">
-                  <div class="macro-label">运营天数</div>
-                  <div class="macro-value" id="ai-days">—</div>
-                  <div class="macro-detail">自 2026-05-13</div>
-                </div>
-              </div>
-              <div style="margin-bottom:14px;">
-                <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📊 当前持仓</div>
-                <div id="ai-holdings" style="display:flex;flex-direction:column;gap:6px;"></div>
-              </div>
-              <div id="ai-trades-wrap" style="margin-bottom:10px;">
-                <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📋 最新交易记录</div>
-                <div id="ai-trades"></div>
-              </div>
-              <div id="ai-note" style="font-size:0.8rem;color:var(--muted);padding:8px 10px;background:rgba(0,212,170,0.04);border-left:2px solid var(--accent);border-radius:4px;margin-top:4px;"></div>
-              <div id="ai-history-wrap" style="margin-top:14px;">
-                <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📈 历史表现</div>
+              <!-- 排行榜 -->
+              <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:10px;">🏆 排行榜 · Leaderboard <span style="font-size:0.68rem;color:var(--dimmed);margin-left:6px;">初始资金 $10,000 · 基线 SPY买入持有</span></div>
+              <div id="ai-leaderboard" style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px;"></div>
+              <!-- 各模型详情 Tab -->
+              <div style="display:flex;gap:6px;margin-bottom:12px;" id="ai-model-tabs"></div>
+              <div id="ai-model-detail"></div>
+              <!-- 历史对比表 -->
+              <div id="ai-history-wrap" style="margin-top:16px;">
+                <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📈 历史表现对比</div>
                 <div id="ai-history-table" style="font-family:var(--mono);font-size:0.76rem;"></div>
               </div>
             </div>
@@ -2536,92 +2512,191 @@
       .catch(() => {});
   })();
 
-  // ── AI 操盘实验 ──────────────────────────────────────────────────────────
+  // ── AI 操盘实验（多模型对比）─────────────────────────────────────────
   (function loadAIPortfolio() {
+    const fmt$   = v => '$' + v.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+    const fmtPct = v => (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
+
+    function renderModelDetail(modelId, pf, contest) {
+      const history = pf.history || [];
+      const latest  = history[history.length - 1] || {};
+      const holdings = pf.holdings || [];
+      const startCap = contest.start_capital || 10000;
+      const pv  = latest.portfolio_value || 0;
+      const bv  = latest.baseline_value  || 0;
+      const cash = latest.cash || 0;
+      const positions = latest.positions || {};
+      const trades    = latest.trades    || [];
+
+      let html = '';
+
+      // 持仓明细
+      html += `<div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📊 当前持仓</div>`;
+      html += `<div style="display:flex;flex-direction:column;gap:5px;margin-bottom:14px;">`;
+      Object.entries(positions).forEach(([t, pos]) => {
+        const h   = holdings.find(x => x.ticker === t);
+        const avg = h ? h.avg_cost : pos.price;
+        const pl  = pos.price - avg;
+        const plP = avg > 0 ? pl / avg * 100 : 0;
+        const pct = pv > 0 ? pos.value / pv * 100 : 0;
+        const c   = pl >= 0 ? 'var(--up)' : 'var(--down)';
+        html += `<div style="display:flex;align-items:center;gap:8px;padding:5px 8px;background:rgba(255,255,255,0.03);border-radius:6px;font-size:0.79rem;">
+          <span style="font-family:var(--mono);font-weight:600;min-width:44px;color:var(--accent);">${t}</span>
+          <span style="color:var(--muted);min-width:46px;">${pos.shares}股</span>
+          <span style="font-family:var(--mono);min-width:66px;">$${pos.price.toFixed(2)}</span>
+          <span style="font-family:var(--mono);min-width:72px;">${fmt$(pos.value)}</span>
+          <span style="color:${c};min-width:62px;">${(pl>=0?'+':'')}${fmtPct(plP)}</span>
+          <div style="flex:1;height:3px;background:rgba(255,255,255,0.06);border-radius:2px;"><div style="width:${Math.min(pct,100).toFixed(1)}%;height:100%;background:var(--accent);border-radius:2px;"></div></div>
+          <span style="color:var(--muted);min-width:34px;text-align:right;">${pct.toFixed(1)}%</span>
+        </div>`;
+      });
+      if (cash > 0) {
+        const cp = pv > 0 ? cash / pv * 100 : 0;
+        html += `<div style="display:flex;align-items:center;gap:8px;padding:5px 8px;background:rgba(255,255,255,0.03);border-radius:6px;font-size:0.79rem;">
+          <span style="font-family:var(--mono);font-weight:600;min-width:44px;color:#ffb300;">CASH</span>
+          <span style="color:var(--muted);min-width:46px;">—</span>
+          <span style="font-family:var(--mono);min-width:66px;">—</span>
+          <span style="font-family:var(--mono);min-width:72px;">${fmt$(cash)}</span>
+          <span style="color:var(--muted);min-width:62px;">现金</span>
+          <div style="flex:1;height:3px;background:rgba(255,255,255,0.06);border-radius:2px;"><div style="width:${Math.min(cp,100).toFixed(1)}%;height:100%;background:#ffb300;border-radius:2px;"></div></div>
+          <span style="color:var(--muted);min-width:34px;text-align:right;">${cp.toFixed(1)}%</span>
+        </div>`;
+      }
+      html += '</div>';
+
+      // 交易记录
+      if (trades.length) {
+        html += `<div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📋 今日交易</div>`;
+        html += trades.map(t => {
+          const ic = t.action==='BUY'?'🟢':t.action==='SELL'?'🔴':'🟡';
+          const c2 = t.action==='BUY'?'var(--up)':t.action==='SELL'?'var(--down)':'var(--warn)';
+          return `<div style="padding:5px 0;border-bottom:1px solid var(--border);font-size:0.8rem;">${ic} <strong style="color:${c2};">${t.action} ${t.ticker}</strong> ${t.shares}股 @ $${(t.price||0).toFixed(2)} <span style="color:var(--muted);">${t.reason||''}</span></div>`;
+        }).join('');
+        html += '<div style="margin-bottom:12px;"></div>';
+      }
+
+      // 备注
+      if (latest.note) {
+        html += `<div style="font-size:0.8rem;color:var(--muted);padding:8px 10px;background:rgba(0,212,170,0.04);border-left:2px solid var(--accent);border-radius:4px;">${latest.note}</div>`;
+      }
+
+      document.getElementById('ai-model-detail').innerHTML = html;
+    }
+
     fetch('data/ai-portfolio.json?v=' + Date.now())
       .then(r => r.json())
       .then(data => {
-        const history = data.history || [];
-        if (!history.length) return;
-        const latest = history[history.length - 1];
-        const meta   = data.meta || {};
-        const pv  = latest.portfolio_value || 0;
-        const bv  = latest.baseline_value  || 0;
-        const alpha = pv - bv;
-        const alphaPct = bv > 0 ? (alpha / bv * 100) : 0;
-        const startDate  = new Date(meta.start_date || '2026-05-13');
-        const latestDate = new Date(latest.date);
-        const days = Math.round((latestDate - startDate) / 86400000) + 1;
-        const fmt$ = v => '$' + v.toLocaleString('en-US', {minimumFractionDigits:2,maximumFractionDigits:2});
-        const fmtPct = v => (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
-        document.getElementById('ai-pf-value').textContent   = fmt$(pv);
-        document.getElementById('ai-base-value').textContent = fmt$(bv);
-        document.getElementById('ai-days').textContent       = days + ' 天';
-        const alphaEl = document.getElementById('ai-alpha');
-        alphaEl.textContent = (alpha >= 0 ? '+' : '') + fmt$(alpha);
-        alphaEl.style.color = alpha >= 0 ? 'var(--up)' : 'var(--down)';
-        const alphaPctEl = document.getElementById('ai-alpha-pct');
-        alphaPctEl.textContent = fmtPct(alphaPct) + ' vs S&P 500';
-        alphaPctEl.style.color = alpha >= 0 ? 'var(--up)' : 'var(--down)';
-        const holdingsEl = document.getElementById('ai-holdings');
-        const positions  = latest.positions || {};
-        const cash = latest.cash || 0;
-        let holdHTML = '';
-        Object.entries(positions).forEach(([ticker, pos]) => {
-          const pct = pv > 0 ? (pos.value / pv * 100) : 0;
-          const cost = (data.holdings || []).find(h => h.ticker === ticker);
-          const avgCost = cost ? cost.avg_cost : pos.price;
-          const pl = pos.price - avgCost;
-          const plPct = avgCost > 0 ? (pl / avgCost * 100) : 0;
-          const plColor = pl >= 0 ? 'var(--up)' : 'var(--down)';
-          holdHTML += `<div style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:rgba(255,255,255,0.03);border-radius:6px;font-size:0.8rem;">
-            <span style="font-family:var(--mono);font-weight:600;min-width:44px;color:var(--accent);">${ticker}</span>
-            <span style="color:var(--muted);min-width:50px;">${pos.shares}股</span>
-            <span style="font-family:var(--mono);min-width:68px;">$${pos.price.toFixed(2)}</span>
-            <span style="font-family:var(--mono);min-width:72px;">${fmt$(pos.value)}</span>
-            <span style="color:${plColor};min-width:64px;">${(pl>=0?'+':'')}${fmtPct(plPct)}</span>
-            <div style="flex:1;height:3px;background:rgba(255,255,255,0.06);border-radius:2px;"><div style="width:${Math.min(pct,100).toFixed(1)}%;height:100%;background:var(--accent);border-radius:2px;"></div></div>
-            <span style="color:var(--muted);min-width:34px;text-align:right;">${pct.toFixed(1)}%</span>
+        const contest    = data.contest    || {};
+        const portfolios = data.portfolios || {};
+        const startCap   = contest.start_capital || 10000;
+        const startDate  = new Date(contest.start_date || '2026-05-13');
+
+        // 计算排名
+        const ranked = Object.entries(portfolios).map(([id, pf]) => {
+          const hist   = pf.history || [];
+          const latest = hist[hist.length - 1] || {};
+          const pv = latest.portfolio_value || startCap;
+          const bv = latest.baseline_value  || startCap;
+          const d  = new Date(latest.date || contest.start_date);
+          const days = Math.round((d - startDate) / 86400000) + 1;
+          return { id, pf, pv, bv, days, latest };
+        }).sort((a, b) => b.pv - a.pv);
+
+        // 排行榜
+        const lbEl = document.getElementById('ai-leaderboard');
+        lbEl.innerHTML = ranked.map((r, i) => {
+          const pv   = r.pv;
+          const bv   = r.bv;
+          const ret  = (pv - startCap) / startCap * 100;
+          const alpha = pv - bv;
+          const alphaP = bv > 0 ? alpha / bv * 100 : 0;
+          const retC  = ret  >= 0 ? 'var(--up)' : 'var(--down)';
+          const alpC  = alpha >= 0 ? 'var(--up)' : 'var(--down)';
+          const medal = i===0 ? '🥇' : i===1 ? '🥈' : '🥉';
+          const pf = r.pf;
+          return `<div style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:8px;">
+            <span style="font-size:1.2rem;min-width:28px;">${medal}</span>
+            <span style="font-size:1.1rem;">${pf.emoji||'🤖'}</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;font-size:0.9rem;">${pf.display_name||r.id}</div>
+              <div style="font-size:0.75rem;color:var(--muted);">${r.latest.note||''}</div>
+            </div>
+            <div style="text-align:right;min-width:80px;">
+              <div style="font-family:var(--mono);font-weight:600;font-size:0.95rem;">${fmt$(pv)}</div>
+              <div style="font-size:0.78rem;color:${retC};">${(ret>=0?'+':'')}${ret.toFixed(2)}%</div>
+            </div>
+            <div style="text-align:right;min-width:80px;">
+              <div style="font-family:var(--mono);font-size:0.85rem;color:${alpC};">${(alpha>=0?'+':'')}${fmt$(alpha)}</div>
+              <div style="font-size:0.75rem;color:var(--muted);">vs SPY</div>
+            </div>
           </div>`;
-        });
-        const cashPct = pv > 0 ? (cash / pv * 100) : 0;
-        holdHTML += `<div style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:rgba(255,255,255,0.03);border-radius:6px;font-size:0.8rem;">
-          <span style="font-family:var(--mono);font-weight:600;min-width:44px;color:#ffb300;">CASH</span>
-          <span style="color:var(--muted);min-width:50px;">—</span>
-          <span style="font-family:var(--mono);min-width:68px;">—</span>
-          <span style="font-family:var(--mono);min-width:72px;">${fmt$(cash)}</span>
-          <span style="color:var(--muted);min-width:64px;">现金</span>
-          <div style="flex:1;height:3px;background:rgba(255,255,255,0.06);border-radius:2px;"><div style="width:${Math.min(cashPct,100).toFixed(1)}%;height:100%;background:#ffb300;border-radius:2px;"></div></div>
-          <span style="color:var(--muted);min-width:34px;text-align:right;">${cashPct.toFixed(1)}%</span>
+        }).join('');
+
+        // SPY 基线行
+        const anyLatest = ranked[0]?.latest || {};
+        const spyVal = anyLatest.baseline_value || startCap;
+        const spyRet = (spyVal - startCap) / startCap * 100;
+        const spyC   = spyRet >= 0 ? 'var(--up)' : 'var(--down)';
+        lbEl.innerHTML += `<div style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:8px;opacity:0.7;">
+          <span style="font-size:1.2rem;min-width:28px;">📊</span>
+          <span style="font-size:1.1rem;">—</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">SPY 基线（买入持有）</div><div style="font-size:0.75rem;color:var(--muted);">S&amp;P 500 ETF</div></div>
+          <div style="text-align:right;min-width:80px;">
+            <div style="font-family:var(--mono);font-weight:600;font-size:0.95rem;">${fmt$(spyVal)}</div>
+            <div style="font-size:0.78rem;color:${spyC};">${(spyRet>=0?'+':'')}${spyRet.toFixed(2)}%</div>
+          </div>
+          <div style="text-align:right;min-width:80px;">
+            <div style="font-family:var(--mono);font-size:0.85rem;color:var(--muted);">$0.00</div>
+            <div style="font-size:0.75rem;color:var(--muted);">展示基准</div>
+          </div>
         </div>`;
-        holdingsEl.innerHTML = holdHTML;
-        const trades  = latest.trades || [];
-        const tradesEl = document.getElementById('ai-trades');
-        if (trades.length) {
-          tradesEl.innerHTML = trades.map(t => {
-            const icon = t.action==='BUY' ? '🟢' : t.action==='SELL' ? '🔴' : '🟡';
-            const color = t.action==='BUY' ? 'var(--up)' : t.action==='SELL' ? 'var(--down)' : 'var(--warn)';
-            return `<div style="padding:5px 0;border-bottom:1px solid var(--border);font-size:0.8rem;">${icon} <strong style="color:${color};">${t.action} ${t.ticker}</strong> ${t.shares}股 @ $${t.price.toFixed(2)} <span style="color:var(--muted);">${t.reason||''}</span></div>`;
-          }).join('');
-          document.getElementById('ai-trades-wrap').style.display='';
-        } else {
-          document.getElementById('ai-trades-wrap').style.display='none';
+
+        // 模型 Tab
+        const tabsEl = document.getElementById('ai-model-tabs');
+        let activeModel = ranked[0]?.id;
+        function setActiveTab(id) {
+          activeModel = id;
+          tabsEl.querySelectorAll('button').forEach(b => {
+            b.style.background = b.dataset.id === id ? 'rgba(0,212,170,0.15)' : 'rgba(255,255,255,0.04)';
+            b.style.borderColor = b.dataset.id === id ? 'var(--accent)' : 'var(--border)';
+            b.style.color = b.dataset.id === id ? 'var(--accent)' : 'var(--text)';
+          });
+          const pf = portfolios[id];
+          if (pf) renderModelDetail(id, pf, contest);
         }
-        const noteEl = document.getElementById('ai-note');
-        if (latest.note) { noteEl.textContent=latest.note; noteEl.style.display=''; } else noteEl.style.display='none';
+        tabsEl.innerHTML = ranked.map(r => {
+          const pf = r.pf;
+          return `<button data-id="${r.id}" onclick="(function(id){window._aiSetTab&&window._aiSetTab(id)})('${r.id}')" style="padding:6px 12px;border-radius:6px;border:1px solid var(--border);background:rgba(255,255,255,0.04);color:var(--text);cursor:pointer;font-size:0.8rem;">${pf.emoji||'🤖'} ${pf.display_name||r.id}</button>`;
+        }).join('');
+        window._aiSetTab = setActiveTab;
+        setActiveTab(activeModel);
+
+        // 历史对比表
         const histEl = document.getElementById('ai-history-table');
-        const startCapital = meta.start_capital || 10000;
-        if (history.length > 1) {
-          histEl.innerHTML = '<table style="width:100%;border-collapse:collapse;"><thead><tr style="color:var(--muted);"><th style="text-align:left;padding:3px 6px;">日期</th><th style="text-align:right;padding:3px 6px;">AI组合</th><th style="text-align:right;padding:3px 6px;">SPY基线</th><th style="text-align:right;padding:3px 6px;">AI收益</th><th style="text-align:right;padding:3px 6px;">超额</th></tr></thead><tbody>'+
-            history.slice().reverse().map(rec=>{
-              const ar=(rec.portfolio_value-startCapital)/startCapital*100;
-              const br=(rec.baseline_value-startCapital)/startCapital*100;
-              const ex=ar-br;
-              return `<tr style="border-top:1px solid var(--border);"><td style="padding:3px 6px;color:var(--muted);">${rec.date}</td><td style="text-align:right;padding:3px 6px;">${fmt$(rec.portfolio_value)}</td><td style="text-align:right;padding:3px 6px;">${fmt$(rec.baseline_value)}</td><td style="text-align:right;padding:3px 6px;color:${ar>=0?'var(--up)':'var(--down)'}">${(ar>=0?'+':'')}${ar.toFixed(2)}%</td><td style="text-align:right;padding:3px 6px;color:${ex>=0?'var(--up)':'var(--down)'}">${(ex>=0?'+':'')}${ex.toFixed(2)}%</td></tr>`;
-            }).join('')+'</tbody></table>';
+        const allDates = [...new Set(ranked.flatMap(r => (r.pf.history||[]).map(h => h.date)))].sort().reverse();
+        if (allDates.length > 1) {
+          const headers = ['<th style="text-align:left;padding:3px 6px;">日期</th>',
+            ...ranked.map(r => `<th style="text-align:right;padding:3px 6px;">${r.pf.emoji} ${r.pf.display_name}</th>`),
+            '<th style="text-align:right;padding:3px 6px;">SPY基线</th>'
+          ].join('');
+          const rows = allDates.map(date => {
+            const cells = ranked.map(r => {
+              const rec = (r.pf.history||[]).find(h => h.date === date);
+              if (!rec) return '<td style="text-align:right;padding:3px 6px;color:var(--dimmed);">—</td>';
+              const ret = (rec.portfolio_value - startCap) / startCap * 100;
+              const c = ret >= 0 ? 'var(--up)' : 'var(--down)';
+              return `<td style="text-align:right;padding:3px 6px;"><span style="color:${c};">${(ret>=0?'+':'')}${ret.toFixed(2)}%</span></td>`;
+            }).join('');
+            const spyRec = (ranked[0]?.pf.history||[]).find(h => h.date === date);
+            const spyR = spyRec ? (spyRec.baseline_value - startCap) / startCap * 100 : 0;
+            const sc = spyR >= 0 ? 'var(--up)' : 'var(--down)';
+            return `<tr style="border-top:1px solid var(--border);"><td style="padding:3px 6px;color:var(--muted);">${date}</td>${cells}<td style="text-align:right;padding:3px 6px;"><span style="color:${sc};">${(spyR>=0?'+':'')}${spyR.toFixed(2)}%</span></td></tr>`;
+          }).join('');
+          histEl.innerHTML = `<table style="width:100%;border-collapse:collapse;"><thead><tr style="color:var(--muted);">${headers}</tr></thead><tbody>${rows}</tbody></table>`;
         } else {
-          histEl.innerHTML = '<span style="color:var(--muted);font-size:0.8rem;">积累中，明日起显示曲线…</span>';
+          histEl.innerHTML = '<span style="color:var(--muted);font-size:0.8rem;">天数超过1天后显示对比曲线…</span>';
         }
+
         document.getElementById('ai-portfolio-loading').style.display='none';
         document.getElementById('ai-portfolio-content').style.display='';
       })

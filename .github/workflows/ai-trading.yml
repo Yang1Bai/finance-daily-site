@@ -1,0 +1,39 @@
+name: AI Trading Decision
+
+on:
+  schedule:
+    # 美东时间 16:30（20:30 UTC）收盘后运行，周一到周五
+    - cron: '30 20 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  trading:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic openai yfinance pytz
+
+      - name: Run AI trading decisions
+        run: python scripts/ai-trading-decision.py
+
+      - name: Commit portfolio update
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ai-portfolio.json
+          git diff --cached --quiet || git commit -m "chore: AI trading update $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin main
+          git push
