@@ -17,8 +17,8 @@
       "holdings": [
         {
           "ticker": "NVDA",
-          "shares": 20,
-          "avg_cost": 226.22
+          "shares": 28,
+          "avg_cost": 226.1086
         },
         {
           "ticker": "QQQ",
@@ -31,75 +31,51 @@
           "avg_cost": 403.52
         },
         {
-          "ticker": "AMD",
-          "shares": 2,
-          "avg_cost": 449.4
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1235.29
+          "avg_cost": 319.65
         }
       ],
       "history": [
         {
           "date": "2026-05-13",
-          "portfolio_value": 10015.74,
-          "baseline_value": 10048.43,
-          "cash": 1235.29,
+          "portfolio_value": 9986.42,
+          "baseline_value": 10043.16,
+          "cash": 319.65,
           "positions": {
             "NVDA": {
-              "shares": 20,
-              "price": 226.36,
-              "value": 4527.2
+              "shares": 28,
+              "price": 225.83,
+              "value": 6323.24
             },
             "QQQ": {
               "shares": 3,
-              "price": 714.63,
-              "value": 2143.89
+              "price": 714.71,
+              "value": 2144.13
             },
             "TSM": {
               "shares": 3,
-              "price": 403.52,
-              "value": 1210.56
-            },
-            "AMD": {
-              "shares": 2,
-              "price": 449.4,
-              "value": 898.8
+              "price": 399.8,
+              "value": 1199.4
             }
           },
           "trades": [
             {
               "action": "SELL",
-              "ticker": "GLD",
-              "shares": 5,
-              "price": 430.63,
-              "reason": "中美峰会释放缓和信号，避险资产减仓"
+              "ticker": "AMD",
+              "shares": 2,
+              "price": 445.5,
+              "reason": "通胀高企叠加中美缓和预期，减持AMD集中配置NVDA受益中美峰会"
             },
             {
               "action": "BUY",
               "ticker": "NVDA",
-              "shares": 10,
-              "price": 226.36,
-              "reason": "黄仁勋同行访华，芯片管制松绑预期强烈"
-            },
-            {
-              "action": "BUY",
-              "ticker": "TSM",
-              "shares": 3,
-              "price": 403.52,
-              "reason": "半导体供应链受益中美关系缓和"
-            },
-            {
-              "action": "BUY",
-              "ticker": "AMD",
-              "shares": 2,
-              "price": 449.4,
-              "reason": "AI芯片板块补涨，通胀短期扰动不改中长期逻辑"
+              "shares": 8,
+              "price": 225.83,
+              "reason": "黄仁勋随特朗普访华释放积极信号，芯片管制或松绑，NVDA直接受益"
             }
           ],
-          "note": "抓住中美缓和窗口期，减仓避险黄金，重仓AI芯片龙头押注出口管制松绑预期"
+          "note": "中美峰会+黄仁勋同行利好芯片龙头，加仓NVDA并配置黄金对冲通胀"
         }
       ]
     },
@@ -111,8 +87,8 @@
       "holdings": [
         {
           "ticker": "NVDA",
-          "shares": 10,
-          "avg_cost": 226.36
+          "shares": 20,
+          "avg_cost": 226.095
         },
         {
           "ticker": "AAPL",
@@ -120,63 +96,46 @@
           "avg_cost": 299.92
         },
         {
-          "ticker": "XLE",
-          "shares": 20,
-          "avg_cost": 57.44
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3588.4
+          "avg_cost": 2482.7
         }
       ],
       "history": [
         {
           "date": "2026-05-13",
-          "portfolio_value": 10000.0,
-          "baseline_value": 10048.43,
-          "cash": 3588.4,
+          "portfolio_value": 9988.0,
+          "baseline_value": 10043.16,
+          "cash": 2482.7,
           "positions": {
             "NVDA": {
-              "shares": 10,
-              "price": 226.36,
-              "value": 2263.6
+              "shares": 20,
+              "price": 225.83,
+              "value": 4516.6
             },
             "AAPL": {
               "shares": 10,
-              "price": 299.92,
-              "value": 2999.2
-            },
-            "XLE": {
-              "shares": 20,
-              "price": 57.44,
-              "value": 1148.8
+              "price": 298.87,
+              "value": 2988.7
             }
           },
           "trades": [
             {
+              "action": "SELL",
+              "ticker": "XLE",
+              "shares": 20,
+              "price": 57.63,
+              "reason": "油价上涨导致通胀压力，减少能源板块风险"
+            },
+            {
               "action": "BUY",
               "ticker": "NVDA",
               "shares": 10,
-              "price": 226.36,
-              "reason": "中美关系缓和可能利好芯片行业，AI驱动逻辑未变"
-            },
-            {
-              "action": "BUY",
-              "ticker": "AAPL",
-              "shares": 10,
-              "price": 299.92,
-              "reason": "苹果在科技板块中稳定性较高，适合分散风险"
-            },
-            {
-              "action": "BUY",
-              "ticker": "XLE",
-              "shares": 20,
-              "price": 57.44,
-              "reason": "油价上涨背景下，能源板块可能受益"
+              "price": 225.83,
+              "reason": "中美关系缓和可能利好芯片出口，增加持仓"
             }
           ],
-          "note": "关注中美关系缓和及油价上涨，布局科技与能源板块"
+          "note": "卖出XLE避险，增持NVDA押注中美关系缓和利好芯片出口。"
         }
       ]
     }
