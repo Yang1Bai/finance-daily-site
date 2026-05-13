@@ -5,47 +5,53 @@
     <description>每日全球金融市场摘要，由 Claude AI + Web Search 自动生成</description>
     <link>https://your-username.github.io/finance-daily-site/</link>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 13 May 2026 14:24:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 23:14:00 +0000</lastBuildDate>
     <item>
       <title>金融日报 2026年5月13日</title>
       <description>今日金融市场摘要已更新</description>
-      <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
+      <pubDate>Wed, 13 May 2026 23:14:00 +0000</pubDate>
     </item>
   <item>
-    <title>英伟达CEO黄仁勋临时加入特朗普访华团 芯片出口管制或松动</title>
-    <description>黄仁勋在阿拉斯加加油站临时登上空军一号，特朗普在看到媒体报道黄未受邀后亲自致电邀请。此举被解读为中美芯片关系可能缓和的信号，英伟达最先进的H200芯片此前因美国出口管制无法进入中国，黄仁勋近期表示英伟达在华收入已降至零，此次随行或为打开对华销售铺路，英伟达股价盘前上涨2%</description>
-    <link>https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html</link>
-    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
-  </item>
-  <item>
-    <title>4月CPI飙升至3.8%创近三年新高 降息预期彻底破灭</title>
-    <description>美国4月CPI同比上涨3.8%超预期3.7%为2023年5月以来最高，月环比涨0.6%，核心CPI同比升至2.8%高于预期2.7%。能源价格环比暴涨3.8%同比飙升17.9%，汽油同比涨幅达28.4%。期货交易员现押注利率将维持到2027年底，甚至小概率年内加息，市场已完全放弃降息预期</description>
+    <title>特朗普抵京会晤习近平 科技巨头随行聚焦AI与贸易</title>
+    <description>美国总统特朗普今日抵达北京开启为期两天国事访问，随行包括苹果CEO库克、特斯拉CEO马斯克及英伟达CEO黄仁勋等16位商业领袖。会谈议题涵盖台湾军售、关税、AI管控及伊朗战争。特朗普称将与习近平'长谈'伊朗问题，但强调主要焦点仍是贸易。中国是伊朗最大贸易伙伴，霍尔木兹海峡封锁令全球能源危机加剧，华盛顿希望北京施压德黑兰重开航道。市场预期将公布大豆及波音订单协议。</description>
     <link></link>
-    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
+    <pubDate>Wed, 13 May 2026 23:14:00 +0000</pubDate>
   </item>
   <item>
-    <title>PPI月环比跳涨1.4%远超预期 批发通胀压力加剧</title>
-    <description>4月生产者价格指数(PPI)月环比飙升1.4%远超市场预期的0.5%，为批发价格出现意外暴涨信号。这意味着企业成本压力正在快速上升，未来可能进一步传导至消费端推高CPI，叠加伊朗战争导致的油价冲击，通胀粘性超出美联储此前预期，10年期美债收益率升破4%</description>
+    <title>通胀超预期：4月CPI飙至3.8% PPI年增6% 降息预期破灭</title>
+    <description>美国劳工部公布4月CPI同比上涨3.8%，高于预期的3.7%，创2023年5月以来最高；核心CPI月增0.4%、年增2.8%。生产者价格指数(PPI)月增1.4%、年增6%，远超预期的0.5%，创2022年以来最大涨幅。能源占CPI月增的40%，汽油价格年增28.4%至4.50美元/加仑。实际工资下降0.3%，这是三年来首次工资增长被通胀完全吞噬。CME FedWatch显示年内加息概率升至30%，降息预期彻底破灭。</description>
     <link></link>
-    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
+    <pubDate>Wed, 13 May 2026 23:14:00 +0000</pubDate>
   </item>
   <item>
-    <title>特朗普与习近平北京峰会今日开幕 台湾军售和伊朗议题成焦点</title>
-    <description>特朗普抵达北京开始为期两天的中美峰会，这是近十年来首位美国总统访华。双方将讨论价值140亿美元的对台军售、伊朗战争、贸易协议等敏感议题。特朗普携17位顶级企业CEO同行包括马斯克、库克、贝森特等，预计将推动中国开放市场和采购美国农产品及飞机。中国外交部表示愿扩大合作管控分歧</description>
-    <link>https://www.cnn.com/2026/05/13/politics/live-news/trump-china-visit-arrival-ceremony-hnk</link>
-    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
-  </item>
-  <item>
-    <title>阿里巴巴Q4财报大幅不及预期 股价盘前跌近2%</title>
-    <description>阿里巴巴公布财年Q4业绩收入345.7亿美元远低于市场预期2538亿美元(因剥离Sun Art等业务导致基数失真)，但实际同比增长10%。公司在快速商务(Instant Commerce)投入大量补贴导致销售费用率从13.3%升至21.5%，调整后EBITA下降14%，自由现金流转为负188亿美元。云智能业务成亮点增长26%且AI相关产品连续8季度三位数增长</description>
+    <title>科技股无视通胀刷新纪录 纳指涨1.2%标普涨0.58%创历史新高</title>
+    <description>尽管通胀数据火热，标普500和纳斯达克周三双双创下收盘与盘中历史新高，分别收于7,444.25(+0.58%)和26,402.34(+1.20%)。芯片股领涨，英伟达涨2.5%，美光涨近5%。摩根士丹利将标普500年底目标价从7,800上调至8,000，认为伊朗战争影响已被定价。道指微跌0.14%至49,693.19，金融与通信股拖累。市场显示极端窄幅领涨：仅143只标普成分股上涨，中小盘股走势疲弱。</description>
     <link></link>
-    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
+    <pubDate>Wed, 13 May 2026 23:14:00 +0000</pubDate>
   </item>
   <item>
-    <title>Kevin Warsh将于本周确认为美联储主席 政策取向偏鸽</title>
-    <description>参议院预计本周投票确认Kevin Warsh为新任美联储主席接替5月15日任期届满的鲍威尔，Warsh被普遍视为支持更低利率立场，这可能影响市场对未来货币政策的预期。他曾表示倾向使用不同于PCE的通胀衡量指标，这一政策框架转变可能重塑债券市场定价逻辑</description>
+    <title>福特暴涨13% 推出储能子公司Ford Energy 电池业务单独上市</title>
+    <description>福特汽车周三收涨13.18%至13.57美元，成交量飙升265%。公司宣布成立电池储能子公司Ford Energy，摩根士丹利发布看好报告强调其盈利与合作潜力。这标志福特从传统车企向能源公司转型。相比之下，特斯拉涨1.5%，马斯克随特朗普访华，特斯拉中国推出新融资方案降低Model 3首付以对抗本土竞争对手。</description>
     <link></link>
-    <pubDate>Wed, 13 May 2026 14:24:53 +0000</pubDate>
+    <pubDate>Wed, 13 May 2026 23:14:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>伊朗战争拖累和谈 油价飙升4.2%至102美元特朗普称停火'生命垂危'</title>
+    <description>特朗普拒绝伊朗和平提议，称霍尔木兹海峡主权等要求'完全不可接受'，并形容当前停火'生命垂危'。WTI原油周二飙升4.2%至102.18美元/桶，布伦特原油涨3.4%至107.77美元。战争已持续超10周，全球20%石油贸易受阻。高盛警告供应缓冲正在耗尽，Shell CEO称全球可能因战争少产10亿桶原油。航空燃油价格年增20.7%，牛肉价格年增14.8%，供应链压力持续蔓延至食品。</description>
+    <link></link>
+    <pubDate>Wed, 13 May 2026 23:14:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>阿里巴巴Q4财报不及预期 AI投入拖累利润股价跌2%</title>
+    <description>阿里巴巴第四财季营收未达华尔街预期，AI基础设施、云扩张及一小时达业务的重投入拖累盈利。云收入年增38%至61.3亿美元符合预期。公司将AI业务从云计算分拆，成立'阿里巴巴Token Hub'，CEO吴泳铭亲自挂帅力图将AI投资转化为盈利。股价盘前跌近2%。</description>
+    <link></link>
+    <pubDate>Wed, 13 May 2026 23:14:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>A股缩量震荡 沪指微涨0.16% 半导体设备股强者恒强</title>
+    <description>周三A股震荡整理，沪指收涨0.16%报4,242.57点，深成指跌0.25%，创业板指跌0.47%。两市成交3.2万亿缩量，北向资金净流出12亿。半导体设备、电力电网设备逆势走强，中际旭创股价突破千元。全市场超4000股飘绿，市场分化明显。分析师指出在全球通胀和美联储鹰派背景下，A股外资流出压力加大。</description>
+    <link></link>
+    <pubDate>Wed, 13 May 2026 23:14:00 +0000</pubDate>
   </item>
   </channel>
 </rss>
