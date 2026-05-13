@@ -514,6 +514,7 @@
   <a href="#sec-debate">⚔️ 辩论</a>
   <a href="#sec-calendar">📅 日历</a>
   <a href="#sec-banks">🏦 央行</a>
+  <a href="#sec-ai-trading">🤖 AI操盘</a>
   <a href="#sec-my">⭐ 我的</a>
 </nav>
 
@@ -1661,6 +1662,51 @@
 
     </div><!-- end content-grid -->
 
+    <!-- AI 操盘实验 -->
+    <div class="section-block sec-anchor" id="sec-ai-trading" style="margin:0 0 24px;">
+      <div class="card">
+        <div class="section-label">🤖 AI 操盘实验 · AI Trading Challenge</div>
+        <div id="ai-portfolio-loading" style="color:var(--muted);font-size:0.82rem;padding:8px 0;">加载中…</div>
+        <div id="ai-portfolio-content" style="display:none">
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
+            <div class="macro-item" style="flex:1;min-width:130px;">
+              <div class="macro-label">AI 组合</div>
+              <div class="macro-value" id="ai-pf-value">—</div>
+              <div class="macro-detail">总市值</div>
+            </div>
+            <div class="macro-item" style="flex:1;min-width:130px;">
+              <div class="macro-label">基线 SPY</div>
+              <div class="macro-value" id="ai-base-value">—</div>
+              <div class="macro-detail">买入持有</div>
+            </div>
+            <div class="macro-item" style="flex:1;min-width:130px;">
+              <div class="macro-label">超额收益</div>
+              <div class="macro-value" id="ai-alpha">—</div>
+              <div class="macro-detail" id="ai-alpha-pct">vs S&amp;P 500</div>
+            </div>
+            <div class="macro-item" style="flex:1;min-width:100px;">
+              <div class="macro-label">运营天数</div>
+              <div class="macro-value" id="ai-days">—</div>
+              <div class="macro-detail">自 2026-05-13</div>
+            </div>
+          </div>
+          <div style="margin-bottom:14px;">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📊 当前持仓</div>
+            <div id="ai-holdings" style="display:flex;flex-direction:column;gap:6px;"></div>
+          </div>
+          <div id="ai-trades-wrap" style="margin-bottom:10px;">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📋 最新交易记录</div>
+            <div id="ai-trades"></div>
+          </div>
+          <div id="ai-note" style="font-size:0.8rem;color:var(--muted);padding:8px 10px;background:rgba(0,212,170,0.04);border-left:2px solid var(--accent);border-radius:4px;margin-top:4px;"></div>
+          <div id="ai-history-wrap" style="margin-top:14px;">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:8px;">📈 历史表现</div>
+            <div id="ai-history-table" style="font-family:var(--mono);font-size:0.76rem;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- MY DASHBOARD (collapsed drawer) -->
     <div class="my-drawer sec-anchor" id="sec-my">
   <button class="my-drawer-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
@@ -2497,6 +2543,98 @@
         if (count > 0) el.textContent = `📱 ${count} 人已订阅Telegram早报`;
       })
       .catch(() => {});
+  })();
+
+  // ── AI 操盘实验 ──────────────────────────────────────────────────────────
+  (function loadAIPortfolio() {
+    fetch('data/ai-portfolio.json?v=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        const history = data.history || [];
+        if (!history.length) return;
+        const latest = history[history.length - 1];
+        const meta   = data.meta || {};
+        const pv  = latest.portfolio_value || 0;
+        const bv  = latest.baseline_value  || 0;
+        const alpha = pv - bv;
+        const alphaPct = bv > 0 ? (alpha / bv * 100) : 0;
+        const startDate  = new Date(meta.start_date || '2026-05-13');
+        const latestDate = new Date(latest.date);
+        const days = Math.round((latestDate - startDate) / 86400000) + 1;
+        const fmt$ = v => '$' + v.toLocaleString('en-US', {minimumFractionDigits:2,maximumFractionDigits:2});
+        const fmtPct = v => (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
+        document.getElementById('ai-pf-value').textContent   = fmt$(pv);
+        document.getElementById('ai-base-value').textContent = fmt$(bv);
+        document.getElementById('ai-days').textContent       = days + ' 天';
+        const alphaEl = document.getElementById('ai-alpha');
+        alphaEl.textContent = (alpha >= 0 ? '+' : '') + fmt$(alpha);
+        alphaEl.style.color = alpha >= 0 ? 'var(--up)' : 'var(--down)';
+        const alphaPctEl = document.getElementById('ai-alpha-pct');
+        alphaPctEl.textContent = fmtPct(alphaPct) + ' vs S&P 500';
+        alphaPctEl.style.color = alpha >= 0 ? 'var(--up)' : 'var(--down)';
+        const holdingsEl = document.getElementById('ai-holdings');
+        const positions  = latest.positions || {};
+        const cash = latest.cash || 0;
+        let holdHTML = '';
+        Object.entries(positions).forEach(([ticker, pos]) => {
+          const pct = pv > 0 ? (pos.value / pv * 100) : 0;
+          const cost = (data.holdings || []).find(h => h.ticker === ticker);
+          const avgCost = cost ? cost.avg_cost : pos.price;
+          const pl = pos.price - avgCost;
+          const plPct = avgCost > 0 ? (pl / avgCost * 100) : 0;
+          const plColor = pl >= 0 ? 'var(--up)' : 'var(--down)';
+          holdHTML += `<div style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:rgba(255,255,255,0.03);border-radius:6px;font-size:0.8rem;">
+            <span style="font-family:var(--mono);font-weight:600;min-width:44px;color:var(--accent);">${ticker}</span>
+            <span style="color:var(--muted);min-width:50px;">${pos.shares}股</span>
+            <span style="font-family:var(--mono);min-width:68px;">$${pos.price.toFixed(2)}</span>
+            <span style="font-family:var(--mono);min-width:72px;">${fmt$(pos.value)}</span>
+            <span style="color:${plColor};min-width:64px;">${(pl>=0?'+':'')}${fmtPct(plPct)}</span>
+            <div style="flex:1;height:3px;background:rgba(255,255,255,0.06);border-radius:2px;"><div style="width:${Math.min(pct,100).toFixed(1)}%;height:100%;background:var(--accent);border-radius:2px;"></div></div>
+            <span style="color:var(--muted);min-width:34px;text-align:right;">${pct.toFixed(1)}%</span>
+          </div>`;
+        });
+        const cashPct = pv > 0 ? (cash / pv * 100) : 0;
+        holdHTML += `<div style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:rgba(255,255,255,0.03);border-radius:6px;font-size:0.8rem;">
+          <span style="font-family:var(--mono);font-weight:600;min-width:44px;color:#ffb300;">CASH</span>
+          <span style="color:var(--muted);min-width:50px;">—</span>
+          <span style="font-family:var(--mono);min-width:68px;">—</span>
+          <span style="font-family:var(--mono);min-width:72px;">${fmt$(cash)}</span>
+          <span style="color:var(--muted);min-width:64px;">现金</span>
+          <div style="flex:1;height:3px;background:rgba(255,255,255,0.06);border-radius:2px;"><div style="width:${Math.min(cashPct,100).toFixed(1)}%;height:100%;background:#ffb300;border-radius:2px;"></div></div>
+          <span style="color:var(--muted);min-width:34px;text-align:right;">${cashPct.toFixed(1)}%</span>
+        </div>`;
+        holdingsEl.innerHTML = holdHTML;
+        const trades  = latest.trades || [];
+        const tradesEl = document.getElementById('ai-trades');
+        if (trades.length) {
+          tradesEl.innerHTML = trades.map(t => {
+            const icon = t.action==='BUY' ? '🟢' : t.action==='SELL' ? '🔴' : '🟡';
+            const color = t.action==='BUY' ? 'var(--up)' : t.action==='SELL' ? 'var(--down)' : 'var(--warn)';
+            return `<div style="padding:5px 0;border-bottom:1px solid var(--border);font-size:0.8rem;">${icon} <strong style="color:${color};">${t.action} ${t.ticker}</strong> ${t.shares}股 @ $${t.price.toFixed(2)} <span style="color:var(--muted);">${t.reason||''}</span></div>`;
+          }).join('');
+          document.getElementById('ai-trades-wrap').style.display='';
+        } else {
+          document.getElementById('ai-trades-wrap').style.display='none';
+        }
+        const noteEl = document.getElementById('ai-note');
+        if (latest.note) { noteEl.textContent=latest.note; noteEl.style.display=''; } else noteEl.style.display='none';
+        const histEl = document.getElementById('ai-history-table');
+        const startCapital = meta.start_capital || 10000;
+        if (history.length > 1) {
+          histEl.innerHTML = '<table style="width:100%;border-collapse:collapse;"><thead><tr style="color:var(--muted);"><th style="text-align:left;padding:3px 6px;">日期</th><th style="text-align:right;padding:3px 6px;">AI组合</th><th style="text-align:right;padding:3px 6px;">SPY基线</th><th style="text-align:right;padding:3px 6px;">AI收益</th><th style="text-align:right;padding:3px 6px;">超额</th></tr></thead><tbody>'+
+            history.slice().reverse().map(rec=>{
+              const ar=(rec.portfolio_value-startCapital)/startCapital*100;
+              const br=(rec.baseline_value-startCapital)/startCapital*100;
+              const ex=ar-br;
+              return `<tr style="border-top:1px solid var(--border);"><td style="padding:3px 6px;color:var(--muted);">${rec.date}</td><td style="text-align:right;padding:3px 6px;">${fmt$(rec.portfolio_value)}</td><td style="text-align:right;padding:3px 6px;">${fmt$(rec.baseline_value)}</td><td style="text-align:right;padding:3px 6px;color:${ar>=0?'var(--up)':'var(--down)'}">${(ar>=0?'+':'')}${ar.toFixed(2)}%</td><td style="text-align:right;padding:3px 6px;color:${ex>=0?'var(--up)':'var(--down)'}">${(ex>=0?'+':'')}${ex.toFixed(2)}%</td></tr>`;
+            }).join('')+'</tbody></table>';
+        } else {
+          histEl.innerHTML = '<span style="color:var(--muted);font-size:0.8rem;">积累中，明日起显示曲线…</span>';
+        }
+        document.getElementById('ai-portfolio-loading').style.display='none';
+        document.getElementById('ai-portfolio-content').style.display='';
+      })
+      .catch(()=>{ const el=document.getElementById('ai-portfolio-loading'); if(el) el.textContent='数据加载失败'; });
   })();
 
   // ── Visitor counter (Cloudflare Worker + KV) ──────────────────────────
