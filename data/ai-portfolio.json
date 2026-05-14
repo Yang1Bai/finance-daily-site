@@ -26,14 +26,19 @@
           "avg_cost": 710.65
         },
         {
-          "ticker": "TSM",
-          "shares": 3,
-          "avg_cost": 403.52
+          "ticker": "BABA",
+          "shares": 8,
+          "avg_cost": 141.12
+        },
+        {
+          "ticker": "JD",
+          "shares": 10,
+          "avg_cost": 32.86
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 319.65
+          "avg_cost": 115.25
         }
       ],
       "history": [
@@ -76,6 +81,58 @@
             }
           ],
           "note": "中美峰会+黄仁勋同行利好芯片龙头，加仓NVDA并配置黄金对冲通胀"
+        },
+        {
+          "date": "2026-05-14",
+          "portfolio_value": 10332.9,
+          "baseline_value": 10122.44,
+          "cash": 115.25,
+          "positions": {
+            "NVDA": {
+              "shares": 28,
+              "price": 235.74,
+              "value": 6600.72
+            },
+            "QQQ": {
+              "shares": 3,
+              "price": 719.79,
+              "value": 2159.37
+            },
+            "BABA": {
+              "shares": 8,
+              "price": 141.12,
+              "value": 1128.96
+            },
+            "JD": {
+              "shares": 10,
+              "price": 32.86,
+              "value": 328.6
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "TSM",
+              "shares": 3,
+              "price": 417.72,
+              "reason": "中美峰会利好兑现，获利了结台积电，释放资金配置中概股"
+            },
+            {
+              "action": "BUY",
+              "ticker": "BABA",
+              "shares": 8,
+              "price": 141.12,
+              "reason": "中美关系缓和预期强烈，中概股迎来反弹窗口"
+            },
+            {
+              "action": "BUY",
+              "ticker": "JD",
+              "shares": 10,
+              "price": 32.86,
+              "reason": "中概股补涨机会，分散配置增强弹性"
+            }
+          ],
+          "note": "中美峰会利好兑现，减持台积电转配中概股，捕捉政策缓和红利窗口期"
         }
       ]
     },
@@ -91,14 +148,14 @@
           "avg_cost": 226.095
         },
         {
-          "ticker": "AAPL",
-          "shares": 10,
-          "avg_cost": 299.92
+          "ticker": "QQQ",
+          "shares": 3,
+          "avg_cost": 719.79
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2482.7
+          "avg_cost": 3305.43
         }
       ],
       "history": [
@@ -136,6 +193,41 @@
             }
           ],
           "note": "卖出XLE避险，增持NVDA押注中美关系缓和利好芯片出口。"
+        },
+        {
+          "date": "2026-05-14",
+          "portfolio_value": 10179.6,
+          "baseline_value": 10122.44,
+          "cash": 3305.43,
+          "positions": {
+            "NVDA": {
+              "shares": 20,
+              "price": 235.74,
+              "value": 4714.8
+            },
+            "QQQ": {
+              "shares": 3,
+              "price": 719.79,
+              "value": 2159.37
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AAPL",
+              "shares": 10,
+              "price": 298.21,
+              "reason": "获利了结，腾出资金以便投资其他潜力标的"
+            },
+            {
+              "action": "BUY",
+              "ticker": "QQQ",
+              "shares": 3,
+              "price": 719.79,
+              "reason": "中美关系缓和，科技股ETF预期受益"
+            }
+          ],
+          "note": "卖出AAPL获利，买入QQQ以把握科技股上涨机会。"
         }
       ]
     }
