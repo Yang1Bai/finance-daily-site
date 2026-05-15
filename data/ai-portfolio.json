@@ -16,29 +16,19 @@
       "provider": "anthropic",
       "holdings": [
         {
-          "ticker": "NVDA",
-          "shares": 28,
-          "avg_cost": 226.1086
+          "ticker": "GLD",
+          "shares": 15,
+          "avg_cost": 417.29
         },
         {
-          "ticker": "QQQ",
-          "shares": 3,
-          "avg_cost": 710.65
-        },
-        {
-          "ticker": "BABA",
-          "shares": 8,
-          "avg_cost": 141.12
-        },
-        {
-          "ticker": "JD",
-          "shares": 10,
-          "avg_cost": 32.86
+          "ticker": "TLT",
+          "shares": 30,
+          "avg_cost": 83.66
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 115.25
+          "avg_cost": 1162.67
         }
       ],
       "history": [
@@ -133,6 +123,69 @@
             }
           ],
           "note": "中美峰会利好兑现，减持台积电转配中概股，捕捉政策缓和红利窗口期"
+        },
+        {
+          "date": "2026-05-15",
+          "portfolio_value": 9931.82,
+          "baseline_value": 10000.67,
+          "cash": 1162.67,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 417.29,
+              "value": 6259.35
+            },
+            "TLT": {
+              "shares": 30,
+              "price": 83.66,
+              "value": 2509.8
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "NVDA",
+              "shares": 28,
+              "price": 225.32,
+              "reason": "科技股承压回调，止损退出主仓位"
+            },
+            {
+              "action": "SELL",
+              "ticker": "QQQ",
+              "shares": 3,
+              "price": 708.93,
+              "reason": "纳指跌1.62%，科技ETF避险"
+            },
+            {
+              "action": "SELL",
+              "ticker": "BABA",
+              "shares": 8,
+              "price": 132.59,
+              "reason": "中美峰会无实质突破，中概股承压"
+            },
+            {
+              "action": "SELL",
+              "ticker": "JD",
+              "shares": 10,
+              "price": 32.01,
+              "reason": "中概股整体调整"
+            },
+            {
+              "action": "BUY",
+              "ticker": "GLD",
+              "shares": 15,
+              "price": 417.29,
+              "reason": "伊朗战争通胀担忧，黄金避险"
+            },
+            {
+              "action": "BUY",
+              "ticker": "TLT",
+              "shares": 30,
+              "price": 83.66,
+              "reason": "股市回调，债券避险配置"
+            }
+          ],
+          "note": "科技股创新高后回调，全面减仓转防御，配置黄金债券避险，保留少量大盘敞口"
         }
       ]
     },
@@ -144,18 +197,23 @@
       "holdings": [
         {
           "ticker": "NVDA",
-          "shares": 20,
+          "shares": 10,
           "avg_cost": 226.095
         },
         {
-          "ticker": "QQQ",
-          "shares": 3,
-          "avg_cost": 719.79
+          "ticker": "GLD",
+          "shares": 5,
+          "avg_cost": 417.29
+        },
+        {
+          "ticker": "XLE",
+          "shares": 50,
+          "avg_cost": 59.44
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3305.43
+          "avg_cost": 2626.97
         }
       ],
       "history": [
@@ -228,6 +286,60 @@
             }
           ],
           "note": "卖出AAPL获利，买入QQQ以把握科技股上涨机会。"
+        },
+        {
+          "date": "2026-05-15",
+          "portfolio_value": 9938.62,
+          "baseline_value": 10000.67,
+          "cash": 2626.97,
+          "positions": {
+            "NVDA": {
+              "shares": 10,
+              "price": 225.32,
+              "value": 2253.2
+            },
+            "GLD": {
+              "shares": 5,
+              "price": 417.29,
+              "value": 2086.45
+            },
+            "XLE": {
+              "shares": 50,
+              "price": 59.44,
+              "value": 2972.0
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "QQQ",
+              "shares": 3,
+              "price": 708.93,
+              "reason": "科技股承压，获利了结，减少风险"
+            },
+            {
+              "action": "SELL",
+              "ticker": "NVDA",
+              "shares": 10,
+              "price": 225.32,
+              "reason": "科技股估值高，市场回调风险大"
+            },
+            {
+              "action": "BUY",
+              "ticker": "GLD",
+              "shares": 5,
+              "price": 417.29,
+              "reason": "避险需求增加，黄金价格有支撑"
+            },
+            {
+              "action": "BUY",
+              "ticker": "XLE",
+              "shares": 50,
+              "price": 59.44,
+              "reason": "能源股受益于通胀和地缘政治风险"
+            }
+          ],
+          "note": "减持科技股，增加避险和能源配置，降低组合波动性"
         }
       ]
     }
