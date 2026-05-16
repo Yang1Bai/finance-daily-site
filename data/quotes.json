@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-15T22:31:45.324883+00:00",
+  "updated": "2026-05-16T05:21:39.521003+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -29,57 +29,57 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "4,177.92",
-      "change": "-64.65",
-      "change_pct": "-1.52%",
+      "value": "4,135.39",
+      "change": "-42.53",
+      "change_pct": "-1.02%",
       "direction": "down"
     },
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "26,389",
-      "change": "+0.60",
-      "change_pct": "+0.00%",
-      "direction": "up"
+      "value": "25,963",
+      "change": "-426.31",
+      "change_pct": "-1.62%",
+      "direction": "down"
     },
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "62,654",
-      "change": "-618.06",
-      "change_pct": "-0.98%",
+      "value": "61,409",
+      "change": "-1244.76",
+      "change_pct": "-1.99%",
       "direction": "down"
     },
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "24,456",
-      "change": "+319.45",
-      "change_pct": "+1.32%",
-      "direction": "up"
+      "value": "23,951",
+      "change": "-505.69",
+      "change_pct": "-2.07%",
+      "direction": "down"
     },
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,543.60",
-      "change": "-134.50",
-      "change_pct": "-2.88%",
+      "value": "4,555.80",
+      "change": "-122.30",
+      "change_pct": "-2.61%",
       "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "101.16",
-      "change": "-0.01",
-      "change_pct": "-0.01%",
-      "direction": "down"
+      "value": "105.42",
+      "change": "+4.25",
+      "change_pct": "+4.20%",
+      "direction": "up"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "79,076",
-      "change": "-1975.17",
-      "change_pct": "-2.44%",
+      "value": "78,988",
+      "change": "-2063.03",
+      "change_pct": "-2.55%",
       "direction": "down"
     },
     {
