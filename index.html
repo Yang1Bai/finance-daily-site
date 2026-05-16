@@ -2587,10 +2587,13 @@
 
         // 排行榜
         const lbEl = document.getElementById('ai-leaderboard');
-        lbEl.innerHTML = ranked.map((r, i) => {
+        // 标题行：说明这是累计净值
+        lbEl.innerHTML = `<div style="font-size:0.72rem;color:var(--muted);margin-bottom:8px;">📅 累计净值 — 初始资金 ${fmt$(startCap)}，自 ${contest.start_date} 起</div>`;
+        lbEl.innerHTML += ranked.map((r, i) => {
           const pv   = r.pv;
           const bv   = r.bv;
-          const ret  = (pv - startCap) / startCap * 100;
+          const pnl  = pv - startCap;
+          const ret  = pnl / startCap * 100;
           const alpha = pv - bv;
           const alphaP = bv > 0 ? alpha / bv * 100 : 0;
           const retC  = ret  >= 0 ? 'var(--up)' : 'var(--down)';
@@ -2604,9 +2607,13 @@
               <div style="font-weight:600;font-size:0.9rem;">${pf.display_name||r.id}</div>
               <div style="font-size:0.75rem;color:var(--muted);">${r.latest.note||''}</div>
             </div>
-            <div style="text-align:right;min-width:80px;">
+            <div style="text-align:right;min-width:90px;">
               <div style="font-family:var(--mono);font-weight:600;font-size:0.95rem;">${fmt$(pv)}</div>
-              <div style="font-size:0.78rem;color:${retC};">${(ret>=0?'+':'')}${ret.toFixed(2)}%</div>
+              <div style="font-size:0.72rem;color:var(--muted);">累计净值</div>
+            </div>
+            <div style="text-align:right;min-width:90px;">
+              <div style="font-family:var(--mono);font-size:0.9rem;font-weight:600;color:${retC};">${(pnl>=0?'+':'')}${fmt$(pnl)}</div>
+              <div style="font-size:0.72rem;color:${retC};">${(ret>=0?'+':'')}${ret.toFixed(2)}% 累计</div>
             </div>
             <div style="text-align:right;min-width:80px;">
               <div style="font-family:var(--mono);font-size:0.85rem;color:${alpC};">${(alpha>=0?'+':'')}${fmt$(alpha)}</div>
@@ -2618,19 +2625,24 @@
         // SPY 基线行
         const anyLatest = ranked[0]?.latest || {};
         const spyVal = anyLatest.baseline_value || startCap;
-        const spyRet = (spyVal - startCap) / startCap * 100;
+        const spyPnl = spyVal - startCap;
+        const spyRet = spyPnl / startCap * 100;
         const spyC   = spyRet >= 0 ? 'var(--up)' : 'var(--down)';
         lbEl.innerHTML += `<div style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:8px;opacity:0.7;">
           <span style="font-size:1.2rem;min-width:28px;">📊</span>
           <span style="font-size:1.1rem;">—</span>
-          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">SPY 基线（买入持有）</div><div style="font-size:0.75rem;color:var(--muted);">S&amp;P 500 ETF</div></div>
-          <div style="text-align:right;min-width:80px;">
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">SPY 基线（买入持有）</div><div style="font-size:0.75rem;color:var(--muted);">S&amp;P 500 ETF · ${contest.baseline?.shares||13.5296} 股</div></div>
+          <div style="text-align:right;min-width:90px;">
             <div style="font-family:var(--mono);font-weight:600;font-size:0.95rem;">${fmt$(spyVal)}</div>
-            <div style="font-size:0.78rem;color:${spyC};">${(spyRet>=0?'+':'')}${spyRet.toFixed(2)}%</div>
+            <div style="font-size:0.72rem;color:var(--muted);">累计净值</div>
+          </div>
+          <div style="text-align:right;min-width:90px;">
+            <div style="font-family:var(--mono);font-size:0.9rem;font-weight:600;color:${spyC};">${(spyPnl>=0?'+':'')}${fmt$(spyPnl)}</div>
+            <div style="font-size:0.72rem;color:${spyC};">${(spyRet>=0?'+':'')}${spyRet.toFixed(2)}% 累计</div>
           </div>
           <div style="text-align:right;min-width:80px;">
-            <div style="font-family:var(--mono);font-size:0.85rem;color:var(--muted);">$0.00</div>
-            <div style="font-size:0.75rem;color:var(--muted);">展示基准</div>
+            <div style="font-family:var(--mono);font-size:0.85rem;color:var(--muted);">—</div>
+            <div style="font-size:0.75rem;color:var(--muted);">基准</div>
           </div>
         </div>`;
 
@@ -2658,24 +2670,32 @@
         const histEl = document.getElementById('ai-history-table');
         const allDates = [...new Set(ranked.flatMap(r => (r.pf.history||[]).map(h => h.date)))].sort().reverse();
         if (allDates.length > 1) {
-          const headers = ['<th style="text-align:left;padding:3px 6px;">日期</th>',
-            ...ranked.map(r => `<th style="text-align:right;padding:3px 6px;">${r.pf.emoji} ${r.pf.display_name}</th>`),
-            '<th style="text-align:right;padding:3px 6px;">SPY基线</th>'
+          const headers = ['<th style="text-align:left;padding:4px 6px;font-size:0.72rem;">日期</th>',
+            ...ranked.map(r => `<th style="text-align:right;padding:4px 6px;font-size:0.72rem;">${r.pf.emoji} ${r.pf.display_name}</th>`),
+            '<th style="text-align:right;padding:4px 6px;font-size:0.72rem;">SPY 基线</th>'
+          ].join('');
+          const subHeaders = ['<th style="text-align:left;padding:2px 6px;font-size:0.65rem;color:var(--muted);">累计净值</th>',
+            ...ranked.map(() => '<th style="text-align:right;padding:2px 6px;font-size:0.65rem;color:var(--muted);">净值 / 累计盈亏</th>'),
+            '<th style="text-align:right;padding:2px 6px;font-size:0.65rem;color:var(--muted);">净值 / 累计盈亏</th>'
           ].join('');
           const rows = allDates.map(date => {
             const cells = ranked.map(r => {
               const rec = (r.pf.history||[]).find(h => h.date === date);
-              if (!rec) return '<td style="text-align:right;padding:3px 6px;color:var(--dimmed);">—</td>';
-              const ret = (rec.portfolio_value - startCap) / startCap * 100;
+              if (!rec) return '<td style="text-align:right;padding:4px 6px;color:var(--muted);">—</td>';
+              const pv  = rec.portfolio_value;
+              const pnl = pv - startCap;
+              const ret = pnl / startCap * 100;
               const c = ret >= 0 ? 'var(--up)' : 'var(--down)';
-              return `<td style="text-align:right;padding:3px 6px;"><span style="color:${c};">${(ret>=0?'+':'')}${ret.toFixed(2)}%</span></td>`;
+              return `<td style="text-align:right;padding:4px 6px;"><div style="font-family:var(--mono);font-size:0.8rem;font-weight:600;">${fmt$(pv)}</div><div style="font-size:0.72rem;color:${c};">${(pnl>=0?'+':'')}${fmt$(pnl)} (${(ret>=0?'+':'')}${ret.toFixed(2)}%)</div></td>`;
             }).join('');
             const spyRec = (ranked[0]?.pf.history||[]).find(h => h.date === date);
-            const spyR = spyRec ? (spyRec.baseline_value - startCap) / startCap * 100 : 0;
+            const spyV = spyRec ? spyRec.baseline_value : startCap;
+            const spyPnlR = spyV - startCap;
+            const spyR = spyPnlR / startCap * 100;
             const sc = spyR >= 0 ? 'var(--up)' : 'var(--down)';
-            return `<tr style="border-top:1px solid var(--border);"><td style="padding:3px 6px;color:var(--muted);">${date}</td>${cells}<td style="text-align:right;padding:3px 6px;"><span style="color:${sc};">${(spyR>=0?'+':'')}${spyR.toFixed(2)}%</span></td></tr>`;
+            return `<tr style="border-top:1px solid var(--border);"><td style="padding:4px 6px;color:var(--muted);font-size:0.8rem;">${date}</td>${cells}<td style="text-align:right;padding:4px 6px;"><div style="font-family:var(--mono);font-size:0.8rem;font-weight:600;">${fmt$(spyV)}</div><div style="font-size:0.72rem;color:${sc};">${(spyPnlR>=0?'+':'')}${fmt$(spyPnlR)} (${(spyR>=0?'+':'')}${spyR.toFixed(2)}%)</div></td></tr>`;
           }).join('');
-          histEl.innerHTML = `<table style="width:100%;border-collapse:collapse;"><thead><tr style="color:var(--muted);">${headers}</tr></thead><tbody>${rows}</tbody></table>`;
+          histEl.innerHTML = `<div style="font-size:0.72rem;color:var(--muted);margin-bottom:6px;">📈 累计净值走势（自 ${contest.start_date} 起，初始 ${fmt$(startCap)}）</div><table style="width:100%;border-collapse:collapse;"><thead><tr style="color:var(--text);border-bottom:1px solid var(--border);">${headers}</tr></thead><tbody>${rows}</tbody></table>`;
         } else {
           histEl.innerHTML = '<span style="color:var(--muted);font-size:0.8rem;">天数超过1天后显示对比曲线…</span>';
         }
