@@ -1,128 +1,128 @@
 {
   "date": "2026年5月18日",
   "summary": {
-    "headline": "伊朗战争阴云推高油价，美股回落VIX飙升",
-    "context": "周一美股三大指数普跌，标普500跌0.24%，纳指跌0.53%，VIX恐慌指数升至18.44。特朗普警告伊朗\"时间紧迫\"推动油价至110美元上方，市场担忧能源通胀将推迟美联储降息。新任主席Kevin Warsh接棒鲍威尔，本周英伟达财报和沃尔玛业绩将考验AI投资热度与消费韧性。对北美华人投资者而言，持有科技股和消费股需警惕短期波动，可关注能源板块和黄金对冲地缘风险。",
-    "sentiment": "bearish",
-    "vix": "18.44",
+    "headline": "美伊谈判缓和油价，科技股承压拖累纳指",
+    "context": "周一美股涨跌互现，道指涨0.32%，标普500微跌0.07%，纳指跌0.51%。特朗普推迟对伊朗军事行动引发油价从111美元回落至109美元，缓解通胀担忧，但国债收益率升破4.6%令科技股承压。市场焦点转向周三英伟达财报，这将是本周最大催化剂。北美华人投资者需关注：持有科技股ETF（如QQQ）的短期波动加大，建议降低仓位；持有能源股的可考虑部分获利了结。",
+    "sentiment": "neutral",
+    "vix": "17.82",
     "key_points": [
-      "特朗普-习近平峰会未达成实质协议",
-      "油价飙升至110美元引发通胀担忧",
-      "英伟达周三财报成AI行情试金石"
+      "英伟达周三财报成焦点",
+      "10年期美债收益率破4.6%",
+      "美伊谈判令油价回落"
     ]
   },
   "indices": [
     {
-      "name": "S&P 500",
+      "name": "标普500",
       "symbol": "SPX",
-      "value": "7,390.72",
-      "change": "-17.78",
-      "change_pct": "-0.24%",
+      "value": "7,403.05",
+      "change": "-5.45",
+      "change_pct": "-0.07%",
       "direction": "down"
     },
     {
-      "name": "道琼斯工业平均指数",
-      "symbol": "DJIA",
-      "value": "49,477.98",
-      "change": "-48.19",
-      "change_pct": "-0.10%",
-      "direction": "down"
+      "name": "道琼斯",
+      "symbol": "DJI",
+      "value": "49,686.12",
+      "change": "+159.95",
+      "change_pct": "+0.32%",
+      "direction": "up"
     },
     {
-      "name": "纳斯达克综合指数",
+      "name": "纳斯达克",
       "symbol": "IXIC",
-      "value": "26,087.19",
-      "change": "-137.95",
-      "change_pct": "-0.53%",
+      "value": "26,090.73",
+      "change": "-134.41",
+      "change_pct": "-0.51%",
       "direction": "down"
     },
     {
       "name": "罗素2000",
       "symbol": "RUT",
-      "value": "2,786.61",
-      "change": "-6.69",
-      "change_pct": "-0.24%",
+      "value": "2,775.10",
+      "change": "-18.20",
+      "change_pct": "-0.65%",
       "direction": "down"
     },
     {
       "name": "上证综指",
-      "symbol": "SSEC",
-      "value": "4,143.00",
-      "change": "+8.28",
-      "change_pct": "+0.20%",
+      "symbol": "000001.SS",
+      "value": "4,137.97",
+      "change": "+2.58",
+      "change_pct": "+0.06%",
       "direction": "up"
     },
     {
       "name": "恒生指数",
       "symbol": "HSI",
-      "value": "25,556.00",
-      "change": "-406.73",
-      "change_pct": "-1.57%",
+      "value": "26,160.33",
+      "change": "-233.93",
+      "change_pct": "-0.89%",
       "direction": "down"
     },
     {
       "name": "日经225",
       "symbol": "N225",
-      "value": "60,798.90",
-      "change": "-610.39",
-      "change_pct": "-0.99%",
+      "value": "61,409.29",
+      "change": "-1,244.76",
+      "change_pct": "-1.99%",
       "direction": "down"
     },
     {
       "name": "德国DAX",
       "symbol": "GDAXI",
-      "value": "10,195.37",
-      "change": "-177.53",
-      "change_pct": "-1.71%",
+      "value": "21,850",
+      "change": "-120",
+      "change_pct": "-0.55%",
       "direction": "down"
     },
     {
       "name": "黄金现货",
-      "symbol": "GC=F",
-      "value": "4,537.79",
-      "change": "-10.11",
-      "change_pct": "-0.22%",
-      "direction": "down"
+      "symbol": "XAU/USD",
+      "value": "4,576.00",
+      "change": "+18.00",
+      "change_pct": "+0.39%",
+      "direction": "up"
     },
     {
       "name": "WTI原油",
       "symbol": "CL=F",
-      "value": "102.87",
-      "change": "+1.88",
-      "change_pct": "+1.83%",
+      "value": "101.02",
+      "change": "+4.25",
+      "change_pct": "+4.20%",
       "direction": "up"
     },
     {
       "name": "布伦特原油",
       "symbol": "BZ=F",
-      "value": "110.90",
-      "change": "+1.64",
-      "change_pct": "+1.50%",
-      "direction": "up"
+      "value": "109.26",
+      "change": "-2.84",
+      "change_pct": "-2.53%",
+      "direction": "down"
     },
     {
       "name": "比特币",
       "symbol": "BTC-USD",
-      "value": "76,220.12",
-      "change": "-1,792.79",
-      "change_pct": "-2.30%",
+      "value": "77,076.16",
+      "change": "-876.98",
+      "change_pct": "-1.13%",
       "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DXY",
-      "value": "99.15",
-      "change": "-0.35",
-      "change_pct": "-0.35%",
-      "direction": "down"
+      "value": "99.21",
+      "change": "+0.48",
+      "change_pct": "+0.49%",
+      "direction": "up"
     },
     {
       "name": "离岸人民币",
-      "symbol": "CNH",
-      "value": "7.1850",
-      "change": "+0.0120",
-      "change_pct": "+0.17%",
-      "direction": "down"
+      "symbol": "CNH/USD",
+      "value": "7.24",
+      "change": "-0.02",
+      "change_pct": "-0.28%",
+      "direction": "up"
     }
   ],
   "leaders": [
@@ -130,8 +130,8 @@
       "name": "杰米·戴蒙",
       "name_en": "Jamie Dimon",
       "role": "摩根大通CEO",
-      "quote": "利率就像万有引力，影响几乎所有资产价格",
-      "body": "戴蒙在2026年致股东信中警告，通胀持续高企可能推高利率，成为资产价格的\"地心引力\"。他呼应了巴菲特26年前的警告，强调当前市场估值偏高，投资者需为更长时间的高利率环境做准备。",
+      "quote": "利率如同引力作用于几乎所有资产价格",
+      "body": "戴蒙在4月股东信中呼应巴菲特26年前的警告，强调当前经济环境下通胀上升（而非衰退）是更大担忧，这将导致更高利率。他指出美联储2026年通胀预期中值已升至2.7%，降息前景显著恶化，期货交易员甚至开始定价加息可能性。",
       "tags": [
         "#利率",
         "#通胀"
@@ -142,287 +142,223 @@
     {
       "name": "沃伦·巴菲特",
       "name_en": "Warren Buffett",
-      "role": "伯克希尔哈撒韦CEO",
-      "quote": "利率对资产价格的影响从未改变",
-      "body": "95岁的巴菲特5月宣布卸任CEO职务，但继续担任董事。他在最新股东信中重申利率是资产定价的核心，当前高估值环境下投资者应更加谨慎。戴蒙称赞巴菲特是\"我们时代最受尊敬的长期投资者\"。",
+      "role": "伯克希尔哈撒韦前CEO",
+      "quote": "利率对金融估值的作用就像引力对物质的作用",
+      "body": "巴菲特1999年在《财富》杂志撰文警告，利率是影响投资回报最重要因素之一。2026年市场再次印证这一观点：当前标普500估值偏高，投资者预期回报需要大幅降息才能实现，但美伊战争推高油价令降息希望渺茫。",
       "tags": [
         "#价值投资",
         "#利率"
       ],
       "initials": "WB",
-      "quote_date": "5月"
+      "quote_date": "1999年11月"
     },
     {
       "name": "杰罗姆·鲍威尔",
       "name_en": "Jerome Powell",
-      "role": "前美联储主席",
-      "quote": "政策处于良好位置，可以等待观察",
-      "body": "鲍威尔5月15日卸任美联储主席，结束8年任期。他在最后的哈佛演讲中表示，当前利率水平适合\"等待观察\"伊朗战争对通胀的影响。4月FOMC会议出现罕见的4票反对，显示委员会内部对降息时机存在严重分歧。",
+      "role": "美联储主席（5月15日卸任）",
+      "quote": "通胀预期似乎在短期之外得到良好锚定",
+      "body": "鲍威尔在3月30日哈佛大学演讲中表示，当前3.5-3.75%利率区间是美联储观察美伊战争和关税影响的'好位置'。他强调尽管油价飙升，美联储尚未面临是否加息的决定，因经济影响尚不明朗。市场不再定价年内加息重大概率。",
       "tags": [
         "#美联储",
         "#货币政策"
       ],
       "initials": "JP",
-      "quote_date": "5月15日"
+      "quote_date": "3月30日"
     },
     {
-      "name": "凯文·沃什",
-      "name_en": "Kevin Warsh",
-      "role": "美联储新任主席",
-      "quote": "我欢迎更激烈的会议讨论和不同意见",
-      "body": "沃什5月15日正式接任美联储主席，他在参议院听证会上表示将允许委员会有更多争论和异议。市场认为他比鲍威尔更倾向降息，但顽固的通胀限制了2026年上半年的操作空间。2026年降息概率已降至接近零。",
+      "name": "黄仁勋",
+      "name_en": "Jensen Huang",
+      "role": "英伟达CEO",
+      "quote": "Vera Rubin和Blackwell产品营收预期翻倍至超1万亿美元",
+      "body": "黄仁勋3月表示英伟达硬件和软件需求'爆表'，将Vera Rubin和Blackwell产品2026年底营收预期从5000亿美元上调至超1万亿美元。英伟达股价今年已涨20%，周三财报将成市场最大催化剂，华尔街预期营收780亿美元、EPS 1.77美元。",
       "tags": [
-        "#美联储",
-        "#新主席"
+        "#AI",
+        "#半导体"
       ],
-      "initials": "KW",
-      "quote_date": "5月15日"
-    },
-    {
-      "name": "杰夫·柯里",
-      "name_en": "Jeff Currie",
-      "role": "凯雷集团能源策略师",
-      "quote": "市场正处于下一个大宗商品超级周期的起点",
-      "body": "柯里指出AI基础设施投资和去全球化趋势正推动新一轮大宗商品牛市。不同于2000年代中国主导的全球化扩张，当前供应链收紧和资源竞争加剧将长期支撑能源、金属价格。",
-      "tags": [
-        "#大宗商品",
-        "#能源"
-      ],
-      "initials": "JC",
-      "quote_date": "5月15日"
+      "initials": "JH",
+      "quote_date": "3月"
     }
   ],
   "news": [
     {
-      "title": "特朗普警告伊朗时间紧迫，油价飙升至110美元",
-      "body": "特朗普周日在Truth Social发文称伊朗\"时钟在滴答作响\"，若不尽快行动\"将一无所剩\"。此言论推动布伦特原油升至110美元，WTI突破102美元。阿联酋核电站遭无人机袭击引发新一轮供应担忧。高油价加剧通胀压力，市场完全排除2026年降息可能，甚至有45%概率加息。",
-      "tldr": "油价暴涨将推高通胀，持有能源股和通胀保护资产的投资者受益，消费股和成长股承压。",
+      "title": "特朗普推迟对伊朗军事行动，油价从高位回落",
+      "body": "特朗普周日表示应卡塔尔、沙特和阿联酋请求，推迟原定周二对伊朗的军事打击，称'认真谈判正在进行'。布伦特原油从盘中112美元高位回落至109美元，WTI从104美元降至102.5美元。但市场仍警惕谈判破裂，若冲突升级能源通胀可能进一步加速。",
+      "tldr": "油价短期回落缓解通胀压力，但持有能源股ETF的投资者建议部分获利，关注谈判进展",
       "importance": "breaking",
       "tags": [
         "#地缘政治",
-        "#能源",
-        "#通胀"
+        "#能源"
       ]
     },
     {
-      "title": "特朗普-习近平北京峰会未达成实质性协议，市场失望",
-      "body": "特朗普5月14-15日访华，与习近平会谈涉及台湾、伊朗、关税、稀土等议题。习近平警告台湾问题处理不当将使两国关系陷入\"重大危险\"。会后仅宣布中国将购买200架波音飞机和增加数百亿美元农产品进口，未触及关税减免核心诉求。A股和港股周五大跌超1%，美股科技股承压。",
-      "tldr": "中美结构性矛盾未解，持有中概股和跨国供应链企业的投资者需警惕不确定性。",
+      "title": "10年期美债收益率破4.6%创一年新高，科技股承压",
+      "body": "周一10年期美债收益率升破4.6%，创52周新高，20年期和30年期触及2007年以来高点。高收益率令科技股盘中一度跌超2.3%，终盘跌1.1%，拖累纳指跌0.51%。分析师警告，若美联储因通胀持续而加息，估值偏高的成长股将面临更大压力。",
+      "tldr": "债券收益率飙升打压科技股，持有QQQ等成长型ETF的投资者应降低仓位或对冲",
       "importance": "breaking",
       "tags": [
-        "#中美关系",
-        "#贸易",
-        "#地缘政治"
+        "#美债",
+        "#科技股"
       ]
     },
     {
-      "title": "英伟达周三财报成AI投资试金石，市值5.48万亿",
-      "body": "英伟达将于5月20日周三发布Q1财报，市场预期营收780亿美元，EPS 1.78美元。CEO黄仁勋在GTC大会上透露Blackwell和Rubin芯片订单需求超1万亿美元。微软、亚马逊、谷歌、Meta 2026年AI资本开支将达6950-7250亿美元。财报若不及预期，可能拖累整个科技板块。",
-      "tldr": "英伟达财报将决定AI板块短期走向，持有科技股ETF的投资者需密切关注。",
+      "title": "英伟达周三盘后发布财报，市场屏息以待",
+      "body": "英伟达周三盘后公布Q1财报，华尔街预期营收780亿美元、EPS 1.77美元。KeyBanc上调目标价至300美元，预计Blackwell GPU出货量环比增15-20万片。但上季英伟达即使超预期仍下跌，分析师警告预期和仓位已极度拥挤，财报后波动可能剧烈。",
+      "tldr": "英伟达财报是本周最大事件，持有NVDA的投资者应做好双向波动准备，考虑期权对冲",
       "importance": "breaking",
+      "tags": [
+        "#财报季",
+        "#AI"
+      ]
+    },
+    {
+      "title": "三星工会同意延长谈判避免18天罢工，芯片供应链暂缓危机",
+      "body": "三星电子工会周日同意周二继续谈判，避免可能持续18天的罢工。罢工将冲击全球最大存储芯片制造商产能，加剧AI数据中心对内存组件的争夺。周一美光跌3%，英伟达、博通和英特尔跟跌，希捷因CEO称新工厂'耗时过长'暴跌7%。",
+      "tldr": "芯片供应链危机暂缓，但存储芯片供需失衡风险仍存，关注相关半导体股短期波动",
+      "importance": "high",
+      "tags": [
+        "#供应链",
+        "#半导体"
+      ]
+    },
+    {
+      "title": "马斯克诉OpenAI案陪审团裁定OpenAI并未违约",
+      "body": "加州奥克兰联邦陪审团周一裁定OpenAI未违反与马斯克的创始协议，驳回马斯克关于OpenAI应保持非营利性质的主张。陪审团还裁定马斯克对微软'协助违反慈善信托'的指控超过诉讼时效。马斯克原索赔1500亿美元。微软股价收盘持平。",
+      "tldr": "OpenAI法律风险解除，AI行业竞争格局维持现状，对微软和相关AI股中性",
+      "importance": "medium",
       "tags": [
         "#AI",
-        "#科技财报",
-        "#英伟达"
+        "#法律"
       ]
     },
     {
-      "title": "沃尔玛、家得宝本周财报检验美国消费者韧性",
-      "body": "沃尔玛周四、家得宝周二、塔吉特周三将陆续发布财报。高油价推高生活成本，但沃尔玛凭借价值定位和电商优势继续从高收入家庭抢夺市场份额。家得宝和塔吉特面临更大压力，高利率抑制房屋翻新和可选消费。零售板块Q1整体盈利仅增1.9%。",
-      "tldr": "消费类股分化加剧，折扣零售商相对安全，可选消费和家居改善股面临下行风险。",
+      "title": "零售巨头本周集中发布财报，检验消费者抗通胀能力",
+      "body": "沃尔玛（周四）、塔吉特（周三）、家得宝和劳氏（周二-周三）本周发布财报。4月CPI同比上涨3.8%背景下，市场密切关注零售商如何应对关税、高房贷利率和谨慎消费支出。沃尔玛预期EPS 0.65美元，营收1725亿美元，股价年初至今涨15%。",
+      "tldr": "零售财报将揭示消费者健康度，关注可选消费vs必需消费分化，沃尔玛等折扣商或跑赢",
       "importance": "high",
       "tags": [
-        "#零售",
         "#消费",
-        "#财报"
-      ]
-    },
-    {
-      "title": "美债30年期收益率升至5.12%，创2007年6月来新高",
-      "body": "周五30年期美债收益率飙升10个基点至5.12%，10年期升至4.57%，均突破心理关口。债市暴跌反映市场对通胀回升和美联储长期维持高利率的担忧。收益率曲线陡峭化，金融条件收紧可能冲击股市估值。",
-      "tldr": "债券收益率飙升对成长股估值构成压力，固定收益投资者可锁定高收益，股票投资者需降低仓位。",
-      "importance": "high",
-      "tags": [
-        "#债券",
-        "#利率",
-        "#美联储"
-      ]
-    },
-    {
-      "title": "SpaceX计划6月12日纳斯达克上市，估值1.75万亿",
-      "body": "马斯克的SpaceX宣布将于6月12日在纳斯达克挂牌，实施5:1股票分割，拆分后每股105.32美元。IPO预计融资750亿美元，估值高达1.75万亿美元，将成为史上最大IPO。贝莱德正洽谈50-100亿美元投资。有传闻称马斯克考虑将SpaceX与特斯拉合并。",
-      "tldr": "SpaceX上市将提供新的科技成长投资标的，特斯拉股东需关注潜在并购影响。",
-      "importance": "high",
-      "tags": [
-        "#IPO",
-        "#SpaceX",
-        "#特斯拉"
-      ]
-    },
-    {
-      "title": "中国Q1经济数据疲弱，A股科技股逆势上涨",
-      "body": "中国4月零售销售同比仅增0.2%，为2022年12月以来最弱；工业生产增4.1%，低于预期。失业率从5.4%降至5.2%。尽管宏观数据疲软，上证指数周一因科技股强势上涨0.2%，中际旭创涨2%，北方华创涨4.9%，市场押注英伟达财报提振AI产业链。",
-      "tldr": "A股结构性机会在AI和半导体，但宏观经济疲软限制大盘空间，选股重于择时。",
-      "importance": "high",
-      "tags": [
-        "#A股",
-        "#中国经济",
-        "#科技"
+        "#财报季"
       ]
     }
   ],
   "macro": [
     {
-      "indicator": "核心PCE Price Index YoY",
-      "value": "3.0%",
-      "prev": "3.1%",
-      "direction": "down",
-      "description": "2月核心PCE略降至3.0%，但仍高于美联储2%目标，降息预期推迟"
-    },
-    {
-      "indicator": "CPI YoY",
-      "value": "3.3%",
-      "prev": "3.1%",
+      "indicator": "CPI YoY (4月)",
+      "value": "3.8%",
+      "prev": "3.5%",
       "direction": "up",
-      "description": "3月CPI升至3.3%，能源价格飙升推动通胀反弹，超出预期"
+      "description": "4月CPI同比上涨3.8%，高于3月的3.5%，主要受能源价格飙升驱动，降息预期进一步推迟"
     },
     {
-      "indicator": "失业率",
-      "value": "4.0%",
-      "prev": "3.9%",
+      "indicator": "10年期美债收益率",
+      "value": "4.62%",
+      "prev": "4.50%",
       "direction": "up",
-      "description": "4月失业率微升至4.0%，劳动力市场仍紧张但边际放缓"
-    },
-    {
-      "indicator": "非农就业人数变化",
-      "value": "+185K",
-      "prev": "+220K",
-      "direction": "down",
-      "description": "4月新增就业18.5万，低于预期的22万，劳动力市场降温"
-    },
-    {
-      "indicator": "ISM制造业PMI",
-      "value": "48.5",
-      "prev": "47.2",
-      "direction": "up",
-      "description": "4月制造业PMI为48.5，连续16个月低于荣枯线50，制造业持续萎缩"
-    },
-    {
-      "indicator": "Empire State制造业指数",
-      "value": "19.6",
-      "prev": "11.0",
-      "direction": "up",
-      "description": "5月纽约州制造业指数跳升至19.6，远超预期的6.2，显示区域制造业改善"
-    },
-    {
-      "indicator": "GDP增长率 YoY",
-      "value": "2.3%",
-      "prev": "2.1%",
-      "direction": "up",
-      "description": "Q1 GDP增长2.3%，高于预期，基建支出和出口拉动增长"
-    },
-    {
-      "indicator": "中国零售销售 YoY",
-      "value": "0.2%",
-      "prev": "1.8%",
-      "direction": "down",
-      "description": "4月中国零售销售大幅放缓至0.2%，为2022年12月以来最弱，消费疲软"
-    },
-    {
-      "indicator": "中国工业生产 YoY",
-      "value": "4.1%",
-      "prev": "5.5%",
-      "direction": "down",
-      "description": "4月工业生产增速降至4.1%，创2023年7月来最低，受伊朗战争影响"
+      "description": "5月18日升破4.6%创52周新高，反映市场预期美联储可能维持高利率至年底甚至加息"
     },
     {
       "indicator": "联邦基金利率",
-      "value": "5.25-5.50%",
-      "prev": "5.25-5.50%",
-      "direction": "neutral",
-      "description": "4月FOMC维持利率不变，出现罕见的4票反对，委员会严重分歧"
+      "value": "3.50-3.75%",
+      "prev": "3.50-3.75%",
+      "direction": "unchanged",
+      "description": "美联储4月会议维持利率不变，鲍威尔最后一次会议强调需观察美伊战争和关税影响"
+    },
+    {
+      "indicator": "工业生产（4月）",
+      "value": "+0.7%",
+      "prev": "-0.5%",
+      "direction": "up",
+      "description": "4月工业生产环比增0.7%，3月下修至-0.5%，产能利用率76.1%超预期75.8%"
+    },
+    {
+      "indicator": "NY Empire State制造业指数（5月）",
+      "value": "19.6",
+      "prev": "11.0",
+      "direction": "up",
+      "description": "5月纽约帝国州制造业指数跳升至19.6，大超预期7.0，显示制造业活动意外反弹"
+    },
+    {
+      "indicator": "PCE通胀预期（2026）",
+      "value": "2.7%",
+      "prev": "2.4%",
+      "direction": "up",
+      "description": "美联储4月会议将2026年PCE通胀预期中值上调至2.7%，远高于2%目标"
+    },
+    {
+      "indicator": "布伦特原油",
+      "value": "$109.26",
+      "prev": "$112.10",
+      "direction": "down",
+      "description": "周一从盘中112美元高位回落至109美元，因特朗普宣布推迟对伊朗军事行动"
+    },
+    {
+      "indicator": "美国汽油价格",
+      "value": "$4.22/加仑",
+      "prev": "$2.98/加仑",
+      "direction": "up",
+      "description": "AAA数据显示全美汽油均价4.22美元/加仑，2月28日美以袭击伊朗前仅2.98美元"
     }
   ],
   "earnings": [
     {
-      "company": "Microsoft",
-      "ticker": "MSFT",
-      "report_date": "2026-04-28",
-      "eps_actual": "3.12",
-      "eps_est": "3.05",
-      "beat": true,
-      "revenue": "$68.2B",
-      "highlight": "Azure云收入增长32%，Bill Ackman披露建仓推动股价涨3.1%"
-    },
-    {
-      "company": "Nvidia",
+      "company": "英伟达",
       "ticker": "NVDA",
       "report_date": "2026-05-20",
-      "eps_actual": null,
-      "eps_est": "1.78",
+      "eps_actual": "待公布",
+      "eps_est": "1.77",
       "beat": null,
-      "revenue": "$78.98B(预期)",
-      "highlight": "周三盘后发布，市场焦点，黄仁勋称Blackwell订单需求超1万亿美元"
+      "revenue": "预期780亿美元",
+      "highlight": "华尔街最关注财报，KeyBanc目标价上调至300美元，预计Blackwell GPU出货量环比增15-20万"
     },
     {
-      "company": "Walmart",
-      "ticker": "WMT",
-      "report_date": "2026-05-21",
-      "eps_actual": null,
-      "eps_est": "1.65",
-      "beat": null,
-      "revenue": "$168B(预期)",
-      "highlight": "周四发布，同店销售预期增3.9%，高收入家庭下沉支撑增长"
-    },
-    {
-      "company": "Home Depot",
-      "ticker": "HD",
-      "report_date": "2026-05-19",
-      "eps_actual": null,
-      "eps_est": "3.85",
-      "beat": null,
-      "revenue": "$38.5B(预期)",
-      "highlight": "周二发布，高利率抑制家装需求，预期疲软"
-    },
-    {
-      "company": "Target",
+      "company": "塔吉特",
       "ticker": "TGT",
       "report_date": "2026-05-20",
-      "eps_actual": null,
-      "eps_est": "2.05",
+      "eps_actual": "待公布",
+      "eps_est": "待公布",
       "beat": null,
-      "revenue": "$26.2B(预期)",
-      "highlight": "周三发布，可选消费承压，毛利率和库存是关键"
+      "revenue": "待公布",
+      "highlight": "周三盘前发布，与家得宝、劳氏同日，将揭示可选消费健康度和关税影响"
     },
     {
-      "company": "Nu Holdings",
-      "ticker": "NU",
-      "report_date": "2026-05-16",
-      "eps_actual": "0.19",
-      "eps_est": "0.20",
-      "beat": false,
-      "revenue": "$2.8B",
-      "highlight": "Q1盈利不及预期，股价跌5.7%，拉美金融科技增长放缓"
-    },
-    {
-      "company": "Regeneron",
-      "ticker": "REGN",
-      "report_date": "2026-05-16",
-      "eps_actual": "11.25",
-      "eps_est": "11.50",
-      "beat": false,
-      "revenue": "$3.95B",
-      "highlight": "黑色素瘤III期试验未达统计学显著性，股价暴跌10.5%"
-    },
-    {
-      "company": "Baidu",
-      "ticker": "BIDU",
-      "report_date": "2026-05-18",
-      "eps_actual": null,
-      "eps_est": "2.15",
+      "company": "沃尔玛",
+      "ticker": "WMT",
+      "report_date": "2026-05-21",
+      "eps_actual": "待公布",
+      "eps_est": "0.65",
       "beat": null,
-      "revenue": "$4.8B(预期)",
-      "highlight": "周一发布，关注AI货币化和自动驾驶进展，受中美科技紧张影响"
+      "revenue": "预期1725亿美元",
+      "highlight": "周四盘前发布，同店销售预期+3.9%，高收入家庭为省钱向沃尔玛迁移"
+    },
+    {
+      "company": "家得宝",
+      "ticker": "HD",
+      "report_date": "2026-05-19",
+      "eps_actual": "待公布",
+      "eps_est": "待公布",
+      "beat": null,
+      "revenue": "待公布",
+      "highlight": "周二盘前发布，CEO称房屋装修周期将恢复但时间不确定，受困于高房贷利率"
+    },
+    {
+      "company": "劳氏",
+      "ticker": "LOW",
+      "report_date": "2026-05-20",
+      "eps_actual": "待公布",
+      "eps_est": "待公布",
+      "beat": null,
+      "revenue": "待公布",
+      "highlight": "周三发布，与家得宝共同反映美国房屋装修市场冻结状况"
+    },
+    {
+      "company": "美光科技",
+      "ticker": "MU",
+      "report_date": "已公布",
+      "eps_actual": "待查",
+      "eps_est": "待查",
+      "beat": null,
+      "revenue": "待查",
+      "highlight": "周一因三星罢工担忧和存储芯片供应紧张跌3%"
     }
   ],
   "sectors": [
@@ -430,348 +366,317 @@
       "name": "能源",
       "name_en": "Energy",
       "etf": "XLE",
-      "change_pct": "+2.30%",
+      "change_pct": "+2.3%",
       "direction": "up",
-      "note": "伊朗危机推动油价飙升，唯一上涨板块"
+      "note": "美伊冲突推高油价，周一唯一上涨板块"
     },
     {
       "name": "科技",
       "name_en": "Technology",
       "etf": "XLK",
-      "change_pct": "-0.85%",
+      "change_pct": "-1.1%",
       "direction": "down",
-      "note": "债券收益率飙升压制估值，等待英伟达财报"
-    },
-    {
-      "name": "通信服务",
-      "name_en": "Communication Services",
-      "etf": "XLC",
-      "change_pct": "-0.62%",
-      "direction": "down",
-      "note": "Meta和Alphabet承压，数字广告增长放缓担忧"
-    },
-    {
-      "name": "金融",
-      "name_en": "Financials",
-      "etf": "XLF",
-      "change_pct": "-0.45%",
-      "direction": "down",
-      "note": "收益率曲线陡峭化利好银行，但市场情绪谨慎"
-    },
-    {
-      "name": "医疗保健",
-      "name_en": "Healthcare",
-      "etf": "XLV",
-      "change_pct": "-1.12%",
-      "direction": "down",
-      "note": "Regeneron试验失败拖累生物科技，UnitedHealth跌4.8%"
-    },
-    {
-      "name": "非必需消费",
-      "name_en": "Consumer Discretionary",
-      "etf": "XLY",
-      "change_pct": "-0.78%",
-      "direction": "down",
-      "note": "高油价侵蚀消费者购买力，零售股承压"
-    },
-    {
-      "name": "必需消费",
-      "name_en": "Consumer Staples",
-      "etf": "XLP",
-      "change_pct": "-0.35%",
-      "direction": "down",
-      "note": "防御性板块相对抗跌，等待沃尔玛财报"
-    },
-    {
-      "name": "工业",
-      "name_en": "Industrials",
-      "etf": "XLI",
-      "change_pct": "-1.80%",
-      "direction": "down",
-      "note": "波音中国订单不及预期，运输股受油价冲击"
+      "note": "国债收益率飙升打压估值，盘中一度跌2.3%"
     },
     {
       "name": "材料",
       "name_en": "Materials",
       "etf": "XLB",
-      "change_pct": "-2.70%",
+      "change_pct": "-2.7%",
       "direction": "down",
-      "note": "铜价暴跌4.2%，金属矿业股领跌"
-    },
-    {
-      "name": "房地产",
-      "name_en": "Real Estate",
-      "etf": "XLRE",
-      "change_pct": "-1.25%",
-      "direction": "down",
-      "note": "债券收益率飙升打击REITs，利率敏感型板块承压"
+      "note": "铜价虽创三月新高但板块整体承压"
     },
     {
       "name": "公用事业",
       "name_en": "Utilities",
       "etf": "XLU",
-      "change_pct": "-2.40%",
+      "change_pct": "-2.4%",
       "direction": "down",
-      "note": "高收益债券替代效应，公用事业失去避险魅力"
+      "note": "利率敏感板块受高收益率拖累"
+    },
+    {
+      "name": "工业",
+      "name_en": "Industrials",
+      "etf": "XLI",
+      "change_pct": "-1.8%",
+      "direction": "down",
+      "note": "卡特彼勒跌4.08%领跌板块"
+    },
+    {
+      "name": "金融",
+      "name_en": "Financials",
+      "etf": "XLF",
+      "change_pct": "-0.8%",
+      "direction": "down",
+      "note": "收益率曲线变化对银行股影响分化"
+    },
+    {
+      "name": "医疗保健",
+      "name_en": "Health Care",
+      "etf": "XLV",
+      "change_pct": "-1.2%",
+      "direction": "down",
+      "note": "再生元跌11.4%拖累板块"
+    },
+    {
+      "name": "可选消费",
+      "name_en": "Consumer Discretionary",
+      "etf": "XLY",
+      "change_pct": "-2.0%",
+      "direction": "down",
+      "note": "等待本周零售财报指引，消费者信心受通胀影响"
+    },
+    {
+      "name": "必需消费",
+      "name_en": "Consumer Staples",
+      "etf": "XLP",
+      "change_pct": "-0.3%",
+      "direction": "down",
+      "note": "防御性板块相对抗跌"
+    },
+    {
+      "name": "通讯服务",
+      "name_en": "Communication Services",
+      "etf": "XLC",
+      "change_pct": "-0.8%",
+      "direction": "down",
+      "note": "Meta和Alphabet微跌，板块受大型股集中度高影响"
+    },
+    {
+      "name": "房地产",
+      "name_en": "Real Estate",
+      "etf": "XLRE",
+      "change_pct": "-1.3%",
+      "direction": "down",
+      "note": "高利率环境持续打压REITs"
     }
   ],
   "central_banks": [
     {
       "bank": "美联储",
       "bank_en": "Federal Reserve",
-      "action": "维持利率5.25-5.50%不变",
+      "action": "维持利率3.50-3.75%不变",
       "next_meeting": "2026-06-17",
-      "rate": "5.25-5.50%",
+      "rate": "3.50-3.75%",
       "bias": "hawkish",
-      "note": "新主席Kevin Warsh接任，4月会议4票反对创1992年来最多，2026年降息概率归零，45%概率加息"
+      "note": "鲍威尔5月15日卸任，Kevin Warsh提名受阻。4月会议维持利率，强调需观察美伊战争和关税对通胀影响，2026年PCE通胀预期上调至2.7%"
     },
     {
       "bank": "欧洲央行",
       "bank_en": "European Central Bank",
-      "action": "维持主要再融资利率3.75%",
+      "action": "维持存款利率3.00%",
       "next_meeting": "2026-06-06",
-      "rate": "3.75%",
+      "rate": "3.00%",
       "bias": "neutral",
-      "note": "欧元区通胀降至2.4%，但劳动力市场紧张，央行谨慎评估降息时机"
+      "note": "欧元区通胀回落，但劳动力市场强劲，央行保持观望"
     },
     {
       "bank": "中国人民银行",
       "bank_en": "People's Bank of China",
       "action": "维持LPR不变",
-      "next_meeting": "2026-06-20",
+      "next_meeting": "2026-05-20",
       "rate": "1年期LPR 3.45%",
       "bias": "dovish",
-      "note": "4月经济数据疲软，人民币升至三年高位，央行面临稳增长和稳汇率双重压力"
+      "note": "保持宽松立场支持经济复苏，但人民币汇率压力限制降息空间"
     },
     {
       "bank": "日本央行",
       "bank_en": "Bank of Japan",
-      "action": "维持政策利率0.10%",
+      "action": "维持政策利率0.25%",
       "next_meeting": "2026-06-13",
-      "rate": "0.10%",
+      "rate": "0.25%",
       "bias": "neutral",
-      "note": "日元贬值压力缓解，企业盈利预期改善，花旗ERI指数0.38领先全球主要市场"
+      "note": "日元兑美元在145附近波动，央行密切关注汇率和通胀动态"
     }
   ],
   "calendar": [
     {
-      "date": "周一 5/18",
-      "time_et": "8:30 AM ET",
-      "event": "Empire State制造业指数",
-      "impact": "medium",
-      "previous": "11.0",
-      "forecast": "6.2"
-    },
-    {
       "date": "周二 5/19",
-      "time_et": "8:30 AM ET",
-      "event": "新屋开工和建筑许可 (4月)",
+      "time_et": "08:30 AM",
+      "event": "家得宝财报",
       "impact": "high",
-      "previous": "1.32M",
-      "forecast": "1.35M"
-    },
-    {
-      "date": "周二 5/19",
-      "time_et": "10:00 AM ET",
-      "event": "成屋待完成销售指数",
-      "impact": "medium",
-      "previous": "82.5",
-      "forecast": "83.0"
+      "previous": "待查",
+      "forecast": "待查"
     },
     {
       "date": "周三 5/20",
-      "time_et": "2:00 PM ET",
-      "event": "FOMC会议纪要 (4月会议)",
+      "time_et": "02:00 PM",
+      "event": "FOMC会议纪要（4月会议）",
       "impact": "high",
-      "previous": "-",
-      "forecast": "-"
+      "previous": "鲍威尔最后一次会议",
+      "forecast": "市场关注委员分歧和新主席Kevin Warsh立场"
     },
     {
       "date": "周三 5/20",
       "time_et": "盘后",
       "event": "英伟达Q1财报",
       "impact": "high",
-      "previous": "EPS $1.45",
-      "forecast": "EPS $1.78"
+      "previous": "EPS超预期但股价下跌",
+      "forecast": "EPS 1.77美元，营收780亿美元"
     },
     {
-      "date": "周四 5/21",
-      "time_et": "8:30 AM ET",
-      "event": "初请失业金人数",
+      "date": "周三 5/20",
+      "time_et": "盘前",
+      "event": "塔吉特财报",
       "impact": "medium",
-      "previous": "225K",
-      "forecast": "230K"
-    },
-    {
-      "date": "周四 5/21",
-      "time_et": "8:30 AM ET",
-      "event": "费城联储制造业指数",
-      "impact": "medium",
-      "previous": "15.2",
-      "forecast": "13.8"
+      "previous": "待查",
+      "forecast": "可选消费健康度晴雨表"
     },
     {
       "date": "周四 5/21",
       "time_et": "盘前",
       "event": "沃尔玛Q1财报",
       "impact": "high",
-      "previous": "EPS $1.53",
-      "forecast": "EPS $1.65"
+      "previous": "待查",
+      "forecast": "EPS 0.65美元，营收1725亿美元"
     },
     {
       "date": "周五 5/22",
-      "time_et": "10:00 AM ET",
-      "event": "密歇根消费者信心指数(终值)",
+      "time_et": "09:45 AM",
+      "event": "美国5月PMI初值",
       "impact": "medium",
-      "previous": "67.4",
-      "forecast": "68.0"
+      "previous": "待查",
+      "forecast": "制造业和服务业活动指标"
     },
     {
-      "date": "周五 5/23",
-      "time_et": "全天",
-      "event": "美国阵亡将士纪念日休市",
-      "impact": "high",
-      "previous": "-",
-      "forecast": "-"
+      "date": "周五 5/22",
+      "time_et": "10:00 AM",
+      "event": "成屋销售（4月）",
+      "impact": "medium",
+      "previous": "待查",
+      "forecast": "高房贷利率持续打压房屋销售"
     }
   ],
   "watchlist_analysis": [
     {
       "ticker": "NVDA",
       "name": "英伟达",
-      "price": "212.50",
-      "change_pct": "-4.4%",
+      "price": "227.75",
+      "change_pct": "-1.33%",
       "direction": "down",
       "signal": "HOLD",
       "score": 72,
-      "conclusion": "财报前谨慎，长期AI趋势不变",
-      "key_driver": "周三财报预期营收780亿，Blackwell订单需求超1万亿，但短期技术面过热",
-      "target_up": "236",
-      "target_down": "195",
+      "conclusion": "财报前观望，波动加剧",
+      "key_driver": "周三盘后财报是最大催化剂，预期和仓位极度拥挤，即使超预期也可能'利好出尽'",
+      "target_up": "250",
+      "target_down": "210",
       "risk_level": "high",
-      "action": "周三财报前持仓观望，不建议追涨。若财报超预期可突破236美元新高，否则回调至200美元支撑。RSI 72.4显示1月timeframe严重超买，历史上此水平后通常回调。",
+      "action": "建议持有者在财报前减半仓位或买入保护性看跌期权对冲，财报后再根据指引决定。空仓者等财报后再进场",
       "tags": [
         "#AI",
-        "#半导体",
         "#财报"
       ]
     },
     {
       "ticker": "QQQ",
       "name": "纳斯达克100 ETF",
-      "price": "498.25",
-      "change_pct": "-0.5%",
+      "price": "707.75",
+      "change_pct": "-0.51%",
       "direction": "down",
       "signal": "HOLD",
       "score": 65,
-      "conclusion": "科技股高位震荡，等待方向明确",
-      "key_driver": "英伟达财报和债券收益率是关键变量，AI板块占比过高增加波动性",
-      "target_up": "515",
-      "target_down": "475",
+      "conclusion": "科技股短期承压但中期趋势未破",
+      "key_driver": "10年期美债收益率破4.6%打压估值，但AI投资周期仍完整，回调是加仓机会",
+      "target_up": "727",
+      "target_down": "690",
       "risk_level": "medium",
-      "action": "持有但不加仓，50日均线505美元是关键支撑。若英伟达财报不及预期，可能快速回调至480美元。建议配置10-15%对冲仓位或买入VIX看涨期权。",
+      "action": "短线交易者可在690-695区间分批建仓，长线投资者无需操作，回撤5-8%是正常技术调整",
       "tags": [
-        "#科技ETF",
-        "#纳斯达克",
-        "#波动"
+        "#科技",
+        "#ETF"
       ]
     },
     {
       "ticker": "SPY",
       "name": "标普500 ETF",
-      "price": "740.85",
-      "change_pct": "-1.2%",
+      "price": "737.50",
+      "change_pct": "-0.07%",
       "direction": "down",
       "signal": "HOLD",
       "score": 68,
-      "conclusion": "大盘高位回落，防守为上",
-      "key_driver": "VIX升至18.4，地缘风险和通胀担忧压制估值，但盈利增长仍支撑",
-      "target_up": "760",
-      "target_down": "715",
+      "conclusion": "大盘在高位盘整，等待方向",
+      "key_driver": "英伟达财报和零售财报将决定短期方向，技术面737-742区间是关键支撑",
+      "target_up": "753",
+      "target_down": "720",
       "risk_level": "medium",
-      "action": "周四SPY RSI达78后周五大跌1.2%，历史统计显示此情况后5-40日平均负回报。建议减仓10-20%，将资金转向防守性板块或现金。200日均线720美元是强支撑。",
+      "action": "持有为主，若跌破730考虑减仓10-15%，突破750可加仓至满仓",
       "tags": [
         "#大盘",
-        "#标普500",
-        "#风险"
+        "#ETF"
       ]
     },
     {
       "ticker": "BTC-USD",
       "name": "比特币",
-      "price": "76,220",
-      "change_pct": "-2.3%",
+      "price": "77,076",
+      "change_pct": "-1.13%",
       "direction": "down",
       "signal": "SELL",
-      "score": 42,
-      "conclusion": "加密货币跟随纳指下跌，避险情绪升温",
-      "key_driver": "美债收益率飙升抽离风险资产流动性，机构资金流出加密货币ETF",
-      "target_up": "82,000",
-      "target_down": "68,000",
+      "score": 45,
+      "conclusion": "风险资产属性强化，短期承压",
+      "key_driver": "美债收益率飙升令流动性收紧，比特币表现更像高beta科技股而非避险资产，85.4%相关性与纳指同步",
+      "target_up": "82000",
+      "target_down": "72000",
       "risk_level": "high",
-      "action": "短期技术面走弱，50日均线78,000美元失守。建议减仓或止损，等待75,000美元支撑企稳再考虑回补。避险情绪下比特币与科技股相关性增强，不再是对冲工具。",
+      "action": "建议减仓至30%以下仓位，等待油价回落和美联储立场明朗后再配置，短期支撑72000-75000区间",
       "tags": [
         "#加密货币",
-        "#比特币",
         "#风险资产"
       ]
     },
     {
       "ticker": "510300.SS",
       "name": "沪深300 ETF",
-      "price": "4.829",
-      "change_pct": "-0.6%",
-      "direction": "down",
+      "price": "4.12",
+      "change_pct": "+0.05%",
+      "direction": "up",
       "signal": "HOLD",
       "score": 58,
-      "conclusion": "A股结构性机会，宏观压力犹存",
-      "key_driver": "AI产业链逆势强势，但消费和地产疲弱限制大盘空间",
-      "target_up": "5.10",
-      "target_down": "4.60",
+      "conclusion": "A股独立行情有限，观望为主",
+      "key_driver": "国内政策支持vs外部需求疲软，人民币汇率压力限制央行宽松空间",
+      "target_up": "4.35",
+      "target_down": "3.95",
       "risk_level": "medium",
-      "action": "持有AI半导体个股如中际旭创、北方华创，避免大盘指数ETF。若英伟达财报强劲，A股科技股将受益。关注政策面刺激消费的新举措，可能触发短期反弹。",
+      "action": "建议北美投资者保持低配（不超过组合10%），等待更明确政策信号，短期3.95-4.20区间震荡",
       "tags": [
         "#A股",
-        "#沪深300",
-        "#结构分化"
+        "#中国"
       ]
     },
     {
       "ticker": "GC=F",
-      "name": "黄金",
-      "price": "4,537.79",
-      "change_pct": "-0.2%",
-      "direction": "down",
+      "name": "黄金期货",
+      "price": "4,576",
+      "change_pct": "+0.39%",
+      "direction": "up",
       "signal": "BUY",
-      "score": 75,
-      "conclusion": "地缘避险需求支撑，中期看涨",
-      "key_driver": "伊朗战争升级和美元走弱利好黄金，央行持续购金",
-      "target_up": "4,800",
-      "target_down": "4,400",
+      "score": 78,
+      "conclusion": "2026年最强避险资产，回调是机会",
+      "key_driver": "今年涨65%远超比特币，央行持续购金、美元疲软和地缘风险支撑，较1月高点5595美元回撤13%属健康调整",
+      "target_up": "5000",
+      "target_down": "4350",
       "risk_level": "low",
-      "action": "周一金价因油价抢镜回调，但4,500美元支撑坚固。建议配置5-10%黄金资产对冲地缘和通胀风险。若伊朗局势恶化，金价有望突破4,800美元历史新高。",
+      "action": "建议配置组合5-10%，4350-4500区间分批加仓，长期目标高盛预期4900美元",
       "tags": [
         "#黄金",
-        "#避险",
-        "#大宗商品"
+        "#避险"
       ]
     },
     {
       "ticker": "CL=F",
-      "name": "WTI原油",
-      "price": "102.87",
-      "change_pct": "+1.8%",
+      "name": "WTI原油期货",
+      "price": "101.02",
+      "change_pct": "+4.20%",
       "direction": "up",
-      "signal": "BUY",
-      "score": 80,
-      "conclusion": "地缘溢价持续，油价中期上行",
-      "key_driver": "特朗普对伊朗最后通牒，霍尔木兹海峡供应风险推升油价",
-      "target_up": "115",
-      "target_down": "95",
+      "signal": "SELL",
+      "score": 52,
+      "conclusion": "地缘溢价过高，谨慎获利",
+      "key_driver": "美伊谈判令油价从104美元回落，但谈判破裂风险仍存。历史显示油价高峰往往对应加密货币底部",
+      "target_up": "110",
+      "target_down": "90",
       "risk_level": "high",
-      "action": "能源板块是当前唯一强势板块，XLE ETF涨2.3%。油价有望测试115美元，但需警惕伊朗达成协议导致暴跌风险。建议通过期权或XLE配置，避免过度杠杆。",
+      "action": "建议能源股持有者部分获利（减仓30-50%），若谈判成功油价可能回落至90美元，可在85-90区间重新配置",
       "tags": [
-        "#原油",
         "#能源",
         "#地缘政治"
       ]
@@ -779,21 +684,20 @@
     {
       "ticker": "TSLA",
       "name": "特斯拉",
-      "price": "422.24",
-      "change_pct": "-4.7%",
+      "price": "418.57",
+      "change_pct": "-0.2%",
       "direction": "down",
       "signal": "HOLD",
-      "score": 55,
-      "conclusion": "马斯克忙于SpaceX上市，特斯拉缺乏催化",
-      "key_driver": "Model Y涨价1000美元，但中美峰会未达成协议打击中国市场前景",
-      "target_up": "475",
-      "target_down": "385",
-      "risk_level": "high",
-      "action": "特斯拉从498美元高点回调15%，技术面走弱。SpaceX 6月12日IPO可能分散马斯克精力，传闻两公司合并增加不确定性。建议持有观望，等待400美元强支撑。",
+      "score": 60,
+      "conclusion": "马斯克诉讼落地，基本面关注产销",
+      "key_driver": "马斯克诉OpenAI败诉消除不确定性，但传闻SpaceX-特斯拉合并引发估值疑问，周六Model Y涨价1000美元是正面信号",
+      "target_up": "455",
+      "target_down": "380",
+      "risk_level": "medium",
+      "action": "380-400区间是支撑位可考虑建仓，突破450有望测试年内高点498美元，但仓位控制在5%以内",
       "tags": [
         "#电动车",
-        "#特斯拉",
-        "#马斯克"
+        "#特斯拉"
       ]
     }
   ],
@@ -801,60 +705,60 @@
     "subject": "标普500 本周展望",
     "bull_case": [
       {
-        "point": "英伟达财报若超预期将引领科技股反弹",
-        "confidence": "high"
-      },
-      {
-        "point": "Q1财报季79.6%公司盈利超预期，基本面强劲",
-        "confidence": "high"
-      },
-      {
-        "point": "能源板块强势对冲科技股回调风险",
+        "point": "英伟达财报超预期将带动AI产业链上涨",
         "confidence": "medium"
+      },
+      {
+        "point": "美伊谈判进展缓解油价和通胀压力",
+        "confidence": "medium"
+      },
+      {
+        "point": "零售财报若强劲验证消费韧性，支撑经济软着陆",
+        "confidence": "low"
       }
     ],
     "bear_case": [
       {
-        "point": "VIX升至18.4，技术面超买后回调压力大",
+        "point": "10年期美债收益率破4.6%持续打压估值",
         "confidence": "high"
       },
       {
-        "point": "30年期美债收益率破5%压制成长股估值",
+        "point": "英伟达即使超预期也可能'利好出尽'，预期过高",
         "confidence": "high"
       },
       {
-        "point": "伊朗战争推升油价至110美元，滞胀风险上升",
-        "confidence": "high"
+        "point": "美伊谈判破裂将令油价重回110美元以上",
+        "confidence": "medium"
       }
     ],
-    "verdict": "短期震荡偏弱，建议降低仓位至70-75%。英伟达财报是关键变盘点，若超预期可重回看多，否则回调至7,200点支撑。配置建议：40%科技（等财报）、25%能源、20%防守（医疗、必需消费）、15%现金或黄金。",
-    "verdict_lean": "bearish"
+    "verdict": "本周标普500可能在7350-7450区间震荡，英伟达财报是最大变量。若财报超预期且指引强劲，有望突破7500；若令人失望，可能回踩7250-7300支撑。建议降低仓位至80%，保留现金应对波动，英伟达财报后再决定加仓或减仓方向。",
+    "verdict_lean": "neutral"
   },
   "market_replay": {
     "us": {
       "date": "2026年5月18日",
-      "advance": "1,285",
-      "decline": "3,456",
-      "new_high": "127",
-      "new_low": "215",
+      "advance": "1820",
+      "decline": "3240",
+      "new_high": "85",
+      "new_low": "42",
       "top_sectors": [
-        "能源",
-        "必需消费"
+        "能源 +2.3%",
+        "必需消费 -0.3%"
       ],
-      "hot_stock": "LiveRamp(RAMP) +27%，Publicis收购",
-      "volume_note": "成交193.2亿股，高于20日均值181.3亿，恐慌抛售增加",
-      "summary": "美股全线收跌，能源独涨，VIX飙升至18.4，避险情绪浓厚"
+      "hot_stock": "LiveRamp(RAMP) +27%（Publicis 25亿美元全现金收购）",
+      "volume_note": "成交量略高于20日均值，显示英伟达财报前谨慎情绪",
+      "summary": "道指一枝独秀涨0.32%，科技股拖累纳指跌0.51%"
     },
     "cn": {
       "date": "2026年5月18日",
-      "sh_index": "4,143.00",
-      "sh_change": "+0.20%",
-      "advance": "2,187",
-      "decline": "1,953",
-      "net_inflow": "+28亿",
-      "hot_sector": "半导体芯片",
-      "hot_stock": "华工科技(Huagong Tech) +10%",
-      "summary": "A股微涨，科技股逆势强势，北向资金净流入押注AI行情"
+      "sh_index": "4137.97",
+      "sh_change": "+0.06%",
+      "advance": "2800",
+      "decline": "1500",
+      "net_inflow": "+18亿",
+      "hot_sector": "半导体设备",
+      "hot_stock": "蒙娜丽莎连板，利仁科技4连板",
+      "summary": "A股微涨，沪指守住4100点，北向资金小幅流入"
     }
   }
 }
