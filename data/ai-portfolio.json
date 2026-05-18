@@ -22,13 +22,18 @@
         },
         {
           "ticker": "TLT",
-          "shares": 30,
+          "shares": 15,
           "avg_cost": 83.66
+        },
+        {
+          "ticker": "XLE",
+          "shares": 19,
+          "avg_cost": 60.58
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1162.67
+          "avg_cost": 1265.05
         }
       ],
       "history": [
@@ -186,6 +191,46 @@
             }
           ],
           "note": "科技股创新高后回调，全面减仓转防御，配置黄金债券避险，保留少量大盘敞口"
+        },
+        {
+          "date": "2026-05-18",
+          "portfolio_value": 9945.92,
+          "baseline_value": 9993.64,
+          "cash": 1265.05,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 418.43,
+              "value": 6276.45
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 83.56,
+              "value": 1253.4
+            },
+            "XLE": {
+              "shares": 19,
+              "price": 60.58,
+              "value": 1151.02
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLE",
+              "shares": 19,
+              "price": 60.58,
+              "reason": "油价突破110美元，能源板块受益于地缘风险溢价"
+            },
+            {
+              "action": "SELL",
+              "ticker": "TLT",
+              "shares": 15,
+              "price": 83.56,
+              "reason": "能源通胀预期推迟降息，债券承压，减仓一半"
+            }
+          ],
+          "note": "地缘风险升温，增配能源对冲通胀，减持债券转防御"
         }
       ]
     },
@@ -196,24 +241,19 @@
       "provider": "openai",
       "holdings": [
         {
-          "ticker": "NVDA",
-          "shares": 10,
-          "avg_cost": 226.095
-        },
-        {
           "ticker": "GLD",
-          "shares": 5,
-          "avg_cost": 417.29
+          "shares": 10,
+          "avg_cost": 417.86
         },
         {
           "ticker": "XLE",
-          "shares": 50,
-          "avg_cost": 59.44
+          "shares": 60,
+          "avg_cost": 59.63
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2626.97
+          "avg_cost": 2152.22
         }
       ],
       "history": [
@@ -340,6 +380,48 @@
             }
           ],
           "note": "减持科技股，增加避险和能源配置，降低组合波动性"
+        },
+        {
+          "date": "2026-05-18",
+          "portfolio_value": 9971.32,
+          "baseline_value": 9993.64,
+          "cash": 2152.22,
+          "positions": {
+            "GLD": {
+              "shares": 10,
+              "price": 418.43,
+              "value": 4184.3
+            },
+            "XLE": {
+              "shares": 60,
+              "price": 60.58,
+              "value": 3634.8
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "NVDA",
+              "shares": 10,
+              "price": 222.32,
+              "reason": "市场波动加大，科技股短期风险增加，降低科技股持仓"
+            },
+            {
+              "action": "BUY",
+              "ticker": "GLD",
+              "shares": 5,
+              "price": 418.43,
+              "reason": "地缘政治风险上升，黄金作为避险资产增加配置"
+            },
+            {
+              "action": "BUY",
+              "ticker": "XLE",
+              "shares": 10,
+              "price": 60.58,
+              "reason": "油价上涨，能源板块受益，增加能源股持仓"
+            }
+          ],
+          "note": "减持科技股，增持黄金和能源股以对冲地缘政治风险"
         }
       ]
     }
