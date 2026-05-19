@@ -21,11 +21,6 @@
           "avg_cost": 417.29
         },
         {
-          "ticker": "TLT",
-          "shares": 15,
-          "avg_cost": 83.66
-        },
-        {
           "ticker": "XLE",
           "shares": 19,
           "avg_cost": 60.58
@@ -33,7 +28,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1265.05
+          "avg_cost": 2510.35
         }
       ],
       "history": [
@@ -231,6 +226,34 @@
             }
           ],
           "note": "地缘风险升温，增配能源对冲通胀，减持债券转防御"
+        },
+        {
+          "date": "2026-05-19",
+          "portfolio_value": 9847.36,
+          "baseline_value": 9927.07,
+          "cash": 2510.35,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 411.5,
+              "value": 6172.5
+            },
+            "XLE": {
+              "shares": 19,
+              "price": 61.29,
+              "value": 1164.51
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "TLT",
+              "shares": 15,
+              "price": 83.02,
+              "reason": "通胀预期升温，债券承压，释放资金配置科技股"
+            }
+          ],
+          "note": "减持债券释放流动性，明日英伟达财报前保持现金储备，等待AI龙头业绩指引后再部署"
         }
       ]
     },
@@ -241,19 +264,19 @@
       "provider": "openai",
       "holdings": [
         {
-          "ticker": "GLD",
-          "shares": 10,
-          "avg_cost": 417.86
-        },
-        {
           "ticker": "XLE",
           "shares": 60,
           "avg_cost": 59.63
         },
         {
+          "ticker": "NVDA",
+          "shares": 10,
+          "avg_cost": 220.61
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2152.22
+          "avg_cost": 4061.12
         }
       ],
       "history": [
@@ -422,6 +445,41 @@
             }
           ],
           "note": "减持科技股，增持黄金和能源股以对冲地缘政治风险"
+        },
+        {
+          "date": "2026-05-19",
+          "portfolio_value": 9944.62,
+          "baseline_value": 9927.07,
+          "cash": 4061.12,
+          "positions": {
+            "XLE": {
+              "shares": 60,
+              "price": 61.29,
+              "value": 3677.4
+            },
+            "NVDA": {
+              "shares": 10,
+              "price": 220.61,
+              "value": 2206.1
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "GLD",
+              "shares": 10,
+              "price": 411.5,
+              "reason": "科技股短期波动加剧，调整组合结构，释放现金"
+            },
+            {
+              "action": "BUY",
+              "ticker": "NVDA",
+              "shares": 10,
+              "price": 220.61,
+              "reason": "市场聚焦英伟达财报，预期有积极表现"
+            }
+          ],
+          "note": "调整组合，增加英伟达持仓，期待财报利好"
         }
       ]
     }
