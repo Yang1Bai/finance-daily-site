@@ -254,6 +254,26 @@
             }
           ],
           "note": "减持债券释放流动性，明日英伟达财报前保持现金储备，等待AI龙头业绩指引后再部署"
+        },
+        {
+          "date": "2026-05-20",
+          "portfolio_value": 9907.55,
+          "baseline_value": 10028.82,
+          "cash": 2510.35,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 417.4,
+              "value": 6261.0
+            },
+            "XLE": {
+              "shares": 19,
+              "price": 59.8,
+              "value": 1136.2
+            }
+          },
+          "trades": [],
+          "note": "减持债券释放流动性，明日英伟达财报前保持现金储备，等待AI龙头业绩指引后再部署"
         }
       ]
     },
@@ -269,14 +289,14 @@
           "avg_cost": 59.63
         },
         {
-          "ticker": "NVDA",
+          "ticker": "AAPL",
           "shares": 10,
-          "avg_cost": 220.61
+          "avg_cost": 302.25
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 4061.12
+          "avg_cost": 3273.32
         }
       ],
       "history": [
@@ -480,6 +500,41 @@
             }
           ],
           "note": "调整组合，增加英伟达持仓，期待财报利好"
+        },
+        {
+          "date": "2026-05-20",
+          "portfolio_value": 9883.82,
+          "baseline_value": 10028.82,
+          "cash": 3273.32,
+          "positions": {
+            "XLE": {
+              "shares": 60,
+              "price": 59.8,
+              "value": 3588.0
+            },
+            "AAPL": {
+              "shares": 10,
+              "price": 302.25,
+              "value": 3022.5
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "NVDA",
+              "shares": 10,
+              "price": 223.47,
+              "reason": "英伟达财报前减持，规避风险"
+            },
+            {
+              "action": "BUY",
+              "ticker": "AAPL",
+              "shares": 10,
+              "price": 302.25,
+              "reason": "苹果估值合理，长期增长潜力"
+            }
+          ],
+          "note": "减持英伟达规避财报风险，增持苹果看好长期潜力。"
         }
       ]
     }
