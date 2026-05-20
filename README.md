@@ -1,8 +1,55 @@
-# 📈 金融日报 | Financial Daily
+# 📈 Financial Daily | 金融日报
+
+> **[English](#english) | [中文](#中文)**
+
+<a name="english"></a>
+## 🇬🇧 English
+
+An automated daily financial market summary powered by Claude API + Web Search, covering 7 modules: **Global Indices · Leader Insights · Market News · Macro Data · Earnings · Sector Rotation · Central Banks**
+
+### 🌐 Access
+
+**Live Site:** https://yang1bai.github.io/finance-daily-site/
+
+**Archive:** https://yang1bai.github.io/finance-daily-site/archive/
+
+**RSS Feed:** https://yang1bai.github.io/finance-daily-site/feed.xml
+
+### ✨ Features
+
+- 🤖 **Claude API + Web Search** — real-time daily data, not cached
+- 🔗 **Source links** — every news item links to original article
+- 📅 **Timestamped quotes** — leader opinions with publication dates
+- 📁 **Daily archive** — HTML snapshots + raw JSON for every day
+
+### 📊 Modules
+
+| Module | Description |
+|--------|-------------|
+| 💹 **Global Indices** | S&P 500 / NASDAQ / DOW / SSE / Hang Seng / Nikkei / DAX / Gold / Oil / BTC |
+| 👔 **Leader Insights** | Latest views from Buffett, Dalio, Dimon, and other financial leaders |
+| 📰 **Market News** | Top daily market-moving stories |
+| 📊 **Macro Data** | CPI, employment, GDP, Fed rate decisions |
+| 💼 **Earnings** | Key corporate earnings highlights |
+| 🔄 **Sector Rotation** | Which sectors are leading/lagging |
+| 🏦 **Central Banks** | Fed, ECB, PBoC policy updates |
+
+### 🛠️ How It Works
+
+Automated GitHub Actions workflow runs daily, calls Claude API with web search, generates HTML report, and deploys to GitHub Pages.
+
+### 📝 License
+
+MIT License
+
+---
+
+<a name="中文"></a>
+## 🇨🇳 中文
 
 每日由 Claude API + Web Search 自动汇总七大模块：**全球指数** · **领袖观点** · **市场要闻** · **宏观数据** · **财报追踪** · **行业轮动** · **央行动态**
 
-## 在线访问
+### 在线访问
 
 **主站：** https://yang1bai.github.io/finance-daily-site/
 
@@ -12,7 +59,7 @@
 
 ---
 
-## 功能模块
+### 功能模块
 
 | 模块 | 说明 |
 |------|------|
@@ -26,7 +73,7 @@
 
 ---
 
-## 架构
+### 架构
 
 ```
 .
@@ -49,9 +96,9 @@
 
 ---
 
-## 部署清单（按顺序操作一次即可）
+### 部署清单（按顺序操作一次即可）
 
-### 1. 推送代码到仓库
+#### 1. 推送代码到仓库
 
 将本目录所有文件推送到你的 GitHub 仓库 `main` 分支。注意 `.nojekyll` 是隐藏文件别遗漏。
 
@@ -63,28 +110,28 @@ git remote add origin https://github.com/Yang1Bai/finance-daily-site.git
 git push -u origin main
 ```
 
-### 2. 配置 Anthropic API Key
+#### 2. 配置 Anthropic API Key
 
 仓库 → **Settings → Secrets and variables → Actions** → **New repository secret**：
 
 - **Name**：`ANTHROPIC_API_KEY`
 - **Secret**：粘贴你的 API key（以 `sk-ant-` 开头）
 
-### 3. 打开 Actions 写权限
+#### 3. 打开 Actions 写权限
 
 仓库 → **Settings → Actions → General** → 滚到底 → **Workflow permissions** → 选 **Read and write permissions** → Save。
 
-### 4. 启用 GitHub Pages
+#### 4. 启用 GitHub Pages
 
 仓库 → **Settings → Pages** → Source 选 *Deploy from a branch* → 分支 `main` / `(root)` → Save。
 
-### 5. 手动触发一次验证
+#### 5. 手动触发一次验证
 
 仓库 → **Actions** → 左侧 **Daily Financial Dashboard Update** → 右上 **Run workflow** → 点绿色按钮。等 1-2 分钟看到绿色 ✅ 后访问网站。
 
 ---
 
-## 成本估算
+### 成本估算
 
 模型默认 `claude-sonnet-4-5`，启用 `web_search`（最多 15 次）：
 
@@ -97,7 +144,7 @@ git push -u origin main
 
 ---
 
-## 自定义
+### 自定义
 
 - **调整内容偏好**：编辑 `scripts/fetch_content.py` 中的 `USER_PROMPT_TEMPLATE`
 - **修改运行时间**：编辑 `.github/workflows/update.yml` 中的 `cron` 表达式
@@ -105,7 +152,7 @@ git push -u origin main
 
 ---
 
-## 已知限制
+### 已知限制
 
 - 指数数据依赖 Claude web_search，非实时报价（有数分钟延迟）
 - 新闻 URL 为 Claude 搜索结果，偶尔可能失效
