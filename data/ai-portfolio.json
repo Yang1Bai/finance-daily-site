@@ -21,14 +21,19 @@
           "avg_cost": 417.29
         },
         {
-          "ticker": "XLE",
-          "shares": 19,
-          "avg_cost": 60.58
+          "ticker": "TLT",
+          "shares": 15,
+          "avg_cost": 84.22
+        },
+        {
+          "ticker": "SLV",
+          "shares": 20,
+          "avg_cost": 69.45
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2510.35
+          "avg_cost": 981.52
         }
       ],
       "history": [
@@ -274,6 +279,53 @@
           },
           "trades": [],
           "note": "减持债券释放流动性，明日英伟达财报前保持现金储备，等待AI龙头业绩指引后再部署"
+        },
+        {
+          "date": "2026-05-21",
+          "portfolio_value": 9888.67,
+          "baseline_value": 10048.7,
+          "cash": 981.52,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 416.99,
+              "value": 6254.85
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 84.22,
+              "value": 1263.3
+            },
+            "SLV": {
+              "shares": 20,
+              "price": 69.45,
+              "value": 1389.0
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLE",
+              "shares": 19,
+              "price": 59.13,
+              "reason": "油价虽涨但通胀担忧加剧美联储加息预期，科技股承压风险加大，减持能源股转向防御"
+            },
+            {
+              "action": "BUY",
+              "ticker": "TLT",
+              "shares": 15,
+              "price": 84.22,
+              "reason": "市场恐慌情绪升温，长期国债作为避险资产配置对冲地缘风险"
+            },
+            {
+              "action": "BUY",
+              "ticker": "SLV",
+              "shares": 20,
+              "price": 69.45,
+              "reason": "通胀预期叠加地缘危机，白银作为贵金属补充配置增强防御"
+            }
+          ],
+          "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
         }
       ]
     },
@@ -284,19 +336,19 @@
       "provider": "openai",
       "holdings": [
         {
-          "ticker": "XLE",
-          "shares": 60,
-          "avg_cost": 59.63
+          "ticker": "GLD",
+          "shares": 10,
+          "avg_cost": 416.99
         },
         {
-          "ticker": "AAPL",
-          "shares": 10,
-          "avg_cost": 302.25
+          "ticker": "TLT",
+          "shares": 20,
+          "avg_cost": 84.22
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3273.32
+          "avg_cost": 4016.72
         }
       ],
       "history": [
@@ -535,6 +587,55 @@
             }
           ],
           "note": "减持英伟达规避财报风险，增持苹果看好长期潜力。"
+        },
+        {
+          "date": "2026-05-21",
+          "portfolio_value": 9871.02,
+          "baseline_value": 10048.7,
+          "cash": 4016.72,
+          "positions": {
+            "GLD": {
+              "shares": 10,
+              "price": 416.99,
+              "value": 4169.9
+            },
+            "TLT": {
+              "shares": 20,
+              "price": 84.22,
+              "value": 1684.4
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AAPL",
+              "shares": 10,
+              "price": 304.99,
+              "reason": "科技股短期回调风险，锁定部分利润"
+            },
+            {
+              "action": "SELL",
+              "ticker": "XLE",
+              "shares": 60,
+              "price": 59.13,
+              "reason": "油价上涨已反映在股价中，规避市场波动风险"
+            },
+            {
+              "action": "BUY",
+              "ticker": "GLD",
+              "shares": 10,
+              "price": 416.99,
+              "reason": "避险需求增加，黄金价格有上涨潜力"
+            },
+            {
+              "action": "BUY",
+              "ticker": "TLT",
+              "shares": 20,
+              "price": 84.22,
+              "reason": "美债收益率攀升，长期国债具备防御性"
+            }
+          ],
+          "note": "卖出科技和能源股，增持黄金和国债以应对市场波动"
         }
       ]
     }
