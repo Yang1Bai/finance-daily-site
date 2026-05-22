@@ -581,7 +581,37 @@
     ========================================================= */
     body.lang-en .zh-only { display: none !important; }
     body.lang-zh .en-only { display: none !important; }
+
+    /* =========================================================
+       HIDE GOOGLE TRANSLATE CHROME (keep translation, drop UI)
+    ========================================================= */
+    .goog-te-banner-frame,
+    .goog-te-balloon-frame,
+    #goog-gt-tt,
+    .goog-te-balloon-frame,
+    .goog-tooltip,
+    .goog-tooltip:hover,
+    .goog-text-highlight { display: none !important; }
+    .skiptranslate { display: none !important; }
+    body { top: 0 !important; }
+    iframe.goog-te-menu-frame { display: none !important; }
+    /* Prevent GT from injecting font-size changes on html */
+    html.translated-ltr, html.translated-rtl { margin-top: 0 !important; }
   </style>
+
+  <!-- Google Translate hidden widget -->
+  <div id="google_translate_element" style="display:none;visibility:hidden;position:absolute;width:0;height:0;"></div>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'zh-CN',
+        includedLanguages: 'en,zh-CN',
+        autoDisplay: false,
+        gaTrack: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 </head>
 <body>
 
@@ -3223,6 +3253,53 @@
       : '🏆 排行榜 · Leaderboard <span style="font-size:.68rem;color:var(--dimmed);margin-left:6px;">初始资金 $10,000 · 基线 SPY买入持有</span>';
 
     localStorage.setItem('fd-lang', lang);
+
+    // ── Google Translate for dynamic content ───────────────────
+    triggerGoogleTranslate(lang);
+  }
+
+  // ── Google Translate helper ─────────────────────────────────
+  var _gtRetries = 0;
+  function triggerGoogleTranslate(lang) {
+    var targetLang = lang === 'en' ? 'en' : 'zh-CN';
+
+    // Method 1: drive the hidden <select> that GT injects
+    function driveSelect() {
+      var sel = document.querySelector('.goog-te-combo');
+      if (sel) {
+        sel.value = targetLang;
+        sel.dispatchEvent(new Event('change', { bubbles: true }));
+        return true;
+      }
+      return false;
+    }
+
+    // Method 2: cookie + reload fallback
+    function cookieFallback() {
+      var exp = new Date();
+      exp.setTime(exp.getTime() + 30 * 24 * 60 * 60 * 1000);
+      var expStr = '; expires=' + exp.toUTCString() + '; path=/';
+      if (lang === 'en') {
+        document.cookie = 'googtrans=/zh-CN/en' + expStr;
+        document.cookie = 'googtrans=/zh-CN/en' + expStr + '; domain=.' + window.location.hostname;
+      } else {
+        document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.' + window.location.hostname;
+      }
+      // Small delay then reload so cookie takes effect
+      setTimeout(function() { window.location.reload(); }, 150);
+    }
+
+    // Try select-drive first; retry up to 8 times while GT loads
+    if (driveSelect()) { _gtRetries = 0; return; }
+    if (_gtRetries < 8) {
+      _gtRetries++;
+      setTimeout(function() { triggerGoogleTranslate(lang); }, 400);
+    } else {
+      // GT never loaded (e.g. blocked) — use cookie+reload
+      _gtRetries = 0;
+      cookieFallback();
+    }
   }
 
   window.toggleLang = function() {
@@ -3230,7 +3307,7 @@
     applyLang(current === 'zh' ? 'en' : 'zh');
   };
 
-  // Apply saved lang on load
+  // Apply saved lang on load (after DOM ready)
   var savedLang = localStorage.getItem('fd-lang') || 'zh';
   document.addEventListener('DOMContentLoaded', function() {
     applyLang(savedLang);
