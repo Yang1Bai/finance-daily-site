@@ -478,9 +478,136 @@
     ========================================================= */
     .tradingview-widget-container { border-radius:var(--r); overflow:hidden; }
     .section-block { margin-bottom: 16px; }
+
+    /* =========================================================
+       INTRO OVERLAY ANIMATION
+    ========================================================= */
+    #intro-overlay {
+      position: fixed; inset: 0; z-index: 10000;
+      background: #030609;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; overflow: hidden;
+      transition: opacity .7s ease;
+    }
+    #intro-overlay.fade-out { opacity: 0; pointer-events: none; }
+    #intro-overlay.gone { display: none; }
+    #intro-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #intro-content {
+      position: relative; z-index: 2;
+      display: flex; flex-direction: column; align-items: center; gap: 18px;
+      text-align: center; padding: 0 20px;
+    }
+    .intro-badge {
+      font-size: .62rem; font-family: var(--mono); letter-spacing: .15em;
+      color: var(--accent); border: 1px solid rgba(0,212,170,.3);
+      background: rgba(0,212,170,.08); padding: 4px 14px; border-radius: 20px;
+      animation: fadeUp .6s .4s both;
+    }
+    .intro-logo {
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      animation: fadeUp .7s .7s both;
+    }
+    .intro-title-zh {
+      font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 900;
+      background: linear-gradient(135deg, #00d4aa, #4fc3f7, #00d4aa);
+      background-size: 200% 200%;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; animation: shimmer 3s ease infinite;
+      letter-spacing: -.03em;
+    }
+    .intro-title-en {
+      font-size: clamp(.9rem, 2.5vw, 1.4rem); font-weight: 300;
+      color: rgba(226,232,240,.55); letter-spacing: .25em;
+      text-transform: uppercase; font-family: var(--mono);
+    }
+    @keyframes shimmer {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .intro-sub {
+      font-size: .7rem; color: var(--muted); font-family: var(--mono);
+      letter-spacing: .08em;
+      animation: fadeUp .6s 1s both;
+    }
+    .intro-ticker-row {
+      display: flex; gap: 18px; flex-wrap: wrap; justify-content: center;
+      animation: fadeUp .6s 1.2s both;
+    }
+    .intro-tick {
+      font-family: var(--mono); font-size: .72rem;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+      border-radius: 6px; padding: 5px 12px; white-space: nowrap;
+    }
+    .intro-tick .it-name { color: var(--muted); font-size: .58rem; display: block; margin-bottom: 2px; }
+    .intro-tick .it-val  { color: var(--text); font-weight: 600; }
+    .intro-tick .it-chg  { margin-left: 6px; font-size: .65rem; }
+    .intro-tick .it-chg.up   { color: var(--up); }
+    .intro-tick .it-chg.down { color: var(--down); }
+    #intro-skip {
+      font-size: .7rem; color: var(--muted); background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.1); border-radius: 20px;
+      padding: 6px 18px; cursor: pointer; font-family: var(--sans);
+      transition: color .15s, border-color .15s;
+      animation: fadeUp .5s 1.6s both;
+    }
+    #intro-skip:hover { color: var(--accent); border-color: rgba(0,212,170,.4); }
+    #intro-progress {
+      position: absolute; bottom: 0; left: 0; height: 2px;
+      background: linear-gradient(90deg, var(--accent), #4fc3f7);
+      width: 0%; transition: width linear;
+    }
+
+    /* =========================================================
+       LANG TOGGLE
+    ========================================================= */
+    #lang-btn {
+      display: flex; align-items: center; gap: 0;
+      background: rgba(255,255,255,.04); border: 1px solid var(--border);
+      border-radius: 20px; overflow: hidden; cursor: pointer;
+      font-size: .62rem; font-family: var(--mono);
+      transition: border-color .15s;
+      flex-shrink: 0;
+    }
+    #lang-btn:hover { border-color: var(--border-l); }
+    .lang-opt {
+      padding: 3px 9px; transition: background .15s, color .15s;
+      color: var(--muted);
+    }
+    .lang-opt.active { background: rgba(0,212,170,.15); color: var(--accent); }
+
+    /* =========================================================
+       I18N: hide/show per lang
+    ========================================================= */
+    body.lang-en .zh-only { display: none !important; }
+    body.lang-zh .en-only { display: none !important; }
   </style>
 </head>
 <body>
+
+<!-- =========================================================
+     INTRO OVERLAY
+========================================================= -->
+<div id="intro-overlay">
+  <canvas id="intro-canvas"></canvas>
+  <div id="intro-content">
+    <div class="intro-badge">AI-POWERED · NORTH AMERICA MARKETS</div>
+    <div class="intro-logo">
+      <span class="intro-title-zh">金融日报</span>
+      <span class="intro-title-en">Financial Daily</span>
+    </div>
+    <div class="intro-sub" id="intro-sub">北美华人投资者 · 每日智能金融简报</div>
+    <div class="intro-ticker-row" id="intro-tickers">
+      <div class="intro-tick"><span class="it-name">S&amp;P 500</span><span class="it-val" id="it-spy">—</span><span class="it-chg" id="it-spy-chg"></span></div>
+      <div class="intro-tick"><span class="it-name">NASDAQ</span><span class="it-val" id="it-qqq">—</span><span class="it-chg" id="it-qqq-chg"></span></div>
+      <div class="intro-tick"><span class="it-name">BTC</span><span class="it-val" id="it-btc">—</span><span class="it-chg" id="it-btc-chg"></span></div>
+      <div class="intro-tick"><span class="it-name">GOLD</span><span class="it-val" id="it-gld">—</span><span class="it-chg" id="it-gld-chg"></span></div>
+    </div>
+    <button id="intro-skip" onclick="dismissIntro()">进入 · Enter →</button>
+  </div>
+  <div id="intro-progress"></div>
+</div>
+
 <div id="reading-progress"></div>
 
 <!-- HEADER -->
@@ -495,9 +622,13 @@
         <span class="header-date" id="current-date">Loading...</span>
         <div class="header-badge"><span class="pulse-dot"></span>Claude AI</div>
         <nav class="header-nav">
-          <a href="archive/index.html">归档</a>
+          <a href="archive/index.html" data-i18n="nav-archive">归档</a>
           <a href="feed.xml" style="color:var(--dimmed)">RSS</a>
         </nav>
+        <button id="lang-btn" onclick="toggleLang()" title="切换语言 / Switch Language">
+          <span class="lang-opt" id="lang-zh">ZH</span>
+          <span class="lang-opt" id="lang-en">EN</span>
+        </button>
       </div>
     </div>
   </div>
@@ -505,16 +636,16 @@
 
 <!-- NAV -->
 <nav class="jump-nav" id="jump-nav">
-  <a href="#sec-summary">📊 大势</a>
-  <a href="#sec-ai-trading">🤖 AI操盘</a>
-  <a href="#sec-news">📰 要闻</a>
-  <a href="#sec-watchlist">🎯 AI分析</a>
-  <a href="#sec-macro">📈 宏观</a>
-  <a href="#sec-earnings">💼 财报</a>
-  <a href="#sec-sectors">🏭 行业</a>
-  <a href="#sec-debate">⚔️ 辩论</a>
-  <a href="#sec-calendar">📅 日历</a>
-  <a href="#sec-my">⭐ 我的</a>
+  <a href="#sec-summary" data-i18n="nav-summary">📊 大势</a>
+  <a href="#sec-ai-trading" data-i18n="nav-ai-trading">🤖 AI操盘</a>
+  <a href="#sec-news" data-i18n="nav-news">📰 要闻</a>
+  <a href="#sec-watchlist" data-i18n="nav-watchlist">🎯 AI分析</a>
+  <a href="#sec-macro" data-i18n="nav-macro">📈 宏观</a>
+  <a href="#sec-earnings" data-i18n="nav-earnings">💼 财报</a>
+  <a href="#sec-sectors" data-i18n="nav-sectors">🏭 行业</a>
+  <a href="#sec-debate" data-i18n="nav-debate">⚔️ 辩论</a>
+  <a href="#sec-calendar" data-i18n="nav-calendar">📅 日历</a>
+  <a href="#sec-my" data-i18n="nav-my">⭐ 我的</a>
 </nav>
 
 <!-- INDICES TICKER -->
@@ -2752,7 +2883,365 @@
   <button class="fab" id="fab-top" title="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 </div>
 <div id="share-toast">✅ 链接已复制</div>
-<div id="share-toast">✅ 链接已复制</div>
+
+<!-- =======================================================
+     INTRO ANIMATION
+======================================================= -->
+<script>
+(function() {
+  'use strict';
+  // Skip if user already visited this session
+  if (sessionStorage.getItem('fd-intro-done')) {
+    var ov = document.getElementById('intro-overlay');
+    if (ov) ov.classList.add('gone');
+    return;
+  }
+
+  var canvas = document.getElementById('intro-canvas');
+  var overlay = document.getElementById('intro-overlay');
+  if (!canvas || !overlay) return;
+
+  var ctx = canvas.getContext('2d');
+  var W, H;
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // --- Candlestick data (simulated) ---
+  var candles = [];
+  for (var i = 0; i < 60; i++) {
+    var base = 400 + Math.sin(i * 0.18) * 40 + Math.random() * 20;
+    var o = base + (Math.random() - 0.5) * 15;
+    var c = base + (Math.random() - 0.5) * 15;
+    var h = Math.max(o, c) + Math.random() * 12;
+    var l = Math.min(o, c) - Math.random() * 12;
+    candles.push({ o: o, c: c, h: h, l: l });
+  }
+
+  // --- Streaming ticker lines ---
+  var tickers = [
+    'NVDA +2.47%', 'SPY +0.31%', 'QQQ +0.19%', 'AAPL -0.12%', 'TSLA +1.04%',
+    'META +0.88%', 'MSFT +0.55%', 'BTC +0.24%', 'GLD -0.42%', 'AMD +3.21%',
+    'GOOGL +0.37%', 'AMZN +0.62%', 'TLT -0.35%', 'INTC +4.60%', 'AVGO +1.14%',
+    'VIX 16.76', 'DXY 99.25', 'WTI $98.05', 'AU $4524', 'ETH +1.18%'
+  ];
+  var streamLines = [];
+  for (var j = 0; j < 18; j++) {
+    streamLines.push({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      speed: 0.3 + Math.random() * 0.5,
+      text: tickers[j % tickers.length],
+      opacity: 0.04 + Math.random() * 0.12,
+      size: 10 + Math.floor(Math.random() * 4)
+    });
+  }
+
+  var progress = document.getElementById('intro-progress');
+  var startTime = performance.now();
+  var DURATION  = 3500; // ms total
+  var animDone  = false;
+  var rafId;
+
+  function draw(now) {
+    if (animDone) return;
+    var elapsed = now - startTime;
+    var t = Math.min(elapsed / DURATION, 1);
+
+    ctx.clearRect(0, 0, W, H);
+
+    // -- Background gradient --
+    var grad = ctx.createRadialGradient(W/2, H/2, 0, W/2, H/2, Math.max(W,H) * 0.7);
+    grad.addColorStop(0, 'rgba(7,20,35,.85)');
+    grad.addColorStop(1, 'rgba(3,6,9,1)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, W, H);
+
+    // -- Grid lines --
+    ctx.strokeStyle = 'rgba(0,212,170,0.04)';
+    ctx.lineWidth = 1;
+    var step = 60;
+    for (var gx = 0; gx < W; gx += step) {
+      ctx.beginPath(); ctx.moveTo(gx, 0); ctx.lineTo(gx, H); ctx.stroke();
+    }
+    for (var gy = 0; gy < H; gy += step) {
+      ctx.beginPath(); ctx.moveTo(0, gy); ctx.lineTo(W, gy); ctx.stroke();
+    }
+
+    // -- Streaming tickers --
+    ctx.font = '11px JetBrains Mono, monospace';
+    streamLines.forEach(function(l) {
+      l.y -= l.speed;
+      if (l.y < -20) { l.y = H + 20; l.x = Math.random() * W; l.text = tickers[Math.floor(Math.random()*tickers.length)]; }
+      var isUp = l.text.indexOf('-') === -1 || l.text.indexOf('+') !== -1;
+      ctx.fillStyle = isUp
+        ? 'rgba(0,230,118,' + l.opacity + ')'
+        : 'rgba(255,82,82,' + l.opacity + ')';
+      ctx.fillText(l.text, l.x, l.y);
+    });
+
+    // -- Candlestick chart (bottom area) --
+    var revealCandles = Math.floor(t * candles.length);
+    var cW = Math.min(W * 0.7, 600);
+    var cH = 90;
+    var cX = (W - cW) / 2;
+    var cY = H * 0.72;
+    var maxP = Math.max.apply(null, candles.map(function(c){return c.h;}));
+    var minP = Math.min.apply(null, candles.map(function(c){return c.l;}));
+    var range = maxP - minP || 1;
+    var barW = cW / candles.length * 0.7;
+
+    ctx.globalAlpha = Math.min(t * 3, 1) * 0.7;
+    for (var ci = 0; ci < revealCandles; ci++) {
+      var cd = candles[ci];
+      var cx = cX + (ci + 0.5) * (cW / candles.length);
+      var cy_o = cY + (1 - (cd.o - minP) / range) * cH;
+      var cy_c = cY + (1 - (cd.c - minP) / range) * cH;
+      var cy_h = cY + (1 - (cd.h - minP) / range) * cH;
+      var cy_l = cY + (1 - (cd.l - minP) / range) * cH;
+      var isGreen = cd.c >= cd.o;
+
+      ctx.strokeStyle = isGreen ? '#00e676' : '#ff5252';
+      ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(cx, cy_h); ctx.lineTo(cx, cy_l); ctx.stroke();
+
+      ctx.fillStyle = isGreen ? '#00e676' : '#ff5252';
+      var bh = Math.abs(cy_c - cy_o);
+      ctx.fillRect(cx - barW/2, Math.min(cy_o, cy_c), barW, Math.max(bh, 1.5));
+    }
+    ctx.globalAlpha = 1;
+
+    // -- Progress bar --
+    if (progress) progress.style.width = (t * 100) + '%';
+
+    if (elapsed >= DURATION) {
+      dismissIntro();
+      return;
+    }
+    rafId = requestAnimationFrame(draw);
+  }
+  rafId = requestAnimationFrame(draw);
+
+  // -- Populate intro tickers from quotes.json --
+  fetch('data/quotes.json?' + Date.now())
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(data) {
+      if (!data || !data.quotes) return;
+      var map = {};
+      data.quotes.forEach(function(q){ map[q.name] = q; });
+      var bindings = [
+        ['it-spy', 'it-spy-chg', '标晥00'],
+        ['it-qqq', 'it-qqq-chg', '纳斯达克'],
+        ['it-btc', 'it-btc-chg', '比特币'],
+        ['it-gld', 'it-gld-chg', '黄金现货'],
+      ];
+      bindings.forEach(function(b){
+        var q = map[b[2]];
+        var el = document.getElementById(b[0]);
+        var chgEl = document.getElementById(b[1]);
+        if (!el || !q) return;
+        el.textContent = q.value || '—';
+        if (chgEl && q.change_pct) {
+          chgEl.textContent = (q.direction === 'up' ? '▲ ' : '▼ ') + q.change_pct;
+          chgEl.className = 'it-chg ' + q.direction;
+        }
+      });
+    }).catch(function(){});
+
+  window.dismissIntro = function() {
+    if (animDone) return;
+    animDone = true;
+    cancelAnimationFrame(rafId);
+    overlay.classList.add('fade-out');
+    sessionStorage.setItem('fd-intro-done', '1');
+    setTimeout(function(){ overlay.classList.add('gone'); }, 750);
+  };
+
+  // Keyboard shortcut: any key skips intro
+  document.addEventListener('keydown', function handler(e) {
+    dismissIntro();
+    document.removeEventListener('keydown', handler);
+  }, { once: true });
+})();
+</script>
+
+<!-- =======================================================
+     I18N / LANGUAGE TOGGLE
+======================================================= -->
+<script>
+(function() {
+  'use strict';
+
+  var LANG = {
+    zh: {
+      'nav-archive':    '归档',
+      'nav-summary':    '📊 大势',
+      'nav-ai-trading': '🤖 AI操盘',
+      'nav-news':       '📰 要闻',
+      'nav-watchlist':  '🎯 AI分析',
+      'nav-macro':      '📈 宏观',
+      'nav-earnings':   '💼 财报',
+      'nav-sectors':    '🏭 行业',
+      'nav-debate':     '⚔️ 辩论',
+      'nav-calendar':   '📅 日历',
+      'nav-my':         '⭐ 我的',
+    },
+    en: {
+      'nav-archive':    'Archive',
+      'nav-summary':    '📊 Market',
+      'nav-ai-trading': '🤖 AI Trade',
+      'nav-news':       '📰 News',
+      'nav-watchlist':  '🎯 Watchlist',
+      'nav-macro':      '📈 Macro',
+      'nav-earnings':   '💼 Earnings',
+      'nav-sectors':    '🏭 Sectors',
+      'nav-debate':     '⚔️ Bull/Bear',
+      'nav-calendar':   '📅 Calendar',
+      'nav-my':         '⭐ My Dashboard',
+    }
+  };
+
+  // Section label maps (by section id + .section-label text)
+  var SECTION_LABELS = {
+    zh: {
+      'sec-news':       '📰 市场要闻 · Market News',
+      'sec-ai-trading': '🤖 AI 操盘实验 · AI Trading Challenge',
+      'sec-watchlist':  '🎯 AI 决策仪表盘 · AI Watchlist',
+      'sec-macro':      '📈 宏观指标 · Macro',
+      'sec-debate':     '⚔️ 多空辩论 · Bull vs Bear',
+      'sec-earnings':   '💼 财报追踪 · Earnings',
+      'sec-sectors':    '🏭 板块表现 · Sectors',
+      'sec-replay':     '🎥 大盘复盘 · Replay',
+      'sec-calendar':   '📅 本周日程 · Calendar',
+      'sec-leaders':    '👔 领袖观点 · Leaders',
+      'sec-banks':      '🏦 幂行动态 · Central Banks',
+    },
+    en: {
+      'sec-news':       '📰 Market News',
+      'sec-ai-trading': '🤖 AI Trading Challenge',
+      'sec-watchlist':  '🎯 AI Watchlist',
+      'sec-macro':      '📈 Macro Indicators',
+      'sec-debate':     '⚔️ Bull vs Bear',
+      'sec-earnings':   '💼 Earnings Tracker',
+      'sec-sectors':    '🏭 Sector Performance',
+      'sec-replay':     '🎥 Market Replay',
+      'sec-calendar':   '📅 Economic Calendar',
+      'sec-leaders':    '👔 Market Leaders',
+      'sec-banks':      '🏦 Central Banks',
+    }
+  };
+
+  // Static UI strings (selectors → text)
+  var STATIC_EN = [
+    ['.site-title',                      'Financial Daily'],
+    ['.site-sub',                        'AI-Powered · Daily Briefing'],
+    ['.subscribe-strip-body strong',     'Subscribe to Daily Briefing'],
+    ['.subscribe-strip-body span',       'Updated twice daily, every trading day'],
+    ['.btn-sub-email',                   '📧 Email'],
+    ['#pod-play',                        '▶ Play'],
+    ['.podcast-title',                   'Financial Daily · Today\'s Podcast'],
+    ['.my-drawer-toggle span:first-child', '⭐ My Dashboard'],
+    ['#ptab-wl',                         '📋 Watchlist'],
+    ['#ptab-pf',                         '💼 Portfolio P&L'],
+    ['#ptab-sim',                        '📊 Simulator'],
+    ['#wl-empty',                        'No stocks yet. Enter a symbol to start tracking →'],
+    ['#pf-empty',                        'No positions yet. Add holdings to track P&L →'],
+    ['.footer-inner span:nth-child(2)',   'AI-generated content for informational purposes only. Not investment advice.'],
+  ];
+  var STATIC_ZH = [
+    ['.site-title',                      '金融日报'],
+    ['.site-sub',                        'Financial Daily'],
+    ['.subscribe-strip-body strong',     '订阅每日金融早报'],
+    ['.subscribe-strip-body span',       '每个交易日自动更新，开盘前 + 收盘后各一次'],
+    ['.btn-sub-email',                   '📧 邮件'],
+    ['#pod-play',                        '▶ 播放'],
+    ['.podcast-title',                   '金融日报早报 · 今日播客'],
+    ['.my-drawer-toggle span:first-child', '⭐ 我的工作台 · My Dashboard'],
+    ['#ptab-wl',                         '📋 自选股'],
+    ['#ptab-pf',                         '💼 持仓盈亏'],
+    ['#ptab-sim',                        '📊 模拟器'],
+    ['#wl-empty',                        '还没有自选股，输入代码开始追踪 →'],
+    ['#pf-empty',                        '还没有持仓记录，输入持仓开始计算浮盈浮亏 →'],
+    ['.footer-inner span:nth-child(2)',   '内容由AI自动生成，仅供参考，不构成投资建议'],
+  ];
+
+  function applyLang(lang) {
+    // Toggle body class
+    document.body.classList.remove('lang-zh', 'lang-en');
+    document.body.classList.add('lang-' + lang);
+
+    // Update toggle button active state
+    var elZH = document.getElementById('lang-zh');
+    var elEN = document.getElementById('lang-en');
+    if (elZH) elZH.classList.toggle('active', lang === 'zh');
+    if (elEN) elEN.classList.toggle('active', lang === 'en');
+
+    // data-i18n nav items
+    var map = LANG[lang];
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (map[key]) el.textContent = map[key];
+    });
+
+    // Section labels
+    var slMap = SECTION_LABELS[lang];
+    Object.entries(slMap).forEach(function(entry) {
+      var secId = entry[0], text = entry[1];
+      var sec = document.getElementById(secId);
+      if (!sec) return;
+      var lbl = sec.querySelector('.section-label');
+      if (lbl) lbl.childNodes.forEach(function(n){ if (n.nodeType === 3 && n.textContent.trim()) n.textContent = ' ' + text; });
+    });
+
+    // Static UI strings
+    var statics = lang === 'en' ? STATIC_EN : STATIC_ZH;
+    statics.forEach(function(pair) {
+      try {
+        var el = document.querySelector(pair[0]);
+        if (el) el.textContent = pair[1];
+      } catch(e) {}
+    });
+
+    // date format
+    var dateEl = document.getElementById('current-date');
+    if (dateEl) {
+      var now = new Date();
+      var opts = lang === 'en'
+        ? { year: 'numeric', month: 'short', day: 'numeric', weekday: 'short' }
+        : { year: 'numeric', month: 'long',  day: 'numeric', weekday: 'short' };
+      dateEl.textContent = now.toLocaleDateString(lang === 'en' ? 'en-US' : 'zh-CN', opts);
+    }
+
+    // AI portfolio section heading (dynamic)
+    var lbHdr = document.querySelector('#ai-portfolio-content > div:first-child');
+    if (lbHdr) lbHdr.innerHTML = lang === 'en'
+      ? '🏆 Leaderboard <span style="font-size:.68rem;color:var(--dimmed);margin-left:6px;">Starting capital $10,000 · Baseline: SPY buy &amp; hold</span>'
+      : '🏆 排行榜 · Leaderboard <span style="font-size:.68rem;color:var(--dimmed);margin-left:6px;">初始资金 $10,000 · 基线 SPY买入持有</span>';
+
+    localStorage.setItem('fd-lang', lang);
+  }
+
+  window.toggleLang = function() {
+    var current = localStorage.getItem('fd-lang') || 'zh';
+    applyLang(current === 'zh' ? 'en' : 'zh');
+  };
+
+  // Apply saved lang on load
+  var savedLang = localStorage.getItem('fd-lang') || 'zh';
+  document.addEventListener('DOMContentLoaded', function() {
+    applyLang(savedLang);
+  });
+
+  // Also expose for external call after dynamic content loads
+  window.applyCurrentLang = function() {
+    applyLang(localStorage.getItem('fd-lang') || 'zh');
+  };
+})();
+</script>
 
 </body>
 </html>
