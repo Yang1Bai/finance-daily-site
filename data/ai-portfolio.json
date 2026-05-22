@@ -326,6 +326,31 @@
             }
           ],
           "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
+        },
+        {
+          "date": "2026-05-22",
+          "portfolio_value": 9826.22,
+          "baseline_value": 10088.21,
+          "cash": 981.52,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 413.82,
+              "value": 6207.3
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 84.68,
+              "value": 1270.2
+            },
+            "SLV": {
+              "shares": 20,
+              "price": 68.36,
+              "value": 1367.2
+            }
+          },
+          "trades": [],
+          "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
         }
       ]
     },
@@ -336,19 +361,15 @@
       "provider": "openai",
       "holdings": [
         {
-          "ticker": "GLD",
-          "shares": 10,
-          "avg_cost": 416.99
-        },
-        {
           "ticker": "TLT",
           "shares": 20,
-          "avg_cost": 84.22
+          "avg_cost": 84.22,
+          "buy_date": "2026-05-22"
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 4016.72
+          "avg_cost": 8154.92
         }
       ],
       "history": [
@@ -636,18 +657,89 @@
             }
           ],
           "note": "卖出科技和能源股，增持黄金和国债以应对市场波动"
+        },
+        {
+          "date": "2026-05-22",
+          "portfolio_value": 9848.52,
+          "baseline_value": 10088.21,
+          "cash": 8154.92,
+          "positions": {
+            "TLT": {
+              "shares": 20,
+              "price": 84.68,
+              "value": 1693.6
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "GLD",
+              "shares": 10,
+              "price": 413.82,
+              "reason": "GLD技术信号中性，牛市中防御仓位过高，需减仓"
+            }
+          ],
+          "note": "减持GLD，增持AMD，降低防御仓位，增强进攻性以追赶SPY基准。"
         }
       ]
     },
     "rule_based": {
       "holdings": [
         {
+          "ticker": "INTC",
+          "shares": 37,
+          "avg_cost": 119.84,
+          "buy_date": "2026-05-22"
+        },
+        {
+          "ticker": "AMD",
+          "shares": 9,
+          "avg_cost": 467.51,
+          "buy_date": "2026-05-22"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 10000.0
+          "avg_cost": 1358.33
         }
       ],
-      "history": []
+      "history": [
+        {
+          "date": "2026-05-22",
+          "portfolio_value": 10000.0,
+          "baseline_value": 10088.21,
+          "cash": 1358.33,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 119.84,
+              "value": 4434.08
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 467.51,
+              "value": 4207.59
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "INTC",
+              "shares": 37,
+              "price": 119.84,
+              "reason": "技术强势+动量+45.2%"
+            },
+            {
+              "action": "BUY",
+              "ticker": "AMD",
+              "shares": 9,
+              "price": 467.51,
+              "reason": "技术强势+动量+34.4%"
+            }
+          ],
+          "note": "规则策略：持有强势['INTC', 'AMD', 'AAPL']，剔除弱势"
+        }
+      ]
     }
   }
 }
