@@ -638,6 +638,16 @@
           "note": "卖出科技和能源股，增持黄金和国债以应对市场波动"
         }
       ]
+    },
+    "rule_based": {
+      "holdings": [
+        {
+          "ticker": "CASH",
+          "shares": 1,
+          "avg_cost": 10000.0
+        }
+      ],
+      "history": []
     }
   }
 }
