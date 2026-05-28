@@ -426,6 +426,31 @@
           },
           "trades": [],
           "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
+        },
+        {
+          "date": "2026-05-28",
+          "portfolio_value": 9826.37,
+          "baseline_value": 10209.44,
+          "cash": 981.52,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 412.77,
+              "value": 6191.55
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 85.74,
+              "value": 1286.1
+            },
+            "SLV": {
+              "shares": 20,
+              "price": 68.36,
+              "value": 1367.2
+            }
+          },
+          "trades": [],
+          "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
         }
       ]
     },
@@ -454,9 +479,15 @@
           "buy_date": "2026-05-27"
         },
         {
+          "ticker": "AAPL",
+          "shares": 3,
+          "avg_cost": 312.51,
+          "buy_date": "2026-05-28"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1372.62
+          "avg_cost": 435.09
         }
       ],
       "history": [
@@ -852,6 +883,44 @@
             }
           ],
           "note": "增加强势股TSLA和AAPL的仓位，提升组合进攻性以缩小与SPY的差距。"
+        },
+        {
+          "date": "2026-05-28",
+          "portfolio_value": 9972.92,
+          "baseline_value": 10209.44,
+          "cash": 435.09,
+          "positions": {
+            "AMD": {
+              "shares": 10,
+              "price": 518.09,
+              "value": 5180.9
+            },
+            "INTC": {
+              "shares": 10,
+              "price": 120.89,
+              "value": 1208.9
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 442.1,
+              "value": 2210.5
+            },
+            "AAPL": {
+              "shares": 3,
+              "price": 312.51,
+              "value": 937.53
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "AAPL",
+              "shares": 3,
+              "price": 312.51,
+              "reason": "AAPL技术信号强势，RSI高，动量强，符合进攻策略"
+            }
+          ],
+          "note": "增加AAPL和TSM仓位，利用强势信号追求超越SPY的收益"
         }
       ]
     },
@@ -1051,6 +1120,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['QQQ', 'SPY']，剔除弱势"
+        },
+        {
+          "date": "2026-05-28",
+          "portfolio_value": 10515.56,
+          "baseline_value": 10209.44,
+          "cash": 438.36,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 120.89,
+              "value": 4472.93
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 518.09,
+              "value": 4662.81
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 312.51,
+              "value": 312.51
+            },
+            "TSLA": {
+              "shares": 1,
+              "price": 442.1,
+              "value": 442.1
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 186.85,
+              "value": 186.85
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['QQQ', 'TSM', 'IWM']，剔除弱势"
         }
       ]
     }
