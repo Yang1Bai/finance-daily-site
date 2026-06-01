@@ -476,6 +476,31 @@
           },
           "trades": [],
           "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
+        },
+        {
+          "date": "2026-06-01",
+          "portfolio_value": 9785.87,
+          "baseline_value": 10262.74,
+          "cash": 981.52,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 411.26,
+              "value": 6168.9
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 85.47,
+              "value": 1282.05
+            },
+            "SLV": {
+              "shares": 20,
+              "price": 67.67,
+              "value": 1353.4
+            }
+          },
+          "trades": [],
+          "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
         }
       ]
     },
@@ -489,12 +514,6 @@
           "ticker": "AMD",
           "shares": 10,
           "avg_cost": 503.89,
-          "buy_date": "2026-05-26"
-        },
-        {
-          "ticker": "INTC",
-          "shares": 10,
-          "avg_cost": 123.52,
           "buy_date": "2026-05-26"
         },
         {
@@ -518,7 +537,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 244.07
+          "avg_cost": 1337.37
         }
       ],
       "history": [
@@ -995,6 +1014,44 @@
             }
           ],
           "note": "增加强势科技股MSFT和XLK，提升组合进攻性以缩小与SPY的差距。"
+        },
+        {
+          "date": "2026-06-01",
+          "portfolio_value": 9632.76,
+          "baseline_value": 10262.74,
+          "cash": 1337.37,
+          "positions": {
+            "AMD": {
+              "shares": 10,
+              "price": 510.13,
+              "value": 5101.3
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 415.88,
+              "value": 2079.4
+            },
+            "AAPL": {
+              "shares": 3,
+              "price": 306.31,
+              "value": 918.93
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 195.76,
+              "value": 195.76
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "INTC",
+              "shares": 10,
+              "price": 109.33,
+              "reason": "INTC技术信号中性，资金转向更强势标的"
+            }
+          ],
+          "note": "卖出INTC，买入MSFT，优化组合以增强进攻性，缩小与SPY的差距"
         }
       ]
     },
@@ -1264,6 +1321,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['MSFT', 'QQQ', 'AVGO']，剔除弱势"
+        },
+        {
+          "date": "2026-06-01",
+          "portfolio_value": 9992.69,
+          "baseline_value": 10262.74,
+          "cash": 438.36,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 109.33,
+              "value": 4045.21
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 510.13,
+              "value": 4591.17
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 306.31,
+              "value": 306.31
+            },
+            "TSLA": {
+              "shares": 1,
+              "price": 415.88,
+              "value": 415.88
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 195.76,
+              "value": 195.76
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['MSFT', 'QQQ', 'TSM']，剔除弱势"
         }
       ]
     }
