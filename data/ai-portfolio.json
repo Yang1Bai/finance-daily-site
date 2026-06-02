@@ -501,6 +501,31 @@
           },
           "trades": [],
           "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
+        },
+        {
+          "date": "2026-06-02",
+          "portfolio_value": 9805.32,
+          "baseline_value": 10276.68,
+          "cash": 981.52,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 411.95,
+              "value": 6179.25
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 85.65,
+              "value": 1284.75
+            },
+            "SLV": {
+              "shares": 20,
+              "price": 67.99,
+              "value": 1359.8
+            }
+          },
+          "trades": [],
+          "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
         }
       ]
     },
@@ -523,12 +548,6 @@
           "buy_date": "2026-05-27"
         },
         {
-          "ticker": "AAPL",
-          "shares": 3,
-          "avg_cost": 312.51,
-          "buy_date": "2026-05-28"
-        },
-        {
           "ticker": "XLK",
           "shares": 1,
           "avg_cost": 191.02,
@@ -537,7 +556,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1337.37
+          "avg_cost": 2282.97
         }
       ],
       "history": [
@@ -1052,6 +1071,39 @@
             }
           ],
           "note": "卖出INTC，买入MSFT，优化组合以增强进攻性，缩小与SPY的差距"
+        },
+        {
+          "date": "2026-06-02",
+          "portfolio_value": 9815.28,
+          "baseline_value": 10276.68,
+          "cash": 2282.97,
+          "positions": {
+            "AMD": {
+              "shares": 10,
+              "price": 521.54,
+              "value": 5215.4
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 423.74,
+              "value": 2118.7
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 198.21,
+              "value": 198.21
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AAPL",
+              "shares": 3,
+              "price": 315.2,
+              "reason": "AAPL RSI过高，短期内可能回调，获利了结"
+            }
+          ],
+          "note": "调整组合，减持高RSI标的，增持强势股以追赶SPY收益"
         }
       ]
     },
@@ -1356,6 +1408,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['MSFT', 'QQQ', 'TSM']，剔除弱势"
+        },
+        {
+          "date": "2026-06-02",
+          "portfolio_value": 10062.78,
+          "baseline_value": 10276.68,
+          "cash": 438.36,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 107.93,
+              "value": 3993.41
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 521.54,
+              "value": 4693.86
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 315.2,
+              "value": 315.2
+            },
+            "TSLA": {
+              "shares": 1,
+              "price": 423.74,
+              "value": 423.74
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 198.21,
+              "value": 198.21
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['AVGO', 'TSM', 'QQQ']，剔除弱势"
         }
       ]
     }
