@@ -526,6 +526,31 @@
           },
           "trades": [],
           "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
+        },
+        {
+          "date": "2026-06-03",
+          "portfolio_value": 9703.42,
+          "baseline_value": 10204.57,
+          "cash": 981.52,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 407.87,
+              "value": 6118.05
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 85.31,
+              "value": 1279.65
+            },
+            "SLV": {
+              "shares": 20,
+              "price": 66.21,
+              "value": 1324.2
+            }
+          },
+          "trades": [],
+          "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
         }
       ]
     },
@@ -542,21 +567,21 @@
           "buy_date": "2026-05-26"
         },
         {
-          "ticker": "TSLA",
-          "shares": 5,
-          "avg_cost": 440.36,
-          "buy_date": "2026-05-27"
-        },
-        {
           "ticker": "XLK",
           "shares": 1,
           "avg_cost": 191.02,
           "buy_date": "2026-05-29"
         },
         {
+          "ticker": "TSM",
+          "shares": 10,
+          "avg_cost": 436.69,
+          "buy_date": "2026-06-03"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2282.97
+          "avg_cost": 34.57
         }
       ],
       "history": [
@@ -1104,6 +1129,46 @@
             }
           ],
           "note": "调整组合，减持高RSI标的，增持强势股以追赶SPY收益"
+        },
+        {
+          "date": "2026-06-03",
+          "portfolio_value": 10022.9,
+          "baseline_value": 10204.57,
+          "cash": 34.57,
+          "positions": {
+            "AMD": {
+              "shares": 10,
+              "price": 542.52,
+              "value": 5425.2
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 196.23,
+              "value": 196.23
+            },
+            "TSM": {
+              "shares": 10,
+              "price": 436.69,
+              "value": 4366.9
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "TSLA",
+              "shares": 5,
+              "price": 423.7,
+              "reason": "TSLA技术信号中性，资金用于更强势标的"
+            },
+            {
+              "action": "BUY",
+              "ticker": "TSM",
+              "shares": 10,
+              "price": 436.69,
+              "reason": "TSM技术信号强势，动量和RSI均表现良好"
+            }
+          ],
+          "note": "卖出TSLA，买入TSM，优化组合以追赶SPY基准"
         }
       ]
     },
@@ -1439,6 +1504,41 @@
               "shares": 1,
               "price": 198.21,
               "value": 198.21
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['AVGO', 'TSM', 'QQQ']，剔除弱势"
+        },
+        {
+          "date": "2026-06-03",
+          "portfolio_value": 10421.5,
+          "baseline_value": 10204.57,
+          "cash": 438.36,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 112.71,
+              "value": 4170.27
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 542.52,
+              "value": 4882.68
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 310.26,
+              "value": 310.26
+            },
+            "TSLA": {
+              "shares": 1,
+              "price": 423.7,
+              "value": 423.7
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 196.23,
+              "value": 196.23
             }
           },
           "trades": [],
