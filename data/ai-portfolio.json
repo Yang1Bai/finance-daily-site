@@ -551,6 +551,31 @@
           },
           "trades": [],
           "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
+        },
+        {
+          "date": "2026-06-04",
+          "portfolio_value": 9772.67,
+          "baseline_value": 10243.12,
+          "cash": 981.52,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 411.27,
+              "value": 6169.05
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 85.5,
+              "value": 1282.5
+            },
+            "SLV": {
+              "shares": 20,
+              "price": 66.98,
+              "value": 1339.6
+            }
+          },
+          "trades": [],
+          "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
         }
       ]
     },
@@ -567,12 +592,6 @@
           "buy_date": "2026-05-26"
         },
         {
-          "ticker": "XLK",
-          "shares": 1,
-          "avg_cost": 191.02,
-          "buy_date": "2026-05-29"
-        },
-        {
           "ticker": "TSM",
           "shares": 10,
           "avg_cost": 436.69,
@@ -581,7 +600,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 34.57
+          "avg_cost": 227.74
         }
       ],
       "history": [
@@ -1169,6 +1188,34 @@
             }
           ],
           "note": "卖出TSLA，买入TSM，优化组合以追赶SPY基准"
+        },
+        {
+          "date": "2026-06-04",
+          "portfolio_value": 9908.94,
+          "baseline_value": 10243.12,
+          "cash": 227.74,
+          "positions": {
+            "AMD": {
+              "shares": 10,
+              "price": 523.2,
+              "value": 5232.0
+            },
+            "TSM": {
+              "shares": 10,
+              "price": 444.92,
+              "value": 4449.2
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLK",
+              "shares": 1,
+              "price": 193.17,
+              "reason": "XLK技术信号强势，但组合需要更高动量标的，释放资金优化配置"
+            }
+          ],
+          "note": "调整组合，卖出XLK买入AAPL，提升组合动量以缩小与SPY的差距"
         }
       ]
     },
@@ -1543,6 +1590,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['AVGO', 'TSM', 'QQQ']，剔除弱势"
+        },
+        {
+          "date": "2026-06-04",
+          "portfolio_value": 10205.87,
+          "baseline_value": 10243.12,
+          "cash": 438.36,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 111.78,
+              "value": 4135.86
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 523.2,
+              "value": 4708.8
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 311.23,
+              "value": 311.23
+            },
+            "TSLA": {
+              "shares": 1,
+              "price": 418.45,
+              "value": 418.45
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 193.17,
+              "value": 193.17
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['QQQ', 'TSM', 'MSFT']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
