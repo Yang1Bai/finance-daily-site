@@ -1544,7 +1544,9 @@
           "trades": [],
           "note": "规则策略：持有强势['AVGO', 'TSM', 'QQQ']，剔除弱势"
         }
-      ]
+      ],
+      "display_name": "规则策略",
+      "emoji": "📐"
     }
   }
 }

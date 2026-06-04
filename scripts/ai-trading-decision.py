@@ -516,6 +516,8 @@ def main():
     # 初始化 rule_based 组合（如不存在）
     if "rule_based" not in portfolios:
         portfolios["rule_based"] = {
+            "display_name": "规则策略",
+            "emoji": "📐",
             "holdings": [{"ticker": "CASH", "shares": 1, "avg_cost": 10000.0}],
             "history":  []
         }

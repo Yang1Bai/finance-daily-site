@@ -2792,7 +2792,7 @@
         const allDates = [...new Set(ranked.flatMap(r => (r.pf.history||[]).map(h => h.date)))].sort().reverse();
         if (allDates.length > 1) {
           const headers = ['<th style="text-align:left;padding:4px 6px;font-size:0.72rem;">日期</th>',
-            ...ranked.map(r => `<th style="text-align:right;padding:4px 6px;font-size:0.72rem;">${r.pf.emoji} ${r.pf.display_name}</th>`),
+            ...ranked.map(r => `<th style="text-align:right;padding:4px 6px;font-size:0.72rem;">${r.pf.emoji||'📊'} ${r.pf.display_name||r.id}</th>`),
             '<th style="text-align:right;padding:4px 6px;font-size:0.72rem;">SPY 基线</th>'
           ].join('');
           const subHeaders = ['<th style="text-align:left;padding:2px 6px;font-size:0.65rem;color:var(--muted);">累计净值</th>',
