@@ -2795,28 +2795,33 @@
             ...ranked.map(r => `<th style="text-align:right;padding:4px 6px;font-size:0.72rem;">${r.pf.emoji||'📊'} ${r.pf.display_name||r.id}</th>`),
             '<th style="text-align:right;padding:4px 6px;font-size:0.72rem;">SPY 基线</th>'
           ].join('');
-          const subHeaders = ['<th style="text-align:left;padding:2px 6px;font-size:0.65rem;color:var(--muted);">累计净值</th>',
-            ...ranked.map(() => '<th style="text-align:right;padding:2px 6px;font-size:0.65rem;color:var(--muted);">净值 / 累计盈亏</th>'),
-            '<th style="text-align:right;padding:2px 6px;font-size:0.65rem;color:var(--muted);">净值 / 累计盈亏</th>'
+          const subHeaders = ['<th style="text-align:left;padding:2px 6px;font-size:0.65rem;color:var(--muted);">日期</th>',
+            ...ranked.map(() => '<th style="text-align:right;padding:2px 6px;font-size:0.65rem;color:var(--muted);">净值 / 今日盈亏</th>'),
+            '<th style="text-align:right;padding:2px 6px;font-size:0.65rem;color:var(--muted);">净值 / 今日盈亏</th>'
           ].join('');
-          const rows = allDates.map(date => {
+          const rows = allDates.map((date, dateIndex) => {
+            const prevDate = allDates[dateIndex + 1]; // previous trading day (sorted descending)
             const cells = ranked.map(r => {
               const rec = (r.pf.history||[]).find(h => h.date === date);
               if (!rec) return '<td style="text-align:right;padding:4px 6px;color:var(--muted);">—</td>';
               const pv  = rec.portfolio_value;
-              const pnl = pv - startCap;
-              const ret = pnl / startCap * 100;
-              const c = ret >= 0 ? 'var(--up)' : 'var(--down)';
-              return `<td style="text-align:right;padding:4px 6px;"><div style="font-family:var(--mono);font-size:0.8rem;font-weight:600;">${fmt$(pv)}</div><div style="font-size:0.72rem;color:${c};">${(pnl>=0?'+':'')}${fmt$(pnl)} (${(ret>=0?'+':'')}${ret.toFixed(2)}%)</div></td>`;
+              const prevRec = prevDate ? (r.pf.history||[]).find(h => h.date === prevDate) : null;
+              const prevVal = prevRec ? prevRec.portfolio_value : startCap;
+              const dailyPnl = pv - prevVal;
+              const dailyRet = dailyPnl / prevVal * 100;
+              const c = dailyRet >= 0 ? 'var(--up)' : 'var(--down)';
+              return `<td style="text-align:right;padding:4px 6px;"><div style="font-family:var(--mono);font-size:0.8rem;font-weight:600;">${fmt$(pv)}</div><div style="font-size:0.72rem;color:${c};">${(dailyPnl>=0?'+':'')}${fmt$(dailyPnl)} (${(dailyRet>=0?'+':'')}${dailyRet.toFixed(2)}% 今日)</div></td>`;
             }).join('');
             const spyRec = (ranked[0]?.pf.history||[]).find(h => h.date === date);
             const spyV = spyRec ? spyRec.baseline_value : startCap;
-            const spyPnlR = spyV - startCap;
-            const spyR = spyPnlR / startCap * 100;
-            const sc = spyR >= 0 ? 'var(--up)' : 'var(--down)';
-            return `<tr style="border-top:1px solid var(--border);"><td style="padding:4px 6px;color:var(--muted);font-size:0.8rem;">${date}</td>${cells}<td style="text-align:right;padding:4px 6px;"><div style="font-family:var(--mono);font-size:0.8rem;font-weight:600;">${fmt$(spyV)}</div><div style="font-size:0.72rem;color:${sc};">${(spyPnlR>=0?'+':'')}${fmt$(spyPnlR)} (${(spyR>=0?'+':'')}${spyR.toFixed(2)}%)</div></td></tr>`;
+            const spyPrevRec = prevDate ? (ranked[0]?.pf.history||[]).find(h => h.date === prevDate) : null;
+            const spyPrevV = spyPrevRec ? spyPrevRec.baseline_value : startCap;
+            const spyDailyPnl = spyV - spyPrevV;
+            const spyDailyR = spyDailyPnl / spyPrevV * 100;
+            const sc = spyDailyR >= 0 ? 'var(--up)' : 'var(--down)';
+            return `<tr style="border-top:1px solid var(--border);"><td style="padding:4px 6px;color:var(--muted);font-size:0.8rem;">${date}</td>${cells}<td style="text-align:right;padding:4px 6px;"><div style="font-family:var(--mono);font-size:0.8rem;font-weight:600;">${fmt$(spyV)}</div><div style="font-size:0.72rem;color:${sc};">${(spyDailyPnl>=0?'+':'')}${fmt$(spyDailyPnl)} (${(spyDailyR>=0?'+':'')}${spyDailyR.toFixed(2)}% 今日)</div></td></tr>`;
           }).join('');
-          histEl.innerHTML = `<div style="font-size:0.72rem;color:var(--muted);margin-bottom:6px;">📈 累计净值走势（自 ${contest.start_date} 起，初始 ${fmt$(startCap)}）</div><table style="width:100%;border-collapse:collapse;"><thead><tr style="color:var(--text);border-bottom:1px solid var(--border);">${headers}</tr></thead><tbody>${rows}</tbody></table>`;
+          histEl.innerHTML = `<div style="font-size:0.72rem;color:var(--muted);margin-bottom:6px;">📈 净值走势（自 ${contest.start_date} 起，初始 ${fmt$(startCap)}）</div><table style="width:100%;border-collapse:collapse;"><thead><tr style="color:var(--text);border-bottom:1px solid var(--border);">${headers}</tr></thead><tbody>${rows}</tbody></table>`;
         } else {
           histEl.innerHTML = '<span style="color:var(--muted);font-size:0.8rem;">天数超过1天后显示对比曲线…</span>';
         }
