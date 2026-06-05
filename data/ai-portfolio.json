@@ -576,6 +576,31 @@
           },
           "trades": [],
           "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
+        },
+        {
+          "date": "2026-06-05",
+          "portfolio_value": 9432.42,
+          "baseline_value": 9978.76,
+          "cash": 981.52,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 396.24,
+              "value": 5943.6
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 85.06,
+              "value": 1275.9
+            },
+            "SLV": {
+              "shares": 20,
+              "price": 61.57,
+              "value": 1231.4
+            }
+          },
+          "trades": [],
+          "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
         }
       ]
     },
@@ -1216,6 +1241,26 @@
             }
           ],
           "note": "调整组合，卖出XLK买入AAPL，提升组合动量以缩小与SPY的差距"
+        },
+        {
+          "date": "2026-06-05",
+          "portfolio_value": 9043.24,
+          "baseline_value": 9978.76,
+          "cash": 227.74,
+          "positions": {
+            "AMD": {
+              "shares": 10,
+              "price": 466.38,
+              "value": 4663.8
+            },
+            "TSM": {
+              "shares": 10,
+              "price": 415.17,
+              "value": 4151.7
+            }
+          },
+          "trades": [],
+          "note": "增加AAPL持仓以增强组合进攻性，利用其强势技术信号"
         }
       ]
     },
@@ -1240,12 +1285,6 @@
           "buy_date": "2026-05-25"
         },
         {
-          "ticker": "TSLA",
-          "shares": 1,
-          "avg_cost": 426.01,
-          "buy_date": "2026-05-25"
-        },
-        {
           "ticker": "XLK",
           "shares": 1,
           "avg_cost": 185.14,
@@ -1254,7 +1293,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 438.36
+          "avg_cost": 829.36
         }
       ],
       "history": [
@@ -1625,6 +1664,44 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['QQQ', 'TSM', 'MSFT']，剔除弱势"
+        },
+        {
+          "date": "2026-06-05",
+          "portfolio_value": 9183.71,
+          "baseline_value": 9978.76,
+          "cash": 829.36,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 99.17,
+              "value": 3669.29
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 466.38,
+              "value": 4197.42
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 307.34,
+              "value": 307.34
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 180.3,
+              "value": 180.3
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "TSLA",
+              "shares": 1,
+              "price": 391.0,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
