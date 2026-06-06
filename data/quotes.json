@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05T22:44:16.293517+00:00",
+  "updated": "2026-06-06T05:48:37.608381+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -29,63 +29,63 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "4,057.78",
-      "change": "-26.19",
-      "change_pct": "-0.64%",
+      "value": "4,027.74",
+      "change": "-30.04",
+      "change_pct": "-0.74%",
       "direction": "down"
     },
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "25,253",
-      "change": "-379.81",
-      "change_pct": "-1.48%",
+      "value": "24,962",
+      "change": "-291.45",
+      "change_pct": "-1.15%",
       "direction": "down"
     },
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "67,471",
-      "change": "-931.45",
-      "change_pct": "-1.36%",
+      "value": "66,588",
+      "change": "-882.57",
+      "change_pct": "-1.31%",
       "direction": "down"
     },
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "24,945",
-      "change": "+149.01",
-      "change_pct": "+0.60%",
-      "direction": "up"
+      "value": "24,759",
+      "change": "-185.90",
+      "change_pct": "-0.75%",
+      "direction": "down"
     },
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,353.90",
-      "change": "-121.90",
-      "change_pct": "-2.72%",
+      "value": "4,337.10",
+      "change": "-138.70",
+      "change_pct": "-3.10%",
       "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "90.2500",
-      "change": "-2.79",
-      "change_pct": "-3.00%",
+      "value": "90.5400",
+      "change": "-2.50",
+      "change_pct": "-2.69%",
       "direction": "down"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "61,749",
-      "change": "-2052.30",
-      "change_pct": "-3.22%",
+      "value": "60,900",
+      "change": "-2901.57",
+      "change_pct": "-4.55%",
       "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "100.0710",
+      "value": "100.0700",
       "change": "+0.66",
       "change_pct": "+0.66%",
       "direction": "up"
