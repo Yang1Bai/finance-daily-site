@@ -18,22 +18,25 @@
         {
           "ticker": "GLD",
           "shares": 15,
-          "avg_cost": 417.29
+          "avg_cost": 417.29,
+          "buy_date": "2026-06-08"
         },
         {
           "ticker": "TLT",
           "shares": 15,
-          "avg_cost": 84.22
+          "avg_cost": 84.22,
+          "buy_date": "2026-06-08"
         },
         {
-          "ticker": "SLV",
-          "shares": 20,
-          "avg_cost": 69.45
+          "ticker": "XLK",
+          "shares": 12,
+          "avg_cost": 184.18,
+          "buy_date": "2026-06-08"
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 981.52
+          "avg_cost": 2.96
         }
       ],
       "history": [
@@ -601,6 +604,46 @@
           },
           "trades": [],
           "note": "地缘危机升级转向防御，减持能源增配贵金属和国债对冲风险"
+        },
+        {
+          "date": "2026-06-08",
+          "portfolio_value": 9441.47,
+          "baseline_value": 10001.35,
+          "cash": 2.96,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 397.27,
+              "value": 5959.05
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 84.62,
+              "value": 1269.3
+            },
+            "XLK": {
+              "shares": 12,
+              "price": 184.18,
+              "value": 2210.16
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "SLV",
+              "shares": 20,
+              "price": 61.58,
+              "reason": "RSI=29.2极度超卖，动量-15.66%弱势，跌破50MA，止损离场"
+            },
+            {
+              "action": "BUY",
+              "ticker": "XLK",
+              "shares": 12,
+              "price": 184.18,
+              "reason": "RSI=60强势↑，动量+4.93%领涨，站稳50MA，科技板块反弹"
+            }
+          ],
+          "note": "清仓弱势贵金属SLV，转入强势科技板块XLK追赶基准"
         }
       ]
     },
@@ -617,15 +660,15 @@
           "buy_date": "2026-05-26"
         },
         {
-          "ticker": "TSM",
+          "ticker": "XLK",
           "shares": 10,
-          "avg_cost": 436.69,
-          "buy_date": "2026-06-03"
+          "avg_cost": 184.18,
+          "buy_date": "2026-06-08"
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 227.74
+          "avg_cost": 2653.94
         }
       ],
       "history": [
@@ -1261,6 +1304,41 @@
           },
           "trades": [],
           "note": "增加AAPL持仓以增强组合进攻性，利用其强势技术信号"
+        },
+        {
+          "date": "2026-06-08",
+          "portfolio_value": 9399.04,
+          "baseline_value": 10001.35,
+          "cash": 2653.94,
+          "positions": {
+            "AMD": {
+              "shares": 10,
+              "price": 490.33,
+              "value": 4903.3
+            },
+            "XLK": {
+              "shares": 10,
+              "price": 184.18,
+              "value": 1841.8
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "TSM",
+              "shares": 10,
+              "price": 426.8,
+              "reason": "TSM虽强势，但组合需调整以增加现金流和灵活性"
+            },
+            {
+              "action": "BUY",
+              "ticker": "XLK",
+              "shares": 10,
+              "price": 184.18,
+              "reason": "XLK技术信号强势，科技股反弹中表现优异"
+            }
+          ],
+          "note": "调整组合以增加灵活性，增持强势科技板块以期跑赢SPY"
         }
       ]
     },
@@ -1702,6 +1780,36 @@
             }
           ],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-06-08",
+          "portfolio_value": 9808.04,
+          "baseline_value": 10001.35,
+          "cash": 829.36,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 110.27,
+              "value": 4079.99
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 490.33,
+              "value": 4412.97
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 301.54,
+              "value": 301.54
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 184.18,
+              "value": 184.18
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['TSM']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
