@@ -644,6 +644,31 @@
             }
           ],
           "note": "清仓弱势贵金属SLV，转入强势科技板块XLK追赶基准"
+        },
+        {
+          "date": "2026-06-09",
+          "portfolio_value": 9310.7,
+          "baseline_value": 9971.99,
+          "cash": 2.96,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 390.78,
+              "value": 5861.7
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 85.12,
+              "value": 1276.8
+            },
+            "XLK": {
+              "shares": 12,
+              "price": 180.77,
+              "value": 2169.24
+            }
+          },
+          "trades": [],
+          "note": "持仓不足3天暂不调整，等待明日CPI数据及持仓满3天后再做进攻性调仓。"
         }
       ]
     },
@@ -660,15 +685,9 @@
           "buy_date": "2026-05-26"
         },
         {
-          "ticker": "XLK",
-          "shares": 10,
-          "avg_cost": 184.18,
-          "buy_date": "2026-06-08"
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2653.94
+          "avg_cost": 4461.64
         }
       ],
       "history": [
@@ -1339,6 +1358,29 @@
             }
           ],
           "note": "调整组合以增加灵活性，增持强势科技板块以期跑赢SPY"
+        },
+        {
+          "date": "2026-06-09",
+          "portfolio_value": 9216.74,
+          "baseline_value": 9971.99,
+          "cash": 4461.64,
+          "positions": {
+            "AMD": {
+              "shares": 10,
+              "price": 475.51,
+              "value": 4755.1
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLK",
+              "shares": 10,
+              "price": 180.77,
+              "reason": "XLK持仓不足3天，但需调整仓位以增加强势标的"
+            }
+          ],
+          "note": "调整仓位，增加TSM强势标的，优化组合进攻性"
         }
       ]
     },
@@ -1806,6 +1848,36 @@
               "shares": 1,
               "price": 184.18,
               "value": 184.18
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['TSM']，剔除弱势"
+        },
+        {
+          "date": "2026-06-09",
+          "portfolio_value": 9573.31,
+          "baseline_value": 9971.99,
+          "cash": 829.36,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 107.92,
+              "value": 3993.04
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 475.51,
+              "value": 4279.59
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 290.55,
+              "value": 290.55
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 180.77,
+              "value": 180.77
             }
           },
           "trades": [],
