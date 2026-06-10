@@ -669,6 +669,31 @@
           },
           "trades": [],
           "note": "持仓不足3天暂不调整，等待明日CPI数据及持仓满3天后再做进攻性调仓。"
+        },
+        {
+          "date": "2026-06-10",
+          "portfolio_value": 9014.42,
+          "baseline_value": 9814.78,
+          "cash": 2.96,
+          "positions": {
+            "GLD": {
+              "shares": 15,
+              "price": 374.58,
+              "value": 5618.7
+            },
+            "TLT": {
+              "shares": 15,
+              "price": 84.88,
+              "value": 1273.2
+            },
+            "XLK": {
+              "shares": 12,
+              "price": 176.63,
+              "value": 2119.56
+            }
+          },
+          "trades": [],
+          "note": "持仓不足3天无法卖出，GLD超卖但需等待止损或持满3天再调仓换股。"
         }
       ]
     },
@@ -679,15 +704,15 @@
       "provider": "openai",
       "holdings": [
         {
-          "ticker": "AMD",
-          "shares": 10,
-          "avg_cost": 503.89,
-          "buy_date": "2026-05-26"
+          "ticker": "TSM",
+          "shares": 20,
+          "avg_cost": 408.75,
+          "buy_date": "2026-06-10"
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 4461.64
+          "avg_cost": 810.64
         }
       ],
       "history": [
@@ -1381,6 +1406,36 @@
             }
           ],
           "note": "调整仓位，增加TSM强势标的，优化组合进攻性"
+        },
+        {
+          "date": "2026-06-10",
+          "portfolio_value": 8985.64,
+          "baseline_value": 9814.78,
+          "cash": 810.64,
+          "positions": {
+            "TSM": {
+              "shares": 20,
+              "price": 408.75,
+              "value": 8175.0
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AMD",
+              "shares": 10,
+              "price": 452.4,
+              "reason": "AMD近期表现平平，动量不强，考虑减仓以释放资金"
+            },
+            {
+              "action": "BUY",
+              "ticker": "TSM",
+              "shares": 20,
+              "price": 408.75,
+              "reason": "TSM动量上升且技术信号中性，可能有反弹机会"
+            }
+          ],
+          "note": "减持AMD，增持TSM，优化组合结构以应对市场波动"
         }
       ]
     },
@@ -1882,6 +1937,36 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['TSM']，剔除弱势"
+        },
+        {
+          "date": "2026-06-10",
+          "portfolio_value": 9329.65,
+          "baseline_value": 9814.78,
+          "cash": 829.36,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 107.04,
+              "value": 3960.48
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 452.4,
+              "value": 4071.6
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 291.58,
+              "value": 291.58
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 176.63,
+              "value": 176.63
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
