@@ -16,12 +16,6 @@
       "provider": "anthropic",
       "holdings": [
         {
-          "ticker": "GLD",
-          "shares": 15,
-          "avg_cost": 417.29,
-          "buy_date": "2026-06-08"
-        },
-        {
           "ticker": "TLT",
           "shares": 15,
           "avg_cost": 84.22,
@@ -36,7 +30,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2.96
+          "avg_cost": 5797.76
         }
       ],
       "history": [
@@ -694,6 +688,34 @@
           },
           "trades": [],
           "note": "持仓不足3天无法卖出，GLD超卖但需等待止损或持满3天再调仓换股。"
+        },
+        {
+          "date": "2026-06-11",
+          "portfolio_value": 9285.98,
+          "baseline_value": 9981.6,
+          "cash": 5797.76,
+          "positions": {
+            "TLT": {
+              "shares": 15,
+              "price": 85.98,
+              "value": 1289.7
+            },
+            "XLK": {
+              "shares": 12,
+              "price": 183.21,
+              "value": 2198.52
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "GLD",
+              "shares": 15,
+              "price": 386.32,
+              "reason": "GLD RSI=31.3弱势，动量-10.26%，防御仓位过高拖累收益"
+            }
+          ],
+          "note": "减持弱势防御资产GLD，降低76%防御仓位占比，为下一步加仓强势股腾出资金。"
         }
       ]
     },
@@ -704,15 +726,9 @@
       "provider": "openai",
       "holdings": [
         {
-          "ticker": "TSM",
-          "shares": 20,
-          "avg_cost": 408.75,
-          "buy_date": "2026-06-10"
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 810.64
+          "avg_cost": 9232.04
         }
       ],
       "history": [
@@ -1436,6 +1452,23 @@
             }
           ],
           "note": "减持AMD，增持TSM，优化组合结构以应对市场波动"
+        },
+        {
+          "date": "2026-06-11",
+          "portfolio_value": 9232.04,
+          "baseline_value": 9981.6,
+          "cash": 9232.04,
+          "positions": {},
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "TSM",
+              "shares": 20,
+              "price": 421.07,
+              "reason": "当前组合表现不佳，TSM虽中性但未达强势，需腾出资金以更积极配置"
+            }
+          ],
+          "note": "卖出TSM，买入强势的AMD，调整组合以增强进攻性，缩小与SPY的差距。"
         }
       ]
     },
@@ -1466,9 +1499,15 @@
           "buy_date": "2026-05-26"
         },
         {
+          "ticker": "XLF",
+          "shares": 7,
+          "avg_cost": 52.62,
+          "buy_date": "2026-06-11"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 829.36
+          "avg_cost": 461.02
         }
       ],
       "history": [
@@ -1967,6 +2006,49 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-06-11",
+          "portfolio_value": 10031.77,
+          "baseline_value": 9981.6,
+          "cash": 461.02,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 116.96,
+              "value": 4327.52
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 488.45,
+              "value": 4396.05
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 295.63,
+              "value": 295.63
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 183.21,
+              "value": 183.21
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 52.62,
+              "value": 368.34
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLF",
+              "shares": 7,
+              "price": 52.62,
+              "reason": "技术强势+动量+3.2%"
+            }
+          ],
+          "note": "规则策略：持有强势['XLF']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
