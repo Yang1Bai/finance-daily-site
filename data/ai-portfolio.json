@@ -28,9 +28,15 @@
           "buy_date": "2026-06-08"
         },
         {
+          "ticker": "XLF",
+          "shares": 50,
+          "avg_cost": 53.34,
+          "buy_date": "2026-06-12"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 5797.76
+          "avg_cost": 3130.76
         }
       ],
       "history": [
@@ -716,6 +722,39 @@
             }
           ],
           "note": "减持弱势防御资产GLD，降低76%防御仓位占比，为下一步加仓强势股腾出资金。"
+        },
+        {
+          "date": "2026-06-12",
+          "portfolio_value": 9301.91,
+          "baseline_value": 10035.58,
+          "cash": 3130.76,
+          "positions": {
+            "TLT": {
+              "shares": 15,
+              "price": 85.77,
+              "value": 1286.55
+            },
+            "XLK": {
+              "shares": 12,
+              "price": 184.8,
+              "value": 2217.6
+            },
+            "XLF": {
+              "shares": 50,
+              "price": 53.34,
+              "value": 2667.0
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLF",
+              "shares": 50,
+              "price": 53.34,
+              "reason": "RSI 63.1强势信号，20日动量+4%，金融板块受益于加息预期"
+            }
+          ],
+          "note": "落后基准7%，加仓强势板块XLF和AMD，提升进攻性追赶基准。"
         }
       ]
     },
@@ -726,9 +765,15 @@
       "provider": "openai",
       "holdings": [
         {
+          "ticker": "XLF",
+          "shares": 30,
+          "avg_cost": 53.34,
+          "buy_date": "2026-06-12"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 9232.04
+          "avg_cost": 7631.84
         }
       ],
       "history": [
@@ -1469,6 +1514,29 @@
             }
           ],
           "note": "卖出TSM，买入强势的AMD，调整组合以增强进攻性，缩小与SPY的差距。"
+        },
+        {
+          "date": "2026-06-12",
+          "portfolio_value": 9232.04,
+          "baseline_value": 10035.58,
+          "cash": 7631.84,
+          "positions": {
+            "XLF": {
+              "shares": 30,
+              "price": 53.34,
+              "value": 1600.2
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLF",
+              "shares": 30,
+              "price": 53.34,
+              "reason": "XLF技术信号强势↑，金融板块表现强劲"
+            }
+          ],
+          "note": "买入AMD和XLF，利用强势信号增强组合进攻性，缩小与SPY差距。"
         }
       ]
     },
@@ -2049,6 +2117,41 @@
             }
           ],
           "note": "规则策略：持有强势['XLF']，剔除弱势"
+        },
+        {
+          "date": "2026-06-12",
+          "portfolio_value": 10523.55,
+          "baseline_value": 10035.58,
+          "cash": 461.02,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 124.57,
+              "value": 4609.09
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 511.57,
+              "value": 4604.13
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 291.13,
+              "value": 291.13
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 184.8,
+              "value": 184.8
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 53.34,
+              "value": 373.38
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
