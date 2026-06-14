@@ -7,14 +7,9 @@
     }
   },
   "stats": {
-    "total_broadcasts": 41,
-    "last_broadcast": "2026-06-13 10:55",
+    "total_broadcasts": 42,
+    "last_broadcast": "2026-06-14 11:02",
     "broadcast_history": [
-      {
-        "date": "2026-05-15 10:59",
-        "sent": 1,
-        "total": 1
-      },
       {
         "date": "2026-05-16 10:16",
         "sent": 1,
@@ -157,6 +152,11 @@
       },
       {
         "date": "2026-06-13 10:55",
+        "sent": 1,
+        "total": 1
+      },
+      {
+        "date": "2026-06-14 11:02",
         "sent": 1,
         "total": 1
       }
