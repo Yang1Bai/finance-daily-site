@@ -28,9 +28,15 @@
           "buy_date": "2026-06-12"
         },
         {
+          "ticker": "IWM",
+          "shares": 10,
+          "avg_cost": 292.08,
+          "buy_date": "2026-06-16"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 4416.56
+          "avg_cost": 1495.76
         }
       ],
       "history": [
@@ -777,6 +783,39 @@
             }
           ],
           "note": "减防御加进攻，卖出TLT换入强势AMD追赶基准"
+        },
+        {
+          "date": "2026-06-16",
+          "portfolio_value": 9371.34,
+          "baseline_value": 10151.66,
+          "cash": 1495.76,
+          "positions": {
+            "XLK": {
+              "shares": 12,
+              "price": 186.44,
+              "value": 2237.28
+            },
+            "XLF": {
+              "shares": 50,
+              "price": 54.35,
+              "value": 2717.5
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 292.08,
+              "value": 2920.8
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "IWM",
+              "shares": 10,
+              "price": 292.08,
+              "reason": "小盘股动量+6.09%，RSI52.5中性偏强，地缘缓和利好风险资产"
+            }
+          ],
+          "note": "落后基准7.69%需进攻，加仓强动量半导体AMD和小盘IWM博反弹。"
         }
       ]
     },
@@ -787,9 +826,15 @@
       "provider": "openai",
       "holdings": [
         {
+          "ticker": "XLF",
+          "shares": 30,
+          "avg_cost": 54.35,
+          "buy_date": "2026-06-16"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 9238.64
+          "avg_cost": 7608.14
         }
       ],
       "history": [
@@ -1570,6 +1615,29 @@
             }
           ],
           "note": "调整组合，卖出XLF，买入强势AMD，提升组合进攻性"
+        },
+        {
+          "date": "2026-06-16",
+          "portfolio_value": 9238.64,
+          "baseline_value": 10151.66,
+          "cash": 7608.14,
+          "positions": {
+            "XLF": {
+              "shares": 30,
+              "price": 54.35,
+              "value": 1630.5
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLF",
+              "shares": 30,
+              "price": 54.35,
+              "reason": "XLF技术信号强势，RSI高达75.1，动量5.04%，符合强势↑配置优先原则"
+            }
+          ],
+          "note": "选择AMD和XLF进行进攻性配置，利用其强劲动量和技术信号提升组合表现"
         }
       ]
     },
@@ -2220,6 +2288,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['TSM']，剔除弱势"
+        },
+        {
+          "date": "2026-06-16",
+          "portfolio_value": 10223.61,
+          "baseline_value": 10151.66,
+          "cash": 461.02,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 117.05,
+              "value": 4330.85
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 507.29,
+              "value": 4565.61
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 299.24,
+              "value": 299.24
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 186.44,
+              "value": 186.44
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 54.35,
+              "value": 380.45
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
