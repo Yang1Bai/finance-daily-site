@@ -34,9 +34,15 @@
           "buy_date": "2026-06-16"
         },
         {
+          "ticker": "INTC",
+          "shares": 10,
+          "avg_cost": 133.99,
+          "buy_date": "2026-06-18"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1495.76
+          "avg_cost": 155.86
         }
       ],
       "history": [
@@ -841,6 +847,44 @@
           },
           "trades": [],
           "note": "加仓AMD捕捉半导体反弹机会，XLF强势继续持有，保留现金应对波动。"
+        },
+        {
+          "date": "2026-06-18",
+          "portfolio_value": 9427.44,
+          "baseline_value": 10103.09,
+          "cash": 155.86,
+          "positions": {
+            "XLK": {
+              "shares": 12,
+              "price": 191.44,
+              "value": 2297.28
+            },
+            "XLF": {
+              "shares": 50,
+              "price": 53.57,
+              "value": 2678.5
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 295.59,
+              "value": 2955.9
+            },
+            "INTC": {
+              "shares": 10,
+              "price": 133.99,
+              "value": 1339.9
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "INTC",
+              "shares": 10,
+              "price": 133.99,
+              "reason": "强势信号，RSI 61.0，20日动量+12.63%，半导体板块轮动受益"
+            }
+          ],
+          "note": "加仓半导体强势标的TSM和INTC，提高进攻性追赶基准。"
         }
       ]
     },
@@ -857,15 +901,9 @@
           "buy_date": "2026-06-16"
         },
         {
-          "ticker": "TLT",
-          "shares": 10,
-          "avg_cost": 86.33,
-          "buy_date": "2026-06-17"
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 6744.84
+          "avg_cost": 7612.34
         }
       ],
       "history": [
@@ -1697,6 +1735,29 @@
             }
           ],
           "note": "增加AMD进攻性仓位，同时配置TLT对冲风险，优化组合表现"
+        },
+        {
+          "date": "2026-06-18",
+          "portfolio_value": 9219.44,
+          "baseline_value": 10103.09,
+          "cash": 7612.34,
+          "positions": {
+            "XLF": {
+              "shares": 30,
+              "price": 53.57,
+              "value": 1607.1
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "TLT",
+              "shares": 10,
+              "price": 86.75,
+              "reason": "TLT虽强势↑但为防御仓位，当前需提高进攻性"
+            }
+          ],
+          "note": "增持TSM以提高进攻性，减持TLT释放资金，目标跑赢SPY。"
         }
       ]
     },
@@ -2417,6 +2478,41 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-06-18",
+          "portfolio_value": 11119.42,
+          "baseline_value": 10103.09,
+          "cash": 461.02,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 133.99,
+              "value": 4957.63
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 537.37,
+              "value": 4836.33
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 298.01,
+              "value": 298.01
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 191.44,
+              "value": 191.44
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 53.57,
+              "value": 374.99
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['TSM', 'IWM']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
