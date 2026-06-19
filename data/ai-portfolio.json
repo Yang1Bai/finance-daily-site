@@ -885,6 +885,36 @@
             }
           ],
           "note": "加仓半导体强势标的TSM和INTC，提高进攻性追赶基准。"
+        },
+        {
+          "date": "2026-06-19",
+          "portfolio_value": 9427.44,
+          "baseline_value": 10103.09,
+          "cash": 155.86,
+          "positions": {
+            "XLK": {
+              "shares": 12,
+              "price": 191.44,
+              "value": 2297.28
+            },
+            "XLF": {
+              "shares": 50,
+              "price": 53.57,
+              "value": 2678.5
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 295.59,
+              "value": 2955.9
+            },
+            "INTC": {
+              "shares": 10,
+              "price": 133.99,
+              "value": 1339.9
+            }
+          },
+          "trades": [],
+          "note": "今日美股休市（六月节假期），无法执行交易，维持现有仓位等待下周开盘。"
         }
       ]
     },
@@ -901,9 +931,15 @@
           "buy_date": "2026-06-16"
         },
         {
+          "ticker": "INTC",
+          "shares": 50,
+          "avg_cost": 133.99,
+          "buy_date": "2026-06-19"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 7612.34
+          "avg_cost": 912.84
         }
       ],
       "history": [
@@ -1758,6 +1794,34 @@
             }
           ],
           "note": "增持TSM以提高进攻性，减持TLT释放资金，目标跑赢SPY。"
+        },
+        {
+          "date": "2026-06-19",
+          "portfolio_value": 9219.44,
+          "baseline_value": 10103.09,
+          "cash": 912.84,
+          "positions": {
+            "XLF": {
+              "shares": 30,
+              "price": 53.57,
+              "value": 1607.1
+            },
+            "INTC": {
+              "shares": 50,
+              "price": 133.99,
+              "value": 6699.5
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "INTC",
+              "shares": 50,
+              "price": 133.99,
+              "reason": "INTC技术信号强势↑，动量和RSI显示积极趋势，符合进攻性策略"
+            }
+          ],
+          "note": "买入强势股TSM和INTC，增强组合进攻性，缩小与SPY差距"
         }
       ]
     },
@@ -2481,6 +2545,41 @@
         },
         {
           "date": "2026-06-18",
+          "portfolio_value": 11119.42,
+          "baseline_value": 10103.09,
+          "cash": 461.02,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 133.99,
+              "value": 4957.63
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 537.37,
+              "value": 4836.33
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 298.01,
+              "value": 298.01
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 191.44,
+              "value": 191.44
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 53.57,
+              "value": 374.99
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['TSM', 'IWM']，剔除弱势"
+        },
+        {
+          "date": "2026-06-19",
           "portfolio_value": 11119.42,
           "baseline_value": 10103.09,
           "cash": 461.02,
