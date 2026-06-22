@@ -1,29 +1,29 @@
 {
-  "updated": "2026-06-21T06:45:06.451383+00:00",
+  "updated": "2026-06-22T23:03:44.673060+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,500.58",
-      "change": "+80.48",
-      "change_pct": "+1.08%",
-      "direction": "up"
+      "value": "7,472.79",
+      "change": "-27.79",
+      "change_pct": "-0.37%",
+      "direction": "down"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,518",
-      "change": "+496.27",
-      "change_pct": "+1.91%",
-      "direction": "up"
+      "value": "26,167",
+      "change": "-351.33",
+      "change_pct": "-1.32%",
+      "direction": "down"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,565",
-      "change": "+72.15",
-      "change_pct": "+0.14%",
+      "value": "51,713",
+      "change": "+148.01",
+      "change_pct": "+0.29%",
       "direction": "up"
     },
     {
@@ -61,33 +61,33 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,172.90",
-      "change": "-51.20",
-      "change_pct": "-1.21%",
+      "value": "4,207.10",
+      "change": "-17.00",
+      "change_pct": "-0.40%",
       "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "76.5400",
-      "change": "-0.06",
-      "change_pct": "-0.08%",
+      "value": "74.2900",
+      "change": "-2.31",
+      "change_pct": "-3.02%",
       "direction": "down"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "64,226",
-      "change": "-13.68",
-      "change_pct": "-0.02%",
-      "direction": "down"
+      "value": "63,852",
+      "change": "+614.62",
+      "change_pct": "+0.97%",
+      "direction": "up"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "100.8500",
-      "change": "+0.76",
-      "change_pct": "+0.76%",
+      "value": "100.9960",
+      "change": "+0.15",
+      "change_pct": "+0.14%",
       "direction": "up"
     }
   ]
