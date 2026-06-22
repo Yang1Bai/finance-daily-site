@@ -915,6 +915,36 @@
           },
           "trades": [],
           "note": "今日美股休市（六月节假期），无法执行交易，维持现有仓位等待下周开盘。"
+        },
+        {
+          "date": "2026-06-22",
+          "portfolio_value": 9537.86,
+          "baseline_value": 10071.3,
+          "cash": 155.86,
+          "positions": {
+            "XLK": {
+              "shares": 12,
+              "price": 192.15,
+              "value": 2305.8
+            },
+            "XLF": {
+              "shares": 50,
+              "price": 53.7,
+              "value": 2685.0
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 298.18,
+              "value": 2981.8
+            },
+            "INTC": {
+              "shares": 10,
+              "price": 140.94,
+              "value": 1409.4
+            }
+          },
+          "trades": [],
+          "note": "小资金加仓TSM追强势，等待弱势持仓回暖或止损机会。"
         }
       ]
     },
@@ -925,12 +955,6 @@
       "provider": "openai",
       "holdings": [
         {
-          "ticker": "XLF",
-          "shares": 30,
-          "avg_cost": 54.35,
-          "buy_date": "2026-06-16"
-        },
-        {
           "ticker": "INTC",
           "shares": 50,
           "avg_cost": 133.99,
@@ -939,7 +963,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 912.84
+          "avg_cost": 2523.84
         }
       ],
       "history": [
@@ -1822,6 +1846,29 @@
             }
           ],
           "note": "买入强势股TSM和INTC，增强组合进攻性，缩小与SPY差距"
+        },
+        {
+          "date": "2026-06-22",
+          "portfolio_value": 9570.84,
+          "baseline_value": 10071.3,
+          "cash": 2523.84,
+          "positions": {
+            "INTC": {
+              "shares": 50,
+              "price": 140.94,
+              "value": 7047.0
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLF",
+              "shares": 30,
+              "price": 53.7,
+              "reason": "XLF已持有6天，当前强势，但需释放资金以增加进攻性仓位"
+            }
+          ],
+          "note": "卖出XLF释放资金，买入强势AMD以增强组合进攻性，缩小与SPY差距。"
         }
       ]
     },
@@ -2608,6 +2655,41 @@
               "shares": 7,
               "price": 53.57,
               "value": 374.99
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['TSM', 'IWM']，剔除弱势"
+        },
+        {
+          "date": "2026-06-22",
+          "portfolio_value": 11505.53,
+          "baseline_value": 10071.3,
+          "cash": 461.02,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 140.94,
+              "value": 5214.78
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 551.63,
+              "value": 4964.67
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 297.01,
+              "value": 297.01
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 192.15,
+              "value": 192.15
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 53.7,
+              "value": 375.9
             }
           },
           "trades": [],
