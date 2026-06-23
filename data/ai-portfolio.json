@@ -945,6 +945,36 @@
           },
           "trades": [],
           "note": "小资金加仓TSM追强势，等待弱势持仓回暖或止损机会。"
+        },
+        {
+          "date": "2026-06-23",
+          "portfolio_value": 9336.14,
+          "baseline_value": 9925.04,
+          "cash": 155.86,
+          "positions": {
+            "XLK": {
+              "shares": 12,
+              "price": 184.19,
+              "value": 2210.28
+            },
+            "XLF": {
+              "shares": 50,
+              "price": 53.88,
+              "value": 2694.0
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 295.32,
+              "value": 2953.2
+            },
+            "INTC": {
+              "shares": 10,
+              "price": 132.28,
+              "value": 1322.8
+            }
+          },
+          "trades": [],
+          "note": "小盘股创新高，资金轮动中，加仓强势半导体AMD追赶基准"
         }
       ]
     },
@@ -955,15 +985,9 @@
       "provider": "openai",
       "holdings": [
         {
-          "ticker": "INTC",
-          "shares": 50,
-          "avg_cost": 133.99,
-          "buy_date": "2026-06-19"
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2523.84
+          "avg_cost": 9137.84
         }
       ],
       "history": [
@@ -1869,6 +1893,23 @@
             }
           ],
           "note": "卖出XLF释放资金，买入强势AMD以增强组合进攻性，缩小与SPY差距。"
+        },
+        {
+          "date": "2026-06-23",
+          "portfolio_value": 9137.84,
+          "baseline_value": 9925.04,
+          "cash": 9137.84,
+          "positions": {},
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "INTC",
+              "shares": 50,
+              "price": 132.28,
+              "reason": "INTC已持有4天，虽然强势，但需释放资金以调整组合策略"
+            }
+          ],
+          "note": "调整组合，释放资金，增持AMD以捕捉小盘股上涨机会"
         }
       ]
     },
@@ -2694,6 +2735,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['TSM', 'IWM']，剔除弱势"
+        },
+        {
+          "date": "2026-06-23",
+          "portfolio_value": 10889.68,
+          "baseline_value": 9925.04,
+          "cash": 461.02,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 132.28,
+              "value": 4894.36
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 519.85,
+              "value": 4678.65
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 294.3,
+              "value": 294.3
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 184.19,
+              "value": 184.19
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 53.88,
+              "value": 377.16
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
