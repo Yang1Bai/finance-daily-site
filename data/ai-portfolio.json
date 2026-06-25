@@ -16,12 +16,6 @@
       "provider": "anthropic",
       "holdings": [
         {
-          "ticker": "XLK",
-          "shares": 12,
-          "avg_cost": 184.18,
-          "buy_date": "2026-06-08"
-        },
-        {
           "ticker": "XLF",
           "shares": 50,
           "avg_cost": 53.34,
@@ -42,7 +36,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 155.86
+          "avg_cost": 2370.7
         }
       ],
       "history": [
@@ -1005,6 +999,39 @@
           },
           "trades": [],
           "note": "芯片股恐慌抛售后择优低吸TSM，保持XLF强势仓位，等待MU财报指引方向。"
+        },
+        {
+          "date": "2026-06-25",
+          "portfolio_value": 9361.0,
+          "baseline_value": 9934.79,
+          "cash": 2370.7,
+          "positions": {
+            "XLF": {
+              "shares": 50,
+              "price": 53.45,
+              "value": 2672.5
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 298.91,
+              "value": 2989.1
+            },
+            "INTC": {
+              "shares": 10,
+              "price": 132.87,
+              "value": 1328.7
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLK",
+              "shares": 12,
+              "price": 184.57,
+              "reason": "XLK中性信号，换仓至更强势标的追赶基准"
+            }
+          ],
+          "note": "卖出中性XLK释放资金，保留强势IWM/XLF/INTC，等待明日加仓机会追赶基准。"
         }
       ]
     },
@@ -1969,6 +1996,21 @@
             }
           ],
           "note": "选择强势标的INTC和XLF进行配置，提升组合进攻性以缩小与SPY的差距。"
+        },
+        {
+          "date": "2026-06-25",
+          "portfolio_value": 9198.84,
+          "baseline_value": 9934.79,
+          "cash": 2555.34,
+          "positions": {
+            "INTC": {
+              "shares": 50,
+              "price": 132.87,
+              "value": 6643.5
+            }
+          },
+          "trades": [],
+          "note": "增加AMD仓位以增强组合进攻性，利用其上升动量"
         }
       ]
     },
@@ -1987,12 +2029,6 @@
           "buy_date": "2026-05-22"
         },
         {
-          "ticker": "AAPL",
-          "shares": 1,
-          "avg_cost": 308.82,
-          "buy_date": "2026-05-25"
-        },
-        {
           "ticker": "XLK",
           "shares": 1,
           "avg_cost": 185.14,
@@ -2005,9 +2041,15 @@
           "buy_date": "2026-06-11"
         },
         {
+          "ticker": "IWM",
+          "shares": 1,
+          "avg_cost": 298.91,
+          "buy_date": "2026-06-25"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 461.02
+          "avg_cost": 437.26
         }
       ],
       "history": [
@@ -2864,6 +2906,56 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-06-25",
+          "portfolio_value": 11004.21,
+          "baseline_value": 9934.79,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 132.87,
+              "value": 4916.19
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 532.57,
+              "value": 4793.13
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 184.57,
+              "value": 184.57
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 53.45,
+              "value": 374.15
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 298.91,
+              "value": 298.91
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AAPL",
+              "shares": 1,
+              "price": 275.15,
+              "reason": "技术弱势(弱势)"
+            },
+            {
+              "action": "BUY",
+              "ticker": "IWM",
+              "shares": 1,
+              "price": 298.91,
+              "reason": "技术强势+动量+3.2%"
+            }
+          ],
+          "note": "规则策略：持有强势['IWM']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
