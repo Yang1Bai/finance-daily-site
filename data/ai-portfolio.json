@@ -34,9 +34,15 @@
           "buy_date": "2026-06-18"
         },
         {
+          "ticker": "TSM",
+          "shares": 5,
+          "avg_cost": 432.35,
+          "buy_date": "2026-06-26"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2370.7
+          "avg_cost": 208.95
         }
       ],
       "history": [
@@ -1032,6 +1038,44 @@
             }
           ],
           "note": "卖出中性XLK释放资金，保留强势IWM/XLF/INTC，等待明日加仓机会追赶基准。"
+        },
+        {
+          "date": "2026-06-26",
+          "portfolio_value": 9330.7,
+          "baseline_value": 9862.94,
+          "cash": 208.95,
+          "positions": {
+            "XLF": {
+              "shares": 50,
+              "price": 53.57,
+              "value": 2678.5
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 299.83,
+              "value": 2998.3
+            },
+            "INTC": {
+              "shares": 10,
+              "price": 128.32,
+              "value": 1283.2
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 432.35,
+              "value": 2161.75
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "TSM",
+              "shares": 5,
+              "price": 432.35,
+              "reason": "TSM技术信号中性，RSI 55.4健康，动量+2%且站上50MA，AI芯片代工龙头估值合理"
+            }
+          ],
+          "note": "科技抛售中逆势加仓技术面转强的半导体龙头AMD和TSM，博弈超跌反弹追赶基准。"
         }
       ]
     },
@@ -1048,9 +1092,15 @@
           "buy_date": "2026-06-24"
         },
         {
+          "ticker": "XLF",
+          "shares": 20,
+          "avg_cost": 53.57,
+          "buy_date": "2026-06-26"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2555.34
+          "avg_cost": 1483.94
         }
       ],
       "history": [
@@ -2011,6 +2061,34 @@
           },
           "trades": [],
           "note": "增加AMD仓位以增强组合进攻性，利用其上升动量"
+        },
+        {
+          "date": "2026-06-26",
+          "portfolio_value": 8971.34,
+          "baseline_value": 9862.94,
+          "cash": 1483.94,
+          "positions": {
+            "INTC": {
+              "shares": 50,
+              "price": 128.32,
+              "value": 6416.0
+            },
+            "XLF": {
+              "shares": 20,
+              "price": 53.57,
+              "value": 1071.4
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLF",
+              "shares": 20,
+              "price": 53.57,
+              "reason": "XLF技术信号强势↑，动量和RSI均显示上升趋势，适合进攻性配置"
+            }
+          ],
+          "note": "增加XLF和TSM仓位以增强组合进攻性，改善相对SPY表现"
         }
       ]
     },
@@ -2956,6 +3034,41 @@
             }
           ],
           "note": "规则策略：持有强势['IWM']，剔除弱势"
+        },
+        {
+          "date": "2026-06-26",
+          "portfolio_value": 10735.25,
+          "baseline_value": 9862.94,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 128.32,
+              "value": 4747.84
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 521.58,
+              "value": 4694.22
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 181.11,
+              "value": 181.11
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 53.57,
+              "value": 374.99
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 299.83,
+              "value": 299.83
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
