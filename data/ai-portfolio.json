@@ -1106,6 +1106,36 @@
           },
           "trades": [],
           "note": "科技反弹日加仓AMD，保持进攻姿态追赶基准。"
+        },
+        {
+          "date": "2026-06-30",
+          "portfolio_value": 9678.1,
+          "baseline_value": 10103.5,
+          "cash": 208.95,
+          "positions": {
+            "XLF": {
+              "shares": 50,
+              "price": 53.61,
+              "value": 2680.5
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 300.45,
+              "value": 3004.5
+            },
+            "INTC": {
+              "shares": 10,
+              "price": 139.63,
+              "value": 1396.3
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 477.57,
+              "value": 2387.85
+            }
+          },
+          "trades": [],
+          "note": "小额加仓强势半导体AMD，现金有限仅能买1股，持仓结构维持进攻性。"
         }
       ]
     },
@@ -1116,15 +1146,9 @@
       "provider": "openai",
       "holdings": [
         {
-          "ticker": "INTC",
-          "shares": 50,
-          "avg_cost": 131.65,
-          "buy_date": "2026-06-24"
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2558.34
+          "avg_cost": 9539.84
         }
       ],
       "history": [
@@ -2136,6 +2160,23 @@
             }
           ],
           "note": "卖出XLF获利，转而买入强势的TSM以增强组合进攻性"
+        },
+        {
+          "date": "2026-06-30",
+          "portfolio_value": 9539.84,
+          "baseline_value": 10103.5,
+          "cash": 9539.84,
+          "positions": {},
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "INTC",
+              "shares": 50,
+              "price": 139.63,
+              "reason": "INTC 已持有 6 天，虽然强势，但组合需要更积极的调整以缩小与 SPY 的差距。"
+            }
+          ],
+          "note": "卖出 INTC，买入 AMD，调整组合以增强进攻性，缩小与 SPY 的差距。"
         }
       ]
     },
@@ -3147,6 +3188,41 @@
               "shares": 1,
               "price": 298.97,
               "value": 298.97
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['TSM']，剔除弱势"
+        },
+        {
+          "date": "2026-06-30",
+          "portfolio_value": 11698.0,
+          "baseline_value": 10103.5,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 139.63,
+              "value": 5166.31
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 580.91,
+              "value": 5228.19
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 190.52,
+              "value": 190.52
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 53.61,
+              "value": 375.27
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 300.45,
+              "value": 300.45
             }
           },
           "trades": [],
