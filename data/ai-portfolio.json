@@ -1136,6 +1136,36 @@
           },
           "trades": [],
           "note": "小额加仓强势半导体AMD，现金有限仅能买1股，持仓结构维持进攻性。"
+        },
+        {
+          "date": "2026-07-01",
+          "portfolio_value": 9432.5,
+          "baseline_value": 10089.83,
+          "cash": 208.95,
+          "positions": {
+            "XLF": {
+              "shares": 50,
+              "price": 54.78,
+              "value": 2739.0
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 299.32,
+              "value": 2993.2
+            },
+            "INTC": {
+              "shares": 10,
+              "price": 127.02,
+              "value": 1270.2
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 444.23,
+              "value": 2221.15
+            }
+          },
+          "trades": [],
+          "note": "落后基准6.5%，增持强势AMD加强进攻，现有持仓INTC/XLF表现强势继续持有"
         }
       ]
     },
@@ -1146,9 +1176,15 @@
       "provider": "openai",
       "holdings": [
         {
+          "ticker": "INTC",
+          "shares": 50,
+          "avg_cost": 127.02,
+          "buy_date": "2026-07-01"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 9539.84
+          "avg_cost": 3188.84
         }
       ],
       "history": [
@@ -2177,6 +2213,29 @@
             }
           ],
           "note": "卖出 INTC，买入 AMD，调整组合以增强进攻性，缩小与 SPY 的差距。"
+        },
+        {
+          "date": "2026-07-01",
+          "portfolio_value": 9539.84,
+          "baseline_value": 10089.83,
+          "cash": 3188.84,
+          "positions": {
+            "INTC": {
+              "shares": 50,
+              "price": 127.02,
+              "value": 6351.0
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "INTC",
+              "shares": 50,
+              "price": 127.02,
+              "reason": "INTC技术信号强势↑，动量20d为+17.69%，符合进攻性策略"
+            }
+          ],
+          "note": "今日策略：选择技术信号强势的INTC和AMD进行配置，以缩小与SPY的差距。"
         }
       ]
     },
@@ -3227,6 +3286,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['TSM']，剔除弱势"
+        },
+        {
+          "date": "2026-07-01",
+          "portfolio_value": 10873.32,
+          "baseline_value": 10089.83,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 127.02,
+              "value": 4699.74
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 540.88,
+              "value": 4867.92
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 185.62,
+              "value": 185.62
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 54.78,
+              "value": 383.46
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 299.32,
+              "value": 299.32
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
