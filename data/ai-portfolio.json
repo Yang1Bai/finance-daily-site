@@ -28,12 +28,6 @@
           "buy_date": "2026-06-16"
         },
         {
-          "ticker": "INTC",
-          "shares": 10,
-          "avg_cost": 133.99,
-          "buy_date": "2026-06-18"
-        },
-        {
           "ticker": "TSM",
           "shares": 5,
           "avg_cost": 432.35,
@@ -42,7 +36,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 208.95
+          "avg_cost": 1412.45
         }
       ],
       "history": [
@@ -1166,6 +1160,39 @@
           },
           "trades": [],
           "note": "落后基准6.5%，增持强势AMD加强进攻，现有持仓INTC/XLF表现强势继续持有"
+        },
+        {
+          "date": "2026-07-02",
+          "portfolio_value": 9340.05,
+          "baseline_value": 10076.58,
+          "cash": 1412.45,
+          "positions": {
+            "XLF": {
+              "shares": 50,
+              "price": 55.62,
+              "value": 2781.0
+            },
+            "IWM": {
+              "shares": 10,
+              "price": 297.58,
+              "value": 2975.8
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 434.16,
+              "value": 2170.8
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "INTC",
+              "shares": 10,
+              "price": 120.35,
+              "reason": "INTC中性信号，动量仅6.78%，释放资金换入更强势标的"
+            }
+          ],
+          "note": "卖出INTC释放资金，保持XLF和IWM强势仓位，等待更好进攻机会。"
         }
       ]
     },
@@ -1182,9 +1209,15 @@
           "buy_date": "2026-07-01"
         },
         {
+          "ticker": "XLF",
+          "shares": 30,
+          "avg_cost": 55.62,
+          "buy_date": "2026-07-02"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3188.84
+          "avg_cost": 1520.24
         }
       ],
       "history": [
@@ -2236,6 +2269,34 @@
             }
           ],
           "note": "今日策略：选择技术信号强势的INTC和AMD进行配置，以缩小与SPY的差距。"
+        },
+        {
+          "date": "2026-07-02",
+          "portfolio_value": 9206.34,
+          "baseline_value": 10076.58,
+          "cash": 1520.24,
+          "positions": {
+            "INTC": {
+              "shares": 50,
+              "price": 120.35,
+              "value": 6017.5
+            },
+            "XLF": {
+              "shares": 30,
+              "price": 55.62,
+              "value": 1668.6
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLF",
+              "shares": 30,
+              "price": 55.62,
+              "reason": "XLF技术信号强势↑，动量显著上升，金融板块表现强劲"
+            }
+          ],
+          "note": "增加IWM和XLF的仓位以增强组合进攻性，追求跑赢SPY的目标。"
         }
       ]
     },
@@ -3317,6 +3378,41 @@
               "shares": 1,
               "price": 299.32,
               "value": 299.32
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-07-02",
+          "portfolio_value": 10418.1,
+          "baseline_value": 10076.58,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 120.35,
+              "value": 4452.95
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 517.82,
+              "value": 4660.38
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 180.59,
+              "value": 180.59
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 55.62,
+              "value": 389.34
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 297.58,
+              "value": 297.58
             }
           },
           "trades": [],
