@@ -2,6 +2,8 @@ name: Live Quotes Update
 
 on:
   schedule:
+    # Every 30 min during US market hours (13:30-20:30 UTC = 9:30 AM - 4:30 PM ET), weekdays
+    - cron: '*/30 13-20 * * 1-5'
     # After US market close (21:30 UTC = 17:30 ET), weekdays only
     - cron: '30 21 * * 1-5'
     # Weekend: once daily for Asian market reference
