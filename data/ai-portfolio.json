@@ -23,8 +23,8 @@
         },
         {
           "ticker": "IWM",
-          "shares": 10,
-          "avg_cost": 292.08,
+          "shares": 14,
+          "avg_cost": 293.6514,
           "buy_date": "2026-06-16"
         },
         {
@@ -36,7 +36,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1412.45
+          "avg_cost": 222.13
         }
       ],
       "history": [
@@ -1193,6 +1193,39 @@
             }
           ],
           "note": "卖出INTC释放资金，保持XLF和IWM强势仓位，等待更好进攻机会。"
+        },
+        {
+          "date": "2026-07-03",
+          "portfolio_value": 9340.05,
+          "baseline_value": 10076.58,
+          "cash": 222.13,
+          "positions": {
+            "XLF": {
+              "shares": 50,
+              "price": 55.62,
+              "value": 2781.0
+            },
+            "IWM": {
+              "shares": 14,
+              "price": 297.58,
+              "value": 4166.12
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 434.16,
+              "value": 2170.8
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "IWM",
+              "shares": 4,
+              "price": 297.58,
+              "reason": "IWM技术信号强势↑，RSI62.9动量+3.69%，板块轮动受益，加仓追涨"
+            }
+          ],
+          "note": "休市前加仓强势IWM，利用板块轮动机会缩小与SPY差距。"
         }
       ]
     },
@@ -2297,6 +2330,26 @@
             }
           ],
           "note": "增加IWM和XLF的仓位以增强组合进攻性，追求跑赢SPY的目标。"
+        },
+        {
+          "date": "2026-07-03",
+          "portfolio_value": 9206.34,
+          "baseline_value": 10076.58,
+          "cash": 1520.24,
+          "positions": {
+            "INTC": {
+              "shares": 50,
+              "price": 120.35,
+              "value": 6017.5
+            },
+            "XLF": {
+              "shares": 30,
+              "price": 55.62,
+              "value": 1668.6
+            }
+          },
+          "trades": [],
+          "note": "增持IWM以增强进攻性，利用其强势表现缩小与SPY的差距"
         }
       ]
     },
@@ -3385,6 +3438,41 @@
         },
         {
           "date": "2026-07-02",
+          "portfolio_value": 10418.1,
+          "baseline_value": 10076.58,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 120.35,
+              "value": 4452.95
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 517.82,
+              "value": 4660.38
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 180.59,
+              "value": 180.59
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 55.62,
+              "value": 389.34
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 297.58,
+              "value": 297.58
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-07-03",
           "portfolio_value": 10418.1,
           "baseline_value": 10076.58,
           "cash": 437.26,
