@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T19:57:26.739389+00:00",
+  "updated": "2026-07-03T21:11:19.529999+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -77,9 +77,9 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "62,167",
-      "change": "+681.38",
-      "change_pct": "+1.11%",
+      "value": "62,713",
+      "change": "+1227.74",
+      "change_pct": "+2.00%",
       "direction": "up"
     },
     {
