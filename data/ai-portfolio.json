@@ -1226,6 +1226,31 @@
             }
           ],
           "note": "休市前加仓强势IWM，利用板块轮动机会缩小与SPY差距。"
+        },
+        {
+          "date": "2026-07-06",
+          "portfolio_value": 9472.68,
+          "baseline_value": 10164.52,
+          "cash": 222.13,
+          "positions": {
+            "XLF": {
+              "shares": 50,
+              "price": 56.14,
+              "value": 2807.0
+            },
+            "IWM": {
+              "shares": 14,
+              "price": 298.9,
+              "value": 4184.6
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 451.79,
+              "value": 2258.95
+            }
+          },
+          "trades": [],
+          "note": "科技股反弹窗口，小幅加仓AMD增强进攻性，追赶基准差距。"
         }
       ]
     },
@@ -1242,15 +1267,9 @@
           "buy_date": "2026-07-01"
         },
         {
-          "ticker": "XLF",
-          "shares": 30,
-          "avg_cost": 55.62,
-          "buy_date": "2026-07-02"
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1520.24
+          "avg_cost": 3204.44
         }
       ],
       "history": [
@@ -2350,6 +2369,29 @@
           },
           "trades": [],
           "note": "增持IWM以增强进攻性，利用其强势表现缩小与SPY的差距"
+        },
+        {
+          "date": "2026-07-06",
+          "portfolio_value": 9314.44,
+          "baseline_value": 10164.52,
+          "cash": 3204.44,
+          "positions": {
+            "INTC": {
+              "shares": 50,
+              "price": 122.2,
+              "value": 6110.0
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLF",
+              "shares": 30,
+              "price": 56.14,
+              "reason": "XLF技术信号强势↑，但组合需要更高增长潜力的标的"
+            }
+          ],
+          "note": "调整组合以增加进攻性，减持XLF，增持AMD以期望更高收益"
         }
       ]
     },
@@ -3501,6 +3543,41 @@
               "shares": 1,
               "price": 297.58,
               "value": 297.58
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-07-06",
+          "portfolio_value": 10802.56,
+          "baseline_value": 10164.52,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 122.2,
+              "value": 4521.4
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 552.05,
+              "value": 4968.45
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 183.57,
+              "value": 183.57
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 56.14,
+              "value": 392.98
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 298.9,
+              "value": 298.9
             }
           },
           "trades": [],
