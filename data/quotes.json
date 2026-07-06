@@ -1,30 +1,30 @@
 {
-  "updated": "2026-07-06T16:20:25.485353+00:00",
+  "updated": "2026-07-06T18:26:17.137430+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,538.54",
-      "change": "+55.30",
-      "change_pct": "+0.74%",
+      "value": "7,542.59",
+      "change": "+59.35",
+      "change_pct": "+0.79%",
       "direction": "up"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,201",
-      "change": "+367.92",
-      "change_pct": "+1.42%",
+      "value": "26,140",
+      "change": "+307.14",
+      "change_pct": "+1.19%",
       "direction": "up"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,875",
-      "change": "-25.22",
-      "change_pct": "-0.05%",
-      "direction": "down"
+      "value": "52,977",
+      "change": "+77.20",
+      "change_pct": "+0.15%",
+      "direction": "up"
     },
     {
       "name": "上证指数",
@@ -61,33 +61,33 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,156.50",
-      "change": "+43.80",
-      "change_pct": "+1.06%",
+      "value": "4,173.10",
+      "change": "+60.40",
+      "change_pct": "+1.47%",
       "direction": "up"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "68.6700",
-      "change": "-0.02",
-      "change_pct": "-0.03%",
+      "value": "68.5400",
+      "change": "-0.15",
+      "change_pct": "-0.22%",
       "direction": "down"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "63,700",
-      "change": "+152.50",
-      "change_pct": "+0.24%",
+      "value": "63,758",
+      "change": "+210.40",
+      "change_pct": "+0.33%",
       "direction": "up"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "100.9960",
-      "change": "+0.14",
-      "change_pct": "+0.13%",
+      "value": "100.9090",
+      "change": "+0.05",
+      "change_pct": "+0.05%",
       "direction": "up"
     }
   ]
