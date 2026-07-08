@@ -34,9 +34,15 @@
           "buy_date": "2026-06-26"
         },
         {
+          "ticker": "XLE",
+          "shares": 2,
+          "avg_cost": 55.6,
+          "buy_date": "2026-07-08"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 222.13
+          "avg_cost": 110.93
         }
       ],
       "history": [
@@ -1276,6 +1282,44 @@
           },
           "trades": [],
           "note": "加仓强势META增加进攻性，XLF超买但持仓未满3天继续持有观察。"
+        },
+        {
+          "date": "2026-07-08",
+          "portfolio_value": 9264.25,
+          "baseline_value": 10084.96,
+          "cash": 110.93,
+          "positions": {
+            "XLF": {
+              "shares": 50,
+              "price": 54.97,
+              "value": 2748.5
+            },
+            "IWM": {
+              "shares": 14,
+              "price": 293.48,
+              "value": 4108.72
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 436.98,
+              "value": 2184.9
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 55.6,
+              "value": 111.2
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLE",
+              "shares": 2,
+              "price": 55.6,
+              "reason": "油价飙升6%+，能源板块直接受益，RSI53.8中性有上涨空间"
+            }
+          ],
+          "note": "地缘冲突推高油价，加仓能源ETF对冲科技股压力，追赶基准。"
         }
       ]
     },
@@ -1292,9 +1336,15 @@
           "buy_date": "2026-07-07"
         },
         {
+          "ticker": "XLE",
+          "shares": 50,
+          "avg_cost": 55.6,
+          "buy_date": "2026-07-08"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3118.94
+          "avg_cost": 338.94
         }
       ],
       "history": [
@@ -2447,6 +2497,34 @@
             }
           ],
           "note": "卖出INTC，买入XLF以增强组合进攻性，追求跑赢SPY。"
+        },
+        {
+          "date": "2026-07-08",
+          "portfolio_value": 8615.94,
+          "baseline_value": 10084.96,
+          "cash": 338.94,
+          "positions": {
+            "XLF": {
+              "shares": 100,
+              "price": 54.97,
+              "value": 5497.0
+            },
+            "XLE": {
+              "shares": 50,
+              "price": 55.6,
+              "value": 2780.0
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLE",
+              "shares": 50,
+              "price": 55.6,
+              "reason": "油价飙升，能源股受益，XLE有上涨潜力"
+            }
+          ],
+          "note": "增加能源股XLE以利用油价上涨机会，提升组合进攻性。"
         }
       ]
     },
@@ -3672,6 +3750,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['META']，剔除弱势"
+        },
+        {
+          "date": "2026-07-08",
+          "portfolio_value": 10032.5,
+          "baseline_value": 10084.96,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 110.24,
+              "value": 4078.88
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 517.41,
+              "value": 4656.69
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 181.4,
+              "value": 181.4
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 54.97,
+              "value": 384.79
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 293.48,
+              "value": 293.48
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['AAPL']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
