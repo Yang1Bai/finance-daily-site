@@ -1,29 +1,29 @@
 {
-  "updated": "2026-07-08T18:18:43.771910+00:00",
+  "updated": "2026-07-08T20:03:11.821536+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,476.06",
-      "change": "-27.79",
-      "change_pct": "-0.37%",
+      "value": "7,482.54",
+      "change": "-21.31",
+      "change_pct": "-0.28%",
       "direction": "down"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "25,791",
-      "change": "-27.26",
-      "change_pct": "-0.11%",
-      "direction": "down"
+      "value": "25,871",
+      "change": "+51.96",
+      "change_pct": "+0.20%",
+      "direction": "up"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,331",
-      "change": "-593.82",
-      "change_pct": "-1.12%",
+      "value": "52,348",
+      "change": "-577.06",
+      "change_pct": "-1.09%",
       "direction": "down"
     },
     {
@@ -61,33 +61,33 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,078.30",
-      "change": "-67.00",
-      "change_pct": "-1.62%",
+      "value": "4,092.00",
+      "change": "-53.30",
+      "change_pct": "-1.29%",
       "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "73.7300",
-      "change": "+3.29",
-      "change_pct": "+4.67%",
+      "value": "74.0800",
+      "change": "+3.64",
+      "change_pct": "+5.17%",
       "direction": "up"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "62,254",
-      "change": "-1043.27",
-      "change_pct": "-1.65%",
+      "value": "62,212",
+      "change": "-1085.61",
+      "change_pct": "-1.72%",
       "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.0160",
-      "change": "-0.12",
-      "change_pct": "-0.12%",
+      "value": "100.9920",
+      "change": "-0.15",
+      "change_pct": "-0.15%",
       "direction": "down"
     }
   ]
