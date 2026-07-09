@@ -1320,6 +1320,36 @@
             }
           ],
           "note": "地缘冲突推高油价，加仓能源ETF对冲科技股压力，追赶基准。"
+        },
+        {
+          "date": "2026-07-09",
+          "portfolio_value": 9343.73,
+          "baseline_value": 10170.34,
+          "cash": 110.93,
+          "positions": {
+            "XLF": {
+              "shares": 50,
+              "price": 55.54,
+              "value": 2777.0
+            },
+            "IWM": {
+              "shares": 14,
+              "price": 297.24,
+              "value": 4161.36
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 436.96,
+              "value": 2184.8
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 54.82,
+              "value": 109.64
+            }
+          },
+          "trades": [],
+          "note": "落后基准较大，加仓强势AMD追赶，科技反弹趋势有望延续。"
         }
       ]
     },
@@ -2525,6 +2555,26 @@
             }
           ],
           "note": "增加能源股XLE以利用油价上涨机会，提升组合进攻性。"
+        },
+        {
+          "date": "2026-07-09",
+          "portfolio_value": 8633.94,
+          "baseline_value": 10170.34,
+          "cash": 338.94,
+          "positions": {
+            "XLF": {
+              "shares": 100,
+              "price": 55.54,
+              "value": 5554.0
+            },
+            "XLE": {
+              "shares": 50,
+              "price": 54.82,
+              "value": 2741.0
+            }
+          },
+          "trades": [],
+          "note": "增持AMD以增强进攻性，利用科技股反弹机会"
         }
       ]
     },
@@ -3785,6 +3835,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['AAPL']，剔除弱势"
+        },
+        {
+          "date": "2026-07-09",
+          "portfolio_value": 10393.09,
+          "baseline_value": 10170.34,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 112.54,
+              "value": 4163.98
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 546.72,
+              "value": 4920.48
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 185.35,
+              "value": 185.35
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 55.54,
+              "value": 388.78
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 297.24,
+              "value": 297.24
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['AAPL', 'META']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
