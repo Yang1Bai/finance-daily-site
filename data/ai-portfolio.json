@@ -16,12 +16,6 @@
       "provider": "anthropic",
       "holdings": [
         {
-          "ticker": "XLF",
-          "shares": 50,
-          "avg_cost": 53.34,
-          "buy_date": "2026-06-12"
-        },
-        {
           "ticker": "IWM",
           "shares": 14,
           "avg_cost": 293.6514,
@@ -42,7 +36,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 110.93
+          "avg_cost": 2896.43
         }
       ],
       "history": [
@@ -1350,6 +1344,39 @@
           },
           "trades": [],
           "note": "落后基准较大，加仓强势AMD追赶，科技反弹趋势有望延续。"
+        },
+        {
+          "date": "2026-07-10",
+          "portfolio_value": 9321.0,
+          "baseline_value": 10214.17,
+          "cash": 2896.43,
+          "positions": {
+            "IWM": {
+              "shares": 14,
+              "price": 295.99,
+              "value": 4143.86
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 434.11,
+              "value": 2170.55
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 55.08,
+              "value": 110.16
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLF",
+              "shares": 50,
+              "price": 55.71,
+              "reason": "RSI=70.2超买，已持有28天获利，释放资金追逐更高动量标的"
+            }
+          ],
+          "note": "卖出超买XLF获利了结，释放资金明日加仓META或AMD等强势动量股追赶基准"
         }
       ]
     },
@@ -1366,15 +1393,9 @@
           "buy_date": "2026-07-07"
         },
         {
-          "ticker": "XLE",
-          "shares": 50,
-          "avg_cost": 55.6,
-          "buy_date": "2026-07-08"
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 338.94
+          "avg_cost": 3092.94
         }
       ],
       "history": [
@@ -2575,6 +2596,29 @@
           },
           "trades": [],
           "note": "增持AMD以增强进攻性，利用科技股反弹机会"
+        },
+        {
+          "date": "2026-07-10",
+          "portfolio_value": 8663.94,
+          "baseline_value": 10214.17,
+          "cash": 3092.94,
+          "positions": {
+            "XLF": {
+              "shares": 100,
+              "price": 55.71,
+              "value": 5571.0
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLE",
+              "shares": 50,
+              "price": 55.08,
+              "reason": "XLE技术信号中性且动量为负，减仓以释放资金"
+            }
+          ],
+          "note": "减持XLE释放资金，增持META以增强组合进攻性，缩小与SPY的差距。"
         }
       ]
     },
@@ -3870,6 +3914,41 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['AAPL', 'META']，剔除弱势"
+        },
+        {
+          "date": "2026-07-10",
+          "portfolio_value": 10394.09,
+          "baseline_value": 10214.17,
+          "cash": 437.26,
+          "positions": {
+            "INTC": {
+              "shares": 37,
+              "price": 109.84,
+              "value": 4064.08
+            },
+            "AMD": {
+              "shares": 9,
+              "price": 557.89,
+              "value": 5021.01
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 185.78,
+              "value": 185.78
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 55.71,
+              "value": 389.97
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 295.99,
+              "value": 295.99
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['META', 'AAPL', 'SPY']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
