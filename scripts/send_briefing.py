@@ -220,6 +220,28 @@ def fmt(data: dict) -> list[str]:
                 lines.append(f"  领涨:{cn['hot_stock']}")
         msgs.append("\n".join(lines))
 
+    # ── Message 12: Market Extremes ───────────────────────────────────────
+    extremes = data.get("market_extremes", {})
+    if extremes:
+        lines = ["<b>【市场极端行情】</b>"]
+        gainers = extremes.get("top_gainers", [])
+        losers  = extremes.get("top_losers_with_rebound", [])
+        if gainers:
+            lines.append("\n🚀 <b>近期最强涨势（近1个月）:</b>")
+            for g in gainers:
+                lines.append(f"  📈 <b>{g.get('name','')} ({g.get('ticker','')})</b>  {g.get('gain_pct','')}  现价:{g.get('current_price','')}")
+                if g.get("reason"):
+                    lines.append(f"     {g['reason']}")
+        if losers:
+            lines.append("\n🎯 <b>超跌反弹机会（近1个月):</b>")
+            for l in losers:
+                lines.append(f"  📉 <b>{l.get('name','')} ({l.get('ticker','')})</b>  {l.get('loss_pct','')}  现价:{l.get('current_price','')}")
+                if l.get("rebound_case"):
+                    lines.append(f"     🔄 {l['rebound_case']}")
+                if l.get("rebound_catalyst"):
+                    lines.append(f"     ⚡ {l['rebound_catalyst']}")
+        msgs.append("\n".join(lines))
+
     # ── Footer ───────────────────────────────────────────────────────────────
     msgs.append(
         f"{'─'*30}\n"

@@ -60,9 +60,12 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
 6. 今日标普500各行业板块表现（全部11个GICS行业）
 7. 主要央行最新动态（美联储、欧央行、中国人民银行、日本银行）
 8. **未来7天经济日历calendar**：重要经济数据发布时间、央行会议、重要讲话（含预期值）
-9. **自选股AI决策仪表盘（watchlist_analysis）**：搜索以下8个标的的最新价格、近期新闻和技术面关键点（均线、RSI、近期支撑/压力位），为每个标的生成AI分析：NVDA(英伟达)、QQQ(纳斯达克100 ETF)、SPY(标普500 ETF)、BTC-USD(比特币)、510300.SS(沪深300 ETF)、GC=F(黄金)、CL=F(原油)、TSLA(特斯拉)
+9. **自选股AI决策仪表盘（watchlist_analysis）**：搜索以下10个标的的最新价格、近期新闻和技术面关键点（均线、RSI、近期支撑/压力位），为每个标的生成AI分析：NVDA(英伟达)、AMD(超威半导体)、NOK(诺基亚)、QQQ(纳斯达克100 ETF)、SPY(标普500 ETF)、BTC-USD(比特币)、510300.SS(沪深300 ETF)、GC=F(黄金)、CL=F(原油)、TSLA(特斯拉)
 10. **多空辩论（market_debate）**：基于当前市场环境，对标普500本周展望进行多空分析
 11. **大盘复盘（market_replay）**：搜索今日美股和A股收盘数据，包括涨跌家数、热门板块、资金流向
+12. **市场极端行情（market_extremes）**：搜索过去1个月美股市场两类标的：
+   - top_gainers：过去1个月涨幅最大的前5支标的（知名大盘股或ETF），附上涨原因、当前价格、月涨幅
+   - top_losers_with_rebound：过去1个月跌幅最大但具备触底反弹条件的前5支标的，附下跌原因、反弹逻辑、潜在催化剂、风险提示
 
 必须输出以下JSON格式（只输出JSON，无其他内容）：
 
@@ -175,6 +178,38 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
       "risk_level": "medium",
       "action": "具体操作建议，1-2句",
       "tags": ["#AI", "#半导体"]
+    }},
+    {{
+      "ticker": "AMD",
+      "name": "超威半导体",
+      "price": "当前价格如 165.20",
+      "change_pct": "+1.8%",
+      "direction": "up",
+      "signal": "BUY",
+      "score": 72,
+      "conclusion": "一句话核心结论，不超过20字",
+      "key_driver": "最关键驱动因素，1句",
+      "target_up": "上行目标价如 185",
+      "target_down": "下行风险位如 150",
+      "risk_level": "medium",
+      "action": "具体操作建议，1-2句",
+      "tags": ["#AI", "#半导体"]
+    }},
+    {{
+      "ticker": "NOK",
+      "name": "诺基亚",
+      "price": "当前价格如 4.50",
+      "change_pct": "+0.5%",
+      "direction": "up",
+      "signal": "HOLD",
+      "score": 55,
+      "conclusion": "一句话核心结论，不超过20字",
+      "key_driver": "最关键驱动因素，1句",
+      "target_up": "上行目标价如 5.20",
+      "target_down": "下行风险位如 4.10",
+      "risk_level": "medium",
+      "action": "具体操作建议，1-2句",
+      "tags": ["#5G", "#电信设备"]
     }}
   ],
   "market_debate": {{
@@ -215,6 +250,33 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
       "hot_stock": "A股今日领涨股(涨幅)",
       "summary": "A股今日一句话复盘，20字"
     }}
+  }},
+  "market_extremes": {{
+    "top_gainers": [
+      {{
+        "ticker": "XXX",
+        "name": "公司名",
+        "gain_pct": "+45.2%",
+        "period": "近1个月",
+        "current_price": "125.30",
+        "reason": "上涨核心原因，1-2句",
+        "tags": ["#科技", "#AI"]
+      }}
+    ],
+    "top_losers_with_rebound": [
+      {{
+        "ticker": "XXX",
+        "name": "公司名",
+        "loss_pct": "-35.0%",
+        "period": "近1个月",
+        "current_price": "45.20",
+        "drop_reason": "下跌原因，1句",
+        "rebound_case": "反弹逻辑，1-2句",
+        "rebound_catalyst": "潜在催化剂，1句",
+        "risk": "主要风险，1句",
+        "tags": ["#超跌", "#反弹机会"]
+      }}
+    ]
   }}
 }}
 
@@ -228,9 +290,10 @@ USER_PROMPT_TEMPLATE = """请搜索今天（{today}）的最新全球金融市�
 - central_banks数组包含至少4家央行（Fed、ECB、PBOC、BOJ）
 - calendar数组包含未来7天内至少5个重要经济事件，impact用high/medium/low区分
 - summary必须填写，headline要有具体指向，不能是空泛表述
-- watchlist_analysis数组包含全部8个标的（NVDA、QQQ、SPY、BTC-USD、510300.SS、GC=F、CL=F、TSLA），signal只能是BUY/SELL/HOLD，score为0-100整数，risk_level只能是low/medium/high
+- watchlist_analysis数组包含全部10个标的（NVDA、AMD、NOK、QQQ、SPY、BTC-USD、510300.SS、GC=F、CL=F、TSLA），signal只能是BUY/SELL/HOLD，score为0-100整数，risk_level只能是low/medium/high
 - market_debate包含bull_case和bear_case各3条，confidence只能是high/medium，verdict_lean只能是bullish/bearish/neutral
 - market_replay包含us和cn两个对象，数据尽量真实
+- market_extremes必须包含top_gainers（5支）和top_losers_with_rebound（5支）
 """
 
 # ─── HTML rendering ───────────────────────────────────────────────────────────
@@ -603,6 +666,56 @@ def render_market_replay(items) -> str:
     return f'<div class="replay-grid">{card("🇺🇸 美股", us, adv_pct(us.get("advance", 0), us.get("decline", 0)))}{card("🇨🇳 A股", cn, adv_pct(cn.get("advance", 0), cn.get("decline", 0)))}</div>'
 
 
+def render_market_extremes(items) -> str:
+    if not items:
+        return "<div style='color:var(--muted);padding:10px'>暂无数据</div>"
+    extremes = items if isinstance(items, dict) else (items[0] if items else {})
+    def esc(s): return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+    gainers = extremes.get("top_gainers", [])
+    losers  = extremes.get("top_losers_with_rebound", [])
+
+    def render_gainer(g):
+        tags_html = "".join(f'<span class="tag">{esc(t)}</span>' for t in g.get("tags", []))
+        return f"""<div class="extreme-card gain">
+  <div class="extreme-header">
+    <div><div class="extreme-ticker">{esc(g.get('ticker',''))}</div><div class="extreme-name">{esc(g.get('name',''))}</div></div>
+    <div class="extreme-pct gain">{esc(g.get('gain_pct',''))}</div>
+  </div>
+  <div class="extreme-price">{esc(g.get('current_price',''))}  <span style="color:var(--muted);font-size:0.7rem">{esc(g.get('period',''))}</span></div>
+  <div class="extreme-reason">{esc(g.get('reason',''))}</div>
+  <div class="tags">{tags_html}</div>
+</div>"""
+
+    def render_loser(l):
+        tags_html = "".join(f'<span class="tag">{esc(t)}</span>' for t in l.get("tags", []))
+        return f"""<div class="extreme-card loss">
+  <div class="extreme-header">
+    <div><div class="extreme-ticker">{esc(l.get('ticker',''))}</div><div class="extreme-name">{esc(l.get('name',''))}</div></div>
+    <div class="extreme-pct loss">{esc(l.get('loss_pct',''))}</div>
+  </div>
+  <div class="extreme-price">{esc(l.get('current_price',''))}  <span style="color:var(--muted);font-size:0.7rem">{esc(l.get('period',''))}</span></div>
+  <div class="extreme-drop">{esc(l.get('drop_reason',''))}</div>
+  <div class="extreme-rebound">🔄 {esc(l.get('rebound_case',''))}</div>
+  <div class="extreme-catalyst">⚡ 催化剂: {esc(l.get('rebound_catalyst',''))}</div>
+  <div class="extreme-risk">⚠️ 风险: {esc(l.get('risk',''))}</div>
+  <div class="tags">{tags_html}</div>
+</div>"""
+
+    gainers_html = "\n".join(render_gainer(g) for g in gainers)
+    losers_html  = "\n".join(render_loser(l) for l in losers)
+
+    return f"""<div class="extremes-container">
+  <div class="extremes-col">
+    <div class="extremes-col-title">🚀 近期最强涨势</div>
+    {gainers_html}
+  </div>
+  <div class="extremes-col">
+    <div class="extremes-col-title">🎯 超跌反弹机会</div>
+    {losers_html}
+  </div>
+</div>"""
+
+
 # ─── Anchor injection ─────────────────────────────────────────────────────────
 
 ANCHOR_RENDERERS = {
@@ -618,6 +731,7 @@ ANCHOR_RENDERERS = {
     "WATCHLIST_ANALYSIS": render_watchlist_analysis,
     "MARKET_DEBATE":      render_market_debate,
     "MARKET_REPLAY":      render_market_replay,
+    "MARKET_EXTREMES":    render_market_extremes,
 }
 
 
@@ -635,6 +749,7 @@ def inject_into_html(html: str, data: dict) -> str:
         "WATCHLIST_ANALYSIS": "watchlist_analysis",
         "MARKET_DEBATE":      "market_debate",
         "MARKET_REPLAY":      "market_replay",
+        "MARKET_EXTREMES":    "market_extremes",
     }
     for anchor, key in section_map.items():
         items = data.get(key, [])
