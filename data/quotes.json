@@ -1,45 +1,45 @@
 {
-  "updated": "2026-07-13T15:40:57.313745+00:00",
+  "updated": "2026-07-13T17:53:34.066772+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,547.50",
-      "change": "-27.89",
-      "change_pct": "-0.37%",
+      "value": "7,520.29",
+      "change": "-55.10",
+      "change_pct": "-0.73%",
       "direction": "down"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,053",
-      "change": "-228.57",
-      "change_pct": "-0.87%",
+      "value": "25,889",
+      "change": "-393.06",
+      "change_pct": "-1.50%",
       "direction": "down"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,522",
-      "change": "-115.48",
-      "change_pct": "-0.22%",
+      "value": "52,495",
+      "change": "-141.95",
+      "change_pct": "-0.27%",
       "direction": "down"
     },
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,913.79",
-      "change": "-82.37",
-      "change_pct": "-2.06%",
+      "value": "3,996.16",
+      "change": "-40.43",
+      "change_pct": "-1.00%",
       "direction": "down"
     },
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,214",
-      "change": "+38.60",
-      "change_pct": "+0.16%",
+      "value": "24,175",
+      "change": "+144.94",
+      "change_pct": "+0.60%",
       "direction": "up"
     },
     {
@@ -53,41 +53,41 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,071",
-      "change": "+3.96",
-      "change_pct": "+0.02%",
+      "value": "25,114",
+      "change": "+47.16",
+      "change_pct": "+0.19%",
       "direction": "up"
     },
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,022.20",
-      "change": "-81.90",
-      "change_pct": "-2.00%",
+      "value": "4,004.80",
+      "change": "-99.30",
+      "change_pct": "-2.42%",
       "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "74.6500",
-      "change": "+3.24",
-      "change_pct": "+4.54%",
+      "value": "76.6400",
+      "change": "+5.23",
+      "change_pct": "+7.32%",
       "direction": "up"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "64,172",
-      "change": "+413.77",
-      "change_pct": "+0.65%",
-      "direction": "up"
+      "value": "61,945",
+      "change": "-1812.92",
+      "change_pct": "-2.84%",
+      "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.1380",
-      "change": "+0.17",
-      "change_pct": "+0.17%",
+      "value": "101.2330",
+      "change": "+0.26",
+      "change_pct": "+0.26%",
       "direction": "up"
     }
   ]
