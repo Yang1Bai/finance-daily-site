@@ -30,6 +30,10 @@ jobs:
       - name: Install dependencies
         run: pip install anthropic json-repair requests
 
+      - name: Track signal performance
+        run: python scripts/signal_tracker.py
+        continue-on-error: true  # Don't fail if no history yet
+
       - name: Fetch & inject content
         run: python scripts/fetch_content.py
 

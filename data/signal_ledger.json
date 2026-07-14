@@ -1,0 +1,470 @@
+{
+  "generated_at": "2026-07-14T16:50:06.218928Z",
+  "performance": {
+    "total_signals": 48,
+    "wins": 14,
+    "losses": 22,
+    "expired": 8,
+    "open": 4,
+    "win_rate": 0.3182,
+    "avg_gain_pct": 684.91,
+    "avg_loss_pct": -28.79,
+    "expected_value_pct": 198.31,
+    "vs_spy_30d": 1.59
+  },
+  "open_positions": [
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-07-04",
+      "price_issued": 3.92,
+      "stop_loss": 3.65,
+      "take_profit": 4.51,
+      "days_held": 8,
+      "current_pnl_pct": -2.55
+    },
+    {
+      "ticker": "GC=F",
+      "signal": "BUY",
+      "date_issued": "2026-07-04",
+      "price_issued": 4187.3,
+      "stop_loss": 3894.19,
+      "take_profit": 4815.39,
+      "days_held": 8,
+      "current_pnl_pct": -2.08
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-07-12",
+      "price_issued": 725.51,
+      "stop_loss": 674.72,
+      "take_profit": 834.34,
+      "days_held": 0,
+      "current_pnl_pct": 0.0
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-12",
+      "price_issued": 754.95,
+      "stop_loss": 702.1,
+      "take_profit": 868.19,
+      "days_held": 0,
+      "current_pnl_pct": 0.0
+    }
+  ],
+  "closed_positions": [
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-07-09",
+      "price_issued": 875.4,
+      "date_closed": "2026-07-11",
+      "close_reason": "stop_loss",
+      "pnl_pct": -76.83
+    },
+    {
+      "ticker": "CL=F",
+      "signal": "BUY",
+      "date_issued": "2026-07-01",
+      "price_issued": 68.06,
+      "date_closed": "2026-07-11",
+      "close_reason": "expired",
+      "pnl_pct": 5.0
+    },
+    {
+      "ticker": "BTC-USD",
+      "signal": "BUY",
+      "date_issued": "2026-07-01",
+      "price_issued": 63543.0,
+      "date_closed": "2026-07-11",
+      "close_reason": "expired",
+      "pnl_pct": 0.48
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-07",
+      "price_issued": 565.2,
+      "date_closed": "2026-07-08",
+      "close_reason": "take_profit",
+      "pnl_pct": 32.4
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-06",
+      "price_issued": 750.58,
+      "date_closed": "2026-07-07",
+      "close_reason": "stop_loss",
+      "pnl_pct": -24.7
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-07-05",
+      "price_issued": 714.22,
+      "date_closed": "2026-07-07",
+      "close_reason": "stop_loss",
+      "pnl_pct": -34.78
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-03",
+      "price_issued": 548.2,
+      "date_closed": "2026-07-05",
+      "close_reason": "take_profit",
+      "pnl_pct": 36.5
+    },
+    {
+      "ticker": "GC=F",
+      "signal": "BUY",
+      "date_issued": "2026-06-24",
+      "price_issued": 4016.0,
+      "date_closed": "2026-07-04",
+      "close_reason": "expired",
+      "pnl_pct": 4.27
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-06-24",
+      "price_issued": 3.95,
+      "date_closed": "2026-07-04",
+      "close_reason": "expired",
+      "pnl_pct": -0.76
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-02",
+      "price_issued": 745.76,
+      "date_closed": "2026-07-03",
+      "close_reason": "stop_loss",
+      "pnl_pct": -26.49
+    },
+    {
+      "ticker": "TSLA",
+      "signal": "BUY",
+      "date_issued": "2026-06-30",
+      "price_issued": 411.5,
+      "date_closed": "2026-07-02",
+      "close_reason": "stop_loss",
+      "pnl_pct": -54.99
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-06-29",
+      "price_issued": 485.2,
+      "date_closed": "2026-07-02",
+      "close_reason": "take_profit",
+      "pnl_pct": 49.46
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-06-30",
+      "price_issued": 741.0,
+      "date_closed": "2026-07-01",
+      "close_reason": "stop_loss",
+      "pnl_pct": -25.98
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-06-25",
+      "price_issued": 688.5,
+      "date_closed": "2026-06-29",
+      "close_reason": "stop_loss",
+      "pnl_pct": -20.97
+    },
+    {
+      "ticker": "CL=F",
+      "signal": "BUY",
+      "date_issued": "2026-06-18",
+      "price_issued": 74.82,
+      "date_closed": "2026-06-26",
+      "close_reason": "stop_loss",
+      "pnl_pct": -7.28
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-06-23",
+      "price_issued": 744.39,
+      "date_closed": "2026-06-25",
+      "close_reason": "stop_loss",
+      "pnl_pct": -7.51
+    },
+    {
+      "ticker": "GC=F",
+      "signal": "BUY",
+      "date_issued": "2026-06-17",
+      "price_issued": 4351.97,
+      "date_closed": "2026-06-24",
+      "close_reason": "stop_loss",
+      "pnl_pct": -7.72
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-06-22",
+      "price_issued": 5.03,
+      "date_closed": "2026-06-23",
+      "close_reason": "stop_loss",
+      "pnl_pct": -24.06
+    },
+    {
+      "ticker": "BTC-USD",
+      "signal": "BUY",
+      "date_issued": "2026-06-22",
+      "price_issued": 120000.0,
+      "date_closed": "2026-06-23",
+      "close_reason": "stop_loss",
+      "pnl_pct": -48.11
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-06-20",
+      "price_issued": 452.18,
+      "date_closed": "2026-06-23",
+      "close_reason": "take_profit",
+      "pnl_pct": 62.8
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-06-18",
+      "price_issued": 3.82,
+      "date_closed": "2026-06-22",
+      "close_reason": "take_profit",
+      "pnl_pct": 31.68
+    },
+    {
+      "ticker": "BTC-USD",
+      "signal": "BUY",
+      "date_issued": "2026-06-11",
+      "price_issued": 63332.12,
+      "date_closed": "2026-06-22",
+      "close_reason": "take_profit",
+      "pnl_pct": 89.48
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-06-19",
+      "price_issued": 220.5,
+      "date_closed": "2026-06-20",
+      "close_reason": "stop_loss",
+      "pnl_pct": -7.23
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-06-17",
+      "price_issued": 548.38,
+      "date_closed": "2026-06-19",
+      "close_reason": "take_profit",
+      "pnl_pct": 36.78
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-06-15",
+      "price_issued": 875.4,
+      "date_closed": "2026-06-17",
+      "close_reason": "stop_loss",
+      "pnl_pct": -76.54
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-06-12",
+      "price_issued": 3.82,
+      "date_closed": "2026-06-17",
+      "close_reason": "take_profit",
+      "pnl_pct": 26.18
+    },
+    {
+      "ticker": "GC=F",
+      "signal": "BUY",
+      "date_issued": "2026-06-06",
+      "price_issued": 4353.9,
+      "date_closed": "2026-06-17",
+      "close_reason": "expired",
+      "pnl_pct": -0.04
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-06-15",
+      "price_issued": 740.19,
+      "date_closed": "2026-06-16",
+      "close_reason": "stop_loss",
+      "pnl_pct": -35.67
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-06-13",
+      "price_issued": 205.19,
+      "date_closed": "2026-06-15",
+      "close_reason": "take_profit",
+      "pnl_pct": 326.63
+    },
+    {
+      "ticker": "CL=F",
+      "signal": "BUY",
+      "date_issued": "2026-06-10",
+      "price_issued": 93.0,
+      "date_closed": "2026-06-13",
+      "close_reason": "stop_loss",
+      "pnl_pct": -8.73
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-06-08",
+      "price_issued": 708.0,
+      "date_closed": "2026-06-11",
+      "close_reason": "stop_loss",
+      "pnl_pct": -37.5
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-06-07",
+      "price_issued": 738.37,
+      "date_closed": "2026-06-11",
+      "close_reason": "stop_loss",
+      "pnl_pct": -33.06
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-06-07",
+      "price_issued": 405.6,
+      "date_closed": "2026-06-08",
+      "close_reason": "take_profit",
+      "pnl_pct": 1060.5
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-05-22",
+      "price_issued": 875.4,
+      "date_closed": "2026-06-08",
+      "close_reason": "stop_loss",
+      "pnl_pct": -76.17
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-06-06",
+      "price_issued": 450.8,
+      "date_closed": "2026-06-07",
+      "close_reason": "take_profit",
+      "pnl_pct": 56.24
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-05-20",
+      "price_issued": 4.12,
+      "date_closed": "2026-06-07",
+      "close_reason": "take_profit",
+      "pnl_pct": 9744.66
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-05-14",
+      "price_issued": 750.12,
+      "date_closed": "2026-06-07",
+      "close_reason": "expired",
+      "pnl_pct": -1.57
+    },
+    {
+      "ticker": "BTC-USD",
+      "signal": "BUY",
+      "date_issued": "2026-05-21",
+      "price_issued": 77539.67,
+      "date_closed": "2026-06-06",
+      "close_reason": "stop_loss",
+      "pnl_pct": -21.21
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-05-20",
+      "price_issued": 713.15,
+      "date_closed": "2026-06-06",
+      "close_reason": "stop_loss",
+      "pnl_pct": -36.79
+    },
+    {
+      "ticker": "GC=F",
+      "signal": "BUY",
+      "date_issued": "2026-05-12",
+      "price_issued": 4678.0,
+      "date_closed": "2026-05-22",
+      "close_reason": "expired",
+      "pnl_pct": -3.29
+    },
+    {
+      "ticker": "BTC-USD",
+      "signal": "BUY",
+      "date_issued": "2026-05-10",
+      "price_issued": 80969.0,
+      "date_closed": "2026-05-20",
+      "close_reason": "expired",
+      "pnl_pct": -5.32
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-05-10",
+      "price_issued": 3.82,
+      "date_closed": "2026-05-19",
+      "close_reason": "take_profit",
+      "pnl_pct": 26.96
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-05-10",
+      "price_issued": 462.35,
+      "date_closed": "2026-05-17",
+      "close_reason": "take_profit",
+      "pnl_pct": 53.51
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-05-11",
+      "price_issued": 875.4,
+      "date_closed": "2026-05-15",
+      "close_reason": "stop_loss",
+      "pnl_pct": -74.13
+    }
+  ],
+  "sector_rotation": {
+    "date": "2026-07-12",
+    "strong_sectors": [
+      "通信服务",
+      "科技",
+      "金融"
+    ],
+    "weak_sectors": [
+      "工业",
+      "房地产",
+      "能源"
+    ],
+    "rule": "只在强势板块开新多仓",
+    "note": "今日通信服务+3.12%领涨，建议关注XLC及Communication Services个股"
+  }
+}

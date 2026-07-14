@@ -29,6 +29,21 @@ INDEX_HTML  = ROOT_DIR / "index.html"
 DATA_DIR    = ROOT_DIR / "data"
 ARCHIVE_DIR = ROOT_DIR / "archive"
 FEED_FILE   = ROOT_DIR / "feed.xml"
+SIGNAL_LEDGER_FILE = DATA_DIR / "signal_ledger.json"
+
+# Watchlist bucket map for correlation guard
+_BUCKET_MAP = {
+    "NVDA":      "tech",
+    "AMD":       "tech",
+    "QQQ":       "tech",
+    "SPY":       "index",
+    "510300.SS": "china",
+    "GC=F":      "gold",
+    "CL=F":      "oil",
+    "BTC-USD":   "crypto",
+    "NOK":       "telecom",
+    "TSLA":      "ev",
+}
 
 MODEL       = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-5")
 MAX_TOKENS  = 16000
@@ -712,7 +727,407 @@ def render_market_extremes(items) -> str:
   <div class="extremes-col">
     <div class="extremes-col-title">🎯 超跌反弹机会</div>
     {losers_html}
+</div>
+</div>"""
+
+
+# ─── Signal Ledger & Macro Intelligence ─────────────────────────────────────
+
+def load_signal_ledger() -> dict:
+    """Load signal_ledger.json if it exists, else return empty dict."""
+    if SIGNAL_LEDGER_FILE.exists():
+        try:
+            return json.loads(SIGNAL_LEDGER_FILE.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"  Warning: Could not load signal_ledger.json: {e}")
+    return {}
+
+
+def compute_macro_regime(vix_str: str) -> dict:
+    """Derive macro regime from VIX level."""
+    try:
+        vix = float(str(vix_str).replace(",", "").strip())
+    except (ValueError, TypeError):
+        vix = 20.0
+    if vix < 18:
+        return {
+            "status": "RISK-ON",
+            "vix_level": str(vix_str),
+            "description": f"VIX {vix:.1f} 低于18，市场风险偏好，可正常开新BUY仓位",
+            "allowed_actions": ["BUY", "HOLD", "SELL"],
+            "color": "green",
+        }
+    elif vix < 25:
+        return {
+            "status": "CAUTION",
+            "vix_level": str(vix_str),
+            "description": f"VIX {vix:.1f} 在18-25区间，建议仓位减半，止损收紧至-5%",
+            "allowed_actions": ["HOLD", "SELL"],
+            "color": "yellow",
+        }
+    else:
+        return {
+            "status": "RISK-OFF",
+            "vix_level": str(vix_str),
+            "description": f"VIX {vix:.1f} 超过25，市场恐慌情绪进入防御模式，建议以现金和黄金为主",
+            "allowed_actions": ["SELL"],
+            "color": "red",
+        }
+
+
+def generate_pre_catalyst_alerts(calendar: list, today_str: str) -> list:
+    """Parse calendar events and generate pre-positioning alerts."""
+    import re as _re
+    if not calendar:
+        return []
+    try:
+        today = datetime.date.fromisoformat(today_str)
+    except Exception:
+        today = datetime.date.today()
+
+    alerts = []
+    ticker_keywords = {
+        "NVDA":      ["nvidia", "英伟达", "nvda"],
+        "AMD":       ["amd", "超威"],
+        "TSLA":      ["tesla", "特斯拉"],
+        "QQQ":       ["nasdaq", "纳斯达克"],
+        "SPY":       ["s&p", "标普"],
+        "GC=F":      ["黄金", "gold"],
+        "CL=F":      ["原油", "oil", "wti"],
+        "BTC-USD":   ["bitcoin", "比特币", "btc"],
+        "510300.SS": ["沪300", "a股", "中国"],
+    }
+    fomc_keywords = ["fomc", "美联储", "鲍威尔", "federal reserve", "利率决议"]
+    cpi_keywords  = ["cpi", "通胀", "inflation"]
+
+    for event in calendar:
+        event_name = event.get("event", "")
+        date_raw   = event.get("date", "")
+
+        event_date = None
+        try:
+            event_date = datetime.date.fromisoformat(date_raw)
+        except Exception:
+            pass
+        if event_date is None:
+            m = _re.search(r'(\d{1,2})/(\d{1,2})', date_raw)
+            if m:
+                try:
+                    mo, dy = int(m.group(1)), int(m.group(2))
+                    event_date = today.replace(month=mo, day=dy)
+                    if event_date < today:
+                        event_date = event_date.replace(year=event_date.year + 1)
+                except Exception:
+                    pass
+        if event_date is None:
+            continue
+
+        days_until = (event_date - today).days
+        if days_until < 0:
+            continue
+
+        active = 2 <= days_until <= 7
+        event_lower = event_name.lower()
+
+        alert_type = "economic"
+        ticker     = "MACRO"
+        strategy   = ""
+
+        if any(kw in event_lower for kw in fomc_keywords):
+            alert_type = "fomc"
+            ticker     = "MACRO"
+            strategy   = ("利率决议临近，风险资产承压，建议关注防御性配置" if days_until <= 14
+                           else "提前了解美联储鹰派/鸽派倍号，为利率决议做方向备备")
+        elif any(kw in event_lower for kw in cpi_keywords):
+            alert_type = "cpi"
+            ticker     = "MACRO"
+            strategy   = "通胀数据发布前，遭拥大类资产，等数据展示后再入场"
+        else:
+            for tkr, keywords in ticker_keywords.items():
+                if any(kw in event_lower for kw in keywords):
+                    ticker = tkr
+                    alert_type = ("earnings" if any(w in event_lower
+                                  for w in ["财报", "earnings", "earning"])
+                                  else "event")
+                    strategy   = ("财报前期权溢价高，建议财报后看方向确认"
+                                  if alert_type == "earnings" else "重要事件临近，等结果后再操作")
+                    break
+
+        if not strategy:
+            strategy = "重要事件附近，建议谨慎操作新仓位"
+
+        alerts.append({
+            "ticker":                ticker,
+            "event":                 event_name,
+            "event_date":            event_date.isoformat(),
+            "days_until":            days_until,
+            "alert_type":            alert_type,
+            "pre_position_strategy": strategy,
+            "active":                active,
+        })
+
+    alerts.sort(key=lambda a: a["days_until"])
+    return alerts[:10]
+
+
+def generate_sector_rotation_signal(sectors: list) -> dict:
+    """Rank sectors by change_pct and output rotation signal."""
+    if not sectors:
+        return {}
+    parsed = []
+    for s in sectors:
+        raw_pct = s.get("change_pct", "0%").replace("+", "").replace("%", "").strip()
+        try:
+            pct = float(raw_pct)
+        except ValueError:
+            pct = 0.0
+        parsed.append({
+            "name":       s.get("name", ""),
+            "name_en":    s.get("name_en", ""),
+            "etf":        s.get("etf", ""),
+            "change_pct": s.get("change_pct", "0%"),
+            "pct":        pct,
+        })
+    parsed.sort(key=lambda x: x["pct"], reverse=True)
+    strong = [s["name"] for s in parsed[:3] if s["name"]]
+    weak   = [s["name"] for s in parsed[-3:] if s["name"]]
+    top    = parsed[0] if parsed else {}
+    note = (
+        f"今日{top['name']}{top['change_pct']}领涨，建议关注{top['etf']}及{top.get('name_en','')}个股"
+        if top.get("name") else "无明显板块轮动信号"
+    )
+    return {
+        "strong_sectors": strong,
+        "weak_sectors":   weak,
+        "rule":           "只在强势板块开新多仓",
+        "note":           note,
+    }
+
+
+def build_signal_context(ledger: dict, vix: str = "N/A") -> str:
+    """Build Chinese context block for the AI prompt from the signal ledger."""
+    if not ledger:
+        return ""
+
+    perf     = ledger.get("performance", {})
+    open_pos = ledger.get("open_positions", [])
+
+    regime        = compute_macro_regime(vix)
+    regime_status = regime["status"]
+
+    open_buckets: dict = {}
+    for pos in open_pos:
+        ticker = pos.get("ticker", "")
+        bucket = _BUCKET_MAP.get(ticker, "other")
+        open_buckets.setdefault(bucket, []).append(ticker)
+
+    restriction_lines = []
+    for bucket, tickers in open_buckets.items():
+        all_in_bucket = [t for t, b in _BUCKET_MAP.items() if b == bucket]
+        blocked = [t for t in all_in_bucket if t not in tickers]
+        if blocked:
+            restriction_lines.append(
+                f"  - 已有 {', '.join(tickers)} BUY 仓位 (桶:{bucket}) -> 不允许新增: {', '.join(blocked)}"
+            )
+
+    open_lines = []
+    for pos in open_pos:
+        pnl  = pos.get("current_pnl_pct", 0.0)
+        sign = "+" if pnl >= 0 else ""
+        open_lines.append(
+            f"  - {pos['ticker']}: BUY @ ${pos['price_issued']:.2f} "
+            f"({pos['date_issued']}), P&L: {sign}{pnl:.1f}%, "
+            f"持有{pos['days_held']}天, 止损位${pos['stop_loss']:.2f}"
+        )
+
+    win_rate_pct = round(perf.get("win_rate", 0) * 100)
+    wins   = perf.get("wins", 0)
+    losses = perf.get("losses", 0)
+    ev     = perf.get("expected_value_pct", 0.0)
+
+    lines = ["\n=== 你的历史信号记录 ==="]
+    lines.append(f"胜率: {win_rate_pct}% ({wins}胜/{losses}负) 期望值: {ev:+.2f}%/次")
+    if open_lines:
+        lines.append("当前持仓:")
+        lines.extend(open_lines)
+    else:
+        lines.append("当前无持仓")
+
+    lines.append("\n规则提示:")
+    lines.append(f"  - 当前 VIX: {vix} -> 宏观状态: {regime_status}")
+    if regime_status == "RISK-ON":
+        lines.append("  - 处于 RISK-ON (VIX<18) 状态，允许开新 BUY 信号")
+    elif regime_status == "CAUTION":
+        lines.append("  - 处于 CAUTION (VIX 18-25)，建议仓位减半，止损收紧至-5%")
+    else:
+        lines.append("  - 处于 RISK-OFF (VIX>25)，建议只 SELL，不开新多单")
+    lines.append("  - 全局止损: -7%, 止盈: +15%, 最长持仓: 10个交易日")
+    lines.append("  - 同一板块不超过1个BUY仓位（NVDA/AMD/QQQ 算同一科技板块）")
+    if restriction_lines:
+        lines.append("板块冲突限制:")
+        lines.extend(restriction_lines)
+
+    return "\n".join(lines) + "\n"
+
+
+def render_macro_regime(regime) -> str:
+    """Render macro_regime dict as HTML card."""
+    if not regime:
+        return ""
+    r = regime if isinstance(regime, dict) else {}
+    status = r.get("status", "UNKNOWN")
+    vix    = r.get("vix_level", "N/A")
+    desc   = r.get("description", "")
+    color  = r.get("color", "yellow")
+    color_hex = {"green": "#00e676", "yellow": "#ffb300", "red": "#ff5252"}.get(color, "#ffb300")
+    icon = {"green": "🟢", "yellow": "🟡", "red": "🔴"}.get(color, "🟡")
+    allowed = ", ".join(r.get("allowed_actions", []))
+    def esc(s): return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return f"""<div class="regime-card" style="border:1px solid {color_hex}33;background:rgba(0,0,0,.3);border-radius:10px;padding:12px 16px;margin-bottom:12px;">
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+    <span class="regime-badge" style="background:{color_hex}22;color:{color_hex};border:1px solid {color_hex}44;border-radius:20px;padding:3px 12px;font-weight:600;font-size:.82rem;">{icon} {esc(status)} 模式</span>
+    <span style="font-family:var(--mono);color:var(--muted);font-size:.72rem;">VIX {esc(vix)}</span>
+    <span style="font-size:.72rem;color:var(--muted);">|允许操作: <strong style="color:{color_hex};">{esc(allowed)}</strong></span>
   </div>
+  <div style="margin-top:6px;font-size:.78rem;color:var(--text);">{esc(desc)}</div>
+</div>"""
+
+
+def render_pre_catalyst_alerts(alerts) -> str:
+    """Render pre-catalyst alerts as HTML."""
+    if not alerts:
+        return ""
+    if isinstance(alerts, dict):
+        alerts = [alerts]
+    def esc(s): return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    active_icon = {True: "🔴", False: "🟡"}
+    type_icon   = {"fomc": "🏦", "earnings": "📊", "cpi": "📈", "economic": "📅", "event": "⚡"}
+    items_html = []
+    for a in alerts:
+        active = a.get("active", False)
+        days   = a.get("days_until", 0)
+        atype  = a.get("alert_type", "event")
+        ticker = a.get("ticker", "")
+        event  = a.get("event", "")
+        edate  = a.get("event_date", "")
+        strat  = a.get("pre_position_strategy", "")
+        status_color  = "#ff5252" if active else "#ffb300"
+        ticker_badge  = (f'<span style="font-size:.68rem;color:var(--accent);'
+                         f'background:rgba(0,212,170,.1);border-radius:4px;padding:1px 6px;">'
+                         f'{esc(ticker)}</span>' if ticker != "MACRO" else "")
+        items_html.append(f"""  <div class="catalyst-item" style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--border);">
+    <span style="font-size:1.1rem;flex-shrink:0;">{active_icon[active]} {type_icon.get(atype, "📅")}</span>
+    <div style="flex:1;">
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+        <strong style="color:var(--text);font-size:.82rem;">{esc(event)}</strong>
+        <span style="font-family:var(--mono);font-size:.7rem;color:{status_color};">{days}天后 · {esc(edate)}</span>
+        {ticker_badge}
+      </div>
+      <div style="font-size:.75rem;color:var(--muted);margin-top:3px;">{esc(strat)}</div>
+    </div>
+  </div>""")
+    return f'<div class="pre-catalyst-list">\n{"".join(items_html)}\n</div>'
+
+
+def render_sector_rotation(signal) -> str:
+    """Render sector_rotation_signal as HTML."""
+    if not signal:
+        return ""
+    r = signal if isinstance(signal, dict) else {}
+    def esc(s): return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    strong      = r.get("strong_sectors", [])
+    weak        = r.get("weak_sectors", [])
+    note        = r.get("note", "")
+    rule        = r.get("rule", "")
+    strong_html = "".join(
+        f'<span style="background:#00e67622;color:#00e676;border:1px solid #00e67644;'
+        f'border-radius:4px;padding:2px 8px;font-size:.75rem;">{esc(s)}</span>' for s in strong)
+    weak_html   = "".join(
+        f'<span style="background:#ff525222;color:#ff5252;border:1px solid #ff525244;'
+        f'border-radius:4px;padding:2px 8px;font-size:.75rem;">{esc(s)}</span>' for s in weak)
+    return f"""<div class="sector-rotation-card" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:12px 16px;">
+  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px;">🔄 板块轮动信号</div>
+  <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:8px;">
+    <div><div style="font-size:.7rem;color:var(--muted);margin-bottom:4px;">🟢 强势板块</div><div style="display:flex;gap:4px;flex-wrap:wrap;">{strong_html}</div></div>
+    <div><div style="font-size:.7rem;color:var(--muted);margin-bottom:4px;">🔴 弱势板块</div><div style="display:flex;gap:4px;flex-wrap:wrap;">{weak_html}</div></div>
+  </div>
+  <div style="font-size:.76rem;color:var(--text);">{esc(note)}</div>
+  <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">规则: {esc(rule)}</div>
+</div>"""
+
+
+def render_signal_performance(ledger) -> str:
+    """Render signal performance dashboard as HTML."""
+    if not ledger:
+        return "<div style='color:var(--muted);padding:10px'>暂无绩效数据</div>"
+    r = ledger if isinstance(ledger, dict) else {}
+    def esc(s): return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    perf     = r.get("performance", {})
+    open_pos = r.get("open_positions", [])
+
+    win_rate = round(perf.get("win_rate", 0) * 100)
+    ev       = perf.get("expected_value_pct", 0.0)
+    vs_spy   = perf.get("vs_spy_30d", 0.0)
+    wins     = perf.get("wins", 0)
+    losses   = perf.get("losses", 0)
+    total    = perf.get("total_signals", 0)
+
+    vs_cls = "up" if vs_spy >= 0 else "down"
+    ev_cls = "up" if ev >= 0 else "down"
+
+    pos_rows = ""
+    for p in open_pos:
+        pnl     = p.get("current_pnl_pct", 0.0)
+        pnl_cls = "up" if pnl >= 0 else "down"
+        sign    = "+" if pnl >= 0 else ""
+        pos_rows += f"""      <tr>
+        <td style="color:var(--accent);font-family:var(--mono);">{esc(p.get('ticker',''))}</td>
+        <td>${esc(str(p.get('price_issued','')))}</td>
+        <td>{esc(p.get('date_issued',''))}</td>
+        <td class="{pnl_cls}">{sign}{esc(str(pnl))}%</td>
+        <td>{esc(str(p.get('days_held',0)))}天</td>
+        <td style="font-size:.7rem;color:var(--muted);">${esc(str(p.get('stop_loss','')))}</td>
+      </tr>
+"""
+    if open_pos:
+        pos_table = f"""<table style="width:100%;font-size:.76rem;border-collapse:collapse;">
+      <thead><tr style="color:var(--muted);font-size:.68rem;">
+        <th style="text-align:left;padding:4px 6px;">标的</th>
+        <th style="text-align:left;padding:4px 6px;">入场价</th>
+        <th style="text-align:left;padding:4px 6px;">入场日</th>
+        <th style="text-align:left;padding:4px 6px;">P&amp;L</th>
+        <th style="text-align:left;padding:4px 6px;">持仓天</th>
+        <th style="text-align:left;padding:4px 6px;">止损位</th>
+      </tr></thead>
+      <tbody>{pos_rows}</tbody>
+    </table>"""
+    else:
+        pos_table = "<div style='color:var(--muted);font-size:.8rem;padding:8px;'>暂无持仓</div>"
+
+    gen_at  = r.get("generated_at", "")[:10]
+    ev_sign = "+" if ev >= 0 else ""
+    vs_sign = "+" if vs_spy >= 0 else ""
+    return f"""<div class="signal-perf-card" style="background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:16px;">
+  <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;">
+    <div style="background:var(--card);border-radius:8px;padding:10px 14px;flex:1;min-width:100px;">
+      <div style="font-size:.68rem;color:var(--muted);margin-bottom:2px;">胜率</div>
+      <div style="font-size:1.3rem;font-weight:700;color:var(--accent);">{win_rate}%</div>
+      <div style="font-size:.68rem;color:var(--muted);">{wins}胜 / {losses}负 / {total}总</div>
+    </div>
+    <div style="background:var(--card);border-radius:8px;padding:10px 14px;flex:1;min-width:100px;">
+      <div style="font-size:.68rem;color:var(--muted);margin-bottom:2px;">期望值</div>
+      <div style="font-size:1.3rem;font-weight:700;" class="{ev_cls}">{ev_sign}{ev:.2f}%</div>
+      <div style="font-size:.68rem;color:var(--muted);">每次信号</div>
+    </div>
+    <div style="background:var(--card);border-radius:8px;padding:10px 14px;flex:1;min-width:100px;">
+      <div style="font-size:.68rem;color:var(--muted);margin-bottom:2px;">vs SPY 30天</div>
+      <div style="font-size:1.3rem;font-weight:700;" class="{vs_cls}">{vs_sign}{vs_spy:.1f}%</div>
+      <div style="font-size:.68rem;color:var(--muted);">相对收益</div>
+    </div>
+  </div>
+  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px;">📂 当前持仓 ({len(open_pos)})</div>
+  {pos_table}
+  <div style="font-size:.65rem;color:var(--dimmed);margin-top:8px;">数据更新: {esc(gen_at)} | 止损-7% | 止盈+15% | 最长10交易日</div>
 </div>"""
 
 
@@ -732,6 +1147,10 @@ ANCHOR_RENDERERS = {
     "MARKET_DEBATE":      render_market_debate,
     "MARKET_REPLAY":      render_market_replay,
     "MARKET_EXTREMES":    render_market_extremes,
+    "MACRO_REGIME":        render_macro_regime,
+    "PRE_CATALYST_ALERTS": render_pre_catalyst_alerts,
+    "SECTOR_ROTATION":    render_sector_rotation,
+    "SIGNAL_PERFORMANCE": render_signal_performance,
 }
 
 
@@ -750,6 +1169,10 @@ def inject_into_html(html: str, data: dict) -> str:
         "MARKET_DEBATE":      "market_debate",
         "MARKET_REPLAY":      "market_replay",
         "MARKET_EXTREMES":    "market_extremes",
+        "MACRO_REGIME":        "macro_regime",
+        "PRE_CATALYST_ALERTS": "pre_catalyst_alerts",
+        "SECTOR_ROTATION":    "sector_rotation_signal",
+        "SIGNAL_PERFORMANCE": "_signal_ledger",
     }
     for anchor, key in section_map.items():
         items = data.get(key, [])
@@ -922,6 +1345,23 @@ def fetch_data_from_claude() -> dict:
     today = datetime.datetime.now().strftime("%Y年%-m月%-d日")
     user_prompt = USER_PROMPT_TEMPLATE.format(today=today)
 
+    # Load signal ledger and inject context (best-effort: use last known VIX)
+    ledger = load_signal_ledger()
+    if ledger:
+        # Try to get last VIX from ledger metadata or use a placeholder
+        last_vix = "N/A"
+        try:
+            latest_path = DATA_DIR / "latest.json"
+            if latest_path.exists():
+                latest_data = json.loads(latest_path.read_text(encoding="utf-8"))
+                last_vix = latest_data.get("summary", {}).get("vix", "N/A")
+        except Exception:
+            pass
+        signal_ctx = build_signal_context(ledger, last_vix)
+        if signal_ctx:
+            user_prompt = signal_ctx + "\n" + user_prompt
+            print("  📋 Injected signal ledger context into prompt")
+
     print(f"🤖 Calling Claude {MODEL} with web_search tool...")
     start = time.time()
 
@@ -1008,10 +1448,37 @@ def main():
 
     print(f"\n📅 Processing data for: {date_cn} ({date_iso})")
 
-    # Save raw JSON
+    # ─── Post-process: add macro_regime, pre_catalyst_alerts, sector_rotation_signal ───
+    vix_str = data.get("summary", {}).get("vix", "N/A")
+
+    # A) Macro Regime
+    macro_regime = compute_macro_regime(vix_str)
+    data["macro_regime"] = macro_regime
+    print(f"   🏧 Macro regime: {macro_regime['status']} (VIX {vix_str})")
+
+    # B) Pre-catalyst alerts from calendar
+    pre_catalyst_alerts = generate_pre_catalyst_alerts(
+        data.get("calendar", []), date_iso
+    )
+    data["pre_catalyst_alerts"] = pre_catalyst_alerts
+    active_alerts = sum(1 for a in pre_catalyst_alerts if a.get("active"))
+    print(f"   ⚡ Pre-catalyst alerts: {len(pre_catalyst_alerts)} total, {active_alerts} active")
+
+    # C) Sector rotation signal
+    sector_rotation = generate_sector_rotation_signal(data.get("sectors", []))
+    data["sector_rotation_signal"] = sector_rotation
+    print(f"   🔄 Sector rotation: strong={sector_rotation.get('strong_sectors',[])}")
+
+    # D) Load signal ledger for HTML rendering
+    ledger = load_signal_ledger()
+    data["_signal_ledger"] = ledger  # injected for HTML rendering, not persisted to JSON
+
+    # Save raw JSON (without the private _signal_ledger key)
     json_path = DATA_DIR / f"{date_iso}.json"
     latest_path = DATA_DIR / "latest.json"
-    json_str = json.dumps(data, ensure_ascii=False, indent=2)
+    # Strip private rendering keys before saving JSON
+    save_data = {k: v for k, v in data.items() if not k.startswith("_")}
+    json_str = json.dumps(save_data, ensure_ascii=False, indent=2)
     json_path.write_text(json_str, encoding="utf-8")
     latest_path.write_text(json_str, encoding="utf-8")
     print(f"\n💾 Saved: data/{date_iso}.json + data/latest.json")
