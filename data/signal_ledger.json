@@ -1,32 +1,31 @@
 {
-  "generated_at": "2026-07-14T17:11:56.562023Z",
+  "generated_at": "2026-07-14T23:01:05.173425Z",
   "performance": {
-    "total_signals": 36,
-    "wins": 0,
-    "losses": 6,
-    "expired": 24,
-    "open": 6,
-    "win_rate": 0.0,
-    "avg_gain_pct": 1.9,
-    "avg_loss_pct": -5.1,
-    "expected_value_pct": -5.1,
-    "vs_spy_30d": -0.1,
+    "total_signals": 51,
+    "wins": 14,
+    "losses": 22,
+    "expired": 10,
+    "open": 5,
+    "win_rate": 0.3043,
+    "avg_gain_pct": 684.91,
+    "avg_loss_pct": -26.93,
+    "expected_value_pct": 189.68,
+    "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
-    "ai_fallback_tickers": []
+    "ai_fallback_tickers": [
+      "510300.SS",
+      "AMD",
+      "BTC-USD",
+      "CL=F",
+      "GC=F",
+      "NOK",
+      "NVDA",
+      "QQQ",
+      "SPY",
+      "TSLA"
+    ]
   },
   "open_positions": [
-    {
-      "ticker": "NVDA",
-      "signal": "BUY",
-      "date_issued": "2026-07-09",
-      "price_issued": 202.78,
-      "stop_loss": 188.5854,
-      "take_profit": 233.197,
-      "days_held": 5,
-      "current_price": 211.16,
-      "current_pnl_pct": 4.13,
-      "price_source": "yfinance"
-    },
     {
       "ticker": "QQQ",
       "signal": "BUY",
@@ -35,57 +34,57 @@
       "stop_loss": 674.7243,
       "take_profit": 834.3365,
       "days_held": 2,
-      "current_price": 720.98,
-      "current_pnl_pct": -0.62,
-      "price_source": "yfinance"
+      "current_price": 717.8,
+      "current_pnl_pct": -1.06,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-12",
+      "price_issued": 754.95,
+      "stop_loss": 702.1035,
+      "take_profit": 868.1925,
+      "days_held": 2,
+      "current_price": 749.17,
+      "current_pnl_pct": -0.77,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "AMD",
       "signal": "BUY",
       "date_issued": "2026-07-13",
-      "price_issued": 534.39,
-      "stop_loss": 496.9827,
-      "take_profit": 614.5485,
+      "price_issued": 539.0,
+      "stop_loss": 501.27,
+      "take_profit": 619.85,
       "days_held": 1,
-      "current_price": 555.22,
-      "current_pnl_pct": 3.9,
-      "price_source": "yfinance"
-    },
-    {
-      "ticker": "SPY",
-      "signal": "BUY",
-      "date_issued": "2026-07-14",
-      "price_issued": 752.14,
-      "stop_loss": 699.4902,
-      "take_profit": 864.961,
-      "days_held": 0,
-      "current_price": 752.14,
-      "current_pnl_pct": 0.0,
-      "price_source": "yfinance"
+      "current_price": 534.39,
+      "current_pnl_pct": -0.86,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "510300.SS",
       "signal": "BUY",
       "date_issued": "2026-07-14",
-      "price_issued": 4.744,
-      "stop_loss": 4.4119,
-      "take_profit": 5.4556,
+      "price_issued": 3.85,
+      "stop_loss": 3.5805,
+      "take_profit": 4.4275,
       "days_held": 0,
-      "current_price": 4.744,
+      "current_price": 3.85,
       "current_pnl_pct": 0.0,
-      "price_source": "yfinance"
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "GC=F",
       "signal": "BUY",
       "date_issued": "2026-07-14",
-      "price_issued": 4070.8,
-      "stop_loss": 3785.844,
-      "take_profit": 4681.42,
+      "price_issued": 4109.0,
+      "stop_loss": 3821.37,
+      "take_profit": 4725.35,
       "days_held": 0,
-      "current_price": 4070.8,
+      "current_price": 4109.0,
       "current_pnl_pct": 0.0,
-      "price_source": "yfinance"
+      "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
@@ -93,301 +92,461 @@
       "ticker": "GC=F",
       "signal": "BUY",
       "date_issued": "2026-07-04",
-      "price_issued": 4112.7002,
+      "price_issued": 4187.3,
       "date_closed": "2026-07-14",
       "close_reason": "expired",
-      "pnl_pct": -1.02,
-      "price_source": "yfinance"
+      "pnl_pct": -1.87,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "510300.SS",
       "signal": "BUY",
       "date_issued": "2026-07-04",
-      "price_issued": 4.876,
+      "price_issued": 3.92,
       "date_closed": "2026-07-14",
       "close_reason": "expired",
-      "pnl_pct": -2.71,
-      "price_source": "yfinance"
+      "pnl_pct": -1.79,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-07-09",
+      "price_issued": 875.4,
+      "date_closed": "2026-07-11",
+      "close_reason": "stop_loss",
+      "pnl_pct": -76.83,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "CL=F",
+      "signal": "BUY",
+      "date_issued": "2026-07-01",
+      "price_issued": 68.06,
+      "date_closed": "2026-07-11",
+      "close_reason": "expired",
+      "pnl_pct": 5.0,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "BTC-USD",
+      "signal": "BUY",
+      "date_issued": "2026-07-01",
+      "price_issued": 63543.0,
+      "date_closed": "2026-07-11",
+      "close_reason": "expired",
+      "pnl_pct": 0.48,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-07",
+      "price_issued": 565.2,
+      "date_closed": "2026-07-08",
+      "close_reason": "take_profit",
+      "pnl_pct": 32.4,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-06",
+      "price_issued": 750.58,
+      "date_closed": "2026-07-07",
+      "close_reason": "stop_loss",
+      "pnl_pct": -24.7,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-07-05",
+      "price_issued": 714.22,
+      "date_closed": "2026-07-07",
+      "close_reason": "stop_loss",
+      "pnl_pct": -34.78,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "SPY",
       "signal": "BUY",
       "date_issued": "2026-07-03",
-      "price_issued": 744.78,
-      "date_closed": "2026-07-13",
-      "close_reason": "expired",
-      "pnl_pct": 0.59,
-      "price_source": "yfinance"
+      "price_issued": 548.2,
+      "date_closed": "2026-07-05",
+      "close_reason": "take_profit",
+      "pnl_pct": 36.5,
+      "price_source": "ai_fallback"
     },
     {
-      "ticker": "CL=F",
+      "ticker": "GC=F",
       "signal": "BUY",
-      "date_issued": "2026-07-01",
-      "price_issued": 68.58,
-      "date_closed": "2026-07-11",
+      "date_issued": "2026-06-24",
+      "price_issued": 4016.0,
+      "date_closed": "2026-07-04",
       "close_reason": "expired",
-      "pnl_pct": 4.13,
-      "price_source": "yfinance"
+      "pnl_pct": 4.27,
+      "price_source": "ai_fallback"
     },
     {
-      "ticker": "BTC-USD",
+      "ticker": "510300.SS",
       "signal": "BUY",
-      "date_issued": "2026-07-01",
-      "price_issued": 60003.7578,
-      "date_closed": "2026-07-11",
+      "date_issued": "2026-06-24",
+      "price_issued": 3.95,
+      "date_closed": "2026-07-04",
       "close_reason": "expired",
-      "pnl_pct": 6.33,
-      "price_source": "yfinance"
+      "pnl_pct": -0.76,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-02",
+      "price_issued": 745.76,
+      "date_closed": "2026-07-03",
+      "close_reason": "stop_loss",
+      "pnl_pct": -26.49,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "TSLA",
       "signal": "BUY",
       "date_issued": "2026-06-30",
-      "price_issued": 420.6,
-      "date_closed": "2026-07-10",
-      "close_reason": "expired",
-      "pnl_pct": -3.05,
-      "price_source": "yfinance"
+      "price_issued": 411.5,
+      "date_closed": "2026-07-02",
+      "close_reason": "stop_loss",
+      "pnl_pct": -54.99,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "QQQ",
       "signal": "BUY",
       "date_issued": "2026-06-29",
-      "price_issued": 724.08,
-      "date_closed": "2026-07-09",
-      "close_reason": "expired",
-      "pnl_pct": -0.11,
-      "price_source": "yfinance"
-    },
-    {
-      "ticker": "GC=F",
-      "signal": "BUY",
-      "date_issued": "2026-06-24",
-      "price_issued": 3990.3,
-      "date_closed": "2026-07-04",
-      "close_reason": "expired",
-      "pnl_pct": 3.07,
-      "price_source": "yfinance"
-    },
-    {
-      "ticker": "510300.SS",
-      "signal": "BUY",
-      "date_issued": "2026-06-24",
-      "price_issued": 4.967,
-      "date_closed": "2026-07-04",
-      "close_reason": "expired",
-      "pnl_pct": -1.83,
-      "price_source": "yfinance"
+      "price_issued": 485.2,
+      "date_closed": "2026-07-02",
+      "close_reason": "take_profit",
+      "pnl_pct": 49.46,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "SPY",
       "signal": "BUY",
-      "date_issued": "2026-06-23",
-      "price_issued": 733.58,
-      "date_closed": "2026-07-03",
-      "close_reason": "expired",
-      "pnl_pct": 1.53,
-      "price_source": "yfinance"
-    },
-    {
-      "ticker": "BTC-USD",
-      "signal": "BUY",
-      "date_issued": "2026-06-22",
-      "price_issued": 63952.1055,
-      "date_closed": "2026-06-30",
+      "date_issued": "2026-06-30",
+      "price_issued": 741.0,
+      "date_closed": "2026-07-01",
       "close_reason": "stop_loss",
-      "pnl_pct": -8.43,
-      "price_source": "yfinance"
+      "pnl_pct": -25.98,
+      "price_source": "ai_fallback"
     },
     {
-      "ticker": "NVDA",
+      "ticker": "SPY",
       "signal": "BUY",
-      "date_issued": "2026-06-19",
-      "price_issued": 210.69,
-      "date_closed": "2026-06-25",
+      "date_issued": "2026-06-25",
+      "price_issued": 688.5,
+      "date_closed": "2026-06-29",
       "close_reason": "stop_loss",
-      "pnl_pct": -7.1,
-      "price_source": "yfinance"
-    },
-    {
-      "ticker": "QQQ",
-      "signal": "BUY",
-      "date_issued": "2026-06-15",
-      "price_issued": 743.1833,
-      "date_closed": "2026-06-25",
-      "close_reason": "expired",
-      "pnl_pct": -3.61,
-      "price_source": "yfinance"
+      "pnl_pct": -20.97,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "CL=F",
       "signal": "BUY",
       "date_issued": "2026-06-18",
-      "price_issued": 76.6,
-      "date_closed": "2026-06-24",
+      "price_issued": 74.82,
+      "date_closed": "2026-06-26",
       "close_reason": "stop_loss",
-      "pnl_pct": -8.17,
-      "price_source": "yfinance"
+      "pnl_pct": -7.28,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-06-23",
+      "price_issued": 744.39,
+      "date_closed": "2026-06-25",
+      "close_reason": "stop_loss",
+      "pnl_pct": -7.51,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "GC=F",
       "signal": "BUY",
       "date_issued": "2026-06-17",
-      "price_issued": 4358.8999,
+      "price_issued": 4351.97,
       "date_closed": "2026-06-24",
       "close_reason": "stop_loss",
-      "pnl_pct": -8.46,
-      "price_source": "yfinance"
+      "pnl_pct": -7.72,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "510300.SS",
       "signal": "BUY",
-      "date_issued": "2026-06-13",
-      "price_issued": 4.818,
-      "date_closed": "2026-06-24",
-      "close_reason": "expired",
-      "pnl_pct": 3.09,
-      "price_source": "yfinance"
+      "date_issued": "2026-06-22",
+      "price_issued": 5.03,
+      "date_closed": "2026-06-23",
+      "close_reason": "stop_loss",
+      "pnl_pct": -24.06,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "BTC-USD",
+      "signal": "BUY",
+      "date_issued": "2026-06-22",
+      "price_issued": 120000.0,
+      "date_closed": "2026-06-23",
+      "close_reason": "stop_loss",
+      "pnl_pct": -48.11,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-06-20",
+      "price_issued": 452.18,
+      "date_closed": "2026-06-23",
+      "close_reason": "take_profit",
+      "pnl_pct": 62.8,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-06-18",
+      "price_issued": 3.82,
+      "date_closed": "2026-06-22",
+      "close_reason": "take_profit",
+      "pnl_pct": 31.68,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "BTC-USD",
       "signal": "BUY",
       "date_issued": "2026-06-11",
-      "price_issued": 63561.0547,
+      "price_issued": 63332.12,
       "date_closed": "2026-06-22",
-      "close_reason": "expired",
-      "pnl_pct": 0.62,
-      "price_source": "yfinance"
+      "close_reason": "take_profit",
+      "pnl_pct": 89.48,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-06-19",
+      "price_issued": 220.5,
+      "date_closed": "2026-06-20",
+      "close_reason": "stop_loss",
+      "pnl_pct": -7.23,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "SPY",
       "signal": "BUY",
-      "date_issued": "2026-06-07",
-      "price_issued": 735.6548,
-      "date_closed": "2026-06-18",
-      "close_reason": "expired",
-      "pnl_pct": 1.51,
-      "price_source": "yfinance"
+      "date_issued": "2026-06-17",
+      "price_issued": 548.38,
+      "date_closed": "2026-06-19",
+      "close_reason": "take_profit",
+      "pnl_pct": 36.78,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-06-15",
+      "price_issued": 875.4,
+      "date_closed": "2026-06-17",
+      "close_reason": "stop_loss",
+      "pnl_pct": -76.54,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-06-12",
+      "price_issued": 3.82,
+      "date_closed": "2026-06-17",
+      "close_reason": "take_profit",
+      "pnl_pct": 26.18,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "GC=F",
       "signal": "BUY",
       "date_issued": "2026-06-06",
-      "price_issued": 4337.1001,
+      "price_issued": 4353.9,
       "date_closed": "2026-06-17",
       "close_reason": "expired",
-      "pnl_pct": 0.5,
-      "price_source": "yfinance"
+      "pnl_pct": -0.04,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-06-15",
+      "price_issued": 740.19,
+      "date_closed": "2026-06-16",
+      "close_reason": "stop_loss",
+      "pnl_pct": -35.67,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "NVDA",
       "signal": "BUY",
-      "date_issued": "2026-05-22",
-      "price_issued": 215.0793,
-      "date_closed": "2026-06-16",
-      "close_reason": "expired",
-      "pnl_pct": -3.57,
-      "price_source": "yfinance"
+      "date_issued": "2026-06-13",
+      "price_issued": 205.19,
+      "date_closed": "2026-06-15",
+      "close_reason": "take_profit",
+      "pnl_pct": 326.63,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "CL=F",
       "signal": "BUY",
       "date_issued": "2026-06-10",
-      "price_issued": 90.03,
-      "date_closed": "2026-06-15",
+      "price_issued": 93.0,
+      "date_closed": "2026-06-13",
       "close_reason": "stop_loss",
-      "pnl_pct": -10.31,
-      "price_source": "yfinance"
+      "pnl_pct": -8.73,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-06-08",
+      "price_issued": 708.0,
+      "date_closed": "2026-06-11",
+      "close_reason": "stop_loss",
+      "pnl_pct": -37.5,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-06-07",
+      "price_issued": 738.37,
+      "date_closed": "2026-06-11",
+      "close_reason": "stop_loss",
+      "pnl_pct": -33.06,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-06-07",
+      "price_issued": 405.6,
+      "date_closed": "2026-06-08",
+      "close_reason": "take_profit",
+      "pnl_pct": 1060.5,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-05-22",
+      "price_issued": 875.4,
+      "date_closed": "2026-06-08",
+      "close_reason": "stop_loss",
+      "pnl_pct": -76.17,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-06-06",
+      "price_issued": 450.8,
+      "date_closed": "2026-06-07",
+      "close_reason": "take_profit",
+      "pnl_pct": 56.24,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "510300.SS",
       "signal": "BUY",
       "date_issued": "2026-05-20",
-      "price_issued": 4.871,
-      "date_closed": "2026-06-13",
-      "close_reason": "expired",
-      "pnl_pct": -1.09,
-      "price_source": "yfinance"
-    },
-    {
-      "ticker": "QQQ",
-      "signal": "BUY",
-      "date_issued": "2026-05-20",
-      "price_issued": 712.3672,
-      "date_closed": "2026-06-13",
-      "close_reason": "expired",
-      "pnl_pct": 1.15,
-      "price_source": "yfinance"
+      "price_issued": 4.12,
+      "date_closed": "2026-06-07",
+      "close_reason": "take_profit",
+      "pnl_pct": 9744.66,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "SPY",
       "signal": "BUY",
       "date_issued": "2026-05-14",
-      "price_issued": 746.2475,
+      "price_issued": 750.12,
       "date_closed": "2026-06-07",
       "close_reason": "expired",
-      "pnl_pct": -1.42,
-      "price_source": "yfinance"
+      "pnl_pct": -1.57,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "BTC-USD",
       "signal": "BUY",
       "date_issued": "2026-05-21",
-      "price_issued": 77539.1719,
+      "price_issued": 77539.67,
       "date_closed": "2026-06-06",
       "close_reason": "stop_loss",
-      "pnl_pct": -21.5,
-      "price_source": "yfinance"
+      "pnl_pct": -21.21,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-05-20",
+      "price_issued": 713.15,
+      "date_closed": "2026-06-06",
+      "close_reason": "stop_loss",
+      "pnl_pct": -36.79,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "GC=F",
       "signal": "BUY",
       "date_issued": "2026-05-12",
-      "price_issued": 4677.6001,
+      "price_issued": 4678.0,
       "date_closed": "2026-05-22",
       "close_reason": "expired",
-      "pnl_pct": -3.35,
-      "price_source": "yfinance"
-    },
-    {
-      "ticker": "NVDA",
-      "signal": "BUY",
-      "date_issued": "2026-05-11",
-      "price_issued": 219.1845,
-      "date_closed": "2026-05-21",
-      "close_reason": "expired",
-      "pnl_pct": 0.03,
-      "price_source": "yfinance"
-    },
-    {
-      "ticker": "510300.SS",
-      "signal": "BUY",
-      "date_issued": "2026-05-10",
-      "price_issued": 4.886,
-      "date_closed": "2026-05-20",
-      "close_reason": "expired",
-      "pnl_pct": -0.31,
-      "price_source": "yfinance"
+      "pnl_pct": -3.29,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "BTC-USD",
       "signal": "BUY",
       "date_issued": "2026-05-10",
-      "price_issued": 82138.9297,
+      "price_issued": 80969.0,
       "date_closed": "2026-05-20",
       "close_reason": "expired",
-      "pnl_pct": -5.7,
-      "price_source": "yfinance"
+      "pnl_pct": -5.32,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-05-10",
+      "price_issued": 3.82,
+      "date_closed": "2026-05-19",
+      "close_reason": "take_profit",
+      "pnl_pct": 26.96,
+      "price_source": "ai_fallback"
     },
     {
       "ticker": "QQQ",
       "signal": "BUY",
       "date_issued": "2026-05-10",
-      "price_issued": 710.4492,
-      "date_closed": "2026-05-20",
-      "close_reason": "expired",
-      "pnl_pct": 0.27,
-      "price_source": "yfinance"
+      "price_issued": 462.35,
+      "date_closed": "2026-05-17",
+      "close_reason": "take_profit",
+      "pnl_pct": 53.51,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "NVDA",
+      "signal": "BUY",
+      "date_issued": "2026-05-11",
+      "price_issued": 875.4,
+      "date_closed": "2026-05-15",
+      "close_reason": "stop_loss",
+      "pnl_pct": -74.13,
+      "price_source": "ai_fallback"
     }
   ],
   "sector_rotation": {
