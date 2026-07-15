@@ -22,12 +22,6 @@
           "buy_date": "2026-06-16"
         },
         {
-          "ticker": "TSM",
-          "shares": 5,
-          "avg_cost": 432.35,
-          "buy_date": "2026-06-26"
-        },
-        {
           "ticker": "META",
           "shares": 4,
           "avg_cost": 656.73,
@@ -42,7 +36,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 68.55
+          "avg_cost": 2165.95
         }
       ],
       "history": [
@@ -1466,6 +1460,39 @@
             }
           ],
           "note": "清仓低效XLE换入强势AAPL，集中资金追赶基准。"
+        },
+        {
+          "date": "2026-07-15",
+          "portfolio_value": 9359.47,
+          "baseline_value": 10212.28,
+          "cash": 2165.95,
+          "positions": {
+            "IWM": {
+              "shares": 14,
+              "price": 295.77,
+              "value": 4140.78
+            },
+            "META": {
+              "shares": 4,
+              "price": 681.31,
+              "value": 2725.24
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 327.5,
+              "value": 327.5
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "TSM",
+              "shares": 5,
+              "price": 419.48,
+              "reason": "TSM技术信号弱势↓，RSI=43.2，动量-4.97%，跌破50MA，及时止损"
+            }
+          ],
+          "note": "止损弱势TSM，释放资金待明日加仓强势标的追赶基准。"
         }
       ]
     },
@@ -1482,9 +1509,15 @@
           "buy_date": "2026-07-14"
         },
         {
+          "ticker": "ETH-USD",
+          "shares": 1,
+          "avg_cost": 1924.0,
+          "buy_date": "2026-07-15"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2089.54
+          "avg_cost": 165.54
         }
       ],
       "history": [
@@ -2748,6 +2781,34 @@
             }
           ],
           "note": "选择强势标的META和BTC-USD进行配置，提升组合进攻性"
+        },
+        {
+          "date": "2026-07-15",
+          "portfolio_value": 8902.64,
+          "baseline_value": 10212.28,
+          "cash": 165.54,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 681.31,
+              "value": 6813.1
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1924.0,
+              "value": 1924.0
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "ETH-USD",
+              "shares": 1,
+              "price": 1924.0,
+              "reason": "ETH-USD技术信号强势，RSI高且动量强劲，符合进攻性策略"
+            }
+          ],
+          "note": "增持ETH-USD以增强进攻性，追求跑赢SPY的目标。"
         }
       ]
     },
@@ -4200,6 +4261,51 @@
             }
           ],
           "note": "规则策略：持有强势['AAPL', 'NVDA']，剔除弱势"
+        },
+        {
+          "date": "2026-07-15",
+          "portfolio_value": 9992.15,
+          "baseline_value": 10212.28,
+          "cash": 409.0,
+          "positions": {
+            "AMD": {
+              "shares": 9,
+              "price": 529.14,
+              "value": 4762.26
+            },
+            "XLK": {
+              "shares": 1,
+              "price": 181.58,
+              "value": 181.58
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 56.56,
+              "value": 395.92
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 295.77,
+              "value": 295.77
+            },
+            "META": {
+              "shares": 2,
+              "price": 681.31,
+              "value": 1362.62
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 327.5,
+              "value": 1310.0
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 212.5,
+              "value": 1275.0
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['AMZN']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
