@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-14T23:01:05.173425Z",
+  "generated_at": "2026-07-15T13:24:28.794015Z",
   "performance": {
-    "total_signals": 51,
+    "total_signals": 50,
     "wins": 14,
     "losses": 22,
     "expired": 10,
-    "open": 5,
+    "open": 4,
     "win_rate": 0.3043,
     "avg_gain_pct": 684.91,
     "avg_loss_pct": -26.93,
@@ -34,8 +34,8 @@
       "stop_loss": 674.7243,
       "take_profit": 834.3365,
       "days_held": 2,
-      "current_price": 717.8,
-      "current_pnl_pct": -1.06,
+      "current_price": 712.21,
+      "current_pnl_pct": -1.83,
       "price_source": "ai_fallback"
     },
     {
@@ -46,8 +46,8 @@
       "stop_loss": 702.1035,
       "take_profit": 868.1925,
       "days_held": 2,
-      "current_price": 749.17,
-      "current_pnl_pct": -0.77,
+      "current_price": 749.34,
+      "current_pnl_pct": -0.74,
       "price_source": "ai_fallback"
     },
     {
@@ -63,26 +63,14 @@
       "price_source": "ai_fallback"
     },
     {
-      "ticker": "510300.SS",
+      "ticker": "CL=F",
       "signal": "BUY",
       "date_issued": "2026-07-14",
-      "price_issued": 3.85,
-      "stop_loss": 3.5805,
-      "take_profit": 4.4275,
+      "price_issued": 78.74,
+      "stop_loss": 73.2282,
+      "take_profit": 90.551,
       "days_held": 0,
-      "current_price": 3.85,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "GC=F",
-      "signal": "BUY",
-      "date_issued": "2026-07-14",
-      "price_issued": 4109.0,
-      "stop_loss": 3821.37,
-      "take_profit": 4725.35,
-      "days_held": 0,
-      "current_price": 4109.0,
+      "current_price": 78.74,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
@@ -553,15 +541,15 @@
     "date": "2026-07-14",
     "strong_sectors": [
       "能源",
-      "必需消费品",
-      "房地产"
+      "科技",
+      "公用事业"
     ],
     "weak_sectors": [
-      "工业",
       "原材料",
-      "科技"
+      "日常消费品",
+      "医疗保健"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日能源+3.26%领涨，建议关注XLE及Energy个股"
+    "note": "今日能源+2.76%领涨，建议关注XLE及Energy个股"
   }
 }
