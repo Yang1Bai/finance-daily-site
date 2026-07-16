@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-15T23:01:18.220425Z",
+  "generated_at": "2026-07-16T13:38:36.847461Z",
   "performance": {
-    "total_signals": 52,
+    "total_signals": 51,
     "wins": 14,
-    "losses": 22,
+    "losses": 23,
     "expired": 10,
-    "open": 6,
-    "win_rate": 0.3043,
+    "open": 4,
+    "win_rate": 0.2979,
     "avg_gain_pct": 684.91,
-    "avg_loss_pct": -26.93,
-    "expected_value_pct": 189.68,
+    "avg_loss_pct": -27.3,
+    "expected_value_pct": 184.87,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -27,18 +27,6 @@
   },
   "open_positions": [
     {
-      "ticker": "QQQ",
-      "signal": "BUY",
-      "date_issued": "2026-07-12",
-      "price_issued": 725.51,
-      "stop_loss": 674.7243,
-      "take_profit": 834.3365,
-      "days_held": 3,
-      "current_price": 719.69,
-      "current_pnl_pct": -0.8,
-      "price_source": "ai_fallback"
-    },
-    {
       "ticker": "SPY",
       "signal": "BUY",
       "date_issued": "2026-07-12",
@@ -46,8 +34,8 @@
       "stop_loss": 702.1035,
       "take_profit": 868.1925,
       "days_held": 3,
-      "current_price": 751.83,
-      "current_pnl_pct": -0.41,
+      "current_price": 757.2,
+      "current_pnl_pct": 0.3,
       "price_source": "ai_fallback"
     },
     {
@@ -70,36 +58,34 @@
       "stop_loss": 73.2282,
       "take_profit": 90.551,
       "days_held": 1,
-      "current_price": 79.94,
-      "current_pnl_pct": 1.52,
+      "current_price": 79.99,
+      "current_pnl_pct": 1.59,
       "price_source": "ai_fallback"
     },
     {
-      "ticker": "BTC-USD",
+      "ticker": "QQQ",
       "signal": "BUY",
       "date_issued": "2026-07-15",
-      "price_issued": 64758.95,
-      "stop_loss": 60225.8235,
-      "take_profit": 74472.7925,
+      "price_issued": 450.2,
+      "stop_loss": 418.686,
+      "take_profit": 517.73,
       "days_held": 0,
-      "current_price": 64758.95,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "GC=F",
-      "signal": "BUY",
-      "date_issued": "2026-07-15",
-      "price_issued": 4035.4,
-      "stop_loss": 3752.922,
-      "take_profit": 4640.71,
-      "days_held": 0,
-      "current_price": 4035.4,
+      "current_price": 450.2,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-07-12",
+      "price_issued": 725.51,
+      "date_closed": "2026-07-15",
+      "close_reason": "stop_loss",
+      "pnl_pct": -37.95,
+      "price_source": "ai_fallback"
+    },
     {
       "ticker": "GC=F",
       "signal": "BUY",
@@ -564,16 +550,16 @@
   "sector_rotation": {
     "date": "2026-07-15",
     "strong_sectors": [
-      "能源",
-      "科技",
-      "公用事业"
+      "非必需消费",
+      "信息技术",
+      "通讯服务"
     ],
     "weak_sectors": [
       "材料",
-      "消费必需品",
+      "必需消费",
       "医疗保健"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日能源+2.76%领涨，建议关注XLE及Energy个股"
+    "note": "今日非必需消费+1.55%领涨，建议关注XLY及Consumer Discretionary个股"
   }
 }
