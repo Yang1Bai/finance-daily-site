@@ -34,9 +34,21 @@
           "buy_date": "2026-07-16"
         },
         {
+          "ticker": "XLE",
+          "shares": 25,
+          "avg_cost": 57.68,
+          "buy_date": "2026-07-17"
+        },
+        {
+          "ticker": "ETH-USD",
+          "shares": 1,
+          "avg_cost": 1844.7,
+          "buy_date": "2026-07-17"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 5055.71
+          "avg_cost": 1769.01
         }
       ],
       "history": [
@@ -1533,6 +1545,56 @@
             }
           ],
           "note": "清仓疲弱IWM，换入强势金融XLF，积极进攻追赶基准"
+        },
+        {
+          "date": "2026-07-17",
+          "portfolio_value": 9211.21,
+          "baseline_value": 10056.42,
+          "cash": 1769.01,
+          "positions": {
+            "META": {
+              "shares": 4,
+              "price": 646.01,
+              "value": 2584.04
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 333.74,
+              "value": 333.74
+            },
+            "XLF": {
+              "shares": 22,
+              "price": 56.26,
+              "value": 1237.72
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 57.68,
+              "value": 1442.0
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1844.7,
+              "value": 1844.7
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLE",
+              "shares": 25,
+              "price": 57.68,
+              "reason": "RSI72.5强势+动量+6.27%，油价上涨+能源板块跑赢大盘，进攻性配置"
+            },
+            {
+              "action": "BUY",
+              "ticker": "ETH-USD",
+              "shares": 1,
+              "price": 1844.7,
+              "reason": "RSI60.4强势+动量+17.38%最强，高波动性标的追赶基准"
+            }
+          ],
+          "note": "落后基准8%需激进进攻，重仓强势能源和加密货币博反弹"
         }
       ]
     },
@@ -1555,15 +1617,15 @@
           "buy_date": "2026-07-15"
         },
         {
-          "ticker": "XLF",
+          "ticker": "JD",
           "shares": 1,
-          "avg_cost": 56.75,
-          "buy_date": "2026-07-16"
+          "avg_cost": 29.62,
+          "buy_date": "2026-07-17"
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 108.79
+          "avg_cost": 135.43
         }
       ],
       "history": [
@@ -2888,6 +2950,46 @@
             }
           ],
           "note": "增加XLF进攻性仓位，优化组合以缩小与SPY的差距"
+        },
+        {
+          "date": "2026-07-17",
+          "portfolio_value": 8469.85,
+          "baseline_value": 10056.42,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 646.01,
+              "value": 6460.1
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1844.7,
+              "value": 1844.7
+            },
+            "JD": {
+              "shares": 1,
+              "price": 29.62,
+              "value": 29.62
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLF",
+              "shares": 1,
+              "price": 56.26,
+              "reason": "XLF短期内已经有一定涨幅，考虑到市场波动，先行获利了结"
+            },
+            {
+              "action": "BUY",
+              "ticker": "JD",
+              "shares": 1,
+              "price": 29.62,
+              "reason": "JD技术信号强势，RSI高，动量积极，适合进攻性配置"
+            }
+          ],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -2936,9 +3038,15 @@
           "buy_date": "2026-07-16"
         },
         {
+          "ticker": "XLE",
+          "shares": 2,
+          "avg_cost": 57.68,
+          "buy_date": "2026-07-17"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 349.08
+          "avg_cost": 233.72
         }
       ],
       "history": [
@@ -4445,6 +4553,64 @@
             }
           ],
           "note": "规则策略：持有强势['JD', 'XLE']，剔除弱势"
+        },
+        {
+          "date": "2026-07-17",
+          "portfolio_value": 9579.58,
+          "baseline_value": 10056.42,
+          "cash": 233.72,
+          "positions": {
+            "AMD": {
+              "shares": 9,
+              "price": 495.76,
+              "value": 4461.84
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 56.26,
+              "value": 393.82
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 294.04,
+              "value": 294.04
+            },
+            "META": {
+              "shares": 2,
+              "price": 646.01,
+              "value": 1292.02
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 333.74,
+              "value": 1334.96
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 202.81,
+              "value": 1216.86
+            },
+            "JD": {
+              "shares": 8,
+              "price": 29.62,
+              "value": 236.96
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 57.68,
+              "value": 115.36
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLE",
+              "shares": 2,
+              "price": 57.68,
+              "reason": "技术强势+动量+6.3%"
+            }
+          ],
+          "note": "规则策略：持有强势['XLE']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
