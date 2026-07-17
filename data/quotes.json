@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17T21:22:10.198528+00:00",
+  "updated": "2026-07-17T22:24:56.517538+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -53,8 +53,8 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "24,831",
-      "change": "-84.51",
+      "value": "24,915",
+      "change": "-84.04",
       "change_pct": "-0.34%",
       "direction": "down"
     },
@@ -77,9 +77,9 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "64,090",
-      "change": "+300.31",
-      "change_pct": "+0.47%",
+      "value": "63,972",
+      "change": "+182.72",
+      "change_pct": "+0.29%",
       "direction": "up"
     },
     {
