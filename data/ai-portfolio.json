@@ -1595,6 +1595,41 @@
             }
           ],
           "note": "落后基准8%需激进进攻，重仓强势能源和加密货币博反弹"
+        },
+        {
+          "date": "2026-07-20",
+          "portfolio_value": 9264.38,
+          "baseline_value": 10040.18,
+          "cash": 1769.01,
+          "positions": {
+            "META": {
+              "shares": 4,
+              "price": 645.85,
+              "value": 2583.4
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 326.59,
+              "value": 326.59
+            },
+            "XLF": {
+              "shares": 22,
+              "price": 56.04,
+              "value": 1232.88
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 57.94,
+              "value": 1448.5
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1904.0,
+              "value": 1904.0
+            }
+          },
+          "trades": [],
+          "note": "落后基准较大，加仓强势BTC增加进攻性，等待科技财报催化。"
         }
       ]
     },
@@ -2989,6 +3024,31 @@
               "reason": "JD技术信号强势，RSI高，动量积极，适合进攻性配置"
             }
           ],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-07-20",
+          "portfolio_value": 8528.53,
+          "baseline_value": 10040.18,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 645.85,
+              "value": 6458.5
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1904.0,
+              "value": 1904.0
+            },
+            "JD": {
+              "shares": 1,
+              "price": 30.6,
+              "value": 30.6
+            }
+          },
+          "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
@@ -4611,6 +4671,56 @@
             }
           ],
           "note": "规则策略：持有强势['XLE']，剔除弱势"
+        },
+        {
+          "date": "2026-07-20",
+          "portfolio_value": 9628.86,
+          "baseline_value": 10040.18,
+          "cash": 233.72,
+          "positions": {
+            "AMD": {
+              "shares": 9,
+              "price": 503.57,
+              "value": 4532.13
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 56.04,
+              "value": 392.28
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 292.31,
+              "value": 292.31
+            },
+            "META": {
+              "shares": 2,
+              "price": 645.85,
+              "value": 1291.7
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 326.59,
+              "value": 1306.36
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 203.28,
+              "value": 1219.68
+            },
+            "JD": {
+              "shares": 8,
+              "price": 30.6,
+              "value": 244.8
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 57.94,
+              "value": 115.88
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['BABA', 'MSFT']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
