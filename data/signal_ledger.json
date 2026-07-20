@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T13:54:40.059283Z",
+  "generated_at": "2026-07-20T23:04:15.459527Z",
   "performance": {
     "total_signals": 54,
     "wins": 15,
@@ -33,7 +33,7 @@
       "price_issued": 754.95,
       "stop_loss": 702.1035,
       "take_profit": 868.1925,
-      "days_held": 7,
+      "days_held": 8,
       "current_price": 754.95,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -45,9 +45,9 @@
       "price_issued": 78.74,
       "stop_loss": 73.2282,
       "take_profit": 90.551,
-      "days_held": 5,
-      "current_price": 81.78,
-      "current_pnl_pct": 3.86,
+      "days_held": 6,
+      "current_price": 78.74,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     },
     {
@@ -57,7 +57,7 @@
       "price_issued": 3.82,
       "stop_loss": 3.5526,
       "take_profit": 4.393,
-      "days_held": 3,
+      "days_held": 4,
       "current_price": 3.82,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -69,9 +69,9 @@
       "price_issued": 4041.1,
       "stop_loss": 3758.223,
       "take_profit": 4647.265,
-      "days_held": 3,
-      "current_price": 4018.8,
-      "current_pnl_pct": -0.55,
+      "days_held": 4,
+      "current_price": 4041.1,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     },
     {
@@ -81,7 +81,7 @@
       "price_issued": 495.76,
       "stop_loss": 461.0568,
       "take_profit": 570.124,
-      "days_held": 1,
+      "days_held": 2,
       "current_price": 495.76,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -580,18 +580,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-07-19",
+    "date": "2026-07-20",
     "strong_sectors": [
-      "医疗保健",
       "能源",
-      "金融"
+      "金融",
+      "房地产"
     ],
     "weak_sectors": [
-      "科技",
       "通讯服务",
-      "可选消费"
+      "消费防御",
+      "科技"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日医疗保健+2.22%领涨，建议关注XLV及Health Care个股"
+    "note": "今日能源+3.30%领涨，建议关注XLE及Energy个股"
   }
 }
