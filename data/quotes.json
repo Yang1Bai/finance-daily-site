@@ -1,29 +1,29 @@
 {
-  "updated": "2026-07-20T16:54:28.466007+00:00",
+  "updated": "2026-07-20T18:51:36.789108+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,476.42",
-      "change": "+18.73",
-      "change_pct": "+0.25%",
-      "direction": "up"
+      "value": "7,453.01",
+      "change": "-4.68",
+      "change_pct": "-0.06%",
+      "direction": "down"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "25,666",
-      "change": "+146.00",
-      "change_pct": "+0.57%",
+      "value": "25,574",
+      "change": "+53.51",
+      "change_pct": "+0.21%",
       "direction": "up"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,993",
-      "change": "-153.04",
-      "change_pct": "-0.29%",
+      "value": "51,838",
+      "change": "-308.22",
+      "change_pct": "-0.59%",
       "direction": "down"
     },
     {
@@ -61,33 +61,33 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,013.10",
-      "change": "+0.40",
-      "change_pct": "+0.01%",
-      "direction": "up"
+      "value": "4,010.30",
+      "change": "-2.40",
+      "change_pct": "-0.06%",
+      "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "81.8700",
-      "change": "-0.62",
-      "change_pct": "-0.75%",
-      "direction": "down"
+      "value": "82.8000",
+      "change": "+0.31",
+      "change_pct": "+0.38%",
+      "direction": "up"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "65,412",
-      "change": "+720.71",
-      "change_pct": "+1.11%",
+      "value": "65,251",
+      "change": "+560.32",
+      "change_pct": "+0.87%",
       "direction": "up"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "100.9910",
-      "change": "+0.24",
-      "change_pct": "+0.24%",
+      "value": "100.9540",
+      "change": "+0.20",
+      "change_pct": "+0.20%",
       "direction": "up"
     }
   ]
