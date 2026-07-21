@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T23:04:15.459527Z",
+  "generated_at": "2026-07-21T13:26:32.188212Z",
   "performance": {
     "total_signals": 54,
     "wins": 15,
@@ -34,8 +34,8 @@
       "stop_loss": 702.1035,
       "take_profit": 868.1925,
       "days_held": 8,
-      "current_price": 754.95,
-      "current_pnl_pct": 0.0,
+      "current_price": 742.68,
+      "current_pnl_pct": -1.63,
       "price_source": "ai_fallback"
     },
     {
@@ -46,8 +46,8 @@
       "stop_loss": 73.2282,
       "take_profit": 90.551,
       "days_held": 6,
-      "current_price": 78.74,
-      "current_pnl_pct": 0.0,
+      "current_price": 83.0,
+      "current_pnl_pct": 5.41,
       "price_source": "ai_fallback"
     },
     {
@@ -70,8 +70,8 @@
       "stop_loss": 3758.223,
       "take_profit": 4647.265,
       "days_held": 4,
-      "current_price": 4041.1,
-      "current_pnl_pct": 0.0,
+      "current_price": 4001.06,
+      "current_pnl_pct": -0.99,
       "price_source": "ai_fallback"
     },
     {
@@ -82,8 +82,8 @@
       "stop_loss": 461.0568,
       "take_profit": 570.124,
       "days_held": 2,
-      "current_price": 495.76,
-      "current_pnl_pct": 0.0,
+      "current_price": 509.78,
+      "current_pnl_pct": 2.83,
       "price_source": "ai_fallback"
     }
   ],
@@ -583,15 +583,15 @@
     "date": "2026-07-20",
     "strong_sectors": [
       "能源",
-      "金融",
-      "房地产"
+      "通信服务",
+      "材料"
     ],
     "weak_sectors": [
-      "通讯服务",
-      "消费防御",
-      "科技"
+      "科技",
+      "非必需消费品",
+      "工业"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日能源+3.30%领涨，建议关注XLE及Energy个股"
+    "note": "今日能源+2.85%领涨，建议关注XLE及Energy个股"
   }
 }
