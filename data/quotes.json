@@ -1,30 +1,30 @@
 {
-  "updated": "2026-07-22T19:52:20.997441+00:00",
+  "updated": "2026-07-22T21:04:54.079655+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,503.30",
-      "change": "-5.90",
-      "change_pct": "-0.08%",
+      "value": "7,498.96",
+      "change": "-10.24",
+      "change_pct": "-0.14%",
       "direction": "down"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "25,729",
-      "change": "-108.18",
-      "change_pct": "-0.42%",
+      "value": "25,691",
+      "change": "-146.31",
+      "change_pct": "-0.57%",
       "direction": "down"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,228",
-      "change": "+3.80",
-      "change_pct": "+0.01%",
-      "direction": "up"
+      "value": "52,219",
+      "change": "-6.06",
+      "change_pct": "-0.01%",
+      "direction": "down"
     },
     {
       "name": "上证指数",
@@ -61,33 +61,33 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,140.60",
-      "change": "+69.50",
-      "change_pct": "+1.71%",
+      "value": "4,134.10",
+      "change": "+63.00",
+      "change_pct": "+1.55%",
       "direction": "up"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "86.7400",
-      "change": "+1.83",
-      "change_pct": "+2.16%",
+      "value": "86.4200",
+      "change": "+1.51",
+      "change_pct": "+1.78%",
       "direction": "up"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "65,858",
-      "change": "-647.51",
-      "change_pct": "-0.97%",
+      "value": "65,888",
+      "change": "-617.24",
+      "change_pct": "-0.93%",
       "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.1270",
-      "change": "-0.05",
-      "change_pct": "-0.05%",
+      "value": "101.1180",
+      "change": "-0.06",
+      "change_pct": "-0.06%",
       "direction": "down"
     }
   ]
