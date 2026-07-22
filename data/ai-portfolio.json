@@ -46,9 +46,15 @@
           "buy_date": "2026-07-17"
         },
         {
+          "ticker": "NVDA",
+          "shares": 7,
+          "avg_cost": 212.06,
+          "buy_date": "2026-07-22"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1769.01
+          "avg_cost": 284.59
         }
       ],
       "history": [
@@ -1665,6 +1671,54 @@
           },
           "trades": [],
           "note": "落后基准8%需进攻，加仓强势BTC追赶，保留现金应对波动。"
+        },
+        {
+          "date": "2026-07-22",
+          "portfolio_value": 9244.68,
+          "baseline_value": 10112.16,
+          "cash": 284.59,
+          "positions": {
+            "META": {
+              "shares": 4,
+              "price": 627.17,
+              "value": 2508.68
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 325.89,
+              "value": 325.89
+            },
+            "XLF": {
+              "shares": 22,
+              "price": 56.05,
+              "value": 1233.1
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 59.2,
+              "value": 1480.0
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1928.0,
+              "value": 1928.0
+            },
+            "NVDA": {
+              "shares": 7,
+              "price": 212.06,
+              "value": 1484.42
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "NVDA",
+              "shares": 7,
+              "price": 212.06,
+              "reason": "RSI62.7强势信号，动量+6%，科技龙头待财报季反弹"
+            }
+          ],
+          "note": "落后基准8.5%，加仓强势NVDA和BTC增加进攻性博取超额收益"
         }
       ]
     },
@@ -3106,6 +3160,31 @@
               "shares": 1,
               "price": 30.43,
               "value": 30.43
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-07-22",
+          "portfolio_value": 8365.28,
+          "baseline_value": 10112.16,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 627.17,
+              "value": 6271.7
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1928.0,
+              "value": 1928.0
+            },
+            "JD": {
+              "shares": 1,
+              "price": 30.15,
+              "value": 30.15
             }
           },
           "trades": [],
@@ -4831,6 +4910,56 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['BABA']，剔除弱势"
+        },
+        {
+          "date": "2026-07-22",
+          "portfolio_value": 10080.69,
+          "baseline_value": 10112.16,
+          "cash": 233.72,
+          "positions": {
+            "AMD": {
+              "shares": 9,
+              "price": 552.33,
+              "value": 4970.97
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 56.05,
+              "value": 392.35
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 293.79,
+              "value": 293.79
+            },
+            "META": {
+              "shares": 2,
+              "price": 627.17,
+              "value": 1254.34
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 325.89,
+              "value": 1303.56
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 212.06,
+              "value": 1272.36
+            },
+            "JD": {
+              "shares": 8,
+              "price": 30.15,
+              "value": 241.2
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 59.2,
+              "value": 118.4
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
