@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T13:43:57.535237Z",
+  "generated_at": "2026-07-23T23:01:50.427336Z",
   "performance": {
     "total_signals": 54,
     "wins": 15,
@@ -33,9 +33,9 @@
       "price_issued": 78.74,
       "stop_loss": 73.2282,
       "take_profit": 90.551,
-      "days_held": 8,
-      "current_price": 86.83,
-      "current_pnl_pct": 10.27,
+      "days_held": 9,
+      "current_price": 88.6,
+      "current_pnl_pct": 12.52,
       "price_source": "ai_fallback"
     },
     {
@@ -45,7 +45,7 @@
       "price_issued": 3.82,
       "stop_loss": 3.5526,
       "take_profit": 4.393,
-      "days_held": 6,
+      "days_held": 7,
       "current_price": 3.82,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -57,9 +57,9 @@
       "price_issued": 4041.1,
       "stop_loss": 3758.223,
       "take_profit": 4647.265,
-      "days_held": 6,
-      "current_price": 4131.1,
-      "current_pnl_pct": 2.23,
+      "days_held": 7,
+      "current_price": 4128.0,
+      "current_pnl_pct": 2.15,
       "price_source": "ai_fallback"
     },
     {
@@ -69,7 +69,7 @@
       "price_issued": 495.76,
       "stop_loss": 461.0568,
       "take_profit": 570.124,
-      "days_held": 4,
+      "days_held": 5,
       "current_price": 533.0,
       "current_pnl_pct": 7.51,
       "price_source": "ai_fallback"
@@ -578,16 +578,16 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-07-22",
+    "date": "2026-07-23",
     "strong_sectors": [
       "公用事业",
-      "基础材料",
+      "原材料",
       "能源"
     ],
     "weak_sectors": [
-      "医疗",
       "工业",
-      "通信服务"
+      "通讯服务",
+      "科技"
     ],
     "rule": "只在强势板块开新多仓",
     "note": "今日公用事业+2.01%领涨，建议关注XLU及Utilities个股"
