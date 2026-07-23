@@ -52,9 +52,15 @@
           "buy_date": "2026-07-22"
         },
         {
+          "ticker": "JD",
+          "shares": 5,
+          "avg_cost": 30.09,
+          "buy_date": "2026-07-23"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 284.59
+          "avg_cost": 134.14
         }
       ],
       "history": [
@@ -1719,6 +1725,59 @@
             }
           ],
           "note": "落后基准8.5%，加仓强势NVDA和BTC增加进攻性博取超额收益"
+        },
+        {
+          "date": "2026-07-23",
+          "portfolio_value": 9086.53,
+          "baseline_value": 9987.28,
+          "cash": 134.14,
+          "positions": {
+            "META": {
+              "shares": 4,
+              "price": 606.1,
+              "value": 2424.4
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 321.66,
+              "value": 321.66
+            },
+            "XLF": {
+              "shares": 22,
+              "price": 55.83,
+              "value": 1228.26
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 59.38,
+              "value": 1484.5
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1881.8,
+              "value": 1881.8
+            },
+            "NVDA": {
+              "shares": 7,
+              "price": 208.76,
+              "value": 1461.32
+            },
+            "JD": {
+              "shares": 5,
+              "price": 30.09,
+              "value": 150.45
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "JD",
+              "shares": 5,
+              "price": 30.09,
+              "reason": "RSI 82.9超买但动量+18%极强，中概股突破趋势明显"
+            }
+          ],
+          "note": "加仓强势中概JD博取超额收益，追赶基准差距。"
         }
       ]
     },
@@ -3185,6 +3244,31 @@
               "shares": 1,
               "price": 30.15,
               "value": 30.15
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-07-23",
+          "portfolio_value": 8108.32,
+          "baseline_value": 9987.28,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 606.1,
+              "value": 6061.0
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1881.8,
+              "value": 1881.8
+            },
+            "JD": {
+              "shares": 1,
+              "price": 30.09,
+              "value": 30.09
             }
           },
           "trades": [],
@@ -4956,6 +5040,56 @@
               "shares": 2,
               "price": 59.2,
               "value": 118.4
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-07-23",
+          "portfolio_value": 9884.71,
+          "baseline_value": 9987.28,
+          "cash": 233.72,
+          "positions": {
+            "AMD": {
+              "shares": 9,
+              "price": 539.69,
+              "value": 4857.21
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 55.83,
+              "value": 390.81
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 292.09,
+              "value": 292.09
+            },
+            "META": {
+              "shares": 2,
+              "price": 606.1,
+              "value": 1212.2
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 321.66,
+              "value": 1286.64
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 208.76,
+              "value": 1252.56
+            },
+            "JD": {
+              "shares": 8,
+              "price": 30.09,
+              "value": 240.72
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 59.38,
+              "value": 118.76
             }
           },
           "trades": [],
