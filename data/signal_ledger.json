@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-23T23:01:50.427336Z",
+  "generated_at": "2026-07-24T13:25:12.094506Z",
   "performance": {
-    "total_signals": 54,
+    "total_signals": 55,
     "wins": 15,
     "losses": 24,
     "expired": 11,
-    "open": 4,
+    "open": 5,
     "win_rate": 0.3,
     "avg_gain_pct": 647.73,
     "avg_loss_pct": -25.84,
@@ -34,8 +34,8 @@
       "stop_loss": 73.2282,
       "take_profit": 90.551,
       "days_held": 9,
-      "current_price": 88.6,
-      "current_pnl_pct": 12.52,
+      "current_price": 86.5,
+      "current_pnl_pct": 9.86,
       "price_source": "ai_fallback"
     },
     {
@@ -58,8 +58,8 @@
       "stop_loss": 3758.223,
       "take_profit": 4647.265,
       "days_held": 7,
-      "current_price": 4128.0,
-      "current_pnl_pct": 2.15,
+      "current_price": 4103.0,
+      "current_pnl_pct": 1.53,
       "price_source": "ai_fallback"
     },
     {
@@ -70,8 +70,20 @@
       "stop_loss": 461.0568,
       "take_profit": 570.124,
       "days_held": 5,
-      "current_price": 533.0,
-      "current_pnl_pct": 7.51,
+      "current_price": 529.48,
+      "current_pnl_pct": 6.8,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-23",
+      "price_issued": 736.97,
+      "stop_loss": 685.3821,
+      "take_profit": 847.5155,
+      "days_held": 0,
+      "current_price": 736.97,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
@@ -581,12 +593,12 @@
     "date": "2026-07-23",
     "strong_sectors": [
       "公用事业",
-      "原材料",
+      "基础材料",
       "能源"
     ],
     "weak_sectors": [
       "工业",
-      "通讯服务",
+      "通信服务",
       "科技"
     ],
     "rule": "只在强势板块开新多仓",
