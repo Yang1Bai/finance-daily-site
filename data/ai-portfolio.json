@@ -17,7 +17,7 @@
       "holdings": [
         {
           "ticker": "META",
-          "shares": 4,
+          "shares": 2,
           "avg_cost": 656.73,
           "buy_date": "2026-07-13"
         },
@@ -60,7 +60,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 134.14
+          "avg_cost": 1324.52
         }
       ],
       "history": [
@@ -1778,6 +1778,59 @@
             }
           ],
           "note": "加仓强势中概JD博取超额收益，追赶基准差距。"
+        },
+        {
+          "date": "2026-07-24",
+          "portfolio_value": 9034.77,
+          "baseline_value": 9997.43,
+          "cash": 1324.52,
+          "positions": {
+            "META": {
+              "shares": 2,
+              "price": 595.19,
+              "value": 1190.38
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 333.02,
+              "value": 333.02
+            },
+            "XLF": {
+              "shares": 22,
+              "price": 56.31,
+              "value": 1238.82
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 59.62,
+              "value": 1490.5
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1858.7,
+              "value": 1858.7
+            },
+            "NVDA": {
+              "shares": 7,
+              "price": 206.84,
+              "value": 1447.88
+            },
+            "JD": {
+              "shares": 5,
+              "price": 30.19,
+              "value": 150.95
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "META",
+              "shares": 2,
+              "price": 595.19,
+              "reason": "META处于中性区间且低于50MA，减仓释放资金用于进攻性布局"
+            }
+          ],
+          "note": "科技股暴跌中减持META释放资金，保留强势XLE和JD等待反弹机会。"
         }
       ]
     },
@@ -3269,6 +3322,31 @@
               "shares": 1,
               "price": 30.09,
               "value": 30.09
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-07-24",
+          "portfolio_value": 7976.22,
+          "baseline_value": 9997.43,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 595.19,
+              "value": 5951.9
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1858.7,
+              "value": 1858.7
+            },
+            "JD": {
+              "shares": 1,
+              "price": 30.19,
+              "value": 30.19
             }
           },
           "trades": [],
@@ -5090,6 +5168,56 @@
               "shares": 2,
               "price": 59.38,
               "value": 118.76
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-07-24",
+          "portfolio_value": 9740.87,
+          "baseline_value": 9997.43,
+          "cash": 233.72,
+          "positions": {
+            "AMD": {
+              "shares": 9,
+              "price": 521.95,
+              "value": 4697.55
+            },
+            "XLF": {
+              "shares": 7,
+              "price": 56.31,
+              "value": 394.17
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 291.17,
+              "value": 291.17
+            },
+            "META": {
+              "shares": 2,
+              "price": 595.19,
+              "value": 1190.38
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 333.02,
+              "value": 1332.08
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 206.84,
+              "value": 1241.04
+            },
+            "JD": {
+              "shares": 8,
+              "price": 30.19,
+              "value": 241.52
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 59.62,
+              "value": 119.24
             }
           },
           "trades": [],
