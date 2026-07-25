@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-24T23:05:47.214126Z",
+  "generated_at": "2026-07-25T13:12:45.294499Z",
   "performance": {
-    "total_signals": 55,
-    "wins": 16,
+    "total_signals": 56,
+    "wins": 15,
     "losses": 24,
-    "expired": 11,
-    "open": 4,
-    "win_rate": 0.3137,
-    "avg_gain_pct": 614.89,
+    "expired": 12,
+    "open": 5,
+    "win_rate": 0.2941,
+    "avg_gain_pct": 614.4,
     "avg_loss_pct": -25.84,
-    "expected_value_pct": 175.16,
+    "expected_value_pct": 162.45,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -46,8 +46,8 @@
       "stop_loss": 3758.223,
       "take_profit": 4647.265,
       "days_held": 8,
-      "current_price": 4028.0,
-      "current_pnl_pct": -0.32,
+      "current_price": 4055.7,
+      "current_pnl_pct": 0.36,
       "price_source": "ai_fallback"
     },
     {
@@ -58,8 +58,8 @@
       "stop_loss": 461.0568,
       "take_profit": 570.124,
       "days_held": 6,
-      "current_price": 529.8,
-      "current_pnl_pct": 6.87,
+      "current_price": 539.69,
+      "current_pnl_pct": 8.86,
       "price_source": "ai_fallback"
     },
     {
@@ -70,8 +70,20 @@
       "stop_loss": 685.3821,
       "take_profit": 847.5155,
       "days_held": 1,
-      "current_price": 747.41,
-      "current_pnl_pct": 1.42,
+      "current_price": 740.83,
+      "current_pnl_pct": 0.52,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "NOK",
+      "signal": "BUY",
+      "date_issued": "2026-07-24",
+      "price_issued": 6.2,
+      "stop_loss": 5.766,
+      "take_profit": 7.13,
+      "days_held": 0,
+      "current_price": 6.2,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
@@ -82,8 +94,8 @@
       "date_issued": "2026-07-14",
       "price_issued": 78.74,
       "date_closed": "2026-07-24",
-      "close_reason": "take_profit",
-      "pnl_pct": 23.85,
+      "close_reason": "expired",
+      "pnl_pct": 14.45,
       "price_source": "ai_fallback"
     },
     {
@@ -590,16 +602,16 @@
   "sector_rotation": {
     "date": "2026-07-24",
     "strong_sectors": [
-      "能源",
-      "公用事业",
-      "基础材料"
+      "房地产",
+      "必需消费",
+      "金融"
     ],
     "weak_sectors": [
-      "工业",
-      "通信服务",
-      "科技"
+      "公用事业",
+      "非必需消费",
+      "信息技术"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日能源+4.80%领涨，建议关注XLE及Energy个股"
+    "note": "今日房地产+2.33%领涨，建议关注XLRE及Real Estate个股"
   }
 }
