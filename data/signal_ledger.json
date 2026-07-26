@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T13:12:45.294499Z",
+  "generated_at": "2026-07-26T13:07:55.339317Z",
   "performance": {
     "total_signals": 56,
     "wins": 15,
@@ -33,7 +33,7 @@
       "price_issued": 3.82,
       "stop_loss": 3.5526,
       "take_profit": 4.393,
-      "days_held": 8,
+      "days_held": 9,
       "current_price": 3.82,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -45,9 +45,9 @@
       "price_issued": 4041.1,
       "stop_loss": 3758.223,
       "take_profit": 4647.265,
-      "days_held": 8,
-      "current_price": 4055.7,
-      "current_pnl_pct": 0.36,
+      "days_held": 9,
+      "current_price": 4070.8,
+      "current_pnl_pct": 0.73,
       "price_source": "ai_fallback"
     },
     {
@@ -57,9 +57,9 @@
       "price_issued": 495.76,
       "stop_loss": 461.0568,
       "take_profit": 570.124,
-      "days_held": 6,
-      "current_price": 539.69,
-      "current_pnl_pct": 8.86,
+      "days_held": 7,
+      "current_price": 539.5,
+      "current_pnl_pct": 8.82,
       "price_source": "ai_fallback"
     },
     {
@@ -69,9 +69,9 @@
       "price_issued": 736.97,
       "stop_loss": 685.3821,
       "take_profit": 847.5155,
-      "days_held": 1,
-      "current_price": 740.83,
-      "current_pnl_pct": 0.52,
+      "days_held": 2,
+      "current_price": 741.2,
+      "current_pnl_pct": 0.57,
       "price_source": "ai_fallback"
     },
     {
@@ -81,7 +81,7 @@
       "price_issued": 6.2,
       "stop_loss": 5.766,
       "take_profit": 7.13,
-      "days_held": 0,
+      "days_held": 1,
       "current_price": 6.2,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -600,18 +600,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-07-24",
+    "date": "2026-07-25",
     "strong_sectors": [
-      "房地产",
-      "必需消费",
+      "工业",
+      "公用事业",
       "金融"
     ],
     "weak_sectors": [
-      "公用事业",
       "非必需消费",
-      "信息技术"
+      "通讯服务",
+      "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日房地产+2.33%领涨，建议关注XLRE及Real Estate个股"
+    "note": "今日工业+0.9%领涨，建议关注XLI及Industrials个股"
   }
 }
