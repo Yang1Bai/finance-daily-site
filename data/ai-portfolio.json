@@ -16,15 +16,9 @@
       "provider": "anthropic",
       "holdings": [
         {
-          "ticker": "META",
-          "shares": 2,
-          "avg_cost": 656.73,
-          "buy_date": "2026-07-13"
-        },
-        {
           "ticker": "AAPL",
-          "shares": 1,
-          "avg_cost": 314.86,
+          "shares": 4,
+          "avg_cost": 331.3975,
           "buy_date": "2026-07-14"
         },
         {
@@ -60,7 +54,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1324.52
+          "avg_cost": 1501.53
         }
       ],
       "history": [
@@ -1831,6 +1825,61 @@
             }
           ],
           "note": "科技股暴跌中减持META释放资金，保留强势XLE和JD等待反弹机会。"
+        },
+        {
+          "date": "2026-07-27",
+          "portfolio_value": 9030.46,
+          "baseline_value": 9999.59,
+          "cash": 1501.53,
+          "positions": {
+            "AAPL": {
+              "shares": 4,
+              "price": 336.91,
+              "value": 1347.64
+            },
+            "XLF": {
+              "shares": 22,
+              "price": 56.88,
+              "value": 1251.36
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 58.36,
+              "value": 1459.0
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1940.61,
+              "value": 1940.61
+            },
+            "NVDA": {
+              "shares": 7,
+              "price": 196.51,
+              "value": 1375.57
+            },
+            "JD": {
+              "shares": 5,
+              "price": 30.95,
+              "value": 154.75
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "META",
+              "shares": 2,
+              "price": 593.87,
+              "reason": "META技术信号中性且低于50MA，释放资金追强势标的"
+            },
+            {
+              "action": "BUY",
+              "ticker": "AAPL",
+              "shares": 3,
+              "price": 336.91,
+              "reason": "AAPL RSI69.7强势↑，动量+22.45%，加仓追涨"
+            }
+          ],
+          "note": "减持中性META，加仓强势AAPL，集中火力追赶基准"
         }
       ]
     },
@@ -3351,17 +3400,36 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-07-27",
+          "portfolio_value": 8045.69,
+          "baseline_value": 9999.59,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 593.87,
+              "value": 5938.7
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1940.61,
+              "value": 1940.61
+            },
+            "JD": {
+              "shares": 1,
+              "price": 30.95,
+              "value": 30.95
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
     "rule_based": {
       "holdings": [
-        {
-          "ticker": "AMD",
-          "shares": 9,
-          "avg_cost": 467.51,
-          "buy_date": "2026-05-22"
-        },
         {
           "ticker": "XLF",
           "shares": 7,
@@ -3407,7 +3475,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 233.72
+          "avg_cost": 4688.27
         }
       ],
       "history": [
@@ -5221,6 +5289,59 @@
             }
           },
           "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-07-27",
+          "portfolio_value": 9458.1,
+          "baseline_value": 9999.59,
+          "cash": 4688.27,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 56.88,
+              "value": 398.16
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 292.91,
+              "value": 292.91
+            },
+            "META": {
+              "shares": 2,
+              "price": 593.87,
+              "value": 1187.74
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 336.91,
+              "value": 1347.64
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 196.51,
+              "value": 1179.06
+            },
+            "JD": {
+              "shares": 8,
+              "price": 30.95,
+              "value": 247.6
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 58.36,
+              "value": 116.72
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AMD",
+              "shares": 9,
+              "price": 494.95,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
           "note": "规则策略：无强势标的，持币观望"
         }
       ],
