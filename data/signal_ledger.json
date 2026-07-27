@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-26T13:07:55.339317Z",
+  "generated_at": "2026-07-27T14:20:16.618022Z",
   "performance": {
-    "total_signals": 56,
+    "total_signals": 57,
     "wins": 15,
     "losses": 24,
-    "expired": 12,
-    "open": 5,
-    "win_rate": 0.2941,
-    "avg_gain_pct": 614.4,
-    "avg_loss_pct": -25.84,
-    "expected_value_pct": 162.45,
+    "expired": 14,
+    "open": 4,
+    "win_rate": 0.283,
+    "avg_gain_pct": 583.72,
+    "avg_loss_pct": -25.06,
+    "expected_value_pct": 147.22,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -27,39 +27,15 @@
   },
   "open_positions": [
     {
-      "ticker": "510300.SS",
-      "signal": "BUY",
-      "date_issued": "2026-07-16",
-      "price_issued": 3.82,
-      "stop_loss": 3.5526,
-      "take_profit": 4.393,
-      "days_held": 9,
-      "current_price": 3.82,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "GC=F",
-      "signal": "BUY",
-      "date_issued": "2026-07-16",
-      "price_issued": 4041.1,
-      "stop_loss": 3758.223,
-      "take_profit": 4647.265,
-      "days_held": 9,
-      "current_price": 4070.8,
-      "current_pnl_pct": 0.73,
-      "price_source": "ai_fallback"
-    },
-    {
       "ticker": "AMD",
       "signal": "BUY",
       "date_issued": "2026-07-18",
       "price_issued": 495.76,
       "stop_loss": 461.0568,
       "take_profit": 570.124,
-      "days_held": 7,
-      "current_price": 539.5,
-      "current_pnl_pct": 8.82,
+      "days_held": 8,
+      "current_price": 539.6,
+      "current_pnl_pct": 8.84,
       "price_source": "ai_fallback"
     },
     {
@@ -69,9 +45,9 @@
       "price_issued": 736.97,
       "stop_loss": 685.3821,
       "take_profit": 847.5155,
-      "days_held": 2,
-      "current_price": 741.2,
-      "current_pnl_pct": 0.57,
+      "days_held": 3,
+      "current_price": 738.93,
+      "current_pnl_pct": 0.27,
       "price_source": "ai_fallback"
     },
     {
@@ -81,13 +57,45 @@
       "price_issued": 6.2,
       "stop_loss": 5.766,
       "take_profit": 7.13,
-      "days_held": 1,
+      "days_held": 2,
       "current_price": 6.2,
+      "current_pnl_pct": 0.0,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "GC=F",
+      "signal": "BUY",
+      "date_issued": "2026-07-26",
+      "price_issued": 4070.8,
+      "stop_loss": 3785.844,
+      "take_profit": 4681.42,
+      "days_held": 0,
+      "current_price": 4070.8,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "GC=F",
+      "signal": "BUY",
+      "date_issued": "2026-07-16",
+      "price_issued": 4041.1,
+      "date_closed": "2026-07-26",
+      "close_reason": "expired",
+      "pnl_pct": 0.73,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-07-16",
+      "price_issued": 3.82,
+      "date_closed": "2026-07-26",
+      "close_reason": "expired",
+      "pnl_pct": 0.0,
+      "price_source": "ai_fallback"
+    },
     {
       "ticker": "CL=F",
       "signal": "BUY",
@@ -600,18 +608,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-07-25",
+    "date": "2026-07-26",
     "strong_sectors": [
-      "工业",
-      "公用事业",
-      "金融"
+      "能源",
+      "金融",
+      "工业"
     ],
     "weak_sectors": [
-      "非必需消费",
-      "通讯服务",
-      "能源"
+      "可选消费",
+      "通信服务",
+      "科技"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日工业+0.9%领涨，建议关注XLI及Industrials个股"
+    "note": "今日能源+3.8%领涨，建议关注XLE及Energy个股"
   }
 }
