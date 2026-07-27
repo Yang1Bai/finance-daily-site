@@ -5,53 +5,47 @@
     <description>每日全球金融市场摘要，由 Claude AI + Web Search 自动生成</description>
     <link>https://your-username.github.io/finance-daily-site/</link>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 27 Jul 2026 14:24:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 23:12:48 +0000</lastBuildDate>
     <item>
       <title>金融日报 2026年7月27日</title>
       <description>今日金融市场摘要已更新</description>
-      <pubDate>Mon, 27 Jul 2026 14:24:34 +0000</pubDate>
+      <pubDate>Mon, 27 Jul 2026 23:12:48 +0000</pubDate>
     </item>
   <item>
-    <title>美国与伊朗暂停军事打击，油价暴跌7%</title>
-    <description>美伊双方周末宣布暂停持续近两周的军事打击，为外交谈判留出空间。布伦特原油期货一度暴跌7.4%至90美元下方，WTI原油跌至85美元。市场对和平谈判重启抱有希望，风险资产全线反弹。但特朗普此前威胁扩大对伊朗打击，局势仍存不确定性。油价回落缓解美联储通胀压力，但能源驱动的通胀风险尚未完全消除。</description>
+    <title>美伊暂停冲突推动油价单日暴跌8%，地缘风险降温</title>
+    <description>美国与伊朗连续第三晚暂停军事打击，为外交谈判留出空间。Brent原油收盘暴跌8.7%至88.36美元/桶，WTI原油跌7.5%至82.61美元/桶，为5月25日以来最大单日跌幅。此前油价因霍尔木兹海峡和红海供应中断飙升至102美元，本周累计上涨9%。特朗普政府表示正与伊朗进行谈判，缓解了能源通胀压力。</description>
     <link></link>
-    <pubDate>Mon, 27 Jul 2026 14:24:34 +0000</pubDate>
+    <pubDate>Mon, 27 Jul 2026 23:12:48 +0000</pubDate>
   </item>
   <item>
-    <title>美国新增关税：对60国征收10-12.5%强制劳工关税</title>
-    <description>美国于7月24日凌晨对包括中国、日本、韩国、印度和欧盟成员国在内的60个经济体征收新一轮关税，税率10-12.5%，基于Section 301强制劳工调查。中国面临12.5%关税，使其有效美国关税率达22.2%，比全球平均水平高11.5个百分点。此举加剧全球贸易紧张，中国A股科技和半导体股周五领跌。Section 122互惠关税已于7月24日到期。</description>
+    <title>英伟达重挫5%领跌芯片股，中国竞争对手IPO引发担忧</title>
+    <description>英伟达周一收跌5%，AMD暴跌5%，半导体ETF(SMH)下跌逾2%。中国存储芯片制造商长鑫存储(CXMT)在上海上市首日IPO规模达86亿美元，股价暴涨500%至每股8.66元人民币，成为中国大陆交易所市值最高股票。市场担忧中国公司可能量产关键芯片制造设备，SanDisk因此暴跌11%，美光跌2%。</description>
     <link></link>
-    <pubDate>Mon, 27 Jul 2026 14:24:34 +0000</pubDate>
+    <pubDate>Mon, 27 Jul 2026 23:12:48 +0000</pubDate>
   </item>
   <item>
-    <title>Intel财报超预期仍暴跌7.9%，资本支出飙升至200亿美元</title>
-    <description>Intel周四盘后公布Q2营收161亿美元，同比增长25%，17年来最快增速，超预期17亿美元。但股价周五暴跌7.9%至92.32美元，盘后一度涨12%后全部回吐。投资者担忧Intel将2026年资本支出从180亿美元上调至200亿美元以上，且Foundry外部客户收入仅占5%，AI芯片代工业务进展缓慢。数据中心收入占年度增长71%，但市场不买账高资本开支。</description>
-    <link>https://ts2.tech/en/intel-corporation-nasdaqintc-shares-fall-7-9-as-ai-driven-profits-face-20-billion-capex-hurdle/</link>
-    <pubDate>Mon, 27 Jul 2026 14:24:34 +0000</pubDate>
+    <title>本周四大科技巨头财报考验AI支出合理性</title>
+    <description>微软和Meta周三盘后公布财报，苹果和亚马逊周四发布。市场聚焦Azure云增长、AI基础设施支出及资本开支规划。分析师预计微软EPS为4.21美元，但股价年内已跌18%。费城半导体指数7月下跌17%，创2022年6月以来最差月度表现。投资者对科技公司AI支出激增但盈利转化缓慢表示担忧，华尔街'AI投资协议'正在瓦解。</description>
+    <link></link>
+    <pubDate>Mon, 27 Jul 2026 23:12:48 +0000</pubDate>
   </item>
   <item>
-    <title>中国长鑫存储(CXMT)上市首日飙涨近600%，成沪市最大市值公司</title>
-    <description>中国最大内存芯片制造商长鑫存储(CXMT)周一在上海科创板上市，首日飙涨近6倍，成为沪市最大市值公司。此次IPO融资86亿美元，为2026年亚洲最大IPO。CXMT被视为美光和三星在中国内存芯片市场的主要竞争对手，受益于中国内地强劲的内存芯片需求。上市前市场担忧散户为打新而抛售科技股，但上市后提振整体芯片板块人气。</description>
+    <title>美联储周三决议成焦点，82%概率押注9月加息</title>
+    <description>7月28-29日FOMC会议预计维持利率3.5-3.75%不变，但市场定价9月加息概率达82%（7月24日数据显示73%概率维持不变，27%概率本次加息）。6月会议点阵图显示年末利率中值为3.8%，较3月大幅上调，从预期降息转为暗示加息。本次无经济预测摘要(SEP)，声明措辞和沃什新闻发布会基调将主导市场反应。</description>
     <link></link>
-    <pubDate>Mon, 27 Jul 2026 14:24:34 +0000</pubDate>
+    <pubDate>Mon, 27 Jul 2026 23:12:48 +0000</pubDate>
   </item>
   <item>
-    <title>本周科技巨头财报密集：微软Meta周三，苹果亚马逊周四</title>
-    <description>本周为2026年Q2财报季最繁忙周，微软(7/29)和Meta(7/29)周三盘后，苹果(7/30)和亚马逊(7/30)周四盘后公布业绩。市场焦点：①微软Azure增长能否达到39-40%目标，AI投资回报何时显现；②Meta资本支出指引(全年1250-1450亿美元)是否进一步上调；③苹果中国市场表现；④亚马逊云计算AWS与AI变现。Alphabet上周财报令人失望导致股价下跌，市场对科技巨头高资本开支持怀疑态度。</description>
+    <title>A股强劲反弹，长鑫存储IPO点燃芯片股热潮</title>
+    <description>上证综指周一大涨1.15%收3858点，深证成指飙升2.72%。长鑫存储86亿美元IPO创纪录，首日涨幅超500%，强化投资者对中国半导体自主化的信心。科技和芯片股领涨，寒武纪涨1.31%，盛益科技涨6.13%，中际旭创涨2.91%。尽管市场担心巨额IPO抽血，但投资者热情不减。本周晚些时候政治局会议将设定下半年政策优先事项。</description>
     <link></link>
-    <pubDate>Mon, 27 Jul 2026 14:24:34 +0000</pubDate>
+    <pubDate>Mon, 27 Jul 2026 23:12:48 +0000</pubDate>
   </item>
   <item>
-    <title>美联储7月29日决议：加息概率25%，鲍威尔接班人首秀</title>
-    <description>美联储将于7月29日公布利率决议，新主席凯文·沃什(Kevin Warsh)首次主持FOMC会议后发布会。CME FedWatch显示维持利率3.50-3.75%概率64%，加息25个基点概率25-30%。尽管6月CPI降至3.5%低于预期，但美伊冲突推高油价令通胀风险回升。市场预期9月加息概率约80%，全年不降息。本次会议不发布经济预测(SEP dot plot)，焦点在沃什措辞和通胀评估。</description>
+    <title>苹果市值超越英伟达重回全球最大公司</title>
+    <description>苹果股价周一上涨1.17%，重新夺回全球最大市值公司头衔，而英伟达因AI估值担忧下跌5%。消费防御和通信服务股领涨市场，而能源和科技股领跌。ServiceNow大涨6.86%，软件股部分收复年内跌幅。市场正经历从AI高估值股票向防御性股票的板块轮动。</description>
     <link></link>
-    <pubDate>Mon, 27 Jul 2026 14:24:34 +0000</pubDate>
-  </item>
-  <item>
-    <title>标普500板块轮动：医疗、金融、能源领涨，科技半导体承压</title>
-    <description>7月27日标普500板块呈现明显轮动，投资者从科技和半导体板块撤出，转向防御性和周期性板块。医疗保健、金融和能源板块领涨，科技板块跌超4%。Apple逆势上涨3.5%受益中国监管批准，但Intel(-7.9%)和Oracle领跌拖累板块。这反映投资者对地缘风险、油价和美联储政策路径的谨慎态度。</description>
-    <link></link>
-    <pubDate>Mon, 27 Jul 2026 14:24:34 +0000</pubDate>
+    <pubDate>Mon, 27 Jul 2026 23:12:48 +0000</pubDate>
   </item>
   </channel>
 </rss>
