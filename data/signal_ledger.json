@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-28T13:51:47.160600Z",
+  "generated_at": "2026-07-28T23:04:43.873238Z",
   "performance": {
     "total_signals": 59,
     "wins": 16,
     "losses": 24,
-    "expired": 14,
-    "open": 5,
-    "win_rate": 0.2963,
+    "expired": 15,
+    "open": 4,
+    "win_rate": 0.2909,
     "avg_gain_pct": 558.15,
-    "avg_loss_pct": -25.06,
-    "expected_value_pct": 147.75,
+    "avg_loss_pct": -24.42,
+    "expected_value_pct": 145.05,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -27,27 +27,15 @@
   },
   "open_positions": [
     {
-      "ticker": "AMD",
-      "signal": "BUY",
-      "date_issued": "2026-07-18",
-      "price_issued": 495.76,
-      "stop_loss": 461.0568,
-      "take_profit": 570.124,
-      "days_held": 9,
-      "current_price": 479.32,
-      "current_pnl_pct": -3.32,
-      "price_source": "ai_fallback"
-    },
-    {
       "ticker": "SPY",
       "signal": "BUY",
       "date_issued": "2026-07-23",
       "price_issued": 736.97,
       "stop_loss": 685.3821,
       "take_profit": 847.5155,
-      "days_held": 4,
-      "current_price": 738.93,
-      "current_pnl_pct": 0.27,
+      "days_held": 5,
+      "current_price": 739.18,
+      "current_pnl_pct": 0.3,
       "price_source": "ai_fallback"
     },
     {
@@ -57,9 +45,9 @@
       "price_issued": 4070.8,
       "stop_loss": 3785.844,
       "take_profit": 4681.42,
-      "days_held": 1,
-      "current_price": 4081.37,
-      "current_pnl_pct": 0.26,
+      "days_held": 2,
+      "current_price": 4077.0,
+      "current_pnl_pct": 0.15,
       "price_source": "ai_fallback"
     },
     {
@@ -69,7 +57,7 @@
       "price_issued": 3.85,
       "stop_loss": 3.5805,
       "take_profit": 4.4275,
-      "days_held": 0,
+      "days_held": 1,
       "current_price": 3.85,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -81,13 +69,23 @@
       "price_issued": 82.61,
       "stop_loss": 76.8273,
       "take_profit": 95.0015,
-      "days_held": 0,
+      "days_held": 1,
       "current_price": 82.61,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "AMD",
+      "signal": "BUY",
+      "date_issued": "2026-07-18",
+      "price_issued": 495.76,
+      "date_closed": "2026-07-28",
+      "close_reason": "expired",
+      "pnl_pct": -3.18,
+      "price_source": "ai_fallback"
+    },
     {
       "ticker": "NOK",
       "signal": "BUY",
@@ -630,18 +628,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "strong_sectors": [
-      "消费防御",
-      "通信服务",
+      "金融",
+      "医疗保健",
       "工业"
     ],
     "weak_sectors": [
-      "可选消费",
+      "通讯服务",
       "科技",
       "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日消费防御+1.35%领涨，建议关注XLP及Consumer Defensive个股"
+    "note": "今日金融+0.82%领涨，建议关注XLF及Financials个股"
   }
 }
