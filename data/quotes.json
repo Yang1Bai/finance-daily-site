@@ -1,29 +1,29 @@
 {
-  "updated": "2026-07-28T16:58:09.845140+00:00",
+  "updated": "2026-07-28T18:19:09.735560+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,451.01",
-      "change": "+37.83",
-      "change_pct": "+0.51%",
+      "value": "7,429.74",
+      "change": "+16.56",
+      "change_pct": "+0.22%",
       "direction": "up"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "24,974",
-      "change": "+42.07",
-      "change_pct": "+0.17%",
-      "direction": "up"
+      "value": "24,874",
+      "change": "-57.85",
+      "change_pct": "-0.23%",
+      "direction": "down"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,882",
-      "change": "+672.19",
-      "change_pct": "+1.29%",
+      "value": "52,777",
+      "change": "+567.36",
+      "change_pct": "+1.09%",
       "direction": "up"
     },
     {
@@ -61,33 +61,33 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,039.30",
-      "change": "-35.20",
-      "change_pct": "-0.86%",
+      "value": "4,029.50",
+      "change": "-45.00",
+      "change_pct": "-1.10%",
       "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "78.6400",
-      "change": "-3.97",
-      "change_pct": "-4.81%",
+      "value": "78.9500",
+      "change": "-3.66",
+      "change_pct": "-4.43%",
       "direction": "down"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "63,982",
-      "change": "+256.70",
-      "change_pct": "+0.40%",
-      "direction": "up"
+      "value": "63,622",
+      "change": "-103.15",
+      "change_pct": "-0.16%",
+      "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.2920",
-      "change": "-0.18",
-      "change_pct": "-0.18%",
+      "value": "101.3980",
+      "change": "-0.07",
+      "change_pct": "-0.07%",
       "direction": "down"
     }
   ]
