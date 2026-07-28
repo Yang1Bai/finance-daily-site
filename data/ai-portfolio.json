@@ -46,15 +46,15 @@
           "buy_date": "2026-07-22"
         },
         {
-          "ticker": "JD",
-          "shares": 5,
-          "avg_cost": 30.09,
-          "buy_date": "2026-07-23"
+          "ticker": "BABA",
+          "shares": 12,
+          "avg_cost": 115.19,
+          "buy_date": "2026-07-28"
         },
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1501.53
+          "avg_cost": 278.2
         }
       ],
       "history": [
@@ -1880,6 +1880,61 @@
             }
           ],
           "note": "减持中性META，加仓强势AAPL，集中火力追赶基准"
+        },
+        {
+          "date": "2026-07-28",
+          "portfolio_value": 9026.17,
+          "baseline_value": 10023.54,
+          "cash": 278.2,
+          "positions": {
+            "AAPL": {
+              "shares": 4,
+              "price": 340.08,
+              "value": 1360.32
+            },
+            "XLF": {
+              "shares": 22,
+              "price": 57.6,
+              "value": 1267.2
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 57.57,
+              "value": 1439.25
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1919.85,
+              "value": 1919.85
+            },
+            "NVDA": {
+              "shares": 7,
+              "price": 197.01,
+              "value": 1379.07
+            },
+            "BABA": {
+              "shares": 12,
+              "price": 115.19,
+              "value": 1382.28
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "JD",
+              "shares": 5,
+              "price": 31.79,
+              "reason": "RSI高达88.7严重超买，25%涨幅后获利了结锁定利润"
+            },
+            {
+              "action": "BUY",
+              "ticker": "BABA",
+              "shares": 12,
+              "price": 115.19,
+              "reason": "强势信号↑，RSI61适中，20日动量+20%，中概股轮动机会"
+            }
+          ],
+          "note": "JD超买获利了结，换仓BABA追涨强势中概股，加大进攻追赶基准。"
         }
       ]
     },
@@ -3425,6 +3480,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-07-28",
+          "portfolio_value": 8021.17,
+          "baseline_value": 10023.54,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 593.41,
+              "value": 5934.1
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1919.85,
+              "value": 1919.85
+            },
+            "JD": {
+              "shares": 1,
+              "price": 31.79,
+              "value": 31.79
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -3473,9 +3553,15 @@
           "buy_date": "2026-07-17"
         },
         {
+          "ticker": "BABA",
+          "shares": 18,
+          "avg_cost": 115.19,
+          "buy_date": "2026-07-28"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 4688.27
+          "avg_cost": 2614.85
         }
       ],
       "history": [
@@ -5343,6 +5429,64 @@
             }
           ],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-07-28",
+          "portfolio_value": 9483.5,
+          "baseline_value": 10023.54,
+          "cash": 2614.85,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.6,
+              "value": 403.2
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 293.37,
+              "value": 293.37
+            },
+            "META": {
+              "shares": 2,
+              "price": 593.41,
+              "value": 1186.82
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 340.08,
+              "value": 1360.32
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 197.01,
+              "value": 1182.06
+            },
+            "JD": {
+              "shares": 8,
+              "price": 31.79,
+              "value": 254.32
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 57.57,
+              "value": 115.14
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 115.19,
+              "value": 2073.42
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "BABA",
+              "shares": 18,
+              "price": 115.19,
+              "reason": "技术强势+动量+20.6%"
+            }
+          ],
+          "note": "规则策略：持有强势['BABA']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
