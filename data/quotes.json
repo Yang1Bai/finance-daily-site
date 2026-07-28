@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28T21:37:51.164892+00:00",
+  "updated": "2026-07-28T22:35:01.882368+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -53,41 +53,41 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,464",
-      "change": "+102.98",
-      "change_pct": "+0.41%",
+      "value": "25,361",
+      "change": "+597.91",
+      "change_pct": "+2.41%",
       "direction": "up"
     },
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,028.80",
-      "change": "-45.70",
-      "change_pct": "-1.12%",
+      "value": "4,016.80",
+      "change": "-57.70",
+      "change_pct": "-1.42%",
       "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "79.1300",
-      "change": "-3.48",
-      "change_pct": "-4.21%",
+      "value": "82.3400",
+      "change": "-0.27",
+      "change_pct": "-0.33%",
       "direction": "down"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "63,896",
-      "change": "+170.84",
-      "change_pct": "+0.27%",
+      "value": "63,792",
+      "change": "+67.30",
+      "change_pct": "+0.11%",
       "direction": "up"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.3780",
-      "change": "-0.13",
-      "change_pct": "-0.13%",
+      "value": "101.3930",
+      "change": "-0.12",
+      "change_pct": "-0.12%",
       "direction": "down"
     }
   ]
