@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T13:56:36.375328Z",
+  "generated_at": "2026-07-29T23:02:08.676761Z",
   "performance": {
     "total_signals": 59,
     "wins": 16,
@@ -33,9 +33,9 @@
       "price_issued": 736.97,
       "stop_loss": 685.3821,
       "take_profit": 847.5155,
-      "days_held": 5,
-      "current_price": 737.43,
-      "current_pnl_pct": 0.06,
+      "days_held": 6,
+      "current_price": 736.97,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     },
     {
@@ -45,9 +45,9 @@
       "price_issued": 4070.8,
       "stop_loss": 3785.844,
       "take_profit": 4681.42,
-      "days_held": 2,
-      "current_price": 4026.33,
-      "current_pnl_pct": -1.09,
+      "days_held": 3,
+      "current_price": 4043.25,
+      "current_pnl_pct": -0.68,
       "price_source": "ai_fallback"
     },
     {
@@ -57,7 +57,7 @@
       "price_issued": 3.85,
       "stop_loss": 3.5805,
       "take_profit": 4.4275,
-      "days_held": 1,
+      "days_held": 2,
       "current_price": 3.85,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -69,9 +69,9 @@
       "price_issued": 82.61,
       "stop_loss": 76.8273,
       "take_profit": 95.0015,
-      "days_held": 1,
-      "current_price": 82.61,
-      "current_pnl_pct": 0.0,
+      "days_held": 2,
+      "current_price": 82.05,
+      "current_pnl_pct": -0.68,
       "price_source": "ai_fallback"
     }
   ],
@@ -628,18 +628,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-07-28",
+    "date": "2026-07-29",
     "strong_sectors": [
-      "必需消费品",
-      "通信服务",
-      "非必需消费品"
+      "能源",
+      "医疗保健",
+      "房地产"
     ],
     "weak_sectors": [
-      "公用事业",
-      "能源",
+      "非必需消费",
+      "通信服务",
       "科技"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日必需消费品+1.84%领涨，建议关注XLP及Consumer Staples个股"
+    "note": "今日能源+3.80%领涨，建议关注XLE及Energy个股"
   }
 }
