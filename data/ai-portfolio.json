@@ -40,21 +40,21 @@
           "buy_date": "2026-07-17"
         },
         {
-          "ticker": "NVDA",
-          "shares": 7,
-          "avg_cost": 212.06,
-          "buy_date": "2026-07-22"
-        },
-        {
           "ticker": "BABA",
           "shares": 12,
           "avg_cost": 115.19,
           "buy_date": "2026-07-28"
         },
         {
+          "ticker": "JD",
+          "shares": 14,
+          "avg_cost": 32.2,
+          "buy_date": "2026-07-29"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 278.2
+          "avg_cost": 1157.47
         }
       ],
       "history": [
@@ -1935,6 +1935,61 @@
             }
           ],
           "note": "JD超买获利了结，换仓BABA追涨强势中概股，加大进攻追赶基准。"
+        },
+        {
+          "date": "2026-07-29",
+          "portfolio_value": 8939.25,
+          "baseline_value": 9869.3,
+          "cash": 1157.47,
+          "positions": {
+            "AAPL": {
+              "shares": 4,
+              "price": 338.19,
+              "value": 1352.76
+            },
+            "XLF": {
+              "shares": 22,
+              "price": 56.68,
+              "value": 1246.96
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 58.65,
+              "value": 1466.25
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1884.65,
+              "value": 1884.65
+            },
+            "BABA": {
+              "shares": 12,
+              "price": 115.03,
+              "value": 1380.36
+            },
+            "JD": {
+              "shares": 14,
+              "price": 32.2,
+              "value": 450.8
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "NVDA",
+              "shares": 7,
+              "price": 190.01,
+              "reason": "RSI=40.4弱势，动量-5%，跌破50MA，止损释放资金"
+            },
+            {
+              "action": "BUY",
+              "ticker": "JD",
+              "shares": 14,
+              "price": 32.2,
+              "reason": "RSI=89.3超强势，动量+26%，中概股轮动受益"
+            }
+          ],
+          "note": "减持弱势NVDA，加仓强势中概JD，追逐动量缩小与基准差距。"
         }
       ]
     },
@@ -3505,6 +3560,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-07-29",
+          "portfolio_value": 7908.38,
+          "baseline_value": 9869.3,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 585.61,
+              "value": 5856.1
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1884.65,
+              "value": 1884.65
+            },
+            "JD": {
+              "shares": 1,
+              "price": 32.2,
+              "value": 32.2
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -3515,12 +3595,6 @@
           "shares": 7,
           "avg_cost": 52.62,
           "buy_date": "2026-06-11"
-        },
-        {
-          "ticker": "IWM",
-          "shares": 1,
-          "avg_cost": 298.91,
-          "buy_date": "2026-06-25"
         },
         {
           "ticker": "META",
@@ -3561,7 +3635,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2614.85
+          "avg_cost": 2903.42
         }
       ],
       "history": [
@@ -5487,6 +5561,59 @@
             }
           ],
           "note": "规则策略：持有强势['BABA']，剔除弱势"
+        },
+        {
+          "date": "2026-07-29",
+          "portfolio_value": 9409.66,
+          "baseline_value": 9869.3,
+          "cash": 2903.42,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 56.68,
+              "value": 396.76
+            },
+            "META": {
+              "shares": 2,
+              "price": 585.61,
+              "value": 1171.22
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 338.19,
+              "value": 1352.76
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 190.01,
+              "value": 1140.06
+            },
+            "JD": {
+              "shares": 8,
+              "price": 32.2,
+              "value": 257.6
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 58.65,
+              "value": 117.3
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 115.03,
+              "value": 2070.54
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "IWM",
+              "shares": 1,
+              "price": 288.57,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
