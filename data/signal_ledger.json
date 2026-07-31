@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-30T23:12:04.400758Z",
+  "generated_at": "2026-07-31T13:51:13.920323Z",
   "performance": {
-    "total_signals": 59,
+    "total_signals": 60,
     "wins": 16,
     "losses": 25,
     "expired": 14,
-    "open": 4,
+    "open": 5,
     "win_rate": 0.2909,
     "avg_gain_pct": 558.15,
     "avg_loss_pct": -24.57,
@@ -34,8 +34,8 @@
       "stop_loss": 685.3821,
       "take_profit": 847.5155,
       "days_held": 7,
-      "current_price": 732.45,
-      "current_pnl_pct": -0.61,
+      "current_price": 743.72,
+      "current_pnl_pct": 0.92,
       "price_source": "ai_fallback"
     },
     {
@@ -46,8 +46,8 @@
       "stop_loss": 3785.844,
       "take_profit": 4681.42,
       "days_held": 4,
-      "current_price": 4130.9,
-      "current_pnl_pct": 1.48,
+      "current_price": 4168.9,
+      "current_pnl_pct": 2.41,
       "price_source": "ai_fallback"
     },
     {
@@ -70,8 +70,20 @@
       "stop_loss": 76.8273,
       "take_profit": 95.0015,
       "days_held": 3,
-      "current_price": 83.79,
-      "current_pnl_pct": 1.43,
+      "current_price": 83.1,
+      "current_pnl_pct": 0.59,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "AMD",
+      "signal": "BUY",
+      "date_issued": "2026-07-30",
+      "price_issued": 494.95,
+      "stop_loss": 460.3035,
+      "take_profit": 569.1925,
+      "days_held": 0,
+      "current_price": 494.95,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
@@ -630,16 +642,16 @@
   "sector_rotation": {
     "date": "2026-07-30",
     "strong_sectors": [
+      "信息技术",
       "能源",
-      "必需消费品",
-      "原材料"
+      "非必需消费品"
     ],
     "weak_sectors": [
-      "金融",
-      "科技",
-      "工业"
+      "公用事业",
+      "房地产",
+      "通信服务"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日能源+1.88%领涨，建议关注XLE及Energy个股"
+    "note": "今日信息技术+4.95%领涨，建议关注XLK及Information Technology个股"
   }
 }
