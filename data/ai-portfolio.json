@@ -16,12 +16,6 @@
       "provider": "anthropic",
       "holdings": [
         {
-          "ticker": "AAPL",
-          "shares": 4,
-          "avg_cost": 331.3975,
-          "buy_date": "2026-07-14"
-        },
-        {
           "ticker": "XLF",
           "shares": 22,
           "avg_cost": 56.75,
@@ -60,7 +54,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 255.27
+          "avg_cost": 1490.91
         }
       ],
       "history": [
@@ -2049,6 +2043,54 @@
             }
           ],
           "note": "加仓强势科技龙头MSFT追赶基准，保持进攻姿态缩小与SPY差距。"
+        },
+        {
+          "date": "2026-07-31",
+          "portfolio_value": 8951.34,
+          "baseline_value": 10107.02,
+          "cash": 1490.91,
+          "positions": {
+            "XLF": {
+              "shares": 22,
+              "price": 56.94,
+              "value": 1252.68
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 59.55,
+              "value": 1488.75
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1860.42,
+              "value": 1860.42
+            },
+            "BABA": {
+              "shares": 12,
+              "price": 122.25,
+              "value": 1467.0
+            },
+            "JD": {
+              "shares": 14,
+              "price": 33.01,
+              "value": 462.14
+            },
+            "MSFT": {
+              "shares": 2,
+              "price": 464.72,
+              "value": 929.44
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AAPL",
+              "shares": 4,
+              "price": 308.91,
+              "reason": "RSI中性偏弱，低于50MA，动量仅+0.09%，释放资金追涨强势标的"
+            }
+          ],
+          "note": "卖出弱势AAPL释放资金，保留强势中概股和能源仓位追赶基准。"
         }
       ]
     },
@@ -3669,6 +3711,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-07-31",
+          "portfolio_value": 7595.96,
+          "baseline_value": 10107.02,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 556.71,
+              "value": 5567.1
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1860.42,
+              "value": 1860.42
+            },
+            "JD": {
+              "shares": 1,
+              "price": 33.01,
+              "value": 33.01
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -3717,9 +3784,15 @@
           "buy_date": "2026-07-30"
         },
         {
+          "ticker": "AMZN",
+          "shares": 4,
+          "avg_cost": 271.58,
+          "buy_date": "2026-07-31"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2628.18
+          "avg_cost": 1541.86
         }
       ],
       "history": [
@@ -5758,6 +5831,64 @@
             }
           ],
           "note": "规则策略：持有强势['MSFT']，剔除弱势"
+        },
+        {
+          "date": "2026-07-31",
+          "portfolio_value": 9444.74,
+          "baseline_value": 10107.02,
+          "cash": 1541.86,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 56.94,
+              "value": 398.58
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 308.91,
+              "value": 1235.64
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 200.75,
+              "value": 1204.5
+            },
+            "JD": {
+              "shares": 8,
+              "price": 33.01,
+              "value": 264.08
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 59.55,
+              "value": 119.1
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 122.25,
+              "value": 2200.5
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 464.72,
+              "value": 1394.16
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 271.58,
+              "value": 1086.32
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "AMZN",
+              "shares": 4,
+              "price": 271.58,
+              "reason": "技术强势+动量+11.9%"
+            }
+          ],
+          "note": "规则策略：持有强势['AMZN']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
