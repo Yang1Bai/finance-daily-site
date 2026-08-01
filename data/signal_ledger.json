@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-31T23:07:16.714259Z",
+  "generated_at": "2026-08-01T13:06:30.582142Z",
   "performance": {
-    "total_signals": 60,
+    "total_signals": 61,
     "wins": 16,
     "losses": 25,
     "expired": 14,
-    "open": 5,
+    "open": 6,
     "win_rate": 0.2909,
     "avg_gain_pct": 558.15,
     "avg_loss_pct": -24.57,
@@ -34,8 +34,8 @@
       "stop_loss": 685.3821,
       "take_profit": 847.5155,
       "days_held": 8,
-      "current_price": 743.96,
-      "current_pnl_pct": 0.95,
+      "current_price": 743.64,
+      "current_pnl_pct": 0.91,
       "price_source": "ai_fallback"
     },
     {
@@ -70,8 +70,8 @@
       "stop_loss": 76.8273,
       "take_profit": 95.0015,
       "days_held": 4,
-      "current_price": 84.23,
-      "current_pnl_pct": 1.96,
+      "current_price": 85.0,
+      "current_pnl_pct": 2.89,
       "price_source": "ai_fallback"
     },
     {
@@ -83,6 +83,18 @@
       "take_profit": 569.1925,
       "days_held": 1,
       "current_price": 494.95,
+      "current_pnl_pct": 0.0,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-07-31",
+      "price_issued": 403.5,
+      "stop_loss": 375.255,
+      "take_profit": 464.025,
+      "days_held": 0,
+      "current_price": 403.5,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
@@ -643,15 +655,15 @@
     "date": "2026-07-31",
     "strong_sectors": [
       "科技",
-      "材料",
-      "非必需消费品"
+      "能源",
+      "通讯服务"
     ],
     "weak_sectors": [
-      "医疗保健",
-      "通信服务",
-      "必需消费品"
+      "必需消费品",
+      "公用事业",
+      "房地产"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日科技+5.50%领涨，建议关注XLK及Technology个股"
+    "note": "今日科技+1.50%领涨，建议关注XLK及Technology个股"
   }
 }
