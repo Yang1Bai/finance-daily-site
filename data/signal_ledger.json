@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-02T13:08:12.236710Z",
+  "generated_at": "2026-08-03T14:26:52.938638Z",
   "performance": {
-    "total_signals": 61,
+    "total_signals": 63,
     "wins": 17,
     "losses": 26,
-    "expired": 14,
-    "open": 4,
-    "win_rate": 0.2982,
-    "avg_gain_pct": 536.02,
+    "expired": 15,
+    "open": 5,
+    "win_rate": 0.2931,
+    "avg_gain_pct": 512.76,
     "avg_loss_pct": -25.82,
-    "expected_value_pct": 141.72,
+    "expected_value_pct": 132.04,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -27,27 +27,15 @@
   },
   "open_positions": [
     {
-      "ticker": "SPY",
-      "signal": "BUY",
-      "date_issued": "2026-07-23",
-      "price_issued": 736.97,
-      "stop_loss": 685.3821,
-      "take_profit": 847.5155,
-      "days_held": 9,
-      "current_price": 744.5,
-      "current_pnl_pct": 1.02,
-      "price_source": "ai_fallback"
-    },
-    {
       "ticker": "GC=F",
       "signal": "BUY",
       "date_issued": "2026-07-26",
       "price_issued": 4070.8,
       "stop_loss": 3785.844,
       "take_profit": 4681.42,
-      "days_held": 6,
-      "current_price": 4098.6,
-      "current_pnl_pct": 0.68,
+      "days_held": 7,
+      "current_price": 4107.0,
+      "current_pnl_pct": 0.89,
       "price_source": "ai_fallback"
     },
     {
@@ -57,7 +45,7 @@
       "price_issued": 3.85,
       "stop_loss": 3.5805,
       "take_profit": 4.4275,
-      "days_held": 5,
+      "days_held": 6,
       "current_price": 3.85,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -69,13 +57,47 @@
       "price_issued": 82.61,
       "stop_loss": 76.8273,
       "take_profit": 95.0015,
-      "days_held": 5,
-      "current_price": 86.8,
-      "current_pnl_pct": 5.07,
+      "days_held": 6,
+      "current_price": 84.67,
+      "current_pnl_pct": 2.49,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "AMD",
+      "signal": "BUY",
+      "date_issued": "2026-08-02",
+      "price_issued": 485.39,
+      "stop_loss": 451.4127,
+      "take_profit": 558.1985,
+      "days_held": 0,
+      "current_price": 485.39,
+      "current_pnl_pct": 0.0,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-08-02",
+      "price_issued": 744.5,
+      "stop_loss": 692.385,
+      "take_profit": 856.175,
+      "days_held": 0,
+      "current_price": 744.5,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-07-23",
+      "price_issued": 736.97,
+      "date_closed": "2026-08-02",
+      "close_reason": "expired",
+      "pnl_pct": 1.02,
+      "price_source": "ai_fallback"
+    },
     {
       "ticker": "QQQ",
       "signal": "BUY",
@@ -648,10 +670,10 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-01",
+    "date": "2026-08-02",
     "strong_sectors": [
-      "消费周期",
-      "通讯服务",
+      "非必需消费",
+      "通信服务",
       "能源"
     ],
     "weak_sectors": [
@@ -660,6 +682,6 @@
       "材料"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日消费周期+4.78%领涨，建议关注XLY及Consumer Discretionary个股"
+    "note": "今日非必需消费+4.78%领涨，建议关注XLY及Consumer Discretionary个股"
   }
 }
