@@ -52,9 +52,15 @@
           "buy_date": "2026-07-30"
         },
         {
+          "ticker": "AMZN",
+          "shares": 4,
+          "avg_cost": 284.02,
+          "buy_date": "2026-08-03"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1490.91
+          "avg_cost": 354.83
         }
       ],
       "history": [
@@ -2091,6 +2097,59 @@
             }
           ],
           "note": "卖出弱势AAPL释放资金，保留强势中概股和能源仓位追赶基准。"
+        },
+        {
+          "date": "2026-08-03",
+          "portfolio_value": 9053.8,
+          "baseline_value": 10250.97,
+          "cash": 354.83,
+          "positions": {
+            "XLF": {
+              "shares": 22,
+              "price": 57.38,
+              "value": 1262.36
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 58.79,
+              "value": 1469.75
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1865.6,
+              "value": 1865.6
+            },
+            "BABA": {
+              "shares": 12,
+              "price": 127.3,
+              "value": 1527.6
+            },
+            "JD": {
+              "shares": 14,
+              "price": 33.02,
+              "value": 462.28
+            },
+            "MSFT": {
+              "shares": 2,
+              "price": 487.65,
+              "value": 975.3
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 284.02,
+              "value": 1136.08
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "AMZN",
+              "shares": 4,
+              "price": 284.02,
+              "reason": "RSI=68.5强势信号，20日动量+16.33%，突破50MA，科技龙头反弹"
+            }
+          ],
+          "note": "落后基准11.68%，加仓强势标的AMZN和XLE追赶，提高进攻性仓位。"
         }
       ]
     },
@@ -3732,6 +3791,31 @@
               "shares": 1,
               "price": 33.01,
               "value": 33.01
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-03",
+          "portfolio_value": 7936.45,
+          "baseline_value": 10250.97,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 590.24,
+              "value": 5902.4
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1865.6,
+              "value": 1865.6
+            },
+            "JD": {
+              "shares": 1,
+              "price": 33.02,
+              "value": 33.02
             }
           },
           "trades": [],
@@ -5889,6 +5973,56 @@
             }
           ],
           "note": "规则策略：持有强势['AMZN']，剔除弱势"
+        },
+        {
+          "date": "2026-08-03",
+          "portfolio_value": 9669.21,
+          "baseline_value": 10250.97,
+          "cash": 1541.86,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.38,
+              "value": 401.66
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 303.42,
+              "value": 1213.68
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 206.64,
+              "value": 1239.84
+            },
+            "JD": {
+              "shares": 8,
+              "price": 33.02,
+              "value": 264.16
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 58.79,
+              "value": 117.58
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 127.3,
+              "value": 2291.4
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 487.65,
+              "value": 1462.95
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 284.02,
+              "value": 1136.08
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
