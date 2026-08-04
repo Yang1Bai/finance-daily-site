@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T13:57:09.575924Z",
+  "generated_at": "2026-08-04T23:07:01.521365Z",
   "performance": {
     "total_signals": 64,
     "wins": 17,
@@ -33,9 +33,9 @@
       "price_issued": 4070.8,
       "stop_loss": 3785.844,
       "take_profit": 4681.42,
-      "days_held": 8,
-      "current_price": 4038.0,
-      "current_pnl_pct": -0.81,
+      "days_held": 9,
+      "current_price": 4070.8,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     },
     {
@@ -45,7 +45,7 @@
       "price_issued": 3.85,
       "stop_loss": 3.5805,
       "take_profit": 4.4275,
-      "days_held": 7,
+      "days_held": 8,
       "current_price": 3.85,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -57,9 +57,9 @@
       "price_issued": 82.61,
       "stop_loss": 76.8273,
       "take_profit": 95.0015,
-      "days_held": 7,
-      "current_price": 82.0,
-      "current_pnl_pct": -0.74,
+      "days_held": 8,
+      "current_price": 82.61,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     },
     {
@@ -69,7 +69,7 @@
       "price_issued": 485.39,
       "stop_loss": 451.4127,
       "take_profit": 558.1985,
-      "days_held": 1,
+      "days_held": 2,
       "current_price": 485.39,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -81,9 +81,9 @@
       "price_issued": 744.5,
       "stop_loss": 692.385,
       "take_profit": 856.175,
-      "days_held": 1,
-      "current_price": 757.77,
-      "current_pnl_pct": 1.78,
+      "days_held": 2,
+      "current_price": 744.5,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     },
     {
@@ -93,7 +93,7 @@
       "price_issued": 700.5,
       "stop_loss": 651.465,
       "take_profit": 805.575,
-      "days_held": 0,
+      "days_held": 1,
       "current_price": 700.5,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -682,18 +682,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-03",
+    "date": "2026-08-04",
     "strong_sectors": [
-      "科技",
       "通信服务",
-      "非必需消费品"
+      "非必需消费品",
+      "科技"
     ],
     "weak_sectors": [
       "必需消费品",
-      "公用事业",
+      "医疗保健",
       "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日科技+2.10%领涨，建议关注XLK及Technology个股"
+    "note": "今日通信服务+4.25%领涨，建议关注XLC及Communication Services个股"
   }
 }
