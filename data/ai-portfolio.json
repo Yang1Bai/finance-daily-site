@@ -28,12 +28,6 @@
           "buy_date": "2026-07-17"
         },
         {
-          "ticker": "ETH-USD",
-          "shares": 1,
-          "avg_cost": 1844.7,
-          "buy_date": "2026-07-17"
-        },
-        {
           "ticker": "BABA",
           "shares": 12,
           "avg_cost": 115.19,
@@ -60,7 +54,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 354.83
+          "avg_cost": 2225.88
         }
       ],
       "history": [
@@ -2150,6 +2144,54 @@
             }
           ],
           "note": "落后基准11.68%，加仓强势标的AMZN和XLE追赶，提高进攻性仓位。"
+        },
+        {
+          "date": "2026-08-04",
+          "portfolio_value": 9067.0,
+          "baseline_value": 10435.79,
+          "cash": 2225.88,
+          "positions": {
+            "XLF": {
+              "shares": 22,
+              "price": 57.88,
+              "value": 1273.36
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 58.52,
+              "value": 1463.0
+            },
+            "BABA": {
+              "shares": 12,
+              "price": 128.99,
+              "value": 1547.88
+            },
+            "JD": {
+              "shares": 14,
+              "price": 32.97,
+              "value": 461.58
+            },
+            "MSFT": {
+              "shares": 2,
+              "price": 492.81,
+              "value": 985.62
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 277.42,
+              "value": 1109.68
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "ETH-USD",
+              "shares": 1,
+              "price": 1871.05,
+              "reason": "ETH中性偏弱，动量-2.39%，释放资金追进攻性标的"
+            }
+          ],
+          "note": "减持弱势ETH，加仓强势AVGO，提高进攻性追赶基准。"
         }
       ]
     },
@@ -3820,6 +3862,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-04",
+          "portfolio_value": 7918.85,
+          "baseline_value": 10435.79,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 587.94,
+              "value": 5879.4
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1871.05,
+              "value": 1871.05
+            },
+            "JD": {
+              "shares": 1,
+              "price": 32.97,
+              "value": 32.97
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -3874,9 +3941,21 @@
           "buy_date": "2026-07-31"
         },
         {
+          "ticker": "AVGO",
+          "shares": 1,
+          "avg_cost": 418.16,
+          "buy_date": "2026-08-04"
+        },
+        {
+          "ticker": "XLK",
+          "shares": 3,
+          "avg_cost": 186.9,
+          "buy_date": "2026-08-04"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1541.86
+          "avg_cost": 563.0
         }
       ],
       "history": [
@@ -6023,6 +6102,81 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-08-04",
+          "portfolio_value": 9746.91,
+          "baseline_value": 10435.79,
+          "cash": 563.0,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.88,
+              "value": 405.16
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 309.38,
+              "value": 1237.52
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 211.94,
+              "value": 1271.64
+            },
+            "JD": {
+              "shares": 8,
+              "price": 32.97,
+              "value": 263.76
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 58.52,
+              "value": 117.04
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 128.99,
+              "value": 2321.82
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 492.81,
+              "value": 1478.43
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 277.42,
+              "value": 1109.68
+            },
+            "AVGO": {
+              "shares": 1,
+              "price": 418.16,
+              "value": 418.16
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 186.9,
+              "value": 560.7
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "AVGO",
+              "shares": 1,
+              "price": 418.16,
+              "reason": "技术强势+动量+12.8%"
+            },
+            {
+              "action": "BUY",
+              "ticker": "XLK",
+              "shares": 3,
+              "price": 186.9,
+              "reason": "技术强势+动量+4.3%"
+            }
+          ],
+          "note": "规则策略：持有强势['AVGO', 'XLK', 'SPY']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
