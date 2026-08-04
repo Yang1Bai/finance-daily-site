@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-03T23:08:05.220813Z",
+  "generated_at": "2026-08-04T13:57:09.575924Z",
   "performance": {
-    "total_signals": 63,
+    "total_signals": 64,
     "wins": 17,
     "losses": 26,
     "expired": 15,
-    "open": 5,
+    "open": 6,
     "win_rate": 0.2931,
     "avg_gain_pct": 512.76,
     "avg_loss_pct": -25.82,
@@ -34,8 +34,8 @@
       "stop_loss": 3785.844,
       "take_profit": 4681.42,
       "days_held": 8,
-      "current_price": 4051.0,
-      "current_pnl_pct": -0.49,
+      "current_price": 4038.0,
+      "current_pnl_pct": -0.81,
       "price_source": "ai_fallback"
     },
     {
@@ -58,8 +58,8 @@
       "stop_loss": 76.8273,
       "take_profit": 95.0015,
       "days_held": 7,
-      "current_price": 79.21,
-      "current_pnl_pct": -4.12,
+      "current_price": 82.0,
+      "current_pnl_pct": -0.74,
       "price_source": "ai_fallback"
     },
     {
@@ -82,7 +82,19 @@
       "stop_loss": 692.385,
       "take_profit": 856.175,
       "days_held": 1,
-      "current_price": 744.5,
+      "current_price": 757.77,
+      "current_pnl_pct": 1.78,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-08-03",
+      "price_issued": 700.5,
+      "stop_loss": 651.465,
+      "take_profit": 805.575,
+      "days_held": 0,
+      "current_price": 700.5,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
@@ -672,16 +684,16 @@
   "sector_rotation": {
     "date": "2026-08-03",
     "strong_sectors": [
-      "房地产",
-      "金融",
-      "工业"
+      "科技",
+      "通信服务",
+      "非必需消费品"
     ],
     "weak_sectors": [
-      "通讯服务",
       "必需消费品",
+      "公用事业",
       "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日房地产+0.53%领涨，建议关注XLRE及Real Estate个股"
+    "note": "今日科技+2.10%领涨，建议关注XLK及Technology个股"
   }
 }
