@@ -52,9 +52,15 @@
           "buy_date": "2026-08-03"
         },
         {
+          "ticker": "NVDA",
+          "shares": 8,
+          "avg_cost": 219.22,
+          "buy_date": "2026-08-05"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2225.88
+          "avg_cost": 472.12
         }
       ],
       "history": [
@@ -2192,6 +2198,59 @@
             }
           ],
           "note": "减持弱势ETH，加仓强势AVGO，提高进攻性追赶基准。"
+        },
+        {
+          "date": "2026-08-05",
+          "portfolio_value": 8998.07,
+          "baseline_value": 10414.95,
+          "cash": 472.12,
+          "positions": {
+            "XLF": {
+              "shares": 22,
+              "price": 58.0,
+              "value": 1276.0
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 57.31,
+              "value": 1432.75
+            },
+            "BABA": {
+              "shares": 12,
+              "price": 128.53,
+              "value": 1542.36
+            },
+            "JD": {
+              "shares": 14,
+              "price": 32.54,
+              "value": 455.56
+            },
+            "MSFT": {
+              "shares": 2,
+              "price": 487.46,
+              "value": 974.92
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 272.65,
+              "value": 1090.6
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 219.22,
+              "value": 1753.76
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "NVDA",
+              "shares": 8,
+              "price": 219.22,
+              "reason": "RSI58.9强势上行，20日动量+7.4%，科技龙头补仓追赶基准"
+            }
+          ],
+          "note": "落后基准13.6%，加仓强势科技股NVDA和AVGO追赶，保持进攻姿态"
         }
       ]
     },
@@ -3883,6 +3942,31 @@
               "shares": 1,
               "price": 32.97,
               "value": 32.97
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-05",
+          "portfolio_value": 7962.69,
+          "baseline_value": 10414.95,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 588.77,
+              "value": 5887.7
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1907.02,
+              "value": 1907.02
+            },
+            "JD": {
+              "shares": 1,
+              "price": 32.54,
+              "value": 32.54
             }
           },
           "trades": [],
@@ -6177,6 +6261,66 @@
             }
           ],
           "note": "规则策略：持有强势['AVGO', 'XLK', 'SPY']，剔除弱势"
+        },
+        {
+          "date": "2026-08-05",
+          "portfolio_value": 9745.79,
+          "baseline_value": 10414.95,
+          "cash": 563.0,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 58.0,
+              "value": 406.0
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 311.0,
+              "value": 1244.0
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 219.22,
+              "value": 1315.32
+            },
+            "JD": {
+              "shares": 8,
+              "price": 32.54,
+              "value": 260.32
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 57.31,
+              "value": 114.62
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 128.53,
+              "value": 2313.54
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 487.46,
+              "value": 1462.38
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 272.65,
+              "value": 1090.6
+            },
+            "AVGO": {
+              "shares": 1,
+              "price": 418.28,
+              "value": 418.28
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 185.91,
+              "value": 557.73
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['SPY']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
