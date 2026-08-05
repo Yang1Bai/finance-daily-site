@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T23:07:01.521365Z",
+  "generated_at": "2026-08-05T13:54:46.259975Z",
   "performance": {
     "total_signals": 64,
     "wins": 17,
@@ -684,16 +684,16 @@
   "sector_rotation": {
     "date": "2026-08-04",
     "strong_sectors": [
-      "通信服务",
-      "非必需消费品",
-      "科技"
+      "科技",
+      "工业",
+      "通信服务"
     ],
     "weak_sectors": [
-      "必需消费品",
-      "医疗保健",
-      "能源"
+      "房地产",
+      "能源",
+      "公用事业"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日通信服务+4.25%领涨，建议关注XLC及Communication Services个股"
+    "note": "今日科技+4.20%领涨，建议关注XLK及Technology个股"
   }
 }
