@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-07T01:30:49.634887Z",
+  "generated_at": "2026-08-07T12:51:02.678689Z",
   "performance": {
-    "total_signals": 66,
+    "total_signals": 67,
     "wins": 17,
     "losses": 27,
     "expired": 17,
-    "open": 5,
+    "open": 6,
     "win_rate": 0.2787,
     "avg_gain_pct": 491.63,
     "avg_loss_pct": -24.67,
@@ -33,9 +33,9 @@
       "price_issued": 485.39,
       "stop_loss": 451.4127,
       "take_profit": 558.1985,
-      "days_held": 4,
-      "current_price": 485.39,
-      "current_pnl_pct": 0.0,
+      "days_held": 5,
+      "current_price": 489.29,
+      "current_pnl_pct": 0.8,
       "price_source": "ai_fallback"
     },
     {
@@ -45,7 +45,7 @@
       "price_issued": 744.5,
       "stop_loss": 692.385,
       "take_profit": 856.175,
-      "days_held": 4,
+      "days_held": 5,
       "current_price": 744.5,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -57,7 +57,7 @@
       "price_issued": 700.5,
       "stop_loss": 651.465,
       "take_profit": 805.575,
-      "days_held": 3,
+      "days_held": 4,
       "current_price": 700.5,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -69,7 +69,7 @@
       "price_issued": 211.75,
       "stop_loss": 196.9275,
       "take_profit": 243.5125,
-      "days_held": 1,
+      "days_held": 2,
       "current_price": 219.15,
       "current_pnl_pct": 3.49,
       "price_source": "ai_fallback"
@@ -81,8 +81,20 @@
       "price_issued": 4304.3,
       "stop_loss": 4002.999,
       "take_profit": 4949.945,
-      "days_held": 1,
+      "days_held": 2,
       "current_price": 4304.3,
+      "current_pnl_pct": 0.0,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-08-07",
+      "price_issued": 3.95,
+      "stop_loss": 3.6735,
+      "take_profit": 4.5425,
+      "days_held": 0,
+      "current_price": 3.95,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
@@ -700,7 +712,7 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-06",
+    "date": "2026-08-07",
     "strong_sectors": [
       "科技",
       "材料",
@@ -712,6 +724,6 @@
       "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日科技+4.09%领涨，建议关注XLK及Information Technology个股"
+    "note": "今日科技+4.09%领涨，建议关注XLK及Technology个股"
   }
 }
