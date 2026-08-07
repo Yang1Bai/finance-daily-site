@@ -34,12 +34,6 @@
           "buy_date": "2026-07-28"
         },
         {
-          "ticker": "JD",
-          "shares": 14,
-          "avg_cost": 32.2,
-          "buy_date": "2026-07-29"
-        },
-        {
           "ticker": "MSFT",
           "shares": 2,
           "avg_cost": 451.1,
@@ -60,7 +54,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 472.12
+          "avg_cost": 931.46
         }
       ],
       "history": [
@@ -2251,6 +2245,54 @@
             }
           ],
           "note": "落后基准13.6%，加仓强势科技股NVDA和AVGO追赶，保持进攻姿态"
+        },
+        {
+          "date": "2026-08-06",
+          "portfolio_value": 9019.68,
+          "baseline_value": 10398.31,
+          "cash": 931.46,
+          "positions": {
+            "XLF": {
+              "shares": 22,
+              "price": 57.81,
+              "value": 1271.82
+            },
+            "XLE": {
+              "shares": 25,
+              "price": 58.16,
+              "value": 1454.0
+            },
+            "BABA": {
+              "shares": 12,
+              "price": 126.81,
+              "value": 1521.72
+            },
+            "MSFT": {
+              "shares": 2,
+              "price": 499.86,
+              "value": 999.72
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 272.26,
+              "value": 1089.04
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 218.99,
+              "value": 1751.92
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "JD",
+              "shares": 14,
+              "price": 32.81,
+              "reason": "RSI达80.9超买严重，持仓8天获利了结"
+            }
+          ],
+          "note": "JD超买卖出锁定利润，保留强势NVDA/MSFT/BABA追赶基准"
         }
       ]
     },
@@ -3967,6 +4009,31 @@
               "shares": 1,
               "price": 32.54,
               "value": 32.54
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-06",
+          "portfolio_value": 7968.03,
+          "baseline_value": 10398.31,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 589.9,
+              "value": 5899.0
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1900.79,
+              "value": 1900.79
+            },
+            "JD": {
+              "shares": 1,
+              "price": 32.81,
+              "value": 32.81
             }
           },
           "trades": [],
@@ -6321,6 +6388,66 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['SPY']，剔除弱势"
+        },
+        {
+          "date": "2026-08-06",
+          "portfolio_value": 9757.81,
+          "baseline_value": 10398.31,
+          "cash": 563.0,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.81,
+              "value": 404.67
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 312.41,
+              "value": 1249.64
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 218.99,
+              "value": 1313.94
+            },
+            "JD": {
+              "shares": 8,
+              "price": 32.81,
+              "value": 262.48
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 58.16,
+              "value": 116.32
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 126.81,
+              "value": 2282.58
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 499.86,
+              "value": 1499.58
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 272.26,
+              "value": 1089.04
+            },
+            "AVGO": {
+              "shares": 1,
+              "price": 420.57,
+              "value": 420.57
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 185.33,
+              "value": 555.99
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
