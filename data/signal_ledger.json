@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T12:35:34.456019Z",
+  "generated_at": "2026-08-09T12:38:30.319608Z",
   "performance": {
     "total_signals": 67,
     "wins": 17,
@@ -33,9 +33,9 @@
       "price_issued": 485.39,
       "stop_loss": 451.4127,
       "take_profit": 558.1985,
-      "days_held": 5,
-      "current_price": 489.31,
-      "current_pnl_pct": 0.81,
+      "days_held": 6,
+      "current_price": 483.36,
+      "current_pnl_pct": -0.42,
       "price_source": "ai_fallback"
     },
     {
@@ -45,7 +45,7 @@
       "price_issued": 744.5,
       "stop_loss": 692.385,
       "take_profit": 856.175,
-      "days_held": 5,
+      "days_held": 6,
       "current_price": 744.5,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -57,7 +57,7 @@
       "price_issued": 700.5,
       "stop_loss": 651.465,
       "take_profit": 805.575,
-      "days_held": 4,
+      "days_held": 5,
       "current_price": 700.5,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -69,7 +69,7 @@
       "price_issued": 4304.3,
       "stop_loss": 4002.999,
       "take_profit": 4949.945,
-      "days_held": 2,
+      "days_held": 3,
       "current_price": 4304.3,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -81,7 +81,7 @@
       "price_issued": 3.95,
       "stop_loss": 3.6735,
       "take_profit": 4.5425,
-      "days_held": 0,
+      "days_held": 1,
       "current_price": 3.95,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -710,18 +710,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-07",
+    "date": "2026-08-08",
     "strong_sectors": [
-      "信息技术",
-      "材料",
-      "工业"
+      "通讯服务",
+      "原材料",
+      "非必需消费"
     ],
     "weak_sectors": [
-      "非必需消费品",
-      "能源",
-      "房地产"
+      "必需消费",
+      "金融",
+      "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日信息技术+4.09%领涨，建议关注XLK及Information Technology个股"
+    "note": "今日通讯服务+1.82%领涨，建议关注XLC及Communication Services个股"
   }
 }
