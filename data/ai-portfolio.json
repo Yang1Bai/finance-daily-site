@@ -16,12 +16,6 @@
       "provider": "anthropic",
       "holdings": [
         {
-          "ticker": "XLF",
-          "shares": 22,
-          "avg_cost": 56.75,
-          "buy_date": "2026-07-16"
-        },
-        {
           "ticker": "BABA",
           "shares": 12,
           "avg_cost": 115.19,
@@ -48,7 +42,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2368.96
+          "avg_cost": 3640.78
         }
       ],
       "history": [
@@ -2330,6 +2324,44 @@
             }
           ],
           "note": "减仓中性能源股XLE，加仓强势半导体AVGO，提升进攻性追赶基准。"
+        },
+        {
+          "date": "2026-08-10",
+          "portfolio_value": 9093.5,
+          "baseline_value": 10458.79,
+          "cash": 3640.78,
+          "positions": {
+            "BABA": {
+              "shares": 12,
+              "price": 132.32,
+              "value": 1587.84
+            },
+            "MSFT": {
+              "shares": 2,
+              "price": 506.06,
+              "value": 1012.12
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 278.09,
+              "value": 1112.36
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 217.55,
+              "value": 1740.4
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLF",
+              "shares": 22,
+              "price": 57.81,
+              "reason": "持仓25天，RSI66.9接近超买，腾出资金加仓更强势标的"
+            }
+          ],
+          "note": "减持金融ETF，释放资金准备加仓科技龙头追赶基准差距。"
         }
       ]
     },
@@ -4096,6 +4128,31 @@
               "shares": 1,
               "price": 32.97,
               "value": 32.97
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-10",
+          "portfolio_value": 7993.8,
+          "baseline_value": 10458.79,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 594.92,
+              "value": 5949.2
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1875.7,
+              "value": 1875.7
+            },
+            "JD": {
+              "shares": 1,
+              "price": 33.47,
+              "value": 33.47
             }
           },
           "trades": [],
@@ -6570,6 +6627,66 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-08-10",
+          "portfolio_value": 9887.79,
+          "baseline_value": 10458.79,
+          "cash": 563.0,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.81,
+              "value": 404.67
+            },
+            "AAPL": {
+              "shares": 4,
+              "price": 308.26,
+              "value": 1233.04
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 217.55,
+              "value": 1305.3
+            },
+            "JD": {
+              "shares": 8,
+              "price": 33.47,
+              "value": 267.76
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 60.18,
+              "value": 120.36
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 132.32,
+              "value": 2381.76
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 506.06,
+              "value": 1518.18
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 278.09,
+              "value": 1112.36
+            },
+            "AVGO": {
+              "shares": 1,
+              "price": 422.4,
+              "value": 422.4
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 186.32,
+              "value": 558.96
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['SPY']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
