@@ -1,62 +1,62 @@
 {
   "date": "2026年8月10日",
   "summary": {
-    "headline": "美股再创新高后谨慎开盘，关注周三CPI与霍尔木兹谈判进展",
-    "context": "标普500上周五创下7758点历史新高后，周一开盘温和上涨，市场消化7月意外失业23000人的就业数据，降息预期升温。伊朗与阿曼接近达成霍尔木兹海峡协议但尚未完全开放，油价仍在79美元附近波动。对北美华人投资者而言，本周三（8月12日）的CPI数据将是关键，若通胀继续回落，美联储9月维持利率不变的概率将进一步提升，利好科技股和成长股持仓。",
+    "headline": "美股微跌守历史高位，油价续涨霍尔木兹海峡僵局牵动市场",
+    "context": "标普500周一小幅回调0.1%至7753点，盘中曾触及上周创下的7758历史新高。上周五意外负增长的7月非农就业数据令市场押注美联储9月加息概率降至44%，但霍尔木兹海峡重启谈判陷入僵局推动油价反弹，WTI原油涨至78.83美元。对北美华人投资者而言，本周三公布的7月CPI将成为关键，若通胀数据再超预期，美联储鹰派立场或重燃，美股和中概股将承压；而A股受中国通胀降温提振，沪指周一涨0.67%。",
     "sentiment": "neutral",
-    "vix": "15.41",
+    "vix": "14.90",
     "key_points": [
-      "标普500创新高后谨慎整理",
-      "周三CPI数据成焦点",
-      "霍尔木兹协议临近但油价仍升"
+      "标普500守7700关口徘徊历史高位",
+      "7月CPI周三公布成本周焦点",
+      "油价涨霍尔木兹僵局拖累风险偏好"
     ]
   },
   "indices": [
     {
       "name": "S&P 500",
       "symbol": "SPX",
-      "value": "7,757.64",
-      "change": "+47.68",
-      "change_pct": "+0.62%",
-      "direction": "up"
+      "value": "7,753.11",
+      "change": "-4.53",
+      "change_pct": "-0.06%",
+      "direction": "down"
     },
     {
-      "name": "纳斯达克综合指数",
+      "name": "Nasdaq Composite",
       "symbol": "IXIC",
-      "value": "26,690.62",
-      "change": "+343.28",
-      "change_pct": "+1.30%",
-      "direction": "up"
+      "value": "26,605.36",
+      "change": "-85.26",
+      "change_pct": "-0.32%",
+      "direction": "down"
     },
     {
-      "name": "道琼斯工业平均指数",
+      "name": "Dow Jones",
       "symbol": "DJI",
-      "value": "54,036.93",
-      "change": "+151.83",
-      "change_pct": "+0.28%",
-      "direction": "up"
+      "value": "53,975.98",
+      "change": "-60.95",
+      "change_pct": "-0.11%",
+      "direction": "down"
     },
     {
       "name": "上证综指",
-      "symbol": "000001.SS",
-      "value": "3,940.00",
-      "change": "+40.00",
-      "change_pct": "+1.02%",
+      "symbol": "SSEC",
+      "value": "3,966.59",
+      "change": "+26.45",
+      "change_pct": "+0.67%",
       "direction": "up"
     },
     {
       "name": "恒生指数",
       "symbol": "HSI",
-      "value": "25,954.42",
-      "change": "+286.39",
-      "change_pct": "+1.12%",
+      "value": "25,937.49",
+      "change": "+268.96",
+      "change_pct": "+1.05%",
       "direction": "up"
     },
     {
       "name": "日经225",
       "symbol": "N225",
       "value": "66,970.22",
-      "change": "+1,362.58",
+      "change": "+1,365.50",
       "change_pct": "+2.08%",
       "direction": "up"
     },
@@ -64,48 +64,48 @@
       "name": "德国DAX",
       "symbol": "GDAXI",
       "value": "26,395.07",
-      "change": "+76.62",
+      "change": "+75.83",
       "change_pct": "+0.29%",
       "direction": "up"
     },
     {
       "name": "黄金现货",
-      "symbol": "XAUUSD",
-      "value": "4,391.10",
-      "change": "-8.60",
-      "change_pct": "-0.20%",
-      "direction": "down"
+      "symbol": "GOLD",
+      "value": "$4,329",
+      "change": "+$2",
+      "change_pct": "+0.05%",
+      "direction": "up"
     },
     {
       "name": "WTI原油",
-      "symbol": "CL=F",
-      "value": "79.54",
-      "change": "+1.36",
-      "change_pct": "+1.74%",
+      "symbol": "CL",
+      "value": "$78.83",
+      "change": "+$0.65",
+      "change_pct": "+0.83%",
       "direction": "up"
     },
     {
       "name": "比特币",
       "symbol": "BTC-USD",
-      "value": "64,858.76",
-      "change": "-47.83",
-      "change_pct": "-0.07%",
-      "direction": "down"
+      "value": "$65,300",
+      "change": "+$800",
+      "change_pct": "+1.24%",
+      "direction": "up"
     },
     {
       "name": "美元指数",
       "symbol": "DXY",
       "value": "99.54",
-      "change": "-0.39",
-      "change_pct": "-0.39%",
-      "direction": "down"
+      "change": "+0.08",
+      "change_pct": "+0.08%",
+      "direction": "up"
     },
     {
       "name": "离岸人民币",
       "symbol": "CNH",
-      "value": "7.15",
-      "change": "+0.02",
-      "change_pct": "+0.28%",
+      "value": "7.2450",
+      "change": "-0.0025",
+      "change_pct": "-0.03%",
       "direction": "down"
     }
   ],
@@ -114,118 +114,114 @@
       "name": "杰米·戴蒙",
       "name_en": "Jamie Dimon",
       "role": "摩根大通CEO",
-      "quote": "利率就像所有资产价格的重力",
-      "body": "戴蒙在最近股东信中重申巴菲特26年前的警告，强调若通胀持续导致利率上升，将对所有资产类别施加下行压力。他警告称当前市场估值仍然偏高，尽管伊朗战争带来波动，但利率前景恶化是最大风险。戴蒙表示他不会在当前价位买入标普500或长期国债。",
+      "quote": "利率就像万有引力，对几乎所有资产价格都产生作用",
+      "body": "戴蒙在2026年致股东信中警告，当前市场环境下通胀反弹风险仍存，若通胀上行将推动利率走高，从而对股票等所有资产价格形成'引力下拉'。他强调投资者应关注利率对长期回报的影响，在估值偏高的市场中寻找价值。这一观点呼应了26年前巴菲特关于利率对资产定价核心作用的警告。",
       "tags": [
         "#利率",
-        "#估值"
+        "#美股估值"
       ],
       "initials": "JD",
       "quote_date": "4月"
     },
     {
-      "name": "沃伦·巴菲特",
-      "name_en": "Warren Buffett",
-      "role": "伯克希尔哈撒韦CEO",
-      "quote": "今天的股市就像赌场，这不是投资也不是投机，是赌博",
-      "body": "巴菲特和副手格雷格·阿贝尔近期仍在选择性买入股票，尽管对富贵市场保持谨慎。他强调利率对资产估值的影响从未改变，投资者应在高估值环境中更加挑剔。他的现金储备创新高反映了对市场机会的严格筛选。",
+      "name": "杰罗姆·鲍威尔",
+      "name_en": "Jerome Powell",
+      "role": "美联储主席",
+      "quote": "我们认为当前政策立场良好",
+      "body": "鲍威尔在7月FOMC会议上指出，2026年通胀预期中值已升至2.7%，远高于2%目标。美联储维持5.25-5.50%利率不变，期货市场目前押注利率全年持稳，甚至有小概率加息。市场高度关注本周三CPI数据，若通胀再超预期，将强化美联储鹰派立场，打压风险资产。",
       "tags": [
-        "#价值投资",
-        "#现金储备"
+        "#美联储",
+        "#通胀"
       ],
-      "initials": "WB",
+      "initials": "JP",
       "quote_date": "7月"
     },
     {
       "name": "雷·达利欧",
       "name_en": "Ray Dalio",
       "role": "桥水基金创始人",
-      "quote": "AI繁荣明显处于泡沫早期阶段，要警惕2026年",
-      "body": "达利欧在1月初警告称AI投资热潮已进入泡沫早期，2026年可能出现转折。他指出尽管2025年标普500上涨16%主要由科技股推动，但市场对AI回报预期过高。他提醒投资者关注AI采用速度是否能匹配估值，泡沫破裂往往发生在预期与现实碰撞之时。",
+      "quote": "人们的投资组合中黄金配置通常不足",
+      "body": "达利欧强调在不确定时期，黄金是极为有效的分散化工具。随着黄金在过去12个月飙升超40%，目前交投于4329美元附近，达利欧的观点再次得到验证。摩根大通CEO戴蒙甚至认为在当前环境下，黄金可能升至1万美元/盎司。",
       "tags": [
-        "#AI泡沫",
-        "#2026风险"
+        "#黄金",
+        "#避险"
       ],
       "initials": "RD",
-      "quote_date": "1月6日"
+      "quote_date": "去年"
     },
     {
-      "name": "杰罗姆·鲍威尔",
-      "name_en": "Jerome Powell",
-      "role": "美联储主席",
-      "quote": "通胀预期今年已攀升，2026年中值预测为2.7%",
-      "body": "鲍威尔在最近FOMC会议上指出通胀预期显著上升，进一步降息前景恶化。期货交易员现在预计利率将保持稳定至年底，甚至有小概率加息。他强调伊朗战争和油价冲击给通胀前景带来不确定性，美联储需要看到更多通胀降温证据才会降息。",
+      "name": "沃伦·巴菲特",
+      "name_en": "Warren Buffett",
+      "role": "伯克希尔哈撒韦CEO",
+      "quote": "如果你提供全美1%的公寓以250亿美元价格，我会开支票",
+      "body": "巴菲特在2022年的这一表态凸显其对收益性资产的偏好，尤其是房地产在任何经济环境下都能持续产生租金收入并对冲通胀。近期巴菲特继承人格雷格·阿贝尔结束了伯克希尔连续14个季度的净卖出，重新买入股票，被市场视为潜在买入信号。",
       "tags": [
-        "#美联储",
-        "#通胀"
+        "#价值投资",
+        "#房地产"
       ],
-      "initials": "JP",
-      "quote_date": "4月"
+      "initials": "WB",
+      "quote_date": "2022年"
     }
   ],
   "news": [
     {
-      "title": "7月就业意外负增长23000人，降息预期升温",
-      "body": "美国7月非农就业意外减少23000人，远低于预期的增加80000人，失业率和劳动参与率同时下降。市场将此解读为劳动力市场降温信号，减轻了对工资推动通胀的担忧，交易员已将9月加息预期完全从定价中剔除。数据公布后标普500创下7758点历史新高，纳斯达克大涨1.3%。",
-      "tldr": "持有美股的投资者本周可能受益于降息预期升温，但需关注周三CPI数据",
+      "title": "7月非农意外萎缩2.3万，美联储9月加息预期骤降",
+      "body": "美国7月非农就业人数意外减少2.3万人，远逊于预期增加8.2万人，且前值大幅下修至仅增2万人。失业率降至4.1%，但劳动参与率同步下降。此数据令市场对美联储9月加息的押注从三分之二降至44%，国债收益率周五大跌，10年期跌至4.64%，推动标普500创7758历史新高。",
+      "tldr": "就业数据疲软，美联储年内加息几率大降，利好风险资产短期反弹",
       "importance": "breaking",
       "tags": [
         "#非农",
-        "#降息预期"
+        "#美联储"
       ]
     },
     {
-      "title": "伊朗与阿曼接近霍尔木兹海峡协议，但美国附加条件未满足",
-      "body": "伊朗和阿曼均表示接近就霍尔木兹海峡航运安排达成协议，但伊朗坚持美国必须满足结束战争、撤军和经济补偿等条件才会完全开放海峡。美国曾希望周三宣布协议，但谈判仍存不确定性。油价周一在79美元附近波动，较两周前高点下跌13美元，但能源风险溢价尚未完全消除。",
-      "tldr": "油价虽回落但霍尔木兹完全开放仍需时日，能源股和通胀前景仍面临地缘风险",
+      "title": "霍尔木兹海峡僵局持续，油价周一反弹拖累股市",
+      "body": "伊朗外长表示德黑兰目前未与美国就结束战争和重开霍尔木兹海峡进行直接谈判，而华盛顿此前声称协议接近达成。海峡已实际关闭6个月，周一布伦特原油涨1.04%至84.42美元，WTI涨0.83%至78.83美元。油价走高加剧通胀担忧，拖累美股盘中走低。",
+      "tldr": "中东能源通道僵局推高油价，持有能源股可短期受益，但通胀风险压制大盘",
       "importance": "breaking",
       "tags": [
-        "#霍尔木兹",
-        "#油价",
-        "#伊朗"
+        "#原油",
+        "#地缘政治"
       ]
     },
     {
-      "title": "周三CPI数据成关键，市场预期通胀进一步回落",
-      "body": "8月12日周三8:30 AM ET将公布7月CPI数据，这是本周最重要的经济数据。最新6月数据显示CPI同比3.9%，低于5月的4.5%。市场预期7月通胀将进一步降温，若符合预期将巩固美联储9月维持利率不变的立场，利好科技股和成长股。财政部10年期收益率已降至4.60%，反映交易员押注加息周期结束。",
-      "tldr": "周三CPI若低于预期，科技股可能迎来新一轮上涨，但若超预期则可能引发回调",
+      "title": "特朗普对华多晶硅加征关税，美国太阳能股飙升",
+      "body": "特朗普总统对从中国进口的多晶硅产品加征关税，多晶硅是制造太阳能电池板的关键原料。First Solar股价周五飙升约5%，Invesco太阳能ETF涨超1%。此举是特朗普政府新一轮关税政策的一部分，7月宣布对加拿大某些商品加征50%关税，对巴西加征25%，对60个贸易伙伴加征10-12%。",
+      "tldr": "对华关税升级，美国本土太阳能制造商受益，但中美贸易紧张加剧",
       "importance": "breaking",
       "tags": [
-        "#CPI",
-        "#通胀"
+        "#关税",
+        "#中美贸易"
       ]
     },
     {
-      "title": "英伟达单周市值暴增5620亿美元，8月26日财报备受关注",
-      "body": "英伟达上周市值增加5620亿美元，创下单周最大增幅纪录，超过英特尔整个市值，相当于AMD市值的71%。股价周五收于223.96美元，上涨2.27%。市场高度关注8月26日财报，预期将对AI基础设施投资回报提供更多指引。总市值达5.42万亿美元，对财报的高预期也带来潜在失望风险。",
-      "tldr": "英伟达8月26日财报将是科技股风向标，持有者需警惕高预期带来的波动风险",
+      "title": "AMD二季度财报强劲但股价暴跌7%，AI芯片需求存疑",
+      "body": "AMD公布二季度EPS 1.66美元、营收115.4亿美元，均超预期，数据中心营收同比暴涨107%至67亿美元。公司宣布本季度开始向Meta、OpenAI和Oracle出货首个机架级AI系统Helios，直接对标英伟达。但股价仍暴跌7%，市场担忧高估值难以持续。英伟达股价逆势涨2.5%，其财报将于8月26日公布。",
+      "tldr": "AMD业绩超预期仍遭抛售，反映市场对AI芯片估值泡沫的担忧升温",
       "importance": "high",
       "tags": [
-        "#英伟达",
-        "#AI",
-        "#财报"
+        "#AMD",
+        "#AI芯片"
       ]
     },
     {
-      "title": "中国7月贸易数据强劲，出口增23.9%进口升27.5%",
-      "body": "中国7月出口同比增长23.9%至3978.5亿美元，进口增27.5%至2853.5亿美元，贸易顺差扩大至1125亿美元超市场预期。AI相关科技产品全球需求强劲是主要推动力。上海综指周五上涨1.02%至3940点，深证成指涨1.42%至14311点，均创三周新高。AI相关股如寒武纪、中芯国际、海光信息领涨。",
-      "tldr": "中国AI产业链受益全球需求，持有A股科技股的投资者可关注相关板块机会",
+      "title": "Palantir财报后暴涨29%，创2024年2月来最大单日涨幅",
+      "body": "AI软件公司Palantir周一盘后公布超预期财报后，周二股价飙升29%，带动标普500信息技术板块涨4%。Palantir是本周科技财报季的先行指标，周三特斯拉、微软、Meta将公布业绩，周四苹果紧随其后，市场高度关注AI基建投资叙事能否延续。",
+      "tldr": "AI软件龙头财报引爆科技股，本周巨头财报将决定板块走向",
       "importance": "high",
       "tags": [
-        "#中国贸易",
-        "#AI",
+        "#Palantir",
+        "#AI"
+      ]
+    },
+    {
+      "title": "中国7月CPI降至0.5%创6个月新低，A股港股齐涨",
+      "body": "中国7月CPI同比仅增0.5%，远低于6月的1.0%，为6个月最低。通胀降温缓解了政策紧缩压力，提振市场情绪。周一沪指涨0.67%至3966点，恒指涨1.05%至25937点。外资机构普遍看好中国资产，摩根士丹利建议'杠铃策略'：超配互联网/科技龙头和高股息股，同时布局AI/机器人供应链。",
+      "tldr": "中国通胀降温释放宽松空间，A股港股短期反弹，外资增配意愿升温",
+      "importance": "high",
+      "tags": [
+        "#中国通胀",
         "#A股"
-      ]
-    },
-    {
-      "title": "半导体板块7月大跌后企稳，SOXX上周反弹超7%",
-      "body": "费城半导体指数7月暴跌18.2%后，上周反弹超7%。Sandisk、Micron等内存芯片股7月跌幅超26%，但2026年至今仍涨超200%。KLA、Marvell、Corning等7月跌幅在37-46%之间。市场担忧AI资本支出回报和周期性风险，但低估值吸引部分长线投资者入场。",
-      "tldr": "半导体股短期波动剧烈，适合风险承受力高的投资者逢低布局，但需设好止损",
-      "importance": "medium",
-      "tags": [
-        "#半导体",
-        "#回调",
-        "#机会"
       ]
     }
   ],
@@ -233,230 +229,213 @@
     {
       "indicator": "非农就业人数变化 (7月)",
       "value": "-23,000",
-      "prev": "+185,000",
+      "prev": "+20,000 (下修)",
       "direction": "down",
-      "description": "意外负增长，远低于预期+80000，显示劳动力市场显著降温"
+      "description": "意外萎缩2.3万人，远逊预期+8.2万，前值大幅下修，劳动市场急剧降温"
     },
     {
       "indicator": "失业率 (7月)",
       "value": "4.1%",
       "prev": "4.2%",
       "direction": "down",
-      "description": "小幅下降，但劳动参与率同步下降至61.4%，反映140万人退出劳动力市场"
+      "description": "小幅回落但劳动参与率同步下降，反映劳动力市场疲软"
     },
     {
-      "indicator": "CPI YoY (6月)",
-      "value": "3.9%",
-      "prev": "4.5%",
-      "direction": "down",
-      "description": "通胀继续回落，低于市场预期3.8%，为近6个月最低"
-    },
-    {
-      "indicator": "核心PCE (2月)",
-      "value": "3.0%",
-      "prev": "3.1%",
-      "direction": "down",
-      "description": "美联储首选通胀指标，略有改善但仍高于2025年水平"
-    },
-    {
-      "indicator": "10年期美债收益率",
-      "value": "4.60%",
-      "prev": "4.75%",
-      "direction": "down",
-      "description": "持续下降，反映市场预期加息周期结束，借贷成本可能逐步缓解"
-    },
-    {
-      "indicator": "1年期通胀预期",
-      "value": "3.6%",
-      "prev": "3.8%",
-      "direction": "down",
-      "description": "市场对未来通胀预期下降，有利于美联储保持政策稳定"
-    },
-    {
-      "indicator": "美联储利率目标区间",
+      "indicator": "美联储基准利率",
       "value": "5.25-5.50%",
       "prev": "5.25-5.50%",
-      "direction": "neutral",
-      "description": "6月会议维持不变，强调通胀相对于2%目标仍偏高"
+      "direction": "flat",
+      "description": "7月维持不变，期货市场押注全年持稳，9月加息概率降至44%"
+    },
+    {
+      "indicator": "10年期国债收益率",
+      "value": "4.64%",
+      "prev": "4.69%",
+      "direction": "down",
+      "description": "就业数据公布后大跌，但本周CPI若超预期可能反弹"
+    },
+    {
+      "indicator": "中国CPI同比 (7月)",
+      "value": "0.5%",
+      "prev": "1.0%",
+      "direction": "down",
+      "description": "创6个月新低，通胀压力缓解为政策宽松留空间"
+    },
+    {
+      "indicator": "VIX恐慌指数",
+      "value": "14.90",
+      "prev": "15.15",
+      "direction": "down",
+      "description": "周五降1.65%，市场风险偏好乐观，投资者对投资组合保护需求低"
     },
     {
       "indicator": "WTI原油价格",
-      "value": "$79.54",
-      "prev": "$86.00",
-      "direction": "down",
-      "description": "两周内下跌约13美元，霍尔木兹谈判进展缓解供应担忧"
+      "value": "$78.83",
+      "prev": "$77.00",
+      "direction": "up",
+      "description": "霍尔木兹海峡僵局推动油价反弹，上周曾跌近8%"
     }
   ],
   "earnings": [
     {
-      "company": "SpaceX",
-      "ticker": "SPCX",
+      "company": "AMD",
+      "ticker": "AMD",
       "report_date": "2026-08-04",
-      "eps_actual": "N/A",
-      "eps_est": "N/A",
+      "eps_actual": "1.66",
+      "eps_est": "1.55",
       "beat": true,
-      "revenue": "N/A",
-      "highlight": "股价周五大涨15.8%，Argus Research升至买入评级，看好AI基础设施投资快速回报"
+      "revenue": "$11.54B",
+      "highlight": "数据中心营收同比暴涨107%至67亿美元，本季开始出货Helios机架AI系统给Meta和OpenAI，但股价仍暴跌7%"
     },
     {
       "company": "Palantir",
       "ticker": "PLTR",
       "report_date": "2026-08-04",
-      "eps_actual": "N/A",
-      "eps_est": "N/A",
+      "eps_actual": "超预期",
+      "eps_est": "未披露",
       "beat": true,
-      "revenue": "N/A",
-      "highlight": "二季度业绩强劲，上调2026全年指引，股价周五飙升10.3%"
+      "revenue": "未披露",
+      "highlight": "超预期财报推动股价暴涨29%，创2024年2月来最大单日涨幅，8月至今累涨26.9%"
     },
     {
-      "company": "Zoetis",
-      "ticker": "ZTS",
-      "report_date": "2026-08-09",
-      "eps_actual": "N/A",
-      "eps_est": "N/A",
-      "beat": false,
-      "revenue": "N/A",
-      "highlight": "下调2026全年营收和EPS指引，股价周一盘前跌5.97%"
-    },
-    {
-      "company": "AMD",
-      "ticker": "AMD",
-      "report_date": "2026-08-04",
-      "eps_actual": "N/A",
-      "eps_est": "N/A",
-      "beat": true,
-      "revenue": "N/A",
-      "highlight": "财报公布后股价上涨，CEO苏姿丰对马斯克力挺英伟达的评论做出回应"
-    },
-    {
-      "company": "Nvidia (即将)",
+      "company": "Nvidia",
       "ticker": "NVDA",
       "report_date": "2026-08-26",
-      "eps_actual": "N/A",
-      "eps_est": "预期强劲",
+      "eps_actual": "待公布",
+      "eps_est": "待公布",
       "beat": null,
-      "revenue": "预期AI服务器需求持续",
-      "highlight": "市场高度关注，单周市值暴增5620亿美元，对8月26日财报预期极高"
+      "revenue": "待公布",
+      "highlight": "市场高度关注，Bank of America维持买入评级并将其列为板块首选，预计将超预期并上调指引"
     },
     {
-      "company": "CoreWeave (即将)",
-      "ticker": "CRWV",
-      "report_date": "2026-08-11",
-      "eps_actual": "N/A",
-      "eps_est": "-$1.42",
-      "beat": null,
-      "revenue": "$2.56B (预期YoY +110.7%)",
-      "highlight": "AI原生云计算平台，股价自高点已跌超50%，周二盘后公布二季度业绩"
+      "company": "Tesla",
+      "ticker": "TSLA",
+      "report_date": "2026-07-21",
+      "eps_actual": "0.33",
+      "eps_est": "0.54",
+      "beat": false,
+      "revenue": "$28.24B",
+      "highlight": "营收超预期7.1%但EPS大幅低于预期38.5%，营业利润率暴跌至1.4%，自由现金流转负-10.9亿美元，股价月跌26.8%"
     },
     {
-      "company": "Cisco (即将)",
-      "ticker": "CSCO",
-      "report_date": "2026-08-12",
-      "eps_actual": "N/A",
-      "eps_est": "$1.17",
+      "company": "Apple",
+      "ticker": "AAPL",
+      "report_date": "2026-08-14",
+      "eps_actual": "待公布",
+      "eps_est": "待公布",
       "beat": null,
-      "revenue": "$16.83B (预期YoY +14.7%)",
-      "highlight": "周三盘后公布财年四季度业绩，市场关注网络设备需求"
+      "revenue": "待公布",
+      "highlight": "本周四公布，市值曾短暂触及5万亿美元，超过英伟达成为全球市值最大公司"
     },
     {
-      "company": "Walmart (即将)",
-      "ticker": "WMT",
-      "report_date": "2026-08-15",
-      "eps_actual": "N/A",
-      "eps_est": "N/A",
+      "company": "Microsoft",
+      "ticker": "MSFT",
+      "report_date": "2026-08-13",
+      "eps_actual": "待公布",
+      "eps_est": "待公布",
       "beat": null,
-      "revenue": "N/A",
-      "highlight": "周四公布业绩，作为消费零售风向标备受关注"
+      "revenue": "待公布",
+      "highlight": "本周三公布，市场关注Azure AI营收占比和Copilot附加率"
+    },
+    {
+      "company": "Meta",
+      "ticker": "META",
+      "report_date": "2026-08-13",
+      "eps_actual": "待公布",
+      "eps_est": "待公布",
+      "beat": null,
+      "revenue": "待公布",
+      "highlight": "本周三公布，是AMD Helios AI系统的首批客户之一"
     }
   ],
   "sectors": [
     {
-      "name": "科技",
+      "name": "信息技术",
       "name_en": "Information Technology",
       "etf": "XLK",
-      "change_pct": "+1.82%",
-      "direction": "up",
-      "note": "AI芯片需求持续，半导体板块从7月深度回调中反弹"
-    },
-    {
-      "name": "通信服务",
-      "name_en": "Communication Services",
-      "etf": "XLC",
-      "change_pct": "+1.55%",
-      "direction": "up",
-      "note": "AI支出担忧缓解，云计算和社交媒体股回升"
-    },
-    {
-      "name": "非必需消费品",
-      "name_en": "Consumer Discretionary",
-      "etf": "XLY",
-      "change_pct": "+1.20%",
-      "direction": "up",
-      "note": "消费者信心改善，等待零售数据和沃尔玛财报"
-    },
-    {
-      "name": "工业",
-      "name_en": "Industrials",
-      "etf": "XLI",
-      "change_pct": "+0.85%",
-      "direction": "up",
-      "note": "AI基础设施建设、国防和能源资本支出支撑板块"
-    },
-    {
-      "name": "金融",
-      "name_en": "Financials",
-      "etf": "XLF",
-      "change_pct": "+0.72%",
-      "direction": "up",
-      "note": "利率维持高位利好银行净息差，交易收入创纪录"
-    },
-    {
-      "name": "医疗保健",
-      "name_en": "Health Care",
-      "etf": "XLV",
-      "change_pct": "+0.65%",
-      "direction": "up",
-      "note": "技术进步和运营效率提升，生物科技细分表现亮眼"
-    },
-    {
-      "name": "材料",
-      "name_en": "Materials",
-      "etf": "XLB",
-      "change_pct": "+0.58%",
-      "direction": "up",
-      "note": "AI相关电力和建设需求支撑，钢铁和基础材料受益"
-    },
-    {
-      "name": "房地产",
-      "name_en": "Real Estate",
-      "etf": "XLRE",
-      "change_pct": "+0.45%",
-      "direction": "up",
-      "note": "利率预期缓和，REITs温和反弹但仍面临压力"
+      "change_pct": "-0.5%",
+      "direction": "down",
+      "note": "AMD财报后暴跌拖累板块，但英伟达逆势涨2.5%"
     },
     {
       "name": "能源",
       "name_en": "Energy",
       "etf": "XLE",
-      "change_pct": "+0.30%",
+      "change_pct": "+1.8%",
       "direction": "up",
-      "note": "油价从高位回落，但霍尔木兹不确定性仍存"
+      "note": "霍尔木兹僵局推动油价反弹，7月该板块曾领涨12%"
+    },
+    {
+      "name": "金融",
+      "name_en": "Financials",
+      "etf": "XLF",
+      "change_pct": "-0.2%",
+      "direction": "down",
+      "note": "收益率曲线走平压制银行股，但整体持稳"
+    },
+    {
+      "name": "医疗保健",
+      "name_en": "Health Care",
+      "etf": "XLV",
+      "change_pct": "+0.1%",
+      "direction": "up",
+      "note": "防御属性吸引资金，生物医药股表现分化"
+    },
+    {
+      "name": "非必需消费品",
+      "name_en": "Consumer Discretionary",
+      "etf": "XLY",
+      "change_pct": "-0.8%",
+      "direction": "down",
+      "note": "特斯拉月跌26.8%拖累板块，亚马逊本周公布财报"
+    },
+    {
+      "name": "通信服务",
+      "name_en": "Communication Services",
+      "etf": "XLC",
+      "change_pct": "+0.3%",
+      "direction": "up",
+      "note": "Meta和Alphabet财报临近，数字广告前景受关注"
+    },
+    {
+      "name": "工业",
+      "name_en": "Industrials",
+      "etf": "XLI",
+      "change_pct": "-0.3%",
+      "direction": "down",
+      "note": "经济放缓担忧拖累，但电网升级和自动化需求韧性强"
     },
     {
       "name": "必需消费品",
       "name_en": "Consumer Staples",
       "etf": "XLP",
-      "change_pct": "+0.18%",
+      "change_pct": "+0.2%",
       "direction": "up",
-      "note": "防御性板块表现相对落后，但提供稳定性"
+      "note": "防御属性支撑，可口可乐上周财报后涨4%"
+    },
+    {
+      "name": "房地产",
+      "name_en": "Real Estate",
+      "etf": "XLRE",
+      "change_pct": "+0.4%",
+      "direction": "up",
+      "note": "国债收益率回落利好REITs，但高利率环境仍施压"
+    },
+    {
+      "name": "材料",
+      "name_en": "Materials",
+      "etf": "XLB",
+      "change_pct": "+0.1%",
+      "direction": "up",
+      "note": "工业金属价格企稳，但需求前景谨慎"
     },
     {
       "name": "公用事业",
       "name_en": "Utilities",
       "etf": "XLU",
-      "change_pct": "-0.15%",
-      "direction": "down",
-      "note": "高利率环境持续压制，尽管AI数据中心电力需求增长"
+      "change_pct": "+0.3%",
+      "direction": "up",
+      "note": "避险需求和AI数据中心电力需求双重支撑"
     }
   ],
   "central_banks": [
@@ -464,276 +443,292 @@
       "bank": "美联储",
       "bank_en": "Federal Reserve",
       "action": "维持利率5.25-5.50%不变",
-      "next_meeting": "2026-09-16",
+      "next_meeting": "2026-09-17",
       "rate": "5.25-5.50%",
-      "bias": "neutral",
-      "note": "6月会议维持利率，强调通胀相对2%目标仍偏高。7月就业数据疲软后，9月加息预期完全消退，市场预计全年维持不变"
+      "bias": "hawkish",
+      "note": "7月非农萎缩令市场押注9月加息概率降至44%，但本周三CPI将是关键，鲍威尔强调需看到更多通胀降温证据"
     },
     {
       "bank": "欧洲央行",
       "bank_en": "European Central Bank",
-      "action": "维持存款利率3.75%",
+      "action": "待定",
       "next_meeting": "2026-09-12",
-      "rate": "3.75%",
+      "rate": "待定",
       "bias": "neutral",
-      "note": "欧洲经济复苏缓慢，通胀逐步回落，央行保持观望姿态，等待更多经济数据"
+      "note": "欧元区二季度GDP和工业产出数据本周公布，ZEW经济景气指数周三发布"
     },
     {
       "bank": "中国人民银行",
       "bank_en": "People's Bank of China",
-      "action": "维持1年期LPR 3.45%",
-      "next_meeting": "2026-08-20",
-      "rate": "3.45%",
+      "action": "维持政策利率不变",
+      "next_meeting": "待定",
+      "rate": "LPR 1年期 3.45%",
       "bias": "dovish",
-      "note": "7月通胀降至0.5%为6个月最低，外贸数据强劲但内需仍需支持，可能采取进一步宽松措施"
+      "note": "7月CPI降至0.5%创6个月新低，为宽松政策留空间。机构预计政府将加大财政和货币双支持力度"
     },
     {
-      "bank": "日本央行",
+      "bank": "日本银行",
       "bank_en": "Bank of Japan",
-      "action": "维持政策利率0.10%",
-      "next_meeting": "2026-09-20",
-      "rate": "0.10%",
-      "bias": "hawkish",
-      "note": "通胀持续高于2%目标，日经225指数强劲上涨2.08%，央行可能逐步正常化货币政策"
+      "action": "待定",
+      "next_meeting": "2026-09-19",
+      "rate": "待定",
+      "bias": "neutral",
+      "note": "日经225周一暴涨2.08%至66970点，日元走弱推动出口股反弹，本周五公布初值GDP和工业产出"
+    },
+    {
+      "bank": "澳大利亚央行",
+      "bank_en": "Reserve Bank of Australia",
+      "action": "待定",
+      "next_meeting": "2026-08-12",
+      "rate": "待定",
+      "bias": "neutral",
+      "note": "本周二将公布利率决议，市场关注澳联储对通胀和经济增长的最新评估"
     }
   ],
   "calendar": [
     {
       "date": "周二 8/12",
       "time_et": "8:30 AM ET",
-      "event": "CPI消费者价格指数 (7月)",
+      "event": "7月CPI通胀数据",
       "impact": "high",
-      "previous": "3.9% YoY",
-      "forecast": "3.7% YoY (预期)"
+      "previous": "待定",
+      "forecast": "核心CPI月率预计持平或小幅上升"
+    },
+    {
+      "date": "周二 8/12",
+      "time_et": "待定",
+      "event": "澳大利亚央行利率决议",
+      "impact": "medium",
+      "previous": "待定",
+      "forecast": "市场预计维持不变"
     },
     {
       "date": "周三 8/13",
-      "time_et": "8:30 AM ET",
-      "event": "PPI生产者价格指数 (7月)",
+      "time_et": "盘后",
+      "event": "Tesla、Microsoft、Meta财报",
       "impact": "high",
-      "previous": "N/A",
-      "forecast": "关注生产端定价压力"
+      "previous": "TSLA Q2 EPS $0.33",
+      "forecast": "市场关注AI投资和盈利能力"
     },
     {
-      "date": "周三 8/13",
+      "date": "周四 8/14",
       "time_et": "8:30 AM ET",
-      "event": "零售销售 (7月)",
+      "event": "7月PPI生产者价格指数",
       "impact": "high",
-      "previous": "N/A",
-      "forecast": "衡量消费者需求和劳动力市场疲软影响"
+      "previous": "待定",
+      "forecast": "核心PPI月率预计温和上涨"
     },
     {
       "date": "周四 8/14",
       "time_et": "8:30 AM ET",
       "event": "初请失业金人数",
       "impact": "medium",
-      "previous": "N/A",
-      "forecast": "关注劳动力市场持续趋势"
+      "previous": "待定",
+      "forecast": "关注劳动市场进一步疲软迹象"
     },
     {
-      "date": "周五 9/4",
-      "time_et": "8:30 AM ET",
-      "event": "8月非农就业报告",
-      "impact": "high",
-      "previous": "-23,000",
-      "forecast": "市场关注7月负增长是否延续"
-    },
-    {
-      "date": "周二-周三 9/15-16",
-      "time_et": "2:00 PM ET",
-      "event": "FOMC会议及利率决议",
-      "impact": "high",
-      "previous": "5.25-5.50%",
-      "forecast": "预计维持不变，关注经济预测摘要(SEP)和点阵图"
-    },
-    {
-      "date": "周二 8/26",
+      "date": "周四 8/14",
       "time_et": "盘后",
-      "event": "英伟达(NVDA)二季度财报",
+      "event": "Apple财报",
       "impact": "high",
-      "previous": "N/A",
-      "forecast": "市场高度关注AI需求和全年指引"
+      "previous": "待定",
+      "forecast": "市值刚触及5万亿美元，服务收入成关键"
+    },
+    {
+      "date": "周五 8/15",
+      "time_et": "8:30 AM ET",
+      "event": "7月零售销售",
+      "impact": "high",
+      "previous": "6月 +0.2%",
+      "forecast": "预计月率温和增长，检验消费韧性"
+    },
+    {
+      "date": "周五 8/15",
+      "time_et": "9:15 AM ET",
+      "event": "7月工业产出与产能利用率",
+      "impact": "medium",
+      "previous": "待定",
+      "forecast": "制造业活动指标"
+    },
+    {
+      "date": "周五 8/15",
+      "time_et": "10:00 AM ET",
+      "event": "密歇根大学消费者信心指数初值",
+      "impact": "medium",
+      "previous": "待定",
+      "forecast": "通胀预期和消费者情绪"
     }
   ],
   "watchlist_analysis": [
     {
       "ticker": "NVDA",
       "name": "英伟达",
-      "price": "223.96",
-      "change_pct": "+2.27%",
+      "price": "875.40",
+      "change_pct": "+2.33%",
       "direction": "up",
-      "signal": "HOLD",
-      "score": 75,
-      "conclusion": "单周暴涨后技术面过热，等待财报前整理",
-      "key_driver": "单周市值增5620亿美元，但8月26日财报预期极高存在失望风险",
-      "target_up": "245",
-      "target_down": "205",
-      "risk_level": "high",
-      "action": "持有者建议8/26财报前减仓20-30%锁定利润，财报后若回调至210-215附近可考虑加仓。新进场者等待回调机会。",
+      "signal": "BUY",
+      "score": 82,
+      "conclusion": "AI芯片霸主地位稳固，8/26财报前逢低布局",
+      "key_driver": "AMD业绩超预期反衬NVDA护城河，Bank of America维持买入并预计超预期",
+      "target_up": "950",
+      "target_down": "820",
+      "risk_level": "medium",
+      "action": "8月26日财报前逢低布局，止损设820美元，目标950美元。AMD股价暴跌7%反而凸显NVDA在AI芯片的竞争优势和CUDA生态护城河。",
       "tags": [
-        "#AI",
-        "#财报风险",
-        "#高预期"
+        "#AI芯片",
+        "#财报前夕"
       ]
     },
     {
       "ticker": "AMD",
       "name": "超威半导体",
-      "price": "483.36",
-      "change_pct": "-1.21%",
+      "price": "483.50",
+      "change_pct": "-0.4%",
       "direction": "down",
       "signal": "HOLD",
-      "score": 68,
-      "conclusion": "估值偏高且面临英伟达竞争压力，谨慎持有",
-      "key_driver": "AI芯片市场竞争加剧，CEO回应马斯克评论显示市场份额争夺激烈",
-      "target_up": "520",
-      "target_down": "445",
+      "score": 65,
+      "conclusion": "业绩超预期但估值泡沫挤压，观望等企稳",
+      "key_driver": "数据中心营收暴涨107%至67亿美元，Helios系统获Meta和OpenAI订单，但股价仍暴跌7%",
+      "target_up": "550",
+      "target_down": "420",
       "risk_level": "high",
-      "action": "当前持仓建议止损位451元，若跌破450支撑位建议减仓。等待新产品发布或市场份额数据改善后再考虑加仓。",
+      "action": "当前持仓亏损0.4%建议继续持有观察，止损位451美元附近。若跌破420美元止损离场，反弹突破500美元可加仓。AI芯片长期需求强劲但短期估值压力大。",
       "tags": [
         "#AI芯片",
-        "#竞争",
-        "#估值偏高"
+        "#财报后回调"
       ]
     },
     {
       "ticker": "NOK",
       "name": "诺基亚",
-      "price": "4.50",
-      "change_pct": "+0.5%",
+      "price": "4.52",
+      "change_pct": "+0.2%",
       "direction": "up",
       "signal": "HOLD",
-      "score": 52,
-      "conclusion": "5G设备需求疲软，缺乏明显催化剂",
-      "key_driver": "电信设备行业整体需求放缓，缺少AI相关增长点",
+      "score": 48,
+      "conclusion": "5G设备需求放缓，缺乏短期催化剂",
+      "key_driver": "5G基建投资周期放缓，电信设备订单疲软，缺乏AI等新增长点",
       "target_up": "5.20",
-      "target_down": "4.10",
+      "target_down": "4.00",
       "risk_level": "medium",
-      "action": "建议观望为主，除非跌破4.10形成超跌反弹机会，否则资金更适合配置AI产业链标的。",
+      "action": "无明确催化剂，建议观望或轻仓持有。若跌破4美元考虑止损，上行空间有限除非出现重大合同或5G订单回暖。",
       "tags": [
         "#5G",
-        "#需求疲软",
-        "#观望"
+        "#电信设备"
       ]
     },
     {
       "ticker": "QQQ",
       "name": "纳斯达克100 ETF",
       "price": "700.50",
-      "change_pct": "+3.2%",
+      "change_pct": "+0.03%",
       "direction": "up",
-      "signal": "BUY",
-      "score": 72,
-      "conclusion": "科技股反弹强劲，但需警惕CPI数据风险",
-      "key_driver": "7月就业数据疲软降低加息预期，科技股受益于低利率预期",
+      "signal": "HOLD",
+      "score": 70,
+      "conclusion": "科技股财报季关键期，持有观察大盘方向",
+      "key_driver": "本周Tesla、Microsoft、Meta、Apple四大巨头财报密集公布，决定科技股走向",
       "target_up": "730",
       "target_down": "665",
       "risk_level": "medium",
-      "action": "可维持持仓至周三CPI数据，若CPI符合预期可加仓，若超预期则及时止盈。止损位651元附近。",
+      "action": "当前持仓盈亏平衡，建议持有等财报季明朗。若苹果和微软财报超预期可上看730美元，若集体低于预期止损位651附近。",
       "tags": [
-        "#科技",
-        "#降息预期",
-        "#ETF"
+        "#科技ETF",
+        "#财报季"
       ]
     },
     {
       "ticker": "SPY",
       "name": "标普500 ETF",
       "price": "774.50",
-      "change_pct": "+0.62%",
+      "change_pct": "+4.0%",
       "direction": "up",
-      "signal": "BUY",
-      "score": 70,
-      "conclusion": "创历史新高后短期整理，中期仍看好",
-      "key_driver": "7758点新高后技术面健康，企业盈利增长29% YoY支撑估值",
+      "signal": "HOLD",
+      "score": 72,
+      "conclusion": "守历史高位，本周CPI数据决定方向",
+      "key_driver": "上周创7758历史新高后回调，周三CPI若超预期将打压大盘，若符合预期可续创新高",
       "target_up": "800",
-      "target_down": "750",
+      "target_down": "740",
       "risk_level": "low",
-      "action": "适合长线配置，当前持仓维持至9月FOMC会议，止损位692元。若CPI数据利好可小幅加仓。",
+      "action": "当前持仓盈利4%，建议持有但上调止损位至740美元锁定利润。若本周CPI温和可持有冲800关口，若大幅超预期考虑减仓。",
       "tags": [
-        "#大盘",
-        "#新高",
-        "#稳健"
+        "#大盘ETF",
+        "#CPI关键周"
       ]
     },
     {
       "ticker": "BTC-USD",
       "name": "比特币",
-      "price": "64,858.76",
-      "change_pct": "-0.07%",
-      "direction": "down",
+      "price": "65300",
+      "change_pct": "+1.24%",
+      "direction": "up",
       "signal": "HOLD",
-      "score": 58,
-      "conclusion": "与股市相关性增强，缺乏独立上涨动力",
-      "key_driver": "数字黄金叙事失效，机构投资者减持，整体表现落后传统资产",
-      "target_up": "72,000",
-      "target_down": "58,000",
+      "score": 68,
+      "conclusion": "跟随风险资产反弹，但缺独立驱动",
+      "key_driver": "美元走弱和风险偏好回升推动，但缺乏加密行业独立利好催化剂",
+      "target_up": "70000",
+      "target_down": "60000",
       "risk_level": "high",
-      "action": "建议轻仓观望，等待明确催化剂。若跌破6万美元支撑位建议止损，上行需突破68000才有新动能。",
+      "action": "观望为主，比特币目前高度相关美股风险偏好。若突破68000美元可轻仓做多，止损设60000美元。关注美国监管动态。",
       "tags": [
         "#加密货币",
-        "#波动",
-        "#相关性"
+        "#风险偏好"
       ]
     },
     {
       "ticker": "510300.SS",
-      "name": "沪深300 ETF",
+      "name": "沪深300ETF",
       "price": "3.95",
       "change_pct": "+0.0%",
-      "direction": "neutral",
-      "signal": "HOLD",
-      "score": 60,
-      "conclusion": "外贸数据强但内需疲软，等政策催化",
-      "key_driver": "7月贸易顺差超预期，AI产业链受益，但内需不足需更多财政支持",
+      "direction": "flat",
+      "signal": "BUY",
+      "score": 75,
+      "conclusion": "中国通胀降温释放宽松空间，外资增配",
+      "key_driver": "7月CPI降至0.5%创6个月新低，政策宽松预期升温，外资机构建议超配中国资产",
       "target_up": "4.30",
-      "target_down": "3.60",
+      "target_down": "3.65",
       "risk_level": "medium",
-      "action": "当前持仓可持有至8月20日人民银行政策会议，止损位3.67元。若政策放松可加仓，否则考虑转向港股通标的。",
+      "action": "当前持仓盈亏平衡，建议持有等政策明朗。若政府推出更强财政货币刺激可加仓，止损位3.67美元。摩根士丹利建议杠铃策略配置。",
       "tags": [
         "#A股",
-        "#政策",
-        "#AI产业链"
+        "#政策宽松"
       ]
     },
     {
       "ticker": "GC=F",
       "name": "黄金期货",
-      "price": "4,391.10",
-      "change_pct": "-0.20%",
-      "direction": "down",
+      "price": "4329",
+      "change_pct": "+0.05%",
+      "direction": "up",
       "signal": "BUY",
-      "score": 73,
-      "conclusion": "回调提供买入机会，中期避险需求仍存",
-      "key_driver": "美元走弱和地缘风险支撑，但短期获利了结压力导致回调",
-      "target_up": "4,600",
-      "target_down": "4,200",
+      "score": 78,
+      "conclusion": "避险+通胀对冲双重属性，UBS看向5000",
+      "key_driver": "美元走弱和国债收益率回落支撑，摩根大通CEO认为可能升至1万美元/盎司",
+      "target_up": "4500",
+      "target_down": "4200",
       "risk_level": "low",
-      "action": "4300-4350区间是较好加仓位置，长线持有至年底。止损位4003元较安全，可作为组合避险配置。",
+      "action": "当前持仓盈利2%，建议继续持有。若本周CPI超预期短期可能回调至4300美元，但中长期看涨逻辑未变。止损位4003美元。",
       "tags": [
-        "#避险",
-        "#贵金属",
-        "#配置"
+        "#黄金",
+        "#避险"
       ]
     },
     {
       "ticker": "CL=F",
-      "name": "WTI原油",
-      "price": "79.54",
-      "change_pct": "+1.74%",
+      "name": "WTI原油期货",
+      "price": "78.83",
+      "change_pct": "+0.83%",
       "direction": "up",
       "signal": "HOLD",
-      "score": 55,
-      "conclusion": "霍尔木兹不确定性仍存，但上行空间有限",
-      "key_driver": "两周内从86美元回落，但海峡完全开放仍需时间，能源溢价未完全消除",
+      "score": 62,
+      "conclusion": "地缘风险溢价支撑，但需求前景存疑",
+      "key_driver": "霍尔木兹海峡僵局推动油价反弹，但全球经济放缓担忧限制上行空间",
       "target_up": "85",
       "target_down": "72",
       "risk_level": "high",
-      "action": "不建议追涨，若霍尔木兹协议正式签署可能快速回落至75美元以下。能源股持有者可考虑获利了结。",
+      "action": "短线交易为主，若海峡重启谈判取得进展油价可能暴跌，止损设72美元。上行目标85美元需要僵局进一步恶化。",
       "tags": [
         "#原油",
-        "#地缘",
-        "#波动"
+        "#地缘政治"
       ]
     },
     {
@@ -743,17 +738,16 @@
       "change_pct": "+2.83%",
       "direction": "up",
       "signal": "HOLD",
-      "score": 62,
-      "conclusion": "短期反弹但仍处下行趋势，观察298支撑位",
-      "key_driver": "近5日涨5.58%但月跌19.42%，技术面显示防御性，RSI 41.3偏弱",
-      "target_up": "396",
+      "score": 55,
+      "conclusion": "暴跌后技术反弹，但基本面压力未解",
+      "key_driver": "Q2财报EPS大幅低于预期38.5%，营业利润率暴跌至1.4%，自由现金流转负，月跌26.8%",
+      "target_up": "380",
       "target_down": "298",
       "risk_level": "high",
-      "action": "当前持仓止损位246元，若跌破298支撑建议减仓。新进场者等待明确趋势反转信号，不宜追涨。",
+      "action": "技术反弹但不建议追高。RSI 41.3显示仍在下行趋势，支撑位298美元，阻力位396美元。若跌破298美元将测试年度低点297美元，观望为主。",
       "tags": [
         "#电动车",
-        "#下行趋势",
-        "#技术弱势"
+        "#业绩承压"
       ]
     }
   ],
@@ -761,218 +755,207 @@
     "subject": "标普500 本周展望",
     "bull_case": [
       {
-        "point": "7月就业负增长降低加息风险，科技股受益",
+        "point": "7月非农萎缩令美联储9月加息概率降至44%，宽松预期利好",
         "confidence": "high"
       },
       {
-        "point": "企业盈利增长29% YoY，估值有基本面支撑",
-        "confidence": "high"
+        "point": "科技巨头财报季，Palantir涨29%开好头，苹果微软或超预期",
+        "confidence": "medium"
       },
       {
-        "point": "霍尔木兹谈判进展缓解能源供应担忧",
+        "point": "VIX仅14.9，市场情绪乐观，资金追逐风险资产",
         "confidence": "medium"
       }
     ],
     "bear_case": [
       {
-        "point": "周三CPI若超预期将重燃通胀担忧",
+        "point": "本周三CPI若超预期，美联储鹰派立场强化，收益率飙升打压股市",
         "confidence": "high"
       },
       {
-        "point": "AI股估值过高，英伟达财报预期极端需警惕",
+        "point": "霍尔木兹僵局推高油价，通胀风险重燃，企业成本承压",
         "confidence": "high"
       },
       {
-        "point": "劳动力市场疲软可能预示经济放缓",
+        "point": "AMD超预期仍暴跌7%，反映AI芯片估值泡沫开始破裂",
         "confidence": "medium"
       }
     ],
-    "verdict": "标普500短期温和偏多，但周三CPI数据是关键分水岭。若CPI符合或低于预期，指数有望挑战7800-7850区间；若超预期则可能回调至7650-7700支撑。建议保持现有多头仓位但控制仓位规模，等待CPI数据后再决定是否加仓。",
-    "verdict_lean": "bullish"
+    "verdict": "本周走势取决于周三CPI数据。若核心CPI月率持平或下降，标普500可突破7800点；若大幅超预期（月率≥0.3%），将回调至7600-7650区间。科技财报是次要变量，除非集体爆雷否则影响有限。倾向谨慎看多，但需警惕CPI超预期风险。",
+    "verdict_lean": "neutral"
   },
   "market_replay": {
     "us": {
-      "date": "2026年8月7日",
-      "advance": "3240",
-      "decline": "1820",
-      "new_high": "152",
-      "new_low": "38",
+      "date": "2026年8月10日",
+      "advance": "未披露",
+      "decline": "未披露",
+      "new_high": "9",
+      "new_low": "1",
       "top_sectors": [
-        "科技",
-        "通信服务",
-        "非必需消费品"
+        "能源 +1.8%",
+        "必需消费品 +0.2%"
       ],
-      "hot_stock": "SpaceX (+15.8%)",
-      "volume_note": "成交量温和放大，市场参与度回升",
-      "summary": "三大指数齐涨创新高，就业数据疲软推升降息预期"
+      "hot_stock": "Salesforce +2.47%领涨道指",
+      "volume_note": "成交量169.4亿股，低于20日均量175.6亿，观望情绪浓厚",
+      "summary": "美股微跌守历史高位，能源领涨科技拖累，等待CPI指引"
     },
     "cn": {
-      "date": "2026年8月7日",
-      "sh_index": "3940.00",
-      "sh_change": "+1.02%",
-      "advance": "2800",
-      "decline": "1500",
-      "net_inflow": "+52亿",
-      "hot_sector": "AI芯片",
-      "hot_stock": "寒武纪 (+2.72%)",
-      "summary": "沪深两市齐涨创三周新高，贸易数据强劲提振信心"
+      "date": "2026年8月10日",
+      "sh_index": "3966.59",
+      "sh_change": "+0.67%",
+      "advance": "约2800",
+      "decline": "约1500",
+      "net_inflow": "未披露",
+      "hot_sector": "科技/互联网",
+      "hot_stock": "AI概念股MiniMax涨6.5%，加入港股通",
+      "summary": "A股港股齐涨，CPI降温提振政策宽松预期，外资增配意愿升温"
     }
   },
   "market_extremes": {
     "top_gainers": [
       {
-        "ticker": "SNDK",
-        "name": "Sandisk",
-        "gain_pct": "+471%",
-        "period": "2026年至今",
-        "current_price": "N/A",
-        "reason": "AI服务器高带宽内存需求爆发，供应紧缺推动内存芯片价格暴涨最高355%，预计紧缺将持续至2028年。市场规模从2025年350亿美元增至2028年1000亿美元，年复合增长41%。",
-        "tags": [
-          "#内存芯片",
-          "#AI",
-          "#供应紧缺"
-        ]
-      },
-      {
-        "ticker": "MU",
-        "name": "Micron",
-        "gain_pct": "+197%",
-        "period": "2026年至今",
-        "current_price": "N/A",
-        "reason": "与Sandisk同为内存芯片龙头，受益于AI数据中心需求。7月虽回调26.5%但年初至今仍涨197%，前向市盈率从年初7.9降至5.7，估值吸引力增强。",
-        "tags": [
-          "#内存",
-          "#AI",
-          "#估值修复"
-        ]
-      },
-      {
-        "ticker": "MGRT",
-        "name": "Mega Fortune Company",
-        "gain_pct": "+1,217%",
-        "period": "2026年至今",
-        "current_price": "N/A",
-        "reason": "2026年至今涨幅最大标的，科技板块细分领域领涨，具体业务模式需进一步研究，但涨幅极端需警惕回调风险。",
-        "tags": [
-          "#科技",
-          "#极端涨幅",
-          "#高风险"
-        ]
-      },
-      {
         "ticker": "PLTR",
         "name": "Palantir",
         "gain_pct": "+26.9%",
         "period": "8月至今",
-        "current_price": "N/A",
-        "reason": "二季度业绩超预期，上调2026全年指引，AI数据分析平台需求强劲。8月至今领涨大盘股，周五单日飙升10.3%。",
+        "current_price": "未披露",
+        "reason": "超预期财报后周二单日暴涨29%，AI软件需求强劲，政府和企业订单加速",
         "tags": [
-          "#AI",
-          "#大数据",
-          "#业绩驱动"
+          "#AI软件",
+          "#财报超预期"
         ]
       },
       {
-        "ticker": "SPCX",
-        "name": "SpaceX",
-        "gain_pct": "+15.8%",
-        "period": "单日(8月7日)",
-        "current_price": "N/A",
-        "reason": "Argus Research升至买入评级，看好AI基础设施投资快速回报。但周五锁定期到期允许内部人士出售，股价回吐部分涨幅。",
+        "ticker": "IBTA",
+        "name": "Ibotta",
+        "gain_pct": "+45.7%",
+        "period": "8月至今",
+        "current_price": "未披露",
+        "reason": "数字优惠券平台受益于消费者节约需求，用户增长超预期",
         "tags": [
-          "#AI基础设施",
-          "#评级上调",
-          "#锁定期"
+          "#消费科技",
+          "#用户增长"
+        ]
+      },
+      {
+        "ticker": "MOVE",
+        "name": "Corvex",
+        "gain_pct": "+40.6%",
+        "period": "8月至今",
+        "current_price": "未披露",
+        "reason": "并购传闻或业务重组催化剂推动股价飙升",
+        "tags": [
+          "#并购",
+          "#小盘股"
+        ]
+      },
+      {
+        "ticker": "BLZE",
+        "name": "Backblaze",
+        "gain_pct": "+37.4%",
+        "period": "8月至今",
+        "current_price": "未披露",
+        "reason": "云存储需求因AI数据存储爆发式增长，公司获大单",
+        "tags": [
+          "#云存储",
+          "#AI基建"
+        ]
+      },
+      {
+        "ticker": "FSLR",
+        "name": "First Solar",
+        "gain_pct": "约+15%",
+        "period": "近1周",
+        "current_price": "未披露",
+        "reason": "特朗普对华多晶硅加征关税，美国本土太阳能制造商受益，上周五飙升5%",
+        "tags": [
+          "#太阳能",
+          "#关税受益"
         ]
       }
     ],
     "top_losers_with_rebound": [
       {
-        "ticker": "SNDK",
-        "name": "Sandisk",
-        "loss_pct": "-46.57%",
-        "period": "7月单月",
-        "current_price": "估值溢价21%",
-        "drop_reason": "AI资本支出回报担忧引发半导体板块全面回调，PHLX半导体指数7月暴跌18.2%",
-        "rebound_case": "年初至今仍涨2,730%，前向市盈率从13.6降至6.4因盈利预期大幅上调，估值修复空间大。高带宽内存需求紧缺至2028年，行业基本面未变。",
-        "rebound_catalyst": "8月26日英伟达财报若指引强劲将重燃AI需求信心，或9月FOMC确认不加息",
-        "risk": "内存芯片周期性风险，三年前Micron曾单季营收暴跌49%",
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "loss_pct": "-30.8%",
+        "period": "年初至今",
+        "current_price": "328.58",
+        "drop_reason": "Q2财报EPS大幅低于预期38.5%，营业利润率暴跌至1.4%，自由现金流转负-10.9亿美元，AI投资拖累短期盈利",
+        "rebound_case": "24/7 Wall St模型给出12个月目标价386美元，隐含24%上涨空间。RSI 41.3显示超卖，技术面有反弹基础。robotaxi和Optimus Gen 4人形机器人是长期催化剂。",
+        "rebound_catalyst": "若Q3交付数据超预期或robotaxi监管取得突破，股价可能快速反弹至380-400美元区间",
+        "risk": "竞争加剧迫使特斯拉降价侵蚀利润率，中国业务剥离传闻增加不确定性，跌破298美元支撑位将测试年度低点297美元",
         "tags": [
-          "#超跌",
-          "#周期底部",
-          "#AI需求"
+          "#超跌反弹",
+          "#电动车"
         ]
       },
       {
-        "ticker": "KLA",
-        "name": "KLA Corporation",
-        "loss_pct": "-39.41%",
-        "period": "7月单月",
-        "current_price": "接近$175公允价值",
-        "drop_reason": "半导体设备股受AI投资回报质疑拖累，年涨109%后技术性回调",
-        "rebound_case": "晨星3星评级，估值接近公允价值175美元，回调已充分。半导体设备长期受益于AI芯片产能扩张，行业地位稳固。",
-        "rebound_catalyst": "台积电、三星等晶圆厂资本支出计划兑现，或中国AI芯片自主化加速",
-        "risk": "全球半导体资本支出周期性波动，地缘政治影响供应链",
+        "ticker": "AMD",
+        "name": "超威半导体",
+        "loss_pct": "约-7%",
+        "period": "财报后单日",
+        "current_price": "483.50",
+        "drop_reason": "尽管Q2业绩全面超预期且数据中心营收暴涨107%，市场认为AI芯片高估值难以持续，获利盘涌出",
+        "rebound_case": "Helios机架AI系统本季开始向Meta和OpenAI出货，直接对标英伟达完整系统。公司预计下半年数据中心营收加速增长80%，CPU在AI agent应用中需求激增。",
+        "rebound_catalyst": "若下季度Helios出货量大幅超预期或从英伟达手中抢到更多市场份额，股价可反弹至550美元以上",
+        "risk": "与NVDA正面竞争胜算有限，CUDA生态护城河难以撼动。若跌破420美元将触发技术性卖盘，止损位451美元附近",
         "tags": [
-          "#半导体设备",
-          "#估值合理",
-          "#周期"
+          "#AI芯片",
+          "#超跌"
         ]
       },
       {
-        "ticker": "MRVL",
-        "name": "Marvell Technology",
-        "loss_pct": "-37.02%",
-        "period": "7月单月",
-        "current_price": "年涨133.87%",
-        "drop_reason": "AI芯片股集体回调，投资者担忧估值过高和竞争加剧",
-        "rebound_case": "数据中心连接和存储芯片需求稳健，5G基础设施建设提供第二增长曲线。回调后估值压力缓解，年涨幅仍超130%显示基本面强劲。",
-        "rebound_catalyst": "数据中心资本支出数据改善，或与云计算巨头签署大单",
-        "risk": "与Broadcom、英伟达竞争加剧，市场份额可能承压",
+        "ticker": "XGN",
+        "name": "Exagen",
+        "loss_pct": "待查",
+        "period": "待查",
+        "current_price": "未披露",
+        "drop_reason": "生物医药小盘股，可能因临床试验或监管审批延迟而大跌",
+        "rebound_case": "8月至今已反弹32.3%，若获FDA批准或临床数据积极，小盘生物医药股弹性大",
+        "rebound_catalyst": "监管批准、临床试验里程碑或并购传闻",
+        "risk": "小盘生物医药波动极大，流动性差，不适合风险厌恶投资者",
         "tags": [
-          "#数据中心",
-          "#5G",
-          "#竞争"
+          "#生物医药",
+          "#小盘股"
         ]
       },
       {
-        "ticker": "GLW",
-        "name": "Corning",
-        "loss_pct": "-45.88%",
-        "period": "7月单月",
-        "current_price": "较公允价值折价11%",
-        "drop_reason": "光纤和显示玻璃需求疲软，受半导体板块整体回调拖累",
-        "rebound_case": "晨星3星评级，交易价较155美元公允价值折价11%。AI数据中心需要大量光纤连接，5G基站建设提供增量需求。年涨121%后回调属技术性调整。",
-        "rebound_catalyst": "光纤需求数据改善，或大型数据中心项目订单公布",
-        "risk": "显示面板行业产能过剩，光纤竞争激烈价格承压",
+        "ticker": "RIVN",
+        "name": "Rivian",
+        "loss_pct": "待查",
+        "period": "年初至今",
+        "current_price": "4.74",
+        "drop_reason": "电动车需求放缓，产能爬坡不及预期，持续烧钱拖累股价",
+        "rebound_case": "若Q3交付数据大幅改善或宣布新车型/大订单，估值修复空间大。亚马逊是大股东提供一定支撑。",
+        "rebound_catalyst": "交付量超预期、新车型发布、或传统车企收购传闻",
+        "risk": "持续亏损，现金流压力大，若融资不利股价可能进一步下跌",
         "tags": [
-          "#光纤",
-          "#超跌",
-          "#估值折价"
+          "#电动车",
+          "#高风险高回报"
         ]
       },
       {
-        "ticker": "TTD",
-        "name": "The Trade Desk",
-        "loss_pct": "-50%+",
-        "period": "6个月",
-        "current_price": "较高点腰斩",
-        "drop_reason": "广告科技股面临AI代理颠覆商业模式担忧，竞争从各个角度加剧，增长放缓担忧持续",
-        "rebound_case": "程序化广告市场长期增长趋势未变，公司在CTV(联网电视)广告领域有护城河。估值从高位回落后安全边际增加，年跌80%+已充分反映悲观预期。",
-        "rebound_catalyst": "季度业绩超预期，或CTV广告收入增速重新加速",
-        "risk": "AI代理可能长期颠覆广告中介模式，谷歌等巨头竞争加剧",
+        "ticker": "LCID",
+        "name": "Lucid",
+        "loss_pct": "待查",
+        "period": "年初至今",
+        "current_price": "未披露",
+        "drop_reason": "与Rivian类似，电动车新势力面临需求放缓和资金压力",
+        "rebound_case": "沙特主权基金支持，若推出更亲民价位车型打开市场，股价有反弹空间",
+        "rebound_catalyst": "新车型发布、产能利用率提升、或中东市场订单放量",
+        "risk": "烧钱速度快，市场竞争激烈，技术和品牌不及特斯拉",
         "tags": [
-          "#广告科技",
-          "#深度回调",
-          "#转型风险"
+          "#电动车",
+          "#高风险"
         ]
       }
     ]
   },
   "macro_regime": {
     "status": "RISK-ON",
-    "vix_level": "15.41",
-    "description": "VIX 15.4 低于18，市场风险偏好，可正常开新BUY仓位",
+    "vix_level": "14.90",
+    "description": "VIX 14.9 低于18，市场风险偏好，可正常开新BUY仓位",
     "allowed_actions": [
       "BUY",
       "HOLD",
@@ -983,7 +966,7 @@
   "pre_catalyst_alerts": [
     {
       "ticker": "MACRO",
-      "event": "CPI消费者价格指数 (7月)",
+      "event": "7月CPI通胀数据",
       "event_date": "2026-08-12",
       "days_until": 2,
       "alert_type": "cpi",
@@ -992,18 +975,27 @@
     },
     {
       "ticker": "MACRO",
-      "event": "PPI生产者价格指数 (7月)",
+      "event": "澳大利亚央行利率决议",
+      "event_date": "2026-08-12",
+      "days_until": 2,
+      "alert_type": "fomc",
+      "pre_position_strategy": "利率决议临近，风险资产承压，建议关注防御性配置",
+      "active": true
+    },
+    {
+      "ticker": "TSLA",
+      "event": "Tesla、Microsoft、Meta财报",
       "event_date": "2026-08-13",
       "days_until": 3,
-      "alert_type": "economic",
-      "pre_position_strategy": "重要事件附近，建议谨慎操作新仓位",
+      "alert_type": "earnings",
+      "pre_position_strategy": "财报前期权溢价高，建议财报后看方向确认",
       "active": true
     },
     {
       "ticker": "MACRO",
-      "event": "零售销售 (7月)",
-      "event_date": "2026-08-13",
-      "days_until": 3,
+      "event": "7月PPI生产者价格指数",
+      "event_date": "2026-08-14",
+      "days_until": 4,
       "alert_type": "economic",
       "pre_position_strategy": "重要事件附近，建议谨慎操作新仓位",
       "active": true
@@ -1018,45 +1010,54 @@
       "active": true
     },
     {
-      "ticker": "NVDA",
-      "event": "英伟达(NVDA)二季度财报",
-      "event_date": "2026-08-26",
-      "days_until": 16,
-      "alert_type": "earnings",
-      "pre_position_strategy": "财报前期权溢价高，建议财报后看方向确认",
-      "active": false
-    },
-    {
       "ticker": "MACRO",
-      "event": "8月非农就业报告",
-      "event_date": "2026-09-04",
-      "days_until": 25,
+      "event": "Apple财报",
+      "event_date": "2026-08-14",
+      "days_until": 4,
       "alert_type": "economic",
       "pre_position_strategy": "重要事件附近，建议谨慎操作新仓位",
-      "active": false
+      "active": true
     },
     {
       "ticker": "MACRO",
-      "event": "FOMC会议及利率决议",
-      "event_date": "2026-09-15",
-      "days_until": 36,
-      "alert_type": "fomc",
-      "pre_position_strategy": "提前了解美联储鹰派/鸽派倍号，为利率决议做方向备备",
-      "active": false
+      "event": "7月零售销售",
+      "event_date": "2026-08-15",
+      "days_until": 5,
+      "alert_type": "economic",
+      "pre_position_strategy": "重要事件附近，建议谨慎操作新仓位",
+      "active": true
+    },
+    {
+      "ticker": "MACRO",
+      "event": "7月工业产出与产能利用率",
+      "event_date": "2026-08-15",
+      "days_until": 5,
+      "alert_type": "economic",
+      "pre_position_strategy": "重要事件附近，建议谨慎操作新仓位",
+      "active": true
+    },
+    {
+      "ticker": "MACRO",
+      "event": "密歇根大学消费者信心指数初值",
+      "event_date": "2026-08-15",
+      "days_until": 5,
+      "alert_type": "economic",
+      "pre_position_strategy": "重要事件附近，建议谨慎操作新仓位",
+      "active": true
     }
   ],
   "sector_rotation_signal": {
     "strong_sectors": [
-      "科技",
-      "通信服务",
-      "非必需消费品"
+      "能源",
+      "房地产",
+      "通信服务"
     ],
     "weak_sectors": [
-      "能源",
-      "必需消费品",
-      "公用事业"
+      "工业",
+      "信息技术",
+      "非必需消费品"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日科技+1.82%领涨，建议关注XLK及Information Technology个股"
+    "note": "今日能源+1.8%领涨，建议关注XLE及Energy个股"
   }
 }
