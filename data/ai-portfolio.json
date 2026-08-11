@@ -40,9 +40,21 @@
           "buy_date": "2026-08-05"
         },
         {
+          "ticker": "XLE",
+          "shares": 15,
+          "avg_cost": 60.93,
+          "buy_date": "2026-08-11"
+        },
+        {
+          "ticker": "AVGO",
+          "shares": 5,
+          "avg_cost": 416.08,
+          "buy_date": "2026-08-11"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3640.78
+          "avg_cost": 646.43
         }
       ],
       "history": [
@@ -2362,6 +2374,61 @@
             }
           ],
           "note": "减持金融ETF，释放资金准备加仓科技龙头追赶基准差距。"
+        },
+        {
+          "date": "2026-08-11",
+          "portfolio_value": 9011.68,
+          "baseline_value": 10425.37,
+          "cash": 646.43,
+          "positions": {
+            "BABA": {
+              "shares": 12,
+              "price": 127.85,
+              "value": 1534.2
+            },
+            "MSFT": {
+              "shares": 2,
+              "price": 503.81,
+              "value": 1007.62
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 272.27,
+              "value": 1089.08
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 217.5,
+              "value": 1740.0
+            },
+            "XLE": {
+              "shares": 15,
+              "price": 60.93,
+              "value": 913.95
+            },
+            "AVGO": {
+              "shares": 5,
+              "price": 416.08,
+              "value": 2080.4
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLE",
+              "shares": 15,
+              "price": 60.93,
+              "reason": "能源板块受油价突破82美元利好，RSI57.4处于健康区间，动量+6.99%强势，美伊僵局持续利好"
+            },
+            {
+              "action": "BUY",
+              "ticker": "AVGO",
+              "shares": 5,
+              "price": 416.08,
+              "reason": "半导体龙头强势信号，RSI59.8适中，动量+6.93%稳健上涨，分散NVDA单一敞口"
+            }
+          ],
+          "note": "加仓能源和半导体强势标的，降低现金比例追赶基准，利用油价上涨和科技反弹机会。"
         }
       ]
     },
@@ -4157,6 +4224,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-11",
+          "portfolio_value": 8040.41,
+          "baseline_value": 10425.37,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 599.12,
+              "value": 5991.2
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1881.86,
+              "value": 1881.86
+            },
+            "JD": {
+              "shares": 1,
+              "price": 31.92,
+              "value": 31.92
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -4167,12 +4259,6 @@
           "shares": 7,
           "avg_cost": 52.62,
           "buy_date": "2026-06-11"
-        },
-        {
-          "ticker": "AAPL",
-          "shares": 4,
-          "avg_cost": 314.86,
-          "buy_date": "2026-07-14"
         },
         {
           "ticker": "NVDA",
@@ -4225,7 +4311,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 563.0
+          "avg_cost": 1782.64
         }
       ],
       "history": [
@@ -6687,6 +6773,69 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['SPY']，剔除弱势"
+        },
+        {
+          "date": "2026-08-11",
+          "portfolio_value": 9745.62,
+          "baseline_value": 10425.37,
+          "cash": 1782.64,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.8,
+              "value": 404.6
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 217.5,
+              "value": 1305.0
+            },
+            "JD": {
+              "shares": 8,
+              "price": 31.92,
+              "value": 255.36
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 60.93,
+              "value": 121.86
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 127.85,
+              "value": 2301.3
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 503.81,
+              "value": 1511.43
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 272.27,
+              "value": 1089.08
+            },
+            "AVGO": {
+              "shares": 1,
+              "price": 416.08,
+              "value": 416.08
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 186.09,
+              "value": 558.27
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AAPL",
+              "shares": 4,
+              "price": 304.91,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
