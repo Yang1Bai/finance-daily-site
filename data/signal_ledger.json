@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T22:49:56.377412Z",
+  "generated_at": "2026-08-12T12:56:11.668583Z",
   "performance": {
     "total_signals": 69,
     "wins": 18,
@@ -8,8 +8,8 @@
     "open": 4,
     "win_rate": 0.2769,
     "avg_gain_pct": 472.92,
-    "avg_loss_pct": -26.48,
-    "expected_value_pct": 111.8,
+    "avg_loss_pct": -26.53,
+    "expected_value_pct": 111.77,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -46,8 +46,8 @@
       "stop_loss": 651.465,
       "take_profit": 805.575,
       "days_held": 8,
-      "current_price": 700.5,
-      "current_pnl_pct": 0.0,
+      "current_price": 719.59,
+      "current_pnl_pct": 2.73,
       "price_source": "ai_fallback"
     },
     {
@@ -58,8 +58,8 @@
       "stop_loss": 4002.999,
       "take_profit": 4949.945,
       "days_held": 6,
-      "current_price": 4445.3,
-      "current_pnl_pct": 3.28,
+      "current_price": 4422.0,
+      "current_pnl_pct": 2.73,
       "price_source": "ai_fallback"
     },
     {
@@ -83,7 +83,7 @@
       "price_issued": 875.4,
       "date_closed": "2026-08-11",
       "close_reason": "stop_loss",
-      "pnl_pct": -74.42,
+      "pnl_pct": -75.15,
       "price_source": "ai_fallback"
     },
     {
@@ -93,7 +93,7 @@
       "price_issued": 485.39,
       "date_closed": "2026-08-11",
       "close_reason": "stop_loss",
-      "pnl_pct": -64.48,
+      "pnl_pct": -65.97,
       "price_source": "ai_fallback"
     },
     {
@@ -730,16 +730,16 @@
   "sector_rotation": {
     "date": "2026-08-11",
     "strong_sectors": [
-      "材料",
-      "非必需消费",
-      "科技"
+      "能源",
+      "公用事业",
+      "工业"
     ],
     "weak_sectors": [
-      "房地产",
-      "金融",
-      "能源"
+      "可选消费",
+      "科技",
+      "通信服务"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日材料+1.52%领涨，建议关注XLB及Materials个股"
+    "note": "今日能源+1.8%领涨，建议关注XLE及Energy个股"
   }
 }
