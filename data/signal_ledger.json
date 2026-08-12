@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-12T12:56:11.668583Z",
+  "generated_at": "2026-08-12T22:48:31.294475Z",
   "performance": {
     "total_signals": 69,
     "wins": 18,
     "losses": 30,
-    "expired": 17,
-    "open": 4,
-    "win_rate": 0.2769,
-    "avg_gain_pct": 472.92,
+    "expired": 18,
+    "open": 3,
+    "win_rate": 0.2727,
+    "avg_gain_pct": 454.87,
     "avg_loss_pct": -26.53,
-    "expected_value_pct": 111.77,
+    "expected_value_pct": 104.75,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -27,27 +27,15 @@
   },
   "open_positions": [
     {
-      "ticker": "SPY",
-      "signal": "BUY",
-      "date_issued": "2026-08-02",
-      "price_issued": 744.5,
-      "stop_loss": 692.385,
-      "take_profit": 856.175,
-      "days_held": 9,
-      "current_price": 744.5,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
       "ticker": "QQQ",
       "signal": "BUY",
       "date_issued": "2026-08-03",
       "price_issued": 700.5,
       "stop_loss": 651.465,
       "take_profit": 805.575,
-      "days_held": 8,
-      "current_price": 719.59,
-      "current_pnl_pct": 2.73,
+      "days_held": 9,
+      "current_price": 718.45,
+      "current_pnl_pct": 2.56,
       "price_source": "ai_fallback"
     },
     {
@@ -57,9 +45,9 @@
       "price_issued": 4304.3,
       "stop_loss": 4002.999,
       "take_profit": 4949.945,
-      "days_held": 6,
-      "current_price": 4422.0,
-      "current_pnl_pct": 2.73,
+      "days_held": 7,
+      "current_price": 4381.96,
+      "current_pnl_pct": 1.8,
       "price_source": "ai_fallback"
     },
     {
@@ -69,13 +57,23 @@
       "price_issued": 3.95,
       "stop_loss": 3.6735,
       "take_profit": 4.5425,
-      "days_held": 4,
+      "days_held": 5,
       "current_price": 3.95,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-08-02",
+      "price_issued": 744.5,
+      "date_closed": "2026-08-12",
+      "close_reason": "expired",
+      "pnl_pct": 3.5,
+      "price_source": "ai_fallback"
+    },
     {
       "ticker": "NVDA",
       "signal": "BUY",
@@ -728,18 +726,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-11",
+    "date": "2026-08-12",
     "strong_sectors": [
-      "能源",
-      "公用事业",
-      "工业"
+      "材料",
+      "非必需消费品",
+      "科技"
     ],
     "weak_sectors": [
-      "可选消费",
-      "科技",
-      "通信服务"
+      "金融",
+      "通信服务",
+      "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日能源+1.8%领涨，建议关注XLE及Energy个股"
+    "note": "今日材料+1.52%领涨，建议关注XLB及Materials个股"
   }
 }
