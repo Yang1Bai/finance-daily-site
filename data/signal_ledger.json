@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-12T22:48:31.294475Z",
+  "generated_at": "2026-08-13T12:57:07.980612Z",
   "performance": {
-    "total_signals": 69,
+    "total_signals": 70,
     "wins": 18,
     "losses": 30,
     "expired": 18,
-    "open": 3,
+    "open": 4,
     "win_rate": 0.2727,
-    "avg_gain_pct": 454.87,
+    "avg_gain_pct": 454.88,
     "avg_loss_pct": -26.53,
     "expected_value_pct": 104.75,
     "vs_spy_30d": 0.0,
@@ -34,8 +34,8 @@
       "stop_loss": 651.465,
       "take_profit": 805.575,
       "days_held": 9,
-      "current_price": 718.45,
-      "current_pnl_pct": 2.56,
+      "current_price": 718.5,
+      "current_pnl_pct": 2.57,
       "price_source": "ai_fallback"
     },
     {
@@ -46,8 +46,8 @@
       "stop_loss": 4002.999,
       "take_profit": 4949.945,
       "days_held": 7,
-      "current_price": 4381.96,
-      "current_pnl_pct": 1.8,
+      "current_price": 4470.4,
+      "current_pnl_pct": 3.86,
       "price_source": "ai_fallback"
     },
     {
@@ -61,6 +61,18 @@
       "current_price": 3.95,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-08-12",
+      "price_issued": 773.0,
+      "stop_loss": 718.89,
+      "take_profit": 888.95,
+      "days_held": 0,
+      "current_price": 773.0,
+      "current_pnl_pct": 0.0,
+      "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
@@ -71,7 +83,7 @@
       "price_issued": 744.5,
       "date_closed": "2026-08-12",
       "close_reason": "expired",
-      "pnl_pct": 3.5,
+      "pnl_pct": 3.83,
       "price_source": "ai_fallback"
     },
     {
@@ -729,13 +741,13 @@
     "date": "2026-08-12",
     "strong_sectors": [
       "材料",
-      "非必需消费品",
-      "科技"
+      "信息科技",
+      "公用事业"
     ],
     "weak_sectors": [
-      "金融",
-      "通信服务",
-      "能源"
+      "房地产",
+      "能源",
+      "通讯服务"
     ],
     "rule": "只在强势板块开新多仓",
     "note": "今日材料+1.52%领涨，建议关注XLB及Materials个股"
