@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-13T22:49:24.506789Z",
+  "generated_at": "2026-08-14T12:53:09.905784Z",
   "performance": {
     "total_signals": 71,
     "wins": 18,
-    "losses": 30,
-    "expired": 19,
+    "losses": 31,
+    "expired": 18,
     "open": 4,
     "win_rate": 0.2687,
     "avg_gain_pct": 454.88,
-    "avg_loss_pct": -25.89,
-    "expected_value_pct": 103.29,
+    "avg_loss_pct": -26.63,
+    "expected_value_pct": 102.75,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -34,8 +34,8 @@
       "stop_loss": 4002.999,
       "take_profit": 4949.945,
       "days_held": 8,
-      "current_price": 4304.3,
-      "current_pnl_pct": 0.0,
+      "current_price": 4349.85,
+      "current_pnl_pct": 1.06,
       "price_source": "ai_fallback"
     },
     {
@@ -46,8 +46,8 @@
       "stop_loss": 3.6735,
       "take_profit": 4.5425,
       "days_held": 6,
-      "current_price": 3.95,
-      "current_pnl_pct": 0.0,
+      "current_price": 3.92,
+      "current_pnl_pct": -0.76,
       "price_source": "ai_fallback"
     },
     {
@@ -58,19 +58,19 @@
       "stop_loss": 718.89,
       "take_profit": 888.95,
       "days_held": 1,
-      "current_price": 773.0,
-      "current_pnl_pct": 0.0,
+      "current_price": 779.9,
+      "current_pnl_pct": 0.89,
       "price_source": "ai_fallback"
     },
     {
-      "ticker": "NVDA",
+      "ticker": "QQQ",
       "signal": "BUY",
       "date_issued": "2026-08-13",
-      "price_issued": 223.22,
-      "stop_loss": 207.5946,
-      "take_profit": 256.703,
+      "price_issued": 488.07,
+      "stop_loss": 453.9051,
+      "take_profit": 561.2805,
       "days_held": 0,
-      "current_price": 223.22,
+      "current_price": 488.07,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
@@ -82,8 +82,8 @@
       "date_issued": "2026-08-03",
       "price_issued": 700.5,
       "date_closed": "2026-08-13",
-      "close_reason": "expired",
-      "pnl_pct": 0.0,
+      "close_reason": "stop_loss",
+      "pnl_pct": -30.33,
       "price_source": "ai_fallback"
     },
     {
@@ -750,16 +750,16 @@
   "sector_rotation": {
     "date": "2026-08-13",
     "strong_sectors": [
-      "科技",
-      "材料",
-      "医疗保健"
+      "公用事业",
+      "房地产",
+      "通信服务"
     ],
     "weak_sectors": [
-      "房地产",
-      "通讯服务",
-      "非必需消费品"
+      "能源",
+      "工业",
+      "基础材料"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日科技+1.49%领涨，建议关注XLK及Technology个股"
+    "note": "今日公用事业+1.57%领涨，建议关注XLU及Utilities个股"
   }
 }
