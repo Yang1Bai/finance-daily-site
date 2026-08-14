@@ -2530,6 +2530,46 @@
             }
           ],
           "note": "卖出BABA释放资金，等待下一步加仓强势科技股追赶SPY基准。"
+        },
+        {
+          "date": "2026-08-14",
+          "portfolio_value": 8810.38,
+          "baseline_value": 10503.57,
+          "cash": 1638.2,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 495.4,
+              "value": 990.8
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 262.65,
+              "value": 1050.6
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 225.16,
+              "value": 1801.28
+            },
+            "XLE": {
+              "shares": 15,
+              "price": 61.91,
+              "value": 928.65
+            },
+            "AVGO": {
+              "shares": 5,
+              "price": 392.99,
+              "value": 1964.95
+            },
+            "JD": {
+              "shares": 15,
+              "price": 29.06,
+              "value": 435.9
+            }
+          },
+          "trades": [],
+          "note": "落后基准16%需追赶，加仓强势半导体TSM增加进攻性，保持满仓策略。"
         }
       ]
     },
@@ -4396,6 +4436,31 @@
               "shares": 1,
               "price": 29.3,
               "value": 29.3
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-14",
+          "portfolio_value": 7941.34,
+          "baseline_value": 10503.57,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 589.85,
+              "value": 5898.5
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1878.35,
+              "value": 1878.35
+            },
+            "JD": {
+              "shares": 1,
+              "price": 29.06,
+              "value": 29.06
             }
           },
           "trades": [],
@@ -7134,6 +7199,71 @@
             }
           ],
           "note": "规则策略：持有强势['TSM', 'QQQ', 'SPY']，剔除弱势"
+        },
+        {
+          "date": "2026-08-14",
+          "portfolio_value": 9620.28,
+          "baseline_value": 10503.57,
+          "cash": 620.08,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 58.16,
+              "value": 407.12
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 225.16,
+              "value": 1350.96
+            },
+            "JD": {
+              "shares": 8,
+              "price": 29.06,
+              "value": 232.48
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 61.91,
+              "value": 123.82
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 123.81,
+              "value": 2228.58
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 495.4,
+              "value": 1486.2
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 262.65,
+              "value": 1050.6
+            },
+            "AVGO": {
+              "shares": 1,
+              "price": 392.99,
+              "value": 392.99
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 190.01,
+              "value": 570.03
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 426.35,
+              "value": 426.35
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 731.07,
+              "value": 731.07
+            }
+          },
+          "trades": [],
+          "note": "规则策略：持有强势['SPY', 'IWM']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
