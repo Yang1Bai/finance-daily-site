@@ -1,29 +1,29 @@
 {
-  "updated": "2026-08-17T16:24:48.620812+00:00",
+  "updated": "2026-08-17T16:55:27.531238+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,774.54",
-      "change": "-11.22",
-      "change_pct": "-0.14%",
+      "value": "7,769.43",
+      "change": "-16.33",
+      "change_pct": "-0.21%",
       "direction": "down"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,734",
-      "change": "+5.18",
-      "change_pct": "+0.02%",
-      "direction": "up"
+      "value": "26,713",
+      "change": "-16.01",
+      "change_pct": "-0.06%",
+      "direction": "down"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "53,603",
-      "change": "-129.74",
-      "change_pct": "-0.24%",
+      "value": "53,521",
+      "change": "-211.64",
+      "change_pct": "-0.39%",
       "direction": "down"
     },
     {
@@ -61,33 +61,33 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,483.90",
-      "change": "+103.50",
-      "change_pct": "+2.36%",
+      "value": "4,481.90",
+      "change": "+101.50",
+      "change_pct": "+2.32%",
       "direction": "up"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "82.3700",
-      "change": "-0.03",
-      "change_pct": "-0.04%",
-      "direction": "down"
+      "value": "82.8000",
+      "change": "+0.40",
+      "change_pct": "+0.49%",
+      "direction": "up"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "64,032",
-      "change": "+1213.56",
-      "change_pct": "+1.93%",
+      "value": "64,027",
+      "change": "+1208.12",
+      "change_pct": "+1.92%",
       "direction": "up"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "99.5000",
-      "change": "-0.17",
-      "change_pct": "-0.17%",
+      "value": "99.4820",
+      "change": "-0.19",
+      "change_pct": "-0.19%",
       "direction": "down"
     }
   ]
