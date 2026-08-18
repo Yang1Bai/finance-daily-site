@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-17T22:29:23.131079Z",
+  "generated_at": "2026-08-18T12:33:58.843046Z",
   "performance": {
-    "total_signals": 76,
+    "total_signals": 74,
     "wins": 19,
     "losses": 31,
     "expired": 20,
-    "open": 6,
+    "open": 4,
     "win_rate": 0.2714,
-    "avg_gain_pct": 424.28,
-    "avg_loss_pct": -25.99,
-    "expected_value_pct": 96.21,
+    "avg_gain_pct": 409.83,
+    "avg_loss_pct": -26.63,
+    "expected_value_pct": 91.83,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -34,8 +34,8 @@
       "stop_loss": 718.89,
       "take_profit": 888.95,
       "days_held": 5,
-      "current_price": 773.0,
-      "current_pnl_pct": 0.0,
+      "current_price": 776.34,
+      "current_pnl_pct": 0.43,
       "price_source": "ai_fallback"
     },
     {
@@ -58,43 +58,19 @@
       "stop_loss": 4126.689,
       "take_profit": 5102.895,
       "days_held": 2,
-      "current_price": 4437.3,
-      "current_pnl_pct": 0.0,
+      "current_price": 4472.9,
+      "current_pnl_pct": 0.8,
       "price_source": "ai_fallback"
     },
     {
-      "ticker": "NVDA",
+      "ticker": "510300.SS",
       "signal": "BUY",
       "date_issued": "2026-08-17",
-      "price_issued": 224.75,
-      "stop_loss": 209.0175,
-      "take_profit": 258.4625,
+      "price_issued": 4.15,
+      "stop_loss": 3.8595,
+      "take_profit": 4.7725,
       "days_held": 0,
-      "current_price": 224.75,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "QQQ",
-      "signal": "BUY",
-      "date_issued": "2026-08-17",
-      "price_issued": 731.07,
-      "stop_loss": 679.8951,
-      "take_profit": 840.7305,
-      "days_held": 0,
-      "current_price": 731.07,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "CL=F",
-      "signal": "BUY",
-      "date_issued": "2026-08-17",
-      "price_issued": 82.4,
-      "stop_loss": 76.632,
-      "take_profit": 94.76,
-      "days_held": 0,
-      "current_price": 82.4,
+      "current_price": 4.15,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
@@ -107,7 +83,7 @@
       "price_issued": 3.95,
       "date_closed": "2026-08-17",
       "close_reason": "expired",
-      "pnl_pct": 0.0,
+      "pnl_pct": 5.06,
       "price_source": "ai_fallback"
     },
     {
@@ -804,16 +780,16 @@
   "sector_rotation": {
     "date": "2026-08-17",
     "strong_sectors": [
-      "公用事业",
+      "材料",
       "能源",
-      "通讯服务"
+      "公用事业"
     ],
     "weak_sectors": [
-      "科技",
       "医疗保健",
-      "非必需消费品"
+      "房地产",
+      "通讯服务"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日公用事业+2.6%领涨，建议关注XLU及Utilities个股"
+    "note": "今日材料+1.52%领涨，建议关注XLB及Materials个股"
   }
 }
