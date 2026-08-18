@@ -46,9 +46,15 @@
           "buy_date": "2026-08-11"
         },
         {
+          "ticker": "XLF",
+          "shares": 25,
+          "avg_cost": 57.84,
+          "buy_date": "2026-08-18"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2065.7
+          "avg_cost": 619.7
         }
       ],
       "history": [
@@ -2607,6 +2613,54 @@
             }
           ],
           "note": "清仓弱势JD止损，保留现金等待更优进攻时机。"
+        },
+        {
+          "date": "2026-08-18",
+          "portfolio_value": 8679.88,
+          "baseline_value": 10383.29,
+          "cash": 619.7,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 481.63,
+              "value": 963.26
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 259.45,
+              "value": 1037.8
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 219.74,
+              "value": 1757.92
+            },
+            "XLE": {
+              "shares": 15,
+              "price": 63.68,
+              "value": 955.2
+            },
+            "AVGO": {
+              "shares": 5,
+              "price": 380.0,
+              "value": 1900.0
+            },
+            "XLF": {
+              "shares": 25,
+              "price": 57.84,
+              "value": 1446.0
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLF",
+              "shares": 25,
+              "price": 57.84,
+              "reason": "金融板块强势↑，RSI 66.8未超买，动量+3.08%，加仓进攻追赶基准"
+            }
+          ],
+          "note": "落后基准16%，加仓强势金融和中概股，提高进攻性追赶SPY"
         }
       ]
     },
@@ -4523,6 +4577,31 @@
               "shares": 1,
               "price": 28.5,
               "value": 28.5
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-18",
+          "portfolio_value": 7513.57,
+          "baseline_value": 10383.29,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 543.67,
+              "value": 5436.7
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 1912.62,
+              "value": 1912.62
+            },
+            "JD": {
+              "shares": 1,
+              "price": 28.82,
+              "value": 28.82
             }
           },
           "trades": [],
@@ -7388,6 +7467,66 @@
             }
           ],
           "note": "规则策略：持有强势['SPY', 'IWM']，剔除弱势"
+        },
+        {
+          "date": "2026-08-18",
+          "portfolio_value": 9555.93,
+          "baseline_value": 10383.29,
+          "cash": 848.08,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.84,
+              "value": 404.88
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 219.74,
+              "value": 1318.44
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 63.68,
+              "value": 127.36
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 128.15,
+              "value": 2306.7
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 481.63,
+              "value": 1444.89
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 259.45,
+              "value": 1037.8
+            },
+            "AVGO": {
+              "shares": 1,
+              "price": 380.0,
+              "value": 380.0
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 185.62,
+              "value": 556.86
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 413.41,
+              "value": 413.41
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 717.51,
+              "value": 717.51
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
