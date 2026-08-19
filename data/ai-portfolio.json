@@ -40,12 +40,6 @@
           "buy_date": "2026-08-11"
         },
         {
-          "ticker": "AVGO",
-          "shares": 5,
-          "avg_cost": 416.08,
-          "buy_date": "2026-08-11"
-        },
-        {
           "ticker": "XLF",
           "shares": 25,
           "avg_cost": 57.84,
@@ -54,7 +48,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 619.7
+          "avg_cost": 2432.1
         }
       ],
       "history": [
@@ -2661,6 +2655,49 @@
             }
           ],
           "note": "落后基准16%，加仓强势金融和中概股，提高进攻性追赶SPY"
+        },
+        {
+          "date": "2026-08-19",
+          "portfolio_value": 8595.26,
+          "baseline_value": 10405.07,
+          "cash": 2432.1,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 484.31,
+              "value": 968.62
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 265.84,
+              "value": 1063.36
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 217.56,
+              "value": 1740.48
+            },
+            "XLE": {
+              "shares": 15,
+              "price": 63.58,
+              "value": 953.7
+            },
+            "XLF": {
+              "shares": 25,
+              "price": 57.48,
+              "value": 1437.0
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AVGO",
+              "shares": 5,
+              "price": 362.48,
+              "reason": "AVGO技术信号弱势↓，RSI仅38.3，20日动量-8.65%，跌破50MA，止损离场"
+            }
+          ],
+          "note": "减仓弱势AVGO止损，保留现金等待回调后加仓强势标的。"
         }
       ]
     },
@@ -4606,6 +4643,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-19",
+          "portfolio_value": 7828.93,
+          "baseline_value": 10405.07,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 546.03,
+              "value": 5460.3
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2203.85,
+              "value": 2203.85
+            },
+            "JD": {
+              "shares": 1,
+              "price": 29.35,
+              "value": 29.35
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -4648,12 +4710,6 @@
           "buy_date": "2026-07-31"
         },
         {
-          "ticker": "AVGO",
-          "shares": 1,
-          "avg_cost": 418.16,
-          "buy_date": "2026-08-04"
-        },
-        {
           "ticker": "XLK",
           "shares": 3,
           "avg_cost": 186.9,
@@ -4674,7 +4730,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 848.08
+          "avg_cost": 1210.56
         }
       ],
       "history": [
@@ -7526,6 +7582,69 @@
             }
           },
           "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-08-19",
+          "portfolio_value": 9561.02,
+          "baseline_value": 10405.07,
+          "cash": 1210.56,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.48,
+              "value": 402.36
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 217.56,
+              "value": 1305.36
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 63.58,
+              "value": 127.16
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 128.9,
+              "value": 2320.2
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 484.31,
+              "value": 1452.93
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 265.84,
+              "value": 1063.36
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 183.64,
+              "value": 550.92
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 412.09,
+              "value": 412.09
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 716.08,
+              "value": 716.08
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AVGO",
+              "shares": 1,
+              "price": 362.48,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
           "note": "规则策略：无强势标的，持币观望"
         }
       ],
