@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-18T22:28:48.860098Z",
+  "generated_at": "2026-08-19T12:34:52.673753Z",
   "performance": {
-    "total_signals": 77,
+    "total_signals": 74,
     "wins": 20,
     "losses": 31,
     "expired": 20,
-    "open": 6,
+    "open": 3,
     "win_rate": 0.2817,
     "avg_gain_pct": 403.04,
     "avg_loss_pct": -26.63,
@@ -34,8 +34,8 @@
       "stop_loss": 718.89,
       "take_profit": 888.95,
       "days_held": 6,
-      "current_price": 772.67,
-      "current_pnl_pct": -0.04,
+      "current_price": 769.0,
+      "current_pnl_pct": -0.52,
       "price_source": "ai_fallback"
     },
     {
@@ -58,44 +58,8 @@
       "stop_loss": 3.8595,
       "take_profit": 4.7725,
       "days_held": 1,
-      "current_price": 4.15,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "AMD",
-      "signal": "BUY",
-      "date_issued": "2026-08-18",
-      "price_issued": 506.0,
-      "stop_loss": 470.58,
-      "take_profit": 581.9,
-      "days_held": 0,
-      "current_price": 506.0,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "BTC-USD",
-      "signal": "BUY",
-      "date_issued": "2026-08-18",
-      "price_issued": 64000.0,
-      "stop_loss": 59520.0,
-      "take_profit": 73600.0,
-      "days_held": 0,
-      "current_price": 64000.0,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "CL=F",
-      "signal": "BUY",
-      "date_issued": "2026-08-18",
-      "price_issued": 84.0,
-      "stop_loss": 78.12,
-      "take_profit": 96.6,
-      "days_held": 0,
-      "current_price": 84.0,
-      "current_pnl_pct": 0.0,
+      "current_price": 4.16,
+      "current_pnl_pct": 0.24,
       "price_source": "ai_fallback"
     }
   ],
@@ -816,14 +780,14 @@
     "strong_sectors": [
       "能源",
       "公用事业",
-      "科技"
+      "必需消费品"
     ],
     "weak_sectors": [
-      "材料",
       "通讯服务",
-      "非必需消费品"
+      "非必需消费品",
+      "信息技术"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日能源+7.60%领涨，建议关注XLE及Energy个股"
+    "note": "今日能源+1.8%领涨，建议关注XLE及Energy个股"
   }
 }
