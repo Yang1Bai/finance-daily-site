@@ -1,28 +1,28 @@
 {
-  "updated": "2026-08-20T13:43:33.788535+00:00",
+  "updated": "2026-08-20T14:33:50.297652+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,695.39",
-      "change": "-12.59",
-      "change_pct": "-0.16%",
+      "value": "7,685.43",
+      "change": "-22.55",
+      "change_pct": "-0.29%",
       "direction": "down"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,252",
-      "change": "-78.81",
-      "change_pct": "-0.30%",
+      "value": "26,160",
+      "change": "-171.21",
+      "change_pct": "-0.65%",
       "direction": "down"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "53,125",
-      "change": "-337.58",
+      "value": "53,127",
+      "change": "-335.96",
       "change_pct": "-0.63%",
       "direction": "down"
     },
@@ -53,42 +53,34 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,968",
-      "change": "-123.13",
-      "change_pct": "-0.47%",
+      "value": "25,980",
+      "change": "-111.41",
+      "change_pct": "-0.43%",
       "direction": "down"
-    },
-    {
-      "name": "黄金 XAU",
-      "symbol": "GC=F",
-      "value": "4,527.60",
-      "change": "+38.20",
-      "change_pct": "+0.85%",
-      "direction": "up"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "86.8800",
-      "change": "+1.05",
-      "change_pct": "+1.22%",
-      "direction": "up"
+      "value": "85.7900",
+      "change": "-0.04",
+      "change_pct": "-0.05%",
+      "direction": "down"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "71,584",
-      "change": "+2317.41",
-      "change_pct": "+3.35%",
+      "value": "71,563",
+      "change": "+2296.52",
+      "change_pct": "+3.32%",
       "direction": "up"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "98.7880",
-      "change": "-0.04",
-      "change_pct": "-0.04%",
-      "direction": "down"
+      "value": "98.8320",
+      "change": "+0.00",
+      "change_pct": "+0.00%",
+      "direction": "up"
     }
   ]
 }
