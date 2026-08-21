@@ -40,15 +40,9 @@
           "buy_date": "2026-08-11"
         },
         {
-          "ticker": "XLF",
-          "shares": 25,
-          "avg_cost": 57.84,
-          "buy_date": "2026-08-18"
-        },
-        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2432.1
+          "avg_cost": 3869.1
         }
       ],
       "history": [
@@ -2733,6 +2727,44 @@
           },
           "trades": [],
           "note": "落后基准17%需激进追赶，加仓强势BABA博反弹，保留部分现金应对波动"
+        },
+        {
+          "date": "2026-08-21",
+          "portfolio_value": 8542.46,
+          "baseline_value": 10359.89,
+          "cash": 3869.1,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 483.24,
+              "value": 966.48
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 258.63,
+              "value": 1034.52
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 214.72,
+              "value": 1717.76
+            },
+            "XLE": {
+              "shares": 15,
+              "price": 63.64,
+              "value": 954.6
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLF",
+              "shares": 25,
+              "price": 57.48,
+              "reason": "持仓仅3天但信号中性，释放资金追逐强势标的"
+            }
+          ],
+          "note": "XLF中性信号且持仓刚满3天，卖出释放资金等待更好机会追赶基准。"
         }
       ]
     },
@@ -4728,6 +4760,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-21",
+          "portfolio_value": 8094.66,
+          "baseline_value": 10359.89,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 549.9,
+              "value": 5499.0
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2430.86,
+              "value": 2430.86
+            },
+            "JD": {
+              "shares": 1,
+              "price": 29.37,
+              "value": 29.37
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -4788,9 +4845,15 @@
           "buy_date": "2026-08-13"
         },
         {
+          "ticker": "IWM",
+          "shares": 1,
+          "avg_cost": 299.96,
+          "buy_date": "2026-08-21"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1210.56
+          "avg_cost": 910.6
         }
       ],
       "history": [
@@ -7761,6 +7824,74 @@
           },
           "trades": [],
           "note": "规则策略：持有强势['SPY']，剔除弱势"
+        },
+        {
+          "date": "2026-08-21",
+          "portfolio_value": 9343.2,
+          "baseline_value": 10359.89,
+          "cash": 910.6,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.48,
+              "value": 402.36
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 214.72,
+              "value": 1288.32
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 63.64,
+              "value": 127.28
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 119.34,
+              "value": 2148.12
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 483.24,
+              "value": 1449.72
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 258.63,
+              "value": 1034.52
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 183.31,
+              "value": 549.93
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 418.95,
+              "value": 418.95
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 713.44,
+              "value": 713.44
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 299.96,
+              "value": 299.96
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "IWM",
+              "shares": 1,
+              "price": 299.96,
+              "reason": "技术强势+动量+3.0%"
+            }
+          ],
+          "note": "规则策略：持有强势['SPY', 'IWM']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
