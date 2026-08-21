@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-20T22:32:30.598914Z",
+  "generated_at": "2026-08-21T12:35:01.974409Z",
   "performance": {
-    "total_signals": 77,
+    "total_signals": 75,
     "wins": 20,
     "losses": 31,
     "expired": 20,
-    "open": 6,
+    "open": 4,
     "win_rate": 0.2817,
     "avg_gain_pct": 403.04,
     "avg_loss_pct": -26.63,
@@ -46,8 +46,8 @@
       "stop_loss": 4126.689,
       "take_profit": 5102.895,
       "days_held": 5,
-      "current_price": 4542.3,
-      "current_pnl_pct": 2.37,
+      "current_price": 4536.8,
+      "current_pnl_pct": 2.24,
       "price_source": "ai_fallback"
     },
     {
@@ -66,35 +66,11 @@
       "ticker": "AMD",
       "signal": "BUY",
       "date_issued": "2026-08-20",
-      "price_issued": 165.2,
-      "stop_loss": 153.636,
-      "take_profit": 189.98,
+      "price_issued": 466.71,
+      "stop_loss": 434.0403,
+      "take_profit": 536.7165,
       "days_held": 0,
-      "current_price": 165.2,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "BTC-USD",
-      "signal": "BUY",
-      "date_issued": "2026-08-20",
-      "price_issued": 71733.24,
-      "stop_loss": 66711.9132,
-      "take_profit": 82493.226,
-      "days_held": 0,
-      "current_price": 71733.24,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "CL=F",
-      "signal": "BUY",
-      "date_issued": "2026-08-20",
-      "price_issued": 86.55,
-      "stop_loss": 80.4915,
-      "take_profit": 99.5325,
-      "days_held": 0,
-      "current_price": 86.55,
+      "current_price": 466.71,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
@@ -815,15 +791,15 @@
     "date": "2026-08-20",
     "strong_sectors": [
       "能源",
-      "公用事业",
-      "医疗保健"
+      "材料",
+      "公用事业"
     ],
     "weak_sectors": [
-      "工业",
+      "科技",
       "可选消费",
-      "材料"
+      "消费必需品"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日能源+1.76%领涨，建议关注XLE及Energy个股"
+    "note": "今日能源+0.38%领涨，建议关注XLE及Energy个股"
   }
 }
