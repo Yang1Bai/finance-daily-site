@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-21T12:35:01.974409Z",
+  "generated_at": "2026-08-21T22:29:56.371072Z",
   "performance": {
-    "total_signals": 75,
+    "total_signals": 77,
     "wins": 20,
     "losses": 31,
     "expired": 20,
-    "open": 4,
+    "open": 6,
     "win_rate": 0.2817,
     "avg_gain_pct": 403.04,
     "avg_loss_pct": -26.63,
@@ -33,9 +33,9 @@
       "price_issued": 773.0,
       "stop_loss": 718.89,
       "take_profit": 888.95,
-      "days_held": 8,
-      "current_price": 769.06,
-      "current_pnl_pct": -0.51,
+      "days_held": 9,
+      "current_price": 767.75,
+      "current_pnl_pct": -0.68,
       "price_source": "ai_fallback"
     },
     {
@@ -45,9 +45,9 @@
       "price_issued": 4437.3,
       "stop_loss": 4126.689,
       "take_profit": 5102.895,
-      "days_held": 5,
-      "current_price": 4536.8,
-      "current_pnl_pct": 2.24,
+      "days_held": 6,
+      "current_price": 4590.9,
+      "current_pnl_pct": 3.46,
       "price_source": "ai_fallback"
     },
     {
@@ -57,7 +57,7 @@
       "price_issued": 4.15,
       "stop_loss": 3.8595,
       "take_profit": 4.7725,
-      "days_held": 3,
+      "days_held": 4,
       "current_price": 4.15,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -69,8 +69,32 @@
       "price_issued": 466.71,
       "stop_loss": 434.0403,
       "take_profit": 536.7165,
-      "days_held": 0,
+      "days_held": 1,
       "current_price": 466.71,
+      "current_pnl_pct": 0.0,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "BTC-USD",
+      "signal": "BUY",
+      "date_issued": "2026-08-21",
+      "price_issued": 77717.61,
+      "stop_loss": 72277.3773,
+      "take_profit": 89375.2515,
+      "days_held": 0,
+      "current_price": 77717.61,
+      "current_pnl_pct": 0.0,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "TSLA",
+      "signal": "BUY",
+      "date_issued": "2026-08-21",
+      "price_issued": 305.0,
+      "stop_loss": 283.65,
+      "take_profit": 350.75,
+      "days_held": 0,
+      "current_price": 305.0,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
@@ -788,18 +812,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "strong_sectors": [
       "能源",
-      "材料",
-      "公用事业"
+      "公用事业",
+      "医疗保健"
     ],
     "weak_sectors": [
-      "科技",
-      "可选消费",
-      "消费必需品"
+      "金融",
+      "必需消费",
+      "可选消费"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日能源+0.38%领涨，建议关注XLE及Energy个股"
+    "note": "今日能源+0.52%领涨，建议关注XLE及Energy个股"
   }
 }
