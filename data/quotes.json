@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T21:51:04.009645+00:00",
+  "updated": "2026-08-22T02:47:17.656301+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -29,26 +29,26 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,903.72",
-      "change": "+9.30",
-      "change_pct": "+0.24%",
+      "value": "3,905.20",
+      "change": "+1.48",
+      "change_pct": "+0.04%",
       "direction": "up"
     },
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "25,698",
-      "change": "+203.42",
-      "change_pct": "+0.80%",
+      "value": "26,009",
+      "change": "+310.97",
+      "change_pct": "+1.21%",
       "direction": "up"
     },
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "66,217",
-      "change": "+890.37",
-      "change_pct": "+1.36%",
-      "direction": "up"
+      "value": "66,016",
+      "change": "-200.43",
+      "change_pct": "-0.30%",
+      "direction": "down"
     },
     {
       "name": "德国DAX",
@@ -78,7 +78,7 @@
       "name": "BTC/USD",
       "symbol": "BTC-USD",
       "value": "78,355",
-      "change": "+5322.38",
+      "change": "+5322.68",
       "change_pct": "+7.29%",
       "direction": "up"
     },
