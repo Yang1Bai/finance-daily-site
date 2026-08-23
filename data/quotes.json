@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T02:47:17.656301+00:00",
+  "updated": "2026-08-23T02:55:11.477384+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -61,33 +61,33 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,661.60",
-      "change": "+145.30",
-      "change_pct": "+3.22%",
+      "value": "4,624.10",
+      "change": "+107.80",
+      "change_pct": "+2.39%",
       "direction": "up"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "86.6400",
-      "change": "-1.19",
-      "change_pct": "-1.35%",
+      "value": "87.0600",
+      "change": "-0.77",
+      "change_pct": "-0.88%",
       "direction": "down"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "78,355",
-      "change": "+5322.68",
-      "change_pct": "+7.29%",
-      "direction": "up"
+      "value": "77,062",
+      "change": "-1272.93",
+      "change_pct": "-1.62%",
+      "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "98.8390",
-      "change": "-0.06",
-      "change_pct": "-0.06%",
+      "value": "98.8000",
+      "change": "-0.10",
+      "change_pct": "-0.10%",
       "direction": "down"
     }
   ]
