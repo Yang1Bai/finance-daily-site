@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-22T12:26:53.437780Z",
+  "generated_at": "2026-08-23T12:28:25.828508Z",
   "performance": {
     "total_signals": 77,
     "wins": 20,
     "losses": 31,
-    "expired": 20,
-    "open": 6,
-    "win_rate": 0.2817,
+    "expired": 21,
+    "open": 5,
+    "win_rate": 0.2778,
     "avg_gain_pct": 403.04,
-    "avg_loss_pct": -26.63,
-    "expected_value_pct": 94.41,
+    "avg_loss_pct": -26.02,
+    "expected_value_pct": 93.17,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -27,27 +27,15 @@
   },
   "open_positions": [
     {
-      "ticker": "SPY",
-      "signal": "BUY",
-      "date_issued": "2026-08-12",
-      "price_issued": 773.0,
-      "stop_loss": 718.89,
-      "take_profit": 888.95,
-      "days_held": 9,
-      "current_price": 768.0,
-      "current_pnl_pct": -0.65,
-      "price_source": "ai_fallback"
-    },
-    {
       "ticker": "GC=F",
       "signal": "BUY",
       "date_issued": "2026-08-15",
       "price_issued": 4437.3,
       "stop_loss": 4126.689,
       "take_profit": 5102.895,
-      "days_held": 6,
-      "current_price": 4437.3,
-      "current_pnl_pct": 0.0,
+      "days_held": 7,
+      "current_price": 4680.6,
+      "current_pnl_pct": 5.48,
       "price_source": "ai_fallback"
     },
     {
@@ -57,7 +45,7 @@
       "price_issued": 4.15,
       "stop_loss": 3.8595,
       "take_profit": 4.7725,
-      "days_held": 4,
+      "days_held": 5,
       "current_price": 4.15,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -69,9 +57,9 @@
       "price_issued": 466.71,
       "stop_loss": 434.0403,
       "take_profit": 536.7165,
-      "days_held": 1,
-      "current_price": 466.71,
-      "current_pnl_pct": 0.0,
+      "days_held": 2,
+      "current_price": 473.25,
+      "current_pnl_pct": 1.4,
       "price_source": "ai_fallback"
     },
     {
@@ -81,9 +69,9 @@
       "price_issued": 77717.61,
       "stop_loss": 72277.3773,
       "take_profit": 89375.2515,
-      "days_held": 0,
-      "current_price": 77717.61,
-      "current_pnl_pct": 0.0,
+      "days_held": 1,
+      "current_price": 77274.37,
+      "current_pnl_pct": -0.57,
       "price_source": "ai_fallback"
     },
     {
@@ -93,13 +81,23 @@
       "price_issued": 86.71,
       "stop_loss": 80.6403,
       "take_profit": 99.7165,
-      "days_held": 0,
-      "current_price": 86.71,
-      "current_pnl_pct": 0.0,
+      "days_held": 1,
+      "current_price": 87.06,
+      "current_pnl_pct": 0.4,
       "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "SPY",
+      "signal": "BUY",
+      "date_issued": "2026-08-12",
+      "price_issued": 773.0,
+      "date_closed": "2026-08-22",
+      "close_reason": "expired",
+      "pnl_pct": -1.0,
+      "price_source": "ai_fallback"
+    },
     {
       "ticker": "AMD",
       "signal": "BUY",
@@ -812,18 +810,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-21",
+    "date": "2026-08-22",
     "strong_sectors": [
-      "原材料",
+      "材料",
       "金融",
-      "公用事业"
+      "医疗保健"
     ],
     "weak_sectors": [
-      "消费者可选",
-      "工业",
-      "消费必需品"
+      "公用事业",
+      "非必需消费",
+      "信息技术"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日原材料+2.00%领涨，建议关注XLB及Materials个股"
+    "note": "今日材料+2.00%领涨，建议关注XLB及Materials个股"
   }
 }
