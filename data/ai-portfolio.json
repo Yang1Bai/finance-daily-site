@@ -40,9 +40,15 @@
           "buy_date": "2026-08-11"
         },
         {
+          "ticker": "TSLA",
+          "shares": 5,
+          "avg_cost": 348.95,
+          "buy_date": "2026-08-24"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3869.1
+          "avg_cost": 2124.35
         }
       ],
       "history": [
@@ -2765,6 +2771,49 @@
             }
           ],
           "note": "XLF中性信号且持仓刚满3天，卖出释放资金等待更好机会追赶基准。"
+        },
+        {
+          "date": "2026-08-24",
+          "portfolio_value": 8506.49,
+          "baseline_value": 10329.44,
+          "cash": 2124.35,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 487.31,
+              "value": 974.62
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 262.07,
+              "value": 1048.28
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 208.48,
+              "value": 1667.84
+            },
+            "XLE": {
+              "shares": 15,
+              "price": 63.11,
+              "value": 946.65
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 348.95,
+              "value": 1744.75
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "TSLA",
+              "shares": 5,
+              "price": 348.95,
+              "reason": "RSI=61适中，20日动量+12.85%强劲，进攻性标的追赶基准"
+            }
+          ],
+          "note": "落后基准17%需激进进攻，加仓超卖科技股和高动量标的缩小差距"
         }
       ]
     },
@@ -4781,6 +4830,31 @@
               "shares": 1,
               "price": 29.37,
               "value": 29.37
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-24",
+          "portfolio_value": 8227.94,
+          "baseline_value": 10329.44,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 559.02,
+              "value": 5590.2
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2473.11,
+              "value": 2473.11
+            },
+            "JD": {
+              "shares": 1,
+              "price": 29.2,
+              "value": 29.2
             }
           },
           "trades": [],
@@ -7892,6 +7966,66 @@
             }
           ],
           "note": "规则策略：持有强势['SPY', 'IWM']，剔除弱势"
+        },
+        {
+          "date": "2026-08-24",
+          "portfolio_value": 9292.47,
+          "baseline_value": 10329.44,
+          "cash": 910.6,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 58.22,
+              "value": 407.54
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 208.48,
+              "value": 1250.88
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 63.11,
+              "value": 126.22
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 118.47,
+              "value": 2132.46
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 487.31,
+              "value": 1461.93
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 262.07,
+              "value": 1048.28
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 180.05,
+              "value": 540.15
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 410.12,
+              "value": 410.12
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 706.32,
+              "value": 706.32
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 297.97,
+              "value": 297.97
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
