@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-25T12:36:27.561430Z",
+  "generated_at": "2026-08-25T22:32:20.163748Z",
   "performance": {
-    "total_signals": 77,
+    "total_signals": 78,
     "wins": 20,
     "losses": 31,
-    "expired": 21,
+    "expired": 22,
     "open": 5,
-    "win_rate": 0.2778,
-    "avg_gain_pct": 403.04,
+    "win_rate": 0.274,
+    "avg_gain_pct": 390.2,
     "avg_loss_pct": -26.02,
-    "expected_value_pct": 93.17,
+    "expected_value_pct": 88.02,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -27,25 +27,13 @@
   },
   "open_positions": [
     {
-      "ticker": "GC=F",
-      "signal": "BUY",
-      "date_issued": "2026-08-15",
-      "price_issued": 4437.3,
-      "stop_loss": 4126.689,
-      "take_profit": 5102.895,
-      "days_held": 9,
-      "current_price": 4650.64,
-      "current_pnl_pct": 4.81,
-      "price_source": "ai_fallback"
-    },
-    {
       "ticker": "510300.SS",
       "signal": "BUY",
       "date_issued": "2026-08-17",
       "price_issued": 4.15,
       "stop_loss": 3.8595,
       "take_profit": 4.7725,
-      "days_held": 7,
+      "days_held": 8,
       "current_price": 4.15,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
@@ -57,7 +45,7 @@
       "price_issued": 466.71,
       "stop_loss": 434.0403,
       "take_profit": 536.7165,
-      "days_held": 4,
+      "days_held": 5,
       "current_price": 473.3,
       "current_pnl_pct": 1.41,
       "price_source": "ai_fallback"
@@ -69,9 +57,9 @@
       "price_issued": 77717.61,
       "stop_loss": 72277.3773,
       "take_profit": 89375.2515,
-      "days_held": 3,
-      "current_price": 78945.0,
-      "current_pnl_pct": 1.58,
+      "days_held": 4,
+      "current_price": 80608.81,
+      "current_pnl_pct": 3.72,
       "price_source": "ai_fallback"
     },
     {
@@ -81,13 +69,35 @@
       "price_issued": 86.71,
       "stop_loss": 80.6403,
       "take_profit": 99.7165,
-      "days_held": 3,
-      "current_price": 85.36,
-      "current_pnl_pct": -1.56,
+      "days_held": 4,
+      "current_price": 84.89,
+      "current_pnl_pct": -2.1,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "GC=F",
+      "signal": "BUY",
+      "date_issued": "2026-08-25",
+      "price_issued": 4650.0,
+      "stop_loss": 4324.5,
+      "take_profit": 5347.5,
+      "days_held": 0,
+      "current_price": 4650.0,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "GC=F",
+      "signal": "BUY",
+      "date_issued": "2026-08-15",
+      "price_issued": 4437.3,
+      "date_closed": "2026-08-25",
+      "close_reason": "expired",
+      "pnl_pct": 4.79,
+      "price_source": "ai_fallback"
+    },
     {
       "ticker": "SPY",
       "signal": "BUY",
@@ -810,18 +820,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-24",
+    "date": "2026-08-25",
     "strong_sectors": [
-      "消费必需品",
-      "材料",
+      "必需消费品",
+      "公用事业",
       "金融"
     ],
     "weak_sectors": [
-      "非必需消费品",
-      "能源",
-      "科技"
+      "通讯服务",
+      "科技",
+      "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日消费必需品+1.40%领涨，建议关注XLP及Consumer Staples个股"
+    "note": "今日必需消费品+1.40%领涨，建议关注XLP及Consumer Staples个股"
   }
 }
