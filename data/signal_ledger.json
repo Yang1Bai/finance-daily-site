@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-24T22:31:34.165253Z",
+  "generated_at": "2026-08-25T12:36:27.561430Z",
   "performance": {
-    "total_signals": 78,
+    "total_signals": 77,
     "wins": 20,
     "losses": 31,
     "expired": 21,
-    "open": 6,
+    "open": 5,
     "win_rate": 0.2778,
     "avg_gain_pct": 403.04,
     "avg_loss_pct": -26.02,
@@ -34,8 +34,8 @@
       "stop_loss": 4126.689,
       "take_profit": 5102.895,
       "days_held": 9,
-      "current_price": 4702.7,
-      "current_pnl_pct": 5.98,
+      "current_price": 4650.64,
+      "current_pnl_pct": 4.81,
       "price_source": "ai_fallback"
     },
     {
@@ -58,8 +58,8 @@
       "stop_loss": 434.0403,
       "take_profit": 536.7165,
       "days_held": 4,
-      "current_price": 473.25,
-      "current_pnl_pct": 1.4,
+      "current_price": 473.3,
+      "current_pnl_pct": 1.41,
       "price_source": "ai_fallback"
     },
     {
@@ -70,8 +70,8 @@
       "stop_loss": 72277.3773,
       "take_profit": 89375.2515,
       "days_held": 3,
-      "current_price": 77782.34,
-      "current_pnl_pct": 0.08,
+      "current_price": 78945.0,
+      "current_pnl_pct": 1.58,
       "price_source": "ai_fallback"
     },
     {
@@ -82,20 +82,8 @@
       "stop_loss": 80.6403,
       "take_profit": 99.7165,
       "days_held": 3,
-      "current_price": 85.65,
-      "current_pnl_pct": -1.22,
-      "price_source": "ai_fallback"
-    },
-    {
-      "ticker": "TSLA",
-      "signal": "BUY",
-      "date_issued": "2026-08-24",
-      "price_issued": 222.0,
-      "stop_loss": 206.46,
-      "take_profit": 255.3,
-      "days_held": 0,
-      "current_price": 222.0,
-      "current_pnl_pct": 0.0,
+      "current_price": 85.36,
+      "current_pnl_pct": -1.56,
       "price_source": "ai_fallback"
     }
   ],
@@ -824,16 +812,16 @@
   "sector_rotation": {
     "date": "2026-08-24",
     "strong_sectors": [
+      "消费必需品",
       "材料",
-      "能源",
-      "公用事业"
+      "金融"
     ],
     "weak_sectors": [
-      "工业",
-      "房地产",
-      "可选消费"
+      "非必需消费品",
+      "能源",
+      "科技"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日材料+2.0%领涨，建议关注XLB及Materials个股"
+    "note": "今日消费必需品+1.40%领涨，建议关注XLP及Consumer Staples个股"
   }
 }
