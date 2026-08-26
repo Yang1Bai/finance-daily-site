@@ -34,12 +34,6 @@
           "buy_date": "2026-08-05"
         },
         {
-          "ticker": "XLE",
-          "shares": 15,
-          "avg_cost": 60.93,
-          "buy_date": "2026-08-11"
-        },
-        {
           "ticker": "TSLA",
           "shares": 5,
           "avg_cost": 348.95,
@@ -54,7 +48,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 37.3
+          "avg_cost": 973.75
         }
       ],
       "history": [
@@ -2868,6 +2862,49 @@
             }
           ],
           "note": "落后基准17%需进攻，加仓强势贵金属SLV及半导体TSM博反弹。"
+        },
+        {
+          "date": "2026-08-26",
+          "portfolio_value": 8502.44,
+          "baseline_value": 10364.76,
+          "cash": 973.75,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 496.37,
+              "value": 992.74
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 260.28,
+              "value": 1041.12
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 209.66,
+              "value": 1677.28
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 345.82,
+              "value": 1729.1
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 417.69,
+              "value": 2088.45
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLE",
+              "shares": 15,
+              "price": 62.43,
+              "reason": "RSI=73.3超买，能源板块获利了结释放资金进攻"
+            }
+          ],
+          "note": "卖出超买的XLE，等待英伟达财报后择机加仓高动量科技股追赶基准。"
         }
       ]
     },
@@ -4934,6 +4971,31 @@
               "shares": 1,
               "price": 29.36,
               "value": 29.36
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-26",
+          "portfolio_value": 8431.12,
+          "baseline_value": 10364.76,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 576.14,
+              "value": 5761.4
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2505.52,
+              "value": 2505.52
+            },
+            "JD": {
+              "shares": 1,
+              "price": 28.77,
+              "value": 28.77
             }
           },
           "trades": [],
@@ -8161,6 +8223,66 @@
               "shares": 1,
               "price": 299.23,
               "value": 299.23
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-08-26",
+          "portfolio_value": 9364.92,
+          "baseline_value": 10364.76,
+          "cash": 910.6,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 58.26,
+              "value": 407.82
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 209.66,
+              "value": 1257.96
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 62.43,
+              "value": 124.86
+            },
+            "BABA": {
+              "shares": 18,
+              "price": 119.83,
+              "value": 2156.94
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 496.37,
+              "value": 1489.11
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 260.28,
+              "value": 1041.12
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 182.84,
+              "value": 548.52
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 417.69,
+              "value": 417.69
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 711.37,
+              "value": 711.37
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 298.93,
+              "value": 298.93
             }
           },
           "trades": [],
