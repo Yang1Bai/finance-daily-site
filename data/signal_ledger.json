@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-27T03:01:17.999390Z",
+  "generated_at": "2026-08-27T21:36:56.787713Z",
   "performance": {
     "total_signals": 79,
     "wins": 20,
     "losses": 32,
-    "expired": 22,
-    "open": 5,
-    "win_rate": 0.2703,
+    "expired": 23,
+    "open": 4,
+    "win_rate": 0.2667,
     "avg_gain_pct": 390.2,
-    "avg_loss_pct": -25.59,
-    "expected_value_pct": 86.8,
+    "avg_loss_pct": -25.0,
+    "expected_value_pct": 85.73,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -27,25 +27,13 @@
   },
   "open_positions": [
     {
-      "ticker": "510300.SS",
-      "signal": "BUY",
-      "date_issued": "2026-08-17",
-      "price_issued": 4.15,
-      "stop_loss": 3.8595,
-      "take_profit": 4.7725,
-      "days_held": 9,
-      "current_price": 4.15,
-      "current_pnl_pct": 0.0,
-      "price_source": "ai_fallback"
-    },
-    {
       "ticker": "AMD",
       "signal": "BUY",
       "date_issued": "2026-08-20",
       "price_issued": 466.71,
       "stop_loss": 434.0403,
       "take_profit": 536.7165,
-      "days_held": 6,
+      "days_held": 7,
       "current_price": 479.18,
       "current_pnl_pct": 2.67,
       "price_source": "ai_fallback"
@@ -57,9 +45,9 @@
       "price_issued": 77717.61,
       "stop_loss": 72277.3773,
       "take_profit": 89375.2515,
-      "days_held": 5,
-      "current_price": 78745.95,
-      "current_pnl_pct": 1.32,
+      "days_held": 6,
+      "current_price": 77992.03,
+      "current_pnl_pct": 0.35,
       "price_source": "ai_fallback"
     },
     {
@@ -69,9 +57,9 @@
       "price_issued": 764.78,
       "stop_loss": 711.2454,
       "take_profit": 879.497,
-      "days_held": 1,
-      "current_price": 765.25,
-      "current_pnl_pct": 0.06,
+      "days_held": 2,
+      "current_price": 766.08,
+      "current_pnl_pct": 0.17,
       "price_source": "ai_fallback"
     },
     {
@@ -81,13 +69,23 @@
       "price_issued": 4650.0,
       "stop_loss": 4324.5,
       "take_profit": 5347.5,
-      "days_held": 1,
-      "current_price": 4715.7,
-      "current_pnl_pct": 1.41,
+      "days_held": 2,
+      "current_price": 4650.0,
+      "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-08-17",
+      "price_issued": 4.15,
+      "date_closed": "2026-08-27",
+      "close_reason": "expired",
+      "pnl_pct": 0.0,
+      "price_source": "ai_fallback"
+    },
     {
       "ticker": "CL=F",
       "signal": "BUY",
@@ -830,18 +828,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-26",
+    "date": "2026-08-27",
     "strong_sectors": [
       "公用事业",
-      "原材料",
-      "可选消费"
+      "工业",
+      "科技"
     ],
     "weak_sectors": [
-      "必需消费",
-      "金融",
-      "能源"
+      "通信服务",
+      "医疗保健",
+      "材料"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日公用事业+2.17%领涨，建议关注XLU及Utilities个股"
+    "note": "今日公用事业+1.91%领涨，建议关注XLU及Utilities个股"
   }
 }
