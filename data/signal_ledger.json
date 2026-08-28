@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-27T21:36:56.787713Z",
+  "generated_at": "2026-08-28T06:02:03.741403Z",
   "performance": {
-    "total_signals": 79,
+    "total_signals": 80,
     "wins": 20,
-    "losses": 32,
-    "expired": 23,
-    "open": 4,
+    "losses": 33,
+    "expired": 22,
+    "open": 5,
     "win_rate": 0.2667,
     "avg_gain_pct": 390.2,
-    "avg_loss_pct": -25.0,
-    "expected_value_pct": 85.73,
+    "avg_loss_pct": -25.17,
+    "expected_value_pct": 85.61,
     "vs_spy_30d": 0.0,
     "price_source": "yfinance_real",
     "ai_fallback_tickers": [
@@ -34,8 +34,8 @@
       "stop_loss": 434.0403,
       "take_profit": 536.7165,
       "days_held": 7,
-      "current_price": 479.18,
-      "current_pnl_pct": 2.67,
+      "current_price": 478.0,
+      "current_pnl_pct": 2.42,
       "price_source": "ai_fallback"
     },
     {
@@ -46,8 +46,8 @@
       "stop_loss": 72277.3773,
       "take_profit": 89375.2515,
       "days_held": 6,
-      "current_price": 77992.03,
-      "current_pnl_pct": 0.35,
+      "current_price": 80083.11,
+      "current_pnl_pct": 3.04,
       "price_source": "ai_fallback"
     },
     {
@@ -58,8 +58,8 @@
       "stop_loss": 711.2454,
       "take_profit": 879.497,
       "days_held": 2,
-      "current_price": 766.08,
-      "current_pnl_pct": 0.17,
+      "current_price": 768.02,
+      "current_pnl_pct": 0.42,
       "price_source": "ai_fallback"
     },
     {
@@ -73,6 +73,18 @@
       "current_price": 4650.0,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "510300.SS",
+      "signal": "BUY",
+      "date_issued": "2026-08-27",
+      "price_issued": 3.85,
+      "stop_loss": 3.5805,
+      "take_profit": 4.4275,
+      "days_held": 0,
+      "current_price": 3.85,
+      "current_pnl_pct": 0.0,
+      "price_source": "ai_fallback"
     }
   ],
   "closed_positions": [
@@ -82,8 +94,8 @@
       "date_issued": "2026-08-17",
       "price_issued": 4.15,
       "date_closed": "2026-08-27",
-      "close_reason": "expired",
-      "pnl_pct": 0.0,
+      "close_reason": "stop_loss",
+      "pnl_pct": -7.23,
       "price_source": "ai_fallback"
     },
     {
@@ -830,16 +842,16 @@
   "sector_rotation": {
     "date": "2026-08-27",
     "strong_sectors": [
-      "公用事业",
-      "工业",
-      "科技"
+      "信息科技",
+      "必需消费",
+      "公用事业"
     ],
     "weak_sectors": [
-      "通信服务",
-      "医疗保健",
-      "材料"
+      "非必需消费",
+      "金融",
+      "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日公用事业+1.91%领涨，建议关注XLU及Utilities个股"
+    "note": "今日信息科技+2.9%领涨，建议关注XLK及Information Technology个股"
   }
 }

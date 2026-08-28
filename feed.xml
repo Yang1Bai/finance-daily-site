@@ -5,47 +5,47 @@
     <description>每日全球金融市场摘要，由 Claude AI + Web Search 自动生成</description>
     <link>https://your-username.github.io/finance-daily-site/</link>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 27 Aug 2026 21:40:47 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 06:05:42 +0000</lastBuildDate>
     <item>
-      <title>金融日报 2026年8月27日</title>
+      <title>金融日报 2026年8月28日</title>
       <description>今日金融市场摘要已更新</description>
-      <pubDate>Thu, 27 Aug 2026 21:40:47 +0000</pubDate>
+      <pubDate>Fri, 28 Aug 2026 06:05:42 +0000</pubDate>
     </item>
   <item>
-    <title>美国计划对华加征7.5%关税，总税率达20%上限</title>
-    <description>彭博社报道，特朗普政府计划在9月习特会前对中国商品加征7.5%"产能过剩"关税，使对华总关税率达到7月27日承诺的20%上限。该举措基于《1974年贸易法》第301条，独立于特朗普第一任期关税。中美9月24日白宫峰会将是十年来首次中国国家元首访美。</description>
+    <title>英伟达Q2营收翻倍至962亿美元，Q3指引1080亿超预期</title>
+    <description>英伟达8月26日发布Q2财报，营收962亿美元（+106% YoY），数据中心营收890亿美元（+117%），EPS 2.22美元超预期2.09美元。Q3营收指引1080亿美元，超华尔街预期的1039亿，将成为标普500第9家季度营收破千亿的公司。新平台Vera Rubin本季占数据中心营收20%。</description>
+    <link>https://www.bloomberg.com/news/live-blog/2026-08-26/nvidia-second-quarter-earnings</link>
+    <pubDate>Fri, 28 Aug 2026 06:05:42 +0000</pubDate>
+  </item>
+  <item>
+    <title>美联储9月会议或加息25个基点，伊朗冲突推高通胀预期</title>
+    <description>摩根大通策略师预计美联储9月15-16日会议将加息25个基点，因伊朗冲突导致能源供应链中断、油价持续高位（WTI约80美元），且7月后美联储维持利率不变令投资者怀疑其抗通胀决心。期货市场甚至定价了小概率再次加息可能。</description>
+    <link>https://www.chase.com/personal/investments/learning-and-insights/article/september-2026-rate-hike-now-expected-amid-energy-shocks</link>
+    <pubDate>Fri, 28 Aug 2026 06:05:42 +0000</pubDate>
+  </item>
+  <item>
+    <title>美中贸易暂缓升级至11月，但新增7.5%产能过剩关税待定</title>
+    <description>彭博8月24日报道，美国计划在9月特朗普-习近平峰会前对中国商品加征7.5%产能过剩关税，将令对华关税总水平恢复至约20%。此前8月12日美中同意延长贸易休战90天至11月10日，暂停145%/125%关税升级。7月24日美国已对包括中国在内60国加征12.5%强迫劳动关税。</description>
     <link>https://www.bloomberg.com/news/articles/2026-08-24/us-eyes-china-overcapacity-tariffs-of-7-5-before-xi-trump-talks</link>
-    <pubDate>Thu, 27 Aug 2026 21:40:47 +0000</pubDate>
+    <pubDate>Fri, 28 Aug 2026 06:05:42 +0000</pubDate>
   </item>
   <item>
-    <title>英伟达Q2财报狂飙：营收翻倍、EPS大超预期，股价暴涨8.7%</title>
-    <description>英伟达Q2调整后EPS达2.22美元（预期2.08-2.09美元），营收同比翻倍，并预计2028财年营收增长70%（远超分析师预期的44%）。这是连续第15个季度超预期。股价周四飙升8.7%，推动科技板块单日上涨近3%，成为8月4日以来最佳表现。</description>
-    <link>https://www.cnbc.com/2026/08/26/stock-market-today-live-updates.html</link>
-    <pubDate>Thu, 27 Aug 2026 21:40:47 +0000</pubDate>
-  </item>
-  <item>
-    <title>软件股集体爆发：Salesforce涨23%、CrowdStrike涨20%</title>
-    <description>Salesforce Q2调整后EPS达5.90美元（预期3.27美元），营收113.5亿美元，并宣布与Anthropic深化AI合作。CrowdStrike和Okta财报同样超预期，股价分别暴涨20.5%和22.7%，印证企业AI支出热潮延续。</description>
+    <title>A股收涨1.13%，沪指重回3956点，政策预期升温</title>
+    <description>上证综指8月27日收涨44.40点至3956.60（+1.13%），深证成指涨1.50%至14048.9。市场预期全国人大常委会8月28日结束会议后或推出新一轮政策支持，因7月工业产出、零售、固投数据均不及预期，工业利润增速从18.7%放缓至17.6%。</description>
     <link></link>
-    <pubDate>Thu, 27 Aug 2026 21:40:47 +0000</pubDate>
+    <pubDate>Fri, 28 Aug 2026 06:05:42 +0000</pubDate>
   </item>
   <item>
-    <title>杰克逊霍尔本周登场：新任美联储主席沃什首秀备受瞩目</title>
-    <description>8月27-29日杰克逊霍尔经济政策研讨会召开，主题为"金融创新：支付与政策影响"。新主席沃什将于周五上午10点发表首次主旨演讲。30年期美债收益率已升至5.31%（2007年来最高），财政部8月19日宣布扩大长债回购规模，市场急需政策指引。</description>
-    <link>https://www.kansascityfed.org/research/jackson-hole-economic-symposium/</link>
-    <pubDate>Thu, 27 Aug 2026 21:40:47 +0000</pubDate>
-  </item>
-  <item>
-    <title>市场分化加剧：科技股飙升掩盖大盘内部疲软</title>
-    <description>周四标普500上涨0.72%，但等权重版本下跌0.3%，反映多数个股下跌。科技板块单日暴涨3%成为唯一上涨板块，其余10个行业全线下跌。这种极端分化凸显市场对AI主题的过度依赖。</description>
+    <title>美元指数跌至98.97，三个月低位，美债回购计划引发贬值担忧</title>
+    <description>美元指数8月27日跌至98.97，为1月以来最低，因美国财政部扩大旧债回购计划引发市场对美债危机和美元长期贬值的担忧。离岸人民币升至6.72，为2023年1月以来最强。油价连续三日下跌缓解通胀压力，降低美元避险需求。</description>
     <link></link>
-    <pubDate>Thu, 27 Aug 2026 21:40:47 +0000</pubDate>
+    <pubDate>Fri, 28 Aug 2026 06:05:42 +0000</pubDate>
   </item>
   <item>
-    <title>美国初请失业金人数降至20.3万，劳动力市场韧性持续</title>
-    <description>截至8月22日当周初请失业金人数下降4000至20.3万（经季节调整），显示劳动力市场仍保持韧性。7月美国商品贸易逆差扩大17.2%至1188亿美元，批发库存增1.3%，零售库存增0.7%。</description>
+    <title>Marvell财报后盘后跌超7%，拖累纳指期货，AI热度分化</title>
+    <description>Marvell Technology 8月27日盘后发布财报后股价跌超7%，拖累纳斯达克100期货下跌0.1%。尽管英伟达财报强劲，但市场开始质疑AI基建支出的可持续性和投资回报率，部分芯片股面临估值压力。</description>
     <link></link>
-    <pubDate>Thu, 27 Aug 2026 21:40:47 +0000</pubDate>
+    <pubDate>Fri, 28 Aug 2026 06:05:42 +0000</pubDate>
   </item>
   </channel>
 </rss>
