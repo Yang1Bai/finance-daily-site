@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-28T06:02:03.741403Z",
+  "generated_at": "2026-08-28T21:39:32.978895Z",
   "performance": {
-    "total_signals": 80,
+    "total_signals": 81,
     "wins": 20,
     "losses": 33,
     "expired": 22,
-    "open": 5,
+    "open": 6,
     "win_rate": 0.2667,
     "avg_gain_pct": 390.2,
     "avg_loss_pct": -25.17,
@@ -33,7 +33,7 @@
       "price_issued": 466.71,
       "stop_loss": 434.0403,
       "take_profit": 536.7165,
-      "days_held": 7,
+      "days_held": 8,
       "current_price": 478.0,
       "current_pnl_pct": 2.42,
       "price_source": "ai_fallback"
@@ -45,9 +45,9 @@
       "price_issued": 77717.61,
       "stop_loss": 72277.3773,
       "take_profit": 89375.2515,
-      "days_held": 6,
-      "current_price": 80083.11,
-      "current_pnl_pct": 3.04,
+      "days_held": 7,
+      "current_price": 79500.0,
+      "current_pnl_pct": 2.29,
       "price_source": "ai_fallback"
     },
     {
@@ -57,9 +57,9 @@
       "price_issued": 764.78,
       "stop_loss": 711.2454,
       "take_profit": 879.497,
-      "days_held": 2,
-      "current_price": 768.02,
-      "current_pnl_pct": 0.42,
+      "days_held": 3,
+      "current_price": 766.08,
+      "current_pnl_pct": 0.17,
       "price_source": "ai_fallback"
     },
     {
@@ -69,9 +69,9 @@
       "price_issued": 4650.0,
       "stop_loss": 4324.5,
       "take_profit": 5347.5,
-      "days_held": 2,
-      "current_price": 4650.0,
-      "current_pnl_pct": 0.0,
+      "days_held": 3,
+      "current_price": 4602.69,
+      "current_pnl_pct": -1.02,
       "price_source": "ai_fallback"
     },
     {
@@ -81,8 +81,20 @@
       "price_issued": 3.85,
       "stop_loss": 3.5805,
       "take_profit": 4.4275,
+      "days_held": 1,
+      "current_price": 3.87,
+      "current_pnl_pct": 0.52,
+      "price_source": "ai_fallback"
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "BUY",
+      "date_issued": "2026-08-28",
+      "price_issued": 711.37,
+      "stop_loss": 661.5741,
+      "take_profit": 818.0755,
       "days_held": 0,
-      "current_price": 3.85,
+      "current_price": 711.37,
       "current_pnl_pct": 0.0,
       "price_source": "ai_fallback"
     }
@@ -840,18 +852,18 @@
     }
   ],
   "sector_rotation": {
-    "date": "2026-08-27",
+    "date": "2026-08-28",
     "strong_sectors": [
-      "信息科技",
-      "必需消费",
-      "公用事业"
+      "科技",
+      "通讯服务",
+      "医疗保健"
     ],
     "weak_sectors": [
-      "非必需消费",
-      "金融",
+      "公用事业",
+      "房地产",
       "能源"
     ],
     "rule": "只在强势板块开新多仓",
-    "note": "今日信息科技+2.9%领涨，建议关注XLK及Information Technology个股"
+    "note": "今日科技+1.57%领涨，建议关注XLK及Technology个股"
   }
 }
