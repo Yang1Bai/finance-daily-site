@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T22:53:08.851987+00:00",
+  "updated": "2026-08-29T03:17:32.149632+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -22,7 +22,7 @@
       "name": "DOW",
       "symbol": "^DJI",
       "value": "53,560",
-      "change": "-9.45",
+      "change": "-9.44",
       "change_pct": "-0.02%",
       "direction": "down"
     },
@@ -77,18 +77,18 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "77,736",
-      "change": "-2521.43",
-      "change_pct": "-3.14%",
+      "value": "77,634",
+      "change": "-2623.61",
+      "change_pct": "-3.27%",
       "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "99.6770",
-      "change": "+0.52",
-      "change_pct": "+0.52%",
-      "direction": "up"
+      "value": "99.1600",
+      "change": "-0.01",
+      "change_pct": "-0.01%",
+      "direction": "down"
     }
   ]
 }
