@@ -2920,62 +2920,47 @@
         },
         {
           "date": "2026-08-28",
-          "portfolio_value": 8743.3,
-          "baseline_value": 10432.67,
+          "portfolio_value": 8612.73,
+          "baseline_value": 10409.0,
           "cash": 34.6,
           "positions": {
             "MSFT": {
               "shares": 2,
-              "price": 505.06,
-              "value": 1010.12
+              "price": 513.53,
+              "value": 1027.06
             },
             "AMZN": {
               "shares": 4,
-              "price": 256.26,
-              "value": 1025.04
+              "price": 266.43,
+              "value": 1065.72
             },
             "NVDA": {
               "shares": 8,
-              "price": 227.98,
-              "value": 1823.84
+              "price": 217.55,
+              "value": 1740.4
             },
             "TSLA": {
               "shares": 5,
-              "price": 354.81,
-              "value": 1774.05
+              "price": 348.75,
+              "value": 1743.75
             },
             "TSM": {
               "shares": 5,
-              "price": 427.3,
-              "value": 2136.5
+              "price": 417.52,
+              "value": 2087.6
             },
             "XLE": {
               "shares": 5,
-              "price": 62.29,
-              "value": 311.45
+              "price": 62.68,
+              "value": 313.4
             },
             "SLV": {
               "shares": 10,
-              "price": 62.77,
-              "value": 627.7
+              "price": 60.02,
+              "value": 600.2
             }
           },
-          "trades": [
-            {
-              "action": "BUY",
-              "ticker": "XLE",
-              "shares": 5,
-              "price": 62.29,
-              "reason": "RSI77.7强势信号，能源板块独立走强，动量+5.65%"
-            },
-            {
-              "action": "BUY",
-              "ticker": "SLV",
-              "shares": 10,
-              "price": 62.77,
-              "reason": "RSI66.9强势信号，动量+17.33%领涨，贵金属趋势明确"
-            }
-          ],
+          "trades": [],
           "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
         }
       ]
@@ -5075,24 +5060,24 @@
         },
         {
           "date": "2026-08-28",
-          "portfolio_value": 8364.85,
-          "baseline_value": 10432.67,
+          "portfolio_value": 8382.95,
+          "baseline_value": 10409.0,
           "cash": 135.43,
           "positions": {
             "META": {
               "shares": 10,
-              "price": 571.1,
-              "value": 5711.0
+              "price": 578.02,
+              "value": 5780.2
             },
             "ETH-USD": {
               "shares": 1,
-              "price": 2489.93,
-              "value": 2489.93
+              "price": 2438.58,
+              "value": 2438.58
             },
             "JD": {
               "shares": 1,
-              "price": 28.49,
-              "value": 28.49
+              "price": 28.74,
+              "value": 28.74
             }
           },
           "trades": [],
@@ -5163,9 +5148,15 @@
           "buy_date": "2026-08-21"
         },
         {
+          "ticker": "AAPL",
+          "shares": 1,
+          "avg_cost": 319.7,
+          "buy_date": "2026-08-28"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 910.6
+          "avg_cost": 590.9
         }
       ],
       "history": [
@@ -8387,63 +8378,76 @@
         },
         {
           "date": "2026-08-28",
-          "portfolio_value": 9456.07,
-          "baseline_value": 10432.67,
-          "cash": 910.6,
+          "portfolio_value": 9481.24,
+          "baseline_value": 10409.0,
+          "cash": 590.9,
           "positions": {
             "XLF": {
               "shares": 7,
-              "price": 57.88,
-              "value": 405.16
+              "price": 58.1,
+              "value": 406.7
             },
             "NVDA": {
               "shares": 6,
-              "price": 227.98,
-              "value": 1367.88
+              "price": 217.55,
+              "value": 1305.3
             },
             "XLE": {
               "shares": 2,
-              "price": 62.29,
-              "value": 124.58
+              "price": 62.68,
+              "value": 125.36
             },
             "BABA": {
               "shares": 18,
-              "price": 116.31,
-              "value": 2093.58
+              "price": 118.9,
+              "value": 2140.2
             },
             "MSFT": {
               "shares": 3,
-              "price": 505.06,
-              "value": 1515.18
+              "price": 513.53,
+              "value": 1540.59
             },
             "AMZN": {
               "shares": 4,
-              "price": 256.26,
-              "value": 1025.04
+              "price": 266.43,
+              "value": 1065.72
             },
             "XLK": {
               "shares": 3,
-              "price": 188.61,
-              "value": 565.83
+              "price": 185.69,
+              "value": 557.07
             },
             "TSM": {
               "shares": 1,
-              "price": 427.3,
-              "value": 427.3
+              "price": 417.52,
+              "value": 417.52
             },
             "QQQ": {
               "shares": 1,
-              "price": 721.11,
-              "value": 721.11
+              "price": 716.43,
+              "value": 716.43
             },
             "IWM": {
               "shares": 1,
-              "price": 299.81,
-              "value": 299.81
+              "price": 295.75,
+              "value": 295.75
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 319.7,
+              "value": 319.7
             }
           },
-          "trades": [],
-          "note": "规则策略：无强势标的，持币观望"
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "AAPL",
+              "shares": 1,
+              "price": 319.7,
+              "reason": "技术强势+动量+3.6%"
+            }
+          ],
+          "note": "规则策略：持有强势['AAPL']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
