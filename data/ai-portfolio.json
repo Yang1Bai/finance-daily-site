@@ -2962,6 +2962,51 @@
           },
           "trades": [],
           "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
+        },
+        {
+          "date": "2026-08-31",
+          "portfolio_value": 8691.95,
+          "baseline_value": 10377.88,
+          "cash": 34.6,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 507.29,
+              "value": 1014.58
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 259.77,
+              "value": 1039.08
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 220.78,
+              "value": 1766.24
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 367.95,
+              "value": 1839.75
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 415.32,
+              "value": 2076.6
+            },
+            "XLE": {
+              "shares": 5,
+              "price": 63.96,
+              "value": 319.8
+            },
+            "SLV": {
+              "shares": 10,
+              "price": 60.13,
+              "value": 601.3
+            }
+          },
+          "trades": [],
+          "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
         }
       ]
     },
@@ -5082,6 +5127,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-08-31",
+          "portfolio_value": 8353.91,
+          "baseline_value": 10377.88,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 572.34,
+              "value": 5723.4
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2466.84,
+              "value": 2466.84
+            },
+            "JD": {
+              "shares": 1,
+              "price": 28.24,
+              "value": 28.24
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -5104,12 +5174,6 @@
           "shares": 2,
           "avg_cost": 57.68,
           "buy_date": "2026-07-17"
-        },
-        {
-          "ticker": "BABA",
-          "shares": 18,
-          "avg_cost": 115.19,
-          "buy_date": "2026-07-28"
         },
         {
           "ticker": "MSFT",
@@ -5154,9 +5218,15 @@
           "buy_date": "2026-08-28"
         },
         {
+          "ticker": "TSLA",
+          "shares": 3,
+          "avg_cost": 367.95,
+          "buy_date": "2026-08-31"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 590.9
+          "avg_cost": 1539.41
         }
       ],
       "history": [
@@ -8448,6 +8518,86 @@
             }
           ],
           "note": "规则策略：持有强势['AAPL']，剔除弱势"
+        },
+        {
+          "date": "2026-08-31",
+          "portfolio_value": 9363.14,
+          "baseline_value": 10377.88,
+          "cash": 1539.41,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.71,
+              "value": 403.97
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 220.78,
+              "value": 1324.68
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 63.96,
+              "value": 127.92
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 507.29,
+              "value": 1521.87
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 259.77,
+              "value": 1039.08
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 186.5,
+              "value": 559.5
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 415.32,
+              "value": 415.32
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 716.76,
+              "value": 716.76
+            },
+            "IWM": {
+              "shares": 1,
+              "price": 293.93,
+              "value": 293.93
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 316.85,
+              "value": 316.85
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 367.95,
+              "value": 1103.85
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "BABA",
+              "shares": 18,
+              "price": 114.02,
+              "reason": "技术弱势(弱势)"
+            },
+            {
+              "action": "BUY",
+              "ticker": "TSLA",
+              "shares": 3,
+              "price": 367.95,
+              "reason": "技术强势+动量+14.2%"
+            }
+          ],
+          "note": "规则策略：持有强势['TSLA']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
