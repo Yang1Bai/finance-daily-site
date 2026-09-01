@@ -3007,6 +3007,51 @@
           },
           "trades": [],
           "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
+        },
+        {
+          "date": "2026-09-01",
+          "portfolio_value": 8549.34,
+          "baseline_value": 10306.58,
+          "cash": 34.6,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 501.02,
+              "value": 1002.04
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 254.92,
+              "value": 1019.68
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 217.44,
+              "value": 1739.52
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 356.09,
+              "value": 1780.45
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 414.0,
+              "value": 2070.0
+            },
+            "XLE": {
+              "shares": 5,
+              "price": 64.77,
+              "value": 323.85
+            },
+            "SLV": {
+              "shares": 10,
+              "price": 57.92,
+              "value": 579.2
+            }
+          },
+          "trades": [],
+          "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
         }
       ]
     },
@@ -5152,6 +5197,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-09-01",
+          "portfolio_value": 8353.82,
+          "baseline_value": 10306.58,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 578.54,
+              "value": 5785.4
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2405.09,
+              "value": 2405.09
+            },
+            "JD": {
+              "shares": 1,
+              "price": 27.9,
+              "value": 27.9
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -5206,12 +5276,6 @@
           "buy_date": "2026-08-13"
         },
         {
-          "ticker": "IWM",
-          "shares": 1,
-          "avg_cost": 299.96,
-          "buy_date": "2026-08-21"
-        },
-        {
           "ticker": "AAPL",
           "shares": 1,
           "avg_cost": 319.7,
@@ -5226,7 +5290,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1539.41
+          "avg_cost": 1829.98
         }
       ],
       "history": [
@@ -8598,6 +8662,74 @@
             }
           ],
           "note": "规则策略：持有强势['TSLA']，剔除弱势"
+        },
+        {
+          "date": "2026-09-01",
+          "portfolio_value": 9253.26,
+          "baseline_value": 10306.58,
+          "cash": 1829.98,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 57.2,
+              "value": 400.4
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 217.44,
+              "value": 1304.64
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 64.77,
+              "value": 129.54
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 501.02,
+              "value": 1503.06
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 254.92,
+              "value": 1019.68
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 183.64,
+              "value": 550.92
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 414.0,
+              "value": 414.0
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 707.64,
+              "value": 707.64
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 325.13,
+              "value": 325.13
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 356.09,
+              "value": 1068.27
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "IWM",
+              "shares": 1,
+              "price": 290.57,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
