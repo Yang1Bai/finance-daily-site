@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-01T20:02:14.136204+00:00",
+  "updated": "2026-09-01T22:43:21.841380+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,631.55",
-      "change": "-54.59",
+      "value": "7,631.47",
+      "change": "-54.67",
       "change_pct": "-0.71%",
       "direction": "down"
     },
@@ -21,10 +21,18 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,768",
-      "change": "-418.31",
+      "value": "52,767",
+      "change": "-419.02",
       "change_pct": "-0.79%",
       "direction": "down"
+    },
+    {
+      "name": "上证指数",
+      "symbol": "000001.SS",
+      "value": "3,986.30",
+      "change": "+29.73",
+      "change_pct": "+0.75%",
+      "direction": "up"
     },
     {
       "name": "恒生指数",
@@ -45,41 +53,33 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,970",
-      "change": "-288.00",
-      "change_pct": "-1.10%",
-      "direction": "down"
-    },
-    {
-      "name": "黄金 XAU",
-      "symbol": "GC=F",
-      "value": "4,376.50",
-      "change": "-54.60",
-      "change_pct": "-1.23%",
+      "value": "26,258",
+      "change": "-109.13",
+      "change_pct": "-0.41%",
       "direction": "down"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "90.5500",
-      "change": "+4.79",
-      "change_pct": "+5.59%",
+      "value": "90.8100",
+      "change": "+5.05",
+      "change_pct": "+5.89%",
       "direction": "up"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "77,252",
-      "change": "-1297.11",
-      "change_pct": "-1.65%",
+      "value": "77,043",
+      "change": "-1505.23",
+      "change_pct": "-1.92%",
       "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "99.6860",
-      "change": "+0.26",
-      "change_pct": "+0.26%",
+      "value": "99.6540",
+      "change": "+0.22",
+      "change_pct": "+0.23%",
       "direction": "up"
     }
   ]
