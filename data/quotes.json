@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T18:06:18.701218+00:00",
+  "updated": "2026-09-07T21:42:04.431827+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -77,18 +77,18 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "79,146",
-      "change": "-1204.05",
-      "change_pct": "-1.50%",
+      "value": "79,180",
+      "change": "-1169.58",
+      "change_pct": "-1.46%",
       "direction": "down"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "98.9050",
-      "change": "-0.26",
-      "change_pct": "-0.26%",
-      "direction": "down"
+      "value": "99.1760",
+      "change": "+0.02",
+      "change_pct": "+0.02%",
+      "direction": "up"
     }
   ]
 }
