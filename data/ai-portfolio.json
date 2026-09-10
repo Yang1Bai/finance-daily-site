@@ -3322,6 +3322,51 @@
           },
           "trades": [],
           "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
+        },
+        {
+          "date": "2026-09-10",
+          "portfolio_value": 8631.52,
+          "baseline_value": 10253.14,
+          "cash": 34.6,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 492.44,
+              "value": 984.88
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 251.89,
+              "value": 1007.56
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 218.36,
+              "value": 1746.88
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 363.56,
+              "value": 1817.8
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 428.03,
+              "value": 2140.15
+            },
+            "XLE": {
+              "shares": 5,
+              "price": 64.93,
+              "value": 324.65
+            },
+            "SLV": {
+              "shares": 10,
+              "price": 57.5,
+              "value": 575.0
+            }
+          },
+          "trades": [],
+          "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
         }
       ]
     },
@@ -5638,6 +5683,31 @@
               "shares": 1,
               "price": 27.0,
               "value": 27.0
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-09-10",
+          "portfolio_value": 9052.55,
+          "baseline_value": 10253.14,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 644.38,
+              "value": 6443.8
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2446.3,
+              "value": 2446.3
+            },
+            "JD": {
+              "shares": 1,
+              "price": 27.02,
+              "value": 27.02
             }
           },
           "trades": [],
@@ -9592,6 +9662,76 @@
               "reason": "技术弱势(弱势)"
             }
           ],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-09-10",
+          "portfolio_value": 9275.45,
+          "baseline_value": 10253.14,
+          "cash": 1200.81,
+          "positions": {
+            "XLF": {
+              "shares": 7,
+              "price": 56.87,
+              "value": 398.09
+            },
+            "NVDA": {
+              "shares": 6,
+              "price": 218.36,
+              "value": 1310.16
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 64.93,
+              "value": 129.86
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 492.44,
+              "value": 1477.32
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 185.22,
+              "value": 555.66
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 428.03,
+              "value": 428.03
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 708.69,
+              "value": 708.69
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 326.57,
+              "value": 326.57
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 363.56,
+              "value": 1090.68
+            },
+            "META": {
+              "shares": 1,
+              "price": 644.38,
+              "value": 644.38
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 503.6,
+              "value": 503.6
+            },
+            "INTC": {
+              "shares": 5,
+              "price": 100.32,
+              "value": 501.6
+            }
+          },
+          "trades": [],
           "note": "规则策略：无强势标的，持币观望"
         }
       ],
