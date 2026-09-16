@@ -3502,6 +3502,51 @@
           },
           "trades": [],
           "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
+        },
+        {
+          "date": "2026-09-16",
+          "portfolio_value": 8479.89,
+          "baseline_value": 10201.99,
+          "cash": 34.6,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 490.3,
+              "value": 980.6
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 245.96,
+              "value": 983.84
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 213.9,
+              "value": 1711.2
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 358.08,
+              "value": 1790.4
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 417.72,
+              "value": 2088.6
+            },
+            "XLE": {
+              "shares": 5,
+              "price": 64.03,
+              "value": 320.15
+            },
+            "SLV": {
+              "shares": 10,
+              "price": 57.05,
+              "value": 570.5
+            }
+          },
+          "trades": [],
+          "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
         }
       ]
     },
@@ -5922,17 +5967,36 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-09-16",
+          "portfolio_value": 9289.09,
+          "baseline_value": 10201.99,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 673.31,
+              "value": 6733.1
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2393.66,
+              "value": 2393.66
+            },
+            "JD": {
+              "shares": 1,
+              "price": 26.9,
+              "value": 26.9
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
     "rule_based": {
       "holdings": [
-        {
-          "ticker": "XLF",
-          "shares": 7,
-          "avg_cost": 52.62,
-          "buy_date": "2026-06-11"
-        },
         {
           "ticker": "NVDA",
           "shares": 6,
@@ -6002,7 +6066,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1200.81
+          "avg_cost": 1592.32
         }
       ],
       "history": [
@@ -10152,6 +10216,79 @@
             }
           },
           "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-09-16",
+          "portfolio_value": 9246.62,
+          "baseline_value": 10201.99,
+          "cash": 1592.32,
+          "positions": {
+            "NVDA": {
+              "shares": 6,
+              "price": 213.9,
+              "value": 1283.4
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 64.03,
+              "value": 128.06
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 490.3,
+              "value": 1470.9
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 183.93,
+              "value": 551.79
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 417.72,
+              "value": 417.72
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 704.72,
+              "value": 704.72
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 332.41,
+              "value": 332.41
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 358.08,
+              "value": 1074.24
+            },
+            "META": {
+              "shares": 1,
+              "price": 673.31,
+              "value": 673.31
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 512.5,
+              "value": 512.5
+            },
+            "INTC": {
+              "shares": 5,
+              "price": 101.05,
+              "value": 505.25
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLF",
+              "shares": 7,
+              "price": 55.93,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
           "note": "规则策略：无强势标的，持币观望"
         }
       ],
