@@ -1,29 +1,29 @@
 {
-  "updated": "2026-09-18T16:56:19.837604+00:00",
+  "updated": "2026-09-18T19:26:58.403527+00:00",
   "source": "yfinance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,625.14",
-      "change": "-12.62",
-      "change_pct": "-0.17%",
-      "direction": "down"
+      "value": "7,640.36",
+      "change": "+2.60",
+      "change_pct": "+0.03%",
+      "direction": "up"
     },
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,394",
-      "change": "-24.77",
-      "change_pct": "-0.09%",
-      "direction": "down"
+      "value": "26,474",
+      "change": "+55.93",
+      "change_pct": "+0.21%",
+      "direction": "up"
     },
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,604",
-      "change": "-174.24",
-      "change_pct": "-0.34%",
+      "value": "51,695",
+      "change": "-82.94",
+      "change_pct": "-0.16%",
       "direction": "down"
     },
     {
@@ -61,34 +61,34 @@
     {
       "name": "黄金 XAU",
       "symbol": "GC=F",
-      "value": "4,417.50",
-      "change": "+17.80",
-      "change_pct": "+0.40%",
+      "value": "4,423.30",
+      "change": "+23.60",
+      "change_pct": "+0.54%",
       "direction": "up"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "96.0600",
-      "change": "-5.85",
-      "change_pct": "-5.74%",
+      "value": "95.4800",
+      "change": "-6.43",
+      "change_pct": "-6.31%",
       "direction": "down"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "80,910",
-      "change": "+4506.54",
-      "change_pct": "+5.90%",
+      "value": "81,200",
+      "change": "+4795.75",
+      "change_pct": "+6.28%",
       "direction": "up"
     },
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "100.2940",
-      "change": "+0.07",
-      "change_pct": "+0.07%",
-      "direction": "up"
+      "value": "100.1920",
+      "change": "-0.03",
+      "change_pct": "-0.03%",
+      "direction": "down"
     }
   ]
 }
