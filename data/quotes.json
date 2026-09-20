@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T06:53:16.354143+00:00",
+  "updated": "2026-09-20T07:18:09.645744+00:00",
   "source": "yfinance",
   "quotes": [
     {
@@ -69,18 +69,18 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "100.30",
-      "change": "-1.61",
-      "change_pct": "-1.58%",
+      "value": "96.0800",
+      "change": "-5.83",
+      "change_pct": "-5.72%",
       "direction": "down"
     },
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "81,036",
-      "change": "+4632.05",
-      "change_pct": "+6.06%",
-      "direction": "up"
+      "value": "80,293",
+      "change": "-608.80",
+      "change_pct": "-0.75%",
+      "direction": "down"
     },
     {
       "name": "美元指数",
