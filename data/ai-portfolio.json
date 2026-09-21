@@ -3637,6 +3637,51 @@
           },
           "trades": [],
           "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
+        },
+        {
+          "date": "2026-09-21",
+          "portfolio_value": 8901.46,
+          "baseline_value": 10465.15,
+          "cash": 34.6,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 501.61,
+              "value": 1003.22
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 258.45,
+              "value": 1033.8
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 227.38,
+              "value": 1819.04
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 375.3,
+              "value": 1876.5
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 445.14,
+              "value": 2225.7
+            },
+            "XLE": {
+              "shares": 5,
+              "price": 62.46,
+              "value": 312.3
+            },
+            "SLV": {
+              "shares": 10,
+              "price": 59.63,
+              "value": 596.3
+            }
+          },
+          "trades": [],
+          "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
         }
       ]
     },
@@ -6132,6 +6177,31 @@
           },
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-09-21",
+          "portfolio_value": 10350.86,
+          "baseline_value": 10465.15,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 741.24,
+              "value": 7412.4
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2775.75,
+              "value": 2775.75
+            },
+            "JD": {
+              "shares": 1,
+              "price": 27.28,
+              "value": 27.28
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
       ]
     },
@@ -6204,9 +6274,15 @@
           "buy_date": "2026-09-08"
         },
         {
+          "ticker": "GOOGL",
+          "shares": 2,
+          "avg_cost": 354.97,
+          "buy_date": "2026-09-21"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1592.32
+          "avg_cost": 882.38
         }
       ],
       "history": [
@@ -10560,6 +10636,84 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-09-21",
+          "portfolio_value": 9788.05,
+          "baseline_value": 10465.15,
+          "cash": 882.38,
+          "positions": {
+            "NVDA": {
+              "shares": 6,
+              "price": 227.38,
+              "value": 1364.28
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 62.46,
+              "value": 124.92
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 501.61,
+              "value": 1504.83
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 194.85,
+              "value": 584.55
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 445.14,
+              "value": 445.14
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 741.47,
+              "value": 741.47
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 338.98,
+              "value": 338.98
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 375.3,
+              "value": 1125.9
+            },
+            "META": {
+              "shares": 1,
+              "price": 741.24,
+              "value": 741.24
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 615.52,
+              "value": 615.52
+            },
+            "INTC": {
+              "shares": 5,
+              "price": 121.78,
+              "value": 608.9
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 354.97,
+              "value": 709.94
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "GOOGL",
+              "shares": 2,
+              "price": 354.97,
+              "reason": "技术强势+动量+3.0%"
+            }
+          ],
+          "note": "规则策略：持有强势['GOOGL']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
