@@ -3817,6 +3817,51 @@
           },
           "trades": [],
           "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
+        },
+        {
+          "date": "2026-09-25",
+          "portfolio_value": 8871.38,
+          "baseline_value": 10436.06,
+          "cash": 34.6,
+          "positions": {
+            "MSFT": {
+              "shares": 2,
+              "price": 516.17,
+              "value": 1032.34
+            },
+            "AMZN": {
+              "shares": 4,
+              "price": 249.67,
+              "value": 998.68
+            },
+            "NVDA": {
+              "shares": 8,
+              "price": 225.07,
+              "value": 1800.56
+            },
+            "TSLA": {
+              "shares": 5,
+              "price": 372.11,
+              "value": 1860.55
+            },
+            "TSM": {
+              "shares": 5,
+              "price": 450.61,
+              "value": 2253.05
+            },
+            "XLE": {
+              "shares": 5,
+              "price": 62.04,
+              "value": 310.2
+            },
+            "SLV": {
+              "shares": 10,
+              "price": 58.14,
+              "value": 581.4
+            }
+          },
+          "trades": [],
+          "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
         }
       ]
     },
@@ -6408,6 +6453,31 @@
               "shares": 1,
               "price": 26.75,
               "value": 26.75
+            }
+          },
+          "trades": [],
+          "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
+        },
+        {
+          "date": "2026-09-25",
+          "portfolio_value": 10371.0,
+          "baseline_value": 10436.06,
+          "cash": 135.43,
+          "positions": {
+            "META": {
+              "shares": 10,
+              "price": 751.66,
+              "value": 7516.6
+            },
+            "ETH-USD": {
+              "shares": 1,
+              "price": 2692.46,
+              "value": 2692.46
+            },
+            "JD": {
+              "shares": 1,
+              "price": 26.51,
+              "value": 26.51
             }
           },
           "trades": [],
@@ -11130,6 +11200,76 @@
               "shares": 2,
               "price": 342.36,
               "value": 684.72
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-09-25",
+          "portfolio_value": 9831.84,
+          "baseline_value": 10436.06,
+          "cash": 882.38,
+          "positions": {
+            "NVDA": {
+              "shares": 6,
+              "price": 225.07,
+              "value": 1350.42
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 62.04,
+              "value": 124.08
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 516.17,
+              "value": 1548.51
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 196.27,
+              "value": 588.81
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 450.61,
+              "value": 450.61
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 744.5,
+              "value": 744.5
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 341.07,
+              "value": 341.07
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 372.11,
+              "value": 1116.33
+            },
+            "META": {
+              "shares": 1,
+              "price": 751.66,
+              "value": 751.66
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 630.63,
+              "value": 630.63
+            },
+            "INTC": {
+              "shares": 5,
+              "price": 123.0,
+              "value": 615.0
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 343.92,
+              "value": 687.84
             }
           },
           "trades": [],
