@@ -1,43 +1,48 @@
 name: Daily Podcast Generation
 
 on:
-  schedule:
-    # 08:45 ET (12:45 UTC) — after daily update finishes
-    - cron: '45 12 * * 1-5'
+  workflow_run:
+    workflows: ['Daily Financial Dashboard Update']
+    types: [completed]
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+
+concurrency:
+  group: podcast-main
+  cancel-in-progress: false
 
 jobs:
   podcast:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    env:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      ANTHROPIC_MODEL:   ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-4-5' }}
-      OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
-
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Install dependencies
-        run: pip install anthropic openai edge-tts
-
-      - name: Install ffmpeg
-        run: sudo apt-get install -y ffmpeg
-
-      - name: Generate podcast
+      - name: Install offline speech tools
+        run: sudo apt-get update -qq && sudo apt-get install -y espeak-ng ffmpeg
+      - name: Generate source-based podcast
         run: python scripts/generate_podcast.py
-
       - name: Commit audio
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add audio/
-          git diff --cached --quiet || git commit -m "podcast: daily audio $(date -u +'%Y-%m-%d')"
-          git pull --rebase origin main
-          git push
+          git diff --cached --quiet || git commit -m "podcast: source narration $(date -u +'%Y-%m-%d')"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main || exit 1
+            if git push; then break; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep 3
+          done
+      - name: Request site rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

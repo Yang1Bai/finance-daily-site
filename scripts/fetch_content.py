@@ -371,7 +371,7 @@ def render_indices(indices: list) -> str:
         direction = idx.get("direction", "neutral")
         arrow = "▲" if direction == "up" else ("▼" if direction == "down" else "–")
         change_pct = idx.get("change_pct", "0.00%")
-        html_parts.append(f"""<div class="ticker-card {direction}">
+        html_parts.append(f"""<div class="ticker-card {direction}" data-as-of="{idx.get('as_of', '')}">
   <div class="ticker-name">{idx.get('name','')}</div>
   <div class="ticker-value">{idx.get('value','')}</div>
   <div class="ticker-change {direction}">{arrow} {change_pct}</div>
@@ -1443,7 +1443,12 @@ def main():
 
     if os.environ.get("CONTENT_MODE", "public") == "public":
         from fetch_public import fetch_public_data
-        data = fetch_public_data()
+        if os.environ.get("CONTENT_INPUT"):
+            data = json.loads(Path(os.environ["CONTENT_INPUT"]).read_text(encoding="utf-8"))
+        else:
+            data = fetch_public_data()
+        from editorial import apply_editorial
+        data = apply_editorial(data, ROOT_DIR)
     else:
         data = fetch_data_from_claude()
 

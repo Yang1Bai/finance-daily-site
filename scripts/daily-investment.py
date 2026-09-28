@@ -14,7 +14,7 @@ import pytz
 TORONTO_TZ = pytz.timezone("America/Toronto")
 
 # Telegram 配置
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8518954174:AAHIWuxR4DDTtqxqjFzeUi33WxFUtnLyQQc")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = "8727904480"
 
 # 主要追踪标的
@@ -226,7 +226,7 @@ def save_broadcast_stat(sent: int, total: int):
         with open(SUBS_FILE, "w") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
     except Exception as e:
-        print(f"Stat save failed: {e}")
+        print(f"Stat save failed: {type(e).__name__}")
 
 
 def broadcast(message: str):
@@ -246,17 +246,26 @@ def broadcast(message: str):
             else:
                 print(f"Failed {chat_id}: {resp.status_code}")
         except Exception as e:
-            print(f"Error {chat_id}: {e}")
+            print(f"Error {chat_id}: {type(e).__name__}")
     print(f"✅ Broadcast: {sent}/{len(subscribers)} delivered")
     save_broadcast_stat(sent, len(subscribers))
+    if sent != len(subscribers):
+        raise RuntimeError(f"Partial delivery: {sent}/{len(subscribers)}; inspect before retrying")
 
 
 def main():
     print(f"Fetching quotes at {datetime.now(TORONTO_TZ).isoformat()}...")
     quotes = fetch_quotes()
+    if not any("price" in row for group in quotes.values() for row in group.values()):
+        raise RuntimeError("No fresh quotes; refusing to send an empty briefing")
     message = build_message(quotes)
     print(message)
     print("\n--- Broadcasting ---")
+    if os.environ.get("DRY_RUN", "1").lower() in ("1", "true"):
+        print("Dry run: briefing built; no messages sent and no subscriber stats changed")
+        return
+    if not TELEGRAM_TOKEN:
+        raise RuntimeError("TELEGRAM_TOKEN is required for delivery")
     broadcast(message)
 
 

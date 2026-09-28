@@ -7,19 +7,32 @@ on:
     # Weekend: 9:00 AM (13:00 UTC)
     - cron: '0 13 * * 0,6'
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Validate without sending messages or consuming updates
+        type: boolean
+        default: true
 
 permissions:
   contents: write
 
+concurrency:
+  group: telegram-state-main
+  cancel-in-progress: false
+
 jobs:
   broadcast:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
+      DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) || vars.TELEGRAM_ENABLED != 'true' }}
       TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,9 +46,15 @@ jobs:
         run: python scripts/daily-investment.py
 
       - name: Commit subscriber stats
+        if: env.DRY_RUN == 'false'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/investment-subscribers.json
           git diff --cached --quiet || git commit -m "chore: broadcast stats $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main || exit 1
+            if git push; then break; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep 3
+          done

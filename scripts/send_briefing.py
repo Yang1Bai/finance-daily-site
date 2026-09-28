@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT     = Path(__file__).resolve().parent.parent
 DATA     = ROOT / "data"
-TG_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8518954174:AAHIWuxR4DDTtqxqjFzeUi33WxFUtnLyQQc")
+TG_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
 TG_CHAT  = "8727904480"
 
 

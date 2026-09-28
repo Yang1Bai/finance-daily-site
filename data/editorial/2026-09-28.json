@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-28",
+  "news": [
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260928~a875675544.en.html",
+      "title": "拉加德出席欧洲议会经济与货币事务委员会听证会",
+      "body": "欧洲央行发布拉加德的听证会讲话，完整内容见原文。"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-94-sec-charges-registered-investment-adviser-zoe-financial-failure-disclose-conflict-interest",
+      "title": "SEC 指控 Zoe Financial 未充分披露利益冲突",
+      "body": "SEC 宣布就纽约投资顾问 Zoe Financial 未向客户及潜在客户充分、公平披露重大利益冲突事实达成和解。"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
+      "title": "美联储批准 Peoples Bancorp 的申请",
+      "body": "美联储公布对 Peoples Bancorp Inc. 申请的批准决定，具体事项见原文。"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+      "title": "美联储就支付稳定币发行人监管框架征求意见",
+      "body": "美联储依据 GENIUS Act，就针对其监管的支付稳定币发行人的两项监管框架提案公开征求意见。"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
+      "title": "美联储对 Sandy Spring Bank 前员工采取执法行动",
+      "body": "美联储公布针对 Sandy Spring Bank 一名前员工的执法行动，具体事实与措施见原文。"
+    }
+  ]
+}

@@ -26,6 +26,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -44,8 +46,12 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.html feed.xml data/ archive/
           git diff --cached --quiet || git commit -m "chore: daily update $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main || exit 1
+            if git push; then break; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep 3
+          done
 
       - name: Request GitHub Pages rebuild
         env:

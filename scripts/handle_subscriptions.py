@@ -18,7 +18,7 @@ from pathlib import Path
 import requests
 
 # ─── Config ──────────────────────────────────────────────────────────────────
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8518954174:AAHIWuxR4DDTtqxqjFzeUi33WxFUtnLyQQc")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
 API_BASE       = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
 
 ROOT_DIR     = Path(__file__).resolve().parent.parent
@@ -86,13 +86,20 @@ def get_updates(offset: int) -> list:
     }, timeout=15)
     if resp.ok:
         return resp.json().get("result", [])
-    return []
+    raise RuntimeError(f"Telegram polling failed: HTTP {resp.status_code}")
 
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
     print("🤖 Telegram Subscription Handler starting...")
+    if os.environ.get("DRY_RUN", "1").lower() in ("1", "true"):
+        load_subscribers()
+        load_offset()
+        print("Dry run: local subscription state readable; no Telegram polling or replies")
+        return
+    if not TELEGRAM_TOKEN:
+        raise RuntimeError("TELEGRAM_TOKEN is required for subscription handling")
     offset  = load_offset()
     updates = get_updates(offset)
 

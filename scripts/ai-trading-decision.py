@@ -503,15 +503,20 @@ def main():
     today = now.strftime("%Y-%m-%d")
     print(f"\n🤖 AI 操盘决策 v2 — {today}" + (" [DRY RUN]" if args.dry_run else ""))
 
+    rules_only = os.environ.get("TRADING_MODE", "rules") == "rules"
     anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "")
     openai_key    = os.environ.get("OPENAI_API_KEY", "")
 
-    with open(PORTFOLIO_FILE) as f:
+    with open(PORTFOLIO_FILE, encoding="utf-8") as f:
         data = json.load(f)
 
     contest    = data["contest"]
     portfolios = data["portfolios"]
     start_cap  = contest["start_capital"]
+    prior = portfolios.get("rule_based", {}).get("history", [])
+    if rules_only and prior and prior[-1]["date"] == today:
+        print("Already processed today; preserving recorded trades and portfolio history")
+        return
 
     # 初始化 rule_based 组合（如不存在）
     if "rule_based" not in portfolios:
@@ -534,6 +539,9 @@ def main():
 
     print(f"\n📊 获取价格（{len(needed)} 个标的）…")
     prices = fetch_prices(list(needed))
+    required = {"SPY"} | {h["ticker"] for h in portfolios["rule_based"].get("holdings", []) if h["ticker"] != "CASH"}
+    if not required.issubset(prices):
+        raise RuntimeError("Missing prices for benchmark or held positions; preserving portfolio")
     spy_price = prices.get("SPY")
     spy_value = round(spy_price * 13.5296, 2) if spy_price else start_cap
     print(f"  SPY: ${spy_price:.2f} → 基准价值 ${spy_value:,.2f}" if spy_price else "  SPY 获取失败")
@@ -552,6 +560,13 @@ def main():
         "gpt-4o":            {"fn": ask_gpt,    "key": openai_key,    "label": "GPT-4o"},
     }
 
+    if rules_only:
+        for model_id in model_configs:
+            if model_id in portfolios:
+                portfolios[model_id]["decision_status"] = "paused_no_paid_api"
+        model_configs = {}
+        data["automation_mode"] = "rules_only_paper_simulation"
+        print("Paid model portfolios paused; only the labelled rule-based paper simulation runs")
     for model_id, cfg in model_configs.items():
         if model_id not in portfolios:
             continue
@@ -599,7 +614,11 @@ def main():
     print(f"\n{'─'*55}")
     print(f"📐 Rule-Based 策略决策…")
     rb_pf = portfolios["rule_based"]
-    rb_trades_raw, rb_note = rule_based_decision(prices, technicals, rb_pf, today)
+    if rb_pf.get("history") and rb_pf["history"][-1]["date"] == today:
+        print("Rule-based simulation already processed today; no duplicate trades")
+        rb_trades_raw, rb_note = [], rb_pf["history"][-1].get("note", "")
+    else:
+        rb_trades_raw, rb_note = rule_based_decision(prices, technicals, rb_pf, today)
     rb_cash = next((h["avg_cost"] for h in rb_pf["holdings"] if h["ticker"] == "CASH"), 0)
 
     if not args.dry_run:
@@ -631,7 +650,7 @@ def main():
     data["portfolios"] = portfolios
 
     if not args.dry_run:
-        with open(PORTFOLIO_FILE, "w") as f:
+        with open(PORTFOLIO_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"\n✅ ai-portfolio.json 已更新")
     else:

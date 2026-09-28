@@ -171,64 +171,79 @@
   ],
   "news": [
     {
-      "title": "Christine Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
+      "title": "拉加德出席欧洲议会经济与货币事务委员会听证会",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260928~a875675544.en.html",
-      "body": "",
+      "body": "欧洲央行发布拉加德的听证会讲话，完整内容见原文。",
       "date": "2026-09-28",
       "published_at": "2026-09-28T15:30:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Christine Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
+      "body_original": "",
+      "editorial_date": "2026-09-28"
     },
     {
-      "title": "SEC Charges Registered Investment Adviser Zoe Financial for Failure to Disclose Conflict of Interest",
+      "title": "SEC 指控 Zoe Financial 未充分披露利益冲突",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-94-sec-charges-registered-investment-adviser-zoe-financial-failure-disclose-conflict-interest",
-      "body": "The Securities and Exchange Commission today announced settled charges against New York-based investment adviser Zoe Financial Inc. for failing to fully and fairly disclose material facts concerning conflicts of interest to its clients and prospective…",
+      "body": "SEC 宣布就纽约投资顾问 Zoe Financial 未向客户及潜在客户充分、公平披露重大利益冲突事实达成和解。",
       "date": "2026-09-28",
       "published_at": "2026-09-28T13:46:30-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Charges Registered Investment Adviser Zoe Financial for Failure to Disclose Conflict of Interest",
+      "body_original": "The Securities and Exchange Commission today announced settled charges against New York-based investment adviser Zoe Financial Inc. for failing to fully and fairly disclose material facts concerning conflicts of interest to its clients and prospective…",
+      "editorial_date": "2026-09-28"
     },
     {
-      "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+      "title": "美联储批准 Peoples Bancorp 的申请",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
-      "body": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+      "body": "美联储公布对 Peoples Bancorp Inc. 申请的批准决定，具体事项见原文。",
       "date": "2026-09-25",
       "published_at": "2026-09-25T20:30:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+      "body_original": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+      "editorial_date": "2026-09-28"
     },
     {
-      "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "title": "美联储就支付稳定币发行人监管框架征求意见",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
-      "body": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "body": "美联储依据 GENIUS Act，就针对其监管的支付稳定币发行人的两项监管框架提案公开征求意见。",
       "date": "2026-09-24",
       "published_at": "2026-09-24T18:30:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "body_original": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "editorial_date": "2026-09-28"
     },
     {
-      "title": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+      "title": "美联储对 Sandy Spring Bank 前员工采取执法行动",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
-      "body": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+      "body": "美联储公布针对 Sandy Spring Bank 一名前员工的执法行动，具体事实与措施见原文。",
       "date": "2026-09-24",
       "published_at": "2026-09-24T15:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+      "body_original": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+      "editorial_date": "2026-09-28"
     },
     {
       "title": "ECB Executive Board member Isabel Schnabel to resign to take senior role at IMF",
@@ -361,5 +376,11 @@
       "近七日 15 条机构公告",
       "未核验栏目显示暂无更新"
     ]
+  },
+  "editorial": {
+    "date": "2026-09-28",
+    "items_applied": 5,
+    "editor": "Codex",
+    "mode": "source_grounded_chinese"
   }
 }

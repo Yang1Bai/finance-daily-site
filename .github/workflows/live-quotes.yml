@@ -12,24 +12,29 @@ on:
 
 permissions:
   contents: write
+  pages: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   quotes:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install yfinance
-
       - name: Fetch live quotes
-        run: python scripts/fetch_quotes.py
+        run: python scripts/fetch_quotes_public.py
 
       - name: Commit and push
         run: |
@@ -37,4 +42,14 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/quotes.json
           git diff --cached --quiet || git commit -m "chore: live quotes $(date -u +'%H:%M UTC')"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main || exit 1
+            if git push; then break; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep 3
+          done
+
+      - name: Request site rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
