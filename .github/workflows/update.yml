@@ -10,13 +10,18 @@ on:
 
 permissions:
   contents: write
+  pages: write
+
+concurrency:
+  group: daily-content-update
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-4-5' }}
+      CONTENT_MODE: public
 
     steps:
       - name: Checkout
@@ -27,25 +32,22 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install anthropic json-repair requests
-
-      - name: Track signal performance
-        run: python scripts/signal_tracker.py
-        continue-on-error: true  # Don't fail if no history yet
+      - name: Test public source handling
+        run: python -m unittest discover -s tests
 
       - name: Fetch & inject content
         run: python scripts/fetch_content.py
-
-      - name: Send Telegram briefing
-        run: python scripts/send_briefing.py
-        continue-on-error: true
 
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add index.html feed.xml data/ archive/
           git diff --cached --quiet || git commit -m "chore: daily update $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase origin main
           git push
+
+      - name: Request GitHub Pages rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

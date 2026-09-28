@@ -14,7 +14,6 @@ import datetime
 import traceback
 from pathlib import Path
 
-import anthropic
 
 # ─── Optional json-repair for robustness ────────────────────────────────────
 try:
@@ -376,6 +375,7 @@ def render_indices(indices: list) -> str:
   <div class="ticker-name">{idx.get('name','')}</div>
   <div class="ticker-value">{idx.get('value','')}</div>
   <div class="ticker-change {direction}">{arrow} {change_pct}</div>
+  <small>{idx.get("as_of", "")} · {idx.get("source", "")}</small>
 </div>""")
     return "\n".join(html_parts)
 
@@ -411,7 +411,14 @@ def render_leaders(leaders: list) -> str:
 
 def render_news(news: list) -> str:
     html_parts = []
-    for i, item in enumerate(news):
+    from html import escape
+    for i, original in enumerate(news):
+        item = dict(original)
+        for key in ("title", "url", "body", "tldr"):
+            item[key] = escape(str(item.get(key, "")), quote=True)
+        item["tags"] = [escape(str(t)) for t in item.get("tags", [])]
+        if original.get("date"):
+            item["tags"].append(escape(original["date"]))
         importance = item.get("importance", "normal")
         title = item.get("title", "")
         url = item.get("url", "")
@@ -1177,13 +1184,17 @@ def inject_into_html(html: str, data: dict) -> str:
     for anchor, key in section_map.items():
         items = data.get(key, [])
         if not items:
-            print(f"  ⚠️  No data for section {anchor}, skipping injection")
-            continue
-        renderer = ANCHOR_RENDERERS[anchor]
-        new_content = renderer(items)
+            if data.get("content_mode") != "public":
+                print(f"  No data for section {anchor}, skipping injection")
+                continue
+            new_content = '<p class="source-status">本次暂无经核验更新；历史内容见归档。</p>'
+        else:
+            renderer = ANCHOR_RENDERERS[anchor]
+            new_content = renderer(items)
+        new_content = "\n".join(line.rstrip() for line in new_content.splitlines())
         pattern = rf"(<!-- {anchor}:START -->).*?(<!-- {anchor}:END -->)"
         replacement = rf"\1\n{new_content}\n\2"
-        html, n = re.subn(pattern, replacement, html, flags=re.DOTALL)
+        html, n = re.subn(pattern, lambda m: m[1] + "\n" + new_content + "\n" + m[2], html, flags=re.DOTALL)
         if n == 0:
             print(f"  ⚠️  Anchor {anchor}:START/END not found in HTML")
         else:
@@ -1310,7 +1321,8 @@ def generate_rss(data: dict, feed_file: Path) -> None:
     for article in data.get("news", []):
         title = article.get("title", "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
         desc  = article.get("body", "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        link  = article.get("url", "")
+        from xml.sax.saxutils import escape
+        link  = escape(article.get("url", ""))
         items_xml += f"""  <item>
     <title>{title}</title>
     <description>{desc}</description>
@@ -1322,8 +1334,8 @@ def generate_rss(data: dict, feed_file: Path) -> None:
 <rss version="2.0">
   <channel>
     <title>金融日报 | Financial Daily</title>
-    <description>每日全球金融市场摘要，由 Claude AI + Web Search 自动生成</description>
-    <link>https://your-username.github.io/finance-daily-site/</link>
+    <description>每日全球金融市场公开来源摘要</description>
+    <link>https://yang1bai.github.io/finance-daily-site/</link>
     <language>zh-CN</language>
     <lastBuildDate>{pub_date}</lastBuildDate>
     <item>
@@ -1341,6 +1353,7 @@ def generate_rss(data: dict, feed_file: Path) -> None:
 # ─── Claude API call ──────────────────────────────────────────────────────────
 
 def fetch_data_from_claude() -> dict:
+    import anthropic
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     today = datetime.datetime.now().strftime("%Y年%-m月%-d日")
     user_prompt = USER_PROMPT_TEMPLATE.format(today=today)
@@ -1428,23 +1441,16 @@ def main():
     DATA_DIR.mkdir(exist_ok=True)
     ARCHIVE_DIR.mkdir(exist_ok=True)
 
-    # Verify ANTHROPIC_API_KEY
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("❌ ANTHROPIC_API_KEY environment variable not set")
-        sys.exit(1)
-
-    # Fetch data from Claude
-    try:
+    if os.environ.get("CONTENT_MODE", "public") == "public":
+        from fetch_public import fetch_public_data
+        data = fetch_public_data()
+    else:
         data = fetch_data_from_claude()
-    except Exception as e:
-        print(f"❌ Failed to fetch data from Claude: {e}")
-        traceback.print_exc()
-        sys.exit(1)
 
     # Determine date strings
     now      = datetime.datetime.now()
     date_iso = now.strftime("%Y-%m-%d")
-    date_cn  = data.get("date", now.strftime("%Y年%-m月%-d日"))
+    date_cn  = data.get("date", f"{now.year}年{now.month}月{now.day}日")
 
     print(f"\n📅 Processing data for: {date_cn} ({date_iso})")
 
@@ -1472,6 +1478,11 @@ def main():
     # D) Load signal ledger for HTML rendering
     ledger = load_signal_ledger()
     data["_signal_ledger"] = ledger  # injected for HTML rendering, not persisted to JSON
+
+    if data.get("content_mode") == "public":
+        # No model recommendations or inferred signals in a source-only digest.
+        for key in ("macro_regime", "pre_catalyst_alerts", "sector_rotation_signal", "_signal_ledger"):
+            data.pop(key, None)
 
     # Save raw JSON (without the private _signal_ledger key)
     json_path = DATA_DIR / f"{date_iso}.json"

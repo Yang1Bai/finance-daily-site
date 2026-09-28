@@ -2,50 +2,62 @@
 <rss version="2.0">
   <channel>
     <title>金融日报 | Financial Daily</title>
-    <description>每日全球金融市场摘要，由 Claude AI + Web Search 自动生成</description>
-    <link>https://your-username.github.io/finance-daily-site/</link>
+    <description>每日全球金融市场公开来源摘要</description>
+    <link>https://yang1bai.github.io/finance-daily-site/</link>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 28 Aug 2026 21:43:22 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 19:42:06 +0000</lastBuildDate>
     <item>
-      <title>金融日报 2026年8月28日</title>
+      <title>金融日报 2026年9月28日</title>
       <description>今日金融市场摘要已更新</description>
-      <pubDate>Fri, 28 Aug 2026 21:43:22 +0000</pubDate>
+      <pubDate>Mon, 28 Sep 2026 19:42:06 +0000</pubDate>
     </item>
   <item>
-    <title>英伟达Q2财报超预期，但引发AI投资可持续性担忧</title>
-    <description>英伟达8月27日盘后公布财报，Q2营收962.2亿美元超预期4.82%，每股收益$2.22超预期$2.09。公司预计2028财年营收增长70%，远超分析师44%预期。周四股价暴涨8.7%，但周五回吐涨幅收跌。非超大规模客户营收同比激增138%，显示AI需求正从巨头扩散至初创企业和传统IT部门。</description>
-    <link></link>
-    <pubDate>Fri, 28 Aug 2026 21:43:22 +0000</pubDate>
+    <title>SEC Charges Registered Investment Adviser Zoe Financial for Failure to Disclose Conflict of Interest</title>
+    <description>The Securities and Exchange Commission today announced settled charges against New York-based investment adviser Zoe Financial Inc. for failing to fully and fairly disclose material facts concerning conflicts of interest to its clients and prospective…</description>
+    <link>https://www.sec.gov/newsroom/press-releases/2026-94-sec-charges-registered-investment-adviser-zoe-financial-failure-disclose-conflict-interest</link>
+    <pubDate>Mon, 28 Sep 2026 19:42:06 +0000</pubDate>
   </item>
   <item>
-    <title>PayPal暴跌12%，Stripe放弃500亿美元收购交易</title>
-    <description>PayPal股价8月28日盘前暴跌13%，因Advent和Stripe放弃对其价值500亿美元的收购计划。这是继Meta被裁决反垄断败诉后，科技板块又一重大利空。分析师Thomas Hayes称赞PayPal董事会'为股东保留了有意义的上涨空间'，但市场对支付行业整合前景感到失望。</description>
-    <link></link>
-    <pubDate>Fri, 28 Aug 2026 21:43:22 +0000</pubDate>
+    <title>Federal Reserve Board announces approval of application by Peoples Bancorp Inc.</title>
+    <description>Federal Reserve Board announces approval of application by Peoples Bancorp Inc.</description>
+    <link>https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm</link>
+    <pubDate>Mon, 28 Sep 2026 19:42:06 +0000</pubDate>
   </item>
   <item>
-    <title>美加贸易战升级，加拿大宣布200亿美元报复性关税</title>
-    <description>加拿大8月25日宣布对约200亿美元美国商品征收15%-50%报复性关税，9月8日生效，涵盖钢铁、铝、乳制品、海鲜等700多种商品。此前特朗普宣布对加拿大汽车、零部件和钢铁加征50%关税。双边贸易紧张加剧，能源和工业板块面临供应链中断风险，但美股周二反而上涨，显示投资者预期影响有限。</description>
-    <link></link>
-    <pubDate>Fri, 28 Aug 2026 21:43:22 +0000</pubDate>
+    <title>Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act</title>
+    <description>Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act</description>
+    <link>https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm</link>
+    <pubDate>Mon, 28 Sep 2026 19:42:06 +0000</pubDate>
   </item>
   <item>
-    <title>中国A股情绪转弱，美债收益率上升施压</title>
-    <description>摩根士丹利8月28日指出，随着美债收益率上升，中国A股情绪有所软化。上证指数周五小幅下跌0.11%，但摩根士丹利认为'随着最大流动性悬而未决的因素消退、全球AI交易重拾动能，A股市场动态有改善空间'。香港离岸资金更青睐港股，恒生指数上涨0.07%，显示资金分化。</description>
-    <link></link>
-    <pubDate>Fri, 28 Aug 2026 21:43:22 +0000</pubDate>
+    <title>Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank</title>
+    <description>Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank</description>
+    <link>https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm</link>
+    <pubDate>Mon, 28 Sep 2026 19:42:06 +0000</pubDate>
   </item>
   <item>
-    <title>初请失业金20.3万人，劳动力市场保持韧性</title>
-    <description>劳工部8月27日公布数据显示，截至8月22日当周初请失业金人数为20.3万人，较前周下降4000人，低于预期，四周移动平均为20.55万人。持续申领失业金人数降至177.8万人。劳动力市场韧性支持联储可能加息的论调，与Warsh鹰派讲话相呼应。</description>
-    <link></link>
-    <pubDate>Fri, 28 Aug 2026 21:43:22 +0000</pubDate>
+    <title>SEC Publishes Updated Market Statistics, Highlighting Increase in IPOs and Proceeds Raised</title>
+    <description>The Securities and Exchange Commission’s Division of Economic and Risk Analysis (DERA) published updated statistics and data visualizations covering key segments of the U.S. capital markets, including a notable increase in the number of initial public…</description>
+    <link>https://www.sec.gov/newsroom/press-releases/2026-93-sec-publishes-updated-market-statistics-highlighting-increase-ipos-proceeds-raised</link>
+    <pubDate>Mon, 28 Sep 2026 19:42:06 +0000</pubDate>
   </item>
   <item>
-    <title>伊朗经济战加剧，原油供应担忧缓解</title>
-    <description>美国财长Scott Bessent升级对伊朗'经济D日'行动，指责伊朗政权向海外恐怖组织输送数十亿美元。伊朗里亚尔跌至历史新低约137万兑1美元，8月石油装载量暴跌至24.8万桶/日。但交易员认为这更多是经济/制裁对抗而非实际供应威胁，布伦特原油跌0.28%至88.27美元，WTI跌0.47%至83.14美元。</description>
-    <link></link>
-    <pubDate>Fri, 28 Aug 2026 21:43:22 +0000</pubDate>
+    <title>SEC Charges South Florida Resident and His Company for Alleged Investment Scheme Defrauding Law Enforcement</title>
+    <description>The Securities and Exchange Commission today charged CMI Capital LLC and its founder and manager, Michael D. Williams, for an alleged fraudulent investment scheme that raised approximately $860,000 from at least 18 investors, many of whom are current or…</description>
+    <link>https://www.sec.gov/newsroom/press-releases/2026-92-sec-charges-south-florida-resident-his-company-alleged-investment-scheme-defrauding-law-enforcement</link>
+    <pubDate>Mon, 28 Sep 2026 19:42:06 +0000</pubDate>
+  </item>
+  <item>
+    <title>Federal Reserve Board announces approval of application by BancFirst Corporation</title>
+    <description>Federal Reserve Board announces approval of application by BancFirst Corporation</description>
+    <link>https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm</link>
+    <pubDate>Mon, 28 Sep 2026 19:42:06 +0000</pubDate>
+  </item>
+  <item>
+    <title>SEC Censures OTC Link LLC for Repeated Compliance Failures Related to Regulation SCI</title>
+    <description>The Securities and Exchange Commission today censured New York-based broker dealer OTC Link LLC and ordered it to pay a $575,000 civil penalty for longstanding violations of Regulation Systems Compliance and Integrity (SCI).According to the SEC’s settled…</description>
+    <link>https://www.sec.gov/newsroom/press-releases/2026-91-sec-censures-otc-link-llc-repeated-compliance-failures-related-regulation-sci</link>
+    <pubDate>Mon, 28 Sep 2026 19:42:06 +0000</pubDate>
   </item>
   </channel>
 </rss>

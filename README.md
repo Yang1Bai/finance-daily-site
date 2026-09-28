@@ -1,3 +1,19 @@
+## Daily update repair (2026-09-28)
+
+The daily workflow now defaults to `CONTENT_MODE=public` and requires **no external API key**.
+It uses public, dated sources with bounded retries and source-status metadata in `data/latest.json`.
+All-source outages fail before replacing the published digest. Missing sections are labelled as
+unverified/unavailable rather than recycling old commentary under today's date. Original source
+language is preserved; this mode does not generate Chinese editorial analysis or trading advice.
+The existing Claude path is optional (`CONTENT_MODE=claude`) and requires its own dependencies
+and funded `ANTHROPIC_API_KEY`; the scheduled workflow no longer reads that secret.
+
+Run `python -m unittest discover -s tests`, then `python scripts/fetch_content.py`.
+The daily workflow commits the digest and explicitly requests a GitHub Pages rebuild with the
+built-in `GITHUB_TOKEN` (`contents: write`, `pages: write`). No personal token is needed.
+
+The separate trading, podcast, broadcast and subscription workflows are outside this repair; their optional credentials are unchanged. The daily public digest does not send Telegram messages or update the historical model signal ledger.
+
 # 📈 Financial Daily | 金融日报
 
 > **[English](#english) | [中文](#中文)**
