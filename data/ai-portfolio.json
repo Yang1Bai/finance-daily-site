@@ -3863,7 +3863,8 @@
           "trades": [],
           "note": "落后基准16%需进攻，买入强势信号XLE和SLV追赶收益"
         }
-      ]
+      ],
+      "decision_status": "paused_no_paid_api"
     },
     "gpt-4o": {
       "display_name": "GPT-4o",
@@ -6483,7 +6484,8 @@
           "trades": [],
           "note": "调整组合以降低防御仓位，增加强势股JD以增强进攻性"
         }
-      ]
+      ],
+      "decision_status": "paused_no_paid_api"
     },
     "rule_based": {
       "holdings": [
@@ -11274,10 +11276,81 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-09-28",
+          "portfolio_value": 9682.71,
+          "baseline_value": 10358.53,
+          "cash": 882.38,
+          "positions": {
+            "NVDA": {
+              "shares": 6,
+              "price": 228.98,
+              "value": 1373.88
+            },
+            "XLE": {
+              "shares": 2,
+              "price": 62.08,
+              "value": 124.16
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 509.27,
+              "value": 1527.81
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 194.57,
+              "value": 583.71
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 452.98,
+              "value": 452.98
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 736.6,
+              "value": 736.6
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 338.46,
+              "value": 338.46
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 357.68,
+              "value": 1073.04
+            },
+            "META": {
+              "shares": 1,
+              "price": 715.29,
+              "value": 715.29
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 608.2,
+              "value": 608.2
+            },
+            "INTC": {
+              "shares": 5,
+              "price": 116.18,
+              "value": 580.9
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 342.65,
+              "value": 685.3
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
       "emoji": "📐"
     }
-  }
+  },
+  "automation_mode": "rules_only_paper_simulation"
 }
