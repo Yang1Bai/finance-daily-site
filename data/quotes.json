@@ -1,15 +1,15 @@
 {
-  "updated": "2026-09-29T18:27:15.280500+00:00",
+  "updated": "2026-09-29T22:31:17.803953+00:00",
   "source": "Yahoo Finance",
   "quotes": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,668.71",
-      "change": "-14.98",
-      "change_pct": "-0.19%",
+      "value": "7,670.84",
+      "change": "-12.85",
+      "change_pct": "-0.17%",
       "direction": "down",
-      "as_of": "2026-09-29T18:27:10+00:00",
+      "as_of": "2026-09-29T20:38:43+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -17,11 +17,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,788.06",
-      "change": "-32.32",
-      "change_pct": "-0.12%",
+      "value": "26,797.54",
+      "change": "-22.84",
+      "change_pct": "-0.09%",
       "direction": "down",
-      "as_of": "2026-09-29T18:27:04+00:00",
+      "as_of": "2026-09-29T21:15:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -29,11 +29,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,276.56",
-      "change": "-204.95",
-      "change_pct": "-0.40%",
+      "value": "51,349.92",
+      "change": "-131.59",
+      "change_pct": "-0.26%",
       "direction": "down",
-      "as_of": "2026-09-29T18:27:05+00:00",
+      "as_of": "2026-09-29T20:38:50+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -89,11 +89,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,202.20",
-      "change": "+33.80",
-      "change_pct": "+0.81%",
+      "value": "4,215.00",
+      "change": "+35.30",
+      "change_pct": "+0.84%",
       "direction": "up",
-      "as_of": "2026-09-29T18:17:12+00:00",
+      "as_of": "2026-09-29T22:21:03+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -101,11 +101,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "89.72",
-      "change": "-2.88",
-      "change_pct": "-3.11%",
+      "value": "88.71",
+      "change": "-0.67",
+      "change_pct": "-0.75%",
       "direction": "down",
-      "as_of": "2026-09-29T18:17:13+00:00",
+      "as_of": "2026-09-29T22:21:11+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -113,11 +113,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "83,432.99",
-      "change": "-55.01",
-      "change_pct": "-0.07%",
-      "direction": "down",
-      "as_of": "2026-09-29T18:27:10+00:00",
+      "value": "83,528.38",
+      "change": "+40.38",
+      "change_pct": "+0.05%",
+      "direction": "up",
+      "as_of": "2026-09-29T22:31:15+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -125,11 +125,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.40",
-      "change": "+0.20",
-      "change_pct": "+0.20%",
+      "value": "101.38",
+      "change": "+0.18",
+      "change_pct": "+0.18%",
       "direction": "up",
-      "as_of": "2026-09-29T18:17:12+00:00",
+      "as_of": "2026-09-29T22:04:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -137,11 +137,11 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.7084",
+      "value": "6.7077",
       "change": "-0.00",
-      "change_pct": "-0.02%",
+      "change_pct": "-0.03%",
       "direction": "down",
-      "as_of": "2026-09-29T18:27:12+00:00",
+      "as_of": "2026-09-29T22:31:08+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
