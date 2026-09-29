@@ -6496,12 +6496,6 @@
           "buy_date": "2026-07-14"
         },
         {
-          "ticker": "XLE",
-          "shares": 2,
-          "avg_cost": 57.68,
-          "buy_date": "2026-07-17"
-        },
-        {
           "ticker": "MSFT",
           "shares": 3,
           "avg_cost": 451.1,
@@ -6564,7 +6558,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 882.38
+          "avg_cost": 1005.46
         }
       ],
       "history": [
@@ -11345,6 +11339,79 @@
             }
           },
           "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-09-29",
+          "portfolio_value": 9669.74,
+          "baseline_value": 10339.32,
+          "cash": 1005.46,
+          "positions": {
+            "NVDA": {
+              "shares": 6,
+              "price": 227.21,
+              "value": 1363.26
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 508.96,
+              "value": 1526.88
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 194.5,
+              "value": 583.5
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 456.94,
+              "value": 456.94
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 737.93,
+              "value": 737.93
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 329.4,
+              "value": 329.4
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 352.84,
+              "value": 1058.52
+            },
+            "META": {
+              "shares": 1,
+              "price": 738.79,
+              "value": 738.79
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 607.57,
+              "value": 607.57
+            },
+            "INTC": {
+              "shares": 5,
+              "price": 115.93,
+              "value": 579.65
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 340.92,
+              "value": 681.84
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLE",
+              "shares": 2,
+              "price": 61.54,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
           "note": "规则策略：无强势标的，持币观望"
         }
       ],
