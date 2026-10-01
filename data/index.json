@@ -634,5 +634,11 @@
     "date_cn": "2026年9月30日",
     "indices_count": 12,
     "news_count": 15
+  },
+  {
+    "date_iso": "2026-10-01",
+    "date_cn": "2026年10月1日",
+    "indices_count": 12,
+    "news_count": 15
   }
 ]
