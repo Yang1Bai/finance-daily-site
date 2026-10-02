@@ -11543,6 +11543,71 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-02",
+          "portfolio_value": 9874.64,
+          "baseline_value": 10412.92,
+          "cash": 1005.46,
+          "positions": {
+            "NVDA": {
+              "shares": 6,
+              "price": 233.95,
+              "value": 1403.7
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 517.53,
+              "value": 1552.59
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 199.81,
+              "value": 599.43
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 472.78,
+              "value": 472.78
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 749.58,
+              "value": 749.58
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 333.69,
+              "value": 333.69
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 370.59,
+              "value": 1111.77
+            },
+            "META": {
+              "shares": 1,
+              "price": 728.08,
+              "value": 728.08
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 633.91,
+              "value": 633.91
+            },
+            "INTC": {
+              "shares": 5,
+              "price": 119.33,
+              "value": 596.65
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 343.5,
+              "value": 687.0
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
