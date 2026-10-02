@@ -1,13 +1,13 @@
 {
   "date": "2026年10月2日",
   "content_mode": "public",
-  "fetched_at": "2026-10-02T01:28:33.766536+00:00",
+  "fetched_at": "2026-10-02T17:17:11.665877+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
-      "items": 3
+      "items": 4
     },
     {
       "source": "SEC",
@@ -19,7 +19,7 @@
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
       "status": "ok",
-      "items": 7
+      "items": 9
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,666.45",
-      "change": "+14.91",
-      "change_pct": "+0.19%",
+      "value": "7,723.33",
+      "change": "+56.88",
+      "change_pct": "+0.74%",
       "direction": "up",
-      "as_of": "2026-10-01T20:35:37+00:00",
+      "as_of": "2026-10-02T17:17:09+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,871.60",
-      "change": "+10.53",
-      "change_pct": "+0.04%",
+      "value": "27,197.16",
+      "change": "+325.56",
+      "change_pct": "+1.21%",
       "direction": "up",
-      "as_of": "2026-10-01T21:15:59+00:00",
+      "as_of": "2026-10-02T17:17:07+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "50,926.56",
-      "change": "+20.51",
-      "change_pct": "+0.04%",
+      "value": "51,162.38",
+      "change": "+235.82",
+      "change_pct": "+0.46%",
       "direction": "up",
-      "as_of": "2026-10-01T20:35:44+00:00",
+      "as_of": "2026-10-02T17:17:10+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,8 +63,8 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,842.20",
-      "change": "+11.75",
+      "value": "3,842.19",
+      "change": "+11.74",
       "change_pct": "+0.31%",
       "direction": "up",
       "as_of": "2026-09-30T07:00:34+00:00",
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,613.27",
-      "change": "+89.67",
-      "change_pct": "+0.37%",
-      "direction": "up",
-      "as_of": "2026-09-30T08:08:50+00:00",
+      "value": "23,972.29",
+      "change": "-640.98",
+      "change_pct": "-2.60%",
+      "direction": "down",
+      "as_of": "2026-10-02T08:08:32+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "68,457.51",
-      "change": "-499.21",
-      "change_pct": "-0.72%",
+      "value": "68,309.46",
+      "change": "-647.26",
+      "change_pct": "-0.94%",
       "direction": "down",
-      "as_of": "2026-10-02T01:13:25+00:00",
+      "as_of": "2026-10-02T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "24,939.35",
-      "change": "-259.84",
-      "change_pct": "-1.03%",
-      "direction": "down",
-      "as_of": "2026-10-01T16:00:00+00:00",
+      "value": "25,231.20",
+      "change": "+291.85",
+      "change_pct": "+1.17%",
+      "direction": "up",
+      "as_of": "2026-10-02T16:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,172.40",
-      "change": "-29.90",
-      "change_pct": "-0.71%",
+      "value": "4,167.20",
+      "change": "-35.10",
+      "change_pct": "-0.84%",
       "direction": "down",
-      "as_of": "2026-10-02T01:18:26+00:00",
+      "as_of": "2026-10-02T17:07:07+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "92.93",
-      "change": "+0.06",
-      "change_pct": "+0.06%",
-      "direction": "up",
-      "as_of": "2026-10-02T01:18:30+00:00",
+      "value": "91.36",
+      "change": "-1.51",
+      "change_pct": "-1.63%",
+      "direction": "down",
+      "as_of": "2026-10-02T17:07:08+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "84,566.08",
-      "change": "-283.85",
-      "change_pct": "-0.33%",
-      "direction": "down",
-      "as_of": "2026-10-02T01:28:26+00:00",
+      "value": "84,864.35",
+      "change": "+14.42",
+      "change_pct": "+0.02%",
+      "direction": "up",
+      "as_of": "2026-10-02T17:17:05+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.10",
-      "change": "+0.00",
-      "change_pct": "+0.00%",
-      "direction": "up",
-      "as_of": "2026-10-02T01:18:33+00:00",
+      "value": "101.91",
+      "change": "-0.19",
+      "change_pct": "-0.19%",
+      "direction": "down",
+      "as_of": "2026-10-02T17:07:10+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,53 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.7161",
-      "change": "+0.00",
-      "change_pct": "+0.04%",
-      "direction": "up",
-      "as_of": "2026-10-02T01:28:33+00:00",
+      "value": "6.7064",
+      "change": "-0.01",
+      "change_pct": "-0.11%",
+      "direction": "down",
+      "as_of": "2026-10-02T17:17:09+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261002~54c6b5672b.en.html",
+      "body": "",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T15:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
+      "body": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T15:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
+      "body": "",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T13:30:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "施纳贝尔讨论代币化时代的央行货币角色",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261001_1~a0be67193b.en.pdf",
@@ -349,51 +385,6 @@
       "title_original": "Agencies publish resolution plan feedback letters for 15 banking organizations",
       "body_original": "Agencies publish resolution plan feedback letters for 15 banking organizations",
       "editorial_date": "2026-10-02"
-    },
-    {
-      "title": "欧洲央行修订货币政策实施与抵押品指引",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260929~050089e922.en.html",
-      "body": "欧洲央行宣布修订指引，计划自 2026 年 11 月 30 日适用，包括私人部门抵押资产采用次高评级、调整估值折扣，以及部分非金融企业金融子公司的分类安排。这是操作框架调整，不是新的政策利率公告。",
-      "date": "2026-09-29",
-      "published_at": "2026-09-29T10:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "ECB amends monetary policy implementation guidelines as part of regular review",
-      "body_original": "",
-      "editorial_date": "2026-10-02"
-    },
-    {
-      "title": "SEC 起诉涉嫌利用聊天群和虚假 AI 交易项目的实体",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-95-sec-charges-multiple-entities-fraud-schemes-totaling-least-15-million-used-whatsapp-other-platforms",
-      "body": "SEC 在两起诉讼中指控相关实体通过 WhatsApp 等平台建立信任，以虚假监管资质和所谓 AI 交易项目吸引投资者。公告称平台利润和机器人交易活动被虚构；这些属于监管诉讼指控，不能表述为刑事定罪。",
-      "date": "2026-09-29",
-      "published_at": "2026-09-29T09:55:53-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC Charges Multiple Entities in Fraud Schemes Totaling at Least $15 Million That Used WhatsApp and Other Platforms to Lure Investors",
-      "body_original": "The Securities and Exchange Commission today charged multiple entities that are likely operated by individuals located overseas for defrauding hundreds of retail investors, including many in the U.S., through so-called investment confidence scams where…",
-      "editorial_date": "2026-10-02"
-    },
-    {
-      "title": "拉加德在欧洲议会听证会讨论通胀与 AI 影响",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260928~a875675544.en.html",
-      "body": "拉加德回顾欧元区经济及近期货币政策决定，并讨论 AI 对生产率、投资、就业和通胀的多重影响。她强调净宏观效应仍不确定，能源冲击与 AI 融资风险需要持续观察。",
-      "date": "2026-09-28",
-      "published_at": "2026-09-28T15:30:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Christine Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
-      "body_original": "",
-      "editorial_date": "2026-10-02"
     }
   ],
   "summary": {
@@ -403,13 +394,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 17 条机构公告",
+      "近七日 20 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-10-02",
-    "items_applied": 15,
+    "items_applied": 12,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
