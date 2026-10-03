@@ -1,7 +1,7 @@
 {
   "date": "2026年10月3日",
   "content_mode": "public",
-  "fetched_at": "2026-10-03T01:00:34.502184+00:00",
+  "fetched_at": "2026-10-03T15:35:17.293686+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -76,7 +76,7 @@
       "name": "恒生指数",
       "symbol": "^HSI",
       "value": "23,972.29",
-      "change": "-640.98",
+      "change": "-641.01",
       "change_pct": "-2.60%",
       "direction": "down",
       "as_of": "2026-10-02T08:08:32+00:00",
@@ -111,9 +111,9 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,172.10",
-      "change": "-30.20",
-      "change_pct": "-0.72%",
+      "value": "4,162.30",
+      "change": "-40.00",
+      "change_pct": "-0.95%",
       "direction": "down",
       "as_of": "2026-10-02T20:59:58+00:00",
       "currency": "USD",
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "91.26",
-      "change": "-1.61",
-      "change_pct": "-1.73%",
+      "value": "91.11",
+      "change": "-1.76",
+      "change_pct": "-1.90%",
       "direction": "down",
-      "as_of": "2026-10-02T20:59:59+00:00",
+      "as_of": "2026-10-02T21:00:00+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "84,627.08",
-      "change": "+120.74",
-      "change_pct": "+0.14%",
+      "value": "84,767.33",
+      "change": "+260.99",
+      "change_pct": "+0.31%",
       "direction": "up",
-      "as_of": "2026-10-03T01:00:31+00:00",
+      "as_of": "2026-10-03T15:35:12+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -148,8 +148,8 @@
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
       "value": "101.92",
-      "change": "-0.17",
-      "change_pct": "-0.17%",
+      "change": "-0.01",
+      "change_pct": "-0.01%",
       "direction": "down",
       "as_of": "2026-10-02T20:59:59+00:00",
       "currency": "USD",
