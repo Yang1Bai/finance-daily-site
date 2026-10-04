@@ -5,7 +5,7 @@ DOW，51,176.96，变动百分之+0.49。
 上证指数，3,842.19，变动百分之+0.31。
 恒生指数，23,972.29，变动百分之-2.60。
 日经225，68,309.46，变动百分之-0.94。
-2026-10-02，Federal Reserve：Federal Reserve Board announces approval of application by Fleur Capital Corporation。
-2026-10-02，Federal Reserve：Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O。
-2026-10-02，ECB：Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)。
+2026-10-02，Federal Reserve：美联储批准 Fleur Capital 收购 Simmesport State Bank。
+2026-10-02，Federal Reserve：美联储将 Regulation O 修订意见期延至 11 月 4 日。
+2026-10-02，ECB：欧洲央行汇总利率决定以外的近期治理与支付决策。
 原文链接和具体报价时间见网站。以上不构成投资建议。
