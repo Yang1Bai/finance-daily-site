@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T07:21:41.772687+00:00",
+  "updated": "2026-10-04T07:36:45.391279+00:00",
   "source": "Yahoo Finance",
   "quotes": [
     {
@@ -9,7 +9,7 @@
       "change": "+56.27",
       "change_pct": "+0.73%",
       "direction": "up",
-      "as_of": "2026-10-02T20:00:00+00:00",
+      "as_of": "2026-10-02T20:59:13+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -30,7 +30,7 @@
       "name": "DOW",
       "symbol": "^DJI",
       "value": "51,176.96",
-      "change": "+250.36",
+      "change": "+250.40",
       "change_pct": "+0.49%",
       "direction": "up",
       "as_of": "2026-10-02T21:00:17+00:00",
@@ -54,7 +54,7 @@
       "name": "恒生指数",
       "symbol": "^HSI",
       "value": "23,972.29",
-      "change": "-641.01",
+      "change": "-640.98",
       "change_pct": "-2.60%",
       "direction": "down",
       "as_of": "2026-10-02T08:08:32+00:00",
@@ -105,7 +105,7 @@
       "change": "-1.76",
       "change_pct": "-1.90%",
       "direction": "down",
-      "as_of": "2026-10-02T20:59:59+00:00",
+      "as_of": "2026-10-02T21:00:00+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -113,11 +113,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "84,565.00",
-      "change": "+58.66",
-      "change_pct": "+0.07%",
+      "value": "84,947.20",
+      "change": "+204.73",
+      "change_pct": "+0.24%",
       "direction": "up",
-      "as_of": "2026-10-03T07:21:37+00:00",
+      "as_of": "2026-10-04T07:36:40+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
