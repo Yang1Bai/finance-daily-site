@@ -1,7 +1,7 @@
 {
   "date": "2026年10月5日",
   "content_mode": "public",
-  "fetched_at": "2026-10-05T14:32:23.192733+00:00",
+  "fetched_at": "2026-10-05T20:05:41.702664+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -13,13 +13,13 @@
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 8
+      "items": 7
     },
     {
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "ok",
+      "items": 9
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,749.14",
-      "change": "+26.42",
-      "change_pct": "+0.34%",
+      "value": "7,773.95",
+      "change": "+51.23",
+      "change_pct": "+0.66%",
       "direction": "up",
-      "as_of": "2026-10-05T14:32:23+00:00",
+      "as_of": "2026-10-05T20:05:41+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "27,365.09",
-      "change": "+174.22",
-      "change_pct": "+0.64%",
+      "value": "27,477.31",
+      "change": "+286.45",
+      "change_pct": "+1.05%",
       "direction": "up",
-      "as_of": "2026-10-05T14:32:22+00:00",
+      "as_of": "2026-10-05T20:05:38+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,058.86",
-      "change": "-118.10",
-      "change_pct": "-0.23%",
-      "direction": "down",
-      "as_of": "2026-10-05T14:32:23+00:00",
+      "value": "51,267.90",
+      "change": "+90.94",
+      "change_pct": "+0.18%",
+      "direction": "up",
+      "as_of": "2026-10-05T20:05:41+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,267.61",
-      "change": "+36.41",
-      "change_pct": "+0.14%",
+      "value": "25,254.21",
+      "change": "+23.01",
+      "change_pct": "+0.09%",
       "direction": "up",
-      "as_of": "2026-10-05T14:17:24+00:00",
+      "as_of": "2026-10-05T16:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,169.50",
-      "change": "+7.20",
-      "change_pct": "+0.17%",
+      "value": "4,167.10",
+      "change": "+4.80",
+      "change_pct": "+0.12%",
       "direction": "up",
-      "as_of": "2026-10-05T14:22:23+00:00",
+      "as_of": "2026-10-05T19:55:38+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "89.68",
-      "change": "-1.43",
-      "change_pct": "-1.57%",
+      "value": "89.20",
+      "change": "-1.91",
+      "change_pct": "-2.10%",
       "direction": "down",
-      "as_of": "2026-10-05T14:22:23+00:00",
+      "as_of": "2026-10-05T19:55:40+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "86,027.69",
-      "change": "-485.69",
-      "change_pct": "-0.56%",
+      "value": "85,640.58",
+      "change": "-872.80",
+      "change_pct": "-1.01%",
       "direction": "down",
-      "as_of": "2026-10-05T14:32:09+00:00",
+      "as_of": "2026-10-05T20:05:39+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.33",
-      "change": "+0.40",
-      "change_pct": "+0.39%",
+      "value": "102.15",
+      "change": "+0.22",
+      "change_pct": "+0.22%",
       "direction": "up",
-      "as_of": "2026-10-05T14:22:23+00:00",
+      "as_of": "2026-10-05T19:55:40+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,29 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.7065",
-      "change": "+0.00",
-      "change_pct": "+0.03%",
-      "direction": "up",
-      "as_of": "2026-10-05T14:32:24+00:00",
+      "value": "6.7038",
+      "change": "-0.00",
+      "change_pct": "-0.01%",
+      "direction": "down",
+      "as_of": "2026-10-05T20:05:37+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Philip R. Lane: Diagnostic Challenges for ECB Monetary Policy",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html",
+      "body": "",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T10:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "SEC 联合全球金融监管机构开展世界投资者周防欺诈宣传",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-101-sec-coordinates-global-financial-regulators-raise-fraud-awareness-during-world-investor-week",
@@ -216,6 +228,18 @@
       "editorial_date": "2026-10-05"
     },
     {
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261002~54c6b5672b.en.html",
+      "body": "",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T15:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "美联储公布与 Ontario Bancorporation 的书面监管协议",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
       "body": "美联储 10 月 2 日公布针对威斯康星州 Ontario Bancorporation 的监管行动，所附书面协议日期为 9 月 24 日。公告正文未展开全部整改条款，具体义务应以所附协议为准。",
@@ -229,6 +253,42 @@
       "title_original": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
       "body_original": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
       "editorial_date": "2026-10-05"
+    },
+    {
+      "title": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
+      "body": "",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T13:30:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Isabel Schnabel: Central banks on-chain",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261001_1~a0be67193b.en.pdf",
+      "body": "",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T17:30:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Christine Lagarde: Where AI risks meet",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261001~cf3c630379.en.html",
+      "body": "",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T15:30:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
     },
     {
       "title": "SEC 提议为投资顾问与基金建立加密资产托管框架",
@@ -261,6 +321,30 @@
       "editorial_date": "2026-10-05"
     },
     {
+      "title": "Christine Lagarde: Interview with La Croix",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260930~10084a5f3d.en.html",
+      "body": "",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T19:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Isabel Schnabel: Monetary policy in a world of overlapping shocks",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260930_1~7c6c120482.en.html",
+      "body": "",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T17:45:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "SEC 起诉 Meyer Global Management 及 CEO 涉嫌欺诈基金投资者",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-98-sec-charges-meyer-global-management-its-ceo-defrauding-retail-investors-private-funds-held-interests",
       "body": "SEC 指控该机构及负责人在持有 SpaceX 等上市前证券的基金中滥用资产、夸大账户价值，并未妥善处理出资义务。公告内容是民事诉讼指控，应与已作出的司法认定区分。",
@@ -289,81 +373,6 @@
       "title_original": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
       "body_original": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
       "editorial_date": "2026-10-05"
-    },
-    {
-      "title": "SEC 指控两人以投资基金为名欺诈退伍军人等投资者",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-97-sec-charges-two-individuals-orchestrating-fraud-scheme-targeted-veterans",
-      "body": "SEC 指控两名被告通过基金及顾问公司，对业绩、管理资产和持仓作误导性陈述，并挪用部分资金。案件涉及退伍军人及相关医疗服务人员，公告中的指控不等于刑事定罪。",
-      "date": "2026-09-30",
-      "published_at": "2026-09-30T12:42:15-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC Charges Two Individuals With Orchestrating Fraud Scheme That Targeted Veterans",
-      "body_original": "The Securities and Exchange Commission today announced charges against Christopher Kenji Dinelli and Jacob David “Kobe” Frankel for allegedly orchestrating a fraud scheme that raised more than $8.7 million from 35 investors through their fund, Beyond…",
-      "editorial_date": "2026-10-05"
-    },
-    {
-      "title": "SEC 就扩大散户参与私募市场提出规则修订",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-96-sec-proposes-amendments-expand-responsible-retailization-private-markets",
-      "body": "SEC 提议调整部分业绩报酬安排及基金披露要求，并另行征求通过专业资质取得合格投资者资格的意见。相关措施仍属提案或意见征集，参与条件应以最终规则为准。",
-      "date": "2026-09-30",
-      "published_at": "2026-09-30T11:45:00-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC Proposes Amendments to Expand Responsible Retailization of Private Markets",
-      "body_original": "The Securities and Exchange Commission today voted to propose rule amendments that would facilitate capital formation in the public and private markets by expanding retail investor choice and promoting innovation in regulated fund structures while…",
-      "editorial_date": "2026-10-05"
-    },
-    {
-      "title": "美国监管机构公布 15 家银行的处置计划反馈",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm",
-      "body": "美联储与 FDIC 公布对 2025 年提交的银行处置计划的联合审查反馈，未在这些计划中发现缺陷或不足，并确认此前 BNP Paribas 的相关不足已得到妥善处理。这是对处置计划的审查结果，不是对银行不存在其他风险的保证。",
-      "date": "2026-09-29",
-      "published_at": "2026-09-29T20:00:00+00:00",
-      "source": "Federal Reserve",
-      "tags": [
-        "Federal Reserve"
-      ],
-      "importance": "normal",
-      "title_original": "Agencies publish resolution plan feedback letters for 15 banking organizations",
-      "body_original": "Agencies publish resolution plan feedback letters for 15 banking organizations",
-      "editorial_date": "2026-10-05"
-    },
-    {
-      "title": "SEC 起诉涉嫌利用聊天群和虚假 AI 交易项目的实体",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-95-sec-charges-multiple-entities-fraud-schemes-totaling-least-15-million-used-whatsapp-other-platforms",
-      "body": "SEC 在两起诉讼中指控相关实体通过 WhatsApp 等平台建立信任，以虚假监管资质和所谓 AI 交易项目吸引投资者。公告称平台利润和机器人交易活动被虚构；这些属于监管诉讼指控，不能表述为刑事定罪。",
-      "date": "2026-09-29",
-      "published_at": "2026-09-29T09:55:53-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC Charges Multiple Entities in Fraud Schemes Totaling at Least $15 Million That Used WhatsApp and Other Platforms to Lure Investors",
-      "body_original": "The Securities and Exchange Commission today charged multiple entities that are likely operated by individuals located overseas for defrauding hundreds of retail investors, including many in the U.S., through so-called investment confidence scams where…",
-      "editorial_date": "2026-10-05"
-    },
-    {
-      "title": "SEC 就 Zoe Financial 未充分披露利益冲突达成和解",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-94-sec-charges-registered-investment-adviser-zoe-financial-failure-disclose-conflict-interest",
-      "body": "SEC 公告称，Zoe Financial 的顾问转介业务与自有服务之间存在未充分披露的财务激励；人工销售推荐也可能偏离算法匹配。公告涉及已和解的监管指控，不能据此把所有算法推荐描述为存在同样问题。",
-      "date": "2026-09-28",
-      "published_at": "2026-09-28T13:46:30-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC Charges Registered Investment Adviser Zoe Financial for Failure to Disclose Conflict of Interest",
-      "body_original": "The Securities and Exchange Commission today announced settled charges against New York-based investment adviser Zoe Financial Inc. for failing to fully and fairly disclose material facts concerning conflicts of interest to its clients and prospective…",
-      "editorial_date": "2026-10-05"
     }
   ],
   "summary": {
@@ -373,13 +382,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 13 条机构公告",
+      "近七日 21 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-10-05",
-    "items_applied": 13,
+    "items_applied": 8,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
