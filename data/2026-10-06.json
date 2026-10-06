@@ -1,7 +1,7 @@
 {
   "date": "2026年10月6日",
   "content_mode": "public",
-  "fetched_at": "2026-10-06T02:08:17.264675+00:00",
+  "fetched_at": "2026-10-06T17:46:49.387270+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -19,7 +19,7 @@
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
       "status": "ok",
-      "items": 9
+      "items": 11
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,773.95",
-      "change": "+51.23",
-      "change_pct": "+0.66%",
+      "value": "7,827.46",
+      "change": "+53.51",
+      "change_pct": "+0.69%",
       "direction": "up",
-      "as_of": "2026-10-05T20:48:30+00:00",
+      "as_of": "2026-10-06T17:46:48+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "27,477.31",
-      "change": "+286.45",
-      "change_pct": "+1.05%",
+      "value": "27,647.94",
+      "change": "+170.63",
+      "change_pct": "+0.62%",
       "direction": "up",
-      "as_of": "2026-10-05T21:15:59+00:00",
+      "as_of": "2026-10-06T17:46:46+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,267.90",
-      "change": "+90.94",
-      "change_pct": "+0.18%",
+      "value": "51,505.46",
+      "change": "+237.56",
+      "change_pct": "+0.46%",
       "direction": "up",
-      "as_of": "2026-10-05T20:48:42+00:00",
+      "as_of": "2026-10-06T17:46:48+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,248.71",
-      "change": "+208.37",
-      "change_pct": "+0.87%",
+      "value": "24,280.56",
+      "change": "+308.26",
+      "change_pct": "+1.29%",
       "direction": "up",
-      "as_of": "2026-10-06T01:53:14+00:00",
+      "as_of": "2026-10-06T08:08:26+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "70,146.80",
-      "change": "+199.94",
-      "change_pct": "+0.29%",
+      "value": "70,683.98",
+      "change": "+737.12",
+      "change_pct": "+1.05%",
       "direction": "up",
-      "as_of": "2026-10-06T01:53:15+00:00",
+      "as_of": "2026-10-06T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,254.21",
-      "change": "+23.01",
-      "change_pct": "+0.09%",
+      "value": "25,449.19",
+      "change": "+194.98",
+      "change_pct": "+0.77%",
       "direction": "up",
-      "as_of": "2026-10-05T16:00:00+00:00",
+      "as_of": "2026-10-06T16:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,158.30",
-      "change": "+1.50",
-      "change_pct": "+0.04%",
+      "value": "4,190.30",
+      "change": "+33.50",
+      "change_pct": "+0.81%",
       "direction": "up",
-      "as_of": "2026-10-06T01:58:07+00:00",
+      "as_of": "2026-10-06T17:36:47+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "89.55",
-      "change": "+0.12",
-      "change_pct": "+0.13%",
+      "value": "89.53",
+      "change": "+0.10",
+      "change_pct": "+0.11%",
       "direction": "up",
-      "as_of": "2026-10-06T01:57:49+00:00",
+      "as_of": "2026-10-06T17:36:47+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "85,523.57",
-      "change": "-227.01",
-      "change_pct": "-0.26%",
+      "value": "85,580.16",
+      "change": "-170.42",
+      "change_pct": "-0.20%",
       "direction": "down",
-      "as_of": "2026-10-06T02:08:12+00:00",
+      "as_of": "2026-10-06T17:46:43+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.13",
-      "change": "-0.04",
-      "change_pct": "-0.04%",
+      "value": "101.84",
+      "change": "-0.32",
+      "change_pct": "-0.32%",
       "direction": "down",
-      "as_of": "2026-10-06T01:58:16+00:00",
+      "as_of": "2026-10-06T17:36:48+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,65 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.7009",
+      "value": "6.7012",
       "change": "-0.00",
-      "change_pct": "-0.04%",
+      "change_pct": "-0.03%",
       "direction": "down",
-      "as_of": "2026-10-06T02:08:16+00:00",
+      "as_of": "2026-10-06T17:46:48+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Frank Elderson: Effective supervision through timely remediation",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
+      "body": "",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T15:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
+      "body": "",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T15:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC to Host Virtual National Compliance Outreach Seminar for Investment Companies and Investment Advisers",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-102-sec-host-virtual-national-compliance-outreach-seminar-investment-companies-investment-advisers",
+      "body": "The Securities and Exchange Commission’s Compliance Outreach Program announced today that it will host a virtual national seminar for investment companies and investment advisers on November 19, 2026. The purpose of the event is to help chief compliance…",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T10:37:55-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Philip R. Lane: Interview with Ansa",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html",
+      "body": "",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T09:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "美联储批准 Isabella Bank Corporation 收购申请",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
@@ -334,66 +382,6 @@
       "title_original": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
       "body_original": "The Securities and Exchange Commission today proposed new rules and amendments to provide a tailored framework for the custody of crypto assets for registered investment advisers and regulated funds, i.e. registered investment companies and business…",
       "editorial_date": "2026-10-06"
-    },
-    {
-      "title": "SEC 检查部门发布新的检查流程手册",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-99-secs-division-examinations-announces-new-exam-handbook",
-      "body": "新手册替代并扩展此前说明材料，介绍从风险评估到结果函的检查阶段，并提供反馈、提问和准备检查的渠道。公告强调流程透明与一致性，手册不等同于对任何机构已完成合规认证。",
-      "date": "2026-10-01",
-      "published_at": "2026-10-01T11:03:35-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC’s Division of Examinations Announces New Exam Handbook",
-      "body_original": "The Securities and Exchange Commission’s Division of Examinations today published its new handbook, “The SEC Exam Handbook: A Practical Guide on Process and Engagement,” which replaces and expands upon the previous examination brochure by providing…",
-      "editorial_date": "2026-10-06"
-    },
-    {
-      "title": "拉加德接受《La Croix》采访：能源冲击与政策权衡",
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260930~10084a5f3d.en.html",
-      "body": "拉加德讨论相互叠加的危机如何同时影响通胀和增长，并强调政策需根据事实调整。她解释加息旨在防止能源供给冲击持续扩散，也承认融资收紧可能拖累经济活动。",
-      "date": "2026-09-30",
-      "published_at": "2026-09-30T19:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Christine Lagarde: Interview with La Croix",
-      "body_original": "",
-      "editorial_date": "2026-10-06"
-    },
-    {
-      "title": "施纳贝尔谈多重冲击下的货币政策",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260930_1~7c6c120482.en.html",
-      "body": "施纳贝尔强调，应综合评估通胀前景、基础通胀和政策传导，而非仅按供给或需求冲击分类决策。演讲讨论能源、AI 投资、贸易和财政等因素的叠加影响，不构成对下一次利率决定的承诺。",
-      "date": "2026-09-30",
-      "published_at": "2026-09-30T17:45:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Isabel Schnabel: Monetary policy in a world of overlapping shocks",
-      "body_original": "",
-      "editorial_date": "2026-10-06"
-    },
-    {
-      "title": "SEC 起诉 Meyer Global Management 及 CEO 涉嫌欺诈基金投资者",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-98-sec-charges-meyer-global-management-its-ceo-defrauding-retail-investors-private-funds-held-interests",
-      "body": "SEC 指控该机构及负责人在持有 SpaceX 等上市前证券的基金中滥用资产、夸大账户价值，并未妥善处理出资义务。公告内容是民事诉讼指控，应与已作出的司法认定区分。",
-      "date": "2026-09-30",
-      "published_at": "2026-09-30T14:30:01-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC Charges Meyer Global Management and Its CEO With Defrauding Retail Investors in Private Funds That Held Interests in SpaceX and Other Pre-IPO Securities",
-      "body_original": "The Securities and Exchange Commission today charged private fund adviser Meyer Global Management LLC (MGM) and its CEO, Owen E.H. Meyer, with defrauding investors and MGM-managed funds in connection with investments in SpaceX and other pre-IPO…",
-      "editorial_date": "2026-10-06"
     }
   ],
   "summary": {
@@ -403,13 +391,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 22 条机构公告",
+      "近七日 24 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-10-06",
-    "items_applied": 15,
+    "items_applied": 11,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
