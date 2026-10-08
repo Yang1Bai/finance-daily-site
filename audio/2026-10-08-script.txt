@@ -5,7 +5,7 @@ DOW，51,179.87，变动百分之-0.66。
 恒生指数，24,031.66，变动百分之-0.41。
 日经225，69,415.41，变动百分之-0.89。
 德国DAX，25,104.36，变动百分之-1.35。
-2026-10-07，Federal Reserve：Minutes of the Federal Open Market Committee, September 15-16, 2026。
-2026-10-07，ECB：Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)。
-2026-10-06，SEC：SEC Seeks Final Judgment Against Former Western Asset Co-CIO Ken Leech in Cherry Picking Case。
+2026-10-07，Federal Reserve：美联储发布 9 月 15—16 日 FOMC 会议纪要。
+2026-10-07，ECB：欧洲央行调查显示证券融资与衍生品总体信用条款略有放宽。
+2026-10-06，SEC：SEC 请求法院批准 Ken Leech 交易分配案最终判决。
 原文链接和具体报价时间见网站。以上不构成投资建议。
