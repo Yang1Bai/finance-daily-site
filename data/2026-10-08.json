@@ -1,7 +1,7 @@
 {
   "date": "2026年10月8日",
   "content_mode": "public",
-  "fetched_at": "2026-10-08T01:40:10.019929+00:00",
+  "fetched_at": "2026-10-08T18:18:49.607450+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -13,7 +13,7 @@
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 5
+      "items": 3
     },
     {
       "source": "ECB",
@@ -22,18 +22,16 @@
       "items": 9
     }
   ],
-  "missing_quotes": [
-    "上证指数"
-  ],
+  "missing_quotes": [],
   "indices": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,801.77",
-      "change": "-17.16",
-      "change_pct": "-0.22%",
+      "value": "7,757.68",
+      "change": "-44.09",
+      "change_pct": "-0.57%",
       "direction": "down",
-      "as_of": "2026-10-07T20:55:18+00:00",
+      "as_of": "2026-10-08T18:18:45+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -41,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "27,538.69",
-      "change": "-61.20",
-      "change_pct": "-0.22%",
+      "value": "27,183.29",
+      "change": "-355.40",
+      "change_pct": "-1.29%",
       "direction": "down",
-      "as_of": "2026-10-07T21:15:59+00:00",
+      "as_of": "2026-10-08T18:18:45+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -53,23 +51,35 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,179.87",
-      "change": "-341.41",
-      "change_pct": "-0.66%",
+      "value": "51,139.30",
+      "change": "-40.57",
+      "change_pct": "-0.08%",
       "direction": "down",
-      "as_of": "2026-10-07T20:55:25+00:00",
+      "as_of": "2026-10-08T18:18:48+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
     },
     {
+      "name": "上证指数",
+      "symbol": "000001.SS",
+      "value": "3,811.90",
+      "change": "-30.29",
+      "change_pct": "-0.79%",
+      "direction": "down",
+      "as_of": "2026-10-08T07:00:24+00:00",
+      "currency": "CNY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/000001.SS/"
+    },
+    {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,031.66",
-      "change": "-98.84",
-      "change_pct": "-0.41%",
+      "value": "23,785.79",
+      "change": "-494.81",
+      "change_pct": "-2.04%",
       "direction": "down",
-      "as_of": "2026-10-08T01:25:08+00:00",
+      "as_of": "2026-10-08T08:08:40+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -77,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "69,415.41",
-      "change": "-620.30",
-      "change_pct": "-0.89%",
+      "value": "69,042.11",
+      "change": "-993.60",
+      "change_pct": "-1.42%",
       "direction": "down",
-      "as_of": "2026-10-08T01:25:05+00:00",
+      "as_of": "2026-10-08T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -89,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,104.36",
-      "change": "-344.83",
-      "change_pct": "-1.35%",
+      "value": "24,806.97",
+      "change": "-297.39",
+      "change_pct": "-1.18%",
       "direction": "down",
-      "as_of": "2026-10-07T16:00:00+00:00",
+      "as_of": "2026-10-08T16:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -101,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,153.20",
-      "change": "+12.50",
-      "change_pct": "+0.30%",
+      "value": "4,155.70",
+      "change": "+15.00",
+      "change_pct": "+0.36%",
       "direction": "up",
-      "as_of": "2026-10-08T01:30:09+00:00",
+      "as_of": "2026-10-08T18:08:46+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -113,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "89.32",
-      "change": "+1.04",
-      "change_pct": "+1.18%",
+      "value": "92.00",
+      "change": "+3.72",
+      "change_pct": "+4.21%",
       "direction": "up",
-      "as_of": "2026-10-08T01:30:05+00:00",
+      "as_of": "2026-10-08T18:08:47+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -125,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "83,208.16",
-      "change": "-67.36",
-      "change_pct": "-0.08%",
+      "value": "80,868.05",
+      "change": "-2407.47",
+      "change_pct": "-2.89%",
       "direction": "down",
-      "as_of": "2026-10-08T01:40:06+00:00",
+      "as_of": "2026-10-08T18:18:46+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -137,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.24",
-      "change": "+0.00",
-      "change_pct": "+0.00%",
-      "direction": "neutral",
-      "as_of": "2026-10-08T01:30:08+00:00",
+      "value": "102.15",
+      "change": "-0.09",
+      "change_pct": "-0.09%",
+      "direction": "down",
+      "as_of": "2026-10-08T18:08:48+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -149,17 +159,41 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.7016",
-      "change": "-0.00",
-      "change_pct": "-0.03%",
-      "direction": "down",
-      "as_of": "2026-10-08T01:40:09+00:00",
+      "value": "6.7041",
+      "change": "+0.00",
+      "change_pct": "+0.01%",
+      "direction": "up",
+      "as_of": "2026-10-08T18:18:49+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Meeting of 9-10 September 2026",
+      "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
+      "body": "",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T13:30:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Interview with Corriere della Sera",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261008~3184e7d0d0.en.html",
+      "body": "",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T08:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "美联储发布 9 月 15—16 日 FOMC 会议纪要",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
@@ -354,36 +388,6 @@
       "title_original": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
       "body_original": "",
       "editorial_date": "2026-10-08"
-    },
-    {
-      "title": "美联储公布与 Ontario Bancorporation 的书面监管协议",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
-      "body": "美联储 10 月 2 日公布针对威斯康星州 Ontario Bancorporation 的监管行动，所附书面协议日期为 9 月 24 日。公告正文未展开全部整改条款，具体义务应以所附协议为准。",
-      "date": "2026-10-02",
-      "published_at": "2026-10-02T15:00:00+00:00",
-      "source": "Federal Reserve",
-      "tags": [
-        "Federal Reserve"
-      ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
-      "body_original": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
-      "editorial_date": "2026-10-08"
-    },
-    {
-      "title": "Vujčić 主张简化银行规则并推进欧洲金融一体化",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
-      "body": "欧洲央行演讲认为可在保持韧性的前提下简化监管，并通过单一市场整合提升银行竞争力。演讲提醒资本要求与放贷的关系依赖经济环境，不能简单推断降低资本要求就会改善竞争力。",
-      "date": "2026-10-02",
-      "published_at": "2026-10-02T13:30:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
-      "body_original": "",
-      "editorial_date": "2026-10-08"
     }
   ],
   "summary": {
@@ -392,14 +396,14 @@
     "vix": "N/A",
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
-      "已获取 11 个标的",
-      "近七日 19 条机构公告",
+      "已获取 12 个标的",
+      "近七日 17 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-10-08",
-    "items_applied": 15,
+    "items_applied": 13,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
