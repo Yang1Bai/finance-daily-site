@@ -161,184 +161,229 @@
   ],
   "news": [
     {
-      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "title": "美联储发布 9 月 15—16 日 FOMC 会议纪要",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-      "body": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "body": "美联储于 10 月 7 日公布该次会议纪要，并说明其中经济与金融状况描述仅依据会议当时可得信息。此条是纪要发布公告，不是新的利率决定，也不据此推断后续政策走向。",
       "date": "2026-10-07",
       "published_at": "2026-10-07T18:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "body_original": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
+      "title": "欧洲央行调查显示证券融资与衍生品总体信用条款略有放宽",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
-      "body": "",
+      "body": "9 月 SESFOD 调查回顾 6—8 月情况：各类交易对手总体信用条款连续第四季度略有放宽，主要来自价格条款；不同交易及非价格条件仍存在差异。调查中的未来预期属于受访机构判断，不是已发生结果。",
       "date": "2026-10-07",
       "published_at": "2026-10-07T10:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
+      "body_original": "",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "SEC Seeks Final Judgment Against Former Western Asset Co-CIO Ken Leech in Cherry Picking Case",
+      "title": "SEC 请求法院批准 Ken Leech 交易分配案最终判决",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-103-sec-seeks-final-judgment-against-former-western-asset-co-cio-ken-leech-cherry-picking-case",
-      "body": "The Securities and Exchange Commission today moved for entry of a final judgment by consent against Stephen Kenneth Leech II, the former co-chief investment officer of registered investment adviser Western Asset Management Company LLC, whom the SEC…",
+      "body": "SEC 申请对前 Western Asset 联席投资负责人作出经同意的最终判决，包括罚款与任职限制，仍待法院批准。相关投资者返还安排结合此前公司和解；本次民事同意判决与另案认罪事实应区分。",
       "date": "2026-10-06",
       "published_at": "2026-10-06T16:30:24-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Seeks Final Judgment Against Former Western Asset Co-CIO Ken Leech in Cherry Picking Case",
+      "body_original": "The Securities and Exchange Commission today moved for entry of a final judgment by consent against Stephen Kenneth Leech II, the former co-chief investment officer of registered investment adviser Western Asset Management Company LLC, whom the SEC…",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Frank Elderson: Effective supervision through timely remediation",
+      "title": "Elderson 谈通过及时整改提高监管成效",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
-      "body": "",
+      "body": "仅根据来源标题翻译。原文当前无法访问，未核验正文，不推断具体整改措施或期限。",
       "date": "2026-10-06",
       "published_at": "2026-10-06T15:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Frank Elderson: Effective supervision through timely remediation",
+      "body_original": "",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+      "title": "Cipollone 谈数字欧元、代币化与央行角色",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
-      "body": "",
+      "body": "仅根据来源标题翻译。原文当前无法访问，未核验正文，不推断政策承诺或推出时间。",
       "date": "2026-10-06",
       "published_at": "2026-10-06T15:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+      "body_original": "",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "SEC to Host Virtual National Compliance Outreach Seminar for Investment Companies and Investment Advisers",
+      "title": "SEC 将于 11 月 19 日举行投资机构线上合规研讨会",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-102-sec-host-virtual-national-compliance-outreach-seminar-investment-companies-investment-advisers",
-      "body": "The Securities and Exchange Commission’s Compliance Outreach Program announced today that it will host a virtual national seminar for investment companies and investment advisers on November 19, 2026. The purpose of the event is to help chief compliance…",
+      "body": "SEC 公布面向投资公司及投资顾问的线上活动，议题涵盖信息安全、运营韧性、私募基金及合规计划有效性。公告称无需提前注册，直播链接将在活动当天提供。",
       "date": "2026-10-06",
       "published_at": "2026-10-06T10:37:55-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC to Host Virtual National Compliance Outreach Seminar for Investment Companies and Investment Advisers",
+      "body_original": "The Securities and Exchange Commission’s Compliance Outreach Program announced today that it will host a virtual national seminar for investment companies and investment advisers on November 19, 2026. The purpose of the event is to help chief compliance…",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Philip R. Lane: Interview with Ansa",
+      "title": "Lane 接受 Ansa 采访：能源传导与情景判断仍有不确定性",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html",
-      "body": "",
+      "body": "Lane 指出能源价格高于基线预期，但情景还包含二轮效应等多项假设，不能只凭能源价格判定经济落在哪个情景。采访也讨论 AI 投资、贸易与金融条件的影响。",
       "date": "2026-10-06",
       "published_at": "2026-10-06T09:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Philip R. Lane: Interview with Ansa",
+      "body_original": "",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+      "title": "美联储批准 Isabella Bank Corporation 收购申请",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
-      "body": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+      "body": "美联储批准 Isabella Bank Corporation 收购 Grand River Commerce 并间接收购 Grand River Bank，同时批准相关银行合并及分支机构安排。公告是监管批准，不等于确认交易已完成交割。",
       "date": "2026-10-05",
       "published_at": "2026-10-05T20:30:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+      "body_original": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Philip R. Lane: Diagnostic Challenges for ECB Monetary Policy",
+      "title": "Lane 谈欧洲央行判断中期通胀的挑战",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html",
-      "body": "",
+      "body": "Lane 强调政策需综合通胀前景、基础通胀及政策传导，区分短期能源波动和中期压力。演讲讨论能源、财政、AI 与金融条件的交互作用，反对依赖单个数据点或单一原因作判断。",
       "date": "2026-10-05",
       "published_at": "2026-10-05T10:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Philip R. Lane: Diagnostic Challenges for ECB Monetary Policy",
+      "body_original": "",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "SEC Coordinates with Global Financial Regulators to Raise Fraud Awareness During World Investor Week",
+      "title": "SEC 联合监管机构提醒防范关系投资与冒名诈骗",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-101-sec-coordinates-global-financial-regulators-raise-fraud-awareness-during-world-investor-week",
-      "body": "The Securities and Exchange Commission, in coordination with other U.S. and global financial regulators, today issued a joint investor bulletin as part of World Investor Week (WIW). The bulletin encourages investors to be resilient in changing…",
+      "body": "SEC 在世界投资者周发布联合投资者公告，强调在经济变化中保持韧性，并警惕关系投资和冒名诈骗。此次活动提供投资者教育与保护资源，不代表任何产品获得监管背书。",
       "date": "2026-10-05",
       "published_at": "2026-10-05T08:47:36-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Coordinates with Global Financial Regulators to Raise Fraud Awareness During World Investor Week",
+      "body_original": "The Securities and Exchange Commission, in coordination with other U.S. and global financial regulators, today issued a joint investor bulletin as part of World Investor Week (WIW). The bulletin encourages investors to be resilient in changing…",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "title": "美联储批准 Fleur Capital 收购 Simmesport State Bank",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
-      "body": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "body": "美联储于 10 月 2 日宣布批准 Fleur Capital Corporation 收购 Simmesport State Bank 的申请，两家公司均位于路易斯安那州 Simmesport。公告提供批准令链接，批准申请不等同于确认交易已完成交割。",
       "date": "2026-10-02",
       "published_at": "2026-10-02T20:45:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "body_original": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "title": "美联储将 Regulation O 修订意见期延至 11 月 4 日",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
-      "body": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "body": "美联储将银行向高管、董事及主要股东等内部人士授信规则的现代化提案意见期，从原定 10 月 5 日延长至 11 月 4 日。此次公告调整的是征求意见期限，规则修订尚不能表述为已生效。",
       "date": "2026-10-02",
       "published_at": "2026-10-02T20:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "body_original": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "title": "欧洲央行汇总利率决定以外的近期治理与支付决策",
       "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261002~54c6b5672b.en.html",
-      "body": "",
+      "body": "公告涵盖货币政策操作指引修订、Pontes 代币化资产结算安排，以及评估 TIPS 与巴西 Pix 互联的可行性等事项。操作指引修订计划于 11 月 30 日适用；各事项的批准和实施日期不同。",
       "date": "2026-10-02",
       "published_at": "2026-10-02T15:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "body_original": "",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "title": "美联储公布与 Ontario Bancorporation 的书面监管协议",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
-      "body": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "body": "美联储 10 月 2 日公布针对威斯康星州 Ontario Bancorporation 的监管行动，所附书面协议日期为 9 月 24 日。公告正文未展开全部整改条款，具体义务应以所附协议为准。",
       "date": "2026-10-02",
       "published_at": "2026-10-02T15:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "body_original": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "editorial_date": "2026-10-08"
     },
     {
-      "title": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
+      "title": "Vujčić 主张简化银行规则并推进欧洲金融一体化",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
-      "body": "",
+      "body": "欧洲央行演讲认为可在保持韧性的前提下简化监管，并通过单一市场整合提升银行竞争力。演讲提醒资本要求与放贷的关系依赖经济环境，不能简单推断降低资本要求就会改善竞争力。",
       "date": "2026-10-02",
       "published_at": "2026-10-02T13:30:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
+      "body_original": "",
+      "editorial_date": "2026-10-08"
     }
   ],
   "summary": {
@@ -351,5 +396,11 @@
       "近七日 19 条机构公告",
       "未核验栏目显示暂无更新"
     ]
+  },
+  "editorial": {
+    "date": "2026-10-08",
+    "items_applied": 15,
+    "editor": "Codex",
+    "mode": "source_grounded_chinese"
   }
 }
