@@ -5,7 +5,7 @@ DOW，51,231.64，变动百分之+0.10。
 上证指数，3,792.44，变动百分之-0.51。
 恒生指数，23,967.86，变动百分之+0.77。
 日经225，68,374.84，变动百分之-0.97。
-2026-10-08，Federal Reserve：Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering。
-2026-10-08，ECB：Meeting of 9-10 September 2026。
-2026-10-08，ECB：Piero Cipollone: Interview with Corriere della Sera。
+2026-10-08，Federal Reserve：美联储对美国运通反洗钱管理缺陷采取执法行动。
+2026-10-08，ECB：欧洲央行公布 9 月 9—10 日货币政策会议纪要。
+2026-10-08，ECB：Cipollone 谈数字欧元的现金互补与试点安排。
 原文链接和具体报价时间见网站。以上不构成投资建议。
