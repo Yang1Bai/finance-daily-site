@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-09",
-  "script_chars": 605,
+  "date": "2026-10-10",
+  "script_chars": 809,
   "segments": 11,
-  "audio_kb": 1033,
+  "audio_kb": 1082,
   "mode": "offline_source_narration",
-  "source_fetched_at": "2026-10-09T17:52:05.968023+00:00",
-  "generated_at": "2026-10-09T17:53:14.219196+00:00"
+  "source_fetched_at": "2026-10-10T01:35:17.678784+00:00",
+  "generated_at": "2026-10-10T01:36:09.524635+00:00"
 }
