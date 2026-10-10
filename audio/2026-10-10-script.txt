@@ -5,7 +5,7 @@ DOW，51,654.95，变动百分之+0.83。
 上证指数，3,813.79，变动百分之+1859927722.66。
 恒生指数，24,211.35，变动百分之+0.34。
 日经225，69,030.92，变动百分之-0.02。
-2026-10-09，Federal Reserve：Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families。
-2026-10-09，SEC：SEC Proposes Expanding Securities Eligible for Cross Trading by Registered Funds。
-2026-10-08，Federal Reserve：Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering。
+2026-10-09，Federal Reserve：美联储发布 2025 年消费者金融调查结果。
+2026-10-09，SEC：SEC 提议扩大注册基金交叉交易的证券范围。
+2026-10-08，Federal Reserve：美联储对美国运通反洗钱管理缺陷采取执法行动。
 原文链接和具体报价时间见网站。以上不构成投资建议。
