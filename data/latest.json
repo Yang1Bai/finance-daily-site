@@ -1,7 +1,7 @@
 {
   "date": "2026年10月11日",
   "content_mode": "public",
-  "fetched_at": "2026-10-11T13:03:29.153740+00:00",
+  "fetched_at": "2026-10-11T17:13:05.394280+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -18,8 +18,8 @@
     {
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "ok",
+      "items": 7
     }
   ],
   "missing_quotes": [],
@@ -40,10 +40,10 @@
       "name": "NASDAQ",
       "symbol": "^IXIC",
       "value": "27,366.17",
-      "change": "+172.83",
+      "change": "+172.87",
       "change_pct": "+0.64%",
       "direction": "up",
-      "as_of": "2026-10-09T21:15:59+00:00",
+      "as_of": "2026-10-09T21:16:01+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -52,7 +52,7 @@
       "name": "DOW",
       "symbol": "^DJI",
       "value": "51,654.95",
-      "change": "+423.31",
+      "change": "+423.35",
       "change_pct": "+0.83%",
       "direction": "up",
       "as_of": "2026-10-09T20:37:50+00:00",
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "83,010.75",
-      "change": "+98.98",
-      "change_pct": "+0.12%",
+      "value": "83,766.86",
+      "change": "+855.09",
+      "change_pct": "+1.03%",
       "direction": "up",
-      "as_of": "2026-10-11T13:03:25+00:00",
+      "as_of": "2026-10-11T17:12:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,10 +147,10 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.23",
-      "change": "+0.02",
-      "change_pct": "+0.02%",
-      "direction": "up",
+      "value": "102.21",
+      "change": "+0.00",
+      "change_pct": "+0.00%",
+      "direction": "neutral",
       "as_of": "2026-10-09T20:59:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
@@ -216,6 +216,30 @@
       "editorial_date": "2026-10-11"
     },
     {
+      "title": "Meeting of 9-10 September 2026",
+      "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
+      "body": "",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T13:30:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Interview with Corriere della Sera",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261008~3184e7d0d0.en.html",
+      "body": "",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T08:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "美联储发布 9 月 15—16 日 FOMC 会议纪要",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
       "body": "美联储于 10 月 7 日公布该次会议纪要，并说明其中经济与金融状况描述仅依据会议当时可得信息。此条是纪要发布公告，不是新的利率决定，也不据此推断后续政策走向。",
@@ -229,6 +253,18 @@
       "title_original": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "body_original": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "editorial_date": "2026-10-11"
+    },
+    {
+      "title": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
+      "body": "",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T10:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
     },
     {
       "title": "SEC 请求法院批准 Ken Leech 交易分配案最终判决",
@@ -246,6 +282,30 @@
       "editorial_date": "2026-10-11"
     },
     {
+      "title": "Frank Elderson: Effective supervision through timely remediation",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
+      "body": "",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T15:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
+      "body": "",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T15:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "SEC 将于 11 月 19 日举行投资机构线上合规研讨会",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-102-sec-host-virtual-national-compliance-outreach-seminar-investment-companies-investment-advisers",
       "body": "SEC 公布面向投资公司及投资顾问的线上活动，议题涵盖信息安全、运营韧性、私募基金及合规计划有效性。公告称无需提前注册，直播链接将在活动当天提供。",
@@ -261,6 +321,18 @@
       "editorial_date": "2026-10-11"
     },
     {
+      "title": "Philip R. Lane: Interview with Ansa",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html",
+      "body": "",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T09:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "美联储批准 Isabella Bank Corporation 收购申请",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
       "body": "美联储批准 Isabella Bank Corporation 收购 Grand River Commerce 并间接收购 Grand River Bank，同时批准相关银行合并及分支机构安排。公告是监管批准，不等于确认交易已完成交割。",
@@ -274,6 +346,18 @@
       "title_original": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
       "body_original": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
       "editorial_date": "2026-10-11"
+    },
+    {
+      "title": "Philip R. Lane: Diagnostic Challenges for ECB Monetary Policy",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html",
+      "body": "",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T10:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
     },
     {
       "title": "SEC 联合监管机构提醒防范关系投资与冒名诈骗",
@@ -298,7 +382,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 8 条机构公告",
+      "近七日 15 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
