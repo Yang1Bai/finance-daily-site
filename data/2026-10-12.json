@@ -1,13 +1,13 @@
 {
   "date": "2026年10月12日",
   "content_mode": "public",
-  "fetched_at": "2026-10-12T13:34:08.941113+00:00",
+  "fetched_at": "2026-10-12T20:46:48.922731+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
-      "items": 4
+      "items": 3
     },
     {
       "source": "SEC",
@@ -18,8 +18,8 @@
     {
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "ok",
+      "items": 6
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,816.11",
-      "change": "+4.57",
-      "change_pct": "+0.06%",
-      "direction": "up",
-      "as_of": "2026-10-12T13:34:10+00:00",
+      "value": "7,807.24",
+      "change": "-4.30",
+      "change_pct": "-0.06%",
+      "direction": "down",
+      "as_of": "2026-10-12T20:35:01+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "27,320.76",
-      "change": "-45.41",
-      "change_pct": "-0.17%",
+      "value": "27,245.90",
+      "change": "-120.27",
+      "change_pct": "-0.44%",
       "direction": "down",
-      "as_of": "2026-10-12T13:34:05+00:00",
+      "as_of": "2026-10-12T20:46:46+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,853.90",
-      "change": "+198.95",
-      "change_pct": "+0.39%",
+      "value": "51,850.55",
+      "change": "+195.60",
+      "change_pct": "+0.38%",
       "direction": "up",
-      "as_of": "2026-10-12T13:34:10+00:00",
+      "as_of": "2026-10-12T20:43:51+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,256.20",
-      "change": "+168.93",
-      "change_pct": "+0.67%",
+      "value": "25,277.68",
+      "change": "+190.41",
+      "change_pct": "+0.76%",
       "direction": "up",
-      "as_of": "2026-10-12T13:19:10+00:00",
+      "as_of": "2026-10-12T16:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,196.80",
-      "change": "-19.50",
-      "change_pct": "-0.46%",
+      "value": "4,194.70",
+      "change": "-21.60",
+      "change_pct": "-0.51%",
       "direction": "down",
-      "as_of": "2026-10-12T13:24:06+00:00",
+      "as_of": "2026-10-12T20:36:18+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "93.45",
-      "change": "+1.60",
-      "change_pct": "+1.74%",
+      "value": "93.19",
+      "change": "+1.34",
+      "change_pct": "+1.46%",
       "direction": "up",
-      "as_of": "2026-10-12T13:24:09+00:00",
+      "as_of": "2026-10-12T20:36:44+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "82,592.91",
-      "change": "-1080.10",
-      "change_pct": "-1.29%",
+      "value": "83,000.03",
+      "change": "-672.98",
+      "change_pct": "-0.80%",
       "direction": "down",
-      "as_of": "2026-10-12T13:34:07+00:00",
+      "as_of": "2026-10-12T20:46:47+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.41",
-      "change": "+0.20",
-      "change_pct": "+0.19%",
+      "value": "102.58",
+      "change": "+0.37",
+      "change_pct": "+0.36%",
       "direction": "up",
-      "as_of": "2026-10-12T13:24:09+00:00",
+      "as_of": "2026-10-12T20:36:47+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,11 +159,11 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6940",
+      "value": "6.6941",
       "change": "+0.00",
       "change_pct": "+0.03%",
       "direction": "up",
-      "as_of": "2026-10-12T13:34:10+00:00",
+      "as_of": "2026-10-12T20:46:43+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
@@ -216,6 +216,30 @@
       "editorial_date": "2026-10-12"
     },
     {
+      "title": "Meeting of 9-10 September 2026",
+      "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
+      "body": "",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T13:30:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Interview with Corriere della Sera",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261008~3184e7d0d0.en.html",
+      "body": "",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T08:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "美联储发布 9 月 15—16 日 FOMC 会议纪要",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
       "body": "美联储于 10 月 7 日公布该次会议纪要，并说明其中经济与金融状况描述仅依据会议当时可得信息。此条是纪要发布公告，不是新的利率决定，也不据此推断后续政策走向。",
@@ -229,6 +253,18 @@
       "title_original": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "body_original": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "editorial_date": "2026-10-12"
+    },
+    {
+      "title": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
+      "body": "",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T10:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
     },
     {
       "title": "SEC 请求法院批准 Ken Leech 交易分配案最终判决",
@@ -246,6 +282,30 @@
       "editorial_date": "2026-10-12"
     },
     {
+      "title": "Frank Elderson: Effective supervision through timely remediation",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
+      "body": "",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T15:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
+      "body": "",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T15:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "SEC 将于 11 月 19 日举行投资机构线上合规研讨会",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-102-sec-host-virtual-national-compliance-outreach-seminar-investment-companies-investment-advisers",
       "body": "SEC 公布面向投资公司及投资顾问的线上活动，议题涵盖信息安全、运营韧性、私募基金及合规计划有效性。公告称无需提前注册，直播链接将在活动当天提供。",
@@ -261,19 +321,16 @@
       "editorial_date": "2026-10-12"
     },
     {
-      "title": "美联储批准 Isabella Bank Corporation 收购申请",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
-      "body": "美联储批准 Isabella Bank Corporation 收购 Grand River Commerce 并间接收购 Grand River Bank，同时批准相关银行合并及分支机构安排。公告是监管批准，不等于确认交易已完成交割。",
-      "date": "2026-10-05",
-      "published_at": "2026-10-05T20:30:00+00:00",
-      "source": "Federal Reserve",
+      "title": "Philip R. Lane: Interview with Ansa",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html",
+      "body": "",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T09:00:00+02:00",
+      "source": "ECB",
       "tags": [
-        "Federal Reserve"
+        "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
-      "body_original": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
-      "editorial_date": "2026-10-12"
+      "importance": "normal"
     }
   ],
   "summary": {
@@ -283,13 +340,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 7 条机构公告",
+      "近七日 12 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-10-12",
-    "items_applied": 7,
+    "items_applied": 6,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
