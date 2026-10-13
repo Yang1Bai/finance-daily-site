@@ -6556,9 +6556,15 @@
           "buy_date": "2026-09-21"
         },
         {
+          "ticker": "AMZN",
+          "shares": 1,
+          "avg_cost": 258.58,
+          "buy_date": "2026-10-13"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1005.46
+          "avg_cost": 746.88
         }
       ],
       "history": [
@@ -11998,6 +12004,84 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-13",
+          "portfolio_value": 9841.06,
+          "baseline_value": 10526.16,
+          "cash": 746.88,
+          "positions": {
+            "NVDA": {
+              "shares": 6,
+              "price": 228.52,
+              "value": 1371.12
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 543.45,
+              "value": 1630.35
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 196.28,
+              "value": 588.84
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 445.12,
+              "value": 445.12
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 743.57,
+              "value": 743.57
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 341.27,
+              "value": 341.27
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 375.23,
+              "value": 1125.69
+            },
+            "META": {
+              "shares": 1,
+              "price": 762.5,
+              "value": 762.5
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 605.53,
+              "value": 605.53
+            },
+            "INTC": {
+              "shares": 5,
+              "price": 102.81,
+              "value": 514.05
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 353.78,
+              "value": 707.56
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 258.58,
+              "value": 258.58
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "AMZN",
+              "shares": 1,
+              "price": 258.58,
+              "reason": "技术强势+动量+4.1%"
+            }
+          ],
+          "note": "规则策略：持有强势['AMZN']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
