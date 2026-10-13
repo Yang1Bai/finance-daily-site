@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T21:32:55.052640+00:00",
+  "updated": "2026-10-13T02:41:11.445293+00:00",
   "source": "Yahoo Finance",
   "quotes": [
     {
@@ -41,11 +41,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,797.24",
-      "change": "-16.55",
-      "change_pct": "-0.43%",
+      "value": "3,765.05",
+      "change": "-32.19",
+      "change_pct": "-0.85%",
       "direction": "down",
-      "as_of": "2026-10-12T07:00:24+00:00",
+      "as_of": "2026-10-13T02:26:10+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -53,11 +53,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,271.20",
-      "change": "+59.85",
-      "change_pct": "+0.25%",
-      "direction": "up",
-      "as_of": "2026-10-12T08:08:40+00:00",
+      "value": "24,025.05",
+      "change": "-246.15",
+      "change_pct": "-1.01%",
+      "direction": "down",
+      "as_of": "2026-10-13T02:26:08+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -65,11 +65,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "69,030.92",
-      "change": "-11.18",
-      "change_pct": "-0.02%",
+      "value": "67,302.74",
+      "change": "-1728.18",
+      "change_pct": "-2.50%",
       "direction": "down",
-      "as_of": "2026-10-09T06:45:03+00:00",
+      "as_of": "2026-10-13T02:26:10+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -89,11 +89,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,195.90",
-      "change": "-20.40",
-      "change_pct": "-0.48%",
-      "direction": "down",
-      "as_of": "2026-10-12T20:59:59+00:00",
+      "value": "4,192.20",
+      "change": "+1.60",
+      "change_pct": "+0.04%",
+      "direction": "up",
+      "as_of": "2026-10-13T02:31:08+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -101,11 +101,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "93.16",
-      "change": "+1.31",
-      "change_pct": "+1.43%",
-      "direction": "up",
-      "as_of": "2026-10-12T20:59:58+00:00",
+      "value": "92.56",
+      "change": "-1.18",
+      "change_pct": "-1.26%",
+      "direction": "down",
+      "as_of": "2026-10-13T02:31:03+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -113,11 +113,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "82,861.22",
-      "change": "-811.79",
-      "change_pct": "-0.97%",
-      "direction": "down",
-      "as_of": "2026-10-12T21:32:50+00:00",
+      "value": "82,729.58",
+      "change": "+975.10",
+      "change_pct": "+1.19%",
+      "direction": "up",
+      "as_of": "2026-10-13T02:41:07+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -125,11 +125,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.58",
-      "change": "+0.37",
-      "change_pct": "+0.36%",
-      "direction": "up",
-      "as_of": "2026-10-12T21:22:49+00:00",
+      "value": "102.41",
+      "change": "-0.18",
+      "change_pct": "-0.18%",
+      "direction": "down",
+      "as_of": "2026-10-13T02:31:09+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -137,11 +137,11 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6929",
+      "value": "6.6955",
       "change": "+0.00",
-      "change_pct": "+0.01%",
+      "change_pct": "+0.03%",
       "direction": "up",
-      "as_of": "2026-10-12T21:32:53+00:00",
+      "as_of": "2026-10-13T02:41:10+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
