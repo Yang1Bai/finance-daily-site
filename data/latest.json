@@ -1,7 +1,7 @@
 {
-  "date": "2026年10月13日",
+  "date": "2026年10月14日",
   "content_mode": "public",
-  "fetched_at": "2026-10-13T18:46:21.057406+00:00",
+  "fetched_at": "2026-10-14T01:01:18.745385+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -13,7 +13,7 @@
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 2
+      "items": 1
     },
     {
       "source": "ECB",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,801.79",
-      "change": "-5.45",
-      "change_pct": "-0.07%",
+      "value": "7,805.45",
+      "change": "-6.09",
+      "change_pct": "-0.08%",
       "direction": "down",
-      "as_of": "2026-10-13T18:46:20+00:00",
+      "as_of": "2026-10-13T20:33:02+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "27,178.50",
-      "change": "-67.41",
-      "change_pct": "-0.25%",
+      "value": "27,204.38",
+      "change": "-41.52",
+      "change_pct": "-0.15%",
       "direction": "down",
-      "as_of": "2026-10-13T18:46:18+00:00",
+      "as_of": "2026-10-13T21:15:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,722.80",
-      "change": "-127.75",
-      "change_pct": "-0.25%",
-      "direction": "down",
-      "as_of": "2026-10-13T18:46:20+00:00",
+      "value": "51,670.10",
+      "change": "+15.20",
+      "change_pct": "+0.03%",
+      "direction": "up",
+      "as_of": "2026-10-13T20:41:55+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "67,777.52",
-      "change": "-1253.40",
-      "change_pct": "-1.82%",
-      "direction": "down",
-      "as_of": "2026-10-13T06:45:03+00:00",
+      "value": "68,118.44",
+      "change": "+340.92",
+      "change_pct": "+0.50%",
+      "direction": "up",
+      "as_of": "2026-10-14T00:46:15+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,182.80",
-      "change": "-7.80",
-      "change_pct": "-0.19%",
-      "direction": "down",
-      "as_of": "2026-10-13T18:36:12+00:00",
+      "value": "4,179.80",
+      "change": "+2.50",
+      "change_pct": "+0.06%",
+      "direction": "up",
+      "as_of": "2026-10-14T00:51:11+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "94.22",
-      "change": "+0.48",
-      "change_pct": "+0.51%",
+      "value": "94.97",
+      "change": "+0.83",
+      "change_pct": "+0.88%",
       "direction": "up",
-      "as_of": "2026-10-13T18:36:19+00:00",
+      "as_of": "2026-10-14T00:51:14+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "82,961.48",
-      "change": "+1207.00",
-      "change_pct": "+1.48%",
+      "value": "83,302.67",
+      "change": "+210.02",
+      "change_pct": "+0.25%",
       "direction": "up",
-      "as_of": "2026-10-13T18:46:15+00:00",
+      "as_of": "2026-10-14T01:01:14+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.20",
-      "change": "-0.38",
-      "change_pct": "-0.37%",
+      "value": "102.17",
+      "change": "-0.01",
+      "change_pct": "-0.01%",
       "direction": "down",
-      "as_of": "2026-10-13T18:36:20+00:00",
+      "as_of": "2026-10-14T00:51:17+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,11 +159,11 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6927",
-      "change": "-0.00",
-      "change_pct": "-0.01%",
-      "direction": "down",
-      "as_of": "2026-10-13T18:46:17+00:00",
+      "value": "6.6941",
+      "change": "+0.00",
+      "change_pct": "+0.04%",
+      "direction": "up",
+      "as_of": "2026-10-14T01:01:18+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
@@ -195,124 +195,88 @@
       "importance": "normal"
     },
     {
-      "title": "美联储发布 2025 年消费者金融调查结果",
+      "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
-      "body": "调查描述美国家庭的收入、资产、债务和银行服务使用，比较 2022 至 2025 年的变化。公告显示实际收入中位数上升而平均数下降，分布内各群体变化不同；历史调查数据不代表今天的市场行情。",
+      "body": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
       "date": "2026-10-09",
       "published_at": "2026-10-09T14:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-      "body_original": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-      "editorial_date": "2026-10-13"
+      "importance": "normal"
     },
     {
-      "title": "SEC 提议扩大注册基金交叉交易的证券范围",
+      "title": "SEC Proposes Expanding Securities Eligible for Cross Trading by Registered Funds",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-104-sec-proposes-expanding-securities-eligible-cross-trading-registered-funds",
-      "body": "SEC 发布扩大注册基金可交叉交易证券范围的规则提案。这是征求意见中的监管提议，不能视为已经生效的规定；具体交易要求与最终范围仍应以规则文本和后续决定为准。",
+      "body": "The Securities and Exchange Commission today proposed amendments to the Investment Company Act “cross-trading rule,” which permits transactions in securities between a registered fund and its affiliates under certain conditions. The proposed amendments…",
       "date": "2026-10-09",
       "published_at": "2026-10-09T10:59:00-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal",
-      "title_original": "SEC Proposes Expanding Securities Eligible for Cross Trading by Registered Funds",
-      "body_original": "The Securities and Exchange Commission today proposed amendments to the Investment Company Act “cross-trading rule,” which permits transactions in securities between a registered fund and its affiliates under certain conditions. The proposed amendments…",
-      "editorial_date": "2026-10-13"
+      "importance": "normal"
     },
     {
-      "title": "美联储对美国运通反洗钱管理缺陷采取执法行动",
+      "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
-      "body": "公告称，美国运通未充分识别和报告部分涉及洗钱的可疑活动，集团反洗钱方案执行也存在重大缺陷。美联储采取执法行动，货币监理署另对其国民银行子公司采取行动；此公告不提供市场价格或投资判断。",
+      "body": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
       "date": "2026-10-08",
       "published_at": "2026-10-08T20:30:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
-      "body_original": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
-      "editorial_date": "2026-10-13"
+      "importance": "normal"
     },
     {
-      "title": "欧洲央行公布 9 月 9—10 日货币政策会议纪要",
+      "title": "Meeting of 9-10 September 2026",
       "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
-      "body": "纪要回顾能源冲击、通胀持续性与经济韧性下的政策讨论，并记载当次加息考虑。文件反映 9 月会议的信息与判断，不是 10 月新决定；后续政策仍按数据和逐次会议评估，不预先承诺利率路径。",
+      "body": "",
       "date": "2026-10-08",
       "published_at": "2026-10-08T13:30:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Meeting of 9-10 September 2026",
-      "body_original": "",
-      "editorial_date": "2026-10-13"
+      "importance": "normal"
     },
     {
-      "title": "Cipollone 谈数字欧元的现金互补与试点安排",
+      "title": "Piero Cipollone: Interview with Corriere della Sera",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261008~3184e7d0d0.en.html",
-      "body": "10 月 8 日发布的采访于 9 月 23 日进行。Cipollone 强调数字欧元将补充现金，并讨论离线支付与试点；推出时间仍依赖立法、技术和测试进展，不能把 2029 年设想视为已确定实施日期。",
+      "body": "",
       "date": "2026-10-08",
       "published_at": "2026-10-08T08:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Piero Cipollone: Interview with Corriere della Sera",
-      "body_original": "",
-      "editorial_date": "2026-10-13"
+      "importance": "normal"
     },
     {
-      "title": "美联储发布 9 月 15—16 日 FOMC 会议纪要",
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-      "body": "美联储于 10 月 7 日公布该次会议纪要，并说明其中经济与金融状况描述仅依据会议当时可得信息。此条是纪要发布公告，不是新的利率决定，也不据此推断后续政策走向。",
+      "body": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "date": "2026-10-07",
       "published_at": "2026-10-07T18:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal",
-      "title_original": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "body_original": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "editorial_date": "2026-10-13"
+      "importance": "normal"
     },
     {
-      "title": "欧洲央行调查显示证券融资与衍生品总体信用条款略有放宽",
+      "title": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
-      "body": "9 月 SESFOD 调查回顾 6—8 月情况：各类交易对手总体信用条款连续第四季度略有放宽，主要来自价格条款；不同交易及非价格条件仍存在差异。调查中的未来预期属于受访机构判断，不是已发生结果。",
+      "body": "",
       "date": "2026-10-07",
       "published_at": "2026-10-07T10:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
-      "body_original": "",
-      "editorial_date": "2026-10-13"
-    },
-    {
-      "title": "SEC 请求法院批准 Ken Leech 交易分配案最终判决",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-103-sec-seeks-final-judgment-against-former-western-asset-co-cio-ken-leech-cherry-picking-case",
-      "body": "SEC 申请对前 Western Asset 联席投资负责人作出经同意的最终判决，包括罚款与任职限制，仍待法院批准。相关投资者返还安排结合此前公司和解；本次民事同意判决与另案认罪事实应区分。",
-      "date": "2026-10-06",
-      "published_at": "2026-10-06T16:30:24-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC Seeks Final Judgment Against Former Western Asset Co-CIO Ken Leech in Cherry Picking Case",
-      "body_original": "The Securities and Exchange Commission today moved for entry of a final judgment by consent against Stephen Kenneth Leech II, the former co-chief investment officer of registered investment adviser Western Asset Management Company LLC, whom the SEC…",
-      "editorial_date": "2026-10-13"
+      "importance": "normal"
     }
   ],
   "summary": {
@@ -322,14 +286,8 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 10 条机构公告",
+      "近七日 9 条机构公告",
       "未核验栏目显示暂无更新"
     ]
-  },
-  "editorial": {
-    "date": "2026-10-13",
-    "items_applied": 8,
-    "editor": "Codex",
-    "mode": "source_grounded_chinese"
   }
 }
