@@ -6562,9 +6562,15 @@
           "buy_date": "2026-10-13"
         },
         {
+          "ticker": "XLE",
+          "shares": 4,
+          "avg_cost": 67.63,
+          "buy_date": "2026-10-14"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 746.88
+          "avg_cost": 476.36
         }
       ],
       "history": [
@@ -12082,6 +12088,89 @@
             }
           ],
           "note": "规则策略：持有强势['AMZN']，剔除弱势"
+        },
+        {
+          "date": "2026-10-14",
+          "portfolio_value": 9598.75,
+          "baseline_value": 10412.38,
+          "cash": 476.36,
+          "positions": {
+            "NVDA": {
+              "shares": 6,
+              "price": 221.3,
+              "value": 1327.8
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 533.69,
+              "value": 1601.07
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 190.43,
+              "value": 571.29
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 430.0,
+              "value": 430.0
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 728.95,
+              "value": 728.95
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 342.96,
+              "value": 342.96
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 367.16,
+              "value": 1101.48
+            },
+            "META": {
+              "shares": 1,
+              "price": 737.54,
+              "value": 737.54
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 570.82,
+              "value": 570.82
+            },
+            "INTC": {
+              "shares": 5,
+              "price": 98.12,
+              "value": 490.6
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 347.64,
+              "value": 695.28
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 254.08,
+              "value": 254.08
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 67.63,
+              "value": 270.52
+            }
+          },
+          "trades": [
+            {
+              "action": "BUY",
+              "ticker": "XLE",
+              "shares": 4,
+              "price": 67.63,
+              "reason": "技术强势+动量+6.2%"
+            }
+          ],
+          "note": "规则策略：持有强势['XLE']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
