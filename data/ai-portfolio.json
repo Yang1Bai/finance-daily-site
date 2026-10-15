@@ -6544,12 +6544,6 @@
           "buy_date": "2026-09-08"
         },
         {
-          "ticker": "INTC",
-          "shares": 5,
-          "avg_cost": 104.47,
-          "buy_date": "2026-09-08"
-        },
-        {
           "ticker": "GOOGL",
           "shares": 2,
           "avg_cost": 354.97,
@@ -6570,7 +6564,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 476.36
+          "avg_cost": 953.21
         }
       ],
       "history": [
@@ -12171,6 +12165,84 @@
             }
           ],
           "note": "规则策略：持有强势['XLE']，剔除弱势"
+        },
+        {
+          "date": "2026-10-15",
+          "portfolio_value": 9540.44,
+          "baseline_value": 10442.01,
+          "cash": 953.21,
+          "positions": {
+            "NVDA": {
+              "shares": 6,
+              "price": 217.23,
+              "value": 1303.38
+            },
+            "MSFT": {
+              "shares": 3,
+              "price": 539.44,
+              "value": 1618.32
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 189.19,
+              "value": 567.57
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 422.25,
+              "value": 422.25
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 728.0,
+              "value": 728.0
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 342.0,
+              "value": 342.0
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 362.44,
+              "value": 1087.32
+            },
+            "META": {
+              "shares": 1,
+              "price": 736.72,
+              "value": 736.72
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 562.23,
+              "value": 562.23
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 349.22,
+              "value": 698.44
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 254.76,
+              "value": 254.76
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 66.56,
+              "value": 266.24
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "INTC",
+              "shares": 5,
+              "price": 95.37,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
