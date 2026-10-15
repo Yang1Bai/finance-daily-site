@@ -1,7 +1,7 @@
 {
   "date": "2026年10月15日",
   "content_mode": "public",
-  "fetched_at": "2026-10-15T00:22:07.287053+00:00",
+  "fetched_at": "2026-10-15T16:09:22.791162+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -19,7 +19,7 @@
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
       "status": "ok",
-      "items": 4
+      "items": 2
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,718.94",
-      "change": "-86.51",
-      "change_pct": "-1.11%",
-      "direction": "down",
-      "as_of": "2026-10-14T20:36:08+00:00",
+      "value": "7,723.81",
+      "change": "+4.87",
+      "change_pct": "+0.06%",
+      "direction": "up",
+      "as_of": "2026-10-15T16:09:21+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,692.87",
-      "change": "-511.51",
-      "change_pct": "-1.88%",
+      "value": "26,601.10",
+      "change": "-91.77",
+      "change_pct": "-0.34%",
       "direction": "down",
-      "as_of": "2026-10-14T21:15:59+00:00",
+      "as_of": "2026-10-15T16:09:18+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,621.48",
-      "change": "-48.62",
-      "change_pct": "-0.09%",
-      "direction": "down",
-      "as_of": "2026-10-14T20:36:17+00:00",
+      "value": "52,030.05",
+      "change": "+408.57",
+      "change_pct": "+0.79%",
+      "direction": "up",
+      "as_of": "2026-10-15T16:09:21+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,767.23",
-      "change": "-30.01",
-      "change_pct": "-0.79%",
+      "value": "3,707.48",
+      "change": "-93.38",
+      "change_pct": "-2.46%",
       "direction": "down",
-      "as_of": "2026-10-14T07:00:20+00:00",
+      "as_of": "2026-10-15T07:00:24+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,314.17",
-      "change": "+42.97",
-      "change_pct": "+0.18%",
-      "direction": "up",
-      "as_of": "2026-10-14T08:08:48+00:00",
+      "value": "24,062.72",
+      "change": "-282.48",
+      "change_pct": "-1.16%",
+      "direction": "down",
+      "as_of": "2026-10-15T08:08:58+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "66,130.62",
-      "change": "-1613.67",
-      "change_pct": "-2.38%",
+      "value": "64,425.95",
+      "change": "-3318.34",
+      "change_pct": "-4.90%",
       "direction": "down",
-      "as_of": "2026-10-15T00:07:05+00:00",
+      "as_of": "2026-10-15T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,298.61",
-      "change": "+38.71",
-      "change_pct": "+0.15%",
+      "value": "25,382.62",
+      "change": "+84.01",
+      "change_pct": "+0.33%",
       "direction": "up",
-      "as_of": "2026-10-14T16:00:00+00:00",
+      "as_of": "2026-10-15T15:30:14+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,141.70",
-      "change": "+33.80",
-      "change_pct": "+0.82%",
+      "value": "4,170.20",
+      "change": "+62.30",
+      "change_pct": "+1.52%",
       "direction": "up",
-      "as_of": "2026-10-15T00:12:05+00:00",
+      "as_of": "2026-10-15T15:59:23+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "94.73",
-      "change": "-0.36",
-      "change_pct": "-0.38%",
-      "direction": "down",
-      "as_of": "2026-10-15T00:12:00+00:00",
+      "value": "96.27",
+      "change": "+2.37",
+      "change_pct": "+2.52%",
+      "direction": "up",
+      "as_of": "2026-10-15T15:59:16+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "81,680.40",
-      "change": "+107.30",
-      "change_pct": "+0.13%",
+      "value": "82,417.73",
+      "change": "+844.63",
+      "change_pct": "+1.04%",
       "direction": "up",
-      "as_of": "2026-10-15T00:22:04+00:00",
+      "as_of": "2026-10-15T16:09:17+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.22",
-      "change": "-0.34",
-      "change_pct": "-0.33%",
+      "value": "102.14",
+      "change": "-0.41",
+      "change_pct": "-0.40%",
       "direction": "down",
-      "as_of": "2026-10-15T00:12:06+00:00",
+      "as_of": "2026-10-15T15:59:22+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,11 +159,11 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6920",
+      "value": "6.6896",
       "change": "-0.00",
-      "change_pct": "-0.01%",
+      "change_pct": "-0.05%",
       "direction": "down",
-      "as_of": "2026-10-15T00:22:06+00:00",
+      "as_of": "2026-10-15T16:09:22+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
@@ -274,36 +274,6 @@
       "title_original": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
       "body_original": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
       "editorial_date": "2026-10-15"
-    },
-    {
-      "title": "欧洲央行公布 9 月 9—10 日货币政策会议纪要",
-      "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
-      "body": "纪要回顾能源冲击、通胀持续性与经济韧性下的政策讨论，并记载当次加息考虑。文件反映 9 月会议的信息与判断，不是 10 月新决定；后续政策仍按数据和逐次会议评估，不预先承诺利率路径。",
-      "date": "2026-10-08",
-      "published_at": "2026-10-08T13:30:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Meeting of 9-10 September 2026",
-      "body_original": "",
-      "editorial_date": "2026-10-15"
-    },
-    {
-      "title": "Cipollone 谈数字欧元的现金互补与试点安排",
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261008~3184e7d0d0.en.html",
-      "body": "10 月 8 日发布的采访于 9 月 23 日进行。Cipollone 强调数字欧元将补充现金，并讨论离线支付与试点；推出时间仍依赖立法、技术和测试进展，不能把 2029 年设想视为已确定实施日期。",
-      "date": "2026-10-08",
-      "published_at": "2026-10-08T08:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Piero Cipollone: Interview with Corriere della Sera",
-      "body_original": "",
-      "editorial_date": "2026-10-15"
     }
   ],
   "summary": {
@@ -313,13 +283,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 9 条机构公告",
+      "近七日 7 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-10-15",
-    "items_applied": 9,
+    "items_applied": 7,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
