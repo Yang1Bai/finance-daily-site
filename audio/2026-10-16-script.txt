@@ -5,7 +5,7 @@ DOW，52,177.69，变动百分之+1.08。
 上证指数，3,707.48，变动百分之-2.46。
 恒生指数，24,062.72，变动百分之-1.16。
 日经225，64,425.95，变动百分之-4.90。
-2026-10-14，SEC：SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding。
-2026-10-14，ECB：Frank Elderson: Ensuring resilience in the face of uncertainty。
-2026-10-13，ECB：Philip R. Lane: The AI opportunity for Europe。
+2026-10-14，SEC：SEC 小企业咨询委员会将讨论 IPO 与众筹规则。
+2026-10-14，ECB：Elderson 谈不确定性下的气候风险与银行韧性。
+2026-10-13，ECB：Lane 谈欧洲的 AI 机遇与经济转型挑战。
 原文链接和具体报价时间见网站。以上不构成投资建议。
