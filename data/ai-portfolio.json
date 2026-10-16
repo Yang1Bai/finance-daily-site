@@ -6490,12 +6490,6 @@
     "rule_based": {
       "holdings": [
         {
-          "ticker": "NVDA",
-          "shares": 6,
-          "avg_cost": 211.8,
-          "buy_date": "2026-07-14"
-        },
-        {
           "ticker": "MSFT",
           "shares": 3,
           "avg_cost": 451.1,
@@ -6564,7 +6558,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 953.21
+          "avg_cost": 2237.99
         }
       ],
       "history": [
@@ -12239,6 +12233,79 @@
               "ticker": "INTC",
               "shares": 5,
               "price": 95.37,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-16",
+          "portfolio_value": 9347.8,
+          "baseline_value": 10326.47,
+          "cash": 2237.99,
+          "positions": {
+            "MSFT": {
+              "shares": 3,
+              "price": 529.05,
+              "value": 1587.15
+            },
+            "XLK": {
+              "shares": 3,
+              "price": 183.47,
+              "value": 550.41
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 412.61,
+              "value": 412.61
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 709.8,
+              "value": 709.8
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 343.46,
+              "value": 343.46
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 354.72,
+              "value": 1064.16
+            },
+            "META": {
+              "shares": 1,
+              "price": 709.33,
+              "value": 709.33
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 528.75,
+              "value": 528.75
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 340.59,
+              "value": 681.18
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 250.0,
+              "value": 250.0
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 68.24,
+              "value": 272.96
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "NVDA",
+              "shares": 6,
+              "price": 214.13,
               "reason": "技术弱势(弱势)"
             }
           ],
