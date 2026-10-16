@@ -1,7 +1,7 @@
 {
   "date": "2026年10月16日",
   "content_mode": "public",
-  "fetched_at": "2026-10-16T00:10:23.095927+00:00",
+  "fetched_at": "2026-10-16T15:56:34.118577+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -13,7 +13,7 @@
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 2
+      "items": 1
     },
     {
       "source": "ECB",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,744.06",
-      "change": "+25.12",
-      "change_pct": "+0.33%",
-      "direction": "up",
-      "as_of": "2026-10-15T20:33:53+00:00",
+      "value": "7,707.56",
+      "change": "-36.50",
+      "change_pct": "-0.47%",
+      "direction": "down",
+      "as_of": "2026-10-16T15:56:27+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,713.03",
-      "change": "+20.16",
-      "change_pct": "+0.08%",
-      "direction": "up",
-      "as_of": "2026-10-15T21:15:59+00:00",
+      "value": "26,394.64",
+      "change": "-318.38",
+      "change_pct": "-1.19%",
+      "direction": "down",
+      "as_of": "2026-10-16T15:56:28+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,177.69",
-      "change": "+556.21",
-      "change_pct": "+1.08%",
+      "value": "52,237.22",
+      "change": "+59.53",
+      "change_pct": "+0.11%",
       "direction": "up",
-      "as_of": "2026-10-15T20:34:05+00:00",
+      "as_of": "2026-10-16T15:56:33+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,707.48",
-      "change": "-93.38",
-      "change_pct": "-2.46%",
+      "value": "3,716.28",
+      "change": "-50.95",
+      "change_pct": "-1.35%",
       "direction": "down",
-      "as_of": "2026-10-15T07:00:24+00:00",
+      "as_of": "2026-10-16T07:00:29+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,062.72",
-      "change": "-282.48",
-      "change_pct": "-1.16%",
+      "value": "24,186.83",
+      "change": "-127.37",
+      "change_pct": "-0.52%",
       "direction": "down",
-      "as_of": "2026-10-15T08:08:58+00:00",
+      "as_of": "2026-10-16T08:08:38+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "64,425.95",
-      "change": "-3318.34",
-      "change_pct": "-4.90%",
-      "direction": "down",
-      "as_of": "2026-10-15T06:45:03+00:00",
+      "value": "65,324.29",
+      "change": "+898.34",
+      "change_pct": "+1.39%",
+      "direction": "up",
+      "as_of": "2026-10-16T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,382.62",
-      "change": "+84.01",
-      "change_pct": "+0.33%",
+      "value": "25,622.61",
+      "change": "+239.99",
+      "change_pct": "+0.95%",
       "direction": "up",
-      "as_of": "2026-10-15T16:00:00+00:00",
+      "as_of": "2026-10-16T15:30:14+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,175.90",
-      "change": "+5.80",
-      "change_pct": "+0.14%",
+      "value": "4,195.20",
+      "change": "+25.10",
+      "change_pct": "+0.60%",
       "direction": "up",
-      "as_of": "2026-10-16T00:00:21+00:00",
+      "as_of": "2026-10-16T15:46:32+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "96.15",
-      "change": "-0.35",
-      "change_pct": "-0.36%",
+      "value": "95.98",
+      "change": "-0.52",
+      "change_pct": "-0.54%",
       "direction": "down",
-      "as_of": "2026-10-16T00:00:18+00:00",
+      "as_of": "2026-10-16T15:46:33+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "82,227.65",
-      "change": "+95.42",
-      "change_pct": "+0.12%",
-      "direction": "up",
-      "as_of": "2026-10-16T00:10:20+00:00",
+      "value": "81,345.72",
+      "change": "-786.51",
+      "change_pct": "-0.96%",
+      "direction": "down",
+      "as_of": "2026-10-16T15:56:31+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.06",
-      "change": "+0.00",
-      "change_pct": "+0.00%",
-      "direction": "up",
-      "as_of": "2026-10-16T00:00:21+00:00",
+      "value": "101.75",
+      "change": "-0.31",
+      "change_pct": "-0.30%",
+      "direction": "down",
+      "as_of": "2026-10-16T15:46:32+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,29 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6895",
-      "change": "+0.00",
-      "change_pct": "+0.02%",
-      "direction": "up",
-      "as_of": "2026-10-16T00:10:21+00:00",
+      "value": "6.6851",
+      "change": "-0.00",
+      "change_pct": "-0.05%",
+      "direction": "down",
+      "as_of": "2026-10-16T15:56:34+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
+      "body": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T15:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "SEC 小企业咨询委员会将讨论 IPO 与众筹规则",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-105-sec-small-business-advisory-committee-discuss-ipo-modernization-regulation-crowdfunding",
@@ -229,36 +241,6 @@
       "title_original": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "body_original": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "editorial_date": "2026-10-16"
-    },
-    {
-      "title": "美联储发布 2025 年消费者金融调查结果",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
-      "body": "调查描述美国家庭的收入、资产、债务和银行服务使用，比较 2022 至 2025 年的变化。公告显示实际收入中位数上升而平均数下降，分布内各群体变化不同；历史调查数据不代表今天的市场行情。",
-      "date": "2026-10-09",
-      "published_at": "2026-10-09T14:00:00+00:00",
-      "source": "Federal Reserve",
-      "tags": [
-        "Federal Reserve"
-      ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-      "body_original": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-      "editorial_date": "2026-10-16"
-    },
-    {
-      "title": "SEC 提议扩大注册基金交叉交易的证券范围",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-104-sec-proposes-expanding-securities-eligible-cross-trading-registered-funds",
-      "body": "SEC 发布扩大注册基金可交叉交易证券范围的规则提案。这是征求意见中的监管提议，不能视为已经生效的规定；具体交易要求与最终范围仍应以规则文本和后续决定为准。",
-      "date": "2026-10-09",
-      "published_at": "2026-10-09T10:59:00-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC Proposes Expanding Securities Eligible for Cross Trading by Registered Funds",
-      "body_original": "The Securities and Exchange Commission today proposed amendments to the Investment Company Act “cross-trading rule,” which permits transactions in securities between a registered fund and its affiliates under certain conditions. The proposed amendments…",
-      "editorial_date": "2026-10-16"
     }
   ],
   "summary": {
@@ -268,13 +250,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 6 条机构公告",
+      "近七日 5 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-10-16",
-    "items_applied": 6,
+    "items_applied": 4,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
