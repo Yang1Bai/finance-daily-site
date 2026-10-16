@@ -1,0 +1,257 @@
+{
+  "date": "2026年10月16日",
+  "content_mode": "public",
+  "fetched_at": "2026-10-16T00:10:23.095927+00:00",
+  "sources": [
+    {
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "status": "ok",
+      "items": 2
+    },
+    {
+      "source": "SEC",
+      "url": "https://www.sec.gov/news/pressreleases.rss",
+      "status": "ok",
+      "items": 2
+    },
+    {
+      "source": "ECB",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "status": "ok",
+      "items": 2
+    }
+  ],
+  "missing_quotes": [],
+  "indices": [
+    {
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "value": "7,744.06",
+      "change": "+25.12",
+      "change_pct": "+0.33%",
+      "direction": "up",
+      "as_of": "2026-10-15T20:33:53+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "name": "NASDAQ",
+      "symbol": "^IXIC",
+      "value": "26,713.03",
+      "change": "+20.16",
+      "change_pct": "+0.08%",
+      "direction": "up",
+      "as_of": "2026-10-15T21:15:59+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+    },
+    {
+      "name": "DOW",
+      "symbol": "^DJI",
+      "value": "52,177.69",
+      "change": "+556.21",
+      "change_pct": "+1.08%",
+      "direction": "up",
+      "as_of": "2026-10-15T20:34:05+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EDJI/"
+    },
+    {
+      "name": "上证指数",
+      "symbol": "000001.SS",
+      "value": "3,707.48",
+      "change": "-93.38",
+      "change_pct": "-2.46%",
+      "direction": "down",
+      "as_of": "2026-10-15T07:00:24+00:00",
+      "currency": "CNY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/000001.SS/"
+    },
+    {
+      "name": "恒生指数",
+      "symbol": "^HSI",
+      "value": "24,062.72",
+      "change": "-282.48",
+      "change_pct": "-1.16%",
+      "direction": "down",
+      "as_of": "2026-10-15T08:08:58+00:00",
+      "currency": "HKD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EHSI/"
+    },
+    {
+      "name": "日经225",
+      "symbol": "^N225",
+      "value": "64,425.95",
+      "change": "-3318.34",
+      "change_pct": "-4.90%",
+      "direction": "down",
+      "as_of": "2026-10-15T06:45:03+00:00",
+      "currency": "JPY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EN225/"
+    },
+    {
+      "name": "德国DAX",
+      "symbol": "^GDAXI",
+      "value": "25,382.62",
+      "change": "+84.01",
+      "change_pct": "+0.33%",
+      "direction": "up",
+      "as_of": "2026-10-15T16:00:00+00:00",
+      "currency": "EUR",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+    },
+    {
+      "name": "黄金期货",
+      "symbol": "GC=F",
+      "value": "4,175.90",
+      "change": "+5.80",
+      "change_pct": "+0.14%",
+      "direction": "up",
+      "as_of": "2026-10-16T00:00:21+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/GC%3DF/"
+    },
+    {
+      "name": "原油 WTI",
+      "symbol": "CL=F",
+      "value": "96.15",
+      "change": "-0.35",
+      "change_pct": "-0.36%",
+      "direction": "down",
+      "as_of": "2026-10-16T00:00:18+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CL%3DF/"
+    },
+    {
+      "name": "BTC/USD",
+      "symbol": "BTC-USD",
+      "value": "82,227.65",
+      "change": "+95.42",
+      "change_pct": "+0.12%",
+      "direction": "up",
+      "as_of": "2026-10-16T00:10:20+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/BTC-USD/"
+    },
+    {
+      "name": "美元指数",
+      "symbol": "DX-Y.NYB",
+      "value": "102.06",
+      "change": "+0.00",
+      "change_pct": "+0.00%",
+      "direction": "up",
+      "as_of": "2026-10-16T00:00:21+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+    },
+    {
+      "name": "USD/CNH",
+      "symbol": "CNH=X",
+      "value": "6.6895",
+      "change": "+0.00",
+      "change_pct": "+0.02%",
+      "direction": "up",
+      "as_of": "2026-10-16T00:10:21+00:00",
+      "currency": "CNH",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CNH%3DX/"
+    }
+  ],
+  "news": [
+    {
+      "title": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-105-sec-small-business-advisory-committee-discuss-ipo-modernization-regulation-crowdfunding",
+      "body": "The Securities and Exchange Commission’s Small Business Capital Formation Advisory Committee announced that it will hold a meeting on Tuesday, October 27, 2026, at 10 a.m. to continue discussing IPO modernization and explore potential policy…",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T10:30:47-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Frank Elderson: Ensuring resilience in the face of uncertainty",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261014~e4ca33588e.en.html",
+      "body": "",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T02:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Philip R. Lane: The AI opportunity for Europe",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261013~9db9bf4fd6.en.html",
+      "body": "",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T20:30:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "body": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T18:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
+      "body": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T14:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC Proposes Expanding Securities Eligible for Cross Trading by Registered Funds",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-104-sec-proposes-expanding-securities-eligible-cross-trading-registered-funds",
+      "body": "The Securities and Exchange Commission today proposed amendments to the Investment Company Act “cross-trading rule,” which permits transactions in securities between a registered fund and its affiliates under certain conditions. The proposed amendments…",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T10:59:00-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    }
+  ],
+  "summary": {
+    "headline": "公开来源行情与机构公告",
+    "sentiment": "neutral",
+    "vix": "N/A",
+    "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
+    "key_points": [
+      "已获取 12 个标的",
+      "近七日 6 条机构公告",
+      "未核验栏目显示暂无更新"
+    ]
+  }
+}
