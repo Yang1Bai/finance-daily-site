@@ -2,10 +2,10 @@
 S&P 500，7,659.44，变动百分之-1.09。
 NASDAQ，26,140.03，变动百分之-2.14。
 DOW，52,002.41，变动百分之-0.34。
-上证指数，3,716.28，变动百分之-1.35。
-恒生指数，24,186.83，变动百分之-0.52。
+上证指数，3,716.28，变动百分之+0.24。
+恒生指数，24,186.83，变动百分之+0.52。
 日经225，65,324.29，变动百分之+1.39。
+2026-10-17，ECB：Christine Lagarde: IMFC Statement。
 2026-10-16，Federal Reserve：Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank。
 2026-10-14，SEC：SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding。
-2026-10-14，ECB：Frank Elderson: Ensuring resilience in the face of uncertainty。
 原文链接和具体报价时间见网站。以上不构成投资建议。
