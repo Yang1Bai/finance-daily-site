@@ -6496,12 +6496,6 @@
           "buy_date": "2026-07-30"
         },
         {
-          "ticker": "XLK",
-          "shares": 3,
-          "avg_cost": 186.9,
-          "buy_date": "2026-08-04"
-        },
-        {
           "ticker": "TSM",
           "shares": 1,
           "avg_cost": 430.49,
@@ -6558,7 +6552,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2237.99
+          "avg_cost": 2795.87
         }
       ],
       "history": [
@@ -12306,6 +12300,74 @@
               "ticker": "NVDA",
               "shares": 6,
               "price": 214.13,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-19",
+          "portfolio_value": 9447.63,
+          "baseline_value": 10370.17,
+          "cash": 2795.87,
+          "positions": {
+            "MSFT": {
+              "shares": 3,
+              "price": 533.52,
+              "value": 1600.56
+            },
+            "TSM": {
+              "shares": 1,
+              "price": 420.22,
+              "value": 420.22
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 718.36,
+              "value": 718.36
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 342.94,
+              "value": 342.94
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 368.06,
+              "value": 1104.18
+            },
+            "META": {
+              "shares": 1,
+              "price": 705.44,
+              "value": 705.44
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 538.05,
+              "value": 538.05
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 344.18,
+              "value": 688.36
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 262.45,
+              "value": 262.45
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 67.8,
+              "value": 271.2
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "XLK",
+              "shares": 3,
+              "price": 185.96,
               "reason": "技术弱势(弱势)"
             }
           ],
