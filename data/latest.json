@@ -1,7 +1,7 @@
 {
   "date": "2026年10月19日",
   "content_mode": "public",
-  "fetched_at": "2026-10-19T13:33:24.755925+00:00",
+  "fetched_at": "2026-10-19T18:11:53.835738+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -18,8 +18,8 @@
     {
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "ok",
+      "items": 4
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,700.02",
-      "change": "+40.58",
-      "change_pct": "+0.53%",
+      "value": "7,702.65",
+      "change": "+43.21",
+      "change_pct": "+0.56%",
       "direction": "up",
-      "as_of": "2026-10-19T13:33:26+00:00",
+      "as_of": "2026-10-19T18:11:52+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,431.26",
-      "change": "+291.23",
-      "change_pct": "+1.11%",
+      "value": "26,457.90",
+      "change": "+317.86",
+      "change_pct": "+1.22%",
       "direction": "up",
-      "as_of": "2026-10-19T13:33:22+00:00",
+      "as_of": "2026-10-19T18:11:53+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,917.88",
-      "change": "-84.53",
-      "change_pct": "-0.16%",
-      "direction": "down",
-      "as_of": "2026-10-19T13:33:26+00:00",
+      "value": "52,041.36",
+      "change": "+38.95",
+      "change_pct": "+0.07%",
+      "direction": "up",
+      "as_of": "2026-10-19T18:11:53+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,286.52",
-      "change": "-336.09",
-      "change_pct": "-1.31%",
+      "value": "25,319.77",
+      "change": "-302.84",
+      "change_pct": "-1.18%",
       "direction": "down",
-      "as_of": "2026-10-19T13:18:27+00:00",
+      "as_of": "2026-10-19T16:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,179.90",
-      "change": "-1.20",
-      "change_pct": "-0.03%",
+      "value": "4,165.80",
+      "change": "-15.30",
+      "change_pct": "-0.37%",
       "direction": "down",
-      "as_of": "2026-10-19T13:23:20+00:00",
+      "as_of": "2026-10-19T18:01:48+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "97.49",
-      "change": "-1.53",
-      "change_pct": "-1.55%",
-      "direction": "down",
-      "as_of": "2026-10-19T13:23:16+00:00",
+      "value": "99.38",
+      "change": "+0.36",
+      "change_pct": "+0.36%",
+      "direction": "up",
+      "as_of": "2026-10-19T18:01:53+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "82,340.45",
-      "change": "+328.11",
-      "change_pct": "+0.40%",
-      "direction": "up",
-      "as_of": "2026-10-19T13:32:44+00:00",
+      "value": "81,972.10",
+      "change": "-40.24",
+      "change_pct": "-0.05%",
+      "direction": "down",
+      "as_of": "2026-10-19T18:11:48+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.84",
-      "change": "+0.01",
-      "change_pct": "+0.01%",
+      "value": "101.94",
+      "change": "+0.10",
+      "change_pct": "+0.10%",
       "direction": "up",
-      "as_of": "2026-10-19T13:23:26+00:00",
+      "as_of": "2026-10-19T18:01:52+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,41 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6804",
+      "value": "6.6817",
       "change": "-0.00",
-      "change_pct": "-0.07%",
+      "change_pct": "-0.05%",
       "direction": "down",
-      "as_of": "2026-10-19T13:33:27+00:00",
+      "as_of": "2026-10-19T18:11:53+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
+      "body": "",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T08:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Christine Lagarde: IMFC Statement",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
+      "body": "",
+      "date": "2026-10-17",
+      "published_at": "2026-10-17T07:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "美联储宣布终止 Gardner Bancshares 与 Small Business Bank 的部分执法措施",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
@@ -201,6 +225,30 @@
       "editorial_date": "2026-10-19"
     },
     {
+      "title": "Frank Elderson: Ensuring resilience in the face of uncertainty",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261014~e4ca33588e.en.html",
+      "body": "",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T02:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Philip R. Lane: The AI opportunity for Europe",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261013~9db9bf4fd6.en.html",
+      "body": "",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T20:30:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "美联储公布三次贴现率会议纪要",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
       "body": "公告发布 8 月 17 日、9 月 9 日和 9 月 16 日的理事会贴现率会议纪要。该程序与 FOMC 确定联邦基金利率目标区间不同，不能把纪要发布当作新的政策利率决定。",
@@ -223,7 +271,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 3 条机构公告",
+      "近七日 7 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
