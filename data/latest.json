@@ -1,7 +1,7 @@
 {
-  "date": "2026年10月19日",
+  "date": "2026年10月20日",
   "content_mode": "public",
-  "fetched_at": "2026-10-19T18:11:53.835738+00:00",
+  "fetched_at": "2026-10-20T00:59:01.554823+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -13,7 +13,7 @@
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 1
+      "items": 2
     },
     {
       "source": "ECB",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,702.65",
-      "change": "+43.21",
-      "change_pct": "+0.56%",
+      "value": "7,690.73",
+      "change": "+31.29",
+      "change_pct": "+0.41%",
       "direction": "up",
-      "as_of": "2026-10-19T18:11:52+00:00",
+      "as_of": "2026-10-19T20:44:14+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,457.90",
-      "change": "+317.86",
-      "change_pct": "+1.22%",
+      "value": "26,430.89",
+      "change": "+290.85",
+      "change_pct": "+1.11%",
       "direction": "up",
-      "as_of": "2026-10-19T18:11:53+00:00",
+      "as_of": "2026-10-19T21:15:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,041.36",
-      "change": "+38.95",
-      "change_pct": "+0.07%",
-      "direction": "up",
-      "as_of": "2026-10-19T18:11:53+00:00",
+      "value": "51,966.03",
+      "change": "-36.38",
+      "change_pct": "-0.07%",
+      "direction": "down",
+      "as_of": "2026-10-19T20:44:25+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "64,916.70",
-      "change": "-407.59",
-      "change_pct": "-0.62%",
+      "value": "64,289.03",
+      "change": "-627.67",
+      "change_pct": "-0.97%",
       "direction": "down",
-      "as_of": "2026-10-19T06:45:03+00:00",
+      "as_of": "2026-10-20T00:44:00+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,165.80",
-      "change": "-15.30",
-      "change_pct": "-0.37%",
+      "value": "4,154.40",
+      "change": "-5.70",
+      "change_pct": "-0.14%",
       "direction": "down",
-      "as_of": "2026-10-19T18:01:48+00:00",
+      "as_of": "2026-10-20T00:48:48+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "99.38",
-      "change": "+0.36",
-      "change_pct": "+0.36%",
-      "direction": "up",
-      "as_of": "2026-10-19T18:01:53+00:00",
+      "value": "98.49",
+      "change": "-0.05",
+      "change_pct": "-0.05%",
+      "direction": "down",
+      "as_of": "2026-10-20T00:48:46+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "81,972.10",
-      "change": "-40.24",
-      "change_pct": "-0.05%",
+      "value": "81,619.74",
+      "change": "-224.69",
+      "change_pct": "-0.27%",
       "direction": "down",
-      "as_of": "2026-10-19T18:11:48+00:00",
+      "as_of": "2026-10-20T00:58:47+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.94",
-      "change": "+0.10",
-      "change_pct": "+0.10%",
-      "direction": "up",
-      "as_of": "2026-10-19T18:01:52+00:00",
+      "value": "101.93",
+      "change": "-0.05",
+      "change_pct": "-0.05%",
+      "direction": "down",
+      "as_of": "2026-10-20T00:48:58+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,29 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6817",
+      "value": "6.6811",
       "change": "-0.00",
-      "change_pct": "-0.05%",
+      "change_pct": "-0.00%",
       "direction": "down",
-      "as_of": "2026-10-19T18:11:53+00:00",
+      "as_of": "2026-10-20T00:59:00+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "SEC Announces Roundtable on Machine-Understandable Data in the Age of Super Intelligence",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-106-sec-announces-roundtable-machine-understandable-data-age-super-intelligence",
+      "body": "The Securities and Exchange Commission announced today that it will host a roundtable on November 9, 2026, to discuss the use of machine-understandable data and Super Intelligence (SI) and related risks and costs.“In the age of SI, high-quality…",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T13:19:43-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
@@ -195,34 +207,28 @@
       "importance": "normal"
     },
     {
-      "title": "美联储宣布终止 Gardner Bancshares 与 Small Business Bank 的部分执法措施",
+      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
-      "body": "10 月 16 日公告列出三项措施，终止日期均为 10 月 13 日，包括停止与禁止令及及时纠正措施。终止所列措施不等于对机构全部风险作出保证，也不代表新的货币政策决定。",
+      "body": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
       "date": "2026-10-16",
       "published_at": "2026-10-16T15:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "body_original": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "editorial_date": "2026-10-19"
+      "importance": "normal"
     },
     {
-      "title": "SEC 小企业咨询委员会将讨论 IPO 与众筹规则",
+      "title": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-105-sec-small-business-advisory-committee-discuss-ipo-modernization-regulation-crowdfunding",
-      "body": "委员会计划于 10 月 27 日召开公开会议，继续讨论 IPO 现代化及 Regulation Crowdfunding 的潜在调整，并提供线上直播。会议讨论和咨询建议不代表监管规则已修改或生效。",
+      "body": "The Securities and Exchange Commission’s Small Business Capital Formation Advisory Committee announced that it will hold a meeting on Tuesday, October 27, 2026, at 10 a.m. to continue discussing IPO modernization and explore potential policy…",
       "date": "2026-10-14",
       "published_at": "2026-10-14T10:30:47-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal",
-      "title_original": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
-      "body_original": "The Securities and Exchange Commission’s Small Business Capital Formation Advisory Committee announced that it will hold a meeting on Tuesday, October 27, 2026, at 10 a.m. to continue discussing IPO modernization and explore potential policy…",
-      "editorial_date": "2026-10-19"
+      "importance": "normal"
     },
     {
       "title": "Frank Elderson: Ensuring resilience in the face of uncertainty",
@@ -249,19 +255,16 @@
       "importance": "normal"
     },
     {
-      "title": "美联储公布三次贴现率会议纪要",
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
-      "body": "公告发布 8 月 17 日、9 月 9 日和 9 月 16 日的理事会贴现率会议纪要。该程序与 FOMC 确定联邦基金利率目标区间不同，不能把纪要发布当作新的政策利率决定。",
+      "body": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "date": "2026-10-13",
       "published_at": "2026-10-13T18:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal",
-      "title_original": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-      "body_original": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-      "editorial_date": "2026-10-19"
+      "importance": "normal"
     }
   ],
   "summary": {
@@ -271,14 +274,8 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 7 条机构公告",
+      "近七日 8 条机构公告",
       "未核验栏目显示暂无更新"
     ]
-  },
-  "editorial": {
-    "date": "2026-10-19",
-    "items_applied": 3,
-    "editor": "Codex",
-    "mode": "source_grounded_chinese"
   }
 }
