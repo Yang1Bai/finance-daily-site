@@ -1,7 +1,7 @@
 {
   "date": "2026年10月20日",
   "content_mode": "public",
-  "fetched_at": "2026-10-20T00:59:01.554823+00:00",
+  "fetched_at": "2026-10-20T16:12:45.532407+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -13,13 +13,13 @@
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 2
+      "items": 4
     },
     {
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
       "status": "ok",
-      "items": 4
+      "items": 5
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,690.73",
-      "change": "+31.29",
-      "change_pct": "+0.41%",
+      "value": "7,717.84",
+      "change": "+27.11",
+      "change_pct": "+0.35%",
       "direction": "up",
-      "as_of": "2026-10-19T20:44:14+00:00",
+      "as_of": "2026-10-20T16:12:45+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,430.89",
-      "change": "+290.85",
-      "change_pct": "+1.11%",
+      "value": "26,466.37",
+      "change": "+35.49",
+      "change_pct": "+0.13%",
       "direction": "up",
-      "as_of": "2026-10-19T21:15:59+00:00",
+      "as_of": "2026-10-20T16:12:44+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,966.03",
-      "change": "-36.38",
-      "change_pct": "-0.07%",
-      "direction": "down",
-      "as_of": "2026-10-19T20:44:25+00:00",
+      "value": "52,436.04",
+      "change": "+470.01",
+      "change_pct": "+0.90%",
+      "direction": "up",
+      "as_of": "2026-10-20T16:12:45+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,730.92",
-      "change": "+14.64",
-      "change_pct": "+0.39%",
+      "value": "3,735.37",
+      "change": "+19.09",
+      "change_pct": "+0.51%",
       "direction": "up",
-      "as_of": "2026-10-19T07:00:29+00:00",
+      "as_of": "2026-10-20T07:00:24+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,186.83",
-      "change": "+124.13",
-      "change_pct": "+0.52%",
-      "direction": "up",
-      "as_of": "2026-10-16T08:08:38+00:00",
+      "value": "23,867.74",
+      "change": "-319.09",
+      "change_pct": "-1.32%",
+      "direction": "down",
+      "as_of": "2026-10-20T08:08:42+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "64,289.03",
-      "change": "-627.67",
-      "change_pct": "-0.97%",
+      "value": "64,075.42",
+      "change": "-841.28",
+      "change_pct": "-1.30%",
       "direction": "down",
-      "as_of": "2026-10-20T00:44:00+00:00",
+      "as_of": "2026-10-20T06:45:02+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,319.77",
-      "change": "-302.84",
-      "change_pct": "-1.18%",
+      "value": "25,304.42",
+      "change": "-15.35",
+      "change_pct": "-0.06%",
       "direction": "down",
-      "as_of": "2026-10-19T16:00:00+00:00",
+      "as_of": "2026-10-20T15:30:14+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,154.40",
-      "change": "-5.70",
-      "change_pct": "-0.14%",
+      "value": "4,149.70",
+      "change": "-10.40",
+      "change_pct": "-0.25%",
       "direction": "down",
-      "as_of": "2026-10-20T00:48:48+00:00",
+      "as_of": "2026-10-20T16:02:42+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "98.49",
-      "change": "-0.05",
-      "change_pct": "-0.05%",
+      "value": "97.55",
+      "change": "-0.99",
+      "change_pct": "-1.00%",
       "direction": "down",
-      "as_of": "2026-10-20T00:48:46+00:00",
+      "as_of": "2026-10-20T16:02:45+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "81,619.74",
-      "change": "-224.69",
-      "change_pct": "-0.27%",
-      "direction": "down",
-      "as_of": "2026-10-20T00:58:47+00:00",
+      "value": "82,302.69",
+      "change": "+458.26",
+      "change_pct": "+0.56%",
+      "direction": "up",
+      "as_of": "2026-10-20T16:12:42+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.93",
-      "change": "-0.05",
-      "change_pct": "-0.05%",
+      "value": "101.75",
+      "change": "-0.23",
+      "change_pct": "-0.23%",
       "direction": "down",
-      "as_of": "2026-10-20T00:48:58+00:00",
+      "as_of": "2026-10-20T16:02:44+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,53 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6811",
-      "change": "-0.00",
-      "change_pct": "-0.00%",
+      "value": "6.6746",
+      "change": "-0.01",
+      "change_pct": "-0.10%",
       "direction": "down",
-      "as_of": "2026-10-20T00:59:00+00:00",
+      "as_of": "2026-10-20T16:12:44+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "SEC and AMF Announce Supervisory MOU To Enhance Cooperation for Investment Advisers and Investment Service Providers",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-108-sec-amf-announce-supervisory-mou-enhance-cooperation-investment-advisers-investment-service",
+      "body": "The U.S. Securities and Exchange Commission (SEC) and the French Autorité des Marchés Financiers (AMF) announced that they have entered into a Memorandum of Understanding (MOU) designed to facilitate consultation and information-sharing in the…",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T09:25:16-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Frank Elderson: Interview with Die Presse",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261020~97e2e4bc38.en.html",
+      "body": "",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T09:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
+      "body": "The U.S. Securities and Exchange Commission (SEC) and the Financial Services Agency of Japan (FSA) convened the Autumn SEC-FSA Financial Regulatory Dialogue in Tokyo on Oct. 19, 2026.The SEC–FSA Dialogue builds upon longstanding efforts between the two…",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T08:51:00-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "SEC 宣布讨论机器可理解数据的圆桌会议",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-106-sec-announces-roundtable-machine-understandable-data-age-super-intelligence",
@@ -298,7 +334,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 8 条机构公告",
+      "近七日 11 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
