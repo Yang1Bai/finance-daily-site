@@ -12429,6 +12429,61 @@
             }
           ],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-21",
+          "portfolio_value": 9503.17,
+          "baseline_value": 10459.6,
+          "cash": 3220.95,
+          "positions": {
+            "MSFT": {
+              "shares": 3,
+              "price": 532.95,
+              "value": 1598.85
+            },
+            "QQQ": {
+              "shares": 1,
+              "price": 725.2,
+              "value": 725.2
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 343.99,
+              "value": 343.99
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 386.47,
+              "value": 1159.41
+            },
+            "META": {
+              "shares": 1,
+              "price": 697.52,
+              "value": 697.52
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 552.72,
+              "value": 552.72
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 334.76,
+              "value": 669.52
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 262.37,
+              "value": 262.37
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 68.16,
+              "value": 272.64
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
