@@ -171,100 +171,124 @@
   ],
   "news": [
     {
-      "title": "SEC and AMF Announce Supervisory MOU To Enhance Cooperation for Investment Advisers and Investment Service Providers",
+      "title": "SEC 与法国 AMF 签署跨境监管合作备忘录",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-108-sec-amf-announce-supervisory-mou-enhance-cooperation-investment-advisers-investment-service",
-      "body": "The U.S. Securities and Exchange Commission (SEC) and the French Autorité des Marchés Financiers (AMF) announced that they have entered into a Memorandum of Understanding (MOU) designed to facilitate consultation and information-sharing in the…",
+      "body": "备忘录建立咨询、合作和信息交换框架，支持对相关投资顾问、公司及服务商的监督。SEC 将据此处理法国 AMF 监督资产管理公司的新及待办注册申请，不代表申请自动获批。",
       "date": "2026-10-20",
       "published_at": "2026-10-20T09:25:16-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC and AMF Announce Supervisory MOU To Enhance Cooperation for Investment Advisers and Investment Service Providers",
+      "body_original": "The U.S. Securities and Exchange Commission (SEC) and the French Autorité des Marchés Financiers (AMF) announced that they have entered into a Memorandum of Understanding (MOU) designed to facilitate consultation and information-sharing in the…",
+      "editorial_date": "2026-10-21"
     },
     {
-      "title": "Frank Elderson: Interview with Die Presse",
+      "title": "Elderson 谈监管简化、银行韧性与欧洲市场整合",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261020~97e2e4bc38.en.html",
-      "body": "",
+      "body": "10 月 20 日发布的采访于 10 月 14 日进行。Elderson 主张简化并不等于放松监管，并把市场分散视为竞争力障碍；这些是政策观点，不是新规已经生效。",
       "date": "2026-10-20",
       "published_at": "2026-10-20T09:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Frank Elderson: Interview with Die Presse",
+      "body_original": "",
+      "editorial_date": "2026-10-21"
     },
     {
-      "title": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
+      "title": "SEC 与日本 FSA 举行秋季金融监管对话",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
-      "body": "The U.S. Securities and Exchange Commission (SEC) and the Financial Services Agency of Japan (FSA) convened the Autumn SEC-FSA Financial Regulatory Dialogue in Tokyo on Oct. 19, 2026.The SEC–FSA Dialogue builds upon longstanding efforts between the two…",
+      "body": "双方于 10 月 19 日在东京交流市场发展、资产管理和创新等监管议题，计划下一次于 2027 年春在华盛顿举行。对话交流不等于双方已通过新的统一规则。",
       "date": "2026-10-20",
       "published_at": "2026-10-20T08:51:00-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
+      "body_original": "The U.S. Securities and Exchange Commission (SEC) and the Financial Services Agency of Japan (FSA) convened the Autumn SEC-FSA Financial Regulatory Dialogue in Tokyo on Oct. 19, 2026.The SEC–FSA Dialogue builds upon longstanding efforts between the two…",
+      "editorial_date": "2026-10-21"
     },
     {
-      "title": "SEC Announces Roundtable on Machine-Understandable Data in the Age of Super Intelligence",
+      "title": "SEC 宣布讨论机器可理解数据的圆桌会议",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-106-sec-announces-roundtable-machine-understandable-data-age-super-intelligence",
-      "body": "The Securities and Exchange Commission announced today that it will host a roundtable on November 9, 2026, to discuss the use of machine-understandable data and Super Intelligence (SI) and related risks and costs.“In the age of SI, high-quality…",
+      "body": "公告介绍围绕 AI 时代机器可理解数据的圆桌交流。会议讨论不等于新披露规则或数据标准已通过，实际安排应以官方议程为准。",
       "date": "2026-10-19",
       "published_at": "2026-10-19T13:19:43-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Announces Roundtable on Machine-Understandable Data in the Age of Super Intelligence",
+      "body_original": "The Securities and Exchange Commission announced today that it will host a roundtable on November 9, 2026, to discuss the use of machine-understandable data and Super Intelligence (SI) and related risks and costs.“In the age of SI, high-quality…",
+      "editorial_date": "2026-10-21"
     },
     {
-      "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
+      "title": "Elderson 谈气候与自然风险、经济韧性和竞争力",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
-      "body": "",
+      "body": "讲话围绕气候和自然风险与经济韧性、竞争力的关系展开。政策论述及风险分析不构成确定的经济预测，也不代表具体监管要求已由该讲话生效。",
       "date": "2026-10-19",
       "published_at": "2026-10-19T08:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
+      "body_original": "",
+      "editorial_date": "2026-10-21"
     },
     {
-      "title": "Christine Lagarde: IMFC Statement",
+      "title": "拉加德向 IMFC 介绍欧元区经济与政策形势",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
-      "body": "",
+      "body": "声明讨论欧元区经济、通胀及相关风险和政策立场。内容反映声明发布时的信息与判断，不能把风险情景视为必然结果，也不能将声明本身当作新的利率决定。",
       "date": "2026-10-17",
       "published_at": "2026-10-17T07:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Christine Lagarde: IMFC Statement",
+      "body_original": "",
+      "editorial_date": "2026-10-21"
     },
     {
-      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "title": "美联储宣布终止 Gardner Bancshares 与 Small Business Bank 的部分执法措施",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
-      "body": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "body": "10 月 16 日公告列出三项措施，终止日期均为 10 月 13 日，包括停止与禁止令及及时纠正措施。终止所列措施不等于对机构全部风险作出保证，也不代表新的货币政策决定。",
       "date": "2026-10-16",
       "published_at": "2026-10-16T15:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "body_original": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "editorial_date": "2026-10-21"
     },
     {
-      "title": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
+      "title": "SEC 小企业咨询委员会将讨论 IPO 与众筹规则",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-105-sec-small-business-advisory-committee-discuss-ipo-modernization-regulation-crowdfunding",
-      "body": "The Securities and Exchange Commission’s Small Business Capital Formation Advisory Committee announced that it will hold a meeting on Tuesday, October 27, 2026, at 10 a.m. to continue discussing IPO modernization and explore potential policy…",
+      "body": "委员会计划于 10 月 27 日召开公开会议，继续讨论 IPO 现代化及 Regulation Crowdfunding 的潜在调整，并提供线上直播。会议讨论和咨询建议不代表监管规则已修改或生效。",
       "date": "2026-10-14",
       "published_at": "2026-10-14T10:30:47-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
+      "body_original": "The Securities and Exchange Commission’s Small Business Capital Formation Advisory Committee announced that it will hold a meeting on Tuesday, October 27, 2026, at 10 a.m. to continue discussing IPO modernization and explore potential policy…",
+      "editorial_date": "2026-10-21"
     }
   ],
   "summary": {
@@ -277,5 +301,11 @@
       "近七日 8 条机构公告",
       "未核验栏目显示暂无更新"
     ]
+  },
+  "editorial": {
+    "date": "2026-10-21",
+    "items_applied": 8,
+    "editor": "Codex",
+    "mode": "source_grounded_chinese"
   }
 }
