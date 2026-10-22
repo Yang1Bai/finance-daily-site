@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-22",
+  "news": [
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
+      "title": "Cipollone 介绍 Pontes 与 Appia 的代币化金融路径",
+      "body": "演示材料介绍以央行货币结算 DLT 交易，以及通过共同标准与公私合作建设生态。Pontes 已投入使用，Appia 的共同设计和蓝图仍有后续时间安排。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
+      "title": "Lane 解释欧元国际流动性支持机制",
+      "body": "讲话介绍回购与互换额度对跨境欧元融资和货币政策传导的作用，并说明增强版 EUREP 的后备性质。额度设有抵押品、定价和风险条件，不是无条件融资。"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-108-sec-amf-announce-supervisory-mou-enhance-cooperation-investment-advisers-investment-service",
+      "title": "SEC 与法国 AMF 签署跨境监管合作备忘录",
+      "body": "备忘录建立咨询、合作和信息交换框架，支持对相关投资顾问、公司及服务商的监督。SEC 将据此处理法国 AMF 监督资产管理公司的新及待办注册申请，不代表申请自动获批。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261020~97e2e4bc38.en.html",
+      "title": "Elderson 接受《新闻报》采访",
+      "body": "已核验来源标题；本次未能重新读取原始正文，未核验正文，不据此补写政策细节。"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
+      "title": "SEC 与日本 FSA 举行秋季金融监管对话",
+      "body": "双方于 10 月 19 日在东京交流市场发展、资产管理和创新等监管议题，计划下一次于 2027 年春在华盛顿举行。对话交流不等于双方已通过新的统一规则。"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-106-sec-announces-roundtable-machine-understandable-data-age-super-intelligence",
+      "title": "SEC 宣布讨论机器可理解数据的圆桌会议",
+      "body": "公告介绍围绕 AI 时代机器可理解数据的圆桌交流。会议讨论不等于新披露规则或数据标准已通过，实际安排应以官方议程为准。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
+      "title": "Elderson 谈气候与自然风险、经济韧性和竞争力",
+      "body": "讲话围绕气候和自然风险与经济韧性、竞争力的关系展开。政策论述及风险分析不构成确定的经济预测，也不代表具体监管要求已由该讲话生效。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
+      "title": "拉加德向 IMFC 介绍欧元区经济与政策形势",
+      "body": "声明讨论欧元区经济、通胀及相关风险和政策立场。内容反映声明发布时的信息与判断，不能把风险情景视为必然结果，也不能将声明本身当作新的利率决定。"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
+      "title": "美联储宣布终止 Gardner Bancshares 与 Small Business Bank 的部分执法措施",
+      "body": "10 月 16 日公告列出三项措施，终止日期均为 10 月 13 日，包括停止与禁止令及及时纠正措施。终止所列措施不等于对机构全部风险作出保证，也不代表新的货币政策决定。"
+    }
+  ],
+  "papers": []
+}
