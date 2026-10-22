@@ -6496,12 +6496,6 @@
           "buy_date": "2026-07-30"
         },
         {
-          "ticker": "QQQ",
-          "shares": 1,
-          "avg_cost": 732.07,
-          "buy_date": "2026-08-13"
-        },
-        {
           "ticker": "AAPL",
           "shares": 1,
           "avg_cost": 319.7,
@@ -6544,9 +6538,15 @@
           "buy_date": "2026-10-14"
         },
         {
+          "ticker": "XLF",
+          "shares": 31,
+          "avg_cost": 56.65,
+          "buy_date": "2026-10-22"
+        },
+        {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3220.95
+          "avg_cost": 2169.27
         }
       ],
       "history": [
@@ -12484,6 +12484,76 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-22",
+          "portfolio_value": 9286.5,
+          "baseline_value": 10336.07,
+          "cash": 2169.27,
+          "positions": {
+            "MSFT": {
+              "shares": 3,
+              "price": 521.08,
+              "value": 1563.24
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 348.22,
+              "value": 348.22
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 374.58,
+              "value": 1123.74
+            },
+            "META": {
+              "shares": 1,
+              "price": 648.85,
+              "value": 648.85
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 507.93,
+              "value": 507.93
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 324.22,
+              "value": 648.44
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 250.38,
+              "value": 250.38
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 67.57,
+              "value": 270.28
+            },
+            "XLF": {
+              "shares": 31,
+              "price": 56.65,
+              "value": 1756.15
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "QQQ",
+              "shares": 1,
+              "price": 704.47,
+              "reason": "技术弱势(弱势)"
+            },
+            {
+              "action": "BUY",
+              "ticker": "XLF",
+              "shares": 31,
+              "price": 56.65,
+              "reason": "技术强势+动量+3.9%"
+            }
+          ],
+          "note": "规则策略：持有强势['XLF']，剔除弱势"
         }
       ],
       "display_name": "规则策略",
