@@ -17,7 +17,7 @@ concurrency:
 jobs:
   podcast:
     if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
@@ -27,7 +27,17 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install offline speech tools
-        run: sudo apt-get update -qq && sudo apt-get install -y espeak-ng ffmpeg
+        timeout-minutes: 5
+        run: |
+          missing=()
+          command -v espeak-ng >/dev/null || missing+=(espeak-ng)
+          command -v ffmpeg >/dev/null || missing+=(ffmpeg)
+          if [ "${#missing[@]}" -gt 0 ]; then
+            sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+            sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends "${missing[@]}"
+          fi
+          espeak-ng --version
+          ffmpeg -version
       - name: Generate source-based podcast
         run: python scripts/generate_podcast.py
       - name: Commit audio
