@@ -5,7 +5,7 @@ DOW，52,867.98，变动百分之+0.02。
 上证指数，3,658.03，变动百分之-2.07。
 恒生指数，22,934.68，变动百分之-3.91。
 日经225，61,691.82，变动百分之-1.93。
-2026-10-21，ECB：Piero Cipollone: Pontes and Appia: unlocking opportunities for banks。
-2026-10-21，ECB：Philip R. Lane: Euro liquidity lines and the international monetary system。
-2026-10-20，SEC：SEC and AMF Announce Supervisory MOU To Enhance Cooperation for Investment Advisers and Investment Service Providers。
+2026-10-21，ECB：Cipollone 介绍 Pontes 与 Appia 的代币化金融路径。
+2026-10-21，ECB：Lane 解释欧元国际流动性支持机制。
+2026-10-20，SEC：SEC 与法国 AMF 签署跨境监管合作备忘录。
 原文链接和具体报价时间见网站。以上不构成投资建议。
