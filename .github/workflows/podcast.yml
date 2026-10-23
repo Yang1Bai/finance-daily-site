@@ -33,6 +33,9 @@ jobs:
           command -v espeak-ng >/dev/null || missing+=(espeak-ng)
           command -v ffmpeg >/dev/null || missing+=(ffmpeg)
           if [ "${#missing[@]}" -gt 0 ]; then
+            # Avoid slow downloads from the runner's regional Azure mirror.
+            sudo find /etc/apt -maxdepth 2 -type f \( -name '*.list' -o -name '*.sources' \) \
+              -exec sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' {} +
             sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
             sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends "${missing[@]}"
           fi
