@@ -6508,12 +6508,6 @@
           "buy_date": "2026-08-31"
         },
         {
-          "ticker": "META",
-          "shares": 1,
-          "avg_cost": 610.68,
-          "buy_date": "2026-09-03"
-        },
-        {
           "ticker": "AMD",
           "shares": 1,
           "avg_cost": 505.74,
@@ -6546,7 +6540,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2169.27
+          "avg_cost": 2811.89
         }
       ],
       "history": [
@@ -12554,6 +12548,64 @@
             }
           ],
           "note": "规则策略：持有强势['XLF']，剔除弱势"
+        },
+        {
+          "date": "2026-10-23",
+          "portfolio_value": 9265.24,
+          "baseline_value": 10282.09,
+          "cash": 2811.89,
+          "positions": {
+            "MSFT": {
+              "shares": 3,
+              "price": 524.51,
+              "value": 1573.53
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 347.73,
+              "value": 347.73
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 372.22,
+              "value": 1116.66
+            },
+            "AMD": {
+              "shares": 1,
+              "price": 516.79,
+              "value": 516.79
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 320.21,
+              "value": 640.42
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 248.0,
+              "value": 248.0
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 69.33,
+              "value": 277.32
+            },
+            "XLF": {
+              "shares": 31,
+              "price": 55.9,
+              "value": 1732.9
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "META",
+              "shares": 1,
+              "price": 642.62,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
