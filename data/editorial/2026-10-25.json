@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-25",
+  "news": [
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities",
+      "title": "SEC 发布 2027 财年检查重点",
+      "body": "重点包括投资顾问义务与利益冲突、零售投资者、私募信贷、网络安全及新技术等领域。这是风险导向检查计划，不等于针对某家机构作出违法认定或发布新的投资建议。"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-108-sec-amf-announce-supervisory-mou-enhance-cooperation-investment-advisers-investment-service",
+      "title": "SEC 与法国 AMF 签署跨境监管合作备忘录",
+      "body": "备忘录建立咨询、合作和信息交换框架，支持对相关投资顾问、公司及服务商的监督。SEC 将据此处理法国 AMF 监督资产管理公司的新及待办注册申请，不代表申请自动获批。"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
+      "title": "SEC 与日本 FSA 举行秋季金融监管对话",
+      "body": "双方于 10 月 19 日在东京交流市场发展、资产管理和创新等监管议题，计划下一次于 2027 年春在华盛顿举行。对话交流不等于双方已通过新的统一规则。"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-106-sec-announces-roundtable-machine-understandable-data-age-super-intelligence",
+      "title": "SEC 宣布讨论机器可理解数据的圆桌会议",
+      "body": "公告介绍围绕 AI 时代机器可理解数据的圆桌交流。会议讨论不等于新披露规则或数据标准已通过，实际安排应以官方议程为准。"
+    }
+  ],
+  "papers": []
+}

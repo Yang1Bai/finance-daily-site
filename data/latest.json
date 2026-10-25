@@ -1,7 +1,7 @@
 {
-  "date": "2026年10月24日",
+  "date": "2026年10月25日",
   "content_mode": "public",
-  "fetched_at": "2026-10-24T15:15:03.008626+00:00",
+  "fetched_at": "2026-10-25T13:04:48.883678+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -18,8 +18,8 @@
     {
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "status": "ok",
-      "items": 6
+      "status": "unavailable",
+      "error": "URLError"
     }
   ],
   "missing_quotes": [],
@@ -40,7 +40,7 @@
       "name": "NASDAQ",
       "symbol": "^IXIC",
       "value": "25,955.34",
-      "change": "-53.52",
+      "change": "-53.56",
       "change_pct": "-0.21%",
       "direction": "down",
       "as_of": "2026-10-23T21:15:59+00:00",
@@ -52,7 +52,7 @@
       "name": "DOW",
       "symbol": "^DJI",
       "value": "52,215.16",
-      "change": "-652.82",
+      "change": "-652.84",
       "change_pct": "-1.23%",
       "direction": "down",
       "as_of": "2026-10-23T20:42:55+00:00",
@@ -76,7 +76,7 @@
       "name": "恒生指数",
       "symbol": "^HSI",
       "value": "23,093.37",
-      "change": "+158.67",
+      "change": "+158.69",
       "change_pct": "+0.69%",
       "direction": "up",
       "as_of": "2026-10-23T08:08:30+00:00",
@@ -100,7 +100,7 @@
       "name": "德国DAX",
       "symbol": "^GDAXI",
       "value": "25,181.65",
-      "change": "-190.10",
+      "change": "-190.15",
       "change_pct": "-0.75%",
       "direction": "down",
       "as_of": "2026-10-23T16:00:00+00:00",
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "79,641.78",
-      "change": "-1438.20",
-      "change_pct": "-1.77%",
+      "value": "80,290.01",
+      "change": "-480.70",
+      "change_pct": "-0.60%",
       "direction": "down",
-      "as_of": "2026-10-24T15:15:01+00:00",
+      "as_of": "2026-10-25T13:04:50+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -171,18 +171,6 @@
   ],
   "news": [
     {
-      "title": "Piero Cipollone: Interview with Milano Finanza",
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
-      "body": "",
-      "date": "2026-10-24",
-      "published_at": "2026-10-24T08:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal"
-    },
-    {
       "title": "SEC 发布 2027 财年检查重点",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities",
       "body": "重点包括投资顾问义务与利益冲突、零售投资者、私募信贷、网络安全及新技术等领域。这是风险导向检查计划，不等于针对某家机构作出违法认定或发布新的投资建议。",
@@ -195,52 +183,7 @@
       "importance": "normal",
       "title_original": "SEC Announces Fiscal Year 2027 Examination Priorities",
       "body_original": "The Securities and Exchange Commission today announced the Division of Examinations’ Fiscal Year 2027 examination priorities. The annual report identifies key areas of focus as the Division carries out its mission to promote compliance, prevent fraud,…",
-      "editorial_date": "2026-10-24"
-    },
-    {
-      "title": "ECB 发布 2026 年 9 月消费者预期调查结果",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "body": "已核验来源标题；原始页面本次不可访问，未核验正文，因此不补写通胀预期、增长或消费数据。",
-      "date": "2026-10-23",
-      "published_at": "2026-10-23T10:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "ECB Consumer Expectations Survey results – September 2026",
-      "body_original": "",
-      "editorial_date": "2026-10-24"
-    },
-    {
-      "title": "Cipollone 介绍 Pontes 与 Appia 的代币化金融路径",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
-      "body": "演示材料介绍以央行货币结算 DLT 交易，以及通过共同标准与公私合作建设生态。Pontes 已投入使用，Appia 的共同设计和蓝图仍有后续时间安排。",
-      "date": "2026-10-21",
-      "published_at": "2026-10-21T10:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
-      "body_original": "",
-      "editorial_date": "2026-10-24"
-    },
-    {
-      "title": "Lane 解释欧元国际流动性支持机制",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
-      "body": "讲话介绍回购与互换额度对跨境欧元融资和货币政策传导的作用，并说明增强版 EUREP 的后备性质。额度设有抵押品、定价和风险条件，不是无条件融资。",
-      "date": "2026-10-21",
-      "published_at": "2026-10-21T06:15:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Philip R. Lane: Euro liquidity lines and the international monetary system",
-      "body_original": "",
-      "editorial_date": "2026-10-24"
+      "editorial_date": "2026-10-25"
     },
     {
       "title": "SEC 与法国 AMF 签署跨境监管合作备忘录",
@@ -255,22 +198,7 @@
       "importance": "normal",
       "title_original": "SEC and AMF Announce Supervisory MOU To Enhance Cooperation for Investment Advisers and Investment Service Providers",
       "body_original": "The U.S. Securities and Exchange Commission (SEC) and the French Autorité des Marchés Financiers (AMF) announced that they have entered into a Memorandum of Understanding (MOU) designed to facilitate consultation and information-sharing in the…",
-      "editorial_date": "2026-10-24"
-    },
-    {
-      "title": "Elderson 谈监管简化与欧洲银行市场整合",
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261020~97e2e4bc38.en.html",
-      "body": "10 月 20 日发布的采访于 10 月 14 日进行。他强调简化并不等于放松监管，并将市场分散视为欧洲竞争力障碍。这些是政策观点，不代表新规已经生效。",
-      "date": "2026-10-20",
-      "published_at": "2026-10-20T09:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Frank Elderson: Interview with Die Presse",
-      "body_original": "",
-      "editorial_date": "2026-10-24"
+      "editorial_date": "2026-10-25"
     },
     {
       "title": "SEC 与日本 FSA 举行秋季金融监管对话",
@@ -285,7 +213,7 @@
       "importance": "normal",
       "title_original": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
       "body_original": "The U.S. Securities and Exchange Commission (SEC) and the Financial Services Agency of Japan (FSA) convened the Autumn SEC-FSA Financial Regulatory Dialogue in Tokyo on Oct. 19, 2026.The SEC–FSA Dialogue builds upon longstanding efforts between the two…",
-      "editorial_date": "2026-10-24"
+      "editorial_date": "2026-10-25"
     },
     {
       "title": "SEC 宣布讨论机器可理解数据的圆桌会议",
@@ -300,22 +228,7 @@
       "importance": "normal",
       "title_original": "SEC Announces Roundtable on Machine-Understandable Data in the Age of Super Intelligence",
       "body_original": "The Securities and Exchange Commission announced today that it will host a roundtable on November 9, 2026, to discuss the use of machine-understandable data and Super Intelligence (SI) and related risks and costs.“In the age of SI, high-quality…",
-      "editorial_date": "2026-10-24"
-    },
-    {
-      "title": "Elderson 谈气候与自然风险、经济韧性和竞争力",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
-      "body": "讲话围绕气候和自然风险与经济韧性、竞争力的关系展开。政策论述及风险分析不构成确定的经济预测，也不代表具体监管要求已由该讲话生效。",
-      "date": "2026-10-19",
-      "published_at": "2026-10-19T08:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
-      "body_original": "",
-      "editorial_date": "2026-10-24"
+      "editorial_date": "2026-10-25"
     }
   ],
   "summary": {
@@ -325,13 +238,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 10 条机构公告",
+      "近七日 4 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
-    "date": "2026-10-24",
-    "items_applied": 9,
+    "date": "2026-10-25",
+    "items_applied": 4,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
