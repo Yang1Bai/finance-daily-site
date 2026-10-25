@@ -1,7 +1,7 @@
 {
   "date": "2026年10月25日",
   "content_mode": "public",
-  "fetched_at": "2026-10-25T13:04:48.883678+00:00",
+  "fetched_at": "2026-10-25T15:25:31.149731+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -18,8 +18,8 @@
     {
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "ok",
+      "items": 6
     }
   ],
   "missing_quotes": [],
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "80,290.01",
-      "change": "-480.70",
-      "change_pct": "-0.60%",
+      "value": "80,462.67",
+      "change": "-308.04",
+      "change_pct": "-0.38%",
       "direction": "down",
-      "as_of": "2026-10-25T13:04:50+00:00",
+      "as_of": "2026-10-25T15:25:23+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -171,6 +171,18 @@
   ],
   "news": [
     {
+      "title": "Piero Cipollone: Interview with Milano Finanza",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
+      "body": "",
+      "date": "2026-10-24",
+      "published_at": "2026-10-24T08:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "SEC 发布 2027 财年检查重点",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities",
       "body": "重点包括投资顾问义务与利益冲突、零售投资者、私募信贷、网络安全及新技术等领域。这是风险导向检查计划，不等于针对某家机构作出违法认定或发布新的投资建议。",
@@ -186,6 +198,42 @@
       "editorial_date": "2026-10-25"
     },
     {
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "body": "",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T10:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
+      "body": "",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Philip R. Lane: Euro liquidity lines and the international monetary system",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
+      "body": "",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T06:15:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
       "title": "SEC 与法国 AMF 签署跨境监管合作备忘录",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-108-sec-amf-announce-supervisory-mou-enhance-cooperation-investment-advisers-investment-service",
       "body": "备忘录建立咨询、合作和信息交换框架，支持对相关投资顾问、公司及服务商的监督。SEC 将据此处理法国 AMF 监督资产管理公司的新及待办注册申请，不代表申请自动获批。",
@@ -199,6 +247,18 @@
       "title_original": "SEC and AMF Announce Supervisory MOU To Enhance Cooperation for Investment Advisers and Investment Service Providers",
       "body_original": "The U.S. Securities and Exchange Commission (SEC) and the French Autorité des Marchés Financiers (AMF) announced that they have entered into a Memorandum of Understanding (MOU) designed to facilitate consultation and information-sharing in the…",
       "editorial_date": "2026-10-25"
+    },
+    {
+      "title": "Frank Elderson: Interview with Die Presse",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261020~97e2e4bc38.en.html",
+      "body": "",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T09:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
     },
     {
       "title": "SEC 与日本 FSA 举行秋季金融监管对话",
@@ -229,6 +289,18 @@
       "title_original": "SEC Announces Roundtable on Machine-Understandable Data in the Age of Super Intelligence",
       "body_original": "The Securities and Exchange Commission announced today that it will host a roundtable on November 9, 2026, to discuss the use of machine-understandable data and Super Intelligence (SI) and related risks and costs.“In the age of SI, high-quality…",
       "editorial_date": "2026-10-25"
+    },
+    {
+      "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
+      "body": "",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T08:00:00+02:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
     }
   ],
   "summary": {
@@ -238,7 +310,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 4 条机构公告",
+      "近七日 10 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
