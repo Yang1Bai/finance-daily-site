@@ -1,0 +1,251 @@
+{
+  "date": "2026年10月26日",
+  "content_mode": "public",
+  "fetched_at": "2026-10-26T13:48:59.544974+00:00",
+  "sources": [
+    {
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "status": "ok",
+      "items": 0
+    },
+    {
+      "source": "SEC",
+      "url": "https://www.sec.gov/news/pressreleases.rss",
+      "status": "ok",
+      "items": 4
+    },
+    {
+      "source": "ECB",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "status": "unavailable",
+      "error": "URLError"
+    }
+  ],
+  "missing_quotes": [],
+  "indices": [
+    {
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "value": "7,659.53",
+      "change": "+35.85",
+      "change_pct": "+0.47%",
+      "direction": "up",
+      "as_of": "2026-10-26T13:48:58+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "name": "NASDAQ",
+      "symbol": "^IXIC",
+      "value": "26,039.64",
+      "change": "+84.30",
+      "change_pct": "+0.32%",
+      "direction": "up",
+      "as_of": "2026-10-26T13:48:49+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+    },
+    {
+      "name": "DOW",
+      "symbol": "^DJI",
+      "value": "52,397.29",
+      "change": "+182.13",
+      "change_pct": "+0.35%",
+      "direction": "up",
+      "as_of": "2026-10-26T13:48:58+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EDJI/"
+    },
+    {
+      "name": "上证指数",
+      "symbol": "000001.SS",
+      "value": "3,697.52",
+      "change": "+7.04",
+      "change_pct": "+0.19%",
+      "direction": "up",
+      "as_of": "2026-10-26T07:00:24+00:00",
+      "currency": "CNY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/000001.SS/"
+    },
+    {
+      "name": "恒生指数",
+      "symbol": "^HSI",
+      "value": "23,211.81",
+      "change": "+118.44",
+      "change_pct": "+0.51%",
+      "direction": "up",
+      "as_of": "2026-10-26T08:08:28+00:00",
+      "currency": "HKD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EHSI/"
+    },
+    {
+      "name": "日经225",
+      "symbol": "^N225",
+      "value": "62,189.65",
+      "change": "-503.51",
+      "change_pct": "-0.80%",
+      "direction": "down",
+      "as_of": "2026-10-26T06:45:03+00:00",
+      "currency": "JPY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EN225/"
+    },
+    {
+      "name": "德国DAX",
+      "symbol": "^GDAXI",
+      "value": "25,453.04",
+      "change": "+271.39",
+      "change_pct": "+1.08%",
+      "direction": "up",
+      "as_of": "2026-10-26T13:33:58+00:00",
+      "currency": "EUR",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+    },
+    {
+      "name": "黄金期货",
+      "symbol": "GC=F",
+      "value": "4,015.60",
+      "change": "+7.70",
+      "change_pct": "+0.19%",
+      "direction": "up",
+      "as_of": "2026-10-26T13:38:56+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/GC%3DF/"
+    },
+    {
+      "name": "原油 WTI",
+      "symbol": "CL=F",
+      "value": "101.35",
+      "change": "-1.92",
+      "change_pct": "-1.86%",
+      "direction": "down",
+      "as_of": "2026-10-26T13:38:58+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CL%3DF/"
+    },
+    {
+      "name": "BTC/USD",
+      "symbol": "BTC-USD",
+      "value": "79,602.20",
+      "change": "-437.49",
+      "change_pct": "-0.55%",
+      "direction": "down",
+      "as_of": "2026-10-26T13:48:54+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/BTC-USD/"
+    },
+    {
+      "name": "美元指数",
+      "symbol": "DX-Y.NYB",
+      "value": "102.00",
+      "change": "+0.19",
+      "change_pct": "+0.19%",
+      "direction": "up",
+      "as_of": "2026-10-26T13:38:58+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+    },
+    {
+      "name": "USD/CNH",
+      "symbol": "CNH=X",
+      "value": "6.6685",
+      "change": "+0.00",
+      "change_pct": "+0.00%",
+      "direction": "up",
+      "as_of": "2026-10-26T13:48:58+00:00",
+      "currency": "CNH",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CNH%3DX/"
+    }
+  ],
+  "news": [
+    {
+      "title": "SEC 发布 2027 财年检查重点",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities",
+      "body": "重点包括投资顾问义务与利益冲突、零售投资者、私募信贷、网络安全及新技术等领域。这是风险导向检查计划，不等于针对某家机构作出违法认定或发布新的投资建议。",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T10:10:00-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal",
+      "title_original": "SEC Announces Fiscal Year 2027 Examination Priorities",
+      "body_original": "The Securities and Exchange Commission today announced the Division of Examinations’ Fiscal Year 2027 examination priorities. The annual report identifies key areas of focus as the Division carries out its mission to promote compliance, prevent fraud,…",
+      "editorial_date": "2026-10-26"
+    },
+    {
+      "title": "SEC 与法国 AMF 签署跨境监管合作备忘录",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-108-sec-amf-announce-supervisory-mou-enhance-cooperation-investment-advisers-investment-service",
+      "body": "备忘录建立咨询、合作和信息交换框架，支持对相关投资顾问、公司及服务商的监督。SEC 将据此处理法国 AMF 监督资产管理公司的新及待办注册申请，不代表申请自动获批。",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T09:25:16-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal",
+      "title_original": "SEC and AMF Announce Supervisory MOU To Enhance Cooperation for Investment Advisers and Investment Service Providers",
+      "body_original": "The U.S. Securities and Exchange Commission (SEC) and the French Autorité des Marchés Financiers (AMF) announced that they have entered into a Memorandum of Understanding (MOU) designed to facilitate consultation and information-sharing in the…",
+      "editorial_date": "2026-10-26"
+    },
+    {
+      "title": "SEC 与日本 FSA 举行秋季金融监管对话",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
+      "body": "双方于 10 月 19 日在东京交流市场发展、资产管理和创新等监管议题，计划下一次于 2027 年春在华盛顿举行。对话交流不等于双方已通过新的统一规则。",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T08:51:00-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal",
+      "title_original": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
+      "body_original": "The U.S. Securities and Exchange Commission (SEC) and the Financial Services Agency of Japan (FSA) convened the Autumn SEC-FSA Financial Regulatory Dialogue in Tokyo on Oct. 19, 2026.The SEC–FSA Dialogue builds upon longstanding efforts between the two…",
+      "editorial_date": "2026-10-26"
+    },
+    {
+      "title": "SEC 宣布讨论机器可理解数据的圆桌会议",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-106-sec-announces-roundtable-machine-understandable-data-age-super-intelligence",
+      "body": "公告介绍围绕 AI 时代机器可理解数据的圆桌交流。会议讨论不等于新披露规则或数据标准已通过，实际安排应以官方议程为准。",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T13:19:43-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal",
+      "title_original": "SEC Announces Roundtable on Machine-Understandable Data in the Age of Super Intelligence",
+      "body_original": "The Securities and Exchange Commission announced today that it will host a roundtable on November 9, 2026, to discuss the use of machine-understandable data and Super Intelligence (SI) and related risks and costs.“In the age of SI, high-quality…",
+      "editorial_date": "2026-10-26"
+    }
+  ],
+  "summary": {
+    "headline": "公开来源行情与机构公告",
+    "sentiment": "neutral",
+    "vix": "N/A",
+    "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
+    "key_points": [
+      "已获取 12 个标的",
+      "近七日 4 条机构公告",
+      "未核验栏目显示暂无更新"
+    ]
+  },
+  "editorial": {
+    "date": "2026-10-26",
+    "items_applied": 4,
+    "editor": "Codex",
+    "mode": "source_grounded_chinese"
+  }
+}
