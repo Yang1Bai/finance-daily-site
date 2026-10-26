@@ -6508,12 +6508,6 @@
           "buy_date": "2026-08-31"
         },
         {
-          "ticker": "AMD",
-          "shares": 1,
-          "avg_cost": 505.74,
-          "buy_date": "2026-09-08"
-        },
-        {
           "ticker": "GOOGL",
           "shares": 2,
           "avg_cost": 354.97,
@@ -6540,7 +6534,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 2811.89
+          "avg_cost": 3343.17
         }
       ],
       "history": [
@@ -12602,6 +12596,59 @@
               "ticker": "META",
               "shares": 1,
               "price": 642.62,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-26",
+          "portfolio_value": 9357.61,
+          "baseline_value": 10355.15,
+          "cash": 3343.17,
+          "positions": {
+            "MSFT": {
+              "shares": 3,
+              "price": 532.6,
+              "value": 1597.8
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 343.91,
+              "value": 343.91
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 391.62,
+              "value": 1174.86
+            },
+            "GOOGL": {
+              "shares": 2,
+              "price": 316.8,
+              "value": 633.6
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 249.09,
+              "value": 249.09
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 69.64,
+              "value": 278.56
+            },
+            "XLF": {
+              "shares": 31,
+              "price": 56.02,
+              "value": 1736.62
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AMD",
+              "shares": 1,
+              "price": 531.28,
               "reason": "技术弱势(弱势)"
             }
           ],
