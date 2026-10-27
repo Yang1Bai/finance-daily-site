@@ -171,124 +171,154 @@
   ],
   "news": [
     {
-      "title": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
+      "title": "ECB 企业融资调查显示贷款条件收紧",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261026~bde7b6d11a.en.html",
-      "body": "",
+      "body": "第三季度调查显示，受访企业报告贷款利率及其他条件进一步净收紧，融资缺口扩大。本轮首次受访企业占多数，样本组成变化使数值预期的跨期解读更困难。",
       "date": "2026-10-26",
       "published_at": "2026-10-26T10:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
+      "body_original": "",
+      "editorial_date": "2026-10-27"
     },
     {
-      "title": "Frank Elderson: Taking action for nature – investing in economic resilience and prosperity",
+      "title": "Elderson 呼吁把自然保护目标转为投资行动",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
-      "body": "",
+      "body": "讲话将水、土壤等自然资本与经济韧性联系起来，强调从目标转向实施和融资。这是政策倡议，不代表新增投资或经济收益已经实现。",
       "date": "2026-10-26",
       "published_at": "2026-10-26T06:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Frank Elderson: Taking action for nature – investing in economic resilience and prosperity",
+      "body_original": "",
+      "editorial_date": "2026-10-27"
     },
     {
-      "title": "Piero Cipollone: Interview with Milano Finanza",
+      "title": "Cipollone 谈代币化与数字欧元准备工作",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
-      "body": "",
+      "body": "10 月 24 日发布的采访于 10 月 21 日进行，讨论支付基础设施、代币化及数字欧元立法和内部准备。相关计划不等于数字欧元已经正式发行。",
       "date": "2026-10-24",
       "published_at": "2026-10-24T08:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Piero Cipollone: Interview with Milano Finanza",
+      "body_original": "",
+      "editorial_date": "2026-10-27"
     },
     {
-      "title": "SEC Announces Fiscal Year 2027 Examination Priorities",
+      "title": "SEC 发布 2027 财年检查重点",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities",
-      "body": "The Securities and Exchange Commission today announced the Division of Examinations’ Fiscal Year 2027 examination priorities. The annual report identifies key areas of focus as the Division carries out its mission to promote compliance, prevent fraud,…",
+      "body": "重点包括投资顾问义务与利益冲突、零售投资者、私募信贷、网络安全及新技术等领域。这是风险导向检查计划，不等于针对某家机构作出违法认定或发布新的投资建议。",
       "date": "2026-10-23",
       "published_at": "2026-10-23T10:10:00-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Announces Fiscal Year 2027 Examination Priorities",
+      "body_original": "The Securities and Exchange Commission today announced the Division of Examinations’ Fiscal Year 2027 examination priorities. The annual report identifies key areas of focus as the Division carries out its mission to promote compliance, prevent fraud,…",
+      "editorial_date": "2026-10-27"
     },
     {
-      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "title": "ECB 发布 2026 年 9 月消费者预期调查结果",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "body": "",
+      "body": "已核验来源标题；原始页面本次不可访问，未核验正文，因此不补写通胀预期、增长或消费数据。",
       "date": "2026-10-23",
       "published_at": "2026-10-23T10:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "ECB Consumer Expectations Survey results – September 2026",
+      "body_original": "",
+      "editorial_date": "2026-10-27"
     },
     {
-      "title": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
+      "title": "Cipollone 介绍 Pontes 与 Appia 的代币化金融路径",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
-      "body": "",
+      "body": "演示材料介绍以央行货币结算 DLT 交易，以及通过共同标准与公私合作建设生态。Pontes 已投入使用，Appia 的共同设计和蓝图仍有后续时间安排。",
       "date": "2026-10-21",
       "published_at": "2026-10-21T10:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
+      "body_original": "",
+      "editorial_date": "2026-10-27"
     },
     {
-      "title": "Philip R. Lane: Euro liquidity lines and the international monetary system",
+      "title": "Lane 解释欧元国际流动性支持机制",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
-      "body": "",
+      "body": "讲话介绍回购与互换额度对跨境欧元融资和货币政策传导的作用，并说明增强版 EUREP 的后备性质。额度设有抵押品、定价和风险条件，不是无条件融资。",
       "date": "2026-10-21",
       "published_at": "2026-10-21T06:15:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Philip R. Lane: Euro liquidity lines and the international monetary system",
+      "body_original": "",
+      "editorial_date": "2026-10-27"
     },
     {
-      "title": "SEC and AMF Announce Supervisory MOU To Enhance Cooperation for Investment Advisers and Investment Service Providers",
+      "title": "SEC 与法国 AMF 签署跨境监管合作备忘录",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-108-sec-amf-announce-supervisory-mou-enhance-cooperation-investment-advisers-investment-service",
-      "body": "The U.S. Securities and Exchange Commission (SEC) and the French Autorité des Marchés Financiers (AMF) announced that they have entered into a Memorandum of Understanding (MOU) designed to facilitate consultation and information-sharing in the…",
+      "body": "备忘录建立咨询、合作和信息交换框架，支持对相关投资顾问、公司及服务商的监督。SEC 将据此处理法国 AMF 监督资产管理公司的新及待办注册申请，不代表申请自动获批。",
       "date": "2026-10-20",
       "published_at": "2026-10-20T09:25:16-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC and AMF Announce Supervisory MOU To Enhance Cooperation for Investment Advisers and Investment Service Providers",
+      "body_original": "The U.S. Securities and Exchange Commission (SEC) and the French Autorité des Marchés Financiers (AMF) announced that they have entered into a Memorandum of Understanding (MOU) designed to facilitate consultation and information-sharing in the…",
+      "editorial_date": "2026-10-27"
     },
     {
-      "title": "Frank Elderson: Interview with Die Presse",
+      "title": "Elderson 谈监管简化与欧洲银行市场整合",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261020~97e2e4bc38.en.html",
-      "body": "",
+      "body": "10 月 20 日发布的采访于 10 月 14 日进行。他强调简化并不等于放松监管，并将市场分散视为欧洲竞争力障碍。这些是政策观点，不代表新规已经生效。",
       "date": "2026-10-20",
       "published_at": "2026-10-20T09:00:00+02:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Frank Elderson: Interview with Die Presse",
+      "body_original": "",
+      "editorial_date": "2026-10-27"
     },
     {
-      "title": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
+      "title": "SEC 与日本 FSA 举行秋季金融监管对话",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
-      "body": "The U.S. Securities and Exchange Commission (SEC) and the Financial Services Agency of Japan (FSA) convened the Autumn SEC-FSA Financial Regulatory Dialogue in Tokyo on Oct. 19, 2026.The SEC–FSA Dialogue builds upon longstanding efforts between the two…",
+      "body": "双方于 10 月 19 日在东京交流市场发展、资产管理和创新等监管议题，计划下一次于 2027 年春在华盛顿举行。对话交流不等于双方已通过新的统一规则。",
       "date": "2026-10-20",
       "published_at": "2026-10-20T08:51:00-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
+      "body_original": "The U.S. Securities and Exchange Commission (SEC) and the Financial Services Agency of Japan (FSA) convened the Autumn SEC-FSA Financial Regulatory Dialogue in Tokyo on Oct. 19, 2026.The SEC–FSA Dialogue builds upon longstanding efforts between the two…",
+      "editorial_date": "2026-10-27"
     }
   ],
   "summary": {
@@ -301,5 +331,11 @@
       "近七日 10 条机构公告",
       "未核验栏目显示暂无更新"
     ]
+  },
+  "editorial": {
+    "date": "2026-10-27",
+    "items_applied": 10,
+    "editor": "Codex",
+    "mode": "source_grounded_chinese"
   }
 }
