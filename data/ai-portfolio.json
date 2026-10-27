@@ -6508,12 +6508,6 @@
           "buy_date": "2026-08-31"
         },
         {
-          "ticker": "GOOGL",
-          "shares": 2,
-          "avg_cost": 354.97,
-          "buy_date": "2026-09-21"
-        },
-        {
           "ticker": "AMZN",
           "shares": 1,
           "avg_cost": 258.58,
@@ -6534,7 +6528,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3343.17
+          "avg_cost": 3984.33
         }
       ],
       "history": [
@@ -12649,6 +12643,54 @@
               "ticker": "AMD",
               "shares": 1,
               "price": 531.28,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-27",
+          "portfolio_value": 9406.02,
+          "baseline_value": 10413.19,
+          "cash": 3984.33,
+          "positions": {
+            "MSFT": {
+              "shares": 3,
+              "price": 531.33,
+              "value": 1593.99
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 347.1,
+              "value": 347.1
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 407.46,
+              "value": 1222.38
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": 253.1,
+              "value": 253.1
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 68.21,
+              "value": 272.84
+            },
+            "XLF": {
+              "shares": 31,
+              "price": 55.88,
+              "value": 1732.28
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "GOOGL",
+              "shares": 2,
+              "price": 320.58,
               "reason": "技术弱势(弱势)"
             }
           ],
