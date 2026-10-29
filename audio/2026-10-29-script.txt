@@ -1,11 +1,11 @@
 金融日报，2026年10月29日。以下为公开来源数据播报，报价可能延迟。
-S&P 500，7,743.98，变动百分之+0.28。
-NASDAQ，26,549.85，变动百分之+0.27。
-DOW，52,475.10，变动百分之+0.19。
-上证指数，3,681.47，变动百分之-0.43。
-恒生指数，23,088.14，变动百分之-0.03。
-日经225，64,493.51，变动百分之+0.84。
-2026-10-28，Federal Reserve：美联储维持联邦基金利率目标区间不变。
-2026-10-27，ECB：ECB 银行贷款调查显示企业信贷标准继续收紧。
-2026-10-26，ECB：ECB 企业融资调查显示贷款条件收紧。
+S&P 500，7,691.78，变动百分之-0.67。
+NASDAQ，26,099.13，变动百分之-1.70。
+DOW，52,154.09，变动百分之-0.61。
+上证指数，3,651.43，变动百分之+0.09。
+恒生指数，22,958.65，变动百分之-0.36。
+日经225，64,659.47，变动百分之+1.10。
+2026-10-29，ECB：Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure。
+2026-10-29，ECB：Christine Lagarde, Boris Vujčić: Monetary policy statement。
+2026-10-29，ECB：Monetary policy decisions。
 原文链接和具体报价时间见网站。以上不构成投资建议。
