@@ -1,11 +1,11 @@
 金融日报，2026年10月30日。以下为公开来源数据播报，报价可能延迟。
-S&P 500，7,720.39，变动百分之-0.30。
-NASDAQ，26,184.72，变动百分之-1.38。
-DOW，52,342.56，变动百分之-0.25。
-上证指数，3,600.25，变动百分之-1.40。
-恒生指数，23,020.64，变动百分之+0.27。
-日经225，62,842.34，变动百分之-2.81。
-2026-10-29，Federal Reserve：Federal Reserve Board announces approval of application by The Bank of Nova Scotia。
-2026-10-29，ECB：Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure。
-2026-10-29，ECB：Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)。
+S&P 500，7,573.48，变动百分之-1.90。
+NASDAQ，25,348.69，变动百分之-3.19。
+DOW，51,829.78，变动百分之-0.98。
+上证指数，3,599.02，变动百分之-2.24。
+恒生指数，23,294.42，变动百分之+0.86。
+日经225，63,290.11，变动百分之-2.12。
+2026-10-30，ECB：Philip R. Lane: AI adoption in Europe。
+2026-10-30，ECB：Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)。
+2026-10-30，ECB：Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026。
 原文链接和具体报价时间见网站。以上不构成投资建议。
