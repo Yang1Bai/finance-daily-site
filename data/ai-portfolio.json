@@ -12735,6 +12735,46 @@
           },
           "trades": [],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-29",
+          "portfolio_value": NaN,
+          "baseline_value": NaN,
+          "cash": 3984.33,
+          "positions": {
+            "MSFT": {
+              "shares": 3,
+              "price": NaN,
+              "value": NaN
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": NaN,
+              "value": NaN
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": NaN,
+              "value": NaN
+            },
+            "AMZN": {
+              "shares": 1,
+              "price": NaN,
+              "value": NaN
+            },
+            "XLE": {
+              "shares": 4,
+              "price": NaN,
+              "value": NaN
+            },
+            "XLF": {
+              "shares": 31,
+              "price": NaN,
+              "value": NaN
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
