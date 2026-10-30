@@ -1,7 +1,7 @@
 {
   "date": "2026年10月30日",
   "content_mode": "public",
-  "fetched_at": "2026-10-30T01:45:34.848036+00:00",
+  "fetched_at": "2026-10-30T17:37:34.331036+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -13,13 +13,13 @@
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 2
+      "items": 1
     },
     {
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
       "status": "ok",
-      "items": 9
+      "items": 11
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,720.39",
-      "change": "-23.59",
-      "change_pct": "-0.30%",
+      "value": "7,573.48",
+      "change": "-146.91",
+      "change_pct": "-1.90%",
       "direction": "down",
-      "as_of": "2026-10-29T20:32:46+00:00",
+      "as_of": "2026-10-30T17:34:55+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "26,184.72",
-      "change": "-365.13",
-      "change_pct": "-1.38%",
+      "value": "25,348.69",
+      "change": "-836.03",
+      "change_pct": "-3.19%",
       "direction": "down",
-      "as_of": "2026-10-29T21:15:59+00:00",
+      "as_of": "2026-10-30T17:36:50+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,342.56",
-      "change": "-132.54",
-      "change_pct": "-0.25%",
+      "value": "51,829.78",
+      "change": "-512.78",
+      "change_pct": "-0.98%",
       "direction": "down",
-      "as_of": "2026-10-29T20:33:51+00:00",
+      "as_of": "2026-10-30T17:36:16+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,600.25",
-      "change": "-51.18",
-      "change_pct": "-1.40%",
+      "value": "3,599.02",
+      "change": "-82.45",
+      "change_pct": "-2.24%",
       "direction": "down",
-      "as_of": "2026-10-30T01:30:30+00:00",
+      "as_of": "2026-10-30T07:00:34+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "23,020.64",
-      "change": "+61.99",
-      "change_pct": "+0.27%",
+      "value": "23,294.42",
+      "change": "+199.62",
+      "change_pct": "+0.86%",
       "direction": "up",
-      "as_of": "2026-10-30T01:30:32+00:00",
+      "as_of": "2026-10-30T08:08:32+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "62,842.34",
-      "change": "-1817.13",
-      "change_pct": "-2.81%",
+      "value": "63,290.11",
+      "change": "-1369.36",
+      "change_pct": "-2.12%",
       "direction": "down",
-      "as_of": "2026-10-30T01:30:30+00:00",
+      "as_of": "2026-10-30T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "26,039.68",
-      "change": "+335.66",
-      "change_pct": "+1.31%",
-      "direction": "up",
-      "as_of": "2026-10-29T17:00:00+00:00",
+      "value": "25,818.21",
+      "change": "-221.47",
+      "change_pct": "-0.85%",
+      "direction": "down",
+      "as_of": "2026-10-30T17:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,017.30",
-      "change": "-14.10",
-      "change_pct": "-0.35%",
+      "value": "3,896.10",
+      "change": "-135.30",
+      "change_pct": "-3.36%",
       "direction": "down",
-      "as_of": "2026-10-30T01:35:32+00:00",
+      "as_of": "2026-10-30T17:15:55+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "103.06",
-      "change": "+1.06",
-      "change_pct": "+1.04%",
+      "value": "104.56",
+      "change": "+2.56",
+      "change_pct": "+2.51%",
       "direction": "up",
-      "as_of": "2026-10-30T01:35:29+00:00",
+      "as_of": "2026-10-30T16:50:07+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "76,851.87",
-      "change": "-939.51",
-      "change_pct": "-1.21%",
+      "value": "77,038.47",
+      "change": "-752.90",
+      "change_pct": "-0.97%",
       "direction": "down",
-      "as_of": "2026-10-30T01:45:31+00:00",
+      "as_of": "2026-10-30T17:37:17+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.68",
-      "change": "-0.36",
-      "change_pct": "-0.35%",
+      "value": "101.96",
+      "change": "-0.08",
+      "change_pct": "-0.08%",
       "direction": "down",
-      "as_of": "2026-10-30T01:35:33+00:00",
+      "as_of": "2026-10-30T17:26:11+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,53 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6569",
-      "change": "+0.00",
-      "change_pct": "+0.01%",
-      "direction": "up",
-      "as_of": "2026-10-30T01:45:33+00:00",
+      "value": "6.6534",
+      "change": "-0.00",
+      "change_pct": "-0.04%",
+      "direction": "down",
+      "as_of": "2026-10-30T17:00:09+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Philip R. Lane: AI adoption in Europe",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
+      "body": "",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T17:10:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
+      "body": "",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T15:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "body": "",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T10:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
@@ -301,30 +337,6 @@
         "ECB"
       ],
       "importance": "normal"
-    },
-    {
-      "title": "SEC Announces Fiscal Year 2027 Examination Priorities",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities",
-      "body": "The Securities and Exchange Commission today announced the Division of Examinations’ Fiscal Year 2027 examination priorities. The annual report identifies key areas of focus as the Division carries out its mission to promote compliance, prevent fraud,…",
-      "date": "2026-10-23",
-      "published_at": "2026-10-23T10:10:00-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal"
-    },
-    {
-      "title": "ECB Consumer Expectations Survey results – September 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "body": "",
-      "date": "2026-10-23",
-      "published_at": "2026-10-23T10:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal"
     }
   ],
   "summary": {
@@ -334,7 +346,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 13 条机构公告",
+      "近七日 14 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   }
