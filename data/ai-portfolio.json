@@ -6508,12 +6508,6 @@
           "buy_date": "2026-08-31"
         },
         {
-          "ticker": "AMZN",
-          "shares": 1,
-          "avg_cost": 258.58,
-          "buy_date": "2026-10-13"
-        },
-        {
           "ticker": "XLE",
           "shares": 4,
           "avg_cost": 67.63,
@@ -6528,7 +6522,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 3984.33
+          "avg_cost": 4224.68
         }
       ],
       "history": [
@@ -12774,6 +12768,49 @@
             }
           },
           "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-10-30",
+          "portfolio_value": 9366.36,
+          "baseline_value": 10224.59,
+          "cash": 4224.68,
+          "positions": {
+            "MSFT": {
+              "shares": 3,
+              "price": 521.91,
+              "value": 1565.73
+            },
+            "AAPL": {
+              "shares": 1,
+              "price": 344.63,
+              "value": 344.63
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 399.81,
+              "value": 1199.43
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 70.02,
+              "value": 280.08
+            },
+            "XLF": {
+              "shares": 31,
+              "price": 56.51,
+              "value": 1751.81
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "AMZN",
+              "shares": 1,
+              "price": 240.35,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
           "note": "规则策略：无强势标的，持币观望"
         }
       ],
