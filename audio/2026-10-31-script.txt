@@ -5,7 +5,7 @@ DOW，51,770.31，变动百分之-1.09。
 上证指数，3,599.02，变动百分之-1.44。
 恒生指数，23,294.42，变动百分之+1.46。
 日经225，63,290.11，变动百分之-2.12。
-2026-10-30，ECB：Philip R. Lane: AI adoption in Europe。
-2026-10-30，SEC：SEC Issues Exemptive Relief from Treasury Clearing Requirements for Certain Inter-Affiliate and Non-U.S. Repo Transactions。
-2026-10-30，ECB：Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)。
+2026-10-30，ECB：Lane 探讨欧洲采用 AI 的经济影响。
+2026-10-30，SEC：SEC 对部分关联方和非美国回购交易给予清算豁免。
+2026-10-30，ECB：欧洲央行公布十月非利率决策汇总。
 原文链接和具体报价时间见网站。以上不构成投资建议。
