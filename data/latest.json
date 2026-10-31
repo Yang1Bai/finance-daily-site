@@ -1,7 +1,7 @@
 {
   "date": "2026年10月31日",
   "content_mode": "public",
-  "fetched_at": "2026-10-31T01:27:59.683833+00:00",
+  "fetched_at": "2026-10-31T16:41:24.399267+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -19,7 +19,7 @@
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
       "status": "ok",
-      "items": 11
+      "items": 10
     }
   ],
   "missing_quotes": [],
@@ -64,8 +64,8 @@
       "name": "上证指数",
       "symbol": "000001.SS",
       "value": "3,599.02",
-      "change": "-82.45",
-      "change_pct": "-2.24%",
+      "change": "-52.41",
+      "change_pct": "-1.44%",
       "direction": "down",
       "as_of": "2026-10-30T07:00:34+00:00",
       "currency": "CNY",
@@ -76,8 +76,8 @@
       "name": "恒生指数",
       "symbol": "^HSI",
       "value": "23,294.42",
-      "change": "+199.62",
-      "change_pct": "+0.86%",
+      "change": "+335.72",
+      "change_pct": "+1.46%",
       "direction": "up",
       "as_of": "2026-10-30T08:08:32+00:00",
       "currency": "HKD",
@@ -111,9 +111,9 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "3,884.90",
-      "change": "-146.50",
-      "change_pct": "-3.63%",
+      "value": "3,898.90",
+      "change": "-132.50",
+      "change_pct": "-3.29%",
       "direction": "down",
       "as_of": "2026-10-30T20:59:59+00:00",
       "currency": "USD",
@@ -123,9 +123,9 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "102.95",
-      "change": "+0.95",
-      "change_pct": "+0.93%",
+      "value": "104.12",
+      "change": "+2.12",
+      "change_pct": "+2.08%",
       "direction": "up",
       "as_of": "2026-10-30T20:59:59+00:00",
       "currency": "USD",
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "77,315.51",
-      "change": "+113.11",
-      "change_pct": "+0.15%",
+      "value": "77,454.70",
+      "change": "+252.30",
+      "change_pct": "+0.33%",
       "direction": "up",
-      "as_of": "2026-10-31T01:27:55+00:00",
+      "as_of": "2026-10-31T16:41:20+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -148,9 +148,9 @@
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
       "value": "101.96",
-      "change": "-0.07",
-      "change_pct": "-0.07%",
-      "direction": "down",
+      "change": "+0.08",
+      "change_pct": "+0.08%",
+      "direction": "up",
       "as_of": "2026-10-30T20:59:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
@@ -337,18 +337,6 @@
         "ECB"
       ],
       "importance": "normal"
-    },
-    {
-      "title": "Piero Cipollone: Interview with Milano Finanza",
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
-      "body": "",
-      "date": "2026-10-24",
-      "published_at": "2026-10-24T08:00:00+02:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal"
     }
   ],
   "summary": {
@@ -358,7 +346,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 15 条机构公告",
+      "近七日 14 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   }
