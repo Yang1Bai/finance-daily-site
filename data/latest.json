@@ -1,7 +1,7 @@
 {
-  "date": "2026年10月30日",
+  "date": "2026年10月31日",
   "content_mode": "public",
-  "fetched_at": "2026-10-30T17:37:34.331036+00:00",
+  "fetched_at": "2026-10-31T01:27:59.683833+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -13,7 +13,7 @@
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 1
+      "items": 2
     },
     {
       "source": "ECB",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,573.48",
-      "change": "-146.91",
-      "change_pct": "-1.90%",
+      "value": "7,580.07",
+      "change": "-140.32",
+      "change_pct": "-1.82%",
       "direction": "down",
-      "as_of": "2026-10-30T17:34:55+00:00",
+      "as_of": "2026-10-30T20:47:43+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "25,348.69",
-      "change": "-836.03",
-      "change_pct": "-3.19%",
+      "value": "25,437.00",
+      "change": "-747.73",
+      "change_pct": "-2.86%",
       "direction": "down",
-      "as_of": "2026-10-30T17:36:50+00:00",
+      "as_of": "2026-10-30T21:15:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,829.78",
-      "change": "-512.78",
-      "change_pct": "-0.98%",
+      "value": "51,770.31",
+      "change": "-572.25",
+      "change_pct": "-1.09%",
       "direction": "down",
-      "as_of": "2026-10-30T17:36:16+00:00",
+      "as_of": "2026-10-30T20:47:53+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "3,896.10",
-      "change": "-135.30",
-      "change_pct": "-3.36%",
+      "value": "3,884.90",
+      "change": "-146.50",
+      "change_pct": "-3.63%",
       "direction": "down",
-      "as_of": "2026-10-30T17:15:55+00:00",
+      "as_of": "2026-10-30T20:59:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "104.56",
-      "change": "+2.56",
-      "change_pct": "+2.51%",
+      "value": "102.95",
+      "change": "+0.95",
+      "change_pct": "+0.93%",
       "direction": "up",
-      "as_of": "2026-10-30T16:50:07+00:00",
+      "as_of": "2026-10-30T20:59:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "77,038.47",
-      "change": "-752.90",
-      "change_pct": "-0.97%",
-      "direction": "down",
-      "as_of": "2026-10-30T17:37:17+00:00",
+      "value": "77,315.51",
+      "change": "+113.11",
+      "change_pct": "+0.15%",
+      "direction": "up",
+      "as_of": "2026-10-31T01:27:55+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -148,10 +148,10 @@
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
       "value": "101.96",
-      "change": "-0.08",
-      "change_pct": "-0.08%",
+      "change": "-0.07",
+      "change_pct": "-0.07%",
       "direction": "down",
-      "as_of": "2026-10-30T17:26:11+00:00",
+      "as_of": "2026-10-30T20:59:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,11 +159,11 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6534",
+      "value": "6.6515",
       "change": "-0.00",
-      "change_pct": "-0.04%",
+      "change_pct": "-0.07%",
       "direction": "down",
-      "as_of": "2026-10-30T17:00:09+00:00",
+      "as_of": "2026-10-30T20:59:42+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
@@ -179,6 +179,18 @@
       "source": "ECB",
       "tags": [
         "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC Issues Exemptive Relief from Treasury Clearing Requirements for Certain Inter-Affiliate and Non-U.S. Repo Transactions",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-111-sec-issues-exemptive-relief-treasury-clearing-requirements-certain-inter-affiliate-non-us-repo",
+      "body": "The Securities and Exchange Commission took another step forward today to assist broker-dealers and other market participants on the path to central clearing of U.S. Treasury securities by issuing exemptive relief related to inter-affiliate repo…",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T15:30:00-04:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
       ],
       "importance": "normal"
     },
@@ -346,7 +358,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 14 条机构公告",
+      "近七日 15 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   }
