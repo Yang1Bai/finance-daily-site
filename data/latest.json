@@ -1,7 +1,7 @@
 {
-  "date": "2026年10月31日",
+  "date": "2026年11月1日",
   "content_mode": "public",
-  "fetched_at": "2026-10-31T16:41:24.399267+00:00",
+  "fetched_at": "2026-11-01T15:59:36.247887+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -64,7 +64,7 @@
       "name": "上证指数",
       "symbol": "000001.SS",
       "value": "3,599.02",
-      "change": "-52.41",
+      "change": "-52.42",
       "change_pct": "-1.44%",
       "direction": "down",
       "as_of": "2026-10-30T07:00:34+00:00",
@@ -76,7 +76,7 @@
       "name": "恒生指数",
       "symbol": "^HSI",
       "value": "23,294.42",
-      "change": "+335.72",
+      "change": "+335.77",
       "change_pct": "+1.46%",
       "direction": "up",
       "as_of": "2026-10-30T08:08:32+00:00",
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "77,454.70",
-      "change": "+252.30",
-      "change_pct": "+0.33%",
+      "value": "77,859.11",
+      "change": "+418.18",
+      "change_pct": "+0.54%",
       "direction": "up",
-      "as_of": "2026-10-31T16:41:20+00:00",
+      "as_of": "2026-11-01T15:59:30+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -183,7 +183,7 @@
       "importance": "normal",
       "title_original": "Philip R. Lane: AI adoption in Europe",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "SEC 对部分关联方和非美国回购交易给予清算豁免",
@@ -198,7 +198,7 @@
       "importance": "normal",
       "title_original": "SEC Issues Exemptive Relief from Treasury Clearing Requirements for Certain Inter-Affiliate and Non-U.S. Repo Transactions",
       "body_original": "The Securities and Exchange Commission took another step forward today to assist broker-dealers and other market participants on the path to central clearing of U.S. Treasury securities by issuing exemptive relief related to inter-affiliate repo…",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "欧洲央行公布十月非利率决策汇总",
@@ -213,7 +213,7 @@
       "importance": "normal",
       "title_original": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "欧洲央行专业预测者调查上调近期通胀预期",
@@ -228,7 +228,7 @@
       "importance": "normal",
       "title_original": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "美联储批准丰业银行收购相关银行控股公司申请",
@@ -243,7 +243,7 @@
       "importance": "normal",
       "title_original": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
       "body_original": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "Cipollone 讨论 T+1 结算与金融基础设施转型",
@@ -258,7 +258,7 @@
       "importance": "normal",
       "title_original": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "欧洲央行记者会说明维持利率与能源风险",
@@ -273,7 +273,7 @@
       "importance": "normal",
       "title_original": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "欧洲央行十月会议维持三项关键利率不变",
@@ -288,7 +288,7 @@
       "importance": "normal",
       "title_original": "Monetary policy decisions",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "SEC 起诉两实体涉嫌以虚假申报包装投资计划",
@@ -303,7 +303,7 @@
       "importance": "normal",
       "title_original": "Two Entities Charged in $130 Million Fraud Scheme That Used False SEC Filings to Boost Investor Confidence",
       "body_original": "The Securities and Exchange Commission today charged two foreign-operated, Colorado-incorporated entities, BG Wealth Sharing Ltd and DSJ Exchange Pty Ltd, for orchestrating a fraud scheme that used false SEC filings to boost confidence in their…",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "欧洲央行宣布拉加德拟于明年二月卸任",
@@ -318,7 +318,7 @@
       "importance": "normal",
       "title_original": "ECB President Lagarde to step down on 7 February 2027",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "美联储维持联邦基金利率目标区间不变",
@@ -333,7 +333,7 @@
       "importance": "normal",
       "title_original": "Federal Reserve issues FOMC statement",
       "body_original": "Federal Reserve issues FOMC statement",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "ECB 银行贷款调查显示企业信贷标准继续收紧",
@@ -348,7 +348,7 @@
       "importance": "normal",
       "title_original": "October 2026 euro area bank lending survey",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "ECB 企业融资调查显示贷款条件收紧",
@@ -363,7 +363,7 @@
       "importance": "normal",
       "title_original": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     },
     {
       "title": "Elderson 呼吁把自然保护目标转为投资行动",
@@ -378,7 +378,7 @@
       "importance": "normal",
       "title_original": "Frank Elderson: Taking action for nature – investing in economic resilience and prosperity",
       "body_original": "",
-      "editorial_date": "2026-10-31"
+      "editorial_date": "2026-11-01"
     }
   ],
   "summary": {
@@ -393,7 +393,7 @@
     ]
   },
   "editorial": {
-    "date": "2026-10-31",
+    "date": "2026-11-01",
     "items_applied": 14,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
