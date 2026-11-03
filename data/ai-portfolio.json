@@ -6490,12 +6490,6 @@
     "rule_based": {
       "holdings": [
         {
-          "ticker": "MSFT",
-          "shares": 3,
-          "avg_cost": 451.1,
-          "buy_date": "2026-07-30"
-        },
-        {
           "ticker": "AAPL",
           "shares": 1,
           "avg_cost": 319.7,
@@ -6522,7 +6516,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 4224.68
+          "avg_cost": 5746.04
         }
       ],
       "history": [
@@ -12808,6 +12802,44 @@
               "ticker": "AMZN",
               "shares": 1,
               "price": 240.35,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-11-02",
+          "portfolio_value": 9349.18,
+          "baseline_value": 10175.61,
+          "cash": 5746.04,
+          "positions": {
+            "AAPL": {
+              "shares": 1,
+              "price": 338.32,
+              "value": 338.32
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 403.82,
+              "value": 1211.46
+            },
+            "XLE": {
+              "shares": 4,
+              "price": 67.25,
+              "value": 269.0
+            },
+            "XLF": {
+              "shares": 31,
+              "price": 57.56,
+              "value": 1784.36
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "MSFT",
+              "shares": 3,
+              "price": 507.12,
               "reason": "技术弱势(弱势)"
             }
           ],
