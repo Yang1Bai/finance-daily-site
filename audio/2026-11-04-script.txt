@@ -5,7 +5,7 @@ DOW，51,786.72，变动百分之-0.38。
 上证指数，3,602.55，变动百分之-0.15。
 恒生指数，23,452.30，变动百分之-0.31。
 日经225，61,137.53，变动百分之-3.08。
-2026-11-02，ECB：Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world。
-2026-10-30，ECB：Philip R. Lane: AI adoption in Europe。
-2026-10-30，SEC：SEC Issues Exemptive Relief from Treasury Clearing Requirements for Certain Inter-Affiliate and Non-U.S. Repo Transactions。
+2026-11-02，ECB：Vujčić 讨论开放经济下的欧洲金融韧性。
+2026-10-30，ECB：Lane 探讨欧洲采用 AI 的经济影响。
+2026-10-30，SEC：SEC 对部分关联方和非美国回购交易给予清算豁免。
 原文链接和具体报价时间见网站。以上不构成投资建议。
