@@ -1,11 +1,11 @@
 金融日报，2026年11月4日。以下为公开来源数据播报，报价可能延迟。
-S&P 500，7,568.92，变动百分之+0.36。
-NASDAQ，25,372.01，变动百分之+0.83。
-DOW，51,786.72，变动百分之-0.38。
-上证指数，3,602.55，变动百分之-0.15。
-恒生指数，23,452.30，变动百分之-0.31。
-日经225，61,137.53，变动百分之-3.08。
+S&P 500，7,706.83，变动百分之+1.82。
+NASDAQ，25,861.95，变动百分之+1.93。
+DOW，53,352.61，变动百分之+3.02。
+上证指数，3,686.17，变动百分之+1.32。
+恒生指数，23,919.50，变动百分之+2.25。
+日经225，62,188.63，变动百分之-1.42。
+2026-11-04，SEC：SEC Adopts Amendments to Update Definitions of Small Entity for Investment Companies and Investment Advisers。
+2026-11-04，ECB：ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026。
 2026-11-02，ECB：Vujčić 讨论开放经济下的欧洲金融韧性。
-2026-10-30，ECB：Lane 探讨欧洲采用 AI 的经济影响。
-2026-10-30，SEC：SEC 对部分关联方和非美国回购交易给予清算豁免。
 原文链接和具体报价时间见网站。以上不构成投资建议。
