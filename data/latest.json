@@ -1,25 +1,25 @@
 {
   "date": "2026年11月5日",
   "content_mode": "public",
-  "fetched_at": "2026-11-05T02:05:55.554235+00:00",
+  "fetched_at": "2026-11-05T19:22:44.571441+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
-      "items": 1
+      "items": 2
     },
     {
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 3
+      "items": 2
     },
     {
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
       "status": "ok",
-      "items": 9
+      "items": 7
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,688.62",
-      "change": "+119.70",
-      "change_pct": "+1.58%",
-      "direction": "up",
-      "as_of": "2026-11-04T21:51:11+00:00",
+      "value": "7,385.44",
+      "change": "-303.18",
+      "change_pct": "-3.94%",
+      "direction": "down",
+      "as_of": "2026-11-05T19:22:35+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "25,736.51",
-      "change": "+364.50",
-      "change_pct": "+1.44%",
-      "direction": "up",
-      "as_of": "2026-11-04T22:15:59+00:00",
+      "value": "24,433.15",
+      "change": "-1303.37",
+      "change_pct": "-5.06%",
+      "direction": "down",
+      "as_of": "2026-11-05T19:22:44+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "53,356.12",
-      "change": "+1569.40",
-      "change_pct": "+3.03%",
-      "direction": "up",
-      "as_of": "2026-11-04T21:51:20+00:00",
+      "value": "51,703.51",
+      "change": "-1652.61",
+      "change_pct": "-3.10%",
+      "direction": "down",
+      "as_of": "2026-11-05T19:22:44+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,686.59",
-      "change": "+0.41",
-      "change_pct": "+0.01%",
+      "value": "3,689.91",
+      "change": "+81.81",
+      "change_pct": "+2.27%",
       "direction": "up",
-      "as_of": "2026-11-05T01:50:55+00:00",
+      "as_of": "2026-11-05T07:00:24+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,583.14",
-      "change": "+663.64",
-      "change_pct": "+2.77%",
+      "value": "24,796.98",
+      "change": "+1270.98",
+      "change_pct": "+5.40%",
       "direction": "up",
-      "as_of": "2026-11-05T01:50:54+00:00",
+      "as_of": "2026-11-05T08:08:40+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "61,916.89",
-      "change": "-271.74",
-      "change_pct": "-0.44%",
+      "value": "61,077.90",
+      "change": "-1110.73",
+      "change_pct": "-1.79%",
       "direction": "down",
-      "as_of": "2026-11-05T01:50:50+00:00",
+      "as_of": "2026-11-05T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "26,437.67",
-      "change": "+573.05",
-      "change_pct": "+2.22%",
-      "direction": "up",
-      "as_of": "2026-11-04T17:00:00+00:00",
+      "value": "26,325.01",
+      "change": "-112.66",
+      "change_pct": "-0.43%",
+      "direction": "down",
+      "as_of": "2026-11-05T17:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,136.00",
-      "change": "+63.00",
-      "change_pct": "+1.55%",
+      "value": "4,112.70",
+      "change": "+39.70",
+      "change_pct": "+0.97%",
       "direction": "up",
-      "as_of": "2026-11-05T01:55:50+00:00",
+      "as_of": "2026-11-05T19:12:40+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "87.44",
-      "change": "-0.68",
-      "change_pct": "-0.77%",
-      "direction": "down",
-      "as_of": "2026-11-05T01:55:55+00:00",
+      "value": "90.34",
+      "change": "+2.22",
+      "change_pct": "+2.52%",
+      "direction": "up",
+      "as_of": "2026-11-05T19:12:36+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "80,758.60",
-      "change": "+330.30",
-      "change_pct": "+0.41%",
-      "direction": "up",
-      "as_of": "2026-11-05T02:05:51+00:00",
+      "value": "75,938.40",
+      "change": "-4489.90",
+      "change_pct": "-5.58%",
+      "direction": "down",
+      "as_of": "2026-11-05T19:22:40+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.31",
-      "change": "-0.25",
-      "change_pct": "-0.25%",
+      "value": "101.51",
+      "change": "-0.05",
+      "change_pct": "-0.05%",
       "direction": "down",
-      "as_of": "2026-11-05T01:55:54+00:00",
+      "as_of": "2026-11-05T19:12:41+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,53 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6683",
-      "change": "-0.00",
-      "change_pct": "-0.04%",
+      "value": "6.6652",
+      "change": "-0.01",
+      "change_pct": "-0.08%",
       "direction": "down",
-      "as_of": "2026-11-05T02:05:54+00:00",
+      "as_of": "2026-11-05T19:22:43+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
+      "body": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T16:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
+      "body": "",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T09:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Shaping the future of money",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
+      "body": "",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T08:30:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "SEC 更新资管机构的小实体定义",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-112-sec-adopts-amendments-update-definitions-small-entity-investment-companies-investment-advisers",
@@ -289,81 +325,6 @@
       "title_original": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
       "body_original": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
       "editorial_date": "2026-11-05"
-    },
-    {
-      "title": "Cipollone 讨论 T+1 结算与金融基础设施转型",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
-      "body": "讲话介绍欧洲拟于 2027 年 10 月 11 日将证券结算从 T+2 缩短至 T+1，并讨论代币化的配合。该时间点仍属未来安排，不能写成欧洲已全面采用次日结算。",
-      "date": "2026-10-29",
-      "published_at": "2026-10-29T16:50:00+01:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
-      "body_original": "",
-      "editorial_date": "2026-11-05"
-    },
-    {
-      "title": "欧洲央行记者会说明维持利率与能源风险",
-      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "body": "10 月 29 日声明维持三项关键利率不变，指出能源价格上升对通胀构成上行风险、对增长构成下行风险。政策判断取决于后续数据，不构成预定利率路径。",
-      "date": "2026-10-29",
-      "published_at": "2026-10-29T15:00:00+01:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-      "body_original": "",
-      "editorial_date": "2026-11-05"
-    },
-    {
-      "title": "欧洲央行十月会议维持三项关键利率不变",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-      "body": "10 月 29 日决议强调能源冲击及融资条件收紧，并重申中期 2% 通胀目标。风险评估不等于未来通胀或下一次利率决定已确定。",
-      "date": "2026-10-29",
-      "published_at": "2026-10-29T14:15:00+01:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Monetary policy decisions",
-      "body_original": "",
-      "editorial_date": "2026-11-05"
-    },
-    {
-      "title": "SEC 起诉两实体涉嫌以虚假申报包装投资计划",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-110-two-entities-charged-130-million-fraud-scheme-used-false-sec-filings-boost-investor-confidence",
-      "body": "SEC 指控 BG Wealth Sharing 和 DSJ Exchange 借虚假申报增强投资者信心，募集超过 1.3 亿美元。以上为监管诉状指控，不能表述为法院已作出最终有罪判决。",
-      "date": "2026-10-29",
-      "published_at": "2026-10-29T12:42:37-04:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "Two Entities Charged in $130 Million Fraud Scheme That Used False SEC Filings to Boost Investor Confidence",
-      "body_original": "The Securities and Exchange Commission today charged two foreign-operated, Colorado-incorporated entities, BG Wealth Sharing Ltd and DSJ Exchange Pty Ltd, for orchestrating a fraud scheme that used false SEC filings to boost confidence in their…",
-      "editorial_date": "2026-11-05"
-    },
-    {
-      "title": "欧洲央行宣布拉加德拟于明年二月卸任",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
-      "body": "10 月 29 日公告称拉加德将于 2027 年 2 月 7 日离职，继任者由欧洲理事会依条约程序任命。公告没有确认继任人选，也不代表职务已即时交接。",
-      "date": "2026-10-29",
-      "published_at": "2026-10-29T11:00:00+01:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "ECB President Lagarde to step down on 7 February 2027",
-      "body_original": "",
-      "editorial_date": "2026-11-05"
     }
   ],
   "summary": {
@@ -373,13 +334,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 13 条机构公告",
+      "近七日 11 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-11-05",
-    "items_applied": 13,
+    "items_applied": 8,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
