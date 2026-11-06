@@ -5,7 +5,7 @@ DOW，51,523.06，变动百分之-3.44。
 上证指数，3,638.61，变动百分之-1.39。
 恒生指数，24,620.97，变动百分之-0.71。
 日经225，57,452.50，变动百分之-5.94。
-2026-11-05，Federal Reserve：Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc。
-2026-11-05，ECB：Isabel Schnabel: Navigating stormy waters: reflections on monetary policy。
-2026-11-05，ECB：Piero Cipollone: Shaping the future of money。
+2026-11-05，Federal Reserve：美联储公布终止一项既有监管协议。
+2026-11-05，ECB：Schnabel 回顾不确定环境下的货币政策经验。
+2026-11-05，ECB：Cipollone 讨论数字时代的公共货币与支付基础设施。
 原文链接和具体报价时间见网站。以上不构成投资建议。
