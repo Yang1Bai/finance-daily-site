@@ -1,13 +1,13 @@
 {
-  "date": "2026年11月5日",
+  "date": "2026年11月6日",
   "content_mode": "public",
-  "fetched_at": "2026-11-05T19:22:44.571441+00:00",
+  "fetched_at": "2026-11-06T02:06:56.224553+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
-      "items": 2
+      "items": 1
     },
     {
       "source": "SEC",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,385.44",
-      "change": "-303.18",
-      "change_pct": "-3.94%",
+      "value": "7,353.73",
+      "change": "-334.89",
+      "change_pct": "-4.36%",
       "direction": "down",
-      "as_of": "2026-11-05T19:22:35+00:00",
+      "as_of": "2026-11-05T21:34:08+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "24,433.15",
-      "change": "-1303.37",
-      "change_pct": "-5.06%",
+      "value": "24,315.00",
+      "change": "-1421.52",
+      "change_pct": "-5.52%",
       "direction": "down",
-      "as_of": "2026-11-05T19:22:44+00:00",
+      "as_of": "2026-11-05T22:15:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,703.51",
-      "change": "-1652.61",
-      "change_pct": "-3.10%",
+      "value": "51,523.06",
+      "change": "-1833.06",
+      "change_pct": "-3.44%",
       "direction": "down",
-      "as_of": "2026-11-05T19:22:44+00:00",
+      "as_of": "2026-11-05T21:35:51+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,689.91",
-      "change": "+81.81",
-      "change_pct": "+2.27%",
-      "direction": "up",
-      "as_of": "2026-11-05T07:00:24+00:00",
+      "value": "3,638.61",
+      "change": "-51.30",
+      "change_pct": "-1.39%",
+      "direction": "down",
+      "as_of": "2026-11-06T01:51:55+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,796.98",
-      "change": "+1270.98",
-      "change_pct": "+5.40%",
-      "direction": "up",
-      "as_of": "2026-11-05T08:08:40+00:00",
+      "value": "24,620.97",
+      "change": "-176.01",
+      "change_pct": "-0.71%",
+      "direction": "down",
+      "as_of": "2026-11-06T01:51:54+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "61,077.90",
-      "change": "-1110.73",
-      "change_pct": "-1.79%",
+      "value": "57,452.50",
+      "change": "-3625.40",
+      "change_pct": "-5.94%",
       "direction": "down",
-      "as_of": "2026-11-05T06:45:03+00:00",
+      "as_of": "2026-11-06T01:51:55+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,112.70",
-      "change": "+39.70",
-      "change_pct": "+0.97%",
-      "direction": "up",
-      "as_of": "2026-11-05T19:12:40+00:00",
+      "value": "4,075.10",
+      "change": "-38.40",
+      "change_pct": "-0.93%",
+      "direction": "down",
+      "as_of": "2026-11-06T01:56:52+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "90.34",
-      "change": "+2.22",
-      "change_pct": "+2.52%",
+      "value": "91.16",
+      "change": "+0.64",
+      "change_pct": "+0.71%",
       "direction": "up",
-      "as_of": "2026-11-05T19:12:36+00:00",
+      "as_of": "2026-11-06T01:56:46+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "75,938.40",
-      "change": "-4489.90",
-      "change_pct": "-5.58%",
+      "value": "75,944.40",
+      "change": "-38.41",
+      "change_pct": "-0.05%",
       "direction": "down",
-      "as_of": "2026-11-05T19:22:40+00:00",
+      "as_of": "2026-11-06T02:06:50+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.51",
-      "change": "-0.05",
-      "change_pct": "-0.05%",
-      "direction": "down",
-      "as_of": "2026-11-05T19:12:41+00:00",
+      "value": "101.65",
+      "change": "+0.10",
+      "change_pct": "+0.10%",
+      "direction": "up",
+      "as_of": "2026-11-06T01:56:54+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,11 +159,11 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6652",
-      "change": "-0.01",
-      "change_pct": "-0.08%",
-      "direction": "down",
-      "as_of": "2026-11-05T19:22:43+00:00",
+      "value": "6.6672",
+      "change": "+0.00",
+      "change_pct": "+0.06%",
+      "direction": "up",
+      "as_of": "2026-11-06T02:06:56+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
@@ -207,124 +207,88 @@
       "importance": "normal"
     },
     {
-      "title": "SEC 更新资管机构的小实体定义",
+      "title": "SEC Adopts Amendments to Update Definitions of Small Entity for Investment Companies and Investment Advisers",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-112-sec-adopts-amendments-update-definitions-small-entity-investment-companies-investment-advisers",
-      "body": "11 月 4 日通过的修订调整投资公司、投资顾问及业务发展公司在监管灵活性分析中的小实体认定。修订旨在使影响评估更贴合当前行业规模，具体适用须查阅规则。",
+      "body": "The Securities and Exchange Commission today adopted amendments to the rules that define which registered investment companies, investment advisers, and business development companies qualify as small entities for purposes of the Regulatory Flexibility…",
       "date": "2026-11-04",
       "published_at": "2026-11-04T11:28:00-05:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal",
-      "title_original": "SEC Adopts Amendments to Update Definitions of Small Entity for Investment Companies and Investment Advisers",
-      "body_original": "The Securities and Exchange Commission today adopted amendments to the rules that define which registered investment companies, investment advisers, and business development companies qualify as small entities for purposes of the Regulatory Flexibility…",
-      "editorial_date": "2026-11-05"
+      "importance": "normal"
     },
     {
-      "title": "欧洲央行工资追踪显示明年前三季度增速略高",
+      "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-      "body": "追踪器基于已生效集体协议，显示 2027 年前三季度协商工资增长整体略高于 2026 全年。未来期覆盖率较低，且一次性支付影响指标，数据仍可能修订。",
+      "body": "",
       "date": "2026-11-04",
       "published_at": "2026-11-04T01:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-      "body_original": "",
-      "editorial_date": "2026-11-05"
+      "importance": "normal"
     },
     {
-      "title": "Vujčić 讨论开放经济下的欧洲金融韧性",
+      "title": "Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp.261102~70003226e9.en.html",
-      "body": "讲话以爱尔兰和欧盟为例，讨论贸易政策及全球资本流动的跨境影响，主张通过增强韧性保留开放经济的收益。这是政策观点，不是具体市场回报或政策效果的实证保证。",
+      "body": "",
       "date": "2026-11-02",
       "published_at": "2026-11-02T10:30:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world",
-      "body_original": "",
-      "editorial_date": "2026-11-05"
+      "importance": "normal"
     },
     {
-      "title": "Lane 探讨欧洲采用 AI 的经济影响",
+      "title": "Philip R. Lane: AI adoption in Europe",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
-      "body": "讲话讨论 AI 应用、基础设施投入与欧洲生产率之间的联系，以及欧洲企业和投资者在全球供应链中的作用。这是政策分析，不是对未来增长或资产回报的确定预测。",
+      "body": "",
       "date": "2026-10-30",
       "published_at": "2026-10-30T17:10:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Philip R. Lane: AI adoption in Europe",
-      "body_original": "",
-      "editorial_date": "2026-11-05"
+      "importance": "normal"
     },
     {
-      "title": "SEC 对部分关联方和非美国回购交易给予清算豁免",
+      "title": "SEC Issues Exemptive Relief from Treasury Clearing Requirements for Certain Inter-Affiliate and Non-U.S. Repo Transactions",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-111-sec-issues-exemptive-relief-treasury-clearing-requirements-certain-inter-affiliate-non-us-repo",
-      "body": "豁免针对满足条件的非美国交易对手回购，以及直接清算参与者与符合定义的关联实体间交易。限制与适用条件仍然有效，不能理解为全面取消美国国债集中清算要求。",
+      "body": "The Securities and Exchange Commission took another step forward today to assist broker-dealers and other market participants on the path to central clearing of U.S. Treasury securities by issuing exemptive relief related to inter-affiliate repo…",
       "date": "2026-10-30",
       "published_at": "2026-10-30T15:30:00-04:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal",
-      "title_original": "SEC Issues Exemptive Relief from Treasury Clearing Requirements for Certain Inter-Affiliate and Non-U.S. Repo Transactions",
-      "body_original": "The Securities and Exchange Commission took another step forward today to assist broker-dealers and other market participants on the path to central clearing of U.S. Treasury securities by issuing exemptive relief related to inter-affiliate repo…",
-      "editorial_date": "2026-11-05"
+      "importance": "normal"
     },
     {
-      "title": "欧洲央行公布十月非利率决策汇总",
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
       "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-      "body": "内容包括瑞典和丹麦央行的 T2 服务协议、若干立法意见及会计报告框架调整。该汇总另列利率决定之外的事项，不应解读为新增一次利率行动。",
+      "body": "",
       "date": "2026-10-30",
       "published_at": "2026-10-30T15:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-      "body_original": "",
-      "editorial_date": "2026-11-05"
+      "importance": "normal"
     },
     {
-      "title": "欧洲央行专业预测者调查上调近期通胀预期",
+      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "body": "第四季度调查上调 2026 和 2027 年总体及核心通胀预期，长期通胀预期仍为 2%。这些是受访预测者预期，不能当成已经实现的通胀或增长数据。",
+      "body": "",
       "date": "2026-10-30",
       "published_at": "2026-10-30T10:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "body_original": "",
-      "editorial_date": "2026-11-05"
-    },
-    {
-      "title": "美联储批准丰业银行收购相关银行控股公司申请",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
-      "body": "10 月 29 日公告批准 Bank of Nova Scotia 通过收购 Maple Financial Holdings 间接收购 MapleMark Bank，并成为银行控股公司。公告确认监管批准，不代表已核实交易交割完成。",
-      "date": "2026-10-29",
-      "published_at": "2026-10-29T20:30:00+00:00",
-      "source": "Federal Reserve",
-      "tags": [
-        "Federal Reserve"
-      ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-      "body_original": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-      "editorial_date": "2026-11-05"
+      "importance": "normal"
     }
   ],
   "summary": {
@@ -334,14 +298,8 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 11 条机构公告",
+      "近七日 10 条机构公告",
       "未核验栏目显示暂无更新"
     ]
-  },
-  "editorial": {
-    "date": "2026-11-05",
-    "items_applied": 8,
-    "editor": "Codex",
-    "mode": "source_grounded_chinese"
   }
 }
