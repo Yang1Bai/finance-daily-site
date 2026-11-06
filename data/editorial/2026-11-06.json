@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-06",
+  "news": [
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
+      "title": "美联储公布终止一项既有监管协议",
+      "body": "11 月 5 日公告称，涉及 Allegiant United Holdings、Nano Financial Holdings 和 Nano Banc 的 2021 年书面协议已于 10 月 21 日终止。公告日期与终止生效日期不同。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
+      "title": "Schnabel 回顾不确定环境下的货币政策经验",
+      "body": "讲话围绕通胀冲击、政策工具调整及全球碎片化展开个人反思，强调应对变化的灵活性。观点需与欧洲央行正式利率决议区分。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
+      "title": "Cipollone 讨论数字时代的公共货币与支付基础设施",
+      "body": "讲话探讨数字支付、代币化和跨境支付变化，强调公共货币的可信基础及基础设施韧性。属于政策方向讨论，具体项目实施仍需后续安排。"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-112-sec-adopts-amendments-update-definitions-small-entity-investment-companies-investment-advisers",
+      "title": "SEC 更新资管机构的小实体定义",
+      "body": "11 月 4 日通过的修订调整投资公司、投资顾问及业务发展公司在监管灵活性分析中的小实体认定。修订旨在使影响评估更贴合当前行业规模，具体适用须查阅规则。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+      "title": "欧洲央行工资追踪显示明年前三季度增速略高",
+      "body": "追踪器基于已生效集体协议，显示 2027 年前三季度协商工资增长整体略高于 2026 全年。未来期覆盖率较低，且一次性支付影响指标，数据仍可能修订。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp.261102~70003226e9.en.html",
+      "title": "Vujčić 讨论开放经济下的欧洲金融韧性",
+      "body": "讲话以爱尔兰和欧盟为例，讨论贸易政策及全球资本流动的跨境影响，主张通过增强韧性保留开放经济的收益。这是政策观点，不是具体市场回报或政策效果的实证保证。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
+      "title": "Lane 探讨欧洲采用 AI 的经济影响",
+      "body": "讲话讨论 AI 应用、基础设施投入与欧洲生产率之间的联系，以及欧洲企业和投资者在全球供应链中的作用。这是政策分析，不是对未来增长或资产回报的确定预测。"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-111-sec-issues-exemptive-relief-treasury-clearing-requirements-certain-inter-affiliate-non-us-repo",
+      "title": "SEC 对部分关联方和非美国回购交易给予清算豁免",
+      "body": "豁免针对满足条件的非美国交易对手回购，以及直接清算参与者与符合定义的关联实体间交易。限制与适用条件仍然有效，不能理解为全面取消美国国债集中清算要求。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
+      "title": "欧洲央行公布十月非利率决策汇总",
+      "body": "内容包括瑞典和丹麦央行的 T2 服务协议、若干立法意见及会计报告框架调整。该汇总另列利率决定之外的事项，不应解读为新增一次利率行动。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "title": "欧洲央行专业预测者调查上调近期通胀预期",
+      "body": "第四季度调查上调 2026 和 2027 年总体及核心通胀预期，长期通胀预期仍为 2%。这些是受访预测者预期，不能当成已经实现的通胀或增长数据。"
+    }
+  ],
+  "papers": []
+}
