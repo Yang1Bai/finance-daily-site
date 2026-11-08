@@ -1,7 +1,7 @@
 {
   "date": "2026年11月8日",
   "content_mode": "public",
-  "fetched_at": "2026-11-08T14:03:21.637512+00:00",
+  "fetched_at": "2026-11-08T17:29:33.567973+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "75,818.26",
-      "change": "+64.55",
-      "change_pct": "+0.09%",
-      "direction": "up",
-      "as_of": "2026-11-08T14:03:18+00:00",
+      "value": "75,586.41",
+      "change": "-167.30",
+      "change_pct": "-0.22%",
+      "direction": "down",
+      "as_of": "2026-11-08T17:29:27+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
