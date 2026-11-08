@@ -1,7 +1,7 @@
 {
-  "date": "2026年11月7日",
+  "date": "2026年11月8日",
   "content_mode": "public",
-  "fetched_at": "2026-11-07T17:17:56.605311+00:00",
+  "fetched_at": "2026-11-08T14:03:21.637512+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -76,7 +76,7 @@
       "name": "恒生指数",
       "symbol": "^HSI",
       "value": "24,481.86",
-      "change": "-315.14",
+      "change": "-315.12",
       "change_pct": "-1.27%",
       "direction": "down",
       "as_of": "2026-11-06T08:09:10+00:00",
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "75,686.84",
-      "change": "-54.18",
-      "change_pct": "-0.07%",
-      "direction": "down",
-      "as_of": "2026-11-07T17:17:53+00:00",
+      "value": "75,818.26",
+      "change": "+64.55",
+      "change_pct": "+0.09%",
+      "direction": "up",
+      "as_of": "2026-11-08T14:03:18+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -171,16 +171,19 @@
   ],
   "news": [
     {
-      "title": "Christine Lagarde: Interview with Yomiuri Shimbun",
+      "title": "拉加德访谈谈女性领导力与制度治理",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
-      "body": "",
+      "body": "11 月 7 日发布的访谈于 11 月 4 日进行，拉加德讨论女性职业发展、少数群体处境及央行治理。相关表述属于访谈观点，发布时间与采访时间应区分。",
       "date": "2026-11-07",
       "published_at": "2026-11-07T15:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Christine Lagarde: Interview with Yomiuri Shimbun",
+      "body_original": "",
+      "editorial_date": "2026-11-08"
     },
     {
       "title": "欧洲央行发布六月末银行业合并数据",
@@ -195,7 +198,7 @@
       "importance": "normal",
       "title_original": "ECB publishes consolidated banking data for end-June 2026",
       "body_original": "",
-      "editorial_date": "2026-11-07"
+      "editorial_date": "2026-11-08"
     },
     {
       "title": "美联储公布终止一项既有监管协议",
@@ -210,7 +213,7 @@
       "importance": "normal",
       "title_original": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
       "body_original": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-      "editorial_date": "2026-11-07"
+      "editorial_date": "2026-11-08"
     },
     {
       "title": "Schnabel 回顾不确定环境下的货币政策经验",
@@ -225,7 +228,7 @@
       "importance": "normal",
       "title_original": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
       "body_original": "",
-      "editorial_date": "2026-11-07"
+      "editorial_date": "2026-11-08"
     },
     {
       "title": "Cipollone 讨论数字时代的公共货币与支付基础设施",
@@ -240,7 +243,7 @@
       "importance": "normal",
       "title_original": "Piero Cipollone: Shaping the future of money",
       "body_original": "",
-      "editorial_date": "2026-11-07"
+      "editorial_date": "2026-11-08"
     },
     {
       "title": "SEC 更新资管机构的小实体定义",
@@ -255,7 +258,7 @@
       "importance": "normal",
       "title_original": "SEC Adopts Amendments to Update Definitions of Small Entity for Investment Companies and Investment Advisers",
       "body_original": "The Securities and Exchange Commission today adopted amendments to the rules that define which registered investment companies, investment advisers, and business development companies qualify as small entities for purposes of the Regulatory Flexibility…",
-      "editorial_date": "2026-11-07"
+      "editorial_date": "2026-11-08"
     },
     {
       "title": "欧洲央行工资追踪显示明年前三季度增速略高",
@@ -270,7 +273,7 @@
       "importance": "normal",
       "title_original": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
       "body_original": "",
-      "editorial_date": "2026-11-07"
+      "editorial_date": "2026-11-08"
     },
     {
       "title": "Vujčić 讨论开放经济下的欧洲金融韧性",
@@ -285,7 +288,7 @@
       "importance": "normal",
       "title_original": "Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world",
       "body_original": "",
-      "editorial_date": "2026-11-07"
+      "editorial_date": "2026-11-08"
     }
   ],
   "summary": {
@@ -300,8 +303,8 @@
     ]
   },
   "editorial": {
-    "date": "2026-11-07",
-    "items_applied": 7,
+    "date": "2026-11-08",
+    "items_applied": 8,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
