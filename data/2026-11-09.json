@@ -1,13 +1,13 @@
 {
   "date": "2026年11月9日",
   "content_mode": "public",
-  "fetched_at": "2026-11-09T14:27:09.296198+00:00",
+  "fetched_at": "2026-11-09T21:51:13.557292+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
-      "items": 1
+      "items": 2
     },
     {
       "source": "SEC",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,376.86",
-      "change": "+23.13",
-      "change_pct": "+0.31%",
+      "value": "7,549.94",
+      "change": "+173.08",
+      "change_pct": "+2.35%",
       "direction": "up",
-      "as_of": "2026-11-06T21:37:09+00:00",
+      "as_of": "2026-11-09T21:20:01+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "24,579.42",
-      "change": "+264.42",
-      "change_pct": "+1.09%",
+      "value": "25,253.14",
+      "change": "+673.72",
+      "change_pct": "+2.74%",
       "direction": "up",
-      "as_of": "2026-11-06T22:15:59+00:00",
+      "as_of": "2026-11-09T21:51:12+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "51,285.73",
-      "change": "-237.37",
-      "change_pct": "-0.46%",
-      "direction": "down",
-      "as_of": "2026-11-06T21:37:12+00:00",
+      "value": "52,389.75",
+      "change": "+1104.02",
+      "change_pct": "+2.15%",
+      "direction": "up",
+      "as_of": "2026-11-09T21:20:01+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "26,155.45",
-      "change": "+335.09",
-      "change_pct": "+1.30%",
+      "value": "26,267.19",
+      "change": "+446.79",
+      "change_pct": "+1.73%",
       "direction": "up",
-      "as_of": "2026-11-09T14:12:10+00:00",
+      "as_of": "2026-11-09T17:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,136.50",
-      "change": "+61.60",
-      "change_pct": "+1.51%",
+      "value": "4,146.00",
+      "change": "+71.10",
+      "change_pct": "+1.74%",
       "direction": "up",
-      "as_of": "2026-11-09T14:17:09+00:00",
+      "as_of": "2026-11-09T21:41:09+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "86.87",
-      "change": "-3.96",
-      "change_pct": "-4.36%",
+      "value": "86.72",
+      "change": "-4.11",
+      "change_pct": "-4.52%",
       "direction": "down",
-      "as_of": "2026-11-09T14:17:09+00:00",
+      "as_of": "2026-11-09T21:41:09+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "74,475.45",
-      "change": "-244.37",
-      "change_pct": "-0.33%",
-      "direction": "down",
-      "as_of": "2026-11-09T14:27:07+00:00",
+      "value": "74,866.20",
+      "change": "+146.38",
+      "change_pct": "+0.20%",
+      "direction": "up",
+      "as_of": "2026-11-09T21:51:09+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "101.82",
-      "change": "-0.48",
-      "change_pct": "-0.47%",
+      "value": "101.68",
+      "change": "-0.62",
+      "change_pct": "-0.60%",
       "direction": "down",
-      "as_of": "2026-11-09T14:17:09+00:00",
+      "as_of": "2026-11-09T21:41:11+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,29 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6705",
+      "value": "6.6688",
       "change": "-0.00",
-      "change_pct": "-0.02%",
+      "change_pct": "-0.04%",
       "direction": "down",
-      "as_of": "2026-11-09T14:27:11+00:00",
+      "as_of": "2026-11-09T21:51:10+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
+      "body": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T21:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "拉加德访谈谈女性领导力与制度治理",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
@@ -283,7 +295,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 7 条机构公告",
+      "近七日 8 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
