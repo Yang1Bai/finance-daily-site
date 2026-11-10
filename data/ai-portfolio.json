@@ -13008,6 +13008,41 @@
             }
           ],
           "note": "规则策略：持有强势['JD']，剔除弱势"
+        },
+        {
+          "date": "2026-11-09",
+          "portfolio_value": 9190.23,
+          "baseline_value": 10183.59,
+          "cash": 2080.94,
+          "positions": {
+            "AAPL": {
+              "shares": 1,
+              "price": 350.69,
+              "value": 350.69
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 378.05,
+              "value": 1134.15
+            },
+            "XLF": {
+              "shares": 31,
+              "price": 57.99,
+              "value": 1797.69
+            },
+            "MSFT": {
+              "shares": 4,
+              "price": 545.18,
+              "value": 2180.72
+            },
+            "JD": {
+              "shares": 58,
+              "price": 28.38,
+              "value": 1646.04
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
