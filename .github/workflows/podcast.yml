@@ -36,9 +36,9 @@ jobs:
             # Use only Ubuntu sources needed by speech tools.
             source_list=$(mktemp)
             printf '%s\n' \
-              'deb https://archive.ubuntu.com/ubuntu noble main universe' \
-              'deb https://archive.ubuntu.com/ubuntu noble-updates main universe' \
-              'deb https://security.ubuntu.com/ubuntu noble-security main universe' > "$source_list"
+              'deb https://mirrors.edge.kernel.org/ubuntu noble main universe' \
+              'deb https://mirrors.edge.kernel.org/ubuntu noble-updates main universe' \
+              'deb https://mirrors.edge.kernel.org/ubuntu noble-security main universe' > "$source_list"
             apt_options=(-o "Dir::Etc::sourcelist=$source_list" -o Dir::Etc::sourceparts=-
               -o Acquire::Retries=1 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20)
             sudo timeout 100 apt-get "${apt_options[@]}" update
