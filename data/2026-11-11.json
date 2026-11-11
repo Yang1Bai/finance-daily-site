@@ -1,0 +1,305 @@
+{
+  "date": "2026年11月11日",
+  "content_mode": "public",
+  "fetched_at": "2026-11-11T01:46:38.259133+00:00",
+  "sources": [
+    {
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "status": "ok",
+      "items": 2
+    },
+    {
+      "source": "SEC",
+      "url": "https://www.sec.gov/news/pressreleases.rss",
+      "status": "ok",
+      "items": 2
+    },
+    {
+      "source": "ECB",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "status": "ok",
+      "items": 6
+    }
+  ],
+  "missing_quotes": [],
+  "indices": [
+    {
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "value": "7,520.93",
+      "change": "-29.01",
+      "change_pct": "-0.38%",
+      "direction": "down",
+      "as_of": "2026-11-10T22:00:31+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "name": "NASDAQ",
+      "symbol": "^IXIC",
+      "value": "25,065.88",
+      "change": "-187.26",
+      "change_pct": "-0.74%",
+      "direction": "down",
+      "as_of": "2026-11-10T22:15:59+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+    },
+    {
+      "name": "DOW",
+      "symbol": "^DJI",
+      "value": "52,231.89",
+      "change": "-157.86",
+      "change_pct": "-0.30%",
+      "direction": "down",
+      "as_of": "2026-11-10T22:00:40+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EDJI/"
+    },
+    {
+      "name": "上证指数",
+      "symbol": "000001.SS",
+      "value": "3,660.84",
+      "change": "-2.89",
+      "change_pct": "-0.08%",
+      "direction": "down",
+      "as_of": "2026-11-11T01:31:30+00:00",
+      "currency": "CNY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/000001.SS/"
+    },
+    {
+      "name": "恒生指数",
+      "symbol": "^HSI",
+      "value": "24,311.93",
+      "change": "-245.11",
+      "change_pct": "-1.00%",
+      "direction": "down",
+      "as_of": "2026-11-11T01:31:36+00:00",
+      "currency": "HKD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EHSI/"
+    },
+    {
+      "name": "日经225",
+      "symbol": "^N225",
+      "value": "60,995.62",
+      "change": "+536.04",
+      "change_pct": "+0.89%",
+      "direction": "up",
+      "as_of": "2026-11-11T01:31:35+00:00",
+      "currency": "JPY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EN225/"
+    },
+    {
+      "name": "德国DAX",
+      "symbol": "^GDAXI",
+      "value": "26,347.45",
+      "change": "+80.26",
+      "change_pct": "+0.31%",
+      "direction": "up",
+      "as_of": "2026-11-10T17:00:00+00:00",
+      "currency": "EUR",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+    },
+    {
+      "name": "黄金期货",
+      "symbol": "GC=F",
+      "value": "4,054.20",
+      "change": "+24.00",
+      "change_pct": "+0.60%",
+      "direction": "up",
+      "as_of": "2026-11-11T01:36:34+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/GC%3DF/"
+    },
+    {
+      "name": "原油 WTI",
+      "symbol": "CL=F",
+      "value": "86.21",
+      "change": "+0.17",
+      "change_pct": "+0.20%",
+      "direction": "up",
+      "as_of": "2026-11-11T01:36:18+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CL%3DF/"
+    },
+    {
+      "name": "BTC/USD",
+      "symbol": "BTC-USD",
+      "value": "73,734.69",
+      "change": "+25.82",
+      "change_pct": "+0.04%",
+      "direction": "up",
+      "as_of": "2026-11-11T01:46:33+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/BTC-USD/"
+    },
+    {
+      "name": "美元指数",
+      "symbol": "DX-Y.NYB",
+      "value": "102.25",
+      "change": "+0.02",
+      "change_pct": "+0.02%",
+      "direction": "up",
+      "as_of": "2026-11-11T01:36:37+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+    },
+    {
+      "name": "USD/CNH",
+      "symbol": "CNH=X",
+      "value": "6.6754",
+      "change": "-0.00",
+      "change_pct": "-0.00%",
+      "direction": "down",
+      "as_of": "2026-11-11T01:46:36+00:00",
+      "currency": "CNH",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CNH%3DX/"
+    }
+  ],
+  "news": [
+    {
+      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
+      "body": "",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T17:45:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110~9422461bad.en.html",
+      "body": "",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T15:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC Announces Enforcement Annual Results for Fiscal Year 2026",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-113-sec-announces-enforcement-annual-results-fiscal-year-2026",
+      "body": "The Securities and Exchange Commission today provided its enforcement results for the past fiscal year which ended September 30. Throughout the fiscal year, the SEC’s Division of Enforcement remained focused on its fundamental responsibility: protecting…",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T11:15:35-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
+      "body": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T21:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Christine Lagarde: Interview with Yomiuri Shimbun",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
+      "body": "",
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T15:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "ECB publishes consolidated banking data for end-June 2026",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+      "body": "",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T10:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
+      "body": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T16:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
+      "body": "",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T09:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Piero Cipollone: Shaping the future of money",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
+      "body": "",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T08:30:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC Adopts Amendments to Update Definitions of Small Entity for Investment Companies and Investment Advisers",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-112-sec-adopts-amendments-update-definitions-small-entity-investment-companies-investment-advisers",
+      "body": "The Securities and Exchange Commission today adopted amendments to the rules that define which registered investment companies, investment advisers, and business development companies qualify as small entities for purposes of the Regulatory Flexibility…",
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T11:28:00-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    }
+  ],
+  "summary": {
+    "headline": "公开来源行情与机构公告",
+    "sentiment": "neutral",
+    "vix": "N/A",
+    "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
+    "key_points": [
+      "已获取 12 个标的",
+      "近七日 10 条机构公告",
+      "未核验栏目显示暂无更新"
+    ]
+  }
+}

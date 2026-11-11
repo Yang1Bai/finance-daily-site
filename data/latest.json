@@ -1,7 +1,7 @@
 {
-  "date": "2026年11月10日",
+  "date": "2026年11月11日",
   "content_mode": "public",
-  "fetched_at": "2026-11-10T19:12:49.051805+00:00",
+  "fetched_at": "2026-11-11T01:46:38.259133+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -19,7 +19,7 @@
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
       "status": "ok",
-      "items": 7
+      "items": 6
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,503.43",
-      "change": "-46.51",
-      "change_pct": "-0.62%",
+      "value": "7,520.93",
+      "change": "-29.01",
+      "change_pct": "-0.38%",
       "direction": "down",
-      "as_of": "2026-11-10T19:12:43+00:00",
+      "as_of": "2026-11-10T22:00:31+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "24,977.00",
-      "change": "-276.14",
-      "change_pct": "-1.09%",
+      "value": "25,065.88",
+      "change": "-187.26",
+      "change_pct": "-0.74%",
       "direction": "down",
-      "as_of": "2026-11-10T19:12:45+00:00",
+      "as_of": "2026-11-10T22:15:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,169.81",
-      "change": "-219.94",
-      "change_pct": "-0.42%",
+      "value": "52,231.89",
+      "change": "-157.86",
+      "change_pct": "-0.30%",
       "direction": "down",
-      "as_of": "2026-11-10T19:12:46+00:00",
+      "as_of": "2026-11-10T22:00:40+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,663.72",
-      "change": "+14.54",
-      "change_pct": "+0.40%",
-      "direction": "up",
-      "as_of": "2026-11-10T07:00:29+00:00",
+      "value": "3,660.84",
+      "change": "-2.89",
+      "change_pct": "-0.08%",
+      "direction": "down",
+      "as_of": "2026-11-11T01:31:30+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,557.04",
-      "change": "+75.14",
-      "change_pct": "+0.31%",
-      "direction": "up",
-      "as_of": "2026-11-10T08:08:58+00:00",
+      "value": "24,311.93",
+      "change": "-245.11",
+      "change_pct": "-1.00%",
+      "direction": "down",
+      "as_of": "2026-11-11T01:31:36+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "60,459.58",
-      "change": "+1684.08",
-      "change_pct": "+2.87%",
+      "value": "60,995.62",
+      "change": "+536.04",
+      "change_pct": "+0.89%",
       "direction": "up",
-      "as_of": "2026-11-10T06:45:03+00:00",
+      "as_of": "2026-11-11T01:31:35+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "4,034.90",
-      "change": "-79.60",
-      "change_pct": "-1.93%",
-      "direction": "down",
-      "as_of": "2026-11-10T19:02:45+00:00",
+      "value": "4,054.20",
+      "change": "+24.00",
+      "change_pct": "+0.60%",
+      "direction": "up",
+      "as_of": "2026-11-11T01:36:34+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "86.05",
-      "change": "-0.80",
-      "change_pct": "-0.92%",
-      "direction": "down",
-      "as_of": "2026-11-10T19:02:45+00:00",
+      "value": "86.21",
+      "change": "+0.17",
+      "change_pct": "+0.20%",
+      "direction": "up",
+      "as_of": "2026-11-11T01:36:18+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "73,298.01",
-      "change": "-1955.85",
-      "change_pct": "-2.60%",
-      "direction": "down",
-      "as_of": "2026-11-10T19:12:44+00:00",
+      "value": "73,734.69",
+      "change": "+25.82",
+      "change_pct": "+0.04%",
+      "direction": "up",
+      "as_of": "2026-11-11T01:46:33+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -148,10 +148,10 @@
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
       "value": "102.25",
-      "change": "+0.60",
-      "change_pct": "+0.59%",
+      "change": "+0.02",
+      "change_pct": "+0.02%",
       "direction": "up",
-      "as_of": "2026-11-10T19:02:45+00:00",
+      "as_of": "2026-11-11T01:36:37+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,11 +159,11 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6767",
-      "change": "+0.01",
-      "change_pct": "+0.11%",
-      "direction": "up",
-      "as_of": "2026-11-10T19:12:47+00:00",
+      "value": "6.6754",
+      "change": "-0.00",
+      "change_pct": "-0.00%",
+      "direction": "down",
+      "as_of": "2026-11-11T01:46:36+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
@@ -207,124 +207,88 @@
       "importance": "normal"
     },
     {
-      "title": "美联储批准 Mutual Federal 相关控股架构申请",
+      "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
-      "body": "11 月 9 日公告批准 Mutual Federal Bancorp 与 MFB Bancorp 的两项申请，允许形成新的顶层控股公司并收购 Mutual Federal Bank。公告确认监管批准，交割状态需另行核实。",
+      "body": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
       "date": "2026-11-09",
       "published_at": "2026-11-09T21:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
-      "body_original": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
-      "editorial_date": "2026-11-10"
+      "importance": "normal"
     },
     {
-      "title": "拉加德访谈谈女性领导力与制度治理",
+      "title": "Christine Lagarde: Interview with Yomiuri Shimbun",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
-      "body": "11 月 7 日发布的访谈于 11 月 4 日进行，拉加德讨论女性职业发展、少数群体处境及央行治理。相关表述属于访谈观点，发布时间与采访时间应区分。",
+      "body": "",
       "date": "2026-11-07",
       "published_at": "2026-11-07T15:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Christine Lagarde: Interview with Yomiuri Shimbun",
-      "body_original": "",
-      "editorial_date": "2026-11-10"
+      "importance": "normal"
     },
     {
-      "title": "欧洲央行发布六月末银行业合并数据",
+      "title": "ECB publishes consolidated banking data for end-June 2026",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "body": "数据按集团合并口径覆盖欧盟银行体系，包含盈利、资产质量、流动性及资本等指标。11 月 6 日发布的数据对应六月末状态，比较时需注意报告样本与会计口径。",
+      "body": "",
       "date": "2026-11-06",
       "published_at": "2026-11-06T10:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "ECB publishes consolidated banking data for end-June 2026",
-      "body_original": "",
-      "editorial_date": "2026-11-10"
+      "importance": "normal"
     },
     {
-      "title": "美联储公布终止一项既有监管协议",
+      "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
-      "body": "11 月 5 日公告称，涉及 Allegiant United Holdings、Nano Financial Holdings 和 Nano Banc 的 2021 年书面协议已于 10 月 21 日终止。公告日期与终止生效日期不同。",
+      "body": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
       "date": "2026-11-05",
       "published_at": "2026-11-05T16:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-      "body_original": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-      "editorial_date": "2026-11-10"
+      "importance": "normal"
     },
     {
-      "title": "Schnabel 回顾不确定环境下的货币政策经验",
+      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-      "body": "讲话围绕通胀冲击、政策工具调整及全球碎片化展开个人反思，强调应对变化的灵活性。观点需与欧洲央行正式利率决议区分。",
+      "body": "",
       "date": "2026-11-05",
       "published_at": "2026-11-05T09:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
-      "body_original": "",
-      "editorial_date": "2026-11-10"
+      "importance": "normal"
     },
     {
-      "title": "Cipollone 讨论数字时代的公共货币与支付基础设施",
+      "title": "Piero Cipollone: Shaping the future of money",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
-      "body": "讲话探讨数字支付、代币化和跨境支付变化，强调公共货币的可信基础及基础设施韧性。属于政策方向讨论，具体项目实施仍需后续安排。",
+      "body": "",
       "date": "2026-11-05",
       "published_at": "2026-11-05T08:30:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal",
-      "title_original": "Piero Cipollone: Shaping the future of money",
-      "body_original": "",
-      "editorial_date": "2026-11-10"
+      "importance": "normal"
     },
     {
-      "title": "SEC 更新资管机构的小实体定义",
+      "title": "SEC Adopts Amendments to Update Definitions of Small Entity for Investment Companies and Investment Advisers",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-112-sec-adopts-amendments-update-definitions-small-entity-investment-companies-investment-advisers",
-      "body": "11 月 4 日通过的修订调整投资公司、投资顾问及业务发展公司在监管灵活性分析中的小实体认定。修订旨在使影响评估更贴合当前行业规模，具体适用须查阅规则。",
+      "body": "The Securities and Exchange Commission today adopted amendments to the rules that define which registered investment companies, investment advisers, and business development companies qualify as small entities for purposes of the Regulatory Flexibility…",
       "date": "2026-11-04",
       "published_at": "2026-11-04T11:28:00-05:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal",
-      "title_original": "SEC Adopts Amendments to Update Definitions of Small Entity for Investment Companies and Investment Advisers",
-      "body_original": "The Securities and Exchange Commission today adopted amendments to the rules that define which registered investment companies, investment advisers, and business development companies qualify as small entities for purposes of the Regulatory Flexibility…",
-      "editorial_date": "2026-11-10"
-    },
-    {
-      "title": "欧洲央行工资追踪显示明年前三季度增速略高",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-      "body": "追踪器基于已生效集体协议，显示 2027 年前三季度协商工资增长整体略高于 2026 全年。未来期覆盖率较低，且一次性支付影响指标，数据仍可能修订。",
-      "date": "2026-11-04",
-      "published_at": "2026-11-04T01:00:00+01:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-      "body_original": "",
-      "editorial_date": "2026-11-10"
+      "importance": "normal"
     }
   ],
   "summary": {
@@ -334,14 +298,8 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 11 条机构公告",
+      "近七日 10 条机构公告",
       "未核验栏目显示暂无更新"
     ]
-  },
-  "editorial": {
-    "date": "2026-11-10",
-    "items_applied": 8,
-    "editor": "Codex",
-    "mode": "source_grounded_chinese"
   }
 }
