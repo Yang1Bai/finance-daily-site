@@ -1,13 +1,13 @@
 {
   "date": "2026年11月12日",
   "content_mode": "public",
-  "fetched_at": "2026-11-12T02:46:33.439105+00:00",
+  "fetched_at": "2026-11-12T19:26:04.879310+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
-      "items": 2
+      "items": 4
     },
     {
       "source": "SEC",
@@ -19,7 +19,7 @@
       "source": "ECB",
       "url": "https://www.ecb.europa.eu/rss/press.html",
       "status": "ok",
-      "items": 6
+      "items": 4
     }
   ],
   "missing_quotes": [],
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,619.38",
-      "change": "+98.45",
-      "change_pct": "+1.31%",
-      "direction": "up",
-      "as_of": "2026-11-11T21:42:03+00:00",
+      "value": "7,609.55",
+      "change": "-9.83",
+      "change_pct": "-0.13%",
+      "direction": "down",
+      "as_of": "2026-11-12T19:26:03+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "25,466.19",
-      "change": "+400.31",
-      "change_pct": "+1.60%",
-      "direction": "up",
-      "as_of": "2026-11-11T22:15:59+00:00",
+      "value": "25,394.59",
+      "change": "-71.60",
+      "change_pct": "-0.28%",
+      "direction": "down",
+      "as_of": "2026-11-12T19:25:55+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,486.49",
-      "change": "+254.60",
-      "change_pct": "+0.49%",
-      "direction": "up",
-      "as_of": "2026-11-11T21:43:58+00:00",
+      "value": "52,486.36",
+      "change": "-0.13",
+      "change_pct": "-0.00%",
+      "direction": "down",
+      "as_of": "2026-11-12T19:26:03+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,695.80",
-      "change": "+15.15",
-      "change_pct": "+0.41%",
-      "direction": "up",
-      "as_of": "2026-11-12T02:31:25+00:00",
+      "value": "3,655.83",
+      "change": "-7.89",
+      "change_pct": "-0.22%",
+      "direction": "down",
+      "as_of": "2026-11-12T07:00:24+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "24,032.24",
-      "change": "-283.68",
-      "change_pct": "-1.17%",
+      "value": "24,008.55",
+      "change": "-548.45",
+      "change_pct": "-2.23%",
       "direction": "down",
-      "as_of": "2026-11-12T02:31:30+00:00",
+      "as_of": "2026-11-12T08:08:30+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "61,714.16",
-      "change": "+465.57",
-      "change_pct": "+0.76%",
-      "direction": "up",
-      "as_of": "2026-11-12T02:30:01+00:00",
+      "value": "60,819.36",
+      "change": "-429.23",
+      "change_pct": "-0.70%",
+      "direction": "down",
+      "as_of": "2026-11-12T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "26,662.77",
-      "change": "+315.32",
-      "change_pct": "+1.20%",
+      "value": "26,771.88",
+      "change": "+109.11",
+      "change_pct": "+0.41%",
       "direction": "up",
-      "as_of": "2026-11-11T17:00:00+00:00",
+      "as_of": "2026-11-12T17:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "3,987.30",
-      "change": "-13.20",
-      "change_pct": "-0.33%",
+      "value": "3,883.70",
+      "change": "-116.80",
+      "change_pct": "-2.92%",
       "direction": "down",
-      "as_of": "2026-11-12T02:36:29+00:00",
+      "as_of": "2026-11-12T19:16:02+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "85.88",
-      "change": "-0.65",
-      "change_pct": "-0.75%",
-      "direction": "down",
-      "as_of": "2026-11-12T02:36:29+00:00",
+      "value": "88.62",
+      "change": "+2.09",
+      "change_pct": "+2.42%",
+      "direction": "up",
+      "as_of": "2026-11-12T19:16:02+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "73,758.37",
-      "change": "-166.82",
-      "change_pct": "-0.23%",
+      "value": "71,532.61",
+      "change": "-2392.58",
+      "change_pct": "-3.24%",
       "direction": "down",
-      "as_of": "2026-11-12T02:46:31+00:00",
+      "as_of": "2026-11-12T19:26:01+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "102.96",
-      "change": "+0.05",
-      "change_pct": "+0.05%",
+      "value": "103.19",
+      "change": "+0.29",
+      "change_pct": "+0.28%",
       "direction": "up",
-      "as_of": "2026-11-12T02:36:31+00:00",
+      "as_of": "2026-11-12T19:16:02+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,53 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6669",
-      "change": "-0.01",
-      "change_pct": "-0.08%",
-      "direction": "down",
-      "as_of": "2026-11-12T02:46:32+00:00",
+      "value": "6.6739",
+      "change": "+0.00",
+      "change_pct": "+0.02%",
+      "direction": "up",
+      "as_of": "2026-11-12T19:26:01+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
+      "body": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T18:30:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "body": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T17:45:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm",
+      "body": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T16:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "Lane 讨论货币政策沟通如何影响预期",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
@@ -259,51 +295,6 @@
       "title_original": "ECB publishes consolidated banking data for end-June 2026",
       "body_original": "",
       "editorial_date": "2026-11-12"
-    },
-    {
-      "title": "美联储公布终止一项既有监管协议",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
-      "body": "11 月 5 日公告称，涉及 Allegiant United Holdings、Nano Financial Holdings 和 Nano Banc 的 2021 年书面协议已于 10 月 21 日终止。公告日期与终止生效日期不同。",
-      "date": "2026-11-05",
-      "published_at": "2026-11-05T16:00:00+00:00",
-      "source": "Federal Reserve",
-      "tags": [
-        "Federal Reserve"
-      ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-      "body_original": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-      "editorial_date": "2026-11-12"
-    },
-    {
-      "title": "Schnabel 回顾不确定环境下的货币政策经验",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-      "body": "讲话围绕通胀冲击、政策工具调整及全球碎片化展开个人反思，强调应对变化的灵活性。观点需与欧洲央行正式利率决议区分。",
-      "date": "2026-11-05",
-      "published_at": "2026-11-05T09:00:00+01:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
-      "body_original": "",
-      "editorial_date": "2026-11-12"
-    },
-    {
-      "title": "Cipollone 讨论数字时代的公共货币与支付基础设施",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
-      "body": "讲话探讨数字支付、代币化和跨境支付变化，强调公共货币的可信基础及基础设施韧性。属于政策方向讨论，具体项目实施仍需后续安排。",
-      "date": "2026-11-05",
-      "published_at": "2026-11-05T08:30:00+01:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Piero Cipollone: Shaping the future of money",
-      "body_original": "",
-      "editorial_date": "2026-11-12"
     }
   ],
   "summary": {
@@ -319,7 +310,7 @@
   },
   "editorial": {
     "date": "2026-11-12",
-    "items_applied": 9,
+    "items_applied": 6,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
