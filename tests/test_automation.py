@@ -25,7 +25,7 @@ class AutomationTests(unittest.TestCase):
         self.assertIn('Verified title', script)
         self.assertNotIn('BUY EVERYTHING', script)
 
-    def test_no_embedded_telegram_credentials(self):
+    def test_no_embedded_bot_credentials(self):
         pattern = re.compile(r'\b\d{8,12}:[A-Za-z0-9_-]{30,}\b')
         for path in (ROOT/'scripts').glob('*.py'):
             self.assertIsNone(pattern.search(path.read_text(encoding='utf-8')), path.name)

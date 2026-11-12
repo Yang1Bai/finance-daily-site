@@ -52,8 +52,7 @@ def load_data_files() -> list[tuple[str, dict]]:
     """Load all dated JSON files from data/, sorted by date."""
     files = []
     skip = {"latest.json", "index.json", "signal_ledger.json",
-            "quotes.json", "ai-portfolio.json",
-            "investment-subscribers.json", "telegram-offset.json"}
+            "quotes.json", "ai-portfolio.json"}
     for fname in sorted(os.listdir(DATA_DIR)):
         if fname in skip or not fname.endswith(".json"):
             continue

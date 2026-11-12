@@ -28,22 +28,3 @@ python scripts/publish_editorial.py
 The latest public digest must be from today. Later public-source updates retain matching
 dated edits. If a source item disappears, its old edit is not reintroduced. Commit the
 editorial JSON, rendered HTML, RSS and daily archive together and verify Pages publication.
-
-## Telegram credential rotation required
-
-A bot credential was embedded in old source. It has been removed from all three scripts;
-history was not rewritten. Do not reuse it. Scheduled Telegram jobs currently run in
-validation mode (`TELEGRAM_ENABLED=false`), with no polling, replies or broadcasting.
-
-1. Revoke/regenerate this bot's token in Telegram BotFather.
-2. Replace the repository Actions secret `TELEGRAM_TOKEN` with the new value.
-3. Set repository Actions variable `TELEGRAM_ENABLED=true` to resume the existing service.
-
-Manual dispatch defaults to `dry_run=true`. A dry-run success verifies local processing,
-not message delivery. Only explicitly choose `dry_run=false` when delivery is intended.
-Polling errors now fail visibly rather than masquerading as "no new updates". Broadcasting
-does not retry delivery automatically after an ambiguous partial send.
-
-Subscriber-state workflows share a concurrency group. All writers synchronize and retry
-only Git pushes up to three times; they do not rerun delivery steps on push failure.
-Conflicts fail for inspection rather than overwriting another job's work.

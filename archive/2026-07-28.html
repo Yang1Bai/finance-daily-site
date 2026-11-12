@@ -433,12 +433,11 @@
     .subscribe-strip-body strong { display:block; color:var(--accent); font-size:.82rem; }
     .subscribe-strip-body span { font-size:.7rem; color:var(--muted); }
     .subscribe-strip-actions { display:flex; gap:7px; flex-wrap:wrap; align-items:center; }
-    .btn-sub-email, .btn-sub-tg {
+    .btn-sub-email {
       font-size:.72rem; padding:6px 12px; border-radius:var(--r); cursor:pointer;
       display:flex; align-items:center; gap:5px; white-space:nowrap;
     }
     .btn-sub-email { background:rgba(0,212,170,.15); color:var(--accent); border:1px solid rgba(0,212,170,.3); }
-    .btn-sub-tg    { background:rgba(79,195,247,.12); color:var(--neutral); border:1px solid rgba(79,195,247,.25); text-decoration:none; }
 
     /* =========================================================
        SIMPLE MODE
@@ -1141,10 +1140,6 @@
       <input type="email" name="email" placeholder="your@email.com" required style="padding:6px 10px;border-radius:6px;border:1px solid var(--border);background:rgba(255,255,255,.05);color:var(--text);font-size:.73rem;width:148px;outline:none;" />
       <button type="submit" class="btn-sub-email">📧 邮件</button>
     </form>
-    <a href="https://t.me/GGmanm_bot?start=subscribe" target="_blank" class="btn-sub-tg">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.44 13.55l-2.955-.924c-.643-.204-.657-.643.136-.953l11.566-4.461c.537-.194 1.006.131.707.009z"/></svg>
-      Telegram
-    </a>
     <button onclick="document.getElementById('subscribe-strip').style.display='none';localStorage.setItem('fd_sub_dismissed','1');" style="background:none;border:none;color:var(--dimmed);cursor:pointer;font-size:1rem;padding:2px 4px;" title="关闭">×</button>
   </div>
 </div>
@@ -2867,18 +2862,6 @@
     }
   })();
 
-  // ── Subscriber count (Telegram) ───────────────────────────────────────
-  (function loadSubCount() {
-    const el = document.getElementById('subscriber-count');
-    if (!el) return;
-    fetch('data/investment-subscribers.json')
-      .then(r => r.json())
-      .then(d => {
-        const count = Object.values(d.subscribers || {}).filter(s => s.active).length;
-        if (count > 0) el.textContent = `📱 ${count} 人已订阅Telegram早报`;
-      })
-      .catch(() => {});
-  })();
 
   // ── AI 操盘实验（多模型对比）─────────────────────────────────────────
   (function loadAIPortfolio() {

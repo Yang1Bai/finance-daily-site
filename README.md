@@ -12,7 +12,7 @@ Run `python -m unittest discover -s tests`, then `python scripts/fetch_content.p
 The daily workflow commits the digest and explicitly requests a GitHub Pages rebuild with the
 built-in `GITHUB_TOKEN` (`contents: write`, `pages: write`). No personal token is needed.
 
-The separate trading, podcast, broadcast and subscription workflows are outside this repair; their optional credentials are unchanged. The daily public digest does not send Telegram messages or update the historical model signal ledger.
+The trading simulation and offline podcast run in separate workflows.
 
 # 📈 Financial Daily | 金融日报
 

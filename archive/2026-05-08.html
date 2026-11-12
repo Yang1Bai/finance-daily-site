@@ -1245,7 +1245,6 @@
       font-weight: 600; cursor: pointer; white-space: nowrap;
     }
     .btn-sub-email:hover { background: #33e0be; }
-    .btn-sub-tg {
       padding: 6px 12px; border-radius: 6px;
       background: linear-gradient(135deg,#229ED9,#1a8bbf);
       color: #fff; font-size: 0.76rem; font-weight: 600;
@@ -1467,10 +1466,6 @@
                style="padding:6px 10px;border-radius:6px;border:1px solid var(--border-light);background:rgba(255,255,255,0.05);color:var(--text);font-size:0.76rem;width:158px;outline:none;" />
         <button type="submit" class="btn-sub-email">📧 邮件订阅</button>
       </form>
-      <a href="https://t.me/GGmanm_bot?start=subscribe" target="_blank" class="btn-sub-tg">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.44 13.55l-2.955-.924c-.643-.204-.657-.643.136-.953l11.566-4.461c.537-.194 1.006.131.707.009z"/></svg>
-        Telegram
-      </a>
       <button onclick="document.getElementById('subscribe-strip').style.display='none';localStorage.setItem('fd_sub_dismissed','1');"
               style="background:none;border:none;color:var(--dimmed);cursor:pointer;font-size:1.1rem;line-height:1;padding:2px 4px;" title="关闭">×</button>
     </div>
@@ -2286,11 +2281,6 @@
             📧 邮件订阅
           </button>
         </form>
-        <!-- Telegram -->
-        <a href="https://t.me/GGmanm_bot?start=subscribe" target="_blank" class="sub-btn" style="background:linear-gradient(135deg,#229ED9,#1a8bbf);color:#fff;display:flex;align-items:center;gap:6px;">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.44 13.55l-2.955-.924c-.643-.204-.657-.643.136-.953l11.566-4.461c.537-.194 1.006.131.707.009z"/></svg>
-          Telegram 早报
-        </a>
         <!-- RSS -->
         <a href="../feed.xml" target="_blank" class="sub-btn rss-btn">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
@@ -3003,18 +2993,6 @@
     }
   })();
 
-  // ── Subscriber count (Telegram) ───────────────────────────────────────
-  (function loadSubCount() {
-    const el = document.getElementById('subscriber-count');
-    if (!el) return;
-    fetch('data/investment-subscribers.json')
-      .then(r => r.json())
-      .then(d => {
-        const count = Object.values(d.subscribers || {}).filter(s => s.active).length;
-        if (count > 0) el.textContent = `📱 ${count} 人已订阅Telegram早报`;
-      })
-      .catch(() => {});
-  })();
 
   // ── Visitor counter (Cloudflare Worker + KV) ──────────────────────────
   document.addEventListener('DOMContentLoaded', function () {
