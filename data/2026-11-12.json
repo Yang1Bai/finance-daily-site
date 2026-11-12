@@ -171,112 +171,139 @@
   ],
   "news": [
     {
-      "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+      "title": "Lane 讨论货币政策沟通如何影响预期",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
-      "body": "",
+      "body": "讲话回顾欧洲央行研究及实践，探讨沟通对市场价格、融资条件和家庭企业决策的作用。属于政策分析，利率行动仍以正式决议为准。",
       "date": "2026-11-10",
       "published_at": "2026-11-10T17:45:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+      "body_original": "",
+      "editorial_date": "2026-11-12"
     },
     {
-      "title": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
+      "title": "Cipollone 讨论现金与数字欧元的共同基础",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110~9422461bad.en.html",
-      "body": "",
+      "body": "声明介绍立法进展及数字欧元准备，并指出首次可能发行日期须在法规通过后确定。后续实施仍取决于立法和准备工作。",
       "date": "2026-11-10",
       "published_at": "2026-11-10T15:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
+      "body_original": "",
+      "editorial_date": "2026-11-12"
     },
     {
-      "title": "SEC Announces Enforcement Annual Results for Fiscal Year 2026",
+      "title": "SEC 公布 2026 财年执法结果",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-113-sec-announces-enforcement-annual-results-fiscal-year-2026",
-      "body": "The Securities and Exchange Commission today provided its enforcement results for the past fiscal year which ended September 30. Throughout the fiscal year, the SEC’s Division of Enforcement remained focused on its fundamental responsibility: protecting…",
+      "body": "11 月 10 日报告覆盖截至 9 月 30 日的财年，介绍执法案件、救济命令及向受损投资者返还资金情况。命令金额与实际返还口径应分别理解。",
       "date": "2026-11-10",
       "published_at": "2026-11-10T11:15:35-05:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Announces Enforcement Annual Results for Fiscal Year 2026",
+      "body_original": "The Securities and Exchange Commission today provided its enforcement results for the past fiscal year which ended September 30. Throughout the fiscal year, the SEC’s Division of Enforcement remained focused on its fundamental responsibility: protecting…",
+      "editorial_date": "2026-11-12"
     },
     {
-      "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "title": "美联储批准 Mutual Federal 相关控股架构申请",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
-      "body": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "body": "11 月 9 日公告批准 Mutual Federal Bancorp 与 MFB Bancorp 的两项申请，允许形成新的顶层控股公司并收购 Mutual Federal Bank。公告确认监管批准，交割状态需另行核实。",
       "date": "2026-11-09",
       "published_at": "2026-11-09T21:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "body_original": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "editorial_date": "2026-11-12"
     },
     {
-      "title": "Christine Lagarde: Interview with Yomiuri Shimbun",
+      "title": "拉加德访谈谈女性领导力与制度治理",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
-      "body": "",
+      "body": "11 月 7 日发布的访谈于 11 月 4 日进行，拉加德讨论女性职业发展、少数群体处境及央行治理。相关表述属于访谈观点，发布时间与采访时间应区分。",
       "date": "2026-11-07",
       "published_at": "2026-11-07T15:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Christine Lagarde: Interview with Yomiuri Shimbun",
+      "body_original": "",
+      "editorial_date": "2026-11-12"
     },
     {
-      "title": "ECB publishes consolidated banking data for end-June 2026",
+      "title": "欧洲央行发布六月末银行业合并数据",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "body": "",
+      "body": "数据按集团合并口径覆盖欧盟银行体系，包含盈利、资产质量、流动性及资本等指标。11 月 6 日发布的数据对应六月末状态，比较时需注意报告样本与会计口径。",
       "date": "2026-11-06",
       "published_at": "2026-11-06T10:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "ECB publishes consolidated banking data for end-June 2026",
+      "body_original": "",
+      "editorial_date": "2026-11-12"
     },
     {
-      "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "title": "美联储公布终止一项既有监管协议",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
-      "body": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "body": "11 月 5 日公告称，涉及 Allegiant United Holdings、Nano Financial Holdings 和 Nano Banc 的 2021 年书面协议已于 10 月 21 日终止。公告日期与终止生效日期不同。",
       "date": "2026-11-05",
       "published_at": "2026-11-05T16:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "body_original": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "editorial_date": "2026-11-12"
     },
     {
-      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
+      "title": "Schnabel 回顾不确定环境下的货币政策经验",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-      "body": "",
+      "body": "讲话围绕通胀冲击、政策工具调整及全球碎片化展开个人反思，强调应对变化的灵活性。观点需与欧洲央行正式利率决议区分。",
       "date": "2026-11-05",
       "published_at": "2026-11-05T09:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
+      "body_original": "",
+      "editorial_date": "2026-11-12"
     },
     {
-      "title": "Piero Cipollone: Shaping the future of money",
+      "title": "Cipollone 讨论数字时代的公共货币与支付基础设施",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
-      "body": "",
+      "body": "讲话探讨数字支付、代币化和跨境支付变化，强调公共货币的可信基础及基础设施韧性。属于政策方向讨论，具体项目实施仍需后续安排。",
       "date": "2026-11-05",
       "published_at": "2026-11-05T08:30:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Piero Cipollone: Shaping the future of money",
+      "body_original": "",
+      "editorial_date": "2026-11-12"
     }
   ],
   "summary": {
@@ -289,5 +316,11 @@
       "近七日 9 条机构公告",
       "未核验栏目显示暂无更新"
     ]
+  },
+  "editorial": {
+    "date": "2026-11-12",
+    "items_applied": 9,
+    "editor": "Codex",
+    "mode": "source_grounded_chinese"
   }
 }
