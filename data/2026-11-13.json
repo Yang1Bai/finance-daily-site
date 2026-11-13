@@ -1,7 +1,7 @@
 {
   "date": "2026年11月13日",
   "content_mode": "public",
-  "fetched_at": "2026-11-13T02:29:08.550960+00:00",
+  "fetched_at": "2026-11-13T19:05:07.897032+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -13,7 +13,7 @@
       "source": "SEC",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "status": "ok",
-      "items": 1
+      "items": 2
     },
     {
       "source": "ECB",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,592.40",
-      "change": "-26.98",
-      "change_pct": "-0.35%",
+      "value": "7,554.92",
+      "change": "-37.48",
+      "change_pct": "-0.49%",
       "direction": "down",
-      "as_of": "2026-11-12T21:58:23+00:00",
+      "as_of": "2026-11-13T19:05:06+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "25,366.09",
-      "change": "-100.10",
-      "change_pct": "-0.39%",
+      "value": "25,133.78",
+      "change": "-232.31",
+      "change_pct": "-0.92%",
       "direction": "down",
-      "as_of": "2026-11-12T22:15:59+00:00",
+      "as_of": "2026-11-13T19:05:04+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,297.09",
-      "change": "-189.40",
-      "change_pct": "-0.36%",
-      "direction": "down",
-      "as_of": "2026-11-12T21:58:18+00:00",
+      "value": "52,301.03",
+      "change": "+3.94",
+      "change_pct": "+0.01%",
+      "direction": "up",
+      "as_of": "2026-11-13T19:05:06+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,662.64",
-      "change": "+6.81",
-      "change_pct": "+0.19%",
-      "direction": "up",
-      "as_of": "2026-11-13T02:14:00+00:00",
+      "value": "3,634.35",
+      "change": "-46.29",
+      "change_pct": "-1.26%",
+      "direction": "down",
+      "as_of": "2026-11-13T07:00:29+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "23,908.17",
-      "change": "-100.38",
-      "change_pct": "-0.42%",
+      "value": "23,637.60",
+      "change": "-678.30",
+      "change_pct": "-2.79%",
       "direction": "down",
-      "as_of": "2026-11-13T02:14:06+00:00",
+      "as_of": "2026-11-13T08:08:40+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "61,798.65",
-      "change": "+979.29",
-      "change_pct": "+1.61%",
+      "value": "61,142.35",
+      "change": "+322.99",
+      "change_pct": "+0.53%",
       "direction": "up",
-      "as_of": "2026-11-13T02:14:00+00:00",
+      "as_of": "2026-11-13T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "26,771.88",
-      "change": "+109.11",
-      "change_pct": "+0.41%",
-      "direction": "up",
-      "as_of": "2026-11-12T17:00:00+00:00",
+      "value": "26,749.95",
+      "change": "-21.93",
+      "change_pct": "-0.08%",
+      "direction": "down",
+      "as_of": "2026-11-13T17:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "3,911.50",
-      "change": "+26.20",
-      "change_pct": "+0.67%",
-      "direction": "up",
-      "as_of": "2026-11-13T02:19:03+00:00",
+      "value": "3,884.20",
+      "change": "-1.10",
+      "change_pct": "-0.03%",
+      "direction": "down",
+      "as_of": "2026-11-13T18:55:06+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "88.31",
-      "change": "-0.43",
-      "change_pct": "-0.48%",
+      "value": "88.71",
+      "change": "-0.03",
+      "change_pct": "-0.03%",
       "direction": "down",
-      "as_of": "2026-11-13T02:18:49+00:00",
+      "as_of": "2026-11-13T18:55:06+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "70,508.55",
-      "change": "-863.22",
-      "change_pct": "-1.21%",
+      "value": "68,875.59",
+      "change": "-2496.18",
+      "change_pct": "-3.50%",
       "direction": "down",
-      "as_of": "2026-11-13T02:29:04+00:00",
+      "as_of": "2026-11-13T19:05:02+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "103.15",
-      "change": "-0.02",
-      "change_pct": "-0.02%",
-      "direction": "down",
-      "as_of": "2026-11-13T02:19:06+00:00",
+      "value": "103.37",
+      "change": "+0.20",
+      "change_pct": "+0.19%",
+      "direction": "up",
+      "as_of": "2026-11-13T18:55:06+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,41 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6700",
-      "change": "-0.00",
-      "change_pct": "-0.04%",
-      "direction": "down",
-      "as_of": "2026-11-13T02:29:07+00:00",
+      "value": "6.6730",
+      "change": "+0.00",
+      "change_pct": "+0.01%",
+      "direction": "up",
+      "as_of": "2026-11-13T19:05:06+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "SEC Proposes Executive and Director Compensation Disclosure Reforms",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-114-sec-proposes-executive-director-compensation-disclosure-reforms",
+      "body": "The Securities and Exchange Commission today proposed rule amendments to make its executive and director compensation disclosure requirements more principles-based and materiality-driven, providing investors with clearer, more concise, and less complex…",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T11:57:00-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Isabel Schnabel: Made in Europe",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
+      "body": "",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T08:20:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
@@ -265,18 +289,6 @@
         "ECB"
       ],
       "importance": "normal"
-    },
-    {
-      "title": "ECB publishes consolidated banking data for end-June 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "body": "",
-      "date": "2026-11-06",
-      "published_at": "2026-11-06T10:00:00+01:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal"
     }
   ],
   "summary": {
@@ -286,7 +298,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 9 条机构公告",
+      "近七日 10 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   }
