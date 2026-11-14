@@ -1,13 +1,13 @@
 {
-  "date": "2026年11月13日",
+  "date": "2026年11月14日",
   "content_mode": "public",
-  "fetched_at": "2026-11-13T19:05:07.897032+00:00",
+  "fetched_at": "2026-11-14T02:07:00.782279+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
-      "items": 4
+      "items": 5
     },
     {
       "source": "SEC",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,554.92",
-      "change": "-37.48",
-      "change_pct": "-0.49%",
+      "value": "7,561.67",
+      "change": "-30.73",
+      "change_pct": "-0.40%",
       "direction": "down",
-      "as_of": "2026-11-13T19:05:06+00:00",
+      "as_of": "2026-11-13T21:43:19+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "25,133.78",
-      "change": "-232.31",
-      "change_pct": "-0.92%",
+      "value": "25,136.27",
+      "change": "-229.82",
+      "change_pct": "-0.91%",
       "direction": "down",
-      "as_of": "2026-11-13T19:05:04+00:00",
+      "as_of": "2026-11-13T22:15:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,301.03",
-      "change": "+3.94",
-      "change_pct": "+0.01%",
+      "value": "52,347.55",
+      "change": "+50.46",
+      "change_pct": "+0.10%",
       "direction": "up",
-      "as_of": "2026-11-13T19:05:06+00:00",
+      "as_of": "2026-11-13T21:43:26+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -64,8 +64,8 @@
       "name": "上证指数",
       "symbol": "000001.SS",
       "value": "3,634.35",
-      "change": "-46.29",
-      "change_pct": "-1.26%",
+      "change": "-21.48",
+      "change_pct": "-0.59%",
       "direction": "down",
       "as_of": "2026-11-13T07:00:29+00:00",
       "currency": "CNY",
@@ -76,8 +76,8 @@
       "name": "恒生指数",
       "symbol": "^HSI",
       "value": "23,637.60",
-      "change": "-678.30",
-      "change_pct": "-2.79%",
+      "change": "-370.95",
+      "change_pct": "-1.55%",
       "direction": "down",
       "as_of": "2026-11-13T08:08:40+00:00",
       "currency": "HKD",
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "3,884.20",
-      "change": "-1.10",
-      "change_pct": "-0.03%",
-      "direction": "down",
-      "as_of": "2026-11-13T18:55:06+00:00",
+      "value": "3,887.60",
+      "change": "+2.30",
+      "change_pct": "+0.06%",
+      "direction": "up",
+      "as_of": "2026-11-13T21:59:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "88.71",
-      "change": "-0.03",
-      "change_pct": "-0.03%",
-      "direction": "down",
-      "as_of": "2026-11-13T18:55:06+00:00",
+      "value": "88.92",
+      "change": "+0.18",
+      "change_pct": "+0.20%",
+      "direction": "up",
+      "as_of": "2026-11-13T22:00:00+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "68,875.59",
-      "change": "-2496.18",
-      "change_pct": "-3.50%",
+      "value": "68,204.59",
+      "change": "-33.62",
+      "change_pct": "-0.05%",
       "direction": "down",
-      "as_of": "2026-11-13T19:05:02+00:00",
+      "as_of": "2026-11-14T02:06:57+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "103.37",
-      "change": "+0.20",
-      "change_pct": "+0.19%",
+      "value": "103.41",
+      "change": "+0.24",
+      "change_pct": "+0.23%",
       "direction": "up",
-      "as_of": "2026-11-13T18:55:06+00:00",
+      "as_of": "2026-11-13T21:59:59+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,29 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6730",
+      "value": "6.6738",
       "change": "+0.00",
-      "change_pct": "+0.01%",
+      "change_pct": "+0.02%",
       "direction": "up",
-      "as_of": "2026-11-13T19:05:06+00:00",
+      "as_of": "2026-11-13T21:59:42+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Agencies extend comment period for proposed third-party risk management guidance",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
+      "body": "Agencies extend comment period for proposed third-party risk management guidance",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T21:15:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "SEC Proposes Executive and Director Compensation Disclosure Reforms",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-114-sec-proposes-executive-director-compensation-disclosure-reforms",
@@ -298,7 +310,7 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 10 条机构公告",
+      "近七日 11 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   }
