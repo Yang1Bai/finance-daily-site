@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T00:57:24.057436+00:00",
+  "updated": "2026-11-14T01:38:58.718324+00:00",
   "source": "Yahoo Finance",
   "quotes": [
     {
@@ -113,11 +113,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "68,206.02",
-      "change": "-32.19",
-      "change_pct": "-0.05%",
+      "value": "68,235.88",
+      "change": "-2.33",
+      "change_pct": "-0.00%",
       "direction": "down",
-      "as_of": "2026-11-14T00:57:20+00:00",
+      "as_of": "2026-11-14T01:38:53+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
