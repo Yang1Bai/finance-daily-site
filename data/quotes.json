@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T08:22:13.409586+00:00",
+  "updated": "2026-11-15T08:39:49.814581+00:00",
   "source": "Yahoo Finance",
   "quotes": [
     {
@@ -9,7 +9,7 @@
       "change": "-30.73",
       "change_pct": "-0.40%",
       "direction": "down",
-      "as_of": "2026-11-13T21:00:00+00:00",
+      "as_of": "2026-11-13T21:43:19+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -18,7 +18,7 @@
       "name": "NASDAQ",
       "symbol": "^IXIC",
       "value": "25,136.27",
-      "change": "-229.82",
+      "change": "-229.83",
       "change_pct": "-0.91%",
       "direction": "down",
       "as_of": "2026-11-13T22:15:59+00:00",
@@ -29,11 +29,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,347.60",
-      "change": "+50.50",
+      "value": "52,347.55",
+      "change": "+50.45",
       "change_pct": "+0.10%",
       "direction": "up",
-      "as_of": "2026-11-13T21:00:00+00:00",
+      "as_of": "2026-11-13T21:43:26+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -113,11 +113,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "67,175.02",
-      "change": "-1063.19",
-      "change_pct": "-1.56%",
-      "direction": "down",
-      "as_of": "2026-11-14T08:22:09+00:00",
+      "value": "64,593.78",
+      "change": "+474.00",
+      "change_pct": "+0.74%",
+      "direction": "up",
+      "as_of": "2026-11-15T08:39:45+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
