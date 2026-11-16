@@ -1,13 +1,13 @@
 {
   "date": "2026年11月16日",
   "content_mode": "public",
-  "fetched_at": "2026-11-16T14:38:23.502984+00:00",
+  "fetched_at": "2026-11-16T21:31:34.068937+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
-      "items": 5
+      "items": 4
     },
     {
       "source": "SEC",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,506.51",
-      "change": "-55.16",
-      "change_pct": "-0.73%",
+      "value": "7,416.59",
+      "change": "-145.08",
+      "change_pct": "-1.92%",
       "direction": "down",
-      "as_of": "2026-11-16T14:38:23+00:00",
+      "as_of": "2026-11-16T21:20:01+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "24,826.35",
-      "change": "-309.92",
-      "change_pct": "-1.23%",
+      "value": "24,509.76",
+      "change": "-626.51",
+      "change_pct": "-2.49%",
       "direction": "down",
-      "as_of": "2026-11-16T14:38:23+00:00",
+      "as_of": "2026-11-16T21:31:31+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "52,264.38",
-      "change": "-83.17",
-      "change_pct": "-0.16%",
+      "value": "51,608.17",
+      "change": "-739.38",
+      "change_pct": "-1.41%",
       "direction": "down",
-      "as_of": "2026-11-16T14:38:24+00:00",
+      "as_of": "2026-11-16T21:20:01+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "26,722.57",
-      "change": "-27.38",
-      "change_pct": "-0.10%",
+      "value": "26,598.64",
+      "change": "-151.31",
+      "change_pct": "-0.57%",
       "direction": "down",
-      "as_of": "2026-11-16T14:23:24+00:00",
+      "as_of": "2026-11-16T17:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "3,867.90",
-      "change": "-18.40",
-      "change_pct": "-0.47%",
+      "value": "3,854.70",
+      "change": "-31.60",
+      "change_pct": "-0.81%",
       "direction": "down",
-      "as_of": "2026-11-16T14:28:22+00:00",
+      "as_of": "2026-11-16T21:21:27+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "87.11",
-      "change": "-1.45",
-      "change_pct": "-1.64%",
+      "value": "85.38",
+      "change": "-3.18",
+      "change_pct": "-3.59%",
       "direction": "down",
-      "as_of": "2026-11-16T14:28:22+00:00",
+      "as_of": "2026-11-16T21:21:30+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "65,354.07",
-      "change": "+39.52",
-      "change_pct": "+0.06%",
-      "direction": "up",
-      "as_of": "2026-11-16T14:38:23+00:00",
+      "value": "65,179.90",
+      "change": "-134.65",
+      "change_pct": "-0.21%",
+      "direction": "down",
+      "as_of": "2026-11-16T21:31:30+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "103.54",
-      "change": "+0.13",
-      "change_pct": "+0.12%",
+      "value": "103.61",
+      "change": "+0.19",
+      "change_pct": "+0.19%",
       "direction": "up",
-      "as_of": "2026-11-16T14:28:24+00:00",
+      "as_of": "2026-11-16T21:21:32+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,11 +159,11 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6644",
+      "value": "6.6646",
       "change": "-0.01",
       "change_pct": "-0.14%",
       "direction": "down",
-      "as_of": "2026-11-16T14:38:23+00:00",
+      "as_of": "2026-11-16T21:31:34+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
@@ -334,21 +334,6 @@
       "title_original": "SEC Announces Enforcement Annual Results for Fiscal Year 2026",
       "body_original": "The Securities and Exchange Commission today provided its enforcement results for the past fiscal year which ended September 30. Throughout the fiscal year, the SEC’s Division of Enforcement remained focused on its fundamental responsibility: protecting…",
       "editorial_date": "2026-11-16"
-    },
-    {
-      "title": "美联储批准 Mutual Federal 相关两项申请",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
-      "body": "公告批准与 Mutual Federal Bancorp 和 MFB Bancorp 有关的两项申请，涉及设立新的顶层控股公司及收购 Mutual Federal Bank。该审批属于具体机构安排，不代表对市场整体的判断。",
-      "date": "2026-11-09",
-      "published_at": "2026-11-09T21:00:00+00:00",
-      "source": "Federal Reserve",
-      "tags": [
-        "Federal Reserve"
-      ],
-      "importance": "normal",
-      "title_original": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
-      "body_original": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
-      "editorial_date": "2026-11-16"
     }
   ],
   "summary": {
@@ -358,13 +343,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 12 条机构公告",
+      "近七日 11 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-11-16",
-    "items_applied": 12,
+    "items_applied": 11,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
