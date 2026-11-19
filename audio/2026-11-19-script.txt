@@ -5,7 +5,7 @@ DOW，50,198.17，变动百分之-1.11。
 上证指数，3,561.34，变动百分之-0.74。
 恒生指数，22,901.61，变动百分之-1.69。
 日经225，59,140.87，变动百分之+0.20。
-2026-11-18，Federal Reserve：Minutes of the Federal Open Market Committee, October 27-28, 2026。
-2026-11-18，ECB：Boris Vujčić: Financial Stability Review - November 2026。
-2026-11-18，ECB：Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook。
+2026-11-18，Federal Reserve：美联储发布 10 月 27 至 28 日 FOMC 会议纪要。
+2026-11-18，ECB：武伊契奇：2026 年 11 月金融稳定评估。
+2026-11-18，ECB：欧洲央行关注 AI 估值、财政失衡与地缘经济风险。
 原文链接和具体报价时间见网站。以上不构成投资建议。
