@@ -1,13 +1,13 @@
 {
   "date": "2026年11月20日",
   "content_mode": "public",
-  "fetched_at": "2026-11-20T02:54:20.897918+00:00",
+  "fetched_at": "2026-11-20T19:31:08.351821+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
-      "items": 3
+      "items": 4
     },
     {
       "source": "SEC",
@@ -27,11 +27,11 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": "7,175.83",
-      "change": "-147.80",
-      "change_pct": "-2.02%",
+      "value": "6,958.72",
+      "change": "-217.11",
+      "change_pct": "-3.03%",
       "direction": "down",
-      "as_of": "2026-11-19T21:59:18+00:00",
+      "as_of": "2026-11-20T19:31:07+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -39,11 +39,11 @@
     {
       "name": "NASDAQ",
       "symbol": "^IXIC",
-      "value": "23,879.20",
-      "change": "-550.68",
-      "change_pct": "-2.25%",
+      "value": "22,813.69",
+      "change": "-1065.51",
+      "change_pct": "-4.46%",
       "direction": "down",
-      "as_of": "2026-11-19T22:15:59+00:00",
+      "as_of": "2026-11-20T19:31:04+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -51,11 +51,11 @@
     {
       "name": "DOW",
       "symbol": "^DJI",
-      "value": "49,097.06",
-      "change": "-1101.11",
-      "change_pct": "-2.19%",
+      "value": "48,420.38",
+      "change": "-676.68",
+      "change_pct": "-1.38%",
       "direction": "down",
-      "as_of": "2026-11-19T21:59:13+00:00",
+      "as_of": "2026-11-20T19:31:06+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EDJI/"
@@ -63,11 +63,11 @@
     {
       "name": "上证指数",
       "symbol": "000001.SS",
-      "value": "3,510.09",
-      "change": "-67.53",
-      "change_pct": "-1.89%",
+      "value": "3,533.79",
+      "change": "-54.04",
+      "change_pct": "-1.51%",
       "direction": "down",
-      "as_of": "2026-11-20T02:39:10+00:00",
+      "as_of": "2026-11-20T07:00:29+00:00",
       "currency": "CNY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/000001.SS/"
@@ -75,11 +75,11 @@
     {
       "name": "恒生指数",
       "symbol": "^HSI",
-      "value": "22,405.90",
-      "change": "-435.72",
-      "change_pct": "-1.91%",
+      "value": "22,410.80",
+      "change": "-884.00",
+      "change_pct": "-3.79%",
       "direction": "down",
-      "as_of": "2026-11-20T02:39:18+00:00",
+      "as_of": "2026-11-20T08:08:54+00:00",
       "currency": "HKD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -87,11 +87,11 @@
     {
       "name": "日经225",
       "symbol": "^N225",
-      "value": "56,775.04",
-      "change": "-2669.17",
-      "change_pct": "-4.49%",
+      "value": "56,436.65",
+      "change": "-3007.56",
+      "change_pct": "-5.06%",
       "direction": "down",
-      "as_of": "2026-11-20T02:35:03+00:00",
+      "as_of": "2026-11-20T06:45:03+00:00",
       "currency": "JPY",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EN225/"
@@ -99,11 +99,11 @@
     {
       "name": "德国DAX",
       "symbol": "^GDAXI",
-      "value": "25,463.81",
-      "change": "-272.43",
-      "change_pct": "-1.06%",
+      "value": "24,802.78",
+      "change": "-661.03",
+      "change_pct": "-2.60%",
       "direction": "down",
-      "as_of": "2026-11-19T17:00:00+00:00",
+      "as_of": "2026-11-20T17:00:00+00:00",
       "currency": "EUR",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
@@ -111,11 +111,11 @@
     {
       "name": "黄金期货",
       "symbol": "GC=F",
-      "value": "3,552.60",
-      "change": "-132.90",
-      "change_pct": "-3.61%",
+      "value": "3,517.60",
+      "change": "-167.90",
+      "change_pct": "-4.56%",
       "direction": "down",
-      "as_of": "2026-11-20T02:44:19+00:00",
+      "as_of": "2026-11-20T19:20:58+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -123,11 +123,11 @@
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": "82.94",
-      "change": "+0.50",
-      "change_pct": "+0.61%",
+      "value": "83.16",
+      "change": "+0.72",
+      "change_pct": "+0.87%",
       "direction": "up",
-      "as_of": "2026-11-20T02:44:05+00:00",
+      "as_of": "2026-11-20T19:21:07+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CL%3DF/"
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "61,815.12",
-      "change": "-89.64",
-      "change_pct": "-0.14%",
+      "value": "58,113.60",
+      "change": "-3791.16",
+      "change_pct": "-6.12%",
       "direction": "down",
-      "as_of": "2026-11-20T02:54:16+00:00",
+      "as_of": "2026-11-20T19:31:04+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -147,11 +147,11 @@
     {
       "name": "美元指数",
       "symbol": "DX-Y.NYB",
-      "value": "103.89",
-      "change": "-0.01",
-      "change_pct": "-0.01%",
+      "value": "103.86",
+      "change": "-0.03",
+      "change_pct": "-0.03%",
       "direction": "down",
-      "as_of": "2026-11-20T02:44:19+00:00",
+      "as_of": "2026-11-20T19:21:06+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
@@ -159,17 +159,53 @@
     {
       "name": "USD/CNH",
       "symbol": "CNH=X",
-      "value": "6.6739",
-      "change": "-0.02",
-      "change_pct": "-0.25%",
+      "value": "6.6765",
+      "change": "-0.01",
+      "change_pct": "-0.21%",
       "direction": "down",
-      "as_of": "2026-11-20T02:54:19+00:00",
+      "as_of": "2026-11-20T19:31:08+00:00",
       "currency": "CNH",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/CNH%3DX/"
     }
   ],
   "news": [
+    {
+      "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+      "body": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Christine Lagarde: Acting in time",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html",
+      "body": "",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T09:30:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC Charges Indianapolis-Based Backward Hat Capital and Its Co-Founders With $560 Million Dollar Offering Fraud and Obtains Emergency Relief",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-116-sec-charges-indianapolis-based-backward-hat-capital-its-co-founders-560-million-dollar-offering",
+      "body": "The Securities and Exchange Commission today announced that it has obtained a temporary restraining order, asset freeze, expedited discovery, and other relief against Indianapolis-based Backward Hat Capital, its co-founders Phillip Williams and Devin…",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T09:28:28-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
     {
       "title": "美联储公布针对 First Security Bancorp 前雇员的执法命令",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
@@ -304,36 +340,6 @@
       "title_original": "Agencies extend comment period for proposed third-party risk management guidance",
       "body_original": "Agencies extend comment period for proposed third-party risk management guidance",
       "editorial_date": "2026-11-20"
-    },
-    {
-      "title": "美国 SEC 提议改革高管与董事薪酬披露",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-114-sec-proposes-executive-director-compensation-disclosure-reforms",
-      "body": "来源标题译文；原文访问受限，未核验正文。标题表明属于提案，不能视为已实施规则。",
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T11:57:00-05:00",
-      "source": "SEC",
-      "tags": [
-        "SEC"
-      ],
-      "importance": "normal",
-      "title_original": "SEC Proposes Executive and Director Compensation Disclosure Reforms",
-      "body_original": "The Securities and Exchange Commission today proposed rule amendments to make its executive and director compensation disclosure requirements more principles-based and materiality-driven, providing investors with clearer, more concise, and less complex…",
-      "editorial_date": "2026-11-20"
-    },
-    {
-      "title": "施纳贝尔：以欧洲单一市场扩大创新规模",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
-      "body": "欧洲央行执委施纳贝尔在演讲中主张释放单一市场潜力，使企业更容易将创新转化为增长。内容属于其政策分析与主张，不是新的利率决定。",
-      "date": "2026-11-13",
-      "published_at": "2026-11-13T08:20:00+01:00",
-      "source": "ECB",
-      "tags": [
-        "ECB"
-      ],
-      "importance": "normal",
-      "title_original": "Isabel Schnabel: Made in Europe",
-      "body_original": "",
-      "editorial_date": "2026-11-20"
     }
   ],
   "summary": {
@@ -343,13 +349,13 @@
     "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
     "key_points": [
       "已获取 12 个标的",
-      "近七日 11 条机构公告",
+      "近七日 12 条机构公告",
       "未核验栏目显示暂无更新"
     ]
   },
   "editorial": {
     "date": "2026-11-20",
-    "items_applied": 11,
+    "items_applied": 9,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
   }
