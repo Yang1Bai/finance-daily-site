@@ -5,7 +5,7 @@ DOW，48,147.33，变动百分之-1.93。
 上证指数，3,533.79，变动百分之-1.22。
 恒生指数，22,410.80，变动百分之-3.79。
 日经225，56,436.65，变动百分之-5.06。
-2026-11-20，Federal Reserve：Federal Reserve announces College Fed Challenge winners。
-2026-11-20，Federal Reserve：Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances。
-2026-11-20，SEC：SEC Issues Proposal to Restructure the Consolidated Audit Trail。
+2026-11-20，Federal Reserve：美联储公布大学生 Fed Challenge 获奖结果。
+2026-11-20，Federal Reserve：美联储发布银行准备金管理调查结果。
+2026-11-20，SEC：SEC 提议重组综合审计追踪系统。
 原文链接和具体报价时间见网站。以上不构成投资建议。
