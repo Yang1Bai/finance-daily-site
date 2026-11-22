@@ -1,0 +1,386 @@
+{
+  "date": "2026年11月22日",
+  "content_mode": "public",
+  "fetched_at": "2026-11-22T14:03:28.725541+00:00",
+  "sources": [
+    {
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "status": "ok",
+      "items": 4
+    },
+    {
+      "source": "SEC",
+      "url": "https://www.sec.gov/news/pressreleases.rss",
+      "status": "ok",
+      "items": 3
+    },
+    {
+      "source": "ECB",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "status": "ok",
+      "items": 6
+    }
+  ],
+  "missing_quotes": [],
+  "indices": [
+    {
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "value": "6,910.39",
+      "change": "-265.44",
+      "change_pct": "-3.70%",
+      "direction": "down",
+      "as_of": "2026-11-20T21:35:54+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "name": "NASDAQ",
+      "symbol": "^IXIC",
+      "value": "22,617.73",
+      "change": "-1261.47",
+      "change_pct": "-5.28%",
+      "direction": "down",
+      "as_of": "2026-11-20T22:15:59+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+    },
+    {
+      "name": "DOW",
+      "symbol": "^DJI",
+      "value": "48,147.33",
+      "change": "-949.77",
+      "change_pct": "-1.93%",
+      "direction": "down",
+      "as_of": "2026-11-20T21:35:59+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EDJI/"
+    },
+    {
+      "name": "上证指数",
+      "symbol": "000001.SS",
+      "value": "3,533.79",
+      "change": "-43.83",
+      "change_pct": "-1.23%",
+      "direction": "down",
+      "as_of": "2026-11-20T07:00:29+00:00",
+      "currency": "CNY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/000001.SS/"
+    },
+    {
+      "name": "恒生指数",
+      "symbol": "^HSI",
+      "value": "22,410.80",
+      "change": "-884.00",
+      "change_pct": "-3.79%",
+      "direction": "down",
+      "as_of": "2026-11-20T08:08:54+00:00",
+      "currency": "HKD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EHSI/"
+    },
+    {
+      "name": "日经225",
+      "symbol": "^N225",
+      "value": "56,436.65",
+      "change": "-3007.55",
+      "change_pct": "-5.06%",
+      "direction": "down",
+      "as_of": "2026-11-20T06:45:03+00:00",
+      "currency": "JPY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EN225/"
+    },
+    {
+      "name": "德国DAX",
+      "symbol": "^GDAXI",
+      "value": "24,802.78",
+      "change": "-661.02",
+      "change_pct": "-2.60%",
+      "direction": "down",
+      "as_of": "2026-11-20T17:00:00+00:00",
+      "currency": "EUR",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+    },
+    {
+      "name": "黄金期货",
+      "symbol": "GC=F",
+      "value": "3,515.40",
+      "change": "-170.10",
+      "change_pct": "-4.62%",
+      "direction": "down",
+      "as_of": "2026-11-20T21:59:57+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/GC%3DF/"
+    },
+    {
+      "name": "原油 WTI",
+      "symbol": "CL=F",
+      "value": "83.41",
+      "change": "+0.97",
+      "change_pct": "+1.18%",
+      "direction": "up",
+      "as_of": "2026-11-20T21:59:59+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CL%3DF/"
+    },
+    {
+      "name": "BTC/USD",
+      "symbol": "BTC-USD",
+      "value": "60,654.27",
+      "change": "+561.26",
+      "change_pct": "+0.93%",
+      "direction": "up",
+      "as_of": "2026-11-22T14:03:26+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/BTC-USD/"
+    },
+    {
+      "name": "美元指数",
+      "symbol": "DX-Y.NYB",
+      "value": "103.84",
+      "change": "+0.03",
+      "change_pct": "+0.03%",
+      "direction": "up",
+      "as_of": "2026-11-20T21:59:59+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+    },
+    {
+      "name": "USD/CNH",
+      "symbol": "CNH=X",
+      "value": "6.6736",
+      "change": "-0.02",
+      "change_pct": "-0.25%",
+      "direction": "down",
+      "as_of": "2026-11-20T21:59:29+00:00",
+      "currency": "CNH",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CNH%3DX/"
+    }
+  ],
+  "news": [
+    {
+      "title": "美联储公布大学生 Fed Challenge 获奖结果",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm",
+      "body": "公告称 UCLA 赢得本届全国大学生 Fed Challenge。该竞赛让学生分析经济金融条件并模拟提出货币政策建议，不属于美联储实际政策决定。",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T21:15:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal",
+      "title_original": "Federal Reserve announces College Fed Challenge winners",
+      "body_original": "Federal Reserve announces College Fed Challenge winners",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "美联储发布银行准备金管理调查结果",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+      "body": "公告介绍对银行高级财务主管的调查，涵盖准备金管理、资产负债表预期及货币市场活动。本文核验的是发布公告，未读取调查附件，不补写具体答卷分布或推断政策方向。",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal",
+      "title_original": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "body_original": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "SEC 提议重组综合审计追踪系统",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-117-sec-issues-proposal-restructure-consolidated-audit-trail",
+      "body": "来源标题译文；原文访问受限，未核验正文。提案不等同于规则已经实施。",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T13:03:24-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal",
+      "title_original": "SEC Issues Proposal to Restructure the Consolidated Audit Trail",
+      "body_original": "The Securities and Exchange Commission today issued a proposal to address the inefficiencies in the current governance and funding model of the Consolidated Audit Trail (CAT). The Commission is proposing to rescind Rule 613 of Regulation NMS, which…",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "拉加德：在挑战变得紧迫前采取行动",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html",
+      "body": "演讲讨论欧洲经济自主性、单一市场及对外依赖，强调及早行动的政策难题。内容属于政策分析与主张，不是新的利率决定或市场走势承诺。",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T09:30:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal",
+      "title_original": "Christine Lagarde: Acting in time",
+      "body_original": "",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "SEC 指控 Backward Hat Capital 及联合创始人发行欺诈",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-116-sec-charges-indianapolis-based-backward-hat-capital-its-co-founders-560-million-dollar-offering",
+      "body": "来源标题译文；原文访问受限，未核验正文。监管指控不等同于法院已作最终裁定。",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T09:28:28-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal",
+      "title_original": "SEC Charges Indianapolis-Based Backward Hat Capital and Its Co-Founders With $560 Million Dollar Offering Fraud and Obtains Emergency Relief",
+      "body_original": "The Securities and Exchange Commission today announced that it has obtained a temporary restraining order, asset freeze, expedited discovery, and other relief against Indianapolis-based Backward Hat Capital, its co-founders Phillip Williams and Devin…",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "美联储公布针对 First Security Bancorp 前雇员的执法命令",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
+      "body": "公告列示针对 Rush F. Harding III 的同意停止及终止令，事由涉及违反受托义务和 Regulation W。美联储已更正此前误写的命令类型；该行动针对具体个人，不扩大解释为整个银行的行为。",
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T16:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal",
+      "title_original": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "body_original": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "SEC 指称八家实体利用虚假加密资产平台盗取投资者资金",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-115-sec-eight-entities-used-fake-crypto-asset-trading-platforms-steal-more-37-million-us-investors",
+      "body": "来源标题译文；原文访问受限，未核验正文。标题涉及监管指控，不能视为法院已裁定。",
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T09:39:02-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal",
+      "title_original": "SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
+      "body_original": "The Securities and Exchange Commission today charged eight Colorado-based entities, likely operated by individuals located overseas, for defrauding U.S. investors out of more than $37 million. The defendants allegedly lured investors to believe they were…",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "美联储发布 10 月 27 至 28 日 FOMC 会议纪要",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+      "body": "公告确认发布该次会议纪要，并说明其中经济金融情况描述依据会议当时可获得的信息。本文仅核验发布公告，不据此补写纪要中的政策讨论或预测利率路径。",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T19:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal",
+      "title_original": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "body_original": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "武伊契奇：2026 年 11 月金融稳定评估",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261118~86f1e8147e.en.pdf",
+      "body": "来源标题译文；原始文件无法读取，未核验正文。",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T10:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal",
+      "title_original": "Boris Vujčić: Financial Stability Review - November 2026",
+      "body_original": "",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "欧洲央行关注 AI 估值、财政失衡与地缘经济风险",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+      "body": "欧洲央行金融稳定评估公告认为相关风险继续影响欧元区前景，并指出银行缓冲与部分非银行机构脆弱性存在差异。这是风险评估，不代表市场调整必然发生。",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T10:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal",
+      "title_original": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+      "body_original": "",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "莱恩：欧洲央行货币政策沟通的实践与研究",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
+      "body": "来源标题译文；原始 PDF 无法读取，未核验正文。",
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T19:30:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal",
+      "title_original": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
+      "body_original": "",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "埃尔德森：让银行监管体现规模与风险差异",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261116_1~11dd7f62af.en.html",
+      "body": "欧洲央行执委埃尔德森讨论小型及区域银行对实体经济的作用，主张监管要求与机构规模、复杂性和风险相称，同时维持保护存款人及金融稳定的标准。文章属于政策观点，不是新的监管规则。",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T14:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal",
+      "title_original": "Frank Elderson: Smart supervision for small banks",
+      "body_original": "",
+      "editorial_date": "2026-11-22"
+    },
+    {
+      "title": "欧洲央行副行长讨论市场融资与系统性风险防护",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261116~db374b56ab.en.html",
+      "body": "武伊契奇主张扩大欧洲市场化融资，同时强化覆盖非银行机构的系统性防护。他提及人工智能相关融资、风险敞口集中和网络攻击等脆弱性；演讲不意味着这些风险必然演变成危机。",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T09:30:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal",
+      "title_original": "Boris Vujčić: Risks and resilience in the euro area financial system",
+      "body_original": "",
+      "editorial_date": "2026-11-22"
+    }
+  ],
+  "summary": {
+    "headline": "公开来源行情与机构公告",
+    "sentiment": "neutral",
+    "vix": "N/A",
+    "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
+    "key_points": [
+      "已获取 12 个标的",
+      "近七日 13 条机构公告",
+      "未核验栏目显示暂无更新"
+    ]
+  },
+  "editorial": {
+    "date": "2026-11-22",
+    "items_applied": 13,
+    "editor": "Codex",
+    "mode": "source_grounded_chinese"
+  }
+}

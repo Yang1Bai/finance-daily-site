@@ -1,7 +1,7 @@
 {
-  "date": "2026年11月21日",
+  "date": "2026年11月22日",
   "content_mode": "public",
-  "fetched_at": "2026-11-21T18:35:56.358979+00:00",
+  "fetched_at": "2026-11-22T14:03:28.725541+00:00",
   "sources": [
     {
       "source": "Federal Reserve",
@@ -135,11 +135,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "60,043.42",
-      "change": "+1240.82",
-      "change_pct": "+2.11%",
+      "value": "60,654.27",
+      "change": "+561.26",
+      "change_pct": "+0.93%",
       "direction": "up",
-      "as_of": "2026-11-21T18:35:50+00:00",
+      "as_of": "2026-11-22T14:03:26+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
@@ -183,7 +183,7 @@
       "importance": "normal",
       "title_original": "Federal Reserve announces College Fed Challenge winners",
       "body_original": "Federal Reserve announces College Fed Challenge winners",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "美联储发布银行准备金管理调查结果",
@@ -198,7 +198,7 @@
       "importance": "normal",
       "title_original": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
       "body_original": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "SEC 提议重组综合审计追踪系统",
@@ -213,7 +213,7 @@
       "importance": "normal",
       "title_original": "SEC Issues Proposal to Restructure the Consolidated Audit Trail",
       "body_original": "The Securities and Exchange Commission today issued a proposal to address the inefficiencies in the current governance and funding model of the Consolidated Audit Trail (CAT). The Commission is proposing to rescind Rule 613 of Regulation NMS, which…",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "拉加德：在挑战变得紧迫前采取行动",
@@ -228,7 +228,7 @@
       "importance": "normal",
       "title_original": "Christine Lagarde: Acting in time",
       "body_original": "",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "SEC 指控 Backward Hat Capital 及联合创始人发行欺诈",
@@ -243,7 +243,7 @@
       "importance": "normal",
       "title_original": "SEC Charges Indianapolis-Based Backward Hat Capital and Its Co-Founders With $560 Million Dollar Offering Fraud and Obtains Emergency Relief",
       "body_original": "The Securities and Exchange Commission today announced that it has obtained a temporary restraining order, asset freeze, expedited discovery, and other relief against Indianapolis-based Backward Hat Capital, its co-founders Phillip Williams and Devin…",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "美联储公布针对 First Security Bancorp 前雇员的执法命令",
@@ -258,7 +258,7 @@
       "importance": "normal",
       "title_original": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
       "body_original": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "SEC 指称八家实体利用虚假加密资产平台盗取投资者资金",
@@ -273,7 +273,7 @@
       "importance": "normal",
       "title_original": "SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
       "body_original": "The Securities and Exchange Commission today charged eight Colorado-based entities, likely operated by individuals located overseas, for defrauding U.S. investors out of more than $37 million. The defendants allegedly lured investors to believe they were…",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "美联储发布 10 月 27 至 28 日 FOMC 会议纪要",
@@ -288,7 +288,7 @@
       "importance": "normal",
       "title_original": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
       "body_original": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "武伊契奇：2026 年 11 月金融稳定评估",
@@ -303,7 +303,7 @@
       "importance": "normal",
       "title_original": "Boris Vujčić: Financial Stability Review - November 2026",
       "body_original": "",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "欧洲央行关注 AI 估值、财政失衡与地缘经济风险",
@@ -318,7 +318,7 @@
       "importance": "normal",
       "title_original": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
       "body_original": "",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "莱恩：欧洲央行货币政策沟通的实践与研究",
@@ -333,7 +333,7 @@
       "importance": "normal",
       "title_original": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
       "body_original": "",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "埃尔德森：让银行监管体现规模与风险差异",
@@ -348,7 +348,7 @@
       "importance": "normal",
       "title_original": "Frank Elderson: Smart supervision for small banks",
       "body_original": "",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     },
     {
       "title": "欧洲央行副行长讨论市场融资与系统性风险防护",
@@ -363,7 +363,7 @@
       "importance": "normal",
       "title_original": "Boris Vujčić: Risks and resilience in the euro area financial system",
       "body_original": "",
-      "editorial_date": "2026-11-21"
+      "editorial_date": "2026-11-22"
     }
   ],
   "summary": {
@@ -378,7 +378,7 @@
     ]
   },
   "editorial": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "items_applied": 13,
     "editor": "Codex",
     "mode": "source_grounded_chinese"
