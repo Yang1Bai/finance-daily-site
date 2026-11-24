@@ -6508,12 +6508,6 @@
           "buy_date": "2026-10-22"
         },
         {
-          "ticker": "MSFT",
-          "shares": 4,
-          "avg_cost": 555.8,
-          "buy_date": "2026-11-04"
-        },
-        {
           "ticker": "JD",
           "shares": 58,
           "avg_cost": 29.11,
@@ -6528,7 +6522,7 @@
         {
           "ticker": "CASH",
           "shares": 1,
-          "avg_cost": 1268.33
+          "avg_cost": 3238.33
         }
       ],
       "history": [
@@ -13416,6 +13410,49 @@
             }
           },
           "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-11-23",
+          "portfolio_value": 8703.09,
+          "baseline_value": 9772.29,
+          "cash": 3238.33,
+          "positions": {
+            "AAPL": {
+              "shares": 1,
+              "price": 349.08,
+              "value": 349.08
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 385.46,
+              "value": 1156.38
+            },
+            "XLF": {
+              "shares": 31,
+              "price": 55.65,
+              "value": 1725.15
+            },
+            "JD": {
+              "shares": 58,
+              "price": 25.31,
+              "value": 1467.98
+            },
+            "AMZN": {
+              "shares": 3,
+              "price": 255.39,
+              "value": 766.17
+            }
+          },
+          "trades": [
+            {
+              "action": "SELL",
+              "ticker": "MSFT",
+              "shares": 4,
+              "price": 492.5,
+              "reason": "技术弱势(弱势)"
+            }
+          ],
           "note": "规则策略：无强势标的，持币观望"
         }
       ],
