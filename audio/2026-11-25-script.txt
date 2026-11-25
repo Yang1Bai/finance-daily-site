@@ -1,11 +1,11 @@
 金融日报，2026年11月25日。以下为公开来源数据播报，报价可能延迟。
-S&P 500，7,201.09，变动百分之-0.50。
-NASDAQ，23,733.53，变动百分之-1.48。
-DOW，50,018.70，变动百分之+0.85。
-上证指数，3,512.66，变动百分之-0.74。
-恒生指数，22,265.68，变动百分之-0.53。
-日经225，57,009.25，变动百分之-2.79。
-2026-11-24，Federal Reserve：美联储发布 10 月贴现率会议纪要。
-2026-11-24，ECB：武伊契奇：从中东欧经验讨论经济韧性。
-2026-11-23，ECB：莱恩：气候变化与货币政策。
+S&P 500，7,191.79，变动百分之-0.13。
+NASDAQ，23,597.62，变动百分之-0.57。
+DOW，50,282.33，变动百分之+0.53。
+上证指数，3,476.47，变动百分之-1.77。
+恒生指数，21,966.01，变动百分之-1.87。
+日经225，57,011.62，变动百分之-2.78。
+2026-11-25，Federal Reserve：Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions。
+2026-11-25，Federal Reserve：Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans。
+2026-11-25，ECB：ECB and Sveriges Riksbank conclude agreement for Sweden to join T2。
 原文链接和具体报价时间见网站。以上不构成投资建议。
