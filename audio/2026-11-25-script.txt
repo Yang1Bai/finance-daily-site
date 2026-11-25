@@ -5,7 +5,7 @@ DOW，50,018.70，变动百分之+0.85。
 上证指数，3,512.66，变动百分之-0.74。
 恒生指数，22,265.68，变动百分之-0.53。
 日经225，57,009.25，变动百分之-2.79。
-2026-11-24，Federal Reserve：Minutes of the Board's discount rate meetings on October 19 and October 28, 2026。
-2026-11-24，ECB：Boris Vujčić: Resilience in an age of shocks: lessons from central and eastern Europe。
-2026-11-23，ECB：Philip R. Lane: Climate change and monetary policy。
+2026-11-24，Federal Reserve：美联储发布 10 月贴现率会议纪要。
+2026-11-24，ECB：武伊契奇：从中东欧经验讨论经济韧性。
+2026-11-23，ECB：莱恩：气候变化与货币政策。
 原文链接和具体报价时间见网站。以上不构成投资建议。
