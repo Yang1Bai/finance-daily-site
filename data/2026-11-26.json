@@ -1,0 +1,365 @@
+{
+  "date": "2026年11月26日",
+  "content_mode": "public",
+  "fetched_at": "2026-11-26T04:01:30.312221+00:00",
+  "sources": [
+    {
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "status": "ok",
+      "items": 6
+    },
+    {
+      "source": "SEC",
+      "url": "https://www.sec.gov/news/pressreleases.rss",
+      "status": "ok",
+      "items": 4
+    },
+    {
+      "source": "ECB",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "status": "ok",
+      "items": 6
+    }
+  ],
+  "missing_quotes": [],
+  "indices": [
+    {
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "value": "7,182.78",
+      "change": "-18.31",
+      "change_pct": "-0.25%",
+      "direction": "down",
+      "as_of": "2026-11-25T21:32:06+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "name": "NASDAQ",
+      "symbol": "^IXIC",
+      "value": "23,585.80",
+      "change": "-147.73",
+      "change_pct": "-0.62%",
+      "direction": "down",
+      "as_of": "2026-11-25T22:15:59+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+    },
+    {
+      "name": "DOW",
+      "symbol": "^DJI",
+      "value": "50,182.95",
+      "change": "+164.25",
+      "change_pct": "+0.33%",
+      "direction": "up",
+      "as_of": "2026-11-25T21:32:17+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EDJI/"
+    },
+    {
+      "name": "上证指数",
+      "symbol": "000001.SS",
+      "value": "3,475.46",
+      "change": "-1.01",
+      "change_pct": "-0.03%",
+      "direction": "down",
+      "as_of": "2026-11-26T03:30:24+00:00",
+      "currency": "CNY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/000001.SS/"
+    },
+    {
+      "name": "恒生指数",
+      "symbol": "^HSI",
+      "value": "22,377.63",
+      "change": "+411.62",
+      "change_pct": "+1.87%",
+      "direction": "up",
+      "as_of": "2026-11-26T03:46:28+00:00",
+      "currency": "HKD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EHSI/"
+    },
+    {
+      "name": "日经225",
+      "symbol": "^N225",
+      "value": "57,854.01",
+      "change": "+842.39",
+      "change_pct": "+1.48%",
+      "direction": "up",
+      "as_of": "2026-11-26T03:46:25+00:00",
+      "currency": "JPY",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EN225/"
+    },
+    {
+      "name": "德国DAX",
+      "symbol": "^GDAXI",
+      "value": "24,702.13",
+      "change": "-315.68",
+      "change_pct": "-1.26%",
+      "direction": "down",
+      "as_of": "2026-11-25T17:00:00+00:00",
+      "currency": "EUR",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+    },
+    {
+      "name": "黄金期货",
+      "symbol": "GC=F",
+      "value": "3,607.70",
+      "change": "+43.10",
+      "change_pct": "+1.21%",
+      "direction": "up",
+      "as_of": "2026-11-26T03:51:21+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/GC%3DF/"
+    },
+    {
+      "name": "原油 WTI",
+      "symbol": "CL=F",
+      "value": "84.42",
+      "change": "+0.74",
+      "change_pct": "+0.88%",
+      "direction": "up",
+      "as_of": "2026-11-26T03:51:22+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CL%3DF/"
+    },
+    {
+      "name": "BTC/USD",
+      "symbol": "BTC-USD",
+      "value": "60,786.94",
+      "change": "+408.37",
+      "change_pct": "+0.68%",
+      "direction": "up",
+      "as_of": "2026-11-26T04:01:26+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/BTC-USD/"
+    },
+    {
+      "name": "美元指数",
+      "symbol": "DX-Y.NYB",
+      "value": "103.83",
+      "change": "+0.16",
+      "change_pct": "+0.16%",
+      "direction": "up",
+      "as_of": "2026-11-26T03:51:29+00:00",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+    },
+    {
+      "name": "USD/CNH",
+      "symbol": "CNH=X",
+      "value": "6.6632",
+      "change": "-0.00",
+      "change_pct": "-0.03%",
+      "direction": "down",
+      "as_of": "2026-11-26T04:01:30+00:00",
+      "currency": "CNH",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CNH%3DX/"
+    }
+  ],
+  "news": [
+    {
+      "title": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+      "body": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T20:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+      "body": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T20:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+      "body": "",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T18:30:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Card payments edge past cash in shops; euro area consumers want both",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+      "body": "",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T11:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC Investor Advisory Committee to Host Dec. 3 Virtual Meeting",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting",
+      "body": "The Securities and Exchange Commission’s Investor Advisory Committee will hold a virtual public meeting on Dec. 3, at 9:30 a.m. ET to discuss the trading of tokenized securities, bankruptcy, and accounting oversight. The meeting will be webcast…",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T09:10:24-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
+      "body": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T19:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Boris Vujčić: Resilience in an age of shocks: lessons from central and eastern Europe",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261124~17928e5456.en.html",
+      "body": "",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T12:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Philip R. Lane: Climate change and monetary policy",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
+      "body": "",
+      "date": "2026-11-23",
+      "published_at": "2026-11-23T15:30:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+      "body": "",
+      "date": "2026-11-23",
+      "published_at": "2026-11-23T11:00:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Federal Reserve announces College Fed Challenge winners",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm",
+      "body": "Federal Reserve announces College Fed Challenge winners",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T21:15:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+      "body": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC Issues Proposal to Restructure the Consolidated Audit Trail",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-117-sec-issues-proposal-restructure-consolidated-audit-trail",
+      "body": "The Securities and Exchange Commission today issued a proposal to address the inefficiencies in the current governance and funding model of the Consolidated Audit Trail (CAT). The Commission is proposing to rescind Rule 613 of Regulation NMS, which…",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T13:03:24-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Christine Lagarde: Acting in time",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html",
+      "body": "",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T09:30:00+01:00",
+      "source": "ECB",
+      "tags": [
+        "ECB"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "SEC Charges Indianapolis-Based Backward Hat Capital and Its Co-Founders With $560 Million Dollar Offering Fraud and Obtains Emergency Relief",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-116-sec-charges-indianapolis-based-backward-hat-capital-its-co-founders-560-million-dollar-offering",
+      "body": "The Securities and Exchange Commission today announced that it has obtained a temporary restraining order, asset freeze, expedited discovery, and other relief against Indianapolis-based Backward Hat Capital, its co-founders Phillip Williams and Devin…",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T09:28:28-05:00",
+      "source": "SEC",
+      "tags": [
+        "SEC"
+      ],
+      "importance": "normal"
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
+      "body": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T16:00:00+00:00",
+      "source": "Federal Reserve",
+      "tags": [
+        "Federal Reserve"
+      ],
+      "importance": "normal"
+    }
+  ],
+  "summary": {
+    "headline": "公开来源行情与机构公告",
+    "sentiment": "neutral",
+    "vix": "N/A",
+    "context": "价格来自 Yahoo Finance，可能延迟；每个标的显示实际报价时间。公告保留原文，不生成交易建议。",
+    "key_points": [
+      "已获取 12 个标的",
+      "近七日 16 条机构公告",
+      "未核验栏目显示暂无更新"
+    ]
+  }
+}
