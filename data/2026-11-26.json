@@ -171,184 +171,229 @@
   ],
   "news": [
     {
-      "title": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "title": "监管机构公布 2027 年消费信贷与租赁规则金额门槛",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
-      "body": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "body": "公告介绍依据 CPI-W 年度调整消费者信贷与租赁的适用门槛，并说明房地产担保贷款及私人教育贷款等例外。这里仅概述公告，不构成对具体交易适用规则的判断。",
       "date": "2026-11-25",
       "published_at": "2026-11-25T20:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "body_original": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+      "title": "监管机构调整高价按揭小额贷款估价豁免门槛",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
-      "body": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+      "body": "公告说明 2027 年相关小额贷款豁免门槛将于 1 月 1 日生效，按 CPI-W 调整。是否符合豁免仍取决于具体贷款和规则条件，不能理解为所有按揭无需估价。",
       "date": "2026-11-25",
       "published_at": "2026-11-25T20:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+      "body_original": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
+      "title": "瑞典与欧洲央行签署加入 T2 的协议",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
-      "body": "",
+      "body": "协议支持以瑞典克朗在共享基础设施上结算大额支付，目标迁移时间为 2030 年 2 月。支付仍使用瑞典克朗，这不意味着瑞典加入欧元区。",
       "date": "2026-11-25",
       "published_at": "2026-11-25T18:30:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
+      "body_original": "",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "Card payments edge past cash in shops; euro area consumers want both",
+      "title": "欧洲央行调查：实体场所刷卡略超现金，消费者仍重视选择",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
-      "body": "",
+      "body": "SPACE 调查报告实体场所卡支付使用率首次略超现金，同时多数受访者仍看重支付方式选择。结果限定于调查范围和方法，不意味着现金已失去作用。",
       "date": "2026-11-25",
       "published_at": "2026-11-25T11:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Card payments edge past cash in shops; euro area consumers want both",
+      "body_original": "",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "SEC Investor Advisory Committee to Host Dec. 3 Virtual Meeting",
+      "title": "SEC 投资者咨询委员会拟于 12 月 3 日举行线上会议",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting",
-      "body": "The Securities and Exchange Commission’s Investor Advisory Committee will hold a virtual public meeting on Dec. 3, at 9:30 a.m. ET to discuss the trading of tokenized securities, bankruptcy, and accounting oversight. The meeting will be webcast…",
+      "body": "来源标题译文；原文访问受限，未核验正文。",
       "date": "2026-11-25",
       "published_at": "2026-11-25T09:10:24-05:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Investor Advisory Committee to Host Dec. 3 Virtual Meeting",
+      "body_original": "The Securities and Exchange Commission’s Investor Advisory Committee will hold a virtual public meeting on Dec. 3, at 9:30 a.m. ET to discuss the trading of tokenized securities, bankruptcy, and accounting oversight. The meeting will be webcast…",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "title": "美联储发布 10 月贴现率会议纪要",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
-      "body": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "body": "公告确认发布 10 月 19 日和 28 日理事会贴现率会议纪要，并强调贴现率制定流程不同于 FOMC 联邦基金目标区间决策。本文仅核验发布公告，不补写附件中的具体讨论。",
       "date": "2026-11-24",
       "published_at": "2026-11-24T19:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "body_original": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "Boris Vujčić: Resilience in an age of shocks: lessons from central and eastern Europe",
+      "title": "武伊契奇：从中东欧经验讨论经济韧性",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261124~17928e5456.en.html",
-      "body": "",
+      "body": "演讲回顾经济一体化对中东欧追赶和风险暴露的双重作用，主张开放与韧性并非对立。内容为政策分析，不是对未来经济或市场表现的保证。",
       "date": "2026-11-24",
       "published_at": "2026-11-24T12:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Boris Vujčić: Resilience in an age of shocks: lessons from central and eastern Europe",
+      "body_original": "",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "Philip R. Lane: Climate change and monetary policy",
+      "title": "莱恩：气候变化与货币政策",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
-      "body": "",
+      "body": "来源标题译文；原始文件无法读取，未核验正文。",
       "date": "2026-11-23",
       "published_at": "2026-11-23T15:30:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Philip R. Lane: Climate change and monetary policy",
+      "body_original": "",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+      "title": "欧洲央行扩大对 DLT 资产的合格抵押品接受范围",
       "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
-      "body": "",
+      "body": "公告批准接受符合特定要求、在欧盟 DLT 试点制度许可平台发行的可交易资产。资产仍须满足通常的抵押品资格及结算连接要求，不能理解为所有代币化资产都自动合格。",
       "date": "2026-11-23",
       "published_at": "2026-11-23T11:00:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+      "body_original": "",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "Federal Reserve announces College Fed Challenge winners",
+      "title": "美联储公布大学生 Fed Challenge 获奖结果",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm",
-      "body": "Federal Reserve announces College Fed Challenge winners",
+      "body": "公告称 UCLA 赢得本届全国大学生 Fed Challenge。该竞赛让学生分析经济金融条件并模拟提出货币政策建议，不属于美联储实际政策决定。",
       "date": "2026-11-20",
       "published_at": "2026-11-20T21:15:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve announces College Fed Challenge winners",
+      "body_original": "Federal Reserve announces College Fed Challenge winners",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "title": "美联储发布银行准备金管理调查结果",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
-      "body": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "body": "公告介绍对银行高级财务主管的调查，涵盖准备金管理、资产负债表预期及货币市场活动。本文核验的是发布公告，未读取调查附件，不补写具体答卷分布或推断政策方向。",
       "date": "2026-11-20",
       "published_at": "2026-11-20T15:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "body_original": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "SEC Issues Proposal to Restructure the Consolidated Audit Trail",
+      "title": "SEC 提议重组综合审计追踪系统",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-117-sec-issues-proposal-restructure-consolidated-audit-trail",
-      "body": "The Securities and Exchange Commission today issued a proposal to address the inefficiencies in the current governance and funding model of the Consolidated Audit Trail (CAT). The Commission is proposing to rescind Rule 613 of Regulation NMS, which…",
+      "body": "来源标题译文；原文访问受限，未核验正文。提案不等同于规则已经实施。",
       "date": "2026-11-20",
       "published_at": "2026-11-20T13:03:24-05:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Issues Proposal to Restructure the Consolidated Audit Trail",
+      "body_original": "The Securities and Exchange Commission today issued a proposal to address the inefficiencies in the current governance and funding model of the Consolidated Audit Trail (CAT). The Commission is proposing to rescind Rule 613 of Regulation NMS, which…",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "Christine Lagarde: Acting in time",
+      "title": "拉加德：在挑战变得紧迫前采取行动",
       "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html",
-      "body": "",
+      "body": "演讲讨论欧洲经济自主性、单一市场及对外依赖，强调及早行动的政策难题。内容属于政策分析与主张，不是新的利率决定或市场走势承诺。",
       "date": "2026-11-20",
       "published_at": "2026-11-20T09:30:00+01:00",
       "source": "ECB",
       "tags": [
         "ECB"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Christine Lagarde: Acting in time",
+      "body_original": "",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "SEC Charges Indianapolis-Based Backward Hat Capital and Its Co-Founders With $560 Million Dollar Offering Fraud and Obtains Emergency Relief",
+      "title": "SEC 指控 Backward Hat Capital 及联合创始人发行欺诈",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-116-sec-charges-indianapolis-based-backward-hat-capital-its-co-founders-560-million-dollar-offering",
-      "body": "The Securities and Exchange Commission today announced that it has obtained a temporary restraining order, asset freeze, expedited discovery, and other relief against Indianapolis-based Backward Hat Capital, its co-founders Phillip Williams and Devin…",
+      "body": "来源标题译文；原文访问受限，未核验正文。监管指控不等同于法院已作最终裁定。",
       "date": "2026-11-20",
       "published_at": "2026-11-20T09:28:28-05:00",
       "source": "SEC",
       "tags": [
         "SEC"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "SEC Charges Indianapolis-Based Backward Hat Capital and Its Co-Founders With $560 Million Dollar Offering Fraud and Obtains Emergency Relief",
+      "body_original": "The Securities and Exchange Commission today announced that it has obtained a temporary restraining order, asset freeze, expedited discovery, and other relief against Indianapolis-based Backward Hat Capital, its co-founders Phillip Williams and Devin…",
+      "editorial_date": "2026-11-26"
     },
     {
-      "title": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "title": "美联储公布针对 First Security Bancorp 前雇员的执法命令",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
-      "body": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "body": "公告列示针对 Rush F. Harding III 的同意停止及终止令，事由涉及违反受托义务和 Regulation W。美联储已更正此前误写的命令类型；该行动针对具体个人，不扩大解释为整个银行的行为。",
       "date": "2026-11-19",
       "published_at": "2026-11-19T16:00:00+00:00",
       "source": "Federal Reserve",
       "tags": [
         "Federal Reserve"
       ],
-      "importance": "normal"
+      "importance": "normal",
+      "title_original": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "body_original": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "editorial_date": "2026-11-26"
     }
   ],
   "summary": {
@@ -361,5 +406,11 @@
       "近七日 16 条机构公告",
       "未核验栏目显示暂无更新"
     ]
+  },
+  "editorial": {
+    "date": "2026-11-26",
+    "items_applied": 15,
+    "editor": "Codex",
+    "mode": "source_grounded_chinese"
   }
 }
