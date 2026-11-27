@@ -13521,6 +13521,36 @@
             }
           ],
           "note": "规则策略：无强势标的，持币观望"
+        },
+        {
+          "date": "2026-11-26",
+          "portfolio_value": 8749.47,
+          "baseline_value": 9696.66,
+          "cash": 3971.62,
+          "positions": {
+            "AAPL": {
+              "shares": 1,
+              "price": 355.58,
+              "value": 355.58
+            },
+            "TSLA": {
+              "shares": 3,
+              "price": 380.14,
+              "value": 1140.42
+            },
+            "XLF": {
+              "shares": 31,
+              "price": 56.51,
+              "value": 1751.81
+            },
+            "JD": {
+              "shares": 58,
+              "price": 26.38,
+              "value": 1530.04
+            }
+          },
+          "trades": [],
+          "note": "规则策略：无强势标的，持币观望"
         }
       ],
       "display_name": "规则策略",
