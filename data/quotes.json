@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T03:27:41.316442+00:00",
+  "updated": "2026-11-28T09:38:36.110845+00:00",
   "source": "Yahoo Finance",
   "quotes": [
     {
@@ -30,7 +30,7 @@
       "name": "DOW",
       "symbol": "^DJI",
       "value": "50,774.94",
-      "change": "+591.99",
+      "change": "+592.04",
       "change_pct": "+1.18%",
       "direction": "up",
       "as_of": "2026-11-27T18:38:45+00:00",
@@ -54,8 +54,8 @@
       "name": "恒生指数",
       "symbol": "^HSI",
       "value": "22,694.77",
-      "change": "+467.89",
-      "change_pct": "+2.11%",
+      "change": "+467.87",
+      "change_pct": "+2.10%",
       "direction": "up",
       "as_of": "2026-11-27T08:09:22+00:00",
       "currency": "HKD",
@@ -113,11 +113,11 @@
     {
       "name": "BTC/USD",
       "symbol": "BTC-USD",
-      "value": "59,860.55",
-      "change": "-5.52",
-      "change_pct": "-0.01%",
+      "value": "59,486.49",
+      "change": "-379.58",
+      "change_pct": "-0.63%",
       "direction": "down",
-      "as_of": "2026-11-28T03:27:38+00:00",
+      "as_of": "2026-11-28T09:38:29+00:00",
       "currency": "USD",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/quote/BTC-USD/"
